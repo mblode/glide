@@ -9,8 +9,8 @@ A variable font supporting weights from 400 (regular) to 900 (black).
 
 ## Download
 
-- [glide-variable.woff2](https://ui.blode.co/glide-variable.woff2) — web font (recommended)
-- `glide-variable.ttf` — TrueType format
+- [Glide-Variable.woff2](https://raw.githubusercontent.com/mblode/glide/main/Glide-Variable.woff2) — web font (recommended)
+- [glide-variable.ttf](https://raw.githubusercontent.com/mblode/glide/main/glide-variable.ttf) — TrueType format
 
 ## Usage with Next.js + Tailwind CSS
 
