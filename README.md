@@ -4,8 +4,8 @@ Glide is a sans-serif type family by Matthew Blode.
 
 This repository builds and packages two variable fonts:
 
-- `Glide-Roman-VF`
-- `Glide-Italic-VF`
+- `glide-variable.ttf`
+- `glide-variable-italic.ttf`
 
 The release output lives in `build/release/`. Source assets live in `src/`. Generated intermediates live in `build/work/`.
 

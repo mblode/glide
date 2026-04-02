@@ -325,9 +325,9 @@ def write_css(paths: dict[str, Path]) -> Path:
         """@font-face {
   font-family: "Glide";
   src:
-    url("./variable/woff2/Glide-Roman-VF.woff2") format("woff2"),
-    url("./variable/woff/Glide-Roman-VF.woff") format("woff"),
-    url("./variable/ttf/Glide-Roman-VF.ttf") format("truetype");
+    url("./variable/woff2/glide-variable.woff2") format("woff2"),
+    url("./variable/woff/glide-variable.woff") format("woff"),
+    url("./variable/ttf/glide-variable.ttf") format("truetype");
   font-style: normal;
   font-weight: 400 900;
   font-display: swap;
@@ -336,9 +336,9 @@ def write_css(paths: dict[str, Path]) -> Path:
 @font-face {
   font-family: "Glide";
   src:
-    url("./variable/woff2/Glide-Italic-VF.woff2") format("woff2"),
-    url("./variable/woff/Glide-Italic-VF.woff") format("woff"),
-    url("./variable/ttf/Glide-Italic-VF.ttf") format("truetype");
+    url("./variable/woff2/glide-variable-italic.woff2") format("woff2"),
+    url("./variable/woff/glide-variable-italic.woff") format("woff"),
+    url("./variable/ttf/glide-variable-italic.ttf") format("truetype");
   font-style: italic;
   font-weight: 400 900;
   font-display: swap;
@@ -395,12 +395,12 @@ def write_release_metadata(
 
 def verify_release(paths: dict[str, Path]) -> Path:
     required = [
-        paths["release_variable_ttf"] / "Glide-Roman-VF.ttf",
-        paths["release_variable_ttf"] / "Glide-Italic-VF.ttf",
-        paths["release_variable_woff2"] / "Glide-Roman-VF.woff2",
-        paths["release_variable_woff2"] / "Glide-Italic-VF.woff2",
-        paths["release_variable_woff"] / "Glide-Roman-VF.woff",
-        paths["release_variable_woff"] / "Glide-Italic-VF.woff",
+        paths["release_variable_ttf"] / "glide-variable.ttf",
+        paths["release_variable_ttf"] / "glide-variable-italic.ttf",
+        paths["release_variable_woff2"] / "glide-variable.woff2",
+        paths["release_variable_woff2"] / "glide-variable-italic.woff2",
+        paths["release_variable_woff"] / "glide-variable.woff",
+        paths["release_variable_woff"] / "glide-variable-italic.woff",
         paths["release"] / "fonts" / "glide.css",
         paths["release_proof"] / "index.html",
     ]
@@ -502,7 +502,7 @@ def build_release(paths: dict[str, Path], force: bool) -> None:
     packaged_files.extend(
         package_variable_font(
             paths["work_output"] / "glide-cli-roman-variable.ttf",
-            "Glide-Roman-VF",
+            "glide-variable",
             {
                 "ttf": paths["release_variable_ttf"],
                 "woff": paths["release_variable_woff"],
@@ -515,7 +515,7 @@ def build_release(paths: dict[str, Path], force: bool) -> None:
     packaged_files.extend(
         package_variable_font(
             paths["work_output"] / "glide-cli-italic-variable.ttf",
-            "Glide-Italic-VF",
+            "glide-variable-italic",
             {
                 "ttf": paths["release_variable_ttf"],
                 "woff": paths["release_variable_woff"],
