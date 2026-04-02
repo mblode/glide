@@ -1,0 +1,5 @@
+.DS_Store
+.venv/
+build/__pycache__/
+build/work/
+build/release/

@@ -1,74 +1,73 @@
 # Glide
 
-A variable font supporting weights from 400 (regular) to 900 (black).
+Glide is a sans-serif type family by Matthew Blode.
 
-- **Variable font:** All weights in a single file for minimal file size and smooth weight transitions.
-- **Weight range 400–900:** Regular, medium, semibold, bold, extrabold, and black.
-- **Web-optimized:** Ships as `.woff2` for fast loading in browsers.
-- **Tailwind-ready:** Maps directly to `font-sans` with standard weight utilities.
+This repository builds and packages two variable fonts:
 
-## Download
+- `Glide-Roman-VF`
+- `Glide-Italic-VF`
 
-- [Glide-Variable.woff2](https://raw.githubusercontent.com/mblode/glide/main/Glide-Variable.woff2) — web font (recommended)
-- [glide-variable.ttf](https://raw.githubusercontent.com/mblode/glide/main/glide-variable.ttf) — TrueType format
+The release output lives in `build/release/`. Source assets live in `src/`. Generated intermediates live in `build/work/`.
 
-## Usage with Next.js + Tailwind CSS
+## Install The Build Tooling
 
-### 1. Add the font to your project
-
-Download `glide-variable.woff2` and place it in your project's `public/` directory.
-
-### 2. Configure the font in your root layout
-
-```tsx
-import localFont from "next/font/local";
-
-const glide = localFont({
-  src: [{ path: "../public/glide-variable.woff2" }],
-  variable: "--font-glide",
-  weight: "400 900",
-  display: "swap",
-});
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <html lang="en">
-      <body className={glide.variable}>{children}</body>
-    </html>
-  );
-}
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+brew install fontforge
 ```
 
-### 3. Map the CSS variable in Tailwind
+## Build
 
-In your global CSS file, map `--font-glide` to Tailwind's `--font-sans`:
-
-```css
-@theme inline {
-  --font-sans: var(--font-glide);
-}
+```bash
+make build
 ```
 
-### 4. Use it
+This rebuilds:
 
-Glide is now your default sans-serif font. Apply any weight from 400 to 900:
+- variable `TTF`, `WOFF2`, and `WOFF`
+- static `TTF`, `OTF`, `WOFF2`, and `WOFF`
+- `build/release/fonts/glide.css`
+- `build/release/proof/index.html`
+- `build/release/metadata/release.json`
 
-```tsx
-<p className="font-sans font-medium">Medium weight text</p>
-<h1 className="font-sans font-bold">Bold heading</h1>
+## Verify
+
+```bash
+make verify
 ```
 
-## Font Weights
+## Proof
 
-| Weight | Name      | Tailwind Class   |
-|--------|-----------|------------------|
-| 400    | Regular   | `font-normal`    |
-| 500    | Medium    | `font-medium`    |
-| 600    | Semibold  | `font-semibold`  |
-| 700    | Bold      | `font-bold`      |
-| 800    | Extrabold | `font-extrabold` |
-| 900    | Black     | `font-black`     |
+```bash
+make proof
+```
+
+Open:
+
+- `http://127.0.0.1:8765/docs/proof/index.html` for the source proof
+- `http://127.0.0.1:8765/build/release/proof/index.html` for the packaged proof
+
+## Release Archive
+
+```bash
+make zip
+```
+
+This creates `build/release/Glide-$(cat version.txt).zip`.
+
+## Repo Layout
+
+- `src/glide-variable.ttf`: canonical Glide outline basis
+- `src/donors/circular/`: Circular donors used for italic seeding and kerning reference
+- `build/`: build scripts plus generated `work/` and `release/`
+- `docs/proof/`: proof source
+- `version.txt`: release version
+
+## Notes
+
+- The public family name is `Glide`.
+- The packaged fonts carry Matthew Blode in designer and manufacturer metadata.
+- Roman and Italic are shipped as separate variable fonts, which is the standard release model for a true-italic family.
+- Contributor workflow is documented in `CONTRIBUTING.md`.

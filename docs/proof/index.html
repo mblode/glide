@@ -1,0 +1,1173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Glide Release Proof And Kerning Lab</title>
+    <style>
+      @font-face {
+        font-family: "Glide Preview";
+        src: url("../../build/release/fonts/variable/ttf/Glide-Roman-VF.ttf?v=20260402d")
+          format("truetype");
+        font-style: normal;
+        font-weight: 400 900;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Glide Preview";
+        src: url("../../build/release/fonts/variable/ttf/Glide-Italic-VF.ttf?v=20260402d")
+          format("truetype");
+        font-style: italic;
+        font-weight: 400 900;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Circular Compare";
+        src: url("../../build/release/proof/reference/lineto-circular-bookItalic.ttf?v=20260402d")
+          format("truetype");
+        font-style: italic;
+        font-weight: 400;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Circular Compare";
+        src: url("../../build/release/proof/reference/lineto-circular-mediumItalic.ttf?v=20260402d")
+          format("truetype");
+        font-style: italic;
+        font-weight: 500;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Circular Compare";
+        src: url("../../build/release/proof/reference/lineto-circular-boldItalic.ttf?v=20260402d")
+          format("truetype");
+        font-style: italic;
+        font-weight: 700;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Circular Compare";
+        src: url("../../build/release/proof/reference/lineto-circular-blackItalic.ttf?v=20260402d")
+          format("truetype");
+        font-style: italic;
+        font-weight: 900;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Glide Compare Exact";
+        src: url("../../build/release/proof/reference/exact/glide-cli-italic-variable-Regular.ttf?v=20260402d")
+          format("truetype");
+        font-style: italic;
+        font-weight: 400;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Glide Compare Exact";
+        src: url("../../build/release/proof/reference/exact/glide-cli-italic-variable-Medium.ttf?v=20260402d")
+          format("truetype");
+        font-style: italic;
+        font-weight: 500;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Glide Compare Exact";
+        src: url("../../build/release/proof/reference/exact/glide-cli-italic-variable-Bold.ttf?v=20260402d")
+          format("truetype");
+        font-style: italic;
+        font-weight: 700;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Glide Compare Exact";
+        src: url("../../build/release/proof/reference/exact/glide-cli-italic-variable-Black.ttf?v=20260402d")
+          format("truetype");
+        font-style: italic;
+        font-weight: 900;
+        font-display: swap;
+      }
+
+      :root {
+        color-scheme: dark;
+        --page-bg: #04111a;
+        --panel-bg: rgba(7, 17, 28, 0.82);
+        --panel-stroke: rgba(255, 255, 255, 0.08);
+        --panel-shadow: 0 24px 72px rgba(0, 0, 0, 0.34);
+        --text-strong: #f5f8ff;
+        --text-soft: rgba(245, 248, 255, 0.74);
+        --text-faint: rgba(245, 248, 255, 0.54);
+        --mint: #b8ffd9;
+        --mint-soft: rgba(184, 255, 217, 0.12);
+        --amber: #ffd393;
+        --amber-soft: rgba(255, 211, 147, 0.14);
+        --blue: #94ccff;
+        --blue-soft: rgba(148, 204, 255, 0.14);
+        --weight: 700;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        min-height: 100%;
+      }
+
+      body {
+        padding: 28px;
+        background:
+          radial-gradient(circle at 12% 0%, rgba(79, 181, 255, 0.18), transparent 28%),
+          radial-gradient(circle at 88% 14%, rgba(184, 255, 217, 0.14), transparent 24%),
+          linear-gradient(180deg, #0f2233 0%, var(--page-bg) 58%, #03070c 100%);
+        color: var(--text-strong);
+        font-family: "Avenir Next", "Segoe UI", sans-serif;
+      }
+
+      main {
+        width: min(1240px, 100%);
+        margin: 0 auto;
+        display: grid;
+        gap: 20px;
+      }
+
+      .panel {
+        border: 1px solid var(--panel-stroke);
+        border-radius: 28px;
+        background: var(--panel-bg);
+        box-shadow: var(--panel-shadow);
+        backdrop-filter: blur(18px);
+      }
+
+      .hero {
+        padding: 28px;
+        display: grid;
+        gap: 24px;
+      }
+
+      .hero-top {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 18px;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 12px;
+        border-radius: 999px;
+        background: var(--mint-soft);
+        color: var(--mint);
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 12px 0 10px;
+        max-width: 12ch;
+        font-size: clamp(38px, 7vw, 76px);
+        line-height: 0.94;
+        letter-spacing: -0.07em;
+      }
+
+      .lede {
+        margin: 0;
+        max-width: 66ch;
+        color: var(--text-soft);
+        font-size: 15px;
+        line-height: 1.58;
+      }
+
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(140px, 1fr));
+        gap: 10px;
+        width: min(360px, 100%);
+      }
+
+      .stat {
+        padding: 14px 16px;
+        border-radius: 18px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(255, 255, 255, 0.03);
+      }
+
+      .stat-label {
+        color: var(--text-faint);
+        font-size: 11px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .stat-value {
+        margin-top: 8px;
+        font-size: 24px;
+        line-height: 1;
+        letter-spacing: -0.05em;
+      }
+
+      .controls {
+        display: grid;
+        grid-template-columns: 1fr 1.1fr 1fr;
+        gap: 16px;
+      }
+
+      .card {
+        padding: 18px;
+        border-radius: 22px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(255, 255, 255, 0.03);
+      }
+
+      .control-label,
+      .mini-label {
+        color: var(--text-faint);
+        font-size: 11px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .control-value {
+        margin-top: 8px;
+        margin-bottom: 14px;
+        font-size: 24px;
+        line-height: 1;
+        letter-spacing: -0.05em;
+      }
+
+      input[type="range"] {
+        width: 100%;
+        accent-color: #d4ffe7;
+      }
+
+      textarea {
+        width: 100%;
+        min-height: 160px;
+        padding: 16px 18px;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 18px;
+        background: rgba(0, 0, 0, 0.18);
+        color: var(--text-strong);
+        font: inherit;
+        line-height: 1.45;
+        resize: vertical;
+      }
+
+      .instance-buttons {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 8px;
+        margin-top: 14px;
+      }
+
+      .instance-buttons button {
+        border: 0;
+        border-radius: 14px;
+        padding: 12px 10px;
+        background: rgba(255, 255, 255, 0.06);
+        color: var(--text-soft);
+        font: inherit;
+        cursor: pointer;
+        transition:
+          background-color 140ms ease,
+          color 140ms ease,
+          transform 140ms ease;
+      }
+
+      .instance-buttons button:hover {
+        transform: translateY(-1px);
+      }
+
+      .instance-buttons button[data-active="true"] {
+        background: var(--mint);
+        color: #071018;
+      }
+
+      .small {
+        margin: 10px 0 0;
+        color: var(--text-faint);
+        font-size: 13px;
+        line-height: 1.5;
+      }
+
+      .paths {
+        display: grid;
+        gap: 10px;
+        margin-top: 14px;
+        color: var(--text-soft);
+        font-size: 13px;
+        line-height: 1.55;
+      }
+
+      code {
+        font-family: ui-monospace, "SFMono-Regular", monospace;
+        font-size: 0.95em;
+      }
+
+      .compare-grid,
+      .instance-grid,
+      .coverage-grid {
+        display: grid;
+        gap: 18px;
+      }
+
+      .compare-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .specimen {
+        padding: 24px;
+        display: grid;
+        gap: 18px;
+      }
+
+      .specimen-head,
+      .section-head {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 10px;
+      }
+
+      .specimen-title {
+        margin: 0;
+        font-size: 24px;
+        letter-spacing: -0.04em;
+      }
+
+      .badge {
+        padding: 6px 10px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.06);
+        color: var(--text-soft);
+        font-size: 12px;
+      }
+
+      .sample,
+      .instance-word,
+      .instance-copy {
+        font-family: "Glide Preview", "Iowan Old Style", serif;
+        font-weight: var(--weight);
+        font-kerning: normal;
+        font-synthesis: none;
+      }
+
+      .roman {
+        font-style: normal;
+      }
+
+      .italic {
+        font-style: italic;
+      }
+
+      .headline {
+        margin: 0;
+        font-size: clamp(54px, 9vw, 122px);
+        line-height: 0.9;
+        letter-spacing: -0.08em;
+      }
+
+      .body-copy {
+        margin: 0;
+        max-width: 32ch;
+        color: var(--text-soft);
+        font-size: clamp(18px, 2.2vw, 28px);
+        line-height: 1.34;
+        letter-spacing: -0.03em;
+      }
+
+      .proof-block {
+        display: grid;
+        gap: 10px;
+        padding-top: 12px;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .stress-row,
+      .glyph-strip {
+        margin: 0;
+        color: rgba(245, 248, 255, 0.82);
+        line-height: 1.4;
+      }
+
+      .stress-row {
+        font-size: clamp(22px, 2.4vw, 30px);
+        letter-spacing: -0.04em;
+      }
+
+      .glyph-strip {
+        font-size: clamp(17px, 1.8vw, 22px);
+      }
+
+      .instances,
+      .kerning-lab,
+      .waterfall,
+      .coverage {
+        padding: 22px 24px 24px;
+        display: grid;
+        gap: 16px;
+      }
+
+      .section-title {
+        margin: 4px 0 0;
+        font-size: 26px;
+        letter-spacing: -0.04em;
+      }
+
+      .instance-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+
+      .instance-card,
+      .coverage-card {
+        padding: 18px;
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(255, 255, 255, 0.03);
+      }
+
+      .instance-meta {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        color: var(--text-faint);
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .instance-word {
+        margin: 18px 0 10px;
+        font-size: clamp(42px, 5.2vw, 74px);
+        line-height: 0.92;
+        letter-spacing: -0.08em;
+      }
+
+      .instance-copy {
+        margin: 0;
+        color: var(--text-soft);
+        font-size: 21px;
+        line-height: 1.2;
+        letter-spacing: -0.04em;
+      }
+
+      .instance-copy + .instance-copy {
+        margin-top: 8px;
+      }
+
+      .waterfall-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .waterfall-card {
+        padding: 18px;
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(255, 255, 255, 0.03);
+      }
+
+      .waterfall-card h3 {
+        margin: 0 0 14px;
+        font-size: 20px;
+        letter-spacing: -0.03em;
+      }
+
+      .waterfall-line {
+        margin: 0;
+        padding: 12px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.06);
+        font-family: "Glide Preview", "Iowan Old Style", serif;
+        font-size: var(--size);
+        font-weight: var(--weight);
+        font-style: var(--style);
+        line-height: 1.04;
+        letter-spacing: -0.04em;
+        font-synthesis: none;
+      }
+
+      .waterfall-line:first-of-type {
+        border-top: 0;
+        padding-top: 0;
+      }
+
+      .coverage-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .coverage-card h3 {
+        margin: 0 0 10px;
+        font-size: 20px;
+        letter-spacing: -0.03em;
+      }
+
+      .kerning-controls,
+      .kerning-grid {
+        display: grid;
+        gap: 18px;
+      }
+
+      .kerning-controls {
+        grid-template-columns: 1.1fr 0.9fr 1fr;
+      }
+
+      .kerning-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .kerning-card {
+        padding: 18px;
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(255, 255, 255, 0.03);
+        display: grid;
+        gap: 10px;
+      }
+
+      .kerning-proof {
+        margin: 0;
+        white-space: pre-wrap;
+        font-size: clamp(30px, 4vw, 72px);
+        line-height: 0.94;
+        letter-spacing: -0.06em;
+        font-weight: var(--weight);
+        font-kerning: normal;
+        font-synthesis: none;
+      }
+
+      .kerning-proof.no-kern {
+        font-kerning: none;
+        opacity: 0.54;
+      }
+
+      .font-circular-italic {
+        font-family: "Circular Compare", "Iowan Old Style", serif;
+        font-style: italic;
+      }
+
+      .font-glide-italic {
+        font-family: "Glide Preview", "Iowan Old Style", serif;
+        font-style: italic;
+      }
+
+      .font-glide-italic-exact {
+        font-family: "Glide Compare Exact", "Iowan Old Style", serif;
+        font-style: italic;
+      }
+
+      .kerning-metric {
+        font-variant-numeric: tabular-nums;
+      }
+
+      .line {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 12px;
+        padding: 8px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.06);
+      }
+
+      .line:first-of-type {
+        border-top: 0;
+        padding-top: 0;
+      }
+
+      .ok {
+        color: var(--mint);
+      }
+
+      .warn {
+        color: var(--amber);
+      }
+
+      .info {
+        color: var(--blue);
+      }
+
+      ul {
+        margin: 12px 0 0;
+        padding-left: 18px;
+        color: var(--text-soft);
+        line-height: 1.5;
+      }
+
+      @media (max-width: 1080px) {
+        .controls,
+        .compare-grid,
+        .kerning-controls,
+        .kerning-grid,
+        .instance-grid,
+        .waterfall-grid,
+        .coverage-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .stats {
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 720px) {
+        body {
+          padding: 18px;
+        }
+
+        .instance-buttons {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="panel hero">
+        <div class="hero-top">
+          <div>
+            <span class="eyebrow">Release Proof</span>
+            <h1>Glide Roman and Glide Italic, side by side.</h1>
+            <p class="lede">
+              This page targets the generated release in <code>build/release/fonts</code>. Roman comes
+              from extracted checkpoints of <code>src/glide-variable.ttf</code>; Italic is the seeded
+              branch rebuilt after removing the fragile direct-delta transfer for the worst cap,
+              symbol, and diagonal glyphs.
+              The preview uses real CSS <code>font-weight</code> and <code>font-style</code> matching,
+              with synthesis disabled, so you are looking at the packaged variable-font outputs rather
+              than faux oblique or low-level axis plumbing.
+            </p>
+          </div>
+
+          <div class="stats">
+            <div class="stat">
+              <div class="stat-label">Roman Coverage</div>
+              <div class="stat-value">453 / 472</div>
+            </div>
+            <div class="stat">
+              <div class="stat-label">Italic Coverage</div>
+              <div class="stat-value">469 / 472</div>
+            </div>
+            <div class="stat">
+              <div class="stat-label">Italic Seed Mix</div>
+              <div class="stat-value">153 + 306</div>
+            </div>
+            <div class="stat">
+              <div class="stat-label">Exact Checkpoints</div>
+              <div class="stat-value">400 500 900</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="controls">
+          <section class="card">
+            <div class="control-label">Weight Axis</div>
+            <div id="weightValue" class="control-value">700</div>
+            <input id="weightRange" type="range" min="400" max="900" step="1" value="700" />
+            <div class="instance-buttons" role="group" aria-label="Named instances">
+              <button type="button" data-instance-weight="400">Regular</button>
+              <button type="button" data-instance-weight="500">Medium</button>
+              <button type="button" data-instance-weight="700">Bold</button>
+              <button type="button" data-instance-weight="900">Black</button>
+            </div>
+            <p class="small">
+              The slider covers the real <code>wght</code> bounds from the new build. The buttons snap
+              to the extracted or seeded checkpoints.
+            </p>
+          </section>
+
+          <section class="card">
+            <div class="control-label">Specimen Text</div>
+            <textarea id="specimenInput" spellcheck="false">Glide italic takes shape
+Sphinx of black quartz, judge my vow. 0123456789. The quick brown fox jumps over the lazy dog.</textarea>
+            <p class="small">
+              The first line drives the large proof. The second line fills the reading text in both
+              styles so Roman and Italic stay synchronized.
+            </p>
+          </section>
+
+          <section class="card">
+            <div class="control-label">Build Facts</div>
+            <div class="control-value">Packaged Release</div>
+            <p class="small">
+              The release now includes variable <code>TTF</code>, <code>WOFF2</code>, and
+              <code>WOFF</code>, plus static <code>TTF</code>, <code>OTF</code>,
+              <code>WOFF2</code>, and <code>WOFF</code>.
+            </p>
+            <div class="paths">
+              <div><strong>Roman:</strong> <code>../../build/release/fonts/variable/ttf/Glide-Roman-VF.ttf</code></div>
+              <div><strong>Italic:</strong> <code>../../build/release/fonts/variable/ttf/Glide-Italic-VF.ttf</code></div>
+              <div><strong>CSS:</strong> <code>../../build/release/fonts/glide.css</code></div>
+              <div><strong>Metadata:</strong> <code>../../build/release/metadata/release.json</code></div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="compare-grid">
+        <article class="panel specimen">
+          <div class="specimen-head">
+            <div>
+              <div class="control-label">Roman Proof</div>
+              <h2 class="specimen-title">Glide Roman</h2>
+            </div>
+            <span class="badge">font-style: normal</span>
+          </div>
+          <h2 id="romanHeadline" class="headline sample roman">Glide italic takes shape</h2>
+          <p id="romanBody" class="body-copy sample roman">
+            Sphinx of black quartz, judge my vow. 0123456789. The quick brown fox jumps over the lazy dog.
+          </p>
+
+          <div class="proof-block">
+            <div class="mini-label">Roman Watch</div>
+            <p class="stress-row sample roman">d braceleft braceright dollar sterling 3 6</p>
+          </div>
+
+          <div class="proof-block">
+            <div class="mini-label">Italic-Sensitive Set in Roman</div>
+            <p class="stress-row sample roman">aghnrsu pqdbkl 012378 .,:;!? () [] {}</p>
+          </div>
+
+          <div class="proof-block">
+            <div class="mini-label">Spacing Control</div>
+            <p class="stress-row sample roman">HHOO noononno HOHOno AVATAR ToTo</p>
+          </div>
+
+          <div class="proof-block">
+            <div class="mini-label">ASCII Strip</div>
+            <p class="glyph-strip sample roman">
+              !"#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+            </p>
+          </div>
+        </article>
+
+        <article class="panel specimen">
+          <div class="specimen-head">
+            <div>
+              <div class="control-label">Italic Proof</div>
+              <h2 class="specimen-title">Glide Italic</h2>
+            </div>
+            <span class="badge">font-style: italic</span>
+          </div>
+          <h2 id="italicHeadline" class="headline sample italic">Glide italic takes shape</h2>
+          <p id="italicBody" class="body-copy sample italic">
+            Sphinx of black quartz, judge my vow. 0123456789. The quick brown fox jumps over the lazy dog.
+          </p>
+
+          <div class="proof-block">
+            <div class="mini-label">Italic Watch</div>
+            <p class="stress-row sample italic">ghnrsu pqdbkl caron k l I 012378</p>
+          </div>
+
+          <div class="proof-block">
+            <div class="mini-label">Seed Stress</div>
+            <p class="stress-row sample italic">Reactive questing river. Sly black zinc, 0123456789.</p>
+          </div>
+
+          <div class="proof-block">
+            <div class="mini-label">Spacing Control</div>
+            <p class="stress-row sample italic">HHOO noononno HOHOno AVATAR ToTo</p>
+          </div>
+
+          <div class="proof-block">
+            <div class="mini-label">ASCII Strip</div>
+            <p class="glyph-strip sample italic">
+              !"#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section id="kerning-lab" class="panel kerning-lab">
+        <div class="section-head">
+          <div>
+            <div class="control-label">Kerning Lab</div>
+            <h2 class="section-title">Circular donor vs exact donor match vs live Glide VF</h2>
+          </div>
+          <p class="small">
+            This section is for pair-level inspection, not just overall color. It keeps the real
+            Glide variable fonts in the loop and loads the four Circular italic donors as static
+            browser faces so you can compare literal donor kerning against the compensated Glide
+            shipping build.
+          </p>
+        </div>
+
+        <div class="kerning-controls">
+          <section class="card">
+            <div class="control-label">Kerning Sample</div>
+            <textarea id="kerningSampleInput" spellcheck="false">ap
+apap paper taper caper
+pa aa an av Ta</textarea>
+            <p class="small">
+              The first two non-space characters set the metric focus. The live proof below accepts
+              any text, but the numeric comparison only covers the tracked proof pairs below.
+            </p>
+          </section>
+
+          <section class="card">
+            <div class="control-label">Current Pair</div>
+            <div id="kerningPairLabel" class="control-value">ap</div>
+            <div class="paths">
+              <div><strong>Weight:</strong> <span id="kerningWeightLabel" class="kerning-metric">700</span></div>
+              <div><strong>Circular Italic:</strong> <span id="kerningCircularValue" class="kerning-metric">0</span></div>
+              <div><strong>Glide Exact Match:</strong> <span id="kerningGlideExactValue" class="kerning-metric">0</span></div>
+              <div><strong>Glide Italic VF:</strong> <span id="kerningGlideVfValue" class="kerning-metric">-75</span></div>
+            </div>
+            <p class="small">
+              The live Glide italic VF now matches the donor’s visible contour gap for pairs after
+              <code>a</code>. The donor and exact-compare columns stay literal Circular; the live
+              VF tightens Glide-specific spacing where the imported kerning was still too open.
+            </p>
+          </section>
+
+          <section class="card">
+            <div class="control-label">A Pair Snapshot</div>
+            <div class="line"><span><code>ap</code> donor / exact</span><strong class="kerning-metric">0 / 0 / 0 / 0</strong></div>
+            <div class="line"><span><code>ap</code> live Glide VF</span><strong class="kerning-metric">-77 / -79 / -75 / -74</strong></div>
+            <div class="line"><span><code>ap</code> contour gap</span><strong class="kerning-metric">exact at 400 / 500 / 700 / 900</strong></div>
+            <div class="line"><span><code>a</code>-left gap audit</span><strong class="kerning-metric">0 / 1 / 248 / 0 residuals</strong></div>
+            <p class="small">
+              Order is <code>400 / 500 / 700 / 900</code>. The only remaining drift is at
+              <code>700</code>, where interpolation still leaves some <code>a</code>-left pairs off
+              by only <code>±1</code> or <code>±2</code>.
+            </p>
+          </section>
+        </div>
+
+        <div class="kerning-grid">
+          <article class="kerning-card">
+            <div class="specimen-head">
+              <div>
+                <div class="control-label">Donor</div>
+                <h3 class="specimen-title">Circular Italic</h3>
+              </div>
+              <span class="badge">static 400 / 500 / 700 / 900</span>
+            </div>
+            <div class="mini-label">kern on</div>
+            <p class="kerning-proof font-circular-italic" data-kerning-proof="circular-on">ap</p>
+            <div class="mini-label">kern off</div>
+            <p class="kerning-proof no-kern font-circular-italic" data-kerning-proof="circular-off">ap</p>
+          </article>
+
+          <article class="kerning-card">
+            <div class="specimen-head">
+              <div>
+                <div class="control-label">Named Match</div>
+                <h3 class="specimen-title">Glide Exact Italic</h3>
+              </div>
+              <span class="badge">static 400 / 500 / 700 / 900</span>
+            </div>
+            <div class="mini-label">kern on</div>
+            <p class="kerning-proof font-glide-italic-exact" data-kerning-proof="glide-exact-on">ap</p>
+            <div class="mini-label">kern off</div>
+            <p class="kerning-proof no-kern font-glide-italic-exact" data-kerning-proof="glide-exact-off">ap</p>
+          </article>
+
+          <article class="kerning-card">
+            <div class="specimen-head">
+              <div>
+                <div class="control-label">Current Build</div>
+                <h3 class="specimen-title">Glide Italic VF</h3>
+              </div>
+              <span class="badge">variable italic</span>
+            </div>
+            <div class="mini-label">kern on</div>
+            <p class="kerning-proof font-glide-italic" data-kerning-proof="glide-vf-on">ap</p>
+            <div class="mini-label">kern off</div>
+            <p class="kerning-proof no-kern font-glide-italic" data-kerning-proof="glide-vf-off">ap</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel instances">
+        <div class="section-head">
+          <div>
+            <div class="control-label">Named Instances</div>
+            <h2 class="section-title">Four checkpoints plus live interpolation</h2>
+          </div>
+          <p class="small">
+            These cards lock to the four seeded checkpoints. The slider above lets you test the in-between
+            interpolation space while keeping Roman and Italic synchronized.
+          </p>
+        </div>
+
+        <div class="instance-grid">
+          <article class="instance-card">
+            <div class="instance-meta"><span>400</span><span>Regular</span></div>
+            <p class="instance-word roman" style="font-weight: 400">Glide</p>
+            <p class="instance-copy roman" data-instance-sample style="font-weight: 400">Glide italic takes shape</p>
+            <p class="instance-copy italic" data-instance-sample style="font-weight: 400">Glide italic takes shape</p>
+          </article>
+
+          <article class="instance-card">
+            <div class="instance-meta"><span>500</span><span>Medium</span></div>
+            <p class="instance-word roman" style="font-weight: 500">Glide</p>
+            <p class="instance-copy roman" data-instance-sample style="font-weight: 500">Glide italic takes shape</p>
+            <p class="instance-copy italic" data-instance-sample style="font-weight: 500">Glide italic takes shape</p>
+          </article>
+
+          <article class="instance-card">
+            <div class="instance-meta"><span>700</span><span>Bold</span></div>
+            <p class="instance-word roman" style="font-weight: 700">Glide</p>
+            <p class="instance-copy roman" data-instance-sample style="font-weight: 700">Glide italic takes shape</p>
+            <p class="instance-copy italic" data-instance-sample style="font-weight: 700">Glide italic takes shape</p>
+          </article>
+
+          <article class="instance-card">
+            <div class="instance-meta"><span>900</span><span>Black</span></div>
+            <p class="instance-word roman" style="font-weight: 900">Glide</p>
+            <p class="instance-copy roman" data-instance-sample style="font-weight: 900">Glide italic takes shape</p>
+            <p class="instance-copy italic" data-instance-sample style="font-weight: 900">Glide italic takes shape</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel waterfall">
+        <div class="section-head">
+          <div>
+            <div class="control-label">Waterfall</div>
+            <h2 class="section-title">Text-to-display range</h2>
+          </div>
+          <p class="small">
+            Waterfalls make spacing, color, and interpolation drift easier to spot than a single giant
+            proof. These rows stay locked to the live weight slider while stepping through useful sizes.
+          </p>
+        </div>
+
+        <div class="waterfall-grid">
+          <article class="waterfall-card">
+            <h3>Roman</h3>
+            <p class="waterfall-line" data-waterfall-sample style="--size: 72px; --style: normal">Sphinx of black quartz, judge my vow.</p>
+            <p class="waterfall-line" data-waterfall-sample style="--size: 48px; --style: normal">Sphinx of black quartz, judge my vow.</p>
+            <p class="waterfall-line" data-waterfall-sample style="--size: 32px; --style: normal">Sphinx of black quartz, judge my vow.</p>
+            <p class="waterfall-line" data-waterfall-sample style="--size: 20px; --style: normal">Sphinx of black quartz, judge my vow.</p>
+            <p class="waterfall-line" data-waterfall-sample style="--size: 14px; --style: normal">Sphinx of black quartz, judge my vow.</p>
+          </article>
+
+          <article class="waterfall-card">
+            <h3>Italic</h3>
+            <p class="waterfall-line" data-waterfall-sample style="--size: 72px; --style: italic">Sphinx of black quartz, judge my vow.</p>
+            <p class="waterfall-line" data-waterfall-sample style="--size: 48px; --style: italic">Sphinx of black quartz, judge my vow.</p>
+            <p class="waterfall-line" data-waterfall-sample style="--size: 32px; --style: italic">Sphinx of black quartz, judge my vow.</p>
+            <p class="waterfall-line" data-waterfall-sample style="--size: 20px; --style: italic">Sphinx of black quartz, judge my vow.</p>
+            <p class="waterfall-line" data-waterfall-sample style="--size: 14px; --style: italic">Sphinx of black quartz, judge my vow.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel coverage">
+        <div class="section-head">
+          <div>
+            <div class="control-label">Build Snapshot</div>
+            <h2 class="section-title">What still needs manual type work</h2>
+          </div>
+          <p class="small">
+            The specimen text and printable ASCII are usable now. The remaining work is refinement in the
+            editable sources, not another pipeline rewrite.
+          </p>
+        </div>
+
+        <div class="coverage-grid">
+          <section class="coverage-card">
+            <h3>Roman</h3>
+            <div class="line"><span>Varying glyphs</span><strong class="ok">453</strong></div>
+            <div class="line"><span>Frozen glyphs</span><strong class="warn">19</strong></div>
+            <div class="line"><span>Compatibility glyphs</span><strong class="info">4</strong></div>
+            <div class="line"><span>ASCII tail</span><strong class="warn">{ }</strong></div>
+          </section>
+
+          <section class="coverage-card">
+            <h3>Italic</h3>
+            <div class="line"><span>Varying glyphs</span><strong class="ok">469</strong></div>
+            <div class="line"><span>Frozen glyphs</span><strong class="ok">3</strong></div>
+            <div class="line"><span>Compatibility glyphs</span><strong class="info">9</strong></div>
+            <div class="line"><span>ASCII coverage</span><strong class="ok">full</strong></div>
+          </section>
+
+          <section class="coverage-card">
+            <h3>Manual Watch List</h3>
+            <ul>
+              <li>Check the 700 weight carefully, especially compensated <code>a</code> pairs plus ordinals, superiors, and inferiors.</li>
+              <li>Replace slant-fallback shapes with true italic drawing where the seeded behavior still looks generic.</li>
+              <li>Review the packaged WOFF2 and OTF exports in real apps before calling the release final.</li>
+            </ul>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const defaults = {
+        headline: "Glide italic takes shape",
+        body:
+          "Sphinx of black quartz, judge my vow. 0123456789. The quick brown fox jumps over the lazy dog.",
+      };
+
+      const state = {
+        weight: 700,
+      };
+
+      const specimenInput = document.getElementById("specimenInput");
+      const weightRange = document.getElementById("weightRange");
+      const weightValue = document.getElementById("weightValue");
+      const romanHeadline = document.getElementById("romanHeadline");
+      const romanBody = document.getElementById("romanBody");
+      const italicHeadline = document.getElementById("italicHeadline");
+      const italicBody = document.getElementById("italicBody");
+      const instanceButtons = Array.from(document.querySelectorAll("[data-instance-weight]"));
+      const instanceSamples = Array.from(document.querySelectorAll("[data-instance-sample]"));
+      const waterfallSamples = Array.from(document.querySelectorAll("[data-waterfall-sample]"));
+      const kerningSampleInput = document.getElementById("kerningSampleInput");
+      const kerningPairLabel = document.getElementById("kerningPairLabel");
+      const kerningWeightLabel = document.getElementById("kerningWeightLabel");
+      const kerningCircularValue = document.getElementById("kerningCircularValue");
+      const kerningGlideExactValue = document.getElementById("kerningGlideExactValue");
+      const kerningGlideVfValue = document.getElementById("kerningGlideVfValue");
+      const kerningProofs = Array.from(document.querySelectorAll("[data-kerning-proof]"));
+      const namedWeights = [400, 500, 700, 900];
+      const kerningPairs = {
+        ap: {
+          circularItalic: { 400: 0, 500: 0, 700: 0, 900: 0 },
+          glideExact: { 400: 0, 500: 0, 700: 0, 900: 0 },
+          glideVf: { 400: -77, 500: -79, 700: -75, 900: -74 },
+        },
+        pa: {
+          circularItalic: { 400: 0, 500: 0, 700: 0, 900: 0 },
+          glideExact: { 400: 0, 500: 0, 700: 0, 900: 0 },
+          glideVf: { 400: 0, 500: 0, 700: 0, 900: 0 },
+        },
+        aa: {
+          circularItalic: { 400: 0, 500: 0, 700: 0, 900: 0 },
+          glideExact: { 400: 0, 500: 0, 700: 0, 900: 0 },
+          glideVf: { 400: -51, 500: -56, 700: -54, 900: -53 },
+        },
+        to: {
+          circularItalic: { 400: -75, 500: -73, 700: -72, 900: -71 },
+          glideExact: { 400: -75, 500: -73, 700: -72, 900: -71 },
+          glideVf: { 400: -75, 500: -73, 700: -72, 900: -71 },
+        },
+        ta: {
+          circularItalic: { 400: -75, 500: -68, 700: -63, 900: -57 },
+          glideExact: { 400: -75, 500: -68, 700: -63, 900: -57 },
+          glideVf: { 400: -75, 500: -68, 700: -63, 900: -57 },
+        },
+        yo: {
+          circularItalic: { 400: -80, 500: -85, 700: -89, 900: -94 },
+          glideExact: { 400: -80, 500: -85, 700: -89, 900: -94 },
+          glideVf: { 400: -80, 500: -85, 700: -89, 900: -94 },
+        },
+        va: {
+          circularItalic: { 400: -80, 500: -80, 700: -80, 900: -80 },
+          glideExact: { 400: -80, 500: -80, 700: -80, 900: -80 },
+          glideVf: { 400: -80, 500: -80, 700: -80, 900: -80 },
+        },
+        av: {
+          circularItalic: { 400: -80, 500: -78, 700: -77, 900: -76 },
+          glideExact: { 400: -80, 500: -78, 700: -77, 900: -76 },
+          glideVf: { 400: -80, 500: -78, 700: -77, 900: -76 },
+        },
+        lt: {
+          circularItalic: { 400: -100, 500: -102, 700: -103, 900: -105 },
+          glideExact: { 400: -100, 500: -102, 700: -103, 900: -105 },
+          glideVf: { 400: -100, 500: -102, 700: -103, 900: -105 },
+        },
+      };
+
+      function updateWeight() {
+        document.documentElement.style.setProperty("--weight", state.weight);
+        weightValue.textContent = String(state.weight);
+
+        instanceButtons.forEach((button) => {
+          button.dataset.active = String(Number(button.dataset.instanceWeight) === state.weight);
+        });
+
+        updateKerningLab();
+      }
+
+      function updateCopy() {
+        const lines = specimenInput.value.replace(/\r/g, "").split("\n");
+        const headline = (lines[0] || "").trim() || defaults.headline;
+        const body = lines
+          .slice(1)
+          .join(" ")
+          .trim() || defaults.body;
+        const waterfall = body.split(".")[0].trim() || headline;
+
+        romanHeadline.textContent = headline;
+        italicHeadline.textContent = headline;
+        romanBody.textContent = body;
+        italicBody.textContent = body;
+
+        instanceSamples.forEach((node) => {
+          node.textContent = headline;
+        });
+
+        waterfallSamples.forEach((node) => {
+          node.textContent = waterfall;
+        });
+      }
+
+      function nearestNamedWeight(weight) {
+        return namedWeights.reduce((best, current) =>
+          Math.abs(current - weight) < Math.abs(best - weight) ? current : best
+        );
+      }
+
+      function extractPair(text) {
+        const compact = (text || "").replace(/\s+/g, "");
+        return compact.slice(0, 2) || "ap";
+      }
+
+      function updateKerningLab() {
+        const sample = kerningSampleInput.value.trim() || "ap\napap paper taper caper\npa aa an av Ta";
+        const pair = extractPair(sample);
+        const lookup = pair.toLowerCase();
+        const snappedWeight = nearestNamedWeight(state.weight);
+        const pairData = kerningPairs[lookup] || null;
+
+        kerningPairLabel.textContent = pair;
+        kerningWeightLabel.textContent =
+          snappedWeight === state.weight ? String(state.weight) : `${state.weight} → ${snappedWeight}`;
+        kerningCircularValue.textContent = pairData ? String(pairData.circularItalic[snappedWeight]) : "n/a";
+        kerningGlideExactValue.textContent = pairData ? String(pairData.glideExact[snappedWeight]) : "n/a";
+        kerningGlideVfValue.textContent = pairData ? String(pairData.glideVf[snappedWeight]) : "n/a";
+
+        kerningProofs.forEach((node) => {
+          node.textContent = sample;
+        });
+      }
+
+      weightRange.addEventListener("input", () => {
+        state.weight = Number(weightRange.value);
+        updateWeight();
+      });
+
+      instanceButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          state.weight = Number(button.dataset.instanceWeight);
+          weightRange.value = String(state.weight);
+          updateWeight();
+        });
+      });
+
+      specimenInput.addEventListener("input", updateCopy);
+      kerningSampleInput.addEventListener("input", updateKerningLab);
+
+      updateWeight();
+      updateCopy();
+      updateKerningLab();
+    </script>
+  </body>
+</html>
