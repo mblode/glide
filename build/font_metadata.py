@@ -8,7 +8,13 @@ from fontTools.ttLib import TTFont
 DESIGNER = "Matthew Blode"
 MANUFACTURER = "Matthew Blode"
 VENDOR_ID = "MBLD"
-VERSION_STRING = "Version 1.001"
+
+WEIGHT_NAMES: dict[int, str] = {
+    400: "Regular",
+    500: "Medium",
+    700: "Bold",
+    900: "Black",
+}
 
 
 def set_name_record(font: TTFont, name_id: int, value: str) -> None:
@@ -25,7 +31,7 @@ def patch_metadata(
     style_name: str,
     weight: int,
     italic: bool,
-    version_string: str = VERSION_STRING,
+    version_string: str,
     designer: str = DESIGNER,
     manufacturer: str = MANUFACTURER,
     vendor_id: str = VENDOR_ID,

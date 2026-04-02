@@ -2,7 +2,7 @@
 """Generate static font instances from a Glide variable font.
 
 Uses fontTools.varLib.instancer to pin the weight axis at specific values,
-producing static TTF (and optionally WOFF2) fonts.  With ``--validate``, each
+producing static TTF fonts.  With ``--validate``, each
 generated instance is compared glyph-by-glyph against the original static
 master at the same weight and a deviation report is printed.
 """
@@ -16,18 +16,10 @@ from pathlib import Path
 
 from fontTools.pens.recordingPen import RecordingPen
 from fontTools.ttLib import TTFont
-from fontTools.ttLib.woff2 import compress as compress_woff2
 from fontTools.varLib.instancer import instantiateVariableFont
 
+from font_metadata import WEIGHT_NAMES
 from source_manifest import family_key_for_font_path, load_source_config
-
-
-WEIGHT_NAMES: dict[int, str] = {
-    400: "Regular",
-    500: "Medium",
-    700: "Bold",
-    900: "Black",
-}
 
 
 def parse_args() -> argparse.Namespace:
@@ -48,11 +40,6 @@ def parse_args() -> argparse.Namespace:
         "--weights",
         default="400,500,700,900",
         help="Comma-separated weight values to generate.",
-    )
-    parser.add_argument(
-        "--woff2",
-        action="store_true",
-        help="Also generate WOFF2 versions.",
     )
     parser.add_argument(
         "--validate",
@@ -157,7 +144,6 @@ def generate_instances(
     variable_font_path: Path,
     output_dir: Path,
     weights: list[int],
-    woff2: bool,
 ) -> dict[int, Path]:
     """Generate static instances at the given weight values."""
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -171,14 +157,6 @@ def generate_instances(
         ttf_path = output_dir / f"{stem}-{weight_name}.ttf"
         static_font.save(ttf_path)
         print(f"Saved: {ttf_path}")
-
-        if woff2:
-            woff2_path = ttf_path.with_suffix(".woff2")
-            try:
-                compress_woff2(str(ttf_path), str(woff2_path))
-                print(f"Saved: {woff2_path}")
-            except ImportError as exc:
-                print(f"Skipped WOFF2 for {ttf_path.name}: {exc}")
 
         generated[weight] = ttf_path
     return generated
@@ -276,7 +254,7 @@ def main() -> int:
         raise SystemExit(f"Variable font not found: {variable_font_path}")
 
     print(f"Generating static instances from: {variable_font_path}")
-    generated = generate_instances(variable_font_path, output_dir, weights, args.woff2)
+    generated = generate_instances(variable_font_path, output_dir, weights)
 
     if args.validate:
         sample_dir = Path(args.validate).resolve()

@@ -14,15 +14,7 @@ from fontTools.ttLib import TTFont
 from fontTools.ttLib.woff2 import compress as compress_woff2
 from fontTools.varLib.instancer import instantiateVariableFont
 
-from font_metadata import DESIGNER, MANUFACTURER, patch_metadata
-
-
-WEIGHT_NAMES = {
-    400: "Regular",
-    500: "Medium",
-    700: "Bold",
-    900: "Black",
-}
+from font_metadata import DESIGNER, MANUFACTURER, WEIGHT_NAMES, patch_metadata
 LEGACY_NAME = "F" + "ingertip"
 
 

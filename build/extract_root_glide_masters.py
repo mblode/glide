@@ -9,13 +9,7 @@ from pathlib import Path
 from fontTools.ttLib import TTFont
 from fontTools.varLib.instancer import instantiateVariableFont
 
-
-WEIGHT_NAMES: dict[int, str] = {
-    400: "Regular",
-    500: "Medium",
-    700: "Bold",
-    900: "Black",
-}
+from font_metadata import WEIGHT_NAMES
 
 
 def parse_args() -> argparse.Namespace:
