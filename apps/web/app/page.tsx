@@ -153,7 +153,7 @@ export default function Home() {
               <div className="flex flex-wrap gap-3">
                 <Button variant="outline" size="sm" asChild>
                   <a
-                    href="https://ui.blode.co/glide-variable.woff2"
+                    href="https://glide.blode.co/glide-variable.woff2"
                     download="glide-variable.woff2"
                   >
                     <DownloadIcon data-icon="inline-start" />
@@ -162,7 +162,7 @@ export default function Home() {
                 </Button>
                 <Button variant="outline" size="sm" asChild>
                   <a
-                    href="https://ui.blode.co/glide-variable-italic.woff2"
+                    href="https://glide.blode.co/glide-variable-italic.woff2"
                     download="glide-variable-italic.woff2"
                   >
                     <DownloadIcon data-icon="inline-start" />
