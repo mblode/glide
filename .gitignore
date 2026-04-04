@@ -1,6 +1,7 @@
 .DS_Store
 .firecrawl/
 .venv/
-build/__pycache__/
-build/work/
-build/release/
+node_modules/
+.next/
+.turbo/
+*(Autosaved)*
