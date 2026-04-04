@@ -2,118 +2,18 @@
   "missing": [],
   "counts": {
     "variable_ttf": 2,
-    "variable_woff": 2,
     "variable_woff2": 2,
-    "static_ttf": 8,
-    "static_woff": 8,
-    "static_woff2": 8,
-    "static_otf": 8
+    "static_woff2": 8
   },
   "fonts": [
     {
-      "path": "fonts/static/ttf/glide-black.ttf",
+      "path": "fonts/glide-variable.ttf",
       "has_legacy_name": false,
       "designer": ["Matthew Blode"],
       "manufacturer": ["Matthew Blode"]
     },
     {
-      "path": "fonts/static/ttf/glide-black-italic.ttf",
-      "has_legacy_name": false,
-      "designer": ["Matthew Blode"],
-      "manufacturer": ["Matthew Blode"]
-    },
-    {
-      "path": "fonts/static/ttf/glide-bold.ttf",
-      "has_legacy_name": false,
-      "designer": ["Matthew Blode"],
-      "manufacturer": ["Matthew Blode"]
-    },
-    {
-      "path": "fonts/static/ttf/glide-bold-italic.ttf",
-      "has_legacy_name": false,
-      "designer": ["Matthew Blode"],
-      "manufacturer": ["Matthew Blode"]
-    },
-    {
-      "path": "fonts/static/ttf/glide-medium.ttf",
-      "has_legacy_name": false,
-      "designer": ["Matthew Blode"],
-      "manufacturer": ["Matthew Blode"]
-    },
-    {
-      "path": "fonts/static/ttf/glide-medium-italic.ttf",
-      "has_legacy_name": false,
-      "designer": ["Matthew Blode"],
-      "manufacturer": ["Matthew Blode"]
-    },
-    {
-      "path": "fonts/static/ttf/glide-regular.ttf",
-      "has_legacy_name": false,
-      "designer": ["Matthew Blode"],
-      "manufacturer": ["Matthew Blode"]
-    },
-    {
-      "path": "fonts/static/ttf/glide-regular-italic.ttf",
-      "has_legacy_name": false,
-      "designer": ["Matthew Blode"],
-      "manufacturer": ["Matthew Blode"]
-    },
-    {
-      "path": "fonts/variable/ttf/glide-variable.ttf",
-      "has_legacy_name": false,
-      "designer": ["Matthew Blode"],
-      "manufacturer": ["Matthew Blode"]
-    },
-    {
-      "path": "fonts/variable/ttf/glide-variable-italic.ttf",
-      "has_legacy_name": false,
-      "designer": ["Matthew Blode"],
-      "manufacturer": ["Matthew Blode"]
-    },
-    {
-      "path": "fonts/static/otf/glide-black.otf",
-      "has_legacy_name": false,
-      "designer": ["Matthew Blode"],
-      "manufacturer": ["Matthew Blode"]
-    },
-    {
-      "path": "fonts/static/otf/glide-black-italic.otf",
-      "has_legacy_name": false,
-      "designer": ["Matthew Blode"],
-      "manufacturer": ["Matthew Blode"]
-    },
-    {
-      "path": "fonts/static/otf/glide-bold.otf",
-      "has_legacy_name": false,
-      "designer": ["Matthew Blode"],
-      "manufacturer": ["Matthew Blode"]
-    },
-    {
-      "path": "fonts/static/otf/glide-bold-italic.otf",
-      "has_legacy_name": false,
-      "designer": ["Matthew Blode"],
-      "manufacturer": ["Matthew Blode"]
-    },
-    {
-      "path": "fonts/static/otf/glide-medium.otf",
-      "has_legacy_name": false,
-      "designer": ["Matthew Blode"],
-      "manufacturer": ["Matthew Blode"]
-    },
-    {
-      "path": "fonts/static/otf/glide-medium-italic.otf",
-      "has_legacy_name": false,
-      "designer": ["Matthew Blode"],
-      "manufacturer": ["Matthew Blode"]
-    },
-    {
-      "path": "fonts/static/otf/glide-regular.otf",
-      "has_legacy_name": false,
-      "designer": ["Matthew Blode"],
-      "manufacturer": ["Matthew Blode"]
-    },
-    {
-      "path": "fonts/static/otf/glide-regular-italic.otf",
+      "path": "fonts/glide-variable-italic.ttf",
       "has_legacy_name": false,
       "designer": ["Matthew Blode"],
       "manufacturer": ["Matthew Blode"]
