@@ -148,8 +148,29 @@ export default function Home() {
             <InstallStep
               step={1}
               title="Download the font files"
-              description="Download glide-variable.woff2 and glide-variable-italic.woff2 and place them in your project's public/ directory."
-            />
+              description="Download the font files and place them in your project's public/ directory."
+            >
+              <div className="flex flex-wrap gap-3">
+                <Button variant="outline" size="sm" asChild>
+                  <a
+                    href="https://ui.blode.co/glide-variable.woff2"
+                    download="glide-variable.woff2"
+                  >
+                    <DownloadIcon data-icon="inline-start" />
+                    glide-variable.woff2
+                  </a>
+                </Button>
+                <Button variant="outline" size="sm" asChild>
+                  <a
+                    href="https://ui.blode.co/glide-variable-italic.woff2"
+                    download="glide-variable-italic.woff2"
+                  >
+                    <DownloadIcon data-icon="inline-start" />
+                    glide-variable-italic.woff2
+                  </a>
+                </Button>
+              </div>
+            </InstallStep>
 
             <InstallStep
               step={2}
