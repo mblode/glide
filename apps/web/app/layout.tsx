@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   title: "Glide - A Variable Sans-Serif Typeface",
   description:
     "A variable sans-serif typeface by Matthew Blode. Supports weights from 400 to 900 in roman and italic styles.",
+};
+
+export const viewport: Viewport = {
   themeColor: "#0a0a0a",
 };
 

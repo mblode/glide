@@ -1,6 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Slider } from "@/components/ui/slider";
+import { Textarea } from "@/components/ui/textarea";
+import { Label } from "@/components/ui/label";
 
 const instances = [
   { weight: 400, label: "Regular" },
@@ -24,60 +28,46 @@ export function Playground() {
   return (
     <div className="space-y-6">
       <div className="grid gap-4 sm:grid-cols-2">
-        <div className="rounded-xl border border-border bg-card p-5">
-          <label
-            htmlFor="weight-range"
-            className="text-xs font-medium tracking-widest text-muted-foreground uppercase"
-          >
-            Weight
-          </label>
-          <p
-            className="mt-2 text-3xl font-bold tracking-tight tabular-nums"
-            style={{ fontWeight: weight }}
-          >
-            {weight}
-          </p>
-          <input
-            id="weight-range"
-            type="range"
+        <div className="space-y-4">
+          <div className="flex items-baseline justify-between">
+            <Label htmlFor="weight-slider">Weight</Label>
+            <span
+              className="text-2xl font-bold tracking-tight tabular-nums"
+              style={{ fontWeight: weight }}
+            >
+              {weight}
+            </span>
+          </div>
+          <Slider
+            id="weight-slider"
             min={400}
             max={900}
             step={1}
-            value={weight}
-            onChange={(e) => setWeight(Number(e.target.value))}
-            className="mt-4 w-full accent-mint touch-manipulation"
+            value={[weight]}
+            onValueChange={([v]) => setWeight(v)}
           />
-          <div className="mt-3 grid grid-cols-4 gap-2">
+          <div className="grid grid-cols-4 gap-2">
             {instances.map((inst) => (
-              <button
+              <Button
                 key={inst.weight}
-                type="button"
+                size="sm"
+                variant={weight === inst.weight ? "default" : "outline"}
                 onClick={() => setWeight(inst.weight)}
-                className={`rounded-lg px-2 py-2 text-sm font-medium transition-colors ${
-                  weight === inst.weight
-                    ? "bg-foreground text-background"
-                    : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
-                }`}
               >
                 {inst.label}
-              </button>
+              </Button>
             ))}
           </div>
         </div>
 
-        <div className="rounded-xl border border-border bg-card p-5">
-          <label
-            htmlFor="custom-text"
-            className="text-xs font-medium tracking-widest text-muted-foreground uppercase"
-          >
-            Custom text
-          </label>
-          <textarea
+        <div className="space-y-2">
+          <Label htmlFor="custom-text">Custom text</Label>
+          <Textarea
             id="custom-text"
             value={text}
             onChange={(e) => setText(e.target.value)}
             spellCheck={false}
-            className="mt-3 min-h-[120px] w-full resize-y rounded-lg border border-input bg-background px-4 py-3 text-base leading-relaxed focus:outline-none focus:ring-2 focus:ring-ring"
+            rows={4}
           />
         </div>
       </div>

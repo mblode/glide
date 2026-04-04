@@ -1,0 +1,29 @@
+/* Variable font usage:
+:root { font-family: "Glide", sans-serif; }
+@supports (font-variation-settings: normal) {
+  :root { font-family: "GlideVariable", sans-serif; }
+} */
+@font-face {
+  font-family: GlideVariable;
+  font-style: normal;
+  font-weight: 400 900;
+  font-display: swap;
+  src: url("glide-variable.woff2") format("woff2");
+}
+@font-face {
+  font-family: GlideVariable;
+  font-style: italic;
+  font-weight: 400 900;
+  font-display: swap;
+  src: url("glide-variable-italic.woff2") format("woff2");
+}
+
+/* static fonts */
+@font-face { font-family: "Glide"; font-style: normal; font-weight: 400; font-display: swap; src: url("glide-regular.woff2") format("woff2"); }
+@font-face { font-family: "Glide"; font-style: italic; font-weight: 400; font-display: swap; src: url("glide-regular-italic.woff2") format("woff2"); }
+@font-face { font-family: "Glide"; font-style: normal; font-weight: 500; font-display: swap; src: url("glide-medium.woff2") format("woff2"); }
+@font-face { font-family: "Glide"; font-style: italic; font-weight: 500; font-display: swap; src: url("glide-medium-italic.woff2") format("woff2"); }
+@font-face { font-family: "Glide"; font-style: normal; font-weight: 700; font-display: swap; src: url("glide-bold.woff2") format("woff2"); }
+@font-face { font-family: "Glide"; font-style: italic; font-weight: 700; font-display: swap; src: url("glide-bold-italic.woff2") format("woff2"); }
+@font-face { font-family: "Glide"; font-style: normal; font-weight: 900; font-display: swap; src: url("glide-black.woff2") format("woff2"); }
+@font-face { font-family: "Glide"; font-style: italic; font-weight: 900; font-display: swap; src: url("glide-black-italic.woff2") format("woff2"); }
