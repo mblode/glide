@@ -13,13 +13,17 @@ const glide = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Glide - A Variable Sans-Serif Typeface",
+  title: "Glide — Variable Font Family Crafted for UI",
   description:
-    "A variable sans-serif typeface by Matthew Blode. Supports weights from 400 to 900 in roman and italic styles.",
+    "Glide is a variable sans-serif font family by Matthew Blode. Weights from 400 to 900 in roman and italic.",
+  other: {
+    "apple-mobile-web-app-title": "Glide",
+  },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#0a0a0a",
+  themeColor: "#fbb6cd",
+  colorScheme: "light",
 };
 
 export default function RootLayout({
@@ -28,7 +32,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${glide.variable} dark antialiased`}>
+    <html lang="en" className={`${glide.variable} antialiased`}>
       <body className="min-h-dvh bg-background text-foreground">
         <a
           href="#main-content"

@@ -2,57 +2,39 @@ import Image from "next/image";
 import { DownloadIcon, PencilIcon } from "blode-icons-react";
 import { Button } from "@/components/ui/button";
 import { Playground } from "@/components/playground";
+import { WeightShowcase } from "@/components/weight-showcase";
 import { CodeBlock } from "@/components/code-block";
+import { cn } from "@/lib/utils";
 import { siteConfig } from "@/lib/config";
-
-const weights = [
-  { weight: 400, name: "Regular" },
-  { weight: 500, name: "Medium" },
-  { weight: 600, name: "Semibold" },
-  { weight: 700, name: "Bold" },
-  { weight: 800, name: "Extrabold" },
-  { weight: 900, name: "Black" },
-] as const;
 
 function Section({
   id,
   children,
+  bordered = true,
 }: {
   id?: string;
   children: React.ReactNode;
+  bordered?: boolean;
 }) {
   return (
     <section
       id={id}
-      className="scroll-mt-6 rounded-2xl border border-border bg-card/50 p-6 backdrop-blur-sm sm:p-8"
+      className={cn(
+        "scroll-mt-6",
+        bordered &&
+          "rounded-2xl border border-border bg-card/50 p-6 backdrop-blur-sm sm:p-8"
+      )}
     >
       {children}
     </section>
   );
 }
 
-function WeightRow({
-  weight,
-  name,
-  italic = false,
-}: {
-  weight: number;
-  name: string;
-  italic?: boolean;
-}) {
+function SectionHeading({ children }: { children: React.ReactNode }) {
   return (
-    <div className="grid items-baseline gap-2 border-t border-border py-4 first:border-t-0 first:pt-0 sm:grid-cols-[140px_1fr] sm:gap-4">
-      <div className="text-sm text-muted-foreground tabular-nums">
-        <span className="block font-semibold text-foreground">{name}</span>
-        {weight}
-      </div>
-      <p
-        className="text-2xl leading-snug tracking-tight sm:text-3xl"
-        style={{ fontWeight: weight, fontStyle: italic ? "italic" : "normal" }}
-      >
-        The quick brown fox jumps over the lazy dog.
-      </p>
-    </div>
+    <h2 className="text-xs font-bold uppercase tracking-widest text-muted-foreground">
+      {children}
+    </h2>
   );
 }
 
@@ -87,64 +69,49 @@ function InstallStep({
 
 export default function Home() {
   return (
-    <div className="mx-auto w-full max-w-5xl px-4 py-8 sm:px-6 sm:py-12">
-      <main id="main-content" className="space-y-5">
-        {/* Hero */}
-        <section className="flex flex-col items-center gap-6 rounded-2xl border border-border bg-card/50 px-6 py-16 text-center backdrop-blur-sm sm:py-24">
-          <h1 className="text-7xl font-black leading-[0.9] tracking-[-0.06em] sm:text-8xl lg:text-9xl">
-            Glide
-          </h1>
-          <p className="max-w-lg text-lg leading-relaxed text-muted-foreground">
-            A variable sans-serif typeface supporting weights from 400 to 900 in
-            both roman and italic styles.
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-3">
-            <Button asChild>
-              <a href="#install">
-                <DownloadIcon data-icon="inline-start" />
-                Install
-              </a>
-            </Button>
-            <Button variant="outline" asChild>
-              <a href="#playground">
-                <PencilIcon data-icon="inline-start" />
-                Try it
-              </a>
-            </Button>
-          </div>
-        </section>
+    <main id="main-content">
+      {/* Hero */}
+      <section className="flex flex-col items-center gap-6 px-4 py-24 text-center sm:px-6 sm:py-40">
+        <h1 className="animate-fade-up text-8xl font-black leading-[0.85] tracking-[-0.06em] text-display sm:text-9xl lg:text-[11rem]">
+          Glide
+        </h1>
+        <p className="animate-fade-up-delay-1 max-w-md text-xl leading-relaxed text-muted-foreground sm:text-2xl">
+          Variable font family crafted for UI.
+        </p>
+        <div className="animate-fade-up-delay-2 flex flex-wrap items-center justify-center gap-3">
+          <Button asChild>
+            <a href="#install">
+              <DownloadIcon data-icon="inline-start" />
+              Install
+            </a>
+          </Button>
+          <Button variant="outline" asChild>
+            <a href="#playground">
+              <PencilIcon data-icon="inline-start" />
+              Try it
+            </a>
+          </Button>
+        </div>
+      </section>
 
+      <div className="mx-auto w-full max-w-5xl space-y-5 px-4 pb-8 sm:px-6">
         {/* Playground */}
         <Section id="playground">
-          <Playground />
-        </Section>
-
-        {/* Roman weights */}
-        <Section>
-          <div>
-            {weights.map((w) => (
-              <WeightRow key={w.weight} weight={w.weight} name={w.name} />
-            ))}
+          <div className="space-y-6">
+            <SectionHeading>Playground</SectionHeading>
+            <Playground />
           </div>
         </Section>
 
-        {/* Italic weights */}
-        <Section>
-          <div>
-            {weights.map((w) => (
-              <WeightRow
-                key={w.weight}
-                weight={w.weight}
-                name={`${w.name} Italic`}
-                italic
-              />
-            ))}
-          </div>
+        {/* Weights */}
+        <Section bordered={false}>
+          <WeightShowcase />
         </Section>
 
         {/* Install */}
         <Section id="install">
           <div className="space-y-8">
+            <SectionHeading>Install</SectionHeading>
             <InstallStep
               step={1}
               title="Download the font files"
@@ -209,7 +176,7 @@ export default function RootLayout({
           <div className="flex items-center gap-1">
             Crafted by
             <a
-              className="flex items-center gap-2 rounded-full py-1.5 pr-2.5 pl-1.5 transition-colors hover:text-foreground"
+              className="flex items-center gap-2 rounded-full py-1.5 pr-2.5 pl-1.5 transition-colors hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring focus-visible:rounded-full"
               href={siteConfig.links.author}
               rel="noopener noreferrer"
               target="_blank"
@@ -219,7 +186,6 @@ export default function RootLayout({
                 className="rounded-full"
                 height={20}
                 src="/matthew-blode-profile.jpg"
-                unoptimized
                 width={20}
               />
               Matthew Blode
@@ -231,7 +197,7 @@ export default function RootLayout({
             </span>{" "}
             &bull;
             <a
-              className="text-muted-foreground transition-colors hover:text-foreground"
+              className="text-muted-foreground transition-colors hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring focus-visible:rounded-lg"
               href={siteConfig.links.github}
               rel="noopener noreferrer"
               target="_blank"
@@ -240,7 +206,7 @@ export default function RootLayout({
             </a>
           </div>
         </footer>
-      </main>
-    </div>
+      </div>
+    </main>
   );
 }
