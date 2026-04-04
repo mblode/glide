@@ -1,0 +1,7 @@
+.DS_Store
+.firecrawl/
+.venv/
+node_modules/
+.next/
+.turbo/
+*(Autosaved)*
