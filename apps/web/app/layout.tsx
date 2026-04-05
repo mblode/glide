@@ -1,5 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
+import { GoogleAnalytics } from "@next/third-parties/google";
+import { JsonLd } from "@/components/json-ld";
+import { siteConfig } from "@/lib/config";
 import "./globals.css";
 
 const glide = localFont({
@@ -13,9 +16,24 @@ const glide = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.url),
   title: "Glide — Variable Font Family Crafted for UI",
-  description:
-    "Glide is a variable sans-serif font family by Matthew Blode. Weights from 400 to 900 in roman and italic.",
+  description: siteConfig.description,
+  openGraph: {
+    type: "website",
+    url: siteConfig.url,
+    title: "Glide — Variable Font Family Crafted for UI",
+    description: siteConfig.description,
+    siteName: siteConfig.name,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Glide — Variable Font Family Crafted for UI",
+    description: siteConfig.description,
+  },
+  alternates: {
+    canonical: siteConfig.url,
+  },
   other: {
     "apple-mobile-web-app-title": "Glide",
   },
@@ -34,6 +52,43 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${glide.variable} antialiased`}>
       <body className="min-h-dvh bg-background text-foreground">
+        <JsonLd
+          data={{
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            name: siteConfig.author.name,
+            url: siteConfig.author.url,
+          }}
+        />
+        <JsonLd
+          data={{
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            name: siteConfig.name,
+            url: siteConfig.url,
+          }}
+        />
+        <JsonLd
+          data={{
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            name: "Glide Variable Font",
+            applicationCategory: "DesignApplication",
+            operatingSystem: "All",
+            description: siteConfig.description,
+            url: siteConfig.url,
+            author: {
+              "@type": "Person",
+              name: siteConfig.author.name,
+              url: siteConfig.author.url,
+            },
+            offers: {
+              "@type": "Offer",
+              price: "0",
+              priceCurrency: "USD",
+            },
+          }}
+        />
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-background focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:shadow-lg focus:ring-2 focus:ring-ring"
@@ -42,6 +97,7 @@ export default function RootLayout({
         </a>
         {children}
       </body>
+      <GoogleAnalytics gaId="G-32358W56XH" />
     </html>
   );
 }

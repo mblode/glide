@@ -20,7 +20,7 @@ export function CodeBlock({
         <code>{children}</code>
       </pre>
       <CopyButton
-        className="absolute right-3 top-3 opacity-0 transition-opacity group-hover:opacity-100 group-focus-within:opacity-100 focus-visible:opacity-100"
+        className="absolute right-3 top-3 opacity-0 transition-opacity duration-150 ease-out group-hover:opacity-100 group-focus-within:opacity-100 focus-visible:opacity-100"
         content={children}
         variant="outline"
         size="sm"

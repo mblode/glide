@@ -84,14 +84,14 @@ const CopyButton = ({
       aria-label={isCopied ? "Copied" : "Copy code"}
       {...props}
     >
-      <AnimatePresence mode="popLayout">
+      <AnimatePresence mode="wait" initial={false}>
         <motion.span
-          animate={{ filter: "blur(0px)", opacity: 1, scale: 1 }}
-          data-slot="copy-button-icon"
-          exit={{ filter: "blur(4px)", opacity: 0.4, scale: 0 }}
-          initial={false}
           key={isCopied ? "check" : "copy"}
-          transition={{ duration: 0.25 }}
+          data-slot="copy-button-icon"
+          initial={{ opacity: 0, scale: 0.8, filter: "blur(4px)" }}
+          animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
+          exit={{ opacity: 0, scale: 0.8, filter: "blur(4px)" }}
+          transition={{ type: "spring", duration: 0.2, bounce: 0 }}
         >
           <Icon />
         </motion.span>

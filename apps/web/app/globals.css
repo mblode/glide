@@ -88,23 +88,25 @@
   @keyframes fade-up {
     from {
       opacity: 0;
-      transform: translateY(12px);
+      transform: translateY(8px);
+      filter: blur(5px);
     }
     to {
       opacity: 1;
       transform: translateY(0);
+      filter: blur(0px);
     }
   }
 
   .animate-fade-up {
-    animation: fade-up 600ms ease-out both;
+    animation: fade-up 800ms cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   }
 
   .animate-fade-up-delay-1 {
-    animation: fade-up 600ms ease-out 100ms both;
+    animation: fade-up 800ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 100ms both;
   }
 
   .animate-fade-up-delay-2 {
-    animation: fade-up 600ms ease-out 200ms both;
+    animation: fade-up 800ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 200ms both;
   }
 }
