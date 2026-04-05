@@ -48,9 +48,7 @@ export function WeightShowcase({
   return (
     <div className="space-y-4">
       <div className="flex items-center gap-2">
-        <h2 className="text-xs font-bold uppercase tracking-widest text-muted-foreground">
-          Weights
-        </h2>
+        <h2 className="text-lg font-bold tracking-tight">Weights</h2>
         <div className="flex gap-1">
           <Button
             size="xs"
