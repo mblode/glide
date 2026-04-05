@@ -5,7 +5,7 @@ DisplayStrings = (
 A,
 I,
 k,
-"©"
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
 );
 axes = (
 {
@@ -752,56 +752,56 @@ axesValues = (
 customParameters = (
 {
 name = typoAscender;
-value = 849;
+value = 969;
 },
 {
 name = typoDescender;
-value = -151;
+value = -241;
 },
 {
 name = typoLineGap;
-value = 200;
+value = 0;
 },
 {
 name = winAscent;
-value = 997;
+value = 969;
 },
 {
 name = winDescent;
-value = 268;
+value = 241;
 },
 {
 name = hheaAscender;
-value = 849;
+value = 969;
 },
 {
 name = hheaDescender;
-value = -151;
+value = -241;
 },
 {
 name = strikeoutPosition;
-value = 289;
+value = 328;
 },
 {
 name = strikeoutSize;
-value = 80;
+value = 68;
 }
 );
 id = m01;
 metricValues = (
 {
-pos = 849;
+pos = 969;
 },
 {
-pos = 709;
+pos = 728;
 },
 {
-pos = 481;
+pos = 546;
 },
 {
 },
 {
-pos = -151;
+pos = -241;
 },
 {
 }
@@ -815,56 +815,56 @@ axesValues = (
 customParameters = (
 {
 name = typoAscender;
-value = 849;
+value = 969;
 },
 {
 name = typoDescender;
-value = -151;
+value = -241;
 },
 {
 name = typoLineGap;
-value = 200;
+value = 0;
 },
 {
 name = winAscent;
-value = 997;
+value = 969;
 },
 {
 name = winDescent;
-value = 268;
+value = 241;
 },
 {
 name = hheaAscender;
-value = 849;
+value = 969;
 },
 {
 name = hheaDescender;
-value = -151;
+value = -241;
 },
 {
 name = strikeoutPosition;
-value = 289;
+value = 328;
 },
 {
 name = strikeoutSize;
-value = 80;
+value = 68;
 }
 );
 id = "457127C6-516B-4BCE-A064-A4A10B024F97";
 metricValues = (
 {
-pos = 849;
+pos = 969;
 },
 {
-pos = 709;
+pos = 728;
 },
 {
-pos = 481;
+pos = 546;
 },
 {
 },
 {
-pos = -151;
+pos = -241;
 },
 {
 }
@@ -878,57 +878,57 @@ axesValues = (
 customParameters = (
 {
 name = typoAscender;
-value = 849;
+value = 969;
 },
 {
 name = typoDescender;
-value = -151;
+value = -241;
 },
 {
 name = typoLineGap;
-value = 200;
+value = 0;
 },
 {
 name = winAscent;
-value = 997;
+value = 969;
 },
 {
 name = winDescent;
-value = 268;
+value = 241;
 },
 {
 name = hheaAscender;
-value = 849;
+value = 969;
 },
 {
 name = hheaDescender;
-value = -151;
+value = -241;
 },
 {
 name = strikeoutPosition;
-value = 289;
+value = 328;
 },
 {
 name = strikeoutSize;
-value = 80;
+value = 68;
 }
 );
 iconName = Bold;
 id = "FE9A4304-2405-4E33-9E0D-94AAF7E37A58";
 metricValues = (
 {
-pos = 849;
+pos = 969;
 },
 {
-pos = 709;
+pos = 728;
 },
 {
-pos = 481;
+pos = 546;
 },
 {
 },
 {
-pos = -151;
+pos = -241;
 },
 {
 }
@@ -942,56 +942,56 @@ axesValues = (
 customParameters = (
 {
 name = typoAscender;
-value = 849;
+value = 969;
 },
 {
 name = typoDescender;
-value = -151;
+value = -241;
 },
 {
 name = typoLineGap;
-value = 200;
+value = 0;
 },
 {
 name = winAscent;
-value = 997;
+value = 969;
 },
 {
 name = winDescent;
-value = 268;
+value = 241;
 },
 {
 name = hheaAscender;
-value = 849;
+value = 969;
 },
 {
 name = hheaDescender;
-value = -151;
+value = -241;
 },
 {
 name = strikeoutPosition;
-value = 289;
+value = 328;
 },
 {
 name = strikeoutSize;
-value = 80;
+value = 68;
 }
 );
 id = "089B8108-91C7-41B0-9B46-1FCD66F1F75E";
 metricValues = (
 {
-pos = 849;
+pos = 969;
 },
 {
-pos = 709;
+pos = 728;
 },
 {
-pos = 481;
+pos = 546;
 },
 {
 },
 {
-pos = -151;
+pos = -241;
 },
 {
 }

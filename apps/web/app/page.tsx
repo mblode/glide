@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { InstallSection } from "@/components/install-section";
 import { Playground } from "@/components/playground";
@@ -48,7 +49,7 @@ export default function Home() {
         </p>
         <div className="flex flex-wrap items-center justify-center gap-3">
           <Button asChild>
-            <a href="/download">Download</a>
+            <Link href="/download">Download</Link>
           </Button>
           <Button variant="outline" asChild>
             <a href="#playground">Try it</a>

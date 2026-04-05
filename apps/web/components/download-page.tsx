@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { CodeBlock } from "@/components/code-block";
 import { siteConfig } from "@/lib/config";
@@ -144,12 +145,12 @@ export function DownloadPage() {
     <main id="main-content">
       <div className="mx-auto w-full max-w-2xl space-y-8 px-4 py-16 sm:px-6 sm:py-24">
         {/* Back link */}
-        <a
+        <Link
           href="/"
           className="inline-flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-foreground focus-visible:rounded-lg focus-visible:ring-2 focus-visible:ring-ring"
         >
           ← Back to Glide
-        </a>
+        </Link>
 
         {/* Hero */}
         <section className="space-y-4">
@@ -286,12 +287,12 @@ export function DownloadPage() {
 }`}</CodeBlock>
           <p className="text-sm text-muted-foreground">
             Using Next.js?{" "}
-            <a
+            <Link
               href="/#install"
               className="font-medium text-foreground underline underline-offset-4 transition-colors hover:text-primary"
             >
               See the Next.js installation guide
-            </a>{" "}
+            </Link>{" "}
             for setup with{" "}
             <code className="rounded bg-primary/10 px-1.5 py-0.5 font-mono text-xs text-primary">
               next/font/local
