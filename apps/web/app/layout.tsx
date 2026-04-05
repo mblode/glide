@@ -17,18 +17,18 @@ const glide = localFont({
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
-  title: "Glide — Variable Font Family Crafted for UI",
+  title: "Glide Variable Font Family Crafted for UI",
   description: siteConfig.description,
   openGraph: {
     type: "website",
     url: siteConfig.url,
-    title: "Glide — Variable Font Family Crafted for UI",
+    title: "Glide Variable Font Family Crafted for UI",
     description: siteConfig.description,
     siteName: siteConfig.name,
   },
   twitter: {
     card: "summary_large_image",
-    title: "Glide — Variable Font Family Crafted for UI",
+    title: "Glide Variable Font Family Crafted for UI",
     description: siteConfig.description,
   },
   alternates: {
