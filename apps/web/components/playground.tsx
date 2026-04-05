@@ -74,25 +74,25 @@ export function Playground() {
 
       <div className="space-y-3">
         <p
-          className="text-5xl leading-none tracking-[-0.06em] transition-[font-weight] duration-150 ease-out sm:text-7xl lg:text-8xl"
+          className="text-5xl leading-none tracking-[-0.06em] sm:text-7xl lg:text-8xl"
           style={{ fontWeight: weight }}
         >
           {headline}
         </p>
         <p
-          className="max-w-2xl text-lg leading-snug tracking-tight text-muted-foreground transition-[font-weight] duration-150 ease-out sm:text-xl lg:text-2xl"
+          className="max-w-2xl text-lg leading-snug tracking-tight text-muted-foreground sm:text-xl lg:text-2xl"
           style={{ fontWeight: weight }}
         >
           {body}
         </p>
         <p
-          className="text-5xl italic leading-none tracking-[-0.06em] transition-[font-weight] duration-150 ease-out sm:text-7xl lg:text-8xl"
+          className="text-5xl italic leading-none tracking-[-0.06em] sm:text-7xl lg:text-8xl"
           style={{ fontWeight: weight }}
         >
           {headline}
         </p>
         <p
-          className="max-w-2xl text-lg italic leading-snug tracking-tight text-muted-foreground transition-[font-weight] duration-150 ease-out sm:text-xl lg:text-2xl"
+          className="max-w-2xl text-lg italic leading-snug tracking-tight text-muted-foreground sm:text-xl lg:text-2xl"
           style={{ fontWeight: weight }}
         >
           {body}
