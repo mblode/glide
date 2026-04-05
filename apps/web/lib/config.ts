@@ -12,4 +12,7 @@ export const siteConfig = {
     author: "https://matthewblode.com",
     github: "https://github.com/mblode/glide",
   },
+  get downloadUrl() {
+    return `${this.links.github}/releases/download/v${this.version}/Glide-${this.version}.zip`;
+  },
 };

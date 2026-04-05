@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { DownloadIcon, PencilIcon } from "blode-icons-react";
 import { Button } from "@/components/ui/button";
 import { InstallSection } from "@/components/install-section";
 import { Playground } from "@/components/playground";
@@ -49,16 +48,10 @@ export default function Home() {
         </p>
         <div className="flex flex-wrap items-center justify-center gap-3">
           <Button asChild>
-            <a href="#install">
-              <DownloadIcon data-icon="inline-start" />
-              Install
-            </a>
+            <a href="/download">Download</a>
           </Button>
           <Button variant="outline" asChild>
-            <a href="#playground">
-              <PencilIcon data-icon="inline-start" />
-              Try it
-            </a>
+            <a href="#playground">Try it</a>
           </Button>
         </div>
       </section>
