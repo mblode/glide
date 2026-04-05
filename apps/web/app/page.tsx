@@ -63,7 +63,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="mx-auto w-full max-w-5xl space-y-5 px-4 pb-8 sm:px-6">
+      <div className="mx-auto w-full max-w-5xl space-y-8 px-4 pb-8 sm:px-6">
         {/* Playground */}
         <Section id="playground">
           <div className="space-y-6">
