@@ -323,8 +323,8 @@ def _inject_italic_lookup_defs() -> None:
         if not fea_path.exists():
             continue
         content = fea_path.read_text()
-        if "lookup SUB_5" in content:
-            continue  # already injected
+        if "lookup SUB_5 {" in content:
+            continue  # already injected (definition present)
         fea_path.write_text(ITALIC_LOOKUP_PREFIX + content)
         print(f"  Injected SUB_5/6/7 into {fea_path.parent.name}/features.fea")
 
