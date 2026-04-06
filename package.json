@@ -4,9 +4,11 @@
   "workspaces": ["apps/*"],
   "scripts": {
     "dev": "turbo dev",
-    "build": "turbo build"
+    "build": "turbo build",
+    "build:fonts": "tsx scripts/build-fonts.ts"
   },
   "devDependencies": {
+    "tsx": "^4",
     "turbo": "^2"
   },
   "packageManager": "npm@10.9.2"
