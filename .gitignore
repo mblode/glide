@@ -4,5 +4,9 @@
 node_modules/
 .next/
 .turbo/
-cabinet/
+# Cabinet build artifacts (not the scripts themselves)
+cabinet/input/
+cabinet/*masters/
+cabinet/*.glyphs
+
 *(Autosaved)*
