@@ -1,0 +1,19 @@
+{
+  "name": "@glide/variable-gen",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "description": "Static-to-variable font generation workspace.",
+  "scripts": {
+    "plan": "echo 'See ../../docs/variable-gen-plan.md'",
+    "spec": "echo 'See ../../docs/variable-gen-technical-spec.md'",
+    "prd": "echo 'See ../../docs/prd.md'",
+    "research": "echo 'See ../../docs/variable-gen-research.md'",
+    "audit": "../../.venv/bin/python scripts/audit_variable_font.py --family all",
+    "audit:roman": "../../.venv/bin/python scripts/audit_variable_font.py --family roman",
+    "audit:italic": "../../.venv/bin/python scripts/audit_variable_font.py --family italic",
+    "audit:interpolation": "../../.venv/bin/python scripts/audit_variable_font.py --family all --interpolation-only",
+    "audit:roman:interpolation": "../../.venv/bin/python scripts/audit_variable_font.py --family roman --interpolation-only",
+    "audit:italic:interpolation": "../../.venv/bin/python scripts/audit_variable_font.py --family italic --interpolation-only"
+  }
+}

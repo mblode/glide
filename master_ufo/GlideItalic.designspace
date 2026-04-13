@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<designspace format="5.0">
+  <axes>
+    <axis tag="wght" name="Weight" minimum="100" maximum="950" default="400"/>
+  </axes>
+  <sources>
+    <source filename="GlideItalic_Glide_ThinItalic.ufo" name="Glide ThinItalic" familyname="Glide" stylename="ThinItalic">
+      <lib copy="1"/>
+      <groups copy="1"/>
+      <features copy="1"/>
+      <info copy="1"/>
+      <location>
+        <dimension name="Weight" xvalue="100"/>
+      </location>
+    </source>
+    <source filename="GlideItalic_Glide_Italic.ufo" name="Glide Italic" familyname="Glide" stylename="Italic">
+      <location>
+        <dimension name="Weight" xvalue="400"/>
+      </location>
+    </source>
+    <source filename="GlideItalic_Glide_Italic_{250}.ufo" name="Glide Italic {250}" layer="{250}">
+      <location>
+        <dimension name="Weight" xvalue="250"/>
+      </location>
+    </source>
+    <source filename="GlideItalic_Glide_Italic_{675}.ufo" name="Glide Italic {675}" layer="{675}">
+      <location>
+        <dimension name="Weight" xvalue="675"/>
+      </location>
+    </source>
+    <source filename="GlideItalic_Glide_ExtraBlackItalic.ufo" name="Glide ExtraBlackItalic" familyname="Glide" stylename="ExtraBlackItalic">
+      <location>
+        <dimension name="Weight" xvalue="950"/>
+      </location>
+    </source>
+  </sources>
+  <variable-fonts>
+    <variable-font name="Variable" filename="Glide-VariableVF">
+      <axis-subsets>
+        <axis-subset name="Weight"/>
+      </axis-subsets>
+    </variable-font>
+  </variable-fonts>
+  <instances>
+    <instance name="Glide Thin Italic" familyname="Glide" stylename="Thin Italic" filename="instance_ufos/Glide-ThinItalic.ufo" stylemapfamilyname="Glide Thin Italic" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="100"/>
+      </location>
+    </instance>
+    <instance name="Glide ExtraLight Italic" familyname="Glide" stylename="ExtraLight Italic" filename="instance_ufos/Glide-ExtraLightItalic.ufo" stylemapfamilyname="Glide ExtraLight Italic" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="200"/>
+      </location>
+    </instance>
+    <instance name="Glide Light Italic" familyname="Glide" stylename="Light Italic" filename="instance_ufos/Glide-LightItalic.ufo" stylemapfamilyname="Glide Light Italic" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="300"/>
+      </location>
+    </instance>
+    <instance name="Glide Regular Italic" familyname="Glide" stylename="Regular Italic" filename="instance_ufos/Glide-RegularItalic.ufo" stylemapfamilyname="Glide Italic" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="400"/>
+      </location>
+    </instance>
+    <instance name="Glide Medium Italic" familyname="Glide" stylename="Medium Italic" filename="instance_ufos/Glide-MediumItalic.ufo" stylemapfamilyname="Glide Medium Italic" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="500"/>
+      </location>
+    </instance>
+    <instance name="Glide SemiBold Italic" familyname="Glide" stylename="SemiBold Italic" filename="instance_ufos/Glide-SemiBoldItalic.ufo" stylemapfamilyname="Glide SemiBold Italic" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="600"/>
+      </location>
+    </instance>
+    <instance name="Glide Bold Italic" familyname="Glide" stylename="Bold Italic" filename="instance_ufos/Glide-BoldItalic.ufo" stylemapfamilyname="Glide Bold Italic" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="700"/>
+      </location>
+    </instance>
+    <instance name="Glide ExtraBold Italic" familyname="Glide" stylename="ExtraBold Italic" filename="instance_ufos/Glide-ExtraBoldItalic.ufo" stylemapfamilyname="Glide ExtraBold Italic" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="800"/>
+      </location>
+    </instance>
+    <instance name="Glide Black Italic" familyname="Glide" stylename="Black Italic" filename="instance_ufos/Glide-BlackItalic.ufo" stylemapfamilyname="Glide Black Italic" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="900"/>
+      </location>
+    </instance>
+    <instance name="Glide ExtraBlack Italic" familyname="Glide" stylename="ExtraBlack Italic" filename="instance_ufos/Glide-ExtraBlackItalic.ufo" stylemapfamilyname="Glide ExtraBlack Italic" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="950"/>
+      </location>
+    </instance>
+  </instances>
+</designspace>

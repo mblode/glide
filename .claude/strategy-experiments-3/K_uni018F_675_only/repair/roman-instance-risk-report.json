@@ -1,0 +1,2226 @@
+{
+  "family": "roman",
+  "weights": {
+    "100": {
+      "instance_path": "/Users/mblode/Code/mblode/glide/.claude/strategy-experiments-3/K_uni018F_675_only/build/roman/instances/glide-variable-vf-wght100.ttf",
+      "risky_glyph_count": 73,
+      "risky_glyphs": {
+        "AEacute": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.8,
+          "zero_ink": false
+        },
+        "Aogonek": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.66,
+          "zero_ink": false
+        },
+        "Atilde": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "IJ": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.6,
+          "zero_ink": false
+        },
+        "Itilde": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "Otilde": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "Sacute": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.8,
+          "zero_ink": false
+        },
+        "Scedilla": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.22,
+          "zero_ink": false
+        },
+        "Uogonek": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.83,
+          "zero_ink": false
+        },
+        "a": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.82,
+          "zero_ink": false
+        },
+        "a.ss02": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "aacute": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.5,
+          "zero_ink": false
+        },
+        "aacute.ss02": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "abreve.ss02": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "acircumflex.ss02": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "adieresis": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 1.82,
+          "zero_ink": false
+        },
+        "adieresis.ss02": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "ae": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.2,
+          "zero_ink": false
+        },
+        "aeacute": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 0.2,
+          "zero_ink": false
+        },
+        "agrave.ss02": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "amacron": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.7,
+          "zero_ink": false
+        },
+        "amacron.ss02": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "ampersand.ss04": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.3,
+          "zero_ink": false
+        },
+        "aogonek.ss02": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.31,
+          "zero_ink": false
+        },
+        "aring": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 1.82,
+          "zero_ink": false
+        },
+        "aring.ss02": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "aringacute": {
+          "contours": 5,
+          "intersections": 0,
+          "min_segment_length": 1.5,
+          "zero_ink": false
+        },
+        "aringacute.ss02": {
+          "contours": 5,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "atilde.ss02": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "b": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.9,
+          "zero_ink": false
+        },
+        "d": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.63,
+          "zero_ink": false
+        },
+        "dcaron": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.63,
+          "zero_ink": false
+        },
+        "dslash": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.63,
+          "zero_ink": false
+        },
+        "e": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.2,
+          "zero_ink": false
+        },
+        "eacute": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.2,
+          "zero_ink": false
+        },
+        "ebreve": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.2,
+          "zero_ink": false
+        },
+        "ecaron": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.2,
+          "zero_ink": false
+        },
+        "ecircumflex": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.2,
+          "zero_ink": false
+        },
+        "edieresis": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 0.2,
+          "zero_ink": false
+        },
+        "edotaccent": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.2,
+          "zero_ink": false
+        },
+        "egrave": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.2,
+          "zero_ink": false
+        },
+        "emacron": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.2,
+          "zero_ink": false
+        },
+        "eogonek": {
+          "contours": 2,
+          "intersections": 2,
+          "min_segment_length": 0.64,
+          "zero_ink": false
+        },
+        "ij": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 1.7,
+          "zero_ink": false
+        },
+        "napostrophe": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.31,
+          "zero_ink": false
+        },
+        "oe": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.2,
+          "zero_ink": false
+        },
+        "onehalf": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.45,
+          "zero_ink": false
+        },
+        "pi": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.7,
+          "zero_ink": false
+        },
+        "r": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.49,
+          "zero_ink": false
+        },
+        "racute": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.49,
+          "zero_ink": false
+        },
+        "rcaron": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.49,
+          "zero_ink": false
+        },
+        "s": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.9,
+          "zero_ink": false
+        },
+        "scedilla": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.22,
+          "zero_ink": false
+        },
+        "t": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.16,
+          "zero_ink": false
+        },
+        "tbar": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.01,
+          "zero_ink": false
+        },
+        "tcaron": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.25,
+          "zero_ink": false
+        },
+        "threequarters": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 0.85,
+          "zero_ink": false
+        },
+        "two": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.81,
+          "zero_ink": false
+        },
+        "u": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.5,
+          "zero_ink": false
+        },
+        "uacute": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.5,
+          "zero_ink": false
+        },
+        "ubreve": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.5,
+          "zero_ink": false
+        },
+        "ucircumflex": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.5,
+          "zero_ink": false
+        },
+        "udieresis": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.5,
+          "zero_ink": false
+        },
+        "ugrave": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.5,
+          "zero_ink": false
+        },
+        "uhungarumlaut": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.01,
+          "zero_ink": false
+        },
+        "umacron": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.5,
+          "zero_ink": false
+        },
+        "uni018F": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.81,
+          "zero_ink": false
+        },
+        "uni021B": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.06,
+          "zero_ink": false
+        },
+        "uni0259": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.2,
+          "zero_ink": false
+        },
+        "uni03BC": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.5,
+          "zero_ink": false
+        },
+        "uogonek": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.31,
+          "zero_ink": false
+        },
+        "uring": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.5,
+          "zero_ink": false
+        },
+        "utilde": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.5,
+          "zero_ink": false
+        }
+      }
+    },
+    "250": {
+      "instance_path": "/Users/mblode/Code/mblode/glide/.claude/strategy-experiments-3/K_uni018F_675_only/build/roman/instances/glide-variable-vf-wght250.ttf",
+      "risky_glyph_count": 69,
+      "risky_glyphs": {
+        "Aogonek": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.46,
+          "zero_ink": false
+        },
+        "Atilde": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.0,
+          "zero_ink": false
+        },
+        "IJ": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.7,
+          "zero_ink": false
+        },
+        "Itilde": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.6,
+          "zero_ink": false
+        },
+        "Otilde": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.02,
+          "zero_ink": false
+        },
+        "Scedilla": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.32,
+          "zero_ink": false
+        },
+        "Uogonek": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.97,
+          "zero_ink": false
+        },
+        "a": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.96,
+          "zero_ink": false
+        },
+        "a.ss02": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "aacute": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.96,
+          "zero_ink": false
+        },
+        "aacute.ss02": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "abreve.ss02": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "acircumflex.ss02": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "adieresis": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 1.96,
+          "zero_ink": false
+        },
+        "adieresis.ss02": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "ae": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.86,
+          "zero_ink": false
+        },
+        "aeacute": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 0.69,
+          "zero_ink": false
+        },
+        "agrave.ss02": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "amacron": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.96,
+          "zero_ink": false
+        },
+        "amacron.ss02": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "ampersand": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.85,
+          "zero_ink": false
+        },
+        "ampersand.ss04": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "aogonek.ss02": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.31,
+          "zero_ink": false
+        },
+        "aring": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 1.96,
+          "zero_ink": false
+        },
+        "aring.ss02": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "aringacute": {
+          "contours": 5,
+          "intersections": 0,
+          "min_segment_length": 1.96,
+          "zero_ink": false
+        },
+        "aringacute.ss02": {
+          "contours": 5,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "atilde.ss02": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "d": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.8,
+          "zero_ink": false
+        },
+        "dcaron": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.8,
+          "zero_ink": false
+        },
+        "dslash": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.21,
+          "zero_ink": false
+        },
+        "e": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.04,
+          "zero_ink": false
+        },
+        "eacute": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.02,
+          "zero_ink": false
+        },
+        "ebreve": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.02,
+          "zero_ink": false
+        },
+        "ecaron": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.02,
+          "zero_ink": false
+        },
+        "ecircumflex": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.02,
+          "zero_ink": false
+        },
+        "edieresis": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 1.02,
+          "zero_ink": false
+        },
+        "edotaccent": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.02,
+          "zero_ink": false
+        },
+        "egrave": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.02,
+          "zero_ink": false
+        },
+        "emacron": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.04,
+          "zero_ink": false
+        },
+        "eogonek": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.64,
+          "zero_ink": false
+        },
+        "ij": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 1.66,
+          "zero_ink": false
+        },
+        "napostrophe": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.05,
+          "zero_ink": false
+        },
+        "oe": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.86,
+          "zero_ink": false
+        },
+        "onehalf": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.46,
+          "zero_ink": false
+        },
+        "r": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.3,
+          "zero_ink": false
+        },
+        "racute": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.3,
+          "zero_ink": false
+        },
+        "rcaron": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.3,
+          "zero_ink": false
+        },
+        "scedilla": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.27,
+          "zero_ink": false
+        },
+        "t": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.3,
+          "zero_ink": false
+        },
+        "tbar": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.2,
+          "zero_ink": false
+        },
+        "tcaron": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.3,
+          "zero_ink": false
+        },
+        "threequarters": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 1.09,
+          "zero_ink": false
+        },
+        "two": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.11,
+          "zero_ink": false
+        },
+        "u": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.0,
+          "zero_ink": false
+        },
+        "uacute": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.0,
+          "zero_ink": false
+        },
+        "ubreve": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.0,
+          "zero_ink": false
+        },
+        "ucircumflex": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.0,
+          "zero_ink": false
+        },
+        "udieresis": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.0,
+          "zero_ink": false
+        },
+        "ugrave": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.0,
+          "zero_ink": false
+        },
+        "uhungarumlaut": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.4,
+          "zero_ink": false
+        },
+        "umacron": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.0,
+          "zero_ink": false
+        },
+        "uni018F": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.82,
+          "zero_ink": false
+        },
+        "uni021B": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.18,
+          "zero_ink": false
+        },
+        "uni0259": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.83,
+          "zero_ink": false
+        },
+        "uni03BC": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.84,
+          "zero_ink": false
+        },
+        "uogonek": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.71,
+          "zero_ink": false
+        },
+        "uring": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.0,
+          "zero_ink": false
+        },
+        "utilde": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.0,
+          "zero_ink": false
+        }
+      }
+    },
+    "400": {
+      "instance_path": "/Users/mblode/Code/mblode/glide/.claude/strategy-experiments-3/K_uni018F_675_only/build/roman/instances/glide-variable-vf-wght400.ttf",
+      "risky_glyph_count": 68,
+      "risky_glyphs": {
+        "Aogonek": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.27,
+          "zero_ink": false
+        },
+        "Atilde": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "IJ": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.8,
+          "zero_ink": false
+        },
+        "Itilde": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "Otilde": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "Scedilla": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.43,
+          "zero_ink": false
+        },
+        "a": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.9,
+          "zero_ink": false
+        },
+        "a.ss02": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "aacute": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.9,
+          "zero_ink": false
+        },
+        "aacute.ss02": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "abreve.ss02": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "acircumflex.ss02": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "adieresis": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 1.9,
+          "zero_ink": false
+        },
+        "adieresis.ss02": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "ae": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.88,
+          "zero_ink": false
+        },
+        "aeacute": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 0.88,
+          "zero_ink": false
+        },
+        "agrave.ss02": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "amacron": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.9,
+          "zero_ink": false
+        },
+        "amacron.ss02": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "ampersand": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.92,
+          "zero_ink": false
+        },
+        "ampersand.ss04": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.41,
+          "zero_ink": false
+        },
+        "aogonek.ss02": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "aring": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 1.9,
+          "zero_ink": false
+        },
+        "aring.ss02": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "aringacute": {
+          "contours": 5,
+          "intersections": 0,
+          "min_segment_length": 1.9,
+          "zero_ink": false
+        },
+        "aringacute.ss02": {
+          "contours": 5,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "atilde.ss02": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "d": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "dcaron": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "dslash": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "e": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.05,
+          "zero_ink": false
+        },
+        "eacute": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.05,
+          "zero_ink": false
+        },
+        "ebreve": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.05,
+          "zero_ink": false
+        },
+        "ecaron": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.05,
+          "zero_ink": false
+        },
+        "ecircumflex": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.05,
+          "zero_ink": false
+        },
+        "edieresis": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 1.05,
+          "zero_ink": false
+        },
+        "edotaccent": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.05,
+          "zero_ink": false
+        },
+        "egrave": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.05,
+          "zero_ink": false
+        },
+        "emacron": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.05,
+          "zero_ink": false
+        },
+        "eogonek": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.83,
+          "zero_ink": false
+        },
+        "ij": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 0.86,
+          "zero_ink": false
+        },
+        "napostrophe": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.32,
+          "zero_ink": false
+        },
+        "oe": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.05,
+          "zero_ink": false
+        },
+        "onehalf": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.6,
+          "zero_ink": false
+        },
+        "r": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.87,
+          "zero_ink": false
+        },
+        "racute": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.87,
+          "zero_ink": false
+        },
+        "rcaron": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.87,
+          "zero_ink": false
+        },
+        "scedilla": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.43,
+          "zero_ink": false
+        },
+        "t": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.31,
+          "zero_ink": false
+        },
+        "tbar": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.21,
+          "zero_ink": false
+        },
+        "tcaron": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.31,
+          "zero_ink": false
+        },
+        "threequarters": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 1.1,
+          "zero_ink": false
+        },
+        "two": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.21,
+          "zero_ink": false
+        },
+        "u": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.85,
+          "zero_ink": false
+        },
+        "uacute": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.85,
+          "zero_ink": false
+        },
+        "ubreve": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.85,
+          "zero_ink": false
+        },
+        "ucircumflex": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.85,
+          "zero_ink": false
+        },
+        "udieresis": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.85,
+          "zero_ink": false
+        },
+        "ugrave": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.85,
+          "zero_ink": false
+        },
+        "uhungarumlaut": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.41,
+          "zero_ink": false
+        },
+        "umacron": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.85,
+          "zero_ink": false
+        },
+        "uni018F": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.82,
+          "zero_ink": false
+        },
+        "uni021B": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.31,
+          "zero_ink": false
+        },
+        "uni0259": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.83,
+          "zero_ink": false
+        },
+        "uni03BC": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.85,
+          "zero_ink": false
+        },
+        "uogonek": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.92,
+          "zero_ink": false
+        },
+        "uring": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.85,
+          "zero_ink": false
+        },
+        "utilde": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.85,
+          "zero_ink": false
+        }
+      }
+    },
+    "675": {
+      "instance_path": "/Users/mblode/Code/mblode/glide/.claude/strategy-experiments-3/K_uni018F_675_only/build/roman/instances/glide-variable-vf-wght675.ttf",
+      "risky_glyph_count": 67,
+      "risky_glyphs": {
+        "Aogonek": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.22,
+          "zero_ink": false
+        },
+        "Atilde": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "IJ": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.0,
+          "zero_ink": false
+        },
+        "Itilde": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "Otilde": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "Scedilla": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.46,
+          "zero_ink": false
+        },
+        "a": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.79,
+          "zero_ink": false
+        },
+        "a.ss02": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "aacute": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.79,
+          "zero_ink": false
+        },
+        "aacute.ss02": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "abreve.ss02": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "acircumflex.ss02": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "adieresis": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 1.79,
+          "zero_ink": false
+        },
+        "adieresis.ss02": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "ae": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.87,
+          "zero_ink": false
+        },
+        "aeacute": {
+          "contours": 4,
+          "intersections": 8,
+          "min_segment_length": 0.89,
+          "zero_ink": false
+        },
+        "agrave.ss02": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "amacron": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.79,
+          "zero_ink": false
+        },
+        "amacron.ss02": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "ampersand": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.42,
+          "zero_ink": false
+        },
+        "ampersand.ss04": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.41,
+          "zero_ink": false
+        },
+        "aogonek.ss02": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "aring": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 1.79,
+          "zero_ink": false
+        },
+        "aring.ss02": {
+          "contours": 4,
+          "intersections": 4,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "aringacute": {
+          "contours": 5,
+          "intersections": 0,
+          "min_segment_length": 1.79,
+          "zero_ink": false
+        },
+        "aringacute.ss02": {
+          "contours": 5,
+          "intersections": 4,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "atilde.ss02": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "d": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.82,
+          "zero_ink": false
+        },
+        "dcaron": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.82,
+          "zero_ink": false
+        },
+        "dslash": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.82,
+          "zero_ink": false
+        },
+        "e": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.24,
+          "zero_ink": false
+        },
+        "eacute": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.89,
+          "zero_ink": false
+        },
+        "ebreve": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.89,
+          "zero_ink": false
+        },
+        "ecaron": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.89,
+          "zero_ink": false
+        },
+        "ecircumflex": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.89,
+          "zero_ink": false
+        },
+        "edieresis": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 0.89,
+          "zero_ink": false
+        },
+        "edotaccent": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.89,
+          "zero_ink": false
+        },
+        "egrave": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.89,
+          "zero_ink": false
+        },
+        "emacron": {
+          "contours": 3,
+          "intersections": 9,
+          "min_segment_length": 1.24,
+          "zero_ink": false
+        },
+        "eogonek": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.84,
+          "zero_ink": false
+        },
+        "ij": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 1.06,
+          "zero_ink": false
+        },
+        "napostrophe": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.34,
+          "zero_ink": false
+        },
+        "oe": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.05,
+          "zero_ink": false
+        },
+        "onehalf": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.6,
+          "zero_ink": false
+        },
+        "r": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.24,
+          "zero_ink": false
+        },
+        "racute": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.24,
+          "zero_ink": false
+        },
+        "rcaron": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.24,
+          "zero_ink": false
+        },
+        "scedilla": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.46,
+          "zero_ink": false
+        },
+        "t": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.39,
+          "zero_ink": false
+        },
+        "tbar": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.41,
+          "zero_ink": false
+        },
+        "tcaron": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.39,
+          "zero_ink": false
+        },
+        "threequarters": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 1.24,
+          "zero_ink": false
+        },
+        "two": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.41,
+          "zero_ink": false
+        },
+        "u": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.03,
+          "zero_ink": false
+        },
+        "uacute": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.03,
+          "zero_ink": false
+        },
+        "ubreve": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.03,
+          "zero_ink": false
+        },
+        "ucircumflex": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.03,
+          "zero_ink": false
+        },
+        "udieresis": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.03,
+          "zero_ink": false
+        },
+        "ugrave": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.03,
+          "zero_ink": false
+        },
+        "uhungarumlaut": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.81,
+          "zero_ink": false
+        },
+        "umacron": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.03,
+          "zero_ink": false
+        },
+        "uni018F": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.82,
+          "zero_ink": false
+        },
+        "uni021B": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.47,
+          "zero_ink": false
+        },
+        "uni0259": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.84,
+          "zero_ink": false
+        },
+        "uni03BC": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.04,
+          "zero_ink": false
+        },
+        "uring": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.03,
+          "zero_ink": false
+        },
+        "utilde": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.03,
+          "zero_ink": false
+        }
+      }
+    },
+    "950": {
+      "instance_path": "/Users/mblode/Code/mblode/glide/.claude/strategy-experiments-3/K_uni018F_675_only/build/roman/instances/glide-variable-vf-wght950.ttf",
+      "risky_glyph_count": 69,
+      "risky_glyphs": {
+        "Aogonek": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.03,
+          "zero_ink": false
+        },
+        "Atilde": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.5,
+          "zero_ink": false
+        },
+        "Gdotaccent": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.93,
+          "zero_ink": false
+        },
+        "IJ": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.1,
+          "zero_ink": false
+        },
+        "Itilde": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.5,
+          "zero_ink": false
+        },
+        "OE": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.21,
+          "zero_ink": false
+        },
+        "Otilde": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.5,
+          "zero_ink": false
+        },
+        "Scedilla": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.53,
+          "zero_ink": false
+        },
+        "a": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.62,
+          "zero_ink": false
+        },
+        "a.ss02": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "aacute": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.62,
+          "zero_ink": false
+        },
+        "aacute.ss02": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "abreve.ss02": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "acircumflex.ss02": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "adieresis": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 1.62,
+          "zero_ink": false
+        },
+        "adieresis.ss02": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "ae": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.51,
+          "zero_ink": false
+        },
+        "aeacute": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 0.51,
+          "zero_ink": false
+        },
+        "agrave.ss02": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "amacron": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.62,
+          "zero_ink": false
+        },
+        "amacron.ss02": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "ampersand": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.89,
+          "zero_ink": false
+        },
+        "ampersand.ss04": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.6,
+          "zero_ink": false
+        },
+        "aogonek.ss02": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "aring": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 1.62,
+          "zero_ink": false
+        },
+        "aring.ss02": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "aringacute": {
+          "contours": 5,
+          "intersections": 0,
+          "min_segment_length": 1.62,
+          "zero_ink": false
+        },
+        "aringacute.ss02": {
+          "contours": 5,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "atilde.ss02": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "d": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.64,
+          "zero_ink": false
+        },
+        "dcaron": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.64,
+          "zero_ink": false
+        },
+        "dslash": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.64,
+          "zero_ink": false
+        },
+        "e": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.51,
+          "zero_ink": false
+        },
+        "eacute": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.51,
+          "zero_ink": false
+        },
+        "ebreve": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.51,
+          "zero_ink": false
+        },
+        "ecaron": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.51,
+          "zero_ink": false
+        },
+        "ecircumflex": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.51,
+          "zero_ink": false
+        },
+        "edieresis": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 0.51,
+          "zero_ink": false
+        },
+        "edotaccent": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.51,
+          "zero_ink": false
+        },
+        "egrave": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.51,
+          "zero_ink": false
+        },
+        "emacron": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.51,
+          "zero_ink": false
+        },
+        "eogonek": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.84,
+          "zero_ink": false
+        },
+        "ij": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 1.02,
+          "zero_ink": false
+        },
+        "napostrophe": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.34,
+          "zero_ink": false
+        },
+        "oe": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.51,
+          "zero_ink": false
+        },
+        "onehalf": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.67,
+          "zero_ink": false
+        },
+        "r": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.66,
+          "zero_ink": false
+        },
+        "racute": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.66,
+          "zero_ink": false
+        },
+        "rcaron": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.66,
+          "zero_ink": false
+        },
+        "s": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.81,
+          "zero_ink": false
+        },
+        "scedilla": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.65,
+          "zero_ink": false
+        },
+        "t": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.91,
+          "zero_ink": false
+        },
+        "tbar": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.58,
+          "zero_ink": false
+        },
+        "tcaron": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.7,
+          "zero_ink": false
+        },
+        "threequarters": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 1.19,
+          "zero_ink": false
+        },
+        "two": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.42,
+          "zero_ink": false
+        },
+        "u": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.03,
+          "zero_ink": false
+        },
+        "uacute": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.03,
+          "zero_ink": false
+        },
+        "ubreve": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.03,
+          "zero_ink": false
+        },
+        "ucircumflex": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.03,
+          "zero_ink": false
+        },
+        "udieresis": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.03,
+          "zero_ink": false
+        },
+        "ugrave": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.03,
+          "zero_ink": false
+        },
+        "umacron": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.03,
+          "zero_ink": false
+        },
+        "uni018F": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.83,
+          "zero_ink": false
+        },
+        "uni021B": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.58,
+          "zero_ink": false
+        },
+        "uni0259": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.51,
+          "zero_ink": false
+        },
+        "uni03BC": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.02,
+          "zero_ink": false
+        },
+        "uring": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.03,
+          "zero_ink": false
+        },
+        "utilde": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.03,
+          "zero_ink": false
+        }
+      }
+    }
+  },
+  "review_glyphs": [
+    ".notdef",
+    "AEacute",
+    "Aogonek",
+    "Atilde",
+    "Gdotaccent",
+    "IJ",
+    "Itilde",
+    "OE",
+    "Otilde",
+    "Sacute",
+    "Scedilla",
+    "Uogonek",
+    "X",
+    "a",
+    "a.ss02",
+    "aacute",
+    "aacute.ss02",
+    "abreve.ss02",
+    "acircumflex.ss02",
+    "adieresis",
+    "adieresis.ss02",
+    "ae",
+    "aeacute",
+    "agrave.ss02",
+    "amacron",
+    "amacron.ss02",
+    "ampersand",
+    "ampersand.ss04",
+    "aogonek.ss02",
+    "aring",
+    "aring.ss02",
+    "aringacute",
+    "aringacute.ss02",
+    "atilde.ss02",
+    "b",
+    "cent",
+    "cent.ss08",
+    "cent.tf",
+    "cent.tf.ss08",
+    "d",
+    "dcaron",
+    "dollar",
+    "dollar.ss08",
+    "dollar.tf",
+    "dollar.tf.ss08",
+    "dslash",
+    "e",
+    "eacute",
+    "ebreve",
+    "ecaron",
+    "ecircumflex",
+    "edieresis",
+    "edotaccent",
+    "egrave",
+    "emacron",
+    "eogonek",
+    "g",
+    "gdotaccent",
+    "guillemotleft",
+    "guillemotright",
+    "ij",
+    "kgreenlandic",
+    "ldot",
+    "mu",
+    "napostrophe",
+    "ncommaaccent",
+    "nine",
+    "numbersign",
+    "numbersign.ss08",
+    "numbersign.tf",
+    "numbersign.tf.ss08",
+    "oe",
+    "onehalf",
+    "percent",
+    "pi",
+    "r",
+    "r.ss03",
+    "racute",
+    "racute.ss03",
+    "rcaron",
+    "rcaron.ss03",
+    "rcommaaccent",
+    "rcommaaccent.ss03",
+    "s",
+    "scedilla",
+    "six",
+    "slash",
+    "t",
+    "tbar",
+    "tcaron",
+    "tcommaaccent",
+    "three",
+    "threequarters",
+    "threesuperior",
+    "two",
+    "twosuperior",
+    "u",
+    "uacute",
+    "ubreve",
+    "ucircumflex",
+    "udieresis",
+    "ugrave",
+    "uhungarumlaut",
+    "umacron",
+    "uni018F",
+    "uni021B",
+    "uni0259",
+    "uni03BC",
+    "uogonek",
+    "uring",
+    "utilde",
+    "v",
+    "zero"
+  ]
+}

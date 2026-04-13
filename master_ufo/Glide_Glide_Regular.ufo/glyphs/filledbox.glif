@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="filledbox" format="2">
+  <advance width="847"/>
+  <unicode hex="25A0"/>
+  <outline>
+    <contour>
+      <point x="73" y="0" type="line"/>
+      <point x="774" y="0" type="line"/>
+      <point x="774" y="709" type="line"/>
+      <point x="540.333" y="709"/>
+      <point x="306.667" y="709"/>
+      <point x="73" y="709" type="curve"/>
+    </contour>
+  </outline>
+</glyph>

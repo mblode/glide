@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="fraction.ss08" format="2">
+  <advance width="120"/>
+  <outline>
+    <contour>
+      <point x="-217.33333" y="0"/>
+      <point x="-202" y="0" type="curve"/>
+      <point x="399" y="709" type="line"/>
+      <point x="353" y="709" type="line"/>
+      <point x="152.66667" y="472.66667"/>
+      <point x="-47.66667" y="236.33333"/>
+      <point x="-248" y="0" type="curve"/>
+      <point x="-232.66667" y="0"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="l.ordn" format="2">
+  <advance width="272"/>
+  <note>
+l.ordn
+</note>
+  <outline>
+    <contour>
+      <point x="117.333" y="300"/>
+      <point x="80" y="300" type="curve"/>
+      <point x="80" y="807" type="line"/>
+      <point x="192" y="807" type="line"/>
+      <point x="192" y="300" type="line"/>
+      <point x="154.667" y="300"/>
+    </contour>
+  </outline>
+</glyph>

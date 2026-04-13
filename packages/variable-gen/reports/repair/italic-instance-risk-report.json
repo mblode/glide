@@ -1,0 +1,2203 @@
+{
+  "family": "italic",
+  "weights": {
+    "100": {
+      "instance_path": "/Users/mblode/Code/mblode/glide/packages/variable-gen/build/italic/instances/glide-variable-italic-vf-wght100.ttf",
+      "risky_glyph_count": 71,
+      "risky_glyphs": {
+        "AEacute": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.95,
+          "zero_ink": false
+        },
+        "Scedilla": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.46,
+          "zero_ink": false
+        },
+        "Uhungarumlaut": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.61,
+          "zero_ink": false
+        },
+        "a": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.24,
+          "zero_ink": false
+        },
+        "aacute": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.33,
+          "zero_ink": false
+        },
+        "ae": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.61,
+          "zero_ink": false
+        },
+        "aeacute": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 0.61,
+          "zero_ink": false
+        },
+        "agrave": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.33,
+          "zero_ink": false
+        },
+        "amacron": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.33,
+          "zero_ink": false
+        },
+        "ampersand": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.57,
+          "zero_ink": false
+        },
+        "aring": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 1.33,
+          "zero_ink": false
+        },
+        "aringacute": {
+          "contours": 5,
+          "intersections": 0,
+          "min_segment_length": 1.33,
+          "zero_ink": false
+        },
+        "cent.ss08": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.34,
+          "zero_ink": false
+        },
+        "commaturn": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.2,
+          "zero_ink": false
+        },
+        "d": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.6,
+          "zero_ink": false
+        },
+        "dcaron": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.6,
+          "zero_ink": false
+        },
+        "dollar": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.44,
+          "zero_ink": false
+        },
+        "dollar.ss08": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.0,
+          "zero_ink": false
+        },
+        "dollar.tf": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.7,
+          "zero_ink": false
+        },
+        "dollar.tf.ss08": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.0,
+          "zero_ink": false
+        },
+        "dslash": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.6,
+          "zero_ink": false
+        },
+        "e": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.03,
+          "zero_ink": false
+        },
+        "eacute": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.03,
+          "zero_ink": false
+        },
+        "ebreve": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.03,
+          "zero_ink": false
+        },
+        "ecircumflex": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.03,
+          "zero_ink": false
+        },
+        "edieresis": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 1.03,
+          "zero_ink": false
+        },
+        "edotaccent": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.03,
+          "zero_ink": false
+        },
+        "egrave": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.03,
+          "zero_ink": false
+        },
+        "emacron": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.03,
+          "zero_ink": false
+        },
+        "eogonek": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.03,
+          "zero_ink": false
+        },
+        "f_f_i": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.66,
+          "zero_ink": false
+        },
+        "g": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.2,
+          "zero_ink": false
+        },
+        "gbreve": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.2,
+          "zero_ink": false
+        },
+        "gcircumflex": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.2,
+          "zero_ink": false
+        },
+        "gdotaccent": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.2,
+          "zero_ink": false
+        },
+        "guillemotleft": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.81,
+          "zero_ink": false
+        },
+        "ij": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 1.66,
+          "zero_ink": false
+        },
+        "napostrophe": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.31,
+          "zero_ink": false
+        },
+        "oe": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.03,
+          "zero_ink": false
+        },
+        "onehalf": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.81,
+          "zero_ink": false
+        },
+        "onehalf.ss08": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.81,
+          "zero_ink": false
+        },
+        "r": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.91,
+          "zero_ink": false
+        },
+        "r.ss03": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.01,
+          "zero_ink": false
+        },
+        "racute": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.81,
+          "zero_ink": false
+        },
+        "racute.ss03": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.01,
+          "zero_ink": false
+        },
+        "rcaron": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.91,
+          "zero_ink": false
+        },
+        "rcaron.ss03": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.01,
+          "zero_ink": false
+        },
+        "s.ordn": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.4,
+          "zero_ink": false
+        },
+        "s.ordn.ss08": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.4,
+          "zero_ink": false
+        },
+        "scedilla": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.69,
+          "zero_ink": false
+        },
+        "t": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.26,
+          "zero_ink": false
+        },
+        "tbar": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.08,
+          "zero_ink": false
+        },
+        "tcaron": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.26,
+          "zero_ink": false
+        },
+        "three": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.72,
+          "zero_ink": false
+        },
+        "threequarters": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 0.46,
+          "zero_ink": false
+        },
+        "threequarters.ss08": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 0.46,
+          "zero_ink": false
+        },
+        "two": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.21,
+          "zero_ink": false
+        },
+        "u": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.62,
+          "zero_ink": false
+        },
+        "uacute": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.62,
+          "zero_ink": false
+        },
+        "ubreve": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.62,
+          "zero_ink": false
+        },
+        "ucircumflex": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.62,
+          "zero_ink": false
+        },
+        "udieresis": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.62,
+          "zero_ink": false
+        },
+        "ugrave": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.62,
+          "zero_ink": false
+        },
+        "uhungarumlaut": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.62,
+          "zero_ink": false
+        },
+        "umacron": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.62,
+          "zero_ink": false
+        },
+        "uni018F": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.8,
+          "zero_ink": false
+        },
+        "uni021B": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.22,
+          "zero_ink": false
+        },
+        "uniFB03": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.66,
+          "zero_ink": false
+        },
+        "uogonek": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.51,
+          "zero_ink": false
+        },
+        "uring": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.62,
+          "zero_ink": false
+        },
+        "utilde": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.62,
+          "zero_ink": false
+        }
+      }
+    },
+    "250": {
+      "instance_path": "/Users/mblode/Code/mblode/glide/packages/variable-gen/build/italic/instances/glide-variable-italic-vf-wght250.ttf",
+      "risky_glyph_count": 69,
+      "risky_glyphs": {
+        "IJ": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.91,
+          "zero_ink": false
+        },
+        "Sacute": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.6,
+          "zero_ink": false
+        },
+        "Scaron": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.6,
+          "zero_ink": false
+        },
+        "Scedilla": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.93,
+          "zero_ink": false
+        },
+        "a": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.05,
+          "zero_ink": false
+        },
+        "aacute": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.01,
+          "zero_ink": false
+        },
+        "ae": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.63,
+          "zero_ink": false
+        },
+        "aeacute": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 0.7,
+          "zero_ink": false
+        },
+        "agrave": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.01,
+          "zero_ink": false
+        },
+        "amacron": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.01,
+          "zero_ink": false
+        },
+        "ampersand": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.45,
+          "zero_ink": false
+        },
+        "aring": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 1.01,
+          "zero_ink": false
+        },
+        "aringacute": {
+          "contours": 5,
+          "intersections": 0,
+          "min_segment_length": 1.01,
+          "zero_ink": false
+        },
+        "cent.ss08": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.34,
+          "zero_ink": false
+        },
+        "commaturn": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.2,
+          "zero_ink": false
+        },
+        "d": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.02,
+          "zero_ink": false
+        },
+        "dcaron": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.02,
+          "zero_ink": false
+        },
+        "dollar": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.44,
+          "zero_ink": false
+        },
+        "dollar.ss08": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.0,
+          "zero_ink": false
+        },
+        "dollar.tf": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.7,
+          "zero_ink": false
+        },
+        "dollar.tf.ss08": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.0,
+          "zero_ink": false
+        },
+        "dslash": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.02,
+          "zero_ink": false
+        },
+        "e": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.84,
+          "zero_ink": false
+        },
+        "eacute": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.84,
+          "zero_ink": false
+        },
+        "ebreve": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.84,
+          "zero_ink": false
+        },
+        "ecircumflex": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.84,
+          "zero_ink": false
+        },
+        "edieresis": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 0.84,
+          "zero_ink": false
+        },
+        "edotaccent": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.84,
+          "zero_ink": false
+        },
+        "egrave": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.84,
+          "zero_ink": false
+        },
+        "emacron": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.84,
+          "zero_ink": false
+        },
+        "eogonek": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.84,
+          "zero_ink": false
+        },
+        "f_f_i": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.75,
+          "zero_ink": false
+        },
+        "g": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.2,
+          "zero_ink": false
+        },
+        "gbreve": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.2,
+          "zero_ink": false
+        },
+        "gcircumflex": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.2,
+          "zero_ink": false
+        },
+        "gdotaccent": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.2,
+          "zero_ink": false
+        },
+        "ij": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 1.66,
+          "zero_ink": false
+        },
+        "napostrophe": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.34,
+          "zero_ink": false
+        },
+        "oe": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.84,
+          "zero_ink": false
+        },
+        "r": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.37,
+          "zero_ink": false
+        },
+        "r.ss03": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.01,
+          "zero_ink": false
+        },
+        "racute": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.37,
+          "zero_ink": false
+        },
+        "racute.ss03": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.01,
+          "zero_ink": false
+        },
+        "rcaron": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.37,
+          "zero_ink": false
+        },
+        "rcaron.ss03": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.01,
+          "zero_ink": false
+        },
+        "s.ordn": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.6,
+          "zero_ink": false
+        },
+        "s.ordn.ss08": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.6,
+          "zero_ink": false
+        },
+        "scedilla": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.7,
+          "zero_ink": false
+        },
+        "t": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.28,
+          "zero_ink": false
+        },
+        "tbar": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.98,
+          "zero_ink": false
+        },
+        "tcaron": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.28,
+          "zero_ink": false
+        },
+        "three": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.01,
+          "zero_ink": false
+        },
+        "threequarters": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 0.6,
+          "zero_ink": false
+        },
+        "threequarters.ss08": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 0.6,
+          "zero_ink": false
+        },
+        "two": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.21,
+          "zero_ink": false
+        },
+        "u": {
+          "contours": 1,
+          "intersections": 2,
+          "min_segment_length": 1.21,
+          "zero_ink": false
+        },
+        "uacute": {
+          "contours": 2,
+          "intersections": 2,
+          "min_segment_length": 1.21,
+          "zero_ink": false
+        },
+        "ubreve": {
+          "contours": 2,
+          "intersections": 2,
+          "min_segment_length": 1.21,
+          "zero_ink": false
+        },
+        "ucircumflex": {
+          "contours": 2,
+          "intersections": 2,
+          "min_segment_length": 1.21,
+          "zero_ink": false
+        },
+        "udieresis": {
+          "contours": 3,
+          "intersections": 2,
+          "min_segment_length": 1.21,
+          "zero_ink": false
+        },
+        "ugrave": {
+          "contours": 2,
+          "intersections": 2,
+          "min_segment_length": 1.21,
+          "zero_ink": false
+        },
+        "uhungarumlaut": {
+          "contours": 3,
+          "intersections": 2,
+          "min_segment_length": 1.21,
+          "zero_ink": false
+        },
+        "umacron": {
+          "contours": 2,
+          "intersections": 2,
+          "min_segment_length": 1.21,
+          "zero_ink": false
+        },
+        "uni018F": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.53,
+          "zero_ink": false
+        },
+        "uni021B": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.27,
+          "zero_ink": false
+        },
+        "uniFB03": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.75,
+          "zero_ink": false
+        },
+        "uogonek": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.02,
+          "zero_ink": false
+        },
+        "uring": {
+          "contours": 3,
+          "intersections": 2,
+          "min_segment_length": 1.21,
+          "zero_ink": false
+        },
+        "utilde": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.22,
+          "zero_ink": false
+        }
+      }
+    },
+    "400": {
+      "instance_path": "/Users/mblode/Code/mblode/glide/packages/variable-gen/build/italic/instances/glide-variable-italic-vf-wght400.ttf",
+      "risky_glyph_count": 69,
+      "risky_glyphs": {
+        "IJ": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.46,
+          "zero_ink": false
+        },
+        "Sacute": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.7,
+          "zero_ink": false
+        },
+        "Scaron": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.7,
+          "zero_ink": false
+        },
+        "Scedilla": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.46,
+          "zero_ink": false
+        },
+        "a": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.24,
+          "zero_ink": false
+        },
+        "aacute": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.24,
+          "zero_ink": false
+        },
+        "ae": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.71,
+          "zero_ink": false
+        },
+        "aeacute": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 0.71,
+          "zero_ink": false
+        },
+        "agrave": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.24,
+          "zero_ink": false
+        },
+        "amacron": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.24,
+          "zero_ink": false
+        },
+        "ampersand": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.57,
+          "zero_ink": false
+        },
+        "aring": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 0.24,
+          "zero_ink": false
+        },
+        "aringacute": {
+          "contours": 5,
+          "intersections": 0,
+          "min_segment_length": 0.24,
+          "zero_ink": false
+        },
+        "cent.ss08": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.51,
+          "zero_ink": false
+        },
+        "commaturn": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.2,
+          "zero_ink": false
+        },
+        "d": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.23,
+          "zero_ink": false
+        },
+        "dcaron": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.23,
+          "zero_ink": false
+        },
+        "dollar": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.44,
+          "zero_ink": false
+        },
+        "dollar.ss08": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.0,
+          "zero_ink": false
+        },
+        "dollar.tf": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.71,
+          "zero_ink": false
+        },
+        "dollar.tf.ss08": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.0,
+          "zero_ink": false
+        },
+        "dslash": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.23,
+          "zero_ink": false
+        },
+        "e": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.71,
+          "zero_ink": false
+        },
+        "eacute": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.71,
+          "zero_ink": false
+        },
+        "ebreve": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.26,
+          "zero_ink": false
+        },
+        "ecircumflex": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.71,
+          "zero_ink": false
+        },
+        "edieresis": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 0.71,
+          "zero_ink": false
+        },
+        "edotaccent": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.71,
+          "zero_ink": false
+        },
+        "egrave": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.71,
+          "zero_ink": false
+        },
+        "emacron": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.71,
+          "zero_ink": false
+        },
+        "eogonek": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.71,
+          "zero_ink": false
+        },
+        "f_f_i": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.53,
+          "zero_ink": false
+        },
+        "g": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.2,
+          "zero_ink": false
+        },
+        "gbreve": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.2,
+          "zero_ink": false
+        },
+        "gcircumflex": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.2,
+          "zero_ink": false
+        },
+        "gdotaccent": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.2,
+          "zero_ink": false
+        },
+        "ij": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 0.53,
+          "zero_ink": false
+        },
+        "napostrophe": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.36,
+          "zero_ink": false
+        },
+        "oe": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.71,
+          "zero_ink": false
+        },
+        "r": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.44,
+          "zero_ink": false
+        },
+        "r.ss03": {
+          "contours": 1,
+          "intersections": 2,
+          "min_segment_length": 0.01,
+          "zero_ink": false
+        },
+        "racute": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.44,
+          "zero_ink": false
+        },
+        "racute.ss03": {
+          "contours": 2,
+          "intersections": 2,
+          "min_segment_length": 0.01,
+          "zero_ink": false
+        },
+        "rcaron": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.44,
+          "zero_ink": false
+        },
+        "rcaron.ss03": {
+          "contours": 2,
+          "intersections": 2,
+          "min_segment_length": 0.01,
+          "zero_ink": false
+        },
+        "s.ordn": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.8,
+          "zero_ink": false
+        },
+        "s.ordn.ss08": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.8,
+          "zero_ink": false
+        },
+        "scedilla": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.71,
+          "zero_ink": false
+        },
+        "t": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.29,
+          "zero_ink": false
+        },
+        "tbar": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.29,
+          "zero_ink": false
+        },
+        "tcaron": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.29,
+          "zero_ink": false
+        },
+        "three": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "threequarters": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 0.05,
+          "zero_ink": false
+        },
+        "threequarters.ss08": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 0.05,
+          "zero_ink": false
+        },
+        "two": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "u": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.23,
+          "zero_ink": false
+        },
+        "uacute": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.23,
+          "zero_ink": false
+        },
+        "ubreve": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.23,
+          "zero_ink": false
+        },
+        "ucircumflex": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.23,
+          "zero_ink": false
+        },
+        "udieresis": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.23,
+          "zero_ink": false
+        },
+        "ugrave": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.23,
+          "zero_ink": false
+        },
+        "uhungarumlaut": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.23,
+          "zero_ink": false
+        },
+        "umacron": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.23,
+          "zero_ink": false
+        },
+        "uni018F": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.4,
+          "zero_ink": false
+        },
+        "uni021B": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.29,
+          "zero_ink": false
+        },
+        "uniFB03": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.53,
+          "zero_ink": false
+        },
+        "uogonek": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.23,
+          "zero_ink": false
+        },
+        "uring": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.23,
+          "zero_ink": false
+        },
+        "utilde": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.23,
+          "zero_ink": false
+        }
+      }
+    },
+    "675": {
+      "instance_path": "/Users/mblode/Code/mblode/glide/packages/variable-gen/build/italic/instances/glide-variable-italic-vf-wght675.ttf",
+      "risky_glyph_count": 68,
+      "risky_glyphs": {
+        "Sacute": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.8,
+          "zero_ink": false
+        },
+        "Scaron": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.8,
+          "zero_ink": false
+        },
+        "Scedilla": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.65,
+          "zero_ink": false
+        },
+        "a": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.24,
+          "zero_ink": false
+        },
+        "aacute": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.64,
+          "zero_ink": false
+        },
+        "ae": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.61,
+          "zero_ink": false
+        },
+        "aeacute": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 0.64,
+          "zero_ink": false
+        },
+        "agrave": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.64,
+          "zero_ink": false
+        },
+        "amacron": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.64,
+          "zero_ink": false
+        },
+        "ampersand": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.57,
+          "zero_ink": false
+        },
+        "aring": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 0.64,
+          "zero_ink": false
+        },
+        "aringacute": {
+          "contours": 5,
+          "intersections": 0,
+          "min_segment_length": 0.64,
+          "zero_ink": false
+        },
+        "cent.ss08": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.51,
+          "zero_ink": false
+        },
+        "commaturn": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.21,
+          "zero_ink": false
+        },
+        "d": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.63,
+          "zero_ink": false
+        },
+        "dcaron": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.63,
+          "zero_ink": false
+        },
+        "dollar": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.48,
+          "zero_ink": false
+        },
+        "dollar.ss08": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.0,
+          "zero_ink": false
+        },
+        "dollar.tf": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.8,
+          "zero_ink": false
+        },
+        "dollar.tf.ss08": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.0,
+          "zero_ink": false
+        },
+        "dslash": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.63,
+          "zero_ink": false
+        },
+        "e": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.45,
+          "zero_ink": false
+        },
+        "eacute": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.45,
+          "zero_ink": false
+        },
+        "ebreve": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.45,
+          "zero_ink": false
+        },
+        "ecircumflex": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.45,
+          "zero_ink": false
+        },
+        "edieresis": {
+          "contours": 4,
+          "intersections": 4,
+          "min_segment_length": 0.72,
+          "zero_ink": false
+        },
+        "edotaccent": {
+          "contours": 3,
+          "intersections": 4,
+          "min_segment_length": 0.72,
+          "zero_ink": false
+        },
+        "egrave": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.45,
+          "zero_ink": false
+        },
+        "emacron": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.45,
+          "zero_ink": false
+        },
+        "eogonek": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.45,
+          "zero_ink": false
+        },
+        "f_f_i": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.79,
+          "zero_ink": false
+        },
+        "g": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.2,
+          "zero_ink": false
+        },
+        "gbreve": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.2,
+          "zero_ink": false
+        },
+        "gcircumflex": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.2,
+          "zero_ink": false
+        },
+        "gdotaccent": {
+          "contours": 3,
+          "intersections": 4,
+          "min_segment_length": 0.2,
+          "zero_ink": false
+        },
+        "ij": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 0.72,
+          "zero_ink": false
+        },
+        "napostrophe": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.39,
+          "zero_ink": false
+        },
+        "oe": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.46,
+          "zero_ink": false
+        },
+        "r": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.98,
+          "zero_ink": false
+        },
+        "r.ss03": {
+          "contours": 1,
+          "intersections": 2,
+          "min_segment_length": 0.01,
+          "zero_ink": false
+        },
+        "racute": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.98,
+          "zero_ink": false
+        },
+        "racute.ss03": {
+          "contours": 2,
+          "intersections": 2,
+          "min_segment_length": 0.01,
+          "zero_ink": false
+        },
+        "rcaron": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.98,
+          "zero_ink": false
+        },
+        "rcaron.ss03": {
+          "contours": 2,
+          "intersections": 2,
+          "min_segment_length": 0.01,
+          "zero_ink": false
+        },
+        "s.ordn": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.82,
+          "zero_ink": false
+        },
+        "s.ordn.ss08": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.82,
+          "zero_ink": false
+        },
+        "scedilla": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.72,
+          "zero_ink": false
+        },
+        "t": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.3,
+          "zero_ink": false
+        },
+        "tbar": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.14,
+          "zero_ink": false
+        },
+        "tcaron": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.3,
+          "zero_ink": false
+        },
+        "three": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.5,
+          "zero_ink": false
+        },
+        "threequarters": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 0.45,
+          "zero_ink": false
+        },
+        "threequarters.ss08": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 0.45,
+          "zero_ink": false
+        },
+        "two": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "u": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.62,
+          "zero_ink": false
+        },
+        "uacute": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.62,
+          "zero_ink": false
+        },
+        "ubreve": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.81,
+          "zero_ink": false
+        },
+        "ucircumflex": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.62,
+          "zero_ink": false
+        },
+        "udieresis": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.62,
+          "zero_ink": false
+        },
+        "ugrave": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.62,
+          "zero_ink": false
+        },
+        "uhungarumlaut": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.62,
+          "zero_ink": false
+        },
+        "umacron": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.62,
+          "zero_ink": false
+        },
+        "uni018F": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.0,
+          "zero_ink": false
+        },
+        "uni021B": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.29,
+          "zero_ink": false
+        },
+        "uniFB03": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.79,
+          "zero_ink": false
+        },
+        "uogonek": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.46,
+          "zero_ink": false
+        },
+        "uring": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.62,
+          "zero_ink": false
+        },
+        "utilde": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.05,
+          "zero_ink": false
+        }
+      }
+    },
+    "950": {
+      "instance_path": "/Users/mblode/Code/mblode/glide/packages/variable-gen/build/italic/instances/glide-variable-italic-vf-wght950.ttf",
+      "risky_glyph_count": 68,
+      "risky_glyphs": {
+        "IJ": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.33,
+          "zero_ink": false
+        },
+        "Sacute": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.46,
+          "zero_ink": false
+        },
+        "Scaron": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.46,
+          "zero_ink": false
+        },
+        "Scedilla": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.46,
+          "zero_ink": false
+        },
+        "Uhungarumlaut": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.65,
+          "zero_ink": false
+        },
+        "a": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.24,
+          "zero_ink": false
+        },
+        "aacute": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.01,
+          "zero_ink": false
+        },
+        "ae": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.41,
+          "zero_ink": false
+        },
+        "aeacute": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 0.41,
+          "zero_ink": false
+        },
+        "agrave": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.01,
+          "zero_ink": false
+        },
+        "amacron": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.01,
+          "zero_ink": false
+        },
+        "ampersand": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.57,
+          "zero_ink": false
+        },
+        "aring": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 1.01,
+          "zero_ink": false
+        },
+        "aringacute": {
+          "contours": 5,
+          "intersections": 0,
+          "min_segment_length": 1.01,
+          "zero_ink": false
+        },
+        "cent.ss08": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.52,
+          "zero_ink": false
+        },
+        "commaturn": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.21,
+          "zero_ink": false
+        },
+        "d": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.27,
+          "zero_ink": false
+        },
+        "dcaron": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.27,
+          "zero_ink": false
+        },
+        "dollar": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.48,
+          "zero_ink": false
+        },
+        "dollar.ss08": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.0,
+          "zero_ink": false
+        },
+        "dollar.tf": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.7,
+          "zero_ink": false
+        },
+        "dollar.tf.ss08": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 1.0,
+          "zero_ink": false
+        },
+        "dslash": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.27,
+          "zero_ink": false
+        },
+        "e": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.2,
+          "zero_ink": false
+        },
+        "eacute": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.2,
+          "zero_ink": false
+        },
+        "ebreve": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.2,
+          "zero_ink": false
+        },
+        "ecircumflex": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.2,
+          "zero_ink": false
+        },
+        "edieresis": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 0.2,
+          "zero_ink": false
+        },
+        "edotaccent": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.2,
+          "zero_ink": false
+        },
+        "egrave": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.2,
+          "zero_ink": false
+        },
+        "emacron": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.2,
+          "zero_ink": false
+        },
+        "eogonek": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.2,
+          "zero_ink": false
+        },
+        "f_f_i": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.14,
+          "zero_ink": false
+        },
+        "g": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.2,
+          "zero_ink": false
+        },
+        "gbreve": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.2,
+          "zero_ink": false
+        },
+        "gcircumflex": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.2,
+          "zero_ink": false
+        },
+        "gdotaccent": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.2,
+          "zero_ink": false
+        },
+        "ij": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 1.14,
+          "zero_ink": false
+        },
+        "napostrophe": {
+          "contours": 2,
+          "intersections": 2,
+          "min_segment_length": 0.42,
+          "zero_ink": false
+        },
+        "oe": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.21,
+          "zero_ink": false
+        },
+        "r": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 1.51,
+          "zero_ink": false
+        },
+        "r.ss03": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.01,
+          "zero_ink": false
+        },
+        "racute": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.51,
+          "zero_ink": false
+        },
+        "racute.ss03": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.01,
+          "zero_ink": false
+        },
+        "rcaron": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.51,
+          "zero_ink": false
+        },
+        "rcaron.ss03": {
+          "contours": 2,
+          "intersections": 3,
+          "min_segment_length": 0.01,
+          "zero_ink": false
+        },
+        "scedilla": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.79,
+          "zero_ink": false
+        },
+        "t": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.32,
+          "zero_ink": false
+        },
+        "tbar": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.25,
+          "zero_ink": false
+        },
+        "tcaron": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.32,
+          "zero_ink": false
+        },
+        "three": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.51,
+          "zero_ink": false
+        },
+        "threequarters": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 0.4,
+          "zero_ink": false
+        },
+        "threequarters.ss08": {
+          "contours": 4,
+          "intersections": 0,
+          "min_segment_length": 0.41,
+          "zero_ink": false
+        },
+        "two": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.41,
+          "zero_ink": false
+        },
+        "u": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.61,
+          "zero_ink": false
+        },
+        "uacute": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.61,
+          "zero_ink": false
+        },
+        "ubreve": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.61,
+          "zero_ink": false
+        },
+        "ucircumflex": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.61,
+          "zero_ink": false
+        },
+        "udieresis": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.61,
+          "zero_ink": false
+        },
+        "ugrave": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.61,
+          "zero_ink": false
+        },
+        "uhungarumlaut": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.61,
+          "zero_ink": false
+        },
+        "umacron": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.61,
+          "zero_ink": false
+        },
+        "uni018F": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.01,
+          "zero_ink": false
+        },
+        "uni021B": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.3,
+          "zero_ink": false
+        },
+        "uniFB03": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 1.14,
+          "zero_ink": false
+        },
+        "uogonek": {
+          "contours": 1,
+          "intersections": 0,
+          "min_segment_length": 0.65,
+          "zero_ink": false
+        },
+        "uring": {
+          "contours": 3,
+          "intersections": 0,
+          "min_segment_length": 0.61,
+          "zero_ink": false
+        },
+        "utilde": {
+          "contours": 2,
+          "intersections": 0,
+          "min_segment_length": 0.2,
+          "zero_ink": false
+        }
+      }
+    }
+  },
+  "review_glyphs": [
+    ".notdef",
+    "AEacute",
+    "Gdotaccent",
+    "IJ",
+    "Sacute",
+    "Scaron",
+    "Scedilla",
+    "Uhungarumlaut",
+    "X",
+    "a",
+    "aacute",
+    "ae",
+    "aeacute",
+    "agrave",
+    "amacron",
+    "ampersand",
+    "aring",
+    "aringacute",
+    "b",
+    "cent",
+    "cent.ss08",
+    "cent.tf",
+    "cent.tf.ss08",
+    "commaturn",
+    "d",
+    "dcaron",
+    "dollar",
+    "dollar.ss08",
+    "dollar.tf",
+    "dollar.tf.ss08",
+    "dslash",
+    "e",
+    "eacute",
+    "ebreve",
+    "ecircumflex",
+    "edieresis",
+    "edotaccent",
+    "egrave",
+    "emacron",
+    "eogonek",
+    "f_f_i",
+    "g",
+    "gbreve",
+    "gcircumflex",
+    "gdotaccent",
+    "guillemotleft",
+    "guillemotright",
+    "ij",
+    "ldot",
+    "mu",
+    "napostrophe",
+    "ncommaaccent",
+    "nine",
+    "numbersign.tf.ss08",
+    "oe",
+    "onehalf",
+    "onehalf.ss08",
+    "percent",
+    "r",
+    "r.ss03",
+    "racute",
+    "racute.ss03",
+    "rcaron",
+    "rcaron.ss03",
+    "rcommaaccent",
+    "rcommaaccent.ss03",
+    "s",
+    "s.ordn",
+    "s.ordn.ss08",
+    "scedilla",
+    "scommaaccent",
+    "six",
+    "slash",
+    "t",
+    "tbar",
+    "tcaron",
+    "tcommaaccent",
+    "three",
+    "threequarters",
+    "threequarters.ss08",
+    "two",
+    "u",
+    "uacute",
+    "ubreve",
+    "ucircumflex",
+    "udieresis",
+    "ugrave",
+    "uhungarumlaut",
+    "umacron",
+    "uni018F",
+    "uni021B",
+    "uniFB03",
+    "uogonek",
+    "uring",
+    "utilde",
+    "v"
+  ]
+}

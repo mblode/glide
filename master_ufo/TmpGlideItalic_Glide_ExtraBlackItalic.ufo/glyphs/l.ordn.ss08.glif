@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="l.ordn.ss08" format="2">
+  <advance width="220"/>
+  <outline>
+    <contour>
+      <point x="189" y="358" type="line"/>
+      <point x="297" y="865" type="line"/>
+      <point x="164" y="865" type="line"/>
+      <point x="128.33333" y="696"/>
+      <point x="92.66667" y="527"/>
+      <point x="57" y="358" type="curve"/>
+    </contour>
+  </outline>
+</glyph>

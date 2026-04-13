@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="hyphen.case" format="2">
+  <advance width="380"/>
+  <note>
+hyphen.case
+</note>
+  <outline>
+    <contour>
+      <point x="141.667" y="288"/>
+      <point x="45" y="288" type="curve"/>
+      <point x="45" y="406" type="line"/>
+      <point x="335" y="406" type="line"/>
+      <point x="335" y="288" type="line"/>
+      <point x="238.333" y="288"/>
+    </contour>
+  </outline>
+</glyph>

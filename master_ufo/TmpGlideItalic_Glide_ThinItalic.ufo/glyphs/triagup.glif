@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="triagup" format="2">
+  <advance width="908"/>
+  <unicode hex="25B2"/>
+  <outline>
+    <contour>
+      <point x="404" y="727" type="line"/>
+      <point x="-19" y="0" type="line"/>
+      <point x="261.66667" y="0"/>
+      <point x="542.33333" y="0"/>
+      <point x="823" y="0" type="curve"/>
+    </contour>
+  </outline>
+</glyph>

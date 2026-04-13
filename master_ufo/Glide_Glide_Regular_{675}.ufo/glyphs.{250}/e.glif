@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="e" format="2">
+  <advance width="538"/>
+  <unicode hex="0065"/>
+  <outline>
+    <contour>
+      <point x="421.91025" y="364.84502"/>
+      <point x="425.43929" y="278.87084" type="curve"/>
+      <point x="116.06071" y="278.87084" type="line"/>
+      <point x="119.58975" y="354.877"/>
+      <point x="178.40697" y="432.12916"/>
+      <point x="270.16183" y="432.12916" type="curve" smooth="yes"/>
+      <point x="370.1511" y="432.12916"/>
+    </contour>
+    <contour>
+      <point x="49.10666" y="381.68278"/>
+      <point x="49.10666" y="240.1559" type="curve" smooth="yes"/>
+      <point x="49.10666" y="86.44458"/>
+      <point x="157.3971" y="-0.72098"/>
+      <point x="281.02071" y="-0.72098" type="curve" smooth="yes"/>
+      <point x="387.39451" y="-0.72098"/>
+      <point x="463.10199" y="63.01298"/>
+      <point x="488.01837" y="141.74316" type="curve"/>
+      <point x="462.14367" y="150.49096"/>
+      <point x="436.26896" y="159.23876"/>
+      <point x="410.39425" y="167.98656" type="curve"/>
+      <point x="401.29019" y="142.2118"/>
+      <point x="387.87367" y="119.48314"/>
+      <point x="367.26974" y="103.19818" type="curve" smooth="yes"/>
+      <point x="346.6658" y="86.91321"/>
+      <point x="318.87445" y="77.07194"/>
+      <point x="281.02071" y="77.07194" type="curve" smooth="yes"/>
+      <point x="202.43826" y="77.07194"/>
+      <point x="144.93891" y="133.30779"/>
+      <point x="142.06394" y="213.9125" type="curve"/>
+      <point x="488.9767" y="213.9125" type="line"/>
+      <point x="489.93502" y="220.47335"/>
+      <point x="490.89334" y="230.78326"/>
+      <point x="490.89334" y="242.03042" type="curve" smooth="yes"/>
+      <point x="490.89334" y="381.68278"/>
+      <point x="411.35257" y="478.22098"/>
+      <point x="269.52084" y="478.22098" type="curve" smooth="yes"/>
+      <point x="153.56381" y="478.22098"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.mblode.variable_gen.generated_brace</key>
+      <integer>1</integer>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,2943 @@
+{
+  "edieresis": [
+    {
+      "type": "contour_order",
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value_1": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "value_2": [
+        2,
+        1,
+        0,
+        3
+      ],
+      "tolerance": 0.7845114339328843
+    },
+    {
+      "type": "wrong_start_point",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value_1": 0,
+      "value_2": 0,
+      "reversed": true,
+      "tolerance": 0.049456464447389104
+    },
+    {
+      "type": "wrong_start_point",
+      "contour": 2,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value_1": 0,
+      "value_2": 0,
+      "reversed": true,
+      "tolerance": 0.07517068168804542
+    }
+  ],
+  "edotaccent": [
+    {
+      "type": "contour_order",
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value_1": [
+        0,
+        1,
+        2
+      ],
+      "value_2": [
+        1,
+        0,
+        2
+      ],
+      "tolerance": 0.9016784882378108
+    },
+    {
+      "type": "wrong_start_point",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value_1": 0,
+      "value_2": 0,
+      "reversed": true,
+      "tolerance": 0.07316762576421464
+    },
+    {
+      "type": "wrong_start_point",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value_1": 0,
+      "value_2": 0,
+      "reversed": true,
+      "tolerance": 0.07517068168804542
+    }
+  ],
+  "perthousand.tf.ss08": [
+    {
+      "type": "wrong_start_point",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value_1": 0,
+      "value_2": 15,
+      "reversed": false,
+      "tolerance": 0.8844484775947445
+    },
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.8173790298096062
+    }
+  ],
+  "perthousand.tf": [
+    {
+      "type": "wrong_start_point",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value_1": 0,
+      "value_2": 15,
+      "reversed": false,
+      "tolerance": 0.8844499081150438
+    },
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.8173790298096051
+    }
+  ],
+  "five.dnom": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.7885290894394849
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 33,
+      "tolerance": 0.5280331021480643
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value": 27,
+      "tolerance": 0.3609464275598281
+    }
+  ],
+  "five.numr": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.7885290894394845
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 33,
+      "tolerance": 0.5280331021480643
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value": 27,
+      "tolerance": 0.3609464275598281
+    }
+  ],
+  "five.numr.ss08": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.7885290894394836
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 33,
+      "tolerance": 0.5280331021480643
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value": 27,
+      "tolerance": 0.3609464275598281
+    }
+  ],
+  "uni2075": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.7885290894394836
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 33,
+      "tolerance": 0.5280331021480643
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value": 27,
+      "tolerance": 0.3609464275598281
+    }
+  ],
+  "uni2085": [
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 39,
+      "tolerance": 0.5284879385868874
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value": 39,
+      "tolerance": 0.373485276374178
+    }
+  ],
+  "sacute": [
+    {
+      "type": "underweight",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.7938647348747219
+    },
+    {
+      "type": "kink",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 9,
+      "tolerance": 0.8945507961386104
+    },
+    {
+      "type": "underweight",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.7066208575610565
+    },
+    {
+      "type": "kink",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value": 33,
+      "tolerance": 0.46293653699628606
+    }
+  ],
+  "scaron": [
+    {
+      "type": "underweight",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.7938647348747219
+    },
+    {
+      "type": "kink",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 9,
+      "tolerance": 0.8945507961386104
+    },
+    {
+      "type": "underweight",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.7066208575610565
+    },
+    {
+      "type": "kink",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value": 33,
+      "tolerance": 0.46293653699628606
+    }
+  ],
+  "scircumflex": [
+    {
+      "type": "underweight",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.7938647348747219
+    },
+    {
+      "type": "kink",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 9,
+      "tolerance": 0.8945507961386104
+    },
+    {
+      "type": "underweight",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.7066208575610565
+    },
+    {
+      "type": "kink",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value": 33,
+      "tolerance": 0.46293653699628606
+    }
+  ],
+  "scommaaccent": [
+    {
+      "type": "underweight",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.7938647348747219
+    },
+    {
+      "type": "kink",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 9,
+      "tolerance": 0.8945507961386104
+    },
+    {
+      "type": "underweight",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.7066208575610565
+    },
+    {
+      "type": "kink",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value": 33,
+      "tolerance": 0.46293653699628606
+    }
+  ],
+  "uni216E.ss08": [
+    {
+      "type": "underweight",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.686308972371815
+    },
+    {
+      "type": "kink",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value": 5,
+      "tolerance": 0.5126749791964712
+    }
+  ],
+  "Ccedilla": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.8096231931350731
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 16,
+      "tolerance": 0.5153882032022076
+    }
+  ],
+  "Scedilla": [
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 10,
+      "tolerance": 0.6616823829267878
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 32,
+      "tolerance": 0.5153882032022076
+    }
+  ],
+  "ccedilla": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.6123927798829738
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 33,
+      "tolerance": 0.5153882032022076
+    }
+  ],
+  "five.ss08": [
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 0,
+      "tolerance": 0.520714725336342
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value": 3,
+      "tolerance": 0.8754368221530635
+    }
+  ],
+  "five.tf.ss08": [
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 11,
+      "tolerance": 0.520714725336342
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value": 14,
+      "tolerance": 0.8754368221530635
+    }
+  ],
+  "u": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.9207134173778333
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 3,
+      "tolerance": 0.5287106469751219
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value": 25,
+      "tolerance": 0.6709196525178082
+    }
+  ],
+  "uacute": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.9207134173778333
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 3,
+      "tolerance": 0.5287106469751219
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value": 25,
+      "tolerance": 0.6709196525178082
+    }
+  ],
+  "ubreve": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.9207134173778333
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 3,
+      "tolerance": 0.5287106469751219
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value": 25,
+      "tolerance": 0.6709196525178082
+    }
+  ],
+  "ucircumflex": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.9207134173778333
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 3,
+      "tolerance": 0.5287106469751219
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value": 25,
+      "tolerance": 0.6709196525178082
+    }
+  ],
+  "udieresis": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.9207134173778333
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 3,
+      "tolerance": 0.5287106469751219
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value": 25,
+      "tolerance": 0.6709196525178082
+    }
+  ],
+  "ugrave": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.9207134173778333
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 3,
+      "tolerance": 0.5287106469751219
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value": 25,
+      "tolerance": 0.6709196525178082
+    }
+  ],
+  "uhungarumlaut": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.9207134173778333
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 3,
+      "tolerance": 0.5287106469751219
+    },
+    {
+      "type": "underweight",
+      "contour": 2,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.5291440016115653
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value": 25,
+      "tolerance": 0.6709196525178082
+    }
+  ],
+  "umacron": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.9207134173778333
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 3,
+      "tolerance": 0.5287106469751219
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value": 25,
+      "tolerance": 0.6709196525178082
+    }
+  ],
+  "uogonek": [
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 35,
+      "tolerance": 0.5287106469751219
+    }
+  ],
+  "uring": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.9207134173778333
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 3,
+      "tolerance": 0.5287106469751219
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value": 25,
+      "tolerance": 0.6709196525178082
+    }
+  ],
+  "utilde": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.9207134173778333
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 3,
+      "tolerance": 0.5287106469751219
+    },
+    {
+      "type": "underweight",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.8680525191648287
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value": 25,
+      "tolerance": 0.6709196525178082
+    }
+  ],
+  "quotedbl": [
+    {
+      "type": "underweight",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.8611139297843247
+    },
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.9101372324421275
+    },
+    {
+      "type": "underweight",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.9101372324421229
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value": 8,
+      "tolerance": 0.5311603703710401
+    },
+    {
+      "type": "kink",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value": 10,
+      "tolerance": 0.5311603703710401
+    }
+  ],
+  "quotedbl.ss08": [
+    {
+      "type": "underweight",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.8611139297843217
+    },
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.9101372324421247
+    },
+    {
+      "type": "underweight",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.9101372324421267
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value": 8,
+      "tolerance": 0.5311603703710401
+    },
+    {
+      "type": "kink",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value": 6,
+      "tolerance": 0.5311603703710401
+    }
+  ],
+  "quotesingle": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.9101372324421275
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value": 8,
+      "tolerance": 0.5311603703710401
+    }
+  ],
+  "quotesingle.ss08": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.9101372324421247
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value": 8,
+      "tolerance": 0.5311603703710401
+    }
+  ],
+  "braceleft.case": [
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value": 18,
+      "tolerance": 0.5344563808724769
+    }
+  ],
+  "sterling.ss08": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.8022795580887183
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value": 29,
+      "tolerance": 0.5366641564993015
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value": 61,
+      "tolerance": 0.9295681377224697
+    }
+  ],
+  "questiondown": [
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 33,
+      "tolerance": 0.6074693516199525
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 36,
+      "tolerance": 0.5393160551052764
+    }
+  ],
+  "questiondown.case": [
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 42,
+      "tolerance": 0.6074693516199525
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 45,
+      "tolerance": 0.5393160551052764
+    }
+  ],
+  "uni018F": [
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value": 30,
+      "tolerance": 0.5398460398732331
+    }
+  ],
+  "gcommaaccent": [
+    {
+      "type": "underweight",
+      "contour": 2,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.7508973089171489
+    },
+    {
+      "type": "kink",
+      "contour": 2,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 0,
+      "tolerance": 0.7242798886942795
+    },
+    {
+      "type": "kink",
+      "contour": 2,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 23,
+      "tolerance": 0.5417347608476419
+    },
+    {
+      "type": "kink",
+      "contour": 2,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 33,
+      "tolerance": 0.6559367720223361
+    },
+    {
+      "type": "underweight",
+      "contour": 2,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.7587041567923449
+    },
+    {
+      "type": "kink",
+      "contour": 2,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value": 11,
+      "tolerance": 0.5760787062320479
+    },
+    {
+      "type": "kink",
+      "contour": 2,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value": 33,
+      "tolerance": 0.6702443743977787
+    }
+  ],
+  "question": [
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 30,
+      "tolerance": 0.5436052495881811
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 33,
+      "tolerance": 0.5558764662715971
+    }
+  ],
+  "Uogonek": [
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 9,
+      "tolerance": 0.5439824951386774
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 37,
+      "tolerance": 0.8446695446136832
+    }
+  ],
+  "sterling": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.9471124959749433
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value": 43,
+      "tolerance": 0.5571775739168825
+    }
+  ],
+  "sterling.tf": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.9471124959749428
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value": 17,
+      "tolerance": 0.5571775739168825
+    }
+  ],
+  "oslash": [
+    {
+      "type": "kink",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value": 9,
+      "tolerance": 0.5728078038999667
+    }
+  ],
+  "oslashacute": [
+    {
+      "type": "kink",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value": 9,
+      "tolerance": 0.5728078038999667
+    }
+  ],
+  "uni2113": [
+    {
+      "type": "underweight",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.9356205389409609
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 41,
+      "tolerance": 0.6137940637817499
+    }
+  ],
+  "commaaccent": [
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value": 6,
+      "tolerance": 0.6785526317741135
+    }
+  ],
+  "uni216E": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.6570491621230349
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 5,
+      "tolerance": 0.7300657616553645
+    }
+  ],
+  "cedilla": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.7211837448408724
+    },
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.686381180790282
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value": 28,
+      "tolerance": 0.7797879666785582
+    }
+  ],
+  "uni2113.ss08": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.871210307330294
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value": 36,
+      "tolerance": 0.9012395127240935
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value": 39,
+      "tolerance": 0.7820090053741791
+    }
+  ],
+  "aacute": [
+    {
+      "type": "kink",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 0,
+      "tolerance": 0.8189422929065697
+    },
+    {
+      "type": "underweight",
+      "contour": 2,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.8160842660300313
+    }
+  ],
+  "abreve": [
+    {
+      "type": "kink",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 0,
+      "tolerance": 0.8189422929065697
+    },
+    {
+      "type": "underweight",
+      "contour": 2,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.8160842660300313
+    }
+  ],
+  "acircumflex": [
+    {
+      "type": "kink",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 0,
+      "tolerance": 0.8189422929065697
+    },
+    {
+      "type": "underweight",
+      "contour": 2,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.8160842660300313
+    }
+  ],
+  "adieresis": [
+    {
+      "type": "kink",
+      "contour": 2,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 0,
+      "tolerance": 0.8189422929065697
+    },
+    {
+      "type": "underweight",
+      "contour": 3,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.8160842660300313
+    }
+  ],
+  "agrave": [
+    {
+      "type": "kink",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 0,
+      "tolerance": 0.8189422929065697
+    },
+    {
+      "type": "underweight",
+      "contour": 2,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.8160842660300313
+    }
+  ],
+  "amacron": [
+    {
+      "type": "kink",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 0,
+      "tolerance": 0.8189422929065697
+    },
+    {
+      "type": "underweight",
+      "contour": 2,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.8160842660300313
+    }
+  ],
+  "aogonek": [
+    {
+      "type": "kink",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 0,
+      "tolerance": 0.8189422929065697
+    }
+  ],
+  "aring": [
+    {
+      "type": "kink",
+      "contour": 2,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 0,
+      "tolerance": 0.8189422929065697
+    },
+    {
+      "type": "underweight",
+      "contour": 3,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.8160842660300313
+    }
+  ],
+  "aringacute": [
+    {
+      "type": "kink",
+      "contour": 3,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 0,
+      "tolerance": 0.8189422929065697
+    },
+    {
+      "type": "underweight",
+      "contour": 4,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.8160842660300313
+    }
+  ],
+  "atilde": [
+    {
+      "type": "kink",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 0,
+      "tolerance": 0.8189422929065697
+    },
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.8689344761912609
+    },
+    {
+      "type": "underweight",
+      "contour": 2,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.8160842660300313
+    }
+  ],
+  "uni2070": [
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 0,
+      "tolerance": 0.8308598396308337
+    }
+  ],
+  "uni2080": [
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 0,
+      "tolerance": 0.8308598396308337
+    }
+  ],
+  "zero.dnom": [
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 0,
+      "tolerance": 0.8308598396308337
+    }
+  ],
+  "zero.numr": [
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 0,
+      "tolerance": 0.8308598396308337
+    }
+  ],
+  "zero.numr.ss08": [
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "value": 0,
+      "tolerance": 0.8308598396308337
+    }
+  ],
+  "u.ordn": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.9131515564055066
+    },
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.9397827458560173
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value": 14,
+      "tolerance": 0.8919428962537427
+    }
+  ],
+  "u.ordn.ss08": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.9131515564055074
+    },
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.9397827458560165
+    },
+    {
+      "type": "kink",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value": 14,
+      "tolerance": 0.8919428962537427
+    }
+  ],
+  "rcommaaccent.ss03": [
+    {
+      "type": "underweight",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.7808110281137083
+    },
+    {
+      "type": "kink",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "value": 13,
+      "tolerance": 0.9386619840050219
+    }
+  ],
+  "uni216F.ss08": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.05347700638855319
+    }
+  ],
+  "two.dnom": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.26293877037782815
+    },
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.9037377615434561
+    }
+  ],
+  "two.numr": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.2629387703778282
+    },
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.9037377615434563
+    }
+  ],
+  "two.numr.ss08": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.2629387703778272
+    },
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.903737761543456
+    }
+  ],
+  "twosuperior": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.2629387703778272
+    },
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.903737761543456
+    }
+  ],
+  "uni2082": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.2629387703778284
+    },
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.9037377615434561
+    }
+  ],
+  "uni216D": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.3544807430276584
+    }
+  ],
+  "two.tf": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.42273505022807795
+    },
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.577055908321159
+    }
+  ],
+  "yacute": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.4797342935563822
+    },
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.5250837431611213
+    }
+  ],
+  "acute": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.47973429355638325
+    },
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.5250837431611209
+    }
+  ],
+  "acute.uc": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.5220402045168618
+    },
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.5497130874881658
+    }
+  ],
+  "hungarumlaut": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.5231282473656312
+    },
+    {
+      "type": "underweight",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.550950323502641
+    },
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.5368747144807511
+    },
+    {
+      "type": "underweight",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.5291440016115696
+    }
+  ],
+  "iacute": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.52508374316112
+    }
+  ],
+  "racute.ss03": [
+    {
+      "type": "underweight",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.5250837431611203
+    }
+  ],
+  "wacute": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.5250837431611218
+    }
+  ],
+  "caron.alt.uc": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.5263551856150349
+    },
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.5253843842668137
+    }
+  ],
+  "Lcaron": [
+    {
+      "type": "underweight",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.5253843842668142
+    }
+  ],
+  "uni2167.ss08": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.9356473606522746
+    },
+    {
+      "type": "underweight",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.5291328833395192
+    },
+    {
+      "type": "underweight",
+      "contour": 2,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.5301695990684255
+    }
+  ],
+  "caron.alt": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.5373087459411112
+    },
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.5427752400403386
+    }
+  ],
+  "dcaron": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.5427752400403362
+    }
+  ],
+  "lcaron": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.5427752400403391
+    }
+  ],
+  "tcaron": [
+    {
+      "type": "underweight",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.542775240040339
+    }
+  ],
+  "Wacute": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.5497130874881735
+    }
+  ],
+  "Uhungarumlaut": [
+    {
+      "type": "underweight",
+      "contour": 2,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.5757387918790772
+    }
+  ],
+  "hungarumlaut.uc": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.5795966647153579
+    },
+    {
+      "type": "underweight",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.6081683312858355
+    },
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.5800922712508504
+    },
+    {
+      "type": "underweight",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.5757387918790772
+    }
+  ],
+  "a.ordn": [
+    {
+      "type": "underweight",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.5832664835798489
+    },
+    {
+      "type": "underweight",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.6577718843522965
+    }
+  ],
+  "a.ordn.ss08": [
+    {
+      "type": "underweight",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.5832664835798491
+    },
+    {
+      "type": "underweight",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.657771884352297
+    }
+  ],
+  "e": [
+    {
+      "type": "underweight",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.5960081338904697
+    }
+  ],
+  "eacute": [
+    {
+      "type": "underweight",
+      "contour": 2,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.5960081338904697
+    }
+  ],
+  "ebreve": [
+    {
+      "type": "underweight",
+      "contour": 2,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.5960081338904697
+    }
+  ],
+  "ecaron": [
+    {
+      "type": "underweight",
+      "contour": 2,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.5960081338904697
+    }
+  ],
+  "ecircumflex": [
+    {
+      "type": "underweight",
+      "contour": 2,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.5960081338904697
+    }
+  ],
+  "egrave": [
+    {
+      "type": "underweight",
+      "contour": 2,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.5960081338904697
+    }
+  ],
+  "emacron": [
+    {
+      "type": "underweight",
+      "contour": 2,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.5960081338904697
+    }
+  ],
+  "threequarters.ss08": [
+    {
+      "type": "underweight",
+      "contour": 2,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.6105647987275992
+    }
+  ],
+  "d.ordn": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.6263749903637538
+    }
+  ],
+  "d.ordn.ss08": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.6263749903637533
+    }
+  ],
+  "onequarter": [
+    {
+      "type": "underweight",
+      "contour": 3,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.6500486433794354
+    }
+  ],
+  "threequarters": [
+    {
+      "type": "underweight",
+      "contour": 2,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.6500486433794348
+    }
+  ],
+  "uni0259": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.6813525076459985
+    },
+    {
+      "type": "underweight",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.8995200905679158
+    }
+  ],
+  "rcaron.ss03": [
+    {
+      "type": "underweight",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.6916815321939359
+    }
+  ],
+  "caron": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.8220808194220565
+    },
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.6916815321939375
+    }
+  ],
+  "G.ss01": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.6968993521897957
+    }
+  ],
+  "Gbreve.ss01": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.6968993521897957
+    }
+  ],
+  "Gcircumflex.ss01": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.6968993521897957
+    }
+  ],
+  "Gcommaaccent.ss01": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.6968993521897957
+    }
+  ],
+  "Gdotaccent.ss01": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.6968993521897957
+    }
+  ],
+  "uni2168": [
+    {
+      "type": "underweight",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.6975486175652356
+    }
+  ],
+  "caron.uc": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.7050238728517435
+    }
+  ],
+  "perthousand": [
+    {
+      "type": "underweight",
+      "contour": 2,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.7155517282732973
+    }
+  ],
+  "Dcroat": [
+    {
+      "type": "underweight",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.7240696901906974
+    }
+  ],
+  "Eth": [
+    {
+      "type": "underweight",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.7240696901906974
+    }
+  ],
+  "c.ordn": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.7303802561898619
+    }
+  ],
+  "c.ordn.ss08": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.7303802561898629
+    }
+  ],
+  "eogonek": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.7392664466173093
+    }
+  ],
+  "uni2087": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.7504487652369584
+    }
+  ],
+  "Itilde": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.7528627555552241
+    }
+  ],
+  "Utilde": [
+    {
+      "type": "underweight",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.7528627555552241
+    }
+  ],
+  "Atilde": [
+    {
+      "type": "underweight",
+      "contour": 2,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.7528627555552257
+    }
+  ],
+  "guillemotright": [
+    {
+      "type": "underweight",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.7759106611321501
+    }
+  ],
+  "guillemotright.case": [
+    {
+      "type": "underweight",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.7759106611321521
+    }
+  ],
+  "ordfeminine.ss08": [
+    {
+      "type": "underweight",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.7842753082531491
+    },
+    {
+      "type": "underweight",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.8190358717641734
+    }
+  ],
+  "ordfeminine": [
+    {
+      "type": "underweight",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.7842753082531493
+    },
+    {
+      "type": "underweight",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.8190358717641728
+    }
+  ],
+  "uni2782": [
+    {
+      "type": "underweight",
+      "contour": 2,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.82491348395999
+    }
+  ],
+  "guillemotleft": [
+    {
+      "type": "underweight",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.8287691409394498
+    }
+  ],
+  "guillemotleft.case": [
+    {
+      "type": "underweight",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.8374670201542975
+    }
+  ],
+  "three": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.8649538290793571
+    }
+  ],
+  "three.tf": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.8649538290793582
+    }
+  ],
+  "otilde": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.8680525191648275
+    }
+  ],
+  "ntilde": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.8680525191648305
+    }
+  ],
+  "tilde": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.8680525191648333
+    }
+  ],
+  "itilde": [
+    {
+      "type": "underweight",
+      "contour": 1,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.8680525191648348
+    }
+  ],
+  "e.ordn": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.9009454319571529
+    }
+  ],
+  "e.ordn.ss08": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.9009454319571538
+    }
+  ],
+  "arrowup": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.9037841357989744
+    }
+  ],
+  "infinity": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.9137185649391666
+    },
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.9150339728608176
+    }
+  ],
+  "infinity.ss08": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_ThinItalic",
+      "master_2": "GlideItalic_Glide_Italic",
+      "master_1_idx": 0,
+      "master_2_idx": 1,
+      "tolerance": 0.9137185649391669
+    },
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.9150339728608173
+    }
+  ],
+  "r.ordn": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.9256689993046837
+    }
+  ],
+  "r.ordn.ss08": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.9256689993046844
+    }
+  ],
+  "uni2166.ss08": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.9405628121140618
+    }
+  ],
+  "sterling.tf.ss08": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.9430965696125388
+    }
+  ],
+  "uni2165.ss08": [
+    {
+      "type": "underweight",
+      "contour": 0,
+      "master_1": "GlideItalic_Glide_Italic_{675}",
+      "master_2": "GlideItalic_Glide_ExtraBlackItalic",
+      "master_1_idx": 3,
+      "master_2_idx": 4,
+      "tolerance": 0.9497298626391528
+    }
+  ]
+}

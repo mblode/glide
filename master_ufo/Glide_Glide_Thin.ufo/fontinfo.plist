@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>ascender</key>
+    <integer>809</integer>
+    <key>capHeight</key>
+    <integer>709</integer>
+    <key>descender</key>
+    <integer>-191</integer>
+    <key>familyName</key>
+    <string>Glide</string>
+    <key>italicAngle</key>
+    <integer>0</integer>
+    <key>openTypeHeadCreated</key>
+    <string>2026/04/07 03:22:52</string>
+    <key>openTypeNameDesigner</key>
+    <string>Matthew Blode</string>
+    <key>openTypeNameDesignerURL</key>
+    <string>matthewblode.com</string>
+    <key>openTypeNameManufacturer</key>
+    <string>Matthew Blode</string>
+    <key>openTypeNameManufacturerURL</key>
+    <string>matthewblode.com</string>
+    <key>openTypeOS2Type</key>
+    <array>
+      <integer>3</integer>
+    </array>
+    <key>openTypeOS2VendorID</key>
+    <string>MBLD</string>
+    <key>postscriptFontName</key>
+    <string>Glide</string>
+    <key>postscriptUnderlinePosition</key>
+    <integer>-100</integer>
+    <key>postscriptUnderlineThickness</key>
+    <integer>50</integer>
+    <key>styleMapFamilyName</key>
+    <string>Glide Thin</string>
+    <key>styleMapStyleName</key>
+    <string>regular</string>
+    <key>styleName</key>
+    <string>Thin</string>
+    <key>unitsPerEm</key>
+    <integer>1000</integer>
+    <key>versionMajor</key>
+    <integer>1</integer>
+    <key>versionMinor</key>
+    <integer>0</integer>
+    <key>xHeight</key>
+    <integer>497</integer>
+  </dict>
+</plist>

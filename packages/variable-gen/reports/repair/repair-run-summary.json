@@ -1,0 +1,6371 @@
+{
+  "roman": {
+    "source_report": "/Users/mblode/Code/mblode/glide/packages/variable-gen/reports/repair/roman-source-report.json",
+    "strategy_results": {
+      ".notdef": {
+        "applied": true,
+        "masters": {
+          "Thin": {
+            "width": 266,
+            "path_count": 2
+          },
+          "Regular": {
+            "width": 548,
+            "path_count": 2
+          },
+          "ExtraBlack": {
+            "width": 534,
+            "path_count": 2
+          }
+        }
+      },
+      "ncommaaccent": {
+        "applied": true,
+        "reference_master": "Regular",
+        "reference_master_preserved": true,
+        "masters_updated": [
+          "ExtraBlack",
+          "Regular",
+          "Thin"
+        ],
+        "contour_aware": true,
+        "transforms": {
+          "Thin": {
+            "mode": "contour_aware",
+            "transform": {
+              "mode": "contour_aware",
+              "contour_mapping": [
+                1,
+                0
+              ],
+              "contour_transforms": {
+                "0": {
+                  "scale_x": 0.8254,
+                  "scale_y": 0.7275,
+                  "area_ratio": 0.4484,
+                  "width_ratio": 0.8859,
+                  "height_ratio": 0.9818
+                },
+                "1": {
+                  "scale_x": 0.7133,
+                  "scale_y": 0.7546,
+                  "area_ratio": 0.4924,
+                  "width_ratio": 0.7177,
+                  "height_ratio": 0.8432
+                }
+              }
+            },
+            "target_metrics": {
+              "center": [
+                265.5,
+                142.0
+              ],
+              "width": 365.0,
+              "height": 688.0,
+              "area": 55299.90418000004
+            },
+            "result_metrics": {
+              "center": [
+                265.5,
+                114.6248359832398
+              ],
+              "width": 340.0493495764449,
+              "height": 616.849865498959,
+              "area": 72181.00307447798
+            },
+            "result_area_vs_donor": 1.3738
+          },
+          "Regular": {
+            "mode": "reference",
+            "transform": {
+              "scale_x": 1.0,
+              "scale_y": 1.0,
+              "area_ratio": 1.0,
+              "width_ratio": 1.0,
+              "height_ratio": 1.0
+            }
+          },
+          "ExtraBlack": {
+            "mode": "contour_aware",
+            "transform": {
+              "mode": "contour_aware",
+              "contour_mapping": [
+                1,
+                0
+              ],
+              "contour_transforms": {
+                "0": {
+                  "scale_x": 1.2156,
+                  "scale_y": 1.2895,
+                  "area_ratio": 1.7939,
+                  "width_ratio": 1.1675,
+                  "height_ratio": 1.0323
+                },
+                "1": {
+                  "scale_x": 1.4552,
+                  "scale_y": 1.3428,
+                  "area_ratio": 2.0246,
+                  "width_ratio": 1.4677,
+                  "height_ratio": 1.2757
+                }
+              }
+            },
+            "target_metrics": {
+              "center": [
+                303.5,
+                119.5
+              ],
+              "width": 481.0,
+              "height": 783.0,
+              "area": 222069.03092000002
+            },
+            "result_metrics": {
+              "center": [
+                303.5,
+                148.22213571228593
+              ],
+              "width": 500.82845687696476,
+              "height": 852.8532538257399,
+              "area": 196891.99504547642
+            },
+            "result_area_vs_donor": 0.9843
+          }
+        },
+        "skipped_masters": {}
+      },
+      "napostrophe": {
+        "applied": true,
+        "reference_master": "Regular",
+        "reference_master_preserved": true,
+        "masters_updated": [
+          "ExtraBlack",
+          "Regular",
+          "Thin"
+        ],
+        "contour_aware": false,
+        "transforms": {
+          "Thin": {
+            "mode": "whole_glyph",
+            "transform": {
+              "mode": "whole_glyph",
+              "transform": {
+                "scale_x": 0.8099,
+                "scale_y": 0.7268,
+                "area_ratio": 0.4539,
+                "width_ratio": 0.8629,
+                "height_ratio": 0.9564
+              }
+            },
+            "target_metrics": {
+              "center": [
+                265.5,
+                340.0
+              ],
+              "width": 365.0,
+              "height": 680.0,
+              "area": 55299.904180000056
+            },
+            "result_metrics": {
+              "center": [
+                265.5,
+                340.0
+              ],
+              "width": 342.5982439731572,
+              "height": 516.7227522453081,
+              "area": 71707.94167745321
+            },
+            "result_area_vs_donor": 1.3648
+          },
+          "Regular": {
+            "mode": "reference",
+            "transform": {
+              "scale_x": 1.0,
+              "scale_y": 1.0,
+              "area_ratio": 1.0,
+              "width_ratio": 1.0,
+              "height_ratio": 1.0
+            }
+          },
+          "ExtraBlack": {
+            "mode": "whole_glyph",
+            "transform": {
+              "mode": "whole_glyph",
+              "transform": {
+                "scale_x": 1.2257,
+                "scale_y": 1.3185,
+                "area_ratio": 1.8227,
+                "width_ratio": 1.1773,
+                "height_ratio": 1.0858
+              }
+            },
+            "target_metrics": {
+              "center": [
+                295.0,
+                386.0
+              ],
+              "width": 498.0,
+              "height": 772.0,
+              "area": 222048.11583999998
+            },
+            "result_metrics": {
+              "center": [
+                295.0,
+                386.0
+              ],
+              "width": 518.4622928752606,
+              "height": 937.4840886647892,
+              "area": 196881.82247841367
+            },
+            "result_area_vs_donor": 0.9852
+          }
+        },
+        "skipped_masters": {},
+        "strategy": "structural_fallback"
+      },
+      "dollar": {
+        "applied": true,
+        "reference_master": "Regular",
+        "reference_master_preserved": true,
+        "masters_updated": [
+          "ExtraBlack",
+          "Regular",
+          "Thin"
+        ],
+        "contour_aware": false,
+        "transforms": {
+          "Thin": {
+            "mode": "whole_glyph",
+            "transform": {
+              "mode": "whole_glyph",
+              "transform": {
+                "scale_x": 0.9026,
+                "scale_y": 0.9658,
+                "area_ratio": 0.8567,
+                "width_ratio": 0.8937,
+                "height_ratio": 0.9887
+              }
+            },
+            "target_metrics": {
+              "center": [
+                256.5,
+                324.5
+              ],
+              "width": 437.0,
+              "height": 873.0,
+              "area": 214804.28971999997
+            },
+            "result_metrics": {
+              "center": [
+                256.5,
+                324.5
+              ],
+              "width": 441.3734089157159,
+              "height": 852.7759197467456,
+              "area": 218557.65797514297
+            },
+            "result_area_vs_donor": 1.3596
+          },
+          "Regular": {
+            "mode": "reference",
+            "transform": {
+              "scale_x": 1.0,
+              "scale_y": 1.0,
+              "area_ratio": 1.0,
+              "width_ratio": 1.0,
+              "height_ratio": 1.0
+            }
+          },
+          "ExtraBlack": {
+            "mode": "whole_glyph",
+            "transform": {
+              "mode": "whole_glyph",
+              "transform": {
+                "scale_x": 1.0511,
+                "scale_y": 0.9734,
+                "area_ratio": 1.0288,
+                "width_ratio": 1.0654,
+                "height_ratio": 0.966
+              }
+            },
+            "target_metrics": {
+              "center": [
+                286.5,
+                323.5
+              ],
+              "width": 521.0,
+              "height": 853.0,
+              "area": 257934.60045999996
+            },
+            "result_metrics": {
+              "center": [
+                286.5,
+                323.5
+              ],
+              "width": 513.995118920885,
+              "height": 859.5091719838379,
+              "area": 256527.80495209078
+            },
+            "result_area_vs_donor": 1.2096
+          }
+        },
+        "skipped_masters": {},
+        "strategy": "structural_fallback"
+      },
+      "cent": {
+        "applied": true,
+        "reference_master": "Regular",
+        "reference_master_preserved": true,
+        "masters_updated": [
+          "ExtraBlack",
+          "Regular",
+          "Thin"
+        ],
+        "contour_aware": false,
+        "transforms": {
+          "Thin": {
+            "mode": "whole_glyph",
+            "transform": {
+              "mode": "whole_glyph",
+              "transform": {
+                "scale_x": 0.9414,
+                "scale_y": 0.9933,
+                "area_ratio": 0.9316,
+                "width_ratio": 0.9321,
+                "height_ratio": 0.9985
+              }
+            },
+            "target_metrics": {
+              "center": [
+                259.0,
+                324.0
+              ],
+              "width": 412.0,
+              "height": 648.0,
+              "area": 157612.16411999997
+            },
+            "result_metrics": {
+              "center": [
+                259.0,
+                324.0
+              ],
+              "width": 416.0911537154557,
+              "height": 644.6602539715532,
+              "area": 158205.6711828483
+            },
+            "result_area_vs_donor": 1.4245
+          },
+          "Regular": {
+            "mode": "reference",
+            "transform": {
+              "scale_x": 1.0,
+              "scale_y": 1.0,
+              "area_ratio": 1.0,
+              "width_ratio": 1.0,
+              "height_ratio": 1.0
+            }
+          },
+          "ExtraBlack": {
+            "mode": "whole_glyph",
+            "transform": {
+              "mode": "whole_glyph",
+              "transform": {
+                "scale_x": 1.0575,
+                "scale_y": 0.9639,
+                "area_ratio": 0.9917,
+                "width_ratio": 1.0814,
+                "height_ratio": 1.0
+              }
+            },
+            "target_metrics": {
+              "center": [
+                272.0,
+                324.5
+              ],
+              "width": 478.0,
+              "height": 649.0,
+              "area": 167787.95295999997
+            },
+            "result_metrics": {
+              "center": [
+                272.0,
+                324.5
+              ],
+              "width": 467.4068619840207,
+              "height": 625.5932570738164,
+              "area": 172460.56836178954
+            },
+            "result_area_vs_donor": 1.1841
+          }
+        },
+        "skipped_masters": {},
+        "strategy": "structural_fallback"
+      },
+      "dollar.tf": {
+        "applied": true,
+        "reference_master": "Regular",
+        "reference_master_preserved": true,
+        "masters_updated": [
+          "ExtraBlack",
+          "Regular",
+          "Thin"
+        ],
+        "contour_aware": false,
+        "transforms": {
+          "Thin": {
+            "mode": "whole_glyph",
+            "transform": {
+              "mode": "whole_glyph",
+              "transform": {
+                "scale_x": 0.931,
+                "scale_y": 0.9956,
+                "area_ratio": 0.9106,
+                "width_ratio": 0.9219,
+                "height_ratio": 1.0199
+              }
+            },
+            "target_metrics": {
+              "center": [
+                277.5,
+                327.5
+              ],
+              "width": 437.0,
+              "height": 873.0,
+              "area": 214804.28972
+            },
+            "result_metrics": {
+              "center": [
+                277.5,
+                327.5
+              ],
+              "width": 441.2875815526712,
+              "height": 852.2608629616484,
+              "area": 218657.32931506724
+            },
+            "result_area_vs_donor": 1.3603
+          },
+          "Regular": {
+            "mode": "reference",
+            "transform": {
+              "scale_x": 1.0,
+              "scale_y": 1.0,
+              "area_ratio": 1.0,
+              "width_ratio": 1.0,
+              "height_ratio": 1.0
+            }
+          },
+          "ExtraBlack": {
+            "mode": "whole_glyph",
+            "transform": {
+              "mode": "whole_glyph",
+              "transform": {
+                "scale_x": 1.0842,
+                "scale_y": 1.0035,
+                "area_ratio": 1.0934,
+                "width_ratio": 1.0992,
+                "height_ratio": 0.9965
+              }
+            },
+            "target_metrics": {
+              "center": [
+                300.5,
+                323.5
+              ],
+              "width": 521.0,
+              "height": 853.0,
+              "area": 257934.60046000005
+            },
+            "result_metrics": {
+              "center": [
+                300.5,
+                323.5
+              ],
+              "width": 513.901068856648,
+              "height": 858.9723333453323,
+              "area": 256642.4453615242
+            },
+            "result_area_vs_donor": 1.2102
+          }
+        },
+        "skipped_masters": {},
+        "strategy": "structural_fallback"
+      },
+      "cent.tf": {
+        "applied": true,
+        "reference_master": "Regular",
+        "reference_master_preserved": true,
+        "masters_updated": [
+          "ExtraBlack",
+          "Regular",
+          "Thin"
+        ],
+        "contour_aware": false,
+        "transforms": {
+          "Thin": {
+            "mode": "whole_glyph",
+            "transform": {
+              "mode": "whole_glyph",
+              "transform": {
+                "scale_x": 0.9567,
+                "scale_y": 1.0006,
+                "area_ratio": 0.9587,
+                "width_ratio": 0.948,
+                "height_ratio": 0.9985
+              }
+            },
+            "target_metrics": {
+              "center": [
+                282.5,
+                324.0
+              ],
+              "width": 419.0,
+              "height": 648.0,
+              "area": 162197.77014000004
+            },
+            "result_metrics": {
+              "center": [
+                282.5,
+                324.0
+              ],
+              "width": 422.85636547779393,
+              "height": 649.3649039369343,
+              "area": 161951.26900350765
+            },
+            "result_area_vs_donor": 1.4132
+          },
+          "Regular": {
+            "mode": "reference",
+            "transform": {
+              "scale_x": 1.0,
+              "scale_y": 1.0,
+              "area_ratio": 1.0,
+              "width_ratio": 1.0,
+              "height_ratio": 1.0
+            }
+          },
+          "ExtraBlack": {
+            "mode": "whole_glyph",
+            "transform": {
+              "mode": "whole_glyph",
+              "transform": {
+                "scale_x": 1.0575,
+                "scale_y": 0.9639,
+                "area_ratio": 0.9917,
+                "width_ratio": 1.0814,
+                "height_ratio": 1.0
+              }
+            },
+            "target_metrics": {
+              "center": [
+                305.0,
+                324.5
+              ],
+              "width": 478.0,
+              "height": 649.0,
+              "area": 167787.95296000005
+            },
+            "result_metrics": {
+              "center": [
+                305.0,
+                324.5
+              ],
+              "width": 467.4068619840209,
+              "height": 625.5932570738166,
+              "area": 172460.5683617897
+            },
+            "result_area_vs_donor": 1.1841
+          }
+        },
+        "skipped_masters": {},
+        "strategy": "structural_fallback"
+      },
+      "dollar.ss08": {
+        "applied": true,
+        "reference_master": "Regular",
+        "reference_master_preserved": true,
+        "masters_updated": [
+          "ExtraBlack",
+          "Regular",
+          "Thin"
+        ],
+        "contour_aware": false,
+        "transforms": {
+          "Thin": {
+            "mode": "whole_glyph",
+            "transform": {
+              "mode": "whole_glyph",
+              "transform": {
+                "scale_x": 0.9405,
+                "scale_y": 0.9796,
+                "area_ratio": 0.9104,
+                "width_ratio": 0.9352,
+                "height_ratio": 0.9957
+              }
+            },
+            "target_metrics": {
+              "center": [
+                270.0,
+                355.0
+              ],
+              "width": 462.0,
+              "height": 934.0,
+              "area": 241093.00998000015
+            },
+            "result_metrics": {
+              "center": [
+                270.0,
+                355.0
+              ],
+              "width": 464.6146294331752,
+              "height": 918.8739223156113,
+              "area": 244001.61261725688
+            },
+            "result_area_vs_donor": 1.3624
+          },
+          "Regular": {
+            "mode": "reference",
+            "transform": {
+              "scale_x": 1.0,
+              "scale_y": 1.0,
+              "area_ratio": 1.0,
+              "width_ratio": 1.0,
+              "height_ratio": 1.0
+            }
+          },
+          "ExtraBlack": {
+            "mode": "whole_glyph",
+            "transform": {
+              "mode": "whole_glyph",
+              "transform": {
+                "scale_x": 1.0763,
+                "scale_y": 0.9679,
+                "area_ratio": 1.0457,
+                "width_ratio": 1.0972,
+                "height_ratio": 0.9627
+              }
+            },
+            "target_metrics": {
+              "center": [
+                300.0,
+                354.5
+              ],
+              "width": 542.0,
+              "height": 903.0,
+              "area": 276945.4434399999
+            },
+            "result_metrics": {
+              "center": [
+                300.0,
+                354.5
+              ],
+              "width": 531.687492774174,
+              "height": 907.853579409642,
+              "area": 275877.41265646706
+            },
+            "result_area_vs_donor": 1.2131
+          }
+        },
+        "skipped_masters": {},
+        "strategy": "structural_fallback"
+      },
+      "cent.ss08": {
+        "applied": true,
+        "reference_master": "Regular",
+        "reference_master_preserved": true,
+        "masters_updated": [
+          "ExtraBlack",
+          "Regular",
+          "Thin"
+        ],
+        "contour_aware": false,
+        "transforms": {
+          "Thin": {
+            "mode": "whole_glyph",
+            "transform": {
+              "mode": "whole_glyph",
+              "transform": {
+                "scale_x": 0.9306,
+                "scale_y": 0.9773,
+                "area_ratio": 0.8942,
+                "width_ratio": 0.9247,
+                "height_ratio": 1.0
+              }
+            },
+            "target_metrics": {
+              "center": [
+                268.0,
+                354.5
+              ],
+              "width": 430.0,
+              "height": 709.0,
+              "area": 177137.19239999997
+            },
+            "result_metrics": {
+              "center": [
+                268.0,
+                354.5
+              ],
+              "width": 432.71858478586967,
+              "height": 692.9162688446663,
+              "area": 180165.49282701733
+            },
+            "result_area_vs_donor": 1.443
+          },
+          "Regular": {
+            "mode": "reference",
+            "transform": {
+              "scale_x": 1.0,
+              "scale_y": 1.0,
+              "area_ratio": 1.0,
+              "width_ratio": 1.0,
+              "height_ratio": 1.0
+            }
+          },
+          "ExtraBlack": {
+            "mode": "whole_glyph",
+            "transform": {
+              "mode": "whole_glyph",
+              "transform": {
+                "scale_x": 1.0701,
+                "scale_y": 0.9518,
+                "area_ratio": 0.9811,
+                "width_ratio": 1.1011,
+                "height_ratio": 1.0
+              }
+            },
+            "target_metrics": {
+              "center": [
+                295.0,
+                354.5
+              ],
+              "width": 512.0,
+              "height": 709.0,
+              "area": 194365.31394000002
+            },
+            "result_metrics": {
+              "center": [
+                295.0,
+                354.5
+              ],
+              "width": 497.6068577241906,
+              "height": 674.8092924255343,
+              "area": 201768.19974468532
+            },
+            "result_area_vs_donor": 1.2125
+          }
+        },
+        "skipped_masters": {},
+        "strategy": "structural_fallback"
+      },
+      "dollar.tf.ss08": {
+        "applied": true,
+        "reference_master": "Regular",
+        "reference_master_preserved": true,
+        "masters_updated": [
+          "ExtraBlack",
+          "Regular",
+          "Thin"
+        ],
+        "contour_aware": false,
+        "transforms": {
+          "Thin": {
+            "mode": "whole_glyph",
+            "transform": {
+              "mode": "whole_glyph",
+              "transform": {
+                "scale_x": 0.9405,
+                "scale_y": 0.9796,
+                "area_ratio": 0.9104,
+                "width_ratio": 0.9352,
+                "height_ratio": 0.9957
+              }
+            },
+            "target_metrics": {
+              "center": [
+                276.0,
+                355.0
+              ],
+              "width": 462.0,
+              "height": 934.0,
+              "area": 241093.00998000003
+            },
+            "result_metrics": {
+              "center": [
+                276.0,
+                355.0
+              ],
+              "width": 464.61462943317514,
+              "height": 918.8739223156113,
+              "area": 244001.61261725688
+            },
+            "result_area_vs_donor": 1.3624
+          },
+          "Regular": {
+            "mode": "reference",
+            "transform": {
+              "scale_x": 1.0,
+              "scale_y": 1.0,
+              "area_ratio": 1.0,
+              "width_ratio": 1.0,
+              "height_ratio": 1.0
+            }
+          },
+          "ExtraBlack": {
+            "mode": "whole_glyph",
+            "transform": {
+              "mode": "whole_glyph",
+              "transform": {
+                "scale_x": 1.0791,
+                "scale_y": 0.9719,
+                "area_ratio": 1.056,
+                "width_ratio": 1.0992,
+                "height_ratio": 0.9627
+              }
+            },
+            "target_metrics": {
+              "center": [
+                300.5,
+                354.5
+              ],
+              "width": 543.0,
+              "height": 903.0,
+              "area": 279660.2747999998
+            },
+            "result_metrics": {
+              "center": [
+                300.5,
+                354.5
+              ],
+              "width": 533.0990903474969,
+              "height": 911.6218705408228,
+              "area": 277757.99399510183
+            },
+            "result_area_vs_donor": 1.209
+          }
+        },
+        "skipped_masters": {},
+        "strategy": "structural_fallback"
+      },
+      "cent.tf.ss08": {
+        "applied": true,
+        "reference_master": "Regular",
+        "reference_master_preserved": true,
+        "masters_updated": [
+          "ExtraBlack",
+          "Regular",
+          "Thin"
+        ],
+        "contour_aware": false,
+        "transforms": {
+          "Thin": {
+            "mode": "whole_glyph",
+            "transform": {
+              "mode": "whole_glyph",
+              "transform": {
+                "scale_x": 0.9306,
+                "scale_y": 0.9773,
+                "area_ratio": 0.8942,
+                "width_ratio": 0.9247,
+                "height_ratio": 1.0
+              }
+            },
+            "target_metrics": {
+              "center": [
+                283.0,
+                354.5
+              ],
+              "width": 430.0,
+              "height": 709.0,
+              "area": 177137.1924
+            },
+            "result_metrics": {
+              "center": [
+                283.0,
+                354.5
+              ],
+              "width": 432.7185847858698,
+              "height": 692.9162688446665,
+              "area": 180165.49282701744
+            },
+            "result_area_vs_donor": 1.443
+          },
+          "Regular": {
+            "mode": "reference",
+            "transform": {
+              "scale_x": 1.0,
+              "scale_y": 1.0,
+              "area_ratio": 1.0,
+              "width_ratio": 1.0,
+              "height_ratio": 1.0
+            }
+          },
+          "ExtraBlack": {
+            "mode": "whole_glyph",
+            "transform": {
+              "mode": "whole_glyph",
+              "transform": {
+                "scale_x": 1.0701,
+                "scale_y": 0.9518,
+                "area_ratio": 0.9811,
+                "width_ratio": 1.1011,
+                "height_ratio": 1.0
+              }
+            },
+            "target_metrics": {
+              "center": [
+                307.0,
+                354.5
+              ],
+              "width": 512.0,
+              "height": 709.0,
+              "area": 194365.31394000008
+            },
+            "result_metrics": {
+              "center": [
+                307.0,
+                354.5
+              ],
+              "width": 497.6068577241906,
+              "height": 674.8092924255343,
+              "area": 201768.19974468547
+            },
+            "result_area_vs_donor": 1.2125
+          }
+        },
+        "skipped_masters": {},
+        "strategy": "structural_fallback"
+      },
+      "d": {
+        "applied": true,
+        "strategy": "donor_copy",
+        "donor_raw_compat": false,
+        "donor_names_by_master": {
+          "Thin": "d",
+          "Regular": "d",
+          "ExtraBlack": "d"
+        },
+        "masters_updated": [
+          "Thin",
+          "Regular",
+          "ExtraBlack"
+        ],
+        "normalized_donor_copy": true
+      },
+      "e": {
+        "applied": true,
+        "strategy": "donor_copy",
+        "donor_raw_compat": false,
+        "donor_names_by_master": {
+          "Thin": "e",
+          "Regular": "e",
+          "ExtraBlack": "e"
+        },
+        "masters_updated": [
+          "Thin",
+          "Regular",
+          "ExtraBlack"
+        ],
+        "normalized_donor_copy": true
+      },
+      "egrave": {
+        "applied": true,
+        "strategy": "donor_copy",
+        "donor_raw_compat": false,
+        "donor_names_by_master": {
+          "Thin": "egrave",
+          "Regular": "egrave",
+          "ExtraBlack": "egrave"
+        },
+        "masters_updated": [
+          "Thin",
+          "Regular",
+          "ExtraBlack"
+        ],
+        "normalized_donor_copy": true
+      },
+      "eacute": {
+        "applied": true,
+        "strategy": "donor_copy",
+        "donor_raw_compat": false,
+        "donor_names_by_master": {
+          "Thin": "eacute",
+          "Regular": "eacute",
+          "ExtraBlack": "eacute"
+        },
+        "masters_updated": [
+          "Thin",
+          "Regular",
+          "ExtraBlack"
+        ],
+        "normalized_donor_copy": true
+      },
+      "r": {
+        "applied": true,
+        "strategy": "donor_copy",
+        "donor_raw_compat": true,
+        "donor_names_by_master": {
+          "Thin": "r",
+          "Regular": "r",
+          "ExtraBlack": "r"
+        },
+        "masters_updated": [
+          "Thin",
+          "Regular",
+          "ExtraBlack"
+        ],
+        "normalized_donor_copy": false
+      },
+      "t": {
+        "applied": true,
+        "strategy": "donor_copy",
+        "donor_raw_compat": true,
+        "donor_names_by_master": {
+          "Thin": "t",
+          "Regular": "t",
+          "ExtraBlack": "t"
+        },
+        "masters_updated": [
+          "Thin",
+          "Regular",
+          "ExtraBlack"
+        ],
+        "normalized_donor_copy": false
+      },
+      "u": {
+        "applied": true,
+        "strategy": "donor_copy",
+        "donor_raw_compat": false,
+        "donor_names_by_master": {
+          "Thin": "u",
+          "Regular": "u",
+          "ExtraBlack": "u"
+        },
+        "masters_updated": [
+          "Thin",
+          "Regular",
+          "ExtraBlack"
+        ],
+        "normalized_donor_copy": true
+      },
+      "ampersand.ss04": {
+        "applied": true,
+        "reference_master": "Regular",
+        "reference_master_preserved": true,
+        "masters_updated": [
+          "ExtraBlack",
+          "Regular",
+          "Thin"
+        ],
+        "contour_aware": true,
+        "transforms": {
+          "Thin": {
+            "mode": "whole_glyph",
+            "transform": {
+              "mode": "whole_glyph",
+              "transform": {
+                "scale_x": 0.8683,
+                "scale_y": 0.7141,
+                "area_ratio": 0.4453,
+                "width_ratio": 0.9464,
+                "height_ratio": 0.9919
+              }
+            },
+            "target_metrics": {
+              "center": [
+                338.5,
+                354.5
+              ],
+              "width": 565.0,
+              "height": 733.0,
+              "area": 76959.26398000013
+            },
+            "result_metrics": {
+              "center": [
+                338.5,
+                354.5
+              ],
+              "width": 518.3481818282421,
+              "height": 527.6892359562135,
+              "area": 107147.41157595479
+            },
+            "result_area_vs_donor": 1.6428
+          },
+          "Regular": {
+            "mode": "reference",
+            "transform": {
+              "scale_x": 1.0,
+              "scale_y": 1.0,
+              "area_ratio": 1.0,
+              "width_ratio": 1.0,
+              "height_ratio": 1.0
+            }
+          },
+          "ExtraBlack": {
+            "mode": "whole_glyph",
+            "transform": {
+              "mode": "whole_glyph",
+              "transform": {
+                "scale_x": 1.089,
+                "scale_y": 1.244,
+                "area_ratio": 1.5493,
+                "width_ratio": 1.0285,
+                "height_ratio": 0.9973
+              }
+            },
+            "target_metrics": {
+              "center": [
+                348.0,
+                355.5
+              ],
+              "width": 614.0,
+              "height": 737.0,
+              "area": 267746.0331
+            },
+            "result_metrics": {
+              "center": [
+                348.0,
+                355.5
+              ],
+              "width": 650.1423817562663,
+              "height": 919.3024713068558,
+              "area": 234125.53062287509
+            },
+            "result_area_vs_donor": 1.1445
+          }
+        },
+        "skipped_masters": {}
+      },
+      "zero": {
+        "applied": true,
+        "reference_master": "Regular",
+        "reference_master_preserved": true,
+        "masters_updated": [
+          "ExtraBlack",
+          "Regular",
+          "Thin"
+        ],
+        "contour_aware": true,
+        "transforms": {
+          "Thin": {
+            "mode": "contour_aware",
+            "transform": {
+              "mode": "contour_aware",
+              "contour_mapping": [
+                0,
+                1
+              ],
+              "contour_transforms": {
+                "0": {
+                  "scale_x": 0.9411,
+                  "scale_y": 0.9841,
+                  "area_ratio": 0.9214,
+                  "width_ratio": 0.9339,
+                  "height_ratio": 0.9912
+                },
+                "1": {
+                  "scale_x": 1.2271,
+                  "scale_y": 1.1779,
+                  "area_ratio": 1.4413,
+                  "width_ratio": 1.2375,
+                  "height_ratio": 1.1825
+                }
+              }
+            },
+            "target_metrics": {
+              "center": [
+                299.0,
+                324.0
+              ],
+              "width": 480.0,
+              "height": 672.0,
+              "area": 455643.8905600001
+            },
+            "result_metrics": {
+              "center": [
+                299.0,
+                324.0
+              ],
+              "width": 483.7445494191054,
+              "height": 667.2126969520605,
+              "area": 457571.4228824723
+            },
+            "result_area_vs_donor": 1.1205
+          },
+          "Regular": {
+            "mode": "reference",
+            "transform": {
+              "scale_x": 1.0,
+              "scale_y": 1.0,
+              "area_ratio": 1.0,
+              "width_ratio": 1.0,
+              "height_ratio": 1.0
+            }
+          },
+          "ExtraBlack": {
+            "mode": "contour_aware",
+            "transform": {
+              "mode": "contour_aware",
+              "contour_mapping": [
+                1,
+                0
+              ],
+              "contour_transforms": {
+                "0": {
+                  "scale_x": 1.091,
+                  "scale_y": 0.9997,
+                  "area_ratio": 1.0915,
+                  "width_ratio": 1.1089,
+                  "height_ratio": 0.9985
+                },
+                "1": {
+                  "scale_x": 0.6254,
+                  "scale_y": 0.6663,
+                  "area_ratio": 0.4129,
+                  "width_ratio": 0.6188,
+                  "height_ratio": 0.6746
+                }
+              }
+            },
+            "target_metrics": {
+              "center": [
+                327.0,
+                323.5
+              ],
+              "width": 570.0,
+              "height": 677.0,
+              "area": 366265.52760000015
+            },
+            "result_metrics": {
+              "center": [
+                327.0,
+                323.5
+              ],
+              "width": 560.7607605863373,
+              "height": 677.7722145249804,
+              "area": 366516.3135547101
+            },
+            "result_area_vs_donor": 1.6174
+          }
+        },
+        "skipped_masters": {}
+      },
+      "two": {
+        "applied": true,
+        "reference_master": "Regular",
+        "reference_master_preserved": true,
+        "masters_updated": [
+          "ExtraBlack",
+          "Regular",
+          "Thin"
+        ],
+        "contour_aware": true,
+        "transforms": {
+          "Thin": {
+            "mode": "whole_glyph",
+            "transform": {
+              "mode": "whole_glyph",
+              "transform": {
+                "scale_x": 0.8561,
+                "scale_y": 0.7251,
+                "area_ratio": 0.4531,
+                "width_ratio": 0.9273,
+                "height_ratio": 0.9955
+              }
+            },
+            "target_metrics": {
+              "center": [
+                267.5,
+                330.0
+              ],
+              "width": 421.0,
+              "height": 660.0,
+              "area": 63840.459520000084
+            },
+            "result_metrics": {
+              "center": [
+                267.5,
+                330.0
+              ],
+              "width": 388.68947575666516,
+              "height": 480.7188159298376,
+              "area": 87460.21728664983
+            },
+            "result_area_vs_donor": 1.6925
+          },
+          "Regular": {
+            "mode": "reference",
+            "transform": {
+              "scale_x": 1.0,
+              "scale_y": 1.0,
+              "area_ratio": 1.0,
+              "width_ratio": 1.0,
+              "height_ratio": 1.0
+            }
+          },
+          "ExtraBlack": {
+            "mode": "whole_glyph",
+            "transform": {
+              "mode": "whole_glyph",
+              "transform": {
+                "scale_x": 1.1555,
+                "scale_y": 1.2461,
+                "area_ratio": 1.6469,
+                "width_ratio": 1.1057,
+                "height_ratio": 0.9985
+              }
+            },
+            "target_metrics": {
+              "center": [
+                292.0,
+                331.0
+              ],
+              "width": 502.0,
+              "height": 662.0,
+              "area": 232037.91644
+            },
+            "result_metrics": {
+              "center": [
+                292.0,
+                331.0
+              ],
+              "width": 524.576202164601,
+              "height": 826.1424169240702,
+              "area": 202852.40190201096
+            },
+            "result_area_vs_donor": 1.0771
+          }
+        },
+        "skipped_masters": {}
+      },
+      "twosuperior": {
+        "applied": true,
+        "strategy": "donor_copy",
+        "donor_raw_compat": false,
+        "donor_names_by_master": {
+          "Thin": "twosuperior",
+          "Regular": "twosuperior",
+          "ExtraBlack": "twosuperior"
+        },
+        "masters_updated": [
+          "Thin",
+          "Regular",
+          "ExtraBlack"
+        ],
+        "normalized_donor_copy": true
+      },
+      "three": {
+        "applied": true,
+        "reference_master": "Regular",
+        "reference_master_preserved": true,
+        "masters_updated": [
+          "ExtraBlack",
+          "Regular",
+          "Thin"
+        ],
+        "contour_aware": true,
+        "transforms": {
+          "Thin": {
+            "mode": "whole_glyph",
+            "transform": {
+              "mode": "whole_glyph",
+              "transform": {
+                "scale_x": 0.8769,
+                "scale_y": 0.7225,
+                "area_ratio": 0.4612,
+                "width_ratio": 0.9538,
+                "height_ratio": 0.994
+              }
+            },
+            "target_metrics": {
+              "center": [
+                284.0,
+                318.0
+              ],
+              "width": 454.0,
+              "height": 660.0,
+              "area": 67067.46051999996
+            },
+            "result_metrics": {
+              "center": [
+                284.0,
+                318.0
+              ],
+              "width": 417.39445472838145,
+              "height": 479.7639986960549,
+              "area": 92130.88645654364
+            },
+            "result_area_vs_donor": 1.6628
+          },
+          "Regular": {
+            "mode": "reference",
+            "transform": {
+              "scale_x": 1.0,
+              "scale_y": 1.0,
+              "area_ratio": 1.0,
+              "width_ratio": 1.0,
+              "height_ratio": 1.0
+            }
+          },
+          "ExtraBlack": {
+            "mode": "whole_glyph",
+            "transform": {
+              "mode": "whole_glyph",
+              "transform": {
+                "scale_x": 1.1249,
+                "scale_y": 1.2002,
+                "area_ratio": 1.5132,
+                "width_ratio": 1.084,
+                "height_ratio": 1.0
+              }
+            },
+            "target_metrics": {
+              "center": [
+                293.0,
+                317.0
+              ],
+              "width": 516.0,
+              "height": 664.0,
+              "area": 220035.37236000004
+            },
+            "result_metrics": {
+              "center": [
+                293.0,
+                317.0
+              ],
+              "width": 535.4688065671683,
+              "height": 796.9105836492536,
+              "area": 196324.58599235033
+            },
+            "result_area_vs_donor": 1.0549
+          }
+        },
+        "skipped_masters": {}
+      },
+      "threesuperior": {
+        "applied": true,
+        "strategy": "donor_copy",
+        "donor_raw_compat": false,
+        "donor_names_by_master": {
+          "Thin": "threesuperior",
+          "Regular": "threesuperior",
+          "ExtraBlack": "threesuperior"
+        },
+        "masters_updated": [
+          "Thin",
+          "Regular",
+          "ExtraBlack"
+        ],
+        "normalized_donor_copy": true
+      },
+      "six": {
+        "applied": true,
+        "reference_master": "Regular",
+        "reference_master_preserved": true,
+        "masters_updated": [
+          "ExtraBlack",
+          "Regular",
+          "Thin"
+        ],
+        "contour_aware": true,
+        "transforms": {
+          "Thin": {
+            "mode": "contour_aware",
+            "transform": {
+              "mode": "contour_aware",
+              "contour_mapping": [
+                0,
+                1
+              ],
+              "contour_transforms": {
+                "0": {
+                  "scale_x": 0.9291,
+                  "scale_y": 0.9256,
+                  "area_ratio": 0.8158,
+                  "width_ratio": 0.9391,
+                  "height_ratio": 0.9912
+                },
+                "1": {
+                  "scale_x": 1.299,
+                  "scale_y": 1.318,
+                  "area_ratio": 1.7045,
+                  "width_ratio": 1.2964,
+                  "height_ratio": 1.326
+                }
+              }
+            },
+            "target_metrics": {
+              "center": [
+                288.5,
+                324.0
+              ],
+              "width": 463.0,
+              "height": 672.0,
+              "area": 283955.3759800001
+            },
+            "result_metrics": {
+              "center": [
+                288.5,
+                324.0
+              ],
+              "width": 458.0406212964308,
+              "height": 627.5336771824468,
+              "area": 294165.39301644487
+            },
+            "result_area_vs_donor": 1.621
+          },
+          "Regular": {
+            "mode": "reference",
+            "transform": {
+              "scale_x": 1.0,
+              "scale_y": 1.0,
+              "area_ratio": 1.0,
+              "width_ratio": 1.0,
+              "height_ratio": 1.0
+            }
+          },
+          "ExtraBlack": {
+            "mode": "contour_aware",
+            "transform": {
+              "mode": "contour_aware",
+              "contour_mapping": [
+                0,
+                1
+              ],
+              "contour_transforms": {
+                "0": {
+                  "scale_x": 1.1018,
+                  "scale_y": 1.0657,
+                  "area_ratio": 1.2278,
+                  "width_ratio": 1.0994,
+                  "height_ratio": 0.9985
+                },
+                "1": {
+                  "scale_x": 0.5897,
+                  "scale_y": 0.5726,
+                  "area_ratio": 0.3382,
+                  "width_ratio": 0.5929,
+                  "height_ratio": 0.5714
+                }
+              }
+            },
+            "target_metrics": {
+              "center": [
+                311.0,
+                323.5
+              ],
+              "width": 542.0,
+              "height": 677.0,
+              "area": 291928.57784000004
+            },
+            "result_metrics": {
+              "center": [
+                311.0,
+                323.5
+              ],
+              "width": 543.1972417233301,
+              "height": 722.5449067569598,
+              "area": 280051.466234523
+            },
+            "result_area_vs_donor": 1.4971
+          }
+        },
+        "skipped_masters": {}
+      },
+      "nine": {
+        "applied": true,
+        "reference_master": "Regular",
+        "reference_master_preserved": true,
+        "masters_updated": [
+          "ExtraBlack",
+          "Regular",
+          "Thin"
+        ],
+        "contour_aware": true,
+        "transforms": {
+          "Thin": {
+            "mode": "contour_aware",
+            "transform": {
+              "mode": "contour_aware",
+              "contour_mapping": [
+                0,
+                1
+              ],
+              "contour_transforms": {
+                "0": {
+                  "scale_x": 0.9195,
+                  "scale_y": 0.9166,
+                  "area_ratio": 0.7931,
+                  "width_ratio": 0.9308,
+                  "height_ratio": 0.9912
+                },
+                "1": {
+                  "scale_x": 1.2769,
+                  "scale_y": 1.2892,
+                  "area_ratio": 1.6426,
+                  "width_ratio": 1.275,
+                  "height_ratio": 1.293
+                }
+              }
+            },
+            "target_metrics": {
+              "center": [
+                283.5,
+                324.0
+              ],
+              "width": 457.0,
+              "height": 672.0,
+              "area": 274645.53300000005
+            },
+            "result_metrics": {
+              "center": [
+                283.5,
+                324.0
+              ],
+              "width": 451.4775754576539,
+              "height": 621.4380840507602,
+              "area": 285840.0944952028
+            },
+            "result_area_vs_donor": 1.6503
+          },
+          "Regular": {
+            "mode": "reference",
+            "transform": {
+              "scale_x": 1.0,
+              "scale_y": 1.0,
+              "area_ratio": 1.0,
+              "width_ratio": 1.0,
+              "height_ratio": 1.0
+            }
+          },
+          "ExtraBlack": {
+            "mode": "contour_aware",
+            "transform": {
+              "mode": "contour_aware",
+              "contour_mapping": [
+                0,
+                1
+              ],
+              "contour_transforms": {
+                "0": {
+                  "scale_x": 1.087,
+                  "scale_y": 1.0665,
+                  "area_ratio": 1.2129,
+                  "width_ratio": 1.0815,
+                  "height_ratio": 0.9985
+                },
+                "1": {
+                  "scale_x": 0.5802,
+                  "scale_y": 0.5875,
+                  "area_ratio": 0.3414,
+                  "width_ratio": 0.5786,
+                  "height_ratio": 0.5861
+                }
+              }
+            },
+            "target_metrics": {
+              "center": [
+                303.5,
+                323.5
+              ],
+              "width": 531.0,
+              "height": 677.0,
+              "area": 288831.57208
+            },
+            "result_metrics": {
+              "center": [
+                303.5,
+                323.5
+              ],
+              "width": 533.7275454019828,
+              "height": 723.108613037959,
+              "area": 276959.00339121907
+            },
+            "result_area_vs_donor": 1.4727
+          }
+        },
+        "skipped_masters": {}
+      },
+      "guillemotright": {
+        "applied": true,
+        "strategy": "donor_copy",
+        "donor_raw_compat": true,
+        "donor_names_by_master": {
+          "Thin": "guillemotright",
+          "Regular": "guillemotright",
+          "ExtraBlack": "guillemotright"
+        },
+        "masters_updated": [
+          "Thin",
+          "Regular",
+          "ExtraBlack"
+        ],
+        "normalized_donor_copy": false
+      },
+      "onehalf": {
+        "applied": true,
+        "reference_master": "Regular",
+        "reference_master_preserved": true,
+        "masters_updated": [
+          "ExtraBlack",
+          "Regular",
+          "Thin"
+        ],
+        "contour_aware": true,
+        "transforms": {
+          "Thin": {
+            "mode": "contour_aware",
+            "transform": {
+              "mode": "contour_aware",
+              "contour_mapping": [
+                1,
+                0,
+                2
+              ],
+              "contour_transforms": {
+                "0": {
+                  "scale_x": 0.8587,
+                  "scale_y": 0.7243,
+                  "area_ratio": 0.4505,
+                  "width_ratio": 0.9317,
+                  "height_ratio": 1.0
+                },
+                "1": {
+                  "scale_x": 0.7393,
+                  "scale_y": 0.8008,
+                  "area_ratio": 0.4897,
+                  "width_ratio": 0.7546,
+                  "height_ratio": 0.9918
+                },
+                "2": {
+                  "scale_x": 0.8809,
+                  "scale_y": 0.7543,
+                  "area_ratio": 0.5162,
+                  "width_ratio": 0.944,
+                  "height_ratio": 0.9866
+                }
+              }
+            },
+            "target_metrics": {
+              "center": [
+                378.0,
+                324.0
+              ],
+              "width": 668.0,
+              "height": 648.0,
+              "area": 73428.85919999996
+            },
+            "result_metrics": {
+              "center": [
+                374.3940736494593,
+                328.1753353003191
+              ],
+              "width": 658.2878752346867,
+              "height": 569.9363195218631,
+              "area": 95695.82151828417
+            },
+            "result_area_vs_donor": 1.3979
+          },
+          "Regular": {
+            "mode": "reference",
+            "transform": {
+              "scale_x": 1.0,
+              "scale_y": 1.0,
+              "area_ratio": 1.0,
+              "width_ratio": 1.0,
+              "height_ratio": 1.0
+            }
+          },
+          "ExtraBlack": {
+            "mode": "contour_aware",
+            "transform": {
+              "mode": "contour_aware",
+              "contour_mapping": [
+                1,
+                0,
+                2
+              ],
+              "contour_transforms": {
+                "0": {
+                  "scale_x": 1.0413,
+                  "scale_y": 1.2206,
+                  "area_ratio": 1.4363,
+                  "width_ratio": 0.9802,
+                  "height_ratio": 1.0015
+                },
+                "1": {
+                  "scale_x": 1.3036,
+                  "scale_y": 1.1612,
+                  "area_ratio": 1.6375,
+                  "width_ratio": 1.3129,
+                  "height_ratio": 1.0301
+                },
+                "2": {
+                  "scale_x": 1.1751,
+                  "scale_y": 1.1839,
+                  "area_ratio": 1.518,
+                  "width_ratio": 1.153,
+                  "height_ratio": 1.0349
+                }
+              }
+            },
+            "target_metrics": {
+              "center": [
+                415.0,
+                324.5
+              ],
+              "width": 768.0,
+              "height": 649.0,
+              "area": 229149.49631999986
+            },
+            "result_metrics": {
+              "center": [
+                416.86270574484104,
+                324.5
+              ],
+              "width": 770.2092257910735,
+              "height": 790.9706786689112,
+              "area": 207782.91684002464
+            },
+            "result_area_vs_donor": 0.9668
+          }
+        },
+        "skipped_masters": {}
+      },
+      "threequarters": {
+        "applied": true,
+        "reference_master": "Regular",
+        "reference_master_preserved": true,
+        "masters_updated": [
+          "ExtraBlack",
+          "Regular",
+          "Thin"
+        ],
+        "contour_aware": true,
+        "transforms": {
+          "Thin": {
+            "mode": "contour_aware",
+            "transform": {
+              "mode": "contour_aware",
+              "contour_mapping": [
+                1,
+                0,
+                2,
+                3
+              ],
+              "contour_transforms": {
+                "0": {
+                  "scale_x": 0.8587,
+                  "scale_y": 0.7243,
+                  "area_ratio": 0.4505,
+                  "width_ratio": 0.9317,
+                  "height_ratio": 1.0
+                },
+                "1": {
+                  "scale_x": 0.8782,
+                  "scale_y": 0.7685,
+                  "area_ratio": 0.5362,
+                  "width_ratio": 0.9349,
+                  "height_ratio": 0.9866
+                },
+                "2": {
+                  "scale_x": 0.9034,
+                  "scale_y": 0.8647,
+                  "area_ratio": 0.6998,
+                  "width_ratio": 0.9294,
+                  "height_ratio": 0.989
+                },
+                "3": {
+                  "scale_x": 1.4208,
+                  "scale_y": 1.4566,
+                  "area_ratio": 2.0657,
+                  "width_ratio": 1.4144,
+                  "height_ratio": 1.4604
+                }
+              }
+            },
+            "target_metrics": {
+              "center": [
+                423.0,
+                324.0
+              ],
+              "width": 738.0,
+              "height": 648.0,
+              "area": 121191.74904
+            },
+            "result_metrics": {
+              "center": [
+                425.0228392166783,
+                315.51128128767465
+              ],
+              "width": 725.474877972519,
+              "height": 583.6296874034132,
+              "area": 145007.74914953028
+            },
+            "result_area_vs_donor": 1.2517
+          },
+          "Regular": {
+            "mode": "reference",
+            "transform": {
+              "scale_x": 1.0,
+              "scale_y": 1.0,
+              "area_ratio": 1.0,
+              "width_ratio": 1.0,
+              "height_ratio": 1.0
+            }
+          },
+          "ExtraBlack": {
+            "mode": "contour_aware",
+            "transform": {
+              "mode": "contour_aware",
+              "contour_mapping": [
+                1,
+                0,
+                2,
+                3
+              ],
+              "contour_transforms": {
+                "0": {
+                  "scale_x": 1.0413,
+                  "scale_y": 1.2206,
+                  "area_ratio": 1.4363,
+                  "width_ratio": 0.9802,
+                  "height_ratio": 1.0015
+                },
+                "1": {
+                  "scale_x": 1.1228,
+                  "scale_y": 1.1687,
+                  "area_ratio": 1.421,
+                  "width_ratio": 1.0959,
+                  "height_ratio": 1.0349
+                },
+                "2": {
+                  "scale_x": 1.0873,
+                  "scale_y": 1.1345,
+                  "area_ratio": 1.3135,
+                  "width_ratio": 1.0644,
+                  "height_ratio": 1.0329
+                },
+                "3": {
+                  "scale_x": 0.6882,
+                  "scale_y": 0.6577,
+                  "area_ratio": 0.4541,
+                  "width_ratio": 0.6937,
+                  "height_ratio": 0.6547
+                }
+              }
+            },
+            "target_metrics": {
+              "center": [
+                451.0,
+                324.5
+              ],
+              "width": 838.0,
+              "height": 649.0,
+              "area": 260475.30017999996
+            },
+            "result_metrics": {
+              "center": [
+                450.89751066182606,
+                324.5
+              ],
+              "width": 845.6577003761716,
+              "height": 790.9706786689119,
+              "area": 238909.95059686137
+            },
+            "result_area_vs_donor": 0.9645
+          }
+        },
+        "skipped_masters": {}
+      },
+      "ae": {
+        "applied": true,
+        "strategy": "donor_copy",
+        "donor_raw_compat": false,
+        "donor_names_by_master": {
+          "Thin": "ae",
+          "Regular": "ae",
+          "ExtraBlack": "ae"
+        },
+        "masters_updated": [
+          "Thin",
+          "Regular",
+          "ExtraBlack"
+        ],
+        "normalized_donor_copy": true
+      },
+      "oe": {
+        "applied": true,
+        "strategy": "donor_copy",
+        "donor_raw_compat": false,
+        "donor_names_by_master": {
+          "Thin": "oe",
+          "Regular": "oe",
+          "ExtraBlack": "oe"
+        },
+        "masters_updated": [
+          "Thin",
+          "Regular",
+          "ExtraBlack"
+        ],
+        "normalized_donor_copy": true
+      },
+      "scedilla": {
+        "applied": true,
+        "reference_master": "Regular",
+        "reference_master_preserved": true,
+        "masters_updated": [
+          "ExtraBlack",
+          "Regular",
+          "Thin"
+        ],
+        "contour_aware": true,
+        "transforms": {
+          "Thin": {
+            "mode": "whole_glyph",
+            "transform": {
+              "mode": "whole_glyph",
+              "transform": {
+                "scale_x": 0.8543,
+                "scale_y": 0.7351,
+                "area_ratio": 0.4815,
+                "width_ratio": 0.9167,
+                "height_ratio": 0.9719
+              }
+            },
+            "target_metrics": {
+              "center": [
+                211.5,
+                140.0
+              ],
+              "width": 341.0,
+              "height": 692.0,
+              "area": 59763.234999999906
+            },
+            "result_metrics": {
+              "center": [
+                211.5,
+                140.0
+              ],
+              "width": 317.79513723430966,
+              "height": 523.3845858046599,
+              "area": 77947.72288874115
+            },
+            "result_area_vs_donor": 1.6809
+          },
+          "Regular": {
+            "mode": "reference",
+            "transform": {
+              "scale_x": 1.0,
+              "scale_y": 1.0,
+              "area_ratio": 1.0,
+              "width_ratio": 1.0,
+              "height_ratio": 1.0
+            }
+          },
+          "ExtraBlack": {
+            "mode": "whole_glyph",
+            "transform": {
+              "mode": "whole_glyph",
+              "transform": {
+                "scale_x": 1.1505,
+                "scale_y": 1.2075,
+                "area_ratio": 1.5211,
+                "width_ratio": 1.1183,
+                "height_ratio": 1.0492
+              }
+            },
+            "target_metrics": {
+              "center": [
+                242.0,
+                140.5
+              ],
+              "width": 416.0,
+              "height": 747.0,
+              "area": 188799.94054000004
+            },
+            "result_metrics": {
+              "center": [
+                242.0,
+                140.5
+              ],
+              "width": 427.9814449209101,
+              "height": 859.7110930689832,
+              "area": 172429.9602705277
+            },
+            "result_area_vs_donor": 1.2189
+          }
+        },
+        "skipped_masters": {}
+      },
+      "tcaron": {
+        "applied": true,
+        "reference_master": "Regular",
+        "reference_master_preserved": true,
+        "masters_updated": [
+          "ExtraBlack",
+          "Regular",
+          "Thin"
+        ],
+        "contour_aware": true,
+        "transforms": {
+          "Thin": {
+            "mode": "contour_aware",
+            "transform": {
+              "mode": "contour_aware",
+              "contour_mapping": [
+                1,
+                0
+              ],
+              "contour_transforms": {
+                "0": {
+                  "scale_x": 0.6523,
+                  "scale_y": 0.818,
+                  "area_ratio": 0.445,
+                  "width_ratio": 0.6466,
+                  "height_ratio": 1.0056
+                },
+                "1": {
+                  "scale_x": 0.892,
+                  "scale_y": 0.7122,
+                  "area_ratio": 0.4575,
+                  "width_ratio": 0.9759,
+                  "height_ratio": 0.9875
+                }
+              }
+            },
+            "target_metrics": {
+              "center": [
+                162.0,
+                358.0
+              ],
+              "width": 300.0,
+              "height": 726.0,
+              "area": 44632.21516
+            },
+            "result_metrics": {
+              "center": [
+                168.26969780421308,
+                393.50694278961555
+              ],
+              "width": 288.2228097644953,
+              "height": 621.4072740903425,
+              "area": 60663.52711791948
+            },
+            "result_area_vs_donor": 1.3765
+          },
+          "Regular": {
+            "mode": "reference",
+            "transform": {
+              "scale_x": 1.0,
+              "scale_y": 1.0,
+              "area_ratio": 1.0,
+              "width_ratio": 1.0,
+              "height_ratio": 1.0
+            }
+          },
+          "ExtraBlack": {
+            "mode": "contour_aware",
+            "transform": {
+              "mode": "contour_aware",
+              "contour_mapping": [
+                0,
+                1
+              ],
+              "contour_transforms": {
+                "0": {
+                  "scale_x": 1.452,
+                  "scale_y": 1.2783,
+                  "area_ratio": 1.949,
+                  "width_ratio": 1.4737,
+                  "height_ratio": 1.1899
+                },
+                "1": {
+                  "scale_x": 1.2466,
+                  "scale_y": 1.2529,
+                  "area_ratio": 1.7718,
+                  "width_ratio": 1.2138,
+                  "height_ratio": 1.0204
+                }
+              }
+            },
+            "target_metrics": {
+              "center": [
+                266.0,
+                375.5
+              ],
+              "width": 488.0,
+              "height": 769.0,
+              "area": 176364.28438
+            },
+            "result_metrics": {
+              "center": [
+                262.89611535096384,
+                342.36733536399515
+              ],
+              "width": 491.3178826610723,
+              "height": 851.0890815443258,
+              "area": 157618.4293684244
+            },
+            "result_area_vs_donor": 0.9352
+          }
+        },
+        "skipped_masters": {}
+      },
+      "tbar": {
+        "applied": true,
+        "reference_master": "Regular",
+        "reference_master_preserved": true,
+        "masters_updated": [
+          "ExtraBlack",
+          "Regular",
+          "Thin"
+        ],
+        "contour_aware": true,
+        "transforms": {
+          "Thin": {
+            "mode": "whole_glyph",
+            "transform": {
+              "mode": "whole_glyph",
+              "transform": {
+                "scale_x": 0.8961,
+                "scale_y": 0.7237,
+                "area_ratio": 0.4774,
+                "width_ratio": 0.9759,
+                "height_ratio": 0.9875
+              }
+            },
+            "target_metrics": {
+              "center": [
+                153.5,
+                310.0
+              ],
+              "width": 283.0,
+              "height": 630.0,
+              "area": 46450.21516
+            },
+            "result_metrics": {
+              "center": [
+                153.5,
+                310.0
+              ],
+              "width": 259.86310225639727,
+              "height": 461.73500396786676,
+              "area": 63102.24015380837
+            },
+            "result_area_vs_donor": 1.3751
+          },
+          "Regular": {
+            "mode": "reference",
+            "transform": {
+              "scale_x": 1.0,
+              "scale_y": 1.0,
+              "area_ratio": 1.0,
+              "width_ratio": 1.0,
+              "height_ratio": 1.0
+            }
+          },
+          "ExtraBlack": {
+            "mode": "whole_glyph",
+            "transform": {
+              "mode": "whole_glyph",
+              "transform": {
+                "scale_x": 1.2377,
+                "scale_y": 1.2194,
+                "area_ratio": 1.6876,
+                "width_ratio": 1.2138,
+                "height_ratio": 1.0204
+              }
+            },
+            "target_metrics": {
+              "center": [
+                198.0,
+                316.5
+              ],
+              "width": 352.0,
+              "height": 651.0,
+              "area": 164211.78438
+            },
+            "result_metrics": {
+              "center": [
+                198.0,
+                316.5
+              ],
+              "width": 358.9260843660303,
+              "height": 777.9882672729852,
+              "area": 146853.88069670214
+            },
+            "result_area_vs_donor": 0.939
+          }
+        },
+        "skipped_masters": {}
+      },
+      "uhungarumlaut": {
+        "applied": true,
+        "reference_master": "Regular",
+        "reference_master_preserved": true,
+        "masters_updated": [
+          "ExtraBlack",
+          "Regular",
+          "Thin"
+        ],
+        "contour_aware": false,
+        "transforms": {
+          "Thin": {
+            "mode": "whole_glyph",
+            "transform": {
+              "mode": "whole_glyph",
+              "transform": {
+                "scale_x": 0.8352,
+                "scale_y": 0.7133,
+                "area_ratio": 0.4421,
+                "width_ratio": 0.9014,
+                "height_ratio": 0.9673
+              }
+            },
+            "target_metrics": {
+              "center": [
+                264.5,
+                328.5
+              ],
+              "width": 375.0,
+              "height": 681.0,
+              "area": 57779.41526000002
+            },
+            "result_metrics": {
+              "center": [
+                264.5,
+                328.5
+              ],
+              "width": 347.44631550606243,
+              "height": 502.14503222931086,
+              "area": 77861.94270241226
+            },
+            "result_area_vs_donor": 1.3452
+          },
+          "Regular": {
+            "mode": "reference",
+            "transform": {
+              "scale_x": 1.0,
+              "scale_y": 1.0,
+              "area_ratio": 1.0,
+              "width_ratio": 1.0,
+              "height_ratio": 1.0
+            }
+          },
+          "ExtraBlack": {
+            "mode": "whole_glyph",
+            "transform": {
+              "mode": "whole_glyph",
+              "transform": {
+                "scale_x": 1.2105,
+                "scale_y": 1.2784,
+                "area_ratio": 1.7728,
+                "width_ratio": 1.1635,
+                "height_ratio": 1.0213
+              }
+            },
+            "target_metrics": {
+              "center": [
+                300.0,
+                348.5
+              ],
+              "width": 484.0,
+              "height": 719.0,
+              "area": 231706.97313999996
+            },
+            "result_metrics": {
+              "center": [
+                300.0,
+                348.5
+              ],
+              "width": 503.5699806824025,
+              "height": 899.9768696049566,
+              "area": 202255.1247871283
+            },
+            "result_area_vs_donor": 0.9132
+          }
+        },
+        "skipped_masters": {},
+        "strategy": "structural_fallback"
+      },
+      "uni018F": {
+        "applied": true,
+        "reference_master": "Regular",
+        "reference_master_preserved": true,
+        "masters_updated": [
+          "ExtraBlack",
+          "Regular",
+          "Thin"
+        ],
+        "contour_aware": true,
+        "transforms": {
+          "Thin": {
+            "mode": "contour_aware",
+            "transform": {
+              "mode": "contour_aware",
+              "contour_mapping": [
+                0,
+                1
+              ],
+              "contour_transforms": {
+                "0": {
+                  "scale_x": 0.9412,
+                  "scale_y": 0.8911,
+                  "area_ratio": 0.77,
+                  "width_ratio": 0.9659,
+                  "height_ratio": 0.9919
+                },
+                "1": {
+                  "scale_x": 1.219,
+                  "scale_y": 1.359,
+                  "area_ratio": 1.6498,
+                  "width_ratio": 1.1935,
+                  "height_ratio": 1.3667
+                }
+              }
+            },
+            "target_metrics": {
+              "center": [
+                383.0,
+                354.5
+              ],
+              "width": 680.0,
+              "height": 733.0,
+              "area": 365028.4119999999
+            },
+            "result_metrics": {
+              "center": [
+                383.0,
+                354.5
+              ],
+              "width": 662.5708723052508,
+              "height": 658.5289570291079,
+              "area": 386372.5903913035
+            },
+            "result_area_vs_donor": 1.6427
+          },
+          "Regular": {
+            "mode": "reference",
+            "transform": {
+              "scale_x": 1.0,
+              "scale_y": 1.0,
+              "area_ratio": 1.0,
+              "width_ratio": 1.0,
+              "height_ratio": 1.0
+            }
+          },
+          "ExtraBlack": {
+            "mode": "contour_aware",
+            "transform": {
+              "mode": "contour_aware",
+              "contour_mapping": [
+                0,
+                1
+              ],
+              "contour_transforms": {
+                "0": {
+                  "scale_x": 1.0478,
+                  "scale_y": 1.0971,
+                  "area_ratio": 1.2211,
+                  "width_ratio": 1.0256,
+                  "height_ratio": 1.0027
+                },
+                "1": {
+                  "scale_x": 0.5961,
+                  "scale_y": 0.5191,
+                  "area_ratio": 0.3115,
+                  "width_ratio": 0.6109,
+                  "height_ratio": 0.5143
+                }
+              }
+            },
+            "target_metrics": {
+              "center": [
+                395.0,
+                354.5
+              ],
+              "width": 722.0,
+              "height": 741.0,
+              "area": 394757.28178000014
+            },
+            "result_metrics": {
+              "center": [
+                395.0,
+                354.5
+              ],
+              "width": 737.6672965776424,
+              "height": 810.7341361248857,
+              "area": 372904.5620410107
+            },
+            "result_area_vs_donor": 1.4316
+          }
+        },
+        "skipped_masters": {}
+      },
+      "Scedilla": {
+        "applied": true,
+        "reference_master": "Regular",
+        "reference_master_preserved": true,
+        "masters_updated": [
+          "ExtraBlack",
+          "Regular",
+          "Thin"
+        ],
+        "contour_aware": true,
+        "transforms": {
+          "Thin": {
+            "mode": "whole_glyph",
+            "transform": {
+              "mode": "whole_glyph",
+              "transform": {
+                "scale_x": 0.8646,
+                "scale_y": 0.7269,
+                "area_ratio": 0.4661,
+                "width_ratio": 0.9353,
+                "height_ratio": 0.9862
+              }
+            },
+            "target_metrics": {
+              "center": [
+                283.5,
+                257.5
+              ],
+              "width": 477.0,
+              "height": 927.0,
+              "area": 86227.0812800002
+            },
+            "result_metrics": {
+              "center": [
+                283.5,
+                257.5
+              ],
+              "width": 440.93385498006865,
+              "height": 683.2745579586333,
+              "area": 116256.24196012109
+            },
+            "result_area_vs_donor": 1.7739
+          },
+          "Regular": {
+            "mode": "reference",
+            "transform": {
+              "scale_x": 1.0,
+              "scale_y": 1.0,
+              "area_ratio": 1.0,
+              "width_ratio": 1.0,
+              "height_ratio": 1.0
+            }
+          },
+          "ExtraBlack": {
+            "mode": "whole_glyph",
+            "transform": {
+              "mode": "whole_glyph",
+              "transform": {
+                "scale_x": 1.1478,
+                "scale_y": 1.2506,
+                "area_ratio": 1.628,
+                "width_ratio": 1.098,
+                "height_ratio": 1.0191
+              }
+            },
+            "target_metrics": {
+              "center": [
+                315.0,
+                245.0
+              ],
+              "width": 560.0,
+              "height": 958.0,
+              "area": 301156.50522000017
+            },
+            "result_metrics": {
+              "center": [
+                315.0,
+                245.0
+              ],
+              "width": 585.4013223122029,
+              "height": 1175.6082722853748,
+              "area": 265560.76884701283
+            },
+            "result_area_vs_donor": 1.1842
+          }
+        },
+        "skipped_masters": {}
+      },
+      "Uogonek": {
+        "applied": true,
+        "reference_master": "Regular",
+        "reference_master_preserved": true,
+        "masters_updated": [
+          "ExtraBlack",
+          "Regular",
+          "Thin"
+        ],
+        "contour_aware": true,
+        "transforms": {
+          "Thin": {
+            "mode": "whole_glyph",
+            "transform": {
+              "mode": "whole_glyph",
+              "transform": {
+                "scale_x": 0.8563,
+                "scale_y": 0.7225,
+                "area_ratio": 0.4534,
+                "width_ratio": 0.9275,
+                "height_ratio": 0.9892
+              }
+            },
+            "target_metrics": {
+              "center": [
+                332.5,
+                251.5
+              ],
+              "width": 473.0,
+              "height": 915.0,
+              "area": 79249.42665999994
+            },
+            "result_metrics": {
+              "center": [
+                332.5,
+                251.5
+              ],
+              "width": 436.71000052457134,
+              "height": 668.346166347957,
+              "area": 108152.52211004522
+            },
+            "result_area_vs_donor": 1.4631
+          },
+          "Regular": {
+            "mode": "reference",
+            "transform": {
+              "scale_x": 1.0,
+              "scale_y": 1.0,
+              "area_ratio": 1.0,
+              "width_ratio": 1.0,
+              "height_ratio": 1.0
+            }
+          },
+          "ExtraBlack": {
+            "mode": "whole_glyph",
+            "transform": {
+              "mode": "whole_glyph",
+              "transform": {
+                "scale_x": 1.1761,
+                "scale_y": 1.2999,
+                "area_ratio": 1.7732,
+                "width_ratio": 1.1157,
+                "height_ratio": 1.013
+              }
+            },
+            "target_metrics": {
+              "center": [
+                356.5,
+                240.5
+              ],
+              "width": 569.0,
+              "height": 937.0,
+              "area": 309968.47529999993
+            },
+            "result_metrics": {
+              "center": [
+                356.5,
+                240.5
+              ],
+              "width": 599.8359810534316,
+              "height": 1202.3955210831632,
+              "area": 267252.58598666155
+            },
+            "result_area_vs_donor": 0.9411
+          }
+        },
+        "skipped_masters": {}
+      },
+      "uogonek": {
+        "applied": true,
+        "reference_master": "Regular",
+        "reference_master_preserved": true,
+        "masters_updated": [
+          "ExtraBlack",
+          "Regular",
+          "Thin"
+        ],
+        "contour_aware": true,
+        "transforms": {
+          "Thin": {
+            "mode": "whole_glyph",
+            "transform": {
+              "mode": "whole_glyph",
+              "transform": {
+                "scale_x": 0.8768,
+                "scale_y": 0.7079,
+                "area_ratio": 0.4507,
+                "width_ratio": 0.9567,
+                "height_ratio": 0.9756
+              }
+            },
+            "target_metrics": {
+              "center": [
+                276.0,
+                134.0
+              ],
+              "width": 398.0,
+              "height": 680.0,
+              "area": 57379.80887999998
+            },
+            "result_metrics": {
+              "center": [
+                276.0,
+                134.0
+              ],
+              "width": 364.75545354124233,
+              "height": 493.38423341620637,
+              "area": 79024.13807042524
+            },
+            "result_area_vs_donor": 1.4126
+          },
+          "Regular": {
+            "mode": "reference",
+            "transform": {
+              "scale_x": 1.0,
+              "scale_y": 1.0,
+              "area_ratio": 1.0,
+              "width_ratio": 1.0,
+              "height_ratio": 1.0
+            }
+          },
+          "ExtraBlack": {
+            "mode": "whole_glyph",
+            "transform": {
+              "mode": "whole_glyph",
+              "transform": {
+                "scale_x": 1.2085,
+                "scale_y": 1.2799,
+                "area_ratio": 1.754,
+                "width_ratio": 1.1635,
+                "height_ratio": 1.043
+              }
+            },
+            "target_metrics": {
+              "center": [
+                300.0,
+                135.5
+              ],
+              "width": 484.0,
+              "height": 727.0,
+              "area": 223318.73997999998
+            },
+            "result_metrics": {
+              "center": [
+                300.0,
+                135.5
+              ],
+              "width": 502.74398238370617,
+              "height": 892.0636233728255,
+              "area": 196931.60377773672
+            },
+            "result_area_vs_donor": 0.9437
+          }
+        },
+        "skipped_masters": {}
+      },
+      "eogonek": {
+        "applied": true,
+        "reference_master": "Regular",
+        "reference_master_preserved": true,
+        "masters_updated": [
+          "ExtraBlack",
+          "Regular",
+          "Thin"
+        ],
+        "contour_aware": true,
+        "transforms": {
+          "Thin": {
+            "mode": "contour_aware",
+            "transform": {
+              "mode": "contour_aware",
+              "contour_mapping": [
+                0,
+                1
+              ],
+              "contour_transforms": {
+                "0": {
+                  "scale_x": 0.9086,
+                  "scale_y": 0.8538,
+                  "area_ratio": 0.6971,
+                  "width_ratio": 0.9372,
+                  "height_ratio": 0.9733
+                },
+                "1": {
+                  "scale_x": 1.3438,
+                  "scale_y": 1.4601,
+                  "area_ratio": 1.9509,
+                  "width_ratio": 1.3232,
+                  "height_ratio": 1.4715
+                }
+              }
+            },
+            "target_metrics": {
+              "center": [
+                265.5,
+                140.0
+              ],
+              "width": 433.0,
+              "height": 692.0,
+              "area": 169345.68722000005
+            },
+            "result_metrics": {
+              "center": [
+                265.5,
+                142.8915738836285
+              ],
+              "width": 419.76430931455207,
+              "height": 612.8083875215722,
+              "area": 183146.88714912787
+            },
+            "result_area_vs_donor": 1.583
+          },
+          "Regular": {
+            "mode": "reference",
+            "transform": {
+              "scale_x": 1.0,
+              "scale_y": 1.0,
+              "area_ratio": 1.0,
+              "width_ratio": 1.0,
+              "height_ratio": 1.0
+            }
+          },
+          "ExtraBlack": {
+            "mode": "contour_aware",
+            "transform": {
+              "mode": "contour_aware",
+              "contour_mapping": [
+                0,
+                1
+              ],
+              "contour_transforms": {
+                "0": {
+                  "scale_x": 1.0994,
+                  "scale_y": 1.1287,
+                  "area_ratio": 1.3074,
+                  "width_ratio": 1.0823,
+                  "height_ratio": 1.045
+                },
+                "1": {
+                  "scale_x": 0.618,
+                  "scale_y": 0.6057,
+                  "area_ratio": 0.3761,
+                  "width_ratio": 0.6198,
+                  "height_ratio": 0.6016
+                }
+              }
+            },
+            "target_metrics": {
+              "center": [
+                286.0,
+                143.5
+              ],
+              "width": 500.0,
+              "height": 743.0,
+              "area": 234310.5208200001
+            },
+            "result_metrics": {
+              "center": [
+                286.0,
+                143.5
+              ],
+              "width": 507.91256606013303,
+              "height": 802.471608016727,
+              "area": 222816.3297472537
+            },
+            "result_area_vs_donor": 1.2802
+          }
+        },
+        "skipped_masters": {}
+      },
+      "dslash": {
+        "applied": true,
+        "strategy": "donor_copy",
+        "donor_raw_compat": false,
+        "donor_names_by_master": {
+          "Thin": "dslash",
+          "Regular": "dslash",
+          "ExtraBlack": "dslash"
+        },
+        "masters_updated": [
+          "Thin",
+          "Regular",
+          "ExtraBlack"
+        ],
+        "normalized_donor_copy": true
+      },
+      "kgreenlandic": {
+        "applied": true,
+        "reference_master": "Regular",
+        "reference_master_preserved": true,
+        "masters_updated": [
+          "ExtraBlack",
+          "Regular",
+          "Thin"
+        ],
+        "contour_aware": true,
+        "transforms": {
+          "Thin": {
+            "mode": "whole_glyph",
+            "transform": {
+              "mode": "whole_glyph",
+              "transform": {
+                "scale_x": 0.8054,
+                "scale_y": 0.733,
+                "area_ratio": 0.4432,
+                "width_ratio": 0.8598,
+                "height_ratio": 0.9854
+              }
+            },
+            "target_metrics": {
+              "center": [
+                270.0,
+                237.0
+              ],
+              "width": 374.0,
+              "height": 474.0,
+              "area": 47783.0
+            },
+            "result_metrics": {
+              "center": [
+                270.0,
+                237.0
+              ],
+              "width": 350.3672286448548,
+              "height": 352.59442403077014,
+              "area": 63654.28716228956
+            },
+            "result_area_vs_donor": 1.3322
+          },
+          "Regular": {
+            "mode": "reference",
+            "transform": {
+              "scale_x": 1.0,
+              "scale_y": 1.0,
+              "area_ratio": 1.0,
+              "width_ratio": 1.0,
+              "height_ratio": 1.0
+            }
+          },
+          "ExtraBlack": {
+            "mode": "whole_glyph",
+            "transform": {
+              "mode": "whole_glyph",
+              "transform": {
+                "scale_x": 1.2302,
+                "scale_y": 1.2643,
+                "area_ratio": 1.7574,
+                "width_ratio": 1.1931,
+                "height_ratio": 1.0374
+              }
+            },
+            "target_metrics": {
+              "center": [
+                322.5,
+                249.5
+              ],
+              "width": 519.0,
+              "height": 499.0,
+              "area": 189469.0
+            },
+            "result_metrics": {
+              "center": [
+                322.5,
+                249.5
+              ],
+              "width": 535.1473927188654,
+              "height": 608.1127368544371,
+              "area": 167681.92637853685
+            },
+            "result_area_vs_donor": 0.885
+          }
+        },
+        "skipped_masters": {}
+      },
+      "mu": {
+        "applied": true,
+        "strategy": "donor_copy",
+        "donor_raw_compat": false,
+        "donor_names_by_master": {
+          "Thin": "mu",
+          "Regular": "mu",
+          "ExtraBlack": "mu"
+        },
+        "masters_updated": [
+          "Thin",
+          "Regular",
+          "ExtraBlack"
+        ],
+        "normalized_donor_copy": true
+      },
+      "uni03BC": {
+        "applied": true,
+        "strategy": "donor_copy",
+        "donor_raw_compat": false,
+        "donor_names_by_master": {
+          "Thin": "uni03BC",
+          "Regular": "uni03BC",
+          "ExtraBlack": "uni03BC"
+        },
+        "masters_updated": [
+          "Thin",
+          "Regular",
+          "ExtraBlack"
+        ],
+        "normalized_donor_copy": true
+      },
+      "pi": {
+        "applied": true,
+        "reference_master": "Regular",
+        "reference_master_preserved": true,
+        "masters_updated": [
+          "ExtraBlack",
+          "Regular",
+          "Thin"
+        ],
+        "contour_aware": true,
+        "transforms": {
+          "Thin": {
+            "mode": "whole_glyph",
+            "transform": {
+              "mode": "whole_glyph",
+              "transform": {
+                "scale_x": 0.9067,
+                "scale_y": 0.7061,
+                "area_ratio": 0.458,
+                "width_ratio": 0.9962,
+                "height_ratio": 0.9836
+              }
+            },
+            "target_metrics": {
+              "center": [
+                275.0,
+                234.0
+              ],
+              "width": 518.0,
+              "height": 480.0,
+              "area": 56094.43871999998
+            },
+            "result_metrics": {
+              "center": [
+                275.0,
+                234.0
+              ],
+              "width": 471.4933241992417,
+              "height": 344.56151133713183,
+              "area": 78414.32951619681
+            },
+            "result_area_vs_donor": 1.4385
+          },
+          "Regular": {
+            "mode": "reference",
+            "transform": {
+              "scale_x": 1.0,
+              "scale_y": 1.0,
+              "area_ratio": 1.0,
+              "width_ratio": 1.0,
+              "height_ratio": 1.0
+            }
+          },
+          "ExtraBlack": {
+            "mode": "whole_glyph",
+            "transform": {
+              "mode": "whole_glyph",
+              "transform": {
+                "scale_x": 1.2191,
+                "scale_y": 1.301,
+                "area_ratio": 1.8156,
+                "width_ratio": 1.1692,
+                "height_ratio": 1.041
+              }
+            },
+            "target_metrics": {
+              "center": [
+                340.0,
+                245.0
+              ],
+              "width": 608.0,
+              "height": 508.0,
+              "area": 222378.88486000005
+            },
+            "result_metrics": {
+              "center": [
+                340.0,
+                245.0
+              ],
+              "width": 633.946900239579,
+              "height": 634.87742967839,
+              "area": 194265.59482150618
+            },
+            "result_area_vs_donor": 0.9094
+          }
+        },
+        "skipped_masters": {}
+      },
+      "uni0259": {
+        "applied": true,
+        "strategy": "donor_copy",
+        "donor_raw_compat": false,
+        "donor_names_by_master": {
+          "Thin": "uni0259",
+          "Regular": "uni0259",
+          "ExtraBlack": "uni0259"
+        },
+        "masters_updated": [
+          "Thin",
+          "Regular",
+          "ExtraBlack"
+        ],
+        "normalized_donor_copy": true
+      },
+      "IJ": {
+        "applied": true,
+        "reference_master": "Regular",
+        "reference_master_preserved": true,
+        "masters_updated": [
+          "ExtraBlack",
+          "Regular",
+          "Thin"
+        ],
+        "contour_aware": true,
+        "transforms": {
+          "Thin": {
+            "mode": "contour_aware",
+            "transform": {
+              "mode": "contour_aware",
+              "contour_mapping": [
+                0,
+                1
+              ],
+              "contour_transforms": {
+                "0": {
+                  "scale_x": 0.4932,
+                  "scale_y": 0.9257,
+                  "area_ratio": 0.43,
+                  "width_ratio": 0.43,
+                  "height_ratio": 1.0
+                },
+                "1": {
+                  "scale_x": 0.8468,
+                  "scale_y": 0.7331,
+                  "area_ratio": 0.4597,
+                  "width_ratio": 0.9124,
+                  "height_ratio": 0.9959
+                }
+              }
+            },
+            "target_metrics": {
+              "center": [
+                294.0,
+                348.5
+              ],
+              "width": 396.0,
+              "height": 721.0,
+              "area": 64628.217
+            },
+            "result_metrics": {
+              "center": [
+                285.2979652764438,
+                388.45369062228684
+              ],
+              "width": 384.9167584209332,
+              "height": 610.6911260864591,
+              "area": 82199.79579300695
+            },
+            "result_area_vs_donor": 1.4742
+          },
+          "Regular": {
+            "mode": "reference",
+            "transform": {
+              "scale_x": 1.0,
+              "scale_y": 1.0,
+              "area_ratio": 1.0,
+              "width_ratio": 1.0,
+              "height_ratio": 1.0
+            }
+          },
+          "ExtraBlack": {
+            "mode": "contour_aware",
+            "transform": {
+              "mode": "contour_aware",
+              "contour_mapping": [
+                1,
+                0
+              ],
+              "contour_transforms": {
+                "0": {
+                  "scale_x": 1.5718,
+                  "scale_y": 0.9097,
+                  "area_ratio": 1.48,
+                  "width_ratio": 1.71,
+                  "height_ratio": 0.8655
+                },
+                "1": {
+                  "scale_x": 1.1985,
+                  "scale_y": 1.3065,
+                  "area_ratio": 1.8318,
+                  "width_ratio": 1.1382,
+                  "height_ratio": 1.0
+                }
+              }
+            },
+            "target_metrics": {
+              "center": [
+                311.0,
+                347.0
+              ],
+              "width": 494.0,
+              "height": 724.0,
+              "area": 247983.18463999996
+            },
+            "result_metrics": {
+              "center": [
+                311.0,
+                347.0
+              ],
+              "width": 520.1516995538932,
+              "height": 945.8997929612683,
+              "area": 218709.74640843814
+            },
+            "result_area_vs_donor": 1.0181
+          }
+        },
+        "skipped_masters": {}
+      },
+      "a.ss02": {
+        "applied": true,
+        "reference_master": "Regular",
+        "reference_master_preserved": true,
+        "masters_updated": [
+          "ExtraBlack",
+          "Regular",
+          "Thin"
+        ],
+        "contour_aware": true,
+        "transforms": {
+          "Thin": {
+            "mode": "contour_aware",
+            "transform": {
+              "mode": "contour_aware",
+              "contour_mapping": [
+                1,
+                0
+              ],
+              "contour_transforms": {
+                "0": {
+                  "scale_x": 1.2605,
+                  "scale_y": 1.2444,
+                  "area_ratio": 1.564,
+                  "width_ratio": 1.2643,
+                  "height_ratio": 1.2493
+                },
+                "1": {
+                  "scale_x": 0.9306,
+                  "scale_y": 0.9663,
+                  "area_ratio": 0.8885,
+                  "width_ratio": 0.926,
+                  "height_ratio": 0.9822
+                }
+              }
+            },
+            "target_metrics": {
+              "center": [
+                268.0,
+                237.0
+              ],
+              "width": 438.0,
+              "height": 498.0,
+              "area": 301839.22866000014
+            },
+            "result_metrics": {
+              "center": [
+                268.0,
+                237.0
+              ],
+              "width": 440.19725115487336,
+              "height": 489.8971053247053,
+              "area": 304383.7353984243
+            },
+            "result_area_vs_donor": 1.4116
+          },
+          "Regular": {
+            "mode": "reference",
+            "transform": {
+              "scale_x": 1.0,
+              "scale_y": 1.0,
+              "area_ratio": 1.0,
+              "width_ratio": 1.0,
+              "height_ratio": 1.0
+            }
+          },
+          "ExtraBlack": {
+            "mode": "contour_aware",
+            "transform": {
+              "mode": "contour_aware",
+              "contour_mapping": [
+                1,
+                0
+              ],
+              "contour_transforms": {
+                "0": {
+                  "scale_x": 0.6565,
+                  "scale_y": 0.6153,
+                  "area_ratio": 0.4051,
+                  "width_ratio": 0.6643,
+                  "height_ratio": 0.6129
+                },
+                "1": {
+                  "scale_x": 1.1313,
+                  "scale_y": 1.0534,
+                  "area_ratio": 1.208,
+                  "width_ratio": 1.1438,
+                  "height_ratio": 1.0335
+                }
+              }
+            },
+            "target_metrics": {
+              "center": [
+                306.5,
+                250.0
+              ],
+              "width": 541.0,
+              "height": 524.0,
+              "area": 278150.08982
+            },
+            "result_metrics": {
+              "center": [
+                306.5,
+                250.0
+              ],
+              "width": 535.0841699855905,
+              "height": 534.0915504535924,
+              "area": 274726.59639181045
+            },
+            "result_area_vs_donor": 1.2204
+          }
+        },
+        "skipped_masters": {}
+      },
+      "aogonek.ss02": {
+        "applied": true,
+        "reference_master": "Regular",
+        "reference_master_preserved": true,
+        "masters_updated": [
+          "ExtraBlack",
+          "Regular",
+          "Thin"
+        ],
+        "contour_aware": true,
+        "transforms": {
+          "Thin": {
+            "mode": "contour_aware",
+            "transform": {
+              "mode": "contour_aware",
+              "contour_mapping": [
+                0,
+                1
+              ],
+              "contour_transforms": {
+                "0": {
+                  "scale_x": 0.9595,
+                  "scale_y": 0.9217,
+                  "area_ratio": 0.8477,
+                  "width_ratio": 0.9746,
+                  "height_ratio": 0.9746
+                },
+                "1": {
+                  "scale_x": 1.2605,
+                  "scale_y": 1.2444,
+                  "area_ratio": 1.564,
+                  "width_ratio": 1.2643,
+                  "height_ratio": 1.2493
+                }
+              }
+            },
+            "target_metrics": {
+              "center": [
+                279.5,
+                140.0
+              ],
+              "width": 461.0,
+              "height": 692.0,
+              "area": 311728.0048600001
+            },
+            "result_metrics": {
+              "center": [
+                279.5,
+                140.0
+              ],
+              "width": 453.85488738456615,
+              "height": 654.4277621922328,
+              "area": 320380.1665797677
+            },
+            "result_area_vs_donor": 1.4298
+          },
+          "Regular": {
+            "mode": "reference",
+            "transform": {
+              "scale_x": 1.0,
+              "scale_y": 1.0,
+              "area_ratio": 1.0,
+              "width_ratio": 1.0,
+              "height_ratio": 1.0
+            }
+          },
+          "ExtraBlack": {
+            "mode": "contour_aware",
+            "transform": {
+              "mode": "contour_aware",
+              "contour_mapping": [
+                0,
+                1
+              ],
+              "contour_transforms": {
+                "0": {
+                  "scale_x": 1.135,
+                  "scale_y": 1.07,
+                  "area_ratio": 1.2373,
+                  "width_ratio": 1.1438,
+                  "height_ratio": 1.0423
+                },
+                "1": {
+                  "scale_x": 0.6565,
+                  "scale_y": 0.6153,
+                  "area_ratio": 0.4051,
+                  "width_ratio": 0.6643,
+                  "height_ratio": 0.6129
+                }
+              }
+            },
+            "target_metrics": {
+              "center": [
+                306.5,
+                142.0
+              ],
+              "width": 541.0,
+              "height": 740.0,
+              "area": 310759.35666000005
+            },
+            "result_metrics": {
+              "center": [
+                306.5,
+                142.0
+              ],
+              "width": 536.8375391153654,
+              "height": 759.7264282467186,
+              "area": 305509.38622473966
+            },
+            "result_area_vs_donor": 1.2061
+          }
+        },
+        "skipped_masters": {}
+      },
+      "aring.ss02": {
+        "applied": true,
+        "reference_master": "Regular",
+        "reference_master_preserved": true,
+        "masters_updated": [
+          "ExtraBlack",
+          "Regular",
+          "Thin"
+        ],
+        "contour_aware": true,
+        "transforms": {
+          "Thin": {
+            "mode": "contour_aware",
+            "transform": {
+              "mode": "contour_aware",
+              "contour_mapping": [
+                3,
+                2,
+                0,
+                1
+              ],
+              "contour_transforms": {
+                "0": {
+                  "scale_x": 1.2605,
+                  "scale_y": 1.2444,
+                  "area_ratio": 1.564,
+                  "width_ratio": 1.2643,
+                  "height_ratio": 1.2493
+                },
+                "1": {
+                  "scale_x": 0.9306,
+                  "scale_y": 0.9663,
+                  "area_ratio": 0.8885,
+                  "width_ratio": 0.926,
+                  "height_ratio": 0.9822
+                },
+                "2": {
+                  "scale_x": 0.9097,
+                  "scale_y": 0.9304,
+                  "area_ratio": 0.8457,
+                  "width_ratio": 0.9058,
+                  "height_ratio": 0.9315
+                },
+                "3": {
+                  "scale_x": 1.4229,
+                  "scale_y": 1.4587,
+                  "area_ratio": 2.0701,
+                  "width_ratio": 1.4167,
+                  "height_ratio": 1.4639
+                }
+              }
+            },
+            "target_metrics": {
+              "center": [
+                268.0,
+                360.5
+              ],
+              "width": 438.0,
+              "height": 745.0,
+              "area": 349255.98410000006
+            },
+            "result_metrics": {
+              "center": [
+                268.0,
+                362.46737812439756
+              ],
+              "width": 440.19725115487336,
+              "height": 740.8318615735004,
+              "area": 351866.9034557927
+            },
+            "result_area_vs_donor": 1.431
+          },
+          "Regular": {
+            "mode": "reference",
+            "transform": {
+              "scale_x": 1.0,
+              "scale_y": 1.0,
+              "area_ratio": 1.0,
+              "width_ratio": 1.0,
+              "height_ratio": 1.0
+            }
+          },
+          "ExtraBlack": {
+            "mode": "contour_aware",
+            "transform": {
+              "mode": "contour_aware",
+              "contour_mapping": [
+                0,
+                2,
+                3,
+                1
+              ],
+              "contour_transforms": {
+                "0": {
+                  "scale_x": 0.8333,
+                  "scale_y": 0.6956,
+                  "area_ratio": 0.5818,
+                  "width_ratio": 0.8607,
+                  "height_ratio": 0.6921
+                },
+                "1": {
+                  "scale_x": 1.1313,
+                  "scale_y": 1.0534,
+                  "area_ratio": 1.208,
+                  "width_ratio": 1.1438,
+                  "height_ratio": 1.0335
+                },
+                "2": {
+                  "scale_x": 0.8536,
+                  "scale_y": 0.9557,
+                  "area_ratio": 0.8167,
+                  "width_ratio": 0.8341,
+                  "height_ratio": 0.9543
+                },
+                "3": {
+                  "scale_x": 0.6787,
+                  "scale_y": 0.6843,
+                  "area_ratio": 0.4664,
+                  "width_ratio": 0.6771,
+                  "height_ratio": 0.6804
+                }
+              }
+            },
+            "target_metrics": {
+              "center": [
+                306.5,
+                380.5
+              ],
+              "width": 541.0,
+              "height": 785.0,
+              "area": 326265.11268
+            },
+            "result_metrics": {
+              "center": [
+                306.5,
+                378.278781004461
+              ],
+              "width": 535.0841699855905,
+              "height": 790.6491124625144,
+              "area": 322719.661651413
+            },
+            "result_area_vs_donor": 1.2621
+          }
+        },
+        "skipped_masters": {}
+      },
+      "atilde.ss02": {
+        "applied": true,
+        "reference_master": "Regular",
+        "reference_master_preserved": true,
+        "masters_updated": [
+          "ExtraBlack",
+          "Regular",
+          "Thin"
+        ],
+        "contour_aware": true,
+        "transforms": {
+          "Thin": {
+            "mode": "contour_aware",
+            "transform": {
+              "mode": "contour_aware",
+              "contour_mapping": [
+                1,
+                0,
+                2
+              ],
+              "contour_transforms": {
+                "0": {
+                  "scale_x": 1.2605,
+                  "scale_y": 1.2444,
+                  "area_ratio": 1.564,
+                  "width_ratio": 1.2643,
+                  "height_ratio": 1.2493
+                },
+                "1": {
+                  "scale_x": 0.9306,
+                  "scale_y": 0.9663,
+                  "area_ratio": 0.8885,
+                  "width_ratio": 0.926,
+                  "height_ratio": 0.9822
+                },
+                "2": {
+                  "scale_x": 0.8599,
+                  "scale_y": 0.637,
+                  "area_ratio": 0.4503,
+                  "width_ratio": 0.9333,
+                  "height_ratio": 0.7937
+                }
+              }
+            },
+            "target_metrics": {
+              "center": [
+                268.0,
+                319.0
+              ],
+              "width": 438.0,
+              "height": 662.0,
+              "area": 314726.9309800002
+            },
+            "result_metrics": {
+              "center": [
+                268.0,
+                316.0924484781128
+              ],
+              "width": 440.19725115487336,
+              "height": 648.0820022809309,
+              "area": 320062.67557912786
+            },
+            "result_area_vs_donor": 1.4159
+          },
+          "Regular": {
+            "mode": "reference",
+            "transform": {
+              "scale_x": 1.0,
+              "scale_y": 1.0,
+              "area_ratio": 1.0,
+              "width_ratio": 1.0,
+              "height_ratio": 1.0
+            }
+          },
+          "ExtraBlack": {
+            "mode": "contour_aware",
+            "transform": {
+              "mode": "contour_aware",
+              "contour_mapping": [
+                2,
+                1,
+                0
+              ],
+              "contour_transforms": {
+                "0": {
+                  "scale_x": 0.6565,
+                  "scale_y": 0.6153,
+                  "area_ratio": 0.4051,
+                  "width_ratio": 0.6643,
+                  "height_ratio": 0.6129
+                },
+                "1": {
+                  "scale_x": 1.1313,
+                  "scale_y": 1.0534,
+                  "area_ratio": 1.208,
+                  "width_ratio": 1.1438,
+                  "height_ratio": 1.0335
+                },
+                "2": {
+                  "scale_x": 1.1737,
+                  "scale_y": 1.3024,
+                  "area_ratio": 1.5697,
+                  "width_ratio": 1.1429,
+                  "height_ratio": 1.254
+                }
+              }
+            },
+            "target_metrics": {
+              "center": [
+                306.5,
+                349.0
+              ],
+              "width": 541.0,
+              "height": 722.0,
+              "area": 323078.0900399999
+            },
+            "result_metrics": {
+              "center": [
+                306.5,
+                348.0015948868128
+              ],
+              "width": 535.0841699855905,
+              "height": 730.094740227218,
+              "area": 318477.30058993644
+            },
+            "result_area_vs_donor": 1.216
+          }
+        },
+        "skipped_masters": {}
+      },
+      "r.ss03": {
+        "applied": true,
+        "reference_master": "Regular",
+        "reference_master_preserved": true,
+        "masters_updated": [
+          "ExtraBlack",
+          "Regular",
+          "Thin"
+        ],
+        "contour_aware": false,
+        "transforms": {
+          "Thin": {
+            "mode": "whole_glyph",
+            "transform": {
+              "mode": "whole_glyph",
+              "transform": {
+                "scale_x": 0.4864,
+                "scale_y": 0.8462,
+                "area_ratio": 0.3646,
+                "width_ratio": 0.4407,
+                "height_ratio": 0.9794
+              }
+            },
+            "target_metrics": {
+              "center": [
+                135.0,
+                238.0
+              ],
+              "width": 104.0,
+              "height": 476.0,
+              "area": 22182.16392000002
+            },
+            "result_metrics": {
+              "center": [
+                135.0,
+                238.0
+              ],
+              "width": 114.78131814034163,
+              "height": 411.23945162256746,
+              "area": 25037.28311145843
+            },
+            "result_area_vs_donor": 1.1828
+          },
+          "Regular": {
+            "mode": "reference",
+            "transform": {
+              "scale_x": 1.0,
+              "scale_y": 1.0,
+              "area_ratio": 1.0,
+              "width_ratio": 1.0,
+              "height_ratio": 1.0
+            }
+          },
+          "ExtraBlack": {
+            "mode": "whole_glyph",
+            "transform": {
+              "mode": "whole_glyph",
+              "transform": {
+                "scale_x": 1.6052,
+                "scale_y": 1.1865,
+                "area_ratio": 2.0737,
+                "width_ratio": 1.6695,
+                "height_ratio": 1.0412
+              }
+            },
+            "target_metrics": {
+              "center": [
+                260.0,
+                253.0
+              ],
+              "width": 394.0,
+              "height": 506.0,
+              "area": 126156.08404000005
+            },
+            "result_metrics": {
+              "center": [
+                260.0,
+                253.0
+              ],
+              "width": 378.8367033168622,
+              "height": 576.6554184984161,
+              "area": 115874.97323978091
+            },
+            "result_area_vs_donor": 1.0172
+          }
+        },
+        "skipped_masters": {},
+        "strategy": "structural_fallback"
+      },
+      "racute.ss03": {
+        "applied": true,
+        "reference_master": "Regular",
+        "reference_master_preserved": true,
+        "masters_updated": [
+          "ExtraBlack",
+          "Regular",
+          "Thin"
+        ],
+        "contour_aware": false,
+        "transforms": {
+          "Thin": {
+            "mode": "whole_glyph",
+            "transform": {
+              "mode": "whole_glyph",
+              "transform": {
+                "scale_x": 0.7289,
+                "scale_y": 0.7032,
+                "area_ratio": 0.3712,
+                "width_ratio": 0.7754,
+                "height_ratio": 0.971
+              }
+            },
+            "target_metrics": {
+              "center": [
+                174.5,
+                334.5
+              ],
+              "width": 183.0,
+              "height": 669.0,
+              "area": 27919.66392000002
+            },
+            "result_metrics": {
+              "center": [
+                174.5,
+                334.5
+              ],
+              "width": 172.01905234009382,
+              "height": 484.48247458842684,
+              "area": 38551.96836273109
+            },
+            "result_area_vs_donor": 1.4329
+          },
+          "Regular": {
+            "mode": "reference",
+            "transform": {
+              "scale_x": 1.0,
+              "scale_y": 1.0,
+              "area_ratio": 1.0,
+              "width_ratio": 1.0,
+              "height_ratio": 1.0
+            }
+          },
+          "ExtraBlack": {
+            "mode": "whole_glyph",
+            "transform": {
+              "mode": "whole_glyph",
+              "transform": {
+                "scale_x": 1.6003,
+                "scale_y": 1.1656,
+                "area_ratio": 2.0236,
+                "width_ratio": 1.6695,
+                "height_ratio": 1.029
+              }
+            },
+            "target_metrics": {
+              "center": [
+                260.0,
+                354.5
+              ],
+              "width": 394.0,
+              "height": 709.0,
+              "area": 152208.08404000005
+            },
+            "result_metrics": {
+              "center": [
+                260.0,
+                354.5
+              ],
+              "width": 377.67988326923023,
+              "height": 803.0807294589736,
+              "area": 140305.5958160573
+            },
+            "result_area_vs_donor": 1.0024
+          }
+        },
+        "skipped_masters": {},
+        "strategy": "structural_fallback"
+      },
+      "rcommaaccent.ss03": {
+        "applied": true,
+        "reference_master": "Regular",
+        "reference_master_preserved": true,
+        "masters_updated": [
+          "ExtraBlack",
+          "Regular",
+          "Thin"
+        ],
+        "contour_aware": false,
+        "transforms": {
+          "Thin": {
+            "mode": "whole_glyph",
+            "transform": {
+              "mode": "whole_glyph",
+              "transform": {
+                "scale_x": 0.558,
+                "scale_y": 0.8086,
+                "area_ratio": 0.3904,
+                "width_ratio": 0.532,
+                "height_ratio": 0.959
+              }
+            },
+            "target_metrics": {
+              "center": [
+                120.5,
+                137.0
+              ],
+              "width": 133.0,
+              "height": 678.0,
+              "area": 29766.54210000002
+            },
+            "result_metrics": {
+              "center": [
+                120.5,
+                137.0
+              ],
+              "width": 139.49949543749915,
+              "height": 571.6835773458215,
+              "area": 34399.00334997925
+            },
+            "result_area_vs_donor": 1.3394
+          },
+          "Regular": {
+            "mode": "reference",
+            "transform": {
+              "scale_x": 1.0,
+              "scale_y": 1.0,
+              "area_ratio": 1.0,
+              "width_ratio": 1.0,
+              "height_ratio": 1.0
+            }
+          },
+          "ExtraBlack": {
+            "mode": "whole_glyph",
+            "transform": {
+              "mode": "whole_glyph",
+              "transform": {
+                "scale_x": 1.537,
+                "scale_y": 1.2422,
+                "area_ratio": 2.0638,
+                "width_ratio": 1.576,
+                "height_ratio": 1.1033
+              }
+            },
+            "target_metrics": {
+              "center": [
+                260.0,
+                116.0
+              ],
+              "width": 394.0,
+              "height": 780.0,
+              "area": 157338.90152000007
+            },
+            "result_metrics": {
+              "center": [
+                260.0,
+                116.0
+              ],
+              "width": 384.24054823880124,
+              "height": 878.2091287981484,
+              "area": 145552.15740846057
+            },
+            "result_area_vs_donor": 1.0902
+          }
+        },
+        "skipped_masters": {},
+        "strategy": "structural_fallback"
+      },
+      "rcaron.ss03": {
+        "applied": true,
+        "reference_master": "Regular",
+        "reference_master_preserved": true,
+        "masters_updated": [
+          "ExtraBlack",
+          "Regular",
+          "Thin"
+        ],
+        "contour_aware": false,
+        "transforms": {
+          "Thin": {
+            "mode": "whole_glyph",
+            "transform": {
+              "mode": "whole_glyph",
+              "transform": {
+                "scale_x": 0.8098,
+                "scale_y": 0.6868,
+                "area_ratio": 0.3878,
+                "width_ratio": 0.8825,
+                "height_ratio": 0.9738
+              }
+            },
+            "target_metrics": {
+              "center": [
+                139.0,
+                334.5
+              ],
+              "width": 278.0,
+              "height": 669.0,
+              "area": 33127.16392000002
+            },
+            "result_metrics": {
+              "center": [
+                139.0,
+                334.5
+              ],
+              "width": 255.08854799573282,
+              "height": 471.81735565874624,
+              "area": 47503.18971780043
+            },
+            "result_area_vs_donor": 1.4793
+          },
+          "Regular": {
+            "mode": "reference",
+            "transform": {
+              "scale_x": 1.0,
+              "scale_y": 1.0,
+              "area_ratio": 1.0,
+              "width_ratio": 1.0,
+              "height_ratio": 1.0
+            }
+          },
+          "ExtraBlack": {
+            "mode": "whole_glyph",
+            "transform": {
+              "mode": "whole_glyph",
+              "transform": {
+                "scale_x": 1.3077,
+                "scale_y": 1.299,
+                "area_ratio": 1.9516,
+                "width_ratio": 1.273,
+                "height_ratio": 1.032
+              }
+            },
+            "target_metrics": {
+              "center": [
+                256.5,
+                354.5
+              ],
+              "width": 401.0,
+              "height": 709.0,
+              "area": 166689.08404000005
+            },
+            "result_metrics": {
+              "center": [
+                256.5,
+                354.5
+              ],
+              "width": 411.93386208942536,
+              "height": 892.414032858288,
+              "area": 145094.7781508566
+            },
+            "result_area_vs_donor": 0.9394
+          }
+        },
+        "skipped_masters": {},
+        "strategy": "structural_fallback"
+      },
+      "tcommaaccent": {
+        "applied": false,
+        "strategy": "inherit_base_contours",
+        "base_glyph": "t",
+        "masters_updated": [],
+        "contour_mappings": {},
+        "skipped_masters": {
+          "Thin": "no_extra_target_contours",
+          "Regular": "no_extra_target_contours",
+          "ExtraBlack": "no_extra_target_contours"
+        }
+      },
+      "uni021B": {
+        "applied": true,
+        "strategy": "inherit_base_contours",
+        "base_glyph": "t",
+        "masters_updated": [
+          "Thin",
+          "Regular",
+          "ExtraBlack"
+        ],
+        "contour_mappings": {
+          "Thin": [
+            0
+          ],
+          "Regular": [
+            0
+          ],
+          "ExtraBlack": [
+            0
+          ]
+        },
+        "skipped_masters": {}
+      },
+      "aeacute": {
+        "applied": true,
+        "strategy": "inherit_base_contours",
+        "base_glyph": "ae",
+        "masters_updated": [
+          "Thin",
+          "Regular",
+          "ExtraBlack"
+        ],
+        "contour_mappings": {
+          "Thin": [
+            1,
+            2,
+            3
+          ],
+          "Regular": [
+            1,
+            2,
+            3
+          ],
+          "ExtraBlack": [
+            1,
+            2,
+            3
+          ]
+        },
+        "skipped_masters": {}
+      },
+      "ecircumflex": {
+        "applied": true,
+        "strategy": "inherit_base_contours",
+        "base_glyph": "e",
+        "masters_updated": [
+          "Thin",
+          "Regular",
+          "ExtraBlack"
+        ],
+        "contour_mappings": {
+          "Thin": [
+            1,
+            2
+          ],
+          "Regular": [
+            1,
+            2
+          ],
+          "ExtraBlack": [
+            1,
+            2
+          ]
+        },
+        "skipped_masters": {}
+      },
+      "edieresis": {
+        "applied": true,
+        "strategy": "inherit_base_contours",
+        "base_glyph": "e",
+        "masters_updated": [
+          "Thin",
+          "Regular",
+          "ExtraBlack"
+        ],
+        "contour_mappings": {
+          "Thin": [
+            2,
+            3
+          ],
+          "Regular": [
+            2,
+            3
+          ],
+          "ExtraBlack": [
+            2,
+            3
+          ]
+        },
+        "skipped_masters": {}
+      },
+      "ugrave": {
+        "applied": true,
+        "strategy": "inherit_base_contours",
+        "base_glyph": "u",
+        "masters_updated": [
+          "Thin",
+          "Regular",
+          "ExtraBlack"
+        ],
+        "contour_mappings": {
+          "Thin": [
+            0
+          ],
+          "Regular": [
+            0
+          ],
+          "ExtraBlack": [
+            0
+          ]
+        },
+        "skipped_masters": {}
+      },
+      "uacute": {
+        "applied": true,
+        "strategy": "inherit_base_contours",
+        "base_glyph": "u",
+        "masters_updated": [
+          "Thin",
+          "Regular",
+          "ExtraBlack"
+        ],
+        "contour_mappings": {
+          "Thin": [
+            0
+          ],
+          "Regular": [
+            0
+          ],
+          "ExtraBlack": [
+            0
+          ]
+        },
+        "skipped_masters": {}
+      },
+      "ucircumflex": {
+        "applied": true,
+        "strategy": "inherit_base_contours",
+        "base_glyph": "u",
+        "masters_updated": [
+          "Thin",
+          "Regular",
+          "ExtraBlack"
+        ],
+        "contour_mappings": {
+          "Thin": [
+            0
+          ],
+          "Regular": [
+            0
+          ],
+          "ExtraBlack": [
+            0
+          ]
+        },
+        "skipped_masters": {}
+      },
+      "udieresis": {
+        "applied": true,
+        "strategy": "inherit_base_contours",
+        "base_glyph": "u",
+        "masters_updated": [
+          "Thin",
+          "Regular",
+          "ExtraBlack"
+        ],
+        "contour_mappings": {
+          "Thin": [
+            0
+          ],
+          "Regular": [
+            0
+          ],
+          "ExtraBlack": [
+            0
+          ]
+        },
+        "skipped_masters": {}
+      },
+      "dcaron": {
+        "applied": true,
+        "strategy": "inherit_base_contours",
+        "base_glyph": "d",
+        "masters_updated": [
+          "Thin",
+          "Regular",
+          "ExtraBlack"
+        ],
+        "contour_mappings": {
+          "Thin": [
+            1,
+            0
+          ],
+          "Regular": [
+            1,
+            0
+          ],
+          "ExtraBlack": [
+            1,
+            0
+          ]
+        },
+        "skipped_masters": {}
+      },
+      "ebreve": {
+        "applied": true,
+        "strategy": "inherit_base_contours",
+        "base_glyph": "e",
+        "masters_updated": [
+          "Thin",
+          "Regular",
+          "ExtraBlack"
+        ],
+        "contour_mappings": {
+          "Thin": [
+            1,
+            2
+          ],
+          "Regular": [
+            1,
+            2
+          ],
+          "ExtraBlack": [
+            1,
+            2
+          ]
+        },
+        "skipped_masters": {}
+      },
+      "edotaccent": {
+        "applied": true,
+        "strategy": "inherit_base_contours",
+        "base_glyph": "e",
+        "masters_updated": [
+          "Thin",
+          "Regular",
+          "ExtraBlack"
+        ],
+        "contour_mappings": {
+          "Thin": [
+            1,
+            2
+          ],
+          "Regular": [
+            1,
+            2
+          ],
+          "ExtraBlack": [
+            1,
+            2
+          ]
+        },
+        "skipped_masters": {}
+      },
+      "racute": {
+        "applied": true,
+        "strategy": "inherit_base_contours",
+        "base_glyph": "r",
+        "masters_updated": [
+          "Thin",
+          "Regular",
+          "ExtraBlack"
+        ],
+        "contour_mappings": {
+          "Thin": [
+            0
+          ],
+          "Regular": [
+            0
+          ],
+          "ExtraBlack": [
+            0
+          ]
+        },
+        "skipped_masters": {}
+      },
+      "rcommaaccent": {
+        "applied": true,
+        "strategy": "inherit_base_contours",
+        "base_glyph": "r",
+        "masters_updated": [
+          "Thin",
+          "Regular",
+          "ExtraBlack"
+        ],
+        "contour_mappings": {
+          "Thin": [
+            0
+          ],
+          "Regular": [
+            0
+          ],
+          "ExtraBlack": [
+            0
+          ]
+        },
+        "skipped_masters": {}
+      },
+      "rcaron": {
+        "applied": true,
+        "strategy": "inherit_base_contours",
+        "base_glyph": "r",
+        "masters_updated": [
+          "Thin",
+          "Regular",
+          "ExtraBlack"
+        ],
+        "contour_mappings": {
+          "Thin": [
+            0
+          ],
+          "Regular": [
+            0
+          ],
+          "ExtraBlack": [
+            0
+          ]
+        },
+        "skipped_masters": {}
+      },
+      "umacron": {
+        "applied": true,
+        "strategy": "inherit_base_contours",
+        "base_glyph": "u",
+        "masters_updated": [
+          "Thin",
+          "Regular",
+          "ExtraBlack"
+        ],
+        "contour_mappings": {
+          "Thin": [
+            0
+          ],
+          "Regular": [
+            0
+          ],
+          "ExtraBlack": [
+            0
+          ]
+        },
+        "skipped_masters": {}
+      },
+      "ubreve": {
+        "applied": true,
+        "strategy": "inherit_base_contours",
+        "base_glyph": "u",
+        "masters_updated": [
+          "Thin",
+          "Regular",
+          "ExtraBlack"
+        ],
+        "contour_mappings": {
+          "Thin": [
+            0
+          ],
+          "Regular": [
+            0
+          ],
+          "ExtraBlack": [
+            0
+          ]
+        },
+        "skipped_masters": {}
+      },
+      "uring": {
+        "applied": true,
+        "strategy": "inherit_base_contours",
+        "base_glyph": "u",
+        "masters_updated": [
+          "Thin",
+          "Regular",
+          "ExtraBlack"
+        ],
+        "contour_mappings": {
+          "Thin": [
+            0
+          ],
+          "Regular": [
+            0
+          ],
+          "ExtraBlack": [
+            0
+          ]
+        },
+        "skipped_masters": {}
+      },
+      "ecaron": {
+        "applied": true,
+        "strategy": "inherit_base_contours",
+        "base_glyph": "e",
+        "masters_updated": [
+          "Thin",
+          "Regular",
+          "ExtraBlack"
+        ],
+        "contour_mappings": {
+          "Thin": [
+            0,
+            1
+          ],
+          "Regular": [
+            0,
+            1
+          ],
+          "ExtraBlack": [
+            0,
+            1
+          ]
+        },
+        "skipped_masters": {}
+      },
+      "utilde": {
+        "applied": true,
+        "strategy": "inherit_base_contours",
+        "base_glyph": "u",
+        "masters_updated": [
+          "Thin",
+          "Regular",
+          "ExtraBlack"
+        ],
+        "contour_mappings": {
+          "Thin": [
+            0
+          ],
+          "Regular": [
+            0
+          ],
+          "ExtraBlack": [
+            0
+          ]
+        },
+        "skipped_masters": {}
+      },
+      "aacute.ss02": {
+        "applied": true,
+        "strategy": "inherit_base_contours",
+        "base_glyph": "a.ss02",
+        "masters_updated": [
+          "Thin",
+          "Regular",
+          "ExtraBlack"
+        ],
+        "contour_mappings": {
+          "Thin": [
+            0,
+            1
+          ],
+          "Regular": [
+            0,
+            1
+          ],
+          "ExtraBlack": [
+            0,
+            1
+          ]
+        },
+        "skipped_masters": {}
+      },
+      "abreve.ss02": {
+        "applied": true,
+        "strategy": "inherit_base_contours",
+        "base_glyph": "a.ss02",
+        "masters_updated": [
+          "Thin",
+          "Regular",
+          "ExtraBlack"
+        ],
+        "contour_mappings": {
+          "Thin": [
+            0,
+            1
+          ],
+          "Regular": [
+            0,
+            1
+          ],
+          "ExtraBlack": [
+            0,
+            1
+          ]
+        },
+        "skipped_masters": {}
+      },
+      "acircumflex.ss02": {
+        "applied": true,
+        "strategy": "inherit_base_contours",
+        "base_glyph": "a.ss02",
+        "masters_updated": [
+          "Thin",
+          "Regular",
+          "ExtraBlack"
+        ],
+        "contour_mappings": {
+          "Thin": [
+            0,
+            1
+          ],
+          "Regular": [
+            0,
+            1
+          ],
+          "ExtraBlack": [
+            0,
+            1
+          ]
+        },
+        "skipped_masters": {}
+      },
+      "adieresis.ss02": {
+        "applied": true,
+        "strategy": "inherit_base_contours",
+        "base_glyph": "a.ss02",
+        "masters_updated": [
+          "Thin",
+          "Regular",
+          "ExtraBlack"
+        ],
+        "contour_mappings": {
+          "Thin": [
+            0,
+            1
+          ],
+          "Regular": [
+            0,
+            1
+          ],
+          "ExtraBlack": [
+            0,
+            1
+          ]
+        },
+        "skipped_masters": {}
+      },
+      "agrave.ss02": {
+        "applied": true,
+        "strategy": "inherit_base_contours",
+        "base_glyph": "a.ss02",
+        "masters_updated": [
+          "Thin",
+          "Regular",
+          "ExtraBlack"
+        ],
+        "contour_mappings": {
+          "Thin": [
+            0,
+            1
+          ],
+          "Regular": [
+            0,
+            1
+          ],
+          "ExtraBlack": [
+            0,
+            1
+          ]
+        },
+        "skipped_masters": {}
+      },
+      "amacron.ss02": {
+        "applied": true,
+        "strategy": "inherit_base_contours",
+        "base_glyph": "a.ss02",
+        "masters_updated": [
+          "Thin",
+          "Regular",
+          "ExtraBlack"
+        ],
+        "contour_mappings": {
+          "Thin": [
+            0,
+            1
+          ],
+          "Regular": [
+            0,
+            1
+          ],
+          "ExtraBlack": [
+            0,
+            1
+          ]
+        },
+        "skipped_masters": {}
+      },
+      "aringacute.ss02": {
+        "applied": true,
+        "strategy": "inherit_base_contours",
+        "base_glyph": "aring.ss02",
+        "masters_updated": [
+          "Thin",
+          "Regular",
+          "ExtraBlack"
+        ],
+        "contour_mappings": {
+          "Thin": [
+            0,
+            1,
+            3,
+            4
+          ],
+          "Regular": [
+            0,
+            1,
+            3,
+            4
+          ],
+          "ExtraBlack": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        "skipped_masters": {}
+      }
+    },
+    "brace_results": {
+      "e": {
+        "applied": true,
+        "removed": 0,
+        "created": [
+          {
+            "layer_id": "VG_BRACE_e_250",
+            "weight": 250,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 2,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0,
+                1
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 6,
+                "1": 27
+              }
+            },
+            "mode": "brace_contour_aware"
+          },
+          {
+            "layer_id": "VG_BRACE_e_675",
+            "weight": 675,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 2,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0,
+                1
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 6,
+                "1": 27
+              }
+            },
+            "mode": "brace_contour_aware"
+          }
+        ],
+        "skipped": {}
+      },
+      "t": {
+        "applied": true,
+        "removed": 0,
+        "created": [
+          {
+            "layer_id": "VG_BRACE_t_250",
+            "weight": 250,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 1,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 26
+              }
+            },
+            "mode": "brace_whole_glyph"
+          },
+          {
+            "layer_id": "VG_BRACE_t_675",
+            "weight": 675,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 1,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 26
+              }
+            },
+            "mode": "brace_whole_glyph"
+          }
+        ],
+        "skipped": {}
+      },
+      "zero": {
+        "applied": true,
+        "removed": 0,
+        "created": [
+          {
+            "layer_id": "VG_BRACE_zero_675",
+            "weight": 675,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 2,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0,
+                1
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 23,
+                "1": 23
+              }
+            },
+            "mode": "brace_contour_aware"
+          }
+        ],
+        "skipped": {}
+      },
+      "two": {
+        "applied": true,
+        "removed": 0,
+        "created": [
+          {
+            "layer_id": "VG_BRACE_two_250",
+            "weight": 250,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 1,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 44
+              }
+            },
+            "mode": "brace_whole_glyph"
+          },
+          {
+            "layer_id": "VG_BRACE_two_675",
+            "weight": 675,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 1,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 44
+              }
+            },
+            "mode": "brace_whole_glyph"
+          }
+        ],
+        "skipped": {}
+      },
+      "three": {
+        "applied": true,
+        "removed": 0,
+        "created": [
+          {
+            "layer_id": "VG_BRACE_three_250",
+            "weight": 250,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 1,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 35
+              }
+            },
+            "mode": "brace_whole_glyph"
+          },
+          {
+            "layer_id": "VG_BRACE_three_675",
+            "weight": 675,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 1,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 35
+              }
+            },
+            "mode": "brace_whole_glyph"
+          }
+        ],
+        "skipped": {}
+      },
+      "six": {
+        "applied": true,
+        "removed": 0,
+        "created": [
+          {
+            "layer_id": "VG_BRACE_six_250",
+            "weight": 250,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 2,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0,
+                1
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 29,
+                "1": 11
+              }
+            },
+            "mode": "brace_contour_aware"
+          },
+          {
+            "layer_id": "VG_BRACE_six_675",
+            "weight": 675,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 2,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0,
+                1
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 29,
+                "1": 11
+              }
+            },
+            "mode": "brace_contour_aware"
+          }
+        ],
+        "skipped": {}
+      },
+      "nine": {
+        "applied": true,
+        "removed": 0,
+        "created": [
+          {
+            "layer_id": "VG_BRACE_nine_250",
+            "weight": 250,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 2,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0,
+                1
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 29,
+                "1": 11
+              }
+            },
+            "mode": "brace_contour_aware"
+          }
+        ],
+        "skipped": {}
+      },
+      "twosuperior": {
+        "applied": true,
+        "removed": 0,
+        "created": [
+          {
+            "layer_id": "VG_BRACE_twosuperior_250",
+            "weight": 250,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 1,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 44
+              }
+            },
+            "mode": "brace_donor_direct"
+          },
+          {
+            "layer_id": "VG_BRACE_twosuperior_675",
+            "weight": 675,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 1,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 44
+              }
+            },
+            "mode": "brace_donor_direct"
+          }
+        ],
+        "skipped": {}
+      },
+      "threesuperior": {
+        "applied": true,
+        "removed": 0,
+        "created": [
+          {
+            "layer_id": "VG_BRACE_threesuperior_250",
+            "weight": 250,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 1,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 35
+              }
+            },
+            "mode": "brace_donor_direct"
+          },
+          {
+            "layer_id": "VG_BRACE_threesuperior_675",
+            "weight": 675,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 1,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 35
+              }
+            },
+            "mode": "brace_donor_direct"
+          }
+        ],
+        "skipped": {}
+      },
+      "mu": {
+        "applied": true,
+        "removed": 0,
+        "created": [
+          {
+            "layer_id": "VG_BRACE_mu_250",
+            "weight": 250,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 1,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 29
+              }
+            },
+            "mode": "brace_donor_direct"
+          },
+          {
+            "layer_id": "VG_BRACE_mu_675",
+            "weight": 675,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 1,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 29
+              }
+            },
+            "mode": "brace_donor_direct"
+          }
+        ],
+        "skipped": {}
+      },
+      "onehalf": {
+        "applied": true,
+        "removed": 0,
+        "created": [
+          {
+            "layer_id": "VG_BRACE_onehalf_250",
+            "weight": 250,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 3,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0,
+                1,
+                2
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 7,
+                "1": 12,
+                "2": 40
+              }
+            },
+            "mode": "brace_contour_aware"
+          },
+          {
+            "layer_id": "VG_BRACE_onehalf_675",
+            "weight": 675,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 3,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0,
+                1,
+                2
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 7,
+                "1": 12,
+                "2": 40
+              }
+            },
+            "mode": "brace_contour_aware"
+          }
+        ],
+        "skipped": {}
+      },
+      "threequarters": {
+        "applied": true,
+        "removed": 0,
+        "created": [
+          {
+            "layer_id": "VG_BRACE_threequarters_250",
+            "weight": 250,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 4,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 7,
+                "1": 35,
+                "2": 12,
+                "3": 4
+              }
+            },
+            "mode": "brace_contour_aware"
+          },
+          {
+            "layer_id": "VG_BRACE_threequarters_675",
+            "weight": 675,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 4,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 7,
+                "1": 35,
+                "2": 12,
+                "3": 4
+              }
+            },
+            "mode": "brace_contour_aware"
+          }
+        ],
+        "skipped": {}
+      },
+      "ae": {
+        "applied": true,
+        "removed": 0,
+        "created": [
+          {
+            "layer_id": "VG_BRACE_ae_250",
+            "weight": 250,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 3,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0,
+                1,
+                2
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 53,
+                "1": 6,
+                "2": 15
+              }
+            },
+            "mode": "brace_donor_direct"
+          },
+          {
+            "layer_id": "VG_BRACE_ae_675",
+            "weight": 675,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 3,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0,
+                1,
+                2
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 53,
+                "1": 6,
+                "2": 15
+              }
+            },
+            "mode": "brace_donor_direct"
+          }
+        ],
+        "skipped": {}
+      },
+      "dslash": {
+        "applied": true,
+        "removed": 0,
+        "created": [
+          {
+            "layer_id": "VG_BRACE_dslash_250",
+            "weight": 250,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 2,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0,
+                1
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 34,
+                "1": 11
+              }
+            },
+            "mode": "brace_donor_direct"
+          }
+        ],
+        "skipped": {
+          "675": "direct_donor_interpolation_failed"
+        }
+      },
+      "emacron": {
+        "applied": true,
+        "removed": 0,
+        "created": [
+          {
+            "layer_id": "VG_BRACE_emacron_250",
+            "weight": 250,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 3,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0,
+                1,
+                2
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 11,
+                "1": 11,
+                "2": 27
+              }
+            },
+            "mode": "brace_contour_aware"
+          },
+          {
+            "layer_id": "VG_BRACE_emacron_675",
+            "weight": 675,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 3,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0,
+                1,
+                2
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 11,
+                "1": 11,
+                "2": 27
+              }
+            },
+            "mode": "brace_contour_aware"
+          }
+        ],
+        "skipped": {}
+      },
+      "eogonek": {
+        "applied": true,
+        "removed": 0,
+        "created": [
+          {
+            "layer_id": "VG_BRACE_eogonek_250",
+            "weight": 250,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 2,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0,
+                1
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 53,
+                "1": 6
+              }
+            },
+            "mode": "brace_contour_aware"
+          },
+          {
+            "layer_id": "VG_BRACE_eogonek_675",
+            "weight": 675,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 2,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0,
+                1
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 53,
+                "1": 6
+              }
+            },
+            "mode": "brace_contour_aware"
+          }
+        ],
+        "skipped": {}
+      },
+      "gdotaccent": {
+        "applied": true,
+        "removed": 0,
+        "created": [
+          {
+            "layer_id": "VG_BRACE_gdotaccent_675",
+            "weight": 675,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 3,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0,
+                1,
+                2
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 11,
+                "1": 11,
+                "2": 28
+              }
+            },
+            "mode": "brace_donor_direct"
+          }
+        ],
+        "skipped": {}
+      },
+      "IJ": {
+        "applied": true,
+        "removed": 0,
+        "created": [
+          {
+            "layer_id": "VG_BRACE_IJ_250",
+            "weight": 250,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 2,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0,
+                1
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 9,
+                "1": 29
+              }
+            },
+            "mode": "brace_contour_aware"
+          },
+          {
+            "layer_id": "VG_BRACE_IJ_675",
+            "weight": 675,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 2,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0,
+                1
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 9,
+                "1": 29
+              }
+            },
+            "mode": "brace_contour_aware"
+          }
+        ],
+        "skipped": {}
+      },
+      "kgreenlandic": {
+        "applied": true,
+        "removed": 0,
+        "created": [
+          {
+            "layer_id": "VG_BRACE_kgreenlandic_675",
+            "weight": 675,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 1,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 23
+              }
+            },
+            "mode": "brace_whole_glyph"
+          }
+        ],
+        "skipped": {}
+      },
+      "napostrophe": {
+        "applied": true,
+        "removed": 0,
+        "created": [
+          {
+            "layer_id": "VG_BRACE_napostrophe_250",
+            "weight": 250,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 2,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0,
+                1
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 19,
+                "1": 18
+              }
+            },
+            "mode": "brace_contour_aware"
+          },
+          {
+            "layer_id": "VG_BRACE_napostrophe_675",
+            "weight": 675,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 2,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0,
+                1
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 19,
+                "1": 18
+              }
+            },
+            "mode": "brace_contour_aware"
+          }
+        ],
+        "skipped": {}
+      },
+      "oe": {
+        "applied": true,
+        "removed": 0,
+        "created": [
+          {
+            "layer_id": "VG_BRACE_oe_250",
+            "weight": 250,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 3,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0,
+                1,
+                2
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 39,
+                "1": 11,
+                "2": 6
+              }
+            },
+            "mode": "brace_donor_direct"
+          },
+          {
+            "layer_id": "VG_BRACE_oe_675",
+            "weight": 675,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 3,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0,
+                1,
+                2
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 39,
+                "1": 11,
+                "2": 6
+              }
+            },
+            "mode": "brace_donor_direct"
+          }
+        ],
+        "skipped": {}
+      },
+      "Scedilla": {
+        "applied": true,
+        "removed": 0,
+        "created": [
+          {
+            "layer_id": "VG_BRACE_Scedilla_250",
+            "weight": 250,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 1,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 75
+              }
+            },
+            "mode": "brace_whole_glyph"
+          },
+          {
+            "layer_id": "VG_BRACE_Scedilla_675",
+            "weight": 675,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 1,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 75
+              }
+            },
+            "mode": "brace_whole_glyph"
+          }
+        ],
+        "skipped": {}
+      },
+      "scedilla": {
+        "applied": true,
+        "removed": 0,
+        "created": [
+          {
+            "layer_id": "VG_BRACE_scedilla_250",
+            "weight": 250,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 1,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 73
+              }
+            },
+            "mode": "brace_whole_glyph"
+          },
+          {
+            "layer_id": "VG_BRACE_scedilla_675",
+            "weight": 675,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 1,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 73
+              }
+            },
+            "mode": "brace_whole_glyph"
+          }
+        ],
+        "skipped": {}
+      },
+      "tcaron": {
+        "applied": true,
+        "removed": 0,
+        "created": [
+          {
+            "layer_id": "VG_BRACE_tcaron_250",
+            "weight": 250,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 2,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0,
+                1
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 7,
+                "1": 28
+              }
+            },
+            "mode": "brace_contour_aware"
+          },
+          {
+            "layer_id": "VG_BRACE_tcaron_675",
+            "weight": 675,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 2,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0,
+                1
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 7,
+                "1": 28
+              }
+            },
+            "mode": "brace_contour_aware"
+          }
+        ],
+        "skipped": {}
+      },
+      "tbar": {
+        "applied": true,
+        "removed": 0,
+        "created": [
+          {
+            "layer_id": "VG_BRACE_tbar_250",
+            "weight": 250,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 1,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 44
+              }
+            },
+            "mode": "brace_whole_glyph"
+          },
+          {
+            "layer_id": "VG_BRACE_tbar_675",
+            "weight": 675,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 1,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 44
+              }
+            },
+            "mode": "brace_whole_glyph"
+          }
+        ],
+        "skipped": {}
+      },
+      "uhungarumlaut": {
+        "applied": true,
+        "removed": 0,
+        "created": [
+          {
+            "layer_id": "VG_BRACE_uhungarumlaut_250",
+            "weight": 250,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 3,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0,
+                1,
+                2
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 27,
+                "1": 5,
+                "2": 7
+              }
+            },
+            "mode": "brace_contour_aware"
+          },
+          {
+            "layer_id": "VG_BRACE_uhungarumlaut_675",
+            "weight": 675,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 3,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0,
+                1,
+                2
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 27,
+                "1": 5,
+                "2": 7
+              }
+            },
+            "mode": "brace_contour_aware"
+          }
+        ],
+        "skipped": {}
+      },
+      "Uogonek": {
+        "applied": true,
+        "removed": 0,
+        "created": [
+          {
+            "layer_id": "VG_BRACE_Uogonek_250",
+            "weight": 250,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 1,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 54
+              }
+            },
+            "mode": "brace_whole_glyph"
+          },
+          {
+            "layer_id": "VG_BRACE_Uogonek_675",
+            "weight": 675,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 1,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 54
+              }
+            },
+            "mode": "brace_whole_glyph"
+          }
+        ],
+        "skipped": {}
+      },
+      "uogonek": {
+        "applied": true,
+        "removed": 0,
+        "created": [
+          {
+            "layer_id": "VG_BRACE_uogonek_250",
+            "weight": 250,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 1,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 51
+              }
+            },
+            "mode": "brace_whole_glyph"
+          },
+          {
+            "layer_id": "VG_BRACE_uogonek_675",
+            "weight": 675,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 1,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 51
+              }
+            },
+            "mode": "brace_whole_glyph"
+          }
+        ],
+        "skipped": {}
+      },
+      "uni018F": {
+        "applied": true,
+        "removed": 0,
+        "created": [
+          {
+            "layer_id": "VG_BRACE_uni018F_250",
+            "weight": 250,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 2,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0,
+                1
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 26,
+                "1": 12
+              }
+            },
+            "mode": "brace_contour_aware"
+          },
+          {
+            "layer_id": "VG_BRACE_uni018F_675",
+            "weight": 675,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 2,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0,
+                1
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 26,
+                "1": 12
+              }
+            },
+            "mode": "brace_contour_aware"
+          }
+        ],
+        "skipped": {}
+      },
+      "uni0259": {
+        "applied": true,
+        "removed": 0,
+        "created": [
+          {
+            "layer_id": "VG_BRACE_uni0259_250",
+            "weight": 250,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 2,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0,
+                1
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 6,
+                "1": 27
+              }
+            },
+            "mode": "brace_donor_direct"
+          },
+          {
+            "layer_id": "VG_BRACE_uni0259_675",
+            "weight": 675,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 2,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0,
+                1
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 6,
+                "1": 27
+              }
+            },
+            "mode": "brace_donor_direct"
+          }
+        ],
+        "skipped": {}
+      },
+      "uni03BC": {
+        "applied": true,
+        "removed": 0,
+        "created": [
+          {
+            "layer_id": "VG_BRACE_uni03BC_250",
+            "weight": 250,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 1,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 29
+              }
+            },
+            "mode": "brace_donor_direct"
+          },
+          {
+            "layer_id": "VG_BRACE_uni03BC_675",
+            "weight": 675,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 1,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 29
+              }
+            },
+            "mode": "brace_donor_direct"
+          }
+        ],
+        "skipped": {}
+      },
+      "pi": {
+        "applied": true,
+        "removed": 0,
+        "created": [
+          {
+            "layer_id": "VG_BRACE_pi_675",
+            "weight": 675,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 1,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 29
+              }
+            },
+            "mode": "brace_whole_glyph"
+          }
+        ],
+        "skipped": {}
+      },
+      "a.ss02": {
+        "applied": true,
+        "removed": 0,
+        "created": [
+          {
+            "layer_id": "VG_BRACE_a_ss02_250",
+            "weight": 250,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 2,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0,
+                1
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 11,
+                "1": 30
+              }
+            },
+            "mode": "brace_contour_aware"
+          },
+          {
+            "layer_id": "VG_BRACE_a_ss02_675",
+            "weight": 675,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 2,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0,
+                1
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 11,
+                "1": 30
+              }
+            },
+            "mode": "brace_contour_aware"
+          }
+        ],
+        "skipped": {}
+      },
+      "atilde.ss02": {
+        "applied": true,
+        "removed": 0,
+        "created": [
+          {
+            "layer_id": "VG_BRACE_atilde_ss02_675",
+            "weight": 675,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 3,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0,
+                1,
+                2
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 11,
+                "1": 32,
+                "2": 41
+              }
+            },
+            "mode": "brace_contour_aware"
+          }
+        ],
+        "skipped": {}
+      },
+      "aring.ss02": {
+        "applied": true,
+        "removed": 0,
+        "created": [
+          {
+            "layer_id": "VG_BRACE_aring_ss02_250",
+            "weight": 250,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 4,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 11,
+                "1": 30,
+                "2": 11,
+                "3": 11
+              }
+            },
+            "mode": "brace_contour_aware"
+          },
+          {
+            "layer_id": "VG_BRACE_aring_ss02_675",
+            "weight": 675,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 4,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 11,
+                "1": 30,
+                "2": 11,
+                "3": 11
+              }
+            },
+            "mode": "brace_contour_aware"
+          }
+        ],
+        "skipped": {}
+      },
+      "aogonek.ss02": {
+        "applied": true,
+        "removed": 0,
+        "created": [
+          {
+            "layer_id": "VG_BRACE_aogonek_ss02_675",
+            "weight": 675,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 2,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0,
+                1
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 51,
+                "1": 11
+              }
+            },
+            "mode": "brace_contour_aware"
+          }
+        ],
+        "skipped": {}
+      },
+      "ampersand.ss04": {
+        "applied": true,
+        "removed": 0,
+        "created": [
+          {
+            "layer_id": "VG_BRACE_ampersand_ss04_675",
+            "weight": 675,
+            "associated_master_id": "4AEB52C5-CA79-41F5-AEB9-A7FD367A3849",
+            "path_count": 1,
+            "alignment": {
+              "applied": true,
+              "mapping": [
+                0
+              ],
+              "reversed_paths": [],
+              "rotations": {
+                "0": 55
+              }
+            },
+            "mode": "brace_whole_glyph"
+          }
+        ],
+        "skipped": {}
+      }
+    },
+    "path_order_override_results": {
+      "emacron": {
+        "applied": true,
+        "glyph_name": "emacron",
+        "overrides": {
+          "ExtraBlack": [
+            1,
+            0,
+            2
+          ]
+        },
+        "path_alignment": {
+          "ExtraBlack": {
+            "applied": true,
+            "mapping": [
+              0,
+              1,
+              2
+            ],
+            "reversed_paths": [
+              0,
+              1
+            ],
+            "rotations": {
+              "0": 2,
+              "1": 2
+            }
+          }
+        },
+        "skipped": {}
+      },
+      "gdotaccent": {
+        "applied": true,
+        "glyph_name": "gdotaccent",
+        "overrides": {
+          "ExtraBlack": [
+            1,
+            0,
+            2
+          ]
+        },
+        "path_alignment": {
+          "ExtraBlack": {
+            "applied": true,
+            "mapping": [
+              0,
+              1,
+              2
+            ],
+            "reversed_paths": [
+              0,
+              1
+            ],
+            "rotations": {
+              "0": 8,
+              "1": 8
+            }
+          }
+        },
+        "skipped": {}
+      }
+    },
+    "initial_brace_cleanup": {
+      "e": 2,
+      "t": 2,
+      "zero": 1,
+      "two": 2,
+      "three": 2,
+      "six": 2,
+      "nine": 1,
+      "twosuperior": 2,
+      "threesuperior": 2,
+      "mu": 2,
+      "onehalf": 2,
+      "threequarters": 2,
+      "ae": 2,
+      "dslash": 1,
+      "emacron": 2,
+      "eogonek": 2,
+      "gdotaccent": 1,
+      "IJ": 2,
+      "kgreenlandic": 1,
+      "napostrophe": 2,
+      "oe": 2,
+      "Scedilla": 2,
+      "scedilla": 2,
+      "tcaron": 2,
+      "tbar": 2,
+      "uhungarumlaut": 2,
+      "Uogonek": 2,
+      "uogonek": 2,
+      "uni018F": 2,
+      "aeacute": 2,
+      "uni0259": 2,
+      "uni03BC": 2,
+      "pi": 1,
+      "a.ss02": 2,
+      "atilde.ss02": 1,
+      "aring.ss02": 2,
+      "aogonek.ss02": 1,
+      "ampersand.ss04": 1
+    },
+    "alignment_changes": {
+      "path_reorders": 4,
+      "startpoint_rotations": 2466
+    },
+    "winding_changes": {
+      "flips": 4,
+      "examples": [
+        {
+          "glyph": "emacron",
+          "master": "ExtraBlack",
+          "path_index": 0
+        },
+        {
+          "glyph": "emacron",
+          "master": "ExtraBlack",
+          "path_index": 1
+        },
+        {
+          "glyph": "gdotaccent",
+          "master": "ExtraBlack",
+          "path_index": 0
+        },
+        {
+          "glyph": "gdotaccent",
+          "master": "ExtraBlack",
+          "path_index": 1
+        }
+      ]
+    },
+    "post_winding_alignment": {
+      "path_reorders": 0,
+      "startpoint_rotations": 133
+    },
+    "export_compatibility_result": 1,
+    "post_export_alignment": {
+      "path_reorders": 1,
+      "startpoint_rotations": 352
+    },
+    "post_export_winding": {
+      "flips": 0,
+      "examples": []
+    },
+    "post_export_alignment_2": {
+      "path_reorders": 0,
+      "startpoint_rotations": 72
+    },
+    "strict_audit_counts": {
+      "path_order": 2,
+      "node_count": 0,
+      "start": 2,
+      "post_write_mismatches": 0
+    }
+  }
+}

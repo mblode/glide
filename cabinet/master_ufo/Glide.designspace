@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<designspace format="5.0">
+  <axes>
+    <axis tag="wght" name="Weight" minimum="400" maximum="900" default="400"/>
+  </axes>
+  <sources>
+    <source filename="Glide_Glide_Regular.ufo" name="Glide Regular" familyname="Glide" stylename="Regular">
+      <lib copy="1"/>
+      <groups copy="1"/>
+      <features copy="1"/>
+      <info copy="1"/>
+      <location>
+        <dimension name="Weight" xvalue="400"/>
+      </location>
+    </source>
+    <source filename="Glide_Glide_Medium.ufo" name="Glide Medium" familyname="Glide" stylename="Medium">
+      <location>
+        <dimension name="Weight" xvalue="500"/>
+      </location>
+    </source>
+    <source filename="Glide_Glide_Bold.ufo" name="Glide Bold" familyname="Glide" stylename="Bold">
+      <location>
+        <dimension name="Weight" xvalue="700"/>
+      </location>
+    </source>
+    <source filename="Glide_Glide_Black.ufo" name="Glide Black" familyname="Glide" stylename="Black">
+      <location>
+        <dimension name="Weight" xvalue="900"/>
+      </location>
+    </source>
+  </sources>
+  <instances>
+    <instance name="Glide Regular" familyname="Glide" stylename="Regular" filename="instance_ufos/Glide-Regular.ufo" stylemapfamilyname="Glide" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="400"/>
+      </location>
+    </instance>
+    <instance name="Glide Medium" familyname="Glide" stylename="Medium" filename="instance_ufos/Glide-Medium.ufo" stylemapfamilyname="Glide Medium" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="500"/>
+      </location>
+    </instance>
+    <instance name="Glide Bold" familyname="Glide" stylename="Bold" filename="instance_ufos/Glide-Bold.ufo" stylemapfamilyname="Glide Bold" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="700"/>
+      </location>
+    </instance>
+    <instance name="Glide Black" familyname="Glide" stylename="Black" filename="instance_ufos/Glide-Black.ufo" stylemapfamilyname="Glide Black" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="900"/>
+      </location>
+    </instance>
+  </instances>
+</designspace>

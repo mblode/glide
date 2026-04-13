@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="racute.ss03" format="2">
+  <advance width="469"/>
+  <outline>
+    <contour>
+      <point x="221.59188" y="513.6009" type="line"/>
+      <point x="71.16006" y="513.6009" type="line"/>
+      <point x="71.16006" y="-47.04036" type="line"/>
+      <point x="221.59188" y="-47.04036" type="line"/>
+    </contour>
+    <contour>
+      <point x="399.22945" y="519.42877"/>
+      <point x="336.81625" y="519.42877" type="curve" smooth="yes"/>
+      <point x="272.80271" y="519.42877"/>
+      <point x="223.19221" y="483.29597"/>
+      <point x="223.19221" y="436.67299" type="curve" smooth="yes"/>
+      <point x="223.19221" y="391.21559"/>
+      <point x="272.80271" y="355.08279"/>
+      <point x="336.81625" y="355.08279" type="curve" smooth="yes"/>
+      <point x="399.22945" y="355.08279"/>
+      <point x="448.83994" y="391.21559"/>
+      <point x="448.83994" y="436.67299" type="curve" smooth="yes"/>
+      <point x="448.83994" y="483.29597"/>
+    </contour>
+    <contour>
+      <point x="226.39289" y="756.04036" type="line"/>
+      <point x="87.16344" y="585.86651" type="line"/>
+      <point x="213.59018" y="585.86651" type="line"/>
+      <point x="415.23283" y="756.04036" type="line"/>
+    </contour>
+  </outline>
+</glyph>

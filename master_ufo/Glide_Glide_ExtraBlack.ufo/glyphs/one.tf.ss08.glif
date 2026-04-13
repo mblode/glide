@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="one.tf.ss08" format="2">
+  <advance width="604"/>
+  <outline>
+    <contour>
+      <point x="408" y="709" type="line"/>
+      <point x="251" y="709" type="line"/>
+      <point x="238" y="638"/>
+      <point x="187" y="587"/>
+      <point x="87" y="587" type="curve"/>
+      <point x="87" y="462" type="line"/>
+      <point x="133" y="462"/>
+      <point x="179" y="462"/>
+      <point x="225" y="462" type="curve"/>
+      <point x="225" y="359.667"/>
+      <point x="225" y="257.333"/>
+      <point x="225" y="155" type="curve"/>
+      <point x="67" y="155" type="line"/>
+      <point x="67" y="0" type="line"/>
+      <point x="558" y="0" type="line"/>
+      <point x="558" y="155" type="line"/>
+      <point x="408" y="155" type="line"/>
+    </contour>
+  </outline>
+</glyph>

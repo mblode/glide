@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni2161.ss08" format="2">
+  <advance width="827"/>
+  <outline>
+    <contour>
+      <point x="780" y="0" type="curve"/>
+      <point x="780" y="155" type="line"/>
+      <point x="654" y="155" type="line"/>
+      <point x="654" y="554" type="line"/>
+      <point x="696" y="554"/>
+      <point x="738" y="554"/>
+      <point x="780" y="554" type="curve"/>
+      <point x="780" y="709" type="line"/>
+      <point x="47" y="709" type="line"/>
+      <point x="47" y="554" type="line"/>
+      <point x="174" y="554" type="line"/>
+      <point x="174" y="155" type="line"/>
+      <point x="47" y="155" type="line"/>
+      <point x="47" y="0" type="line"/>
+      <point x="291.333" y="0"/>
+      <point x="535.667" y="0"/>
+    </contour>
+    <contour>
+      <point x="475" y="554" type="curve"/>
+      <point x="475" y="155" type="line"/>
+      <point x="434.333" y="155"/>
+      <point x="393.667" y="155"/>
+      <point x="353" y="155" type="curve"/>
+      <point x="353" y="554" type="line"/>
+      <point x="393.667" y="554"/>
+      <point x="434.333" y="554"/>
+    </contour>
+  </outline>
+</glyph>

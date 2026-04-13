@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="period.tf" format="2">
+  <advance width="587"/>
+  <note>
+period.tf
+</note>
+  <outline>
+    <contour>
+      <point x="186.13" y="140.797"/>
+      <point x="189.031" y="147.531" type="curve" smooth="yes"/>
+      <point x="194.833" y="161"/>
+      <point x="203.208" y="173.208"/>
+      <point x="213.5" y="183.5" type="curve" smooth="yes"/>
+      <point x="234.083" y="204.083"/>
+      <point x="262.333" y="217"/>
+      <point x="293" y="217" type="curve" smooth="yes"/>
+      <point x="354.333" y="217"/>
+      <point x="407" y="165.333"/>
+      <point x="407" y="104" type="curve" smooth="yes"/>
+      <point x="407" y="58"/>
+      <point x="377.5" y="18.5"/>
+      <point x="336.5" y="-0.5" type="curve" smooth="yes"/>
+      <point x="309.167" y="-13.167"/>
+      <point x="276.833" y="-13.167"/>
+      <point x="249.5" y="-0.5" type="curve" smooth="yes"/>
+      <point x="208.5" y="18.5"/>
+      <point x="180" y="58"/>
+      <point x="180" y="104" type="curve" smooth="yes"/>
+      <point x="180" y="111.667"/>
+      <point x="180.807" y="119.182"/>
+      <point x="182.34" y="126.465" type="curve" smooth="yes"/>
+      <point x="183.872" y="133.747"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="notequal.ss08" format="2">
+  <advance width="623"/>
+  <outline>
+    <contour>
+      <point x="486" y="525" type="line"/>
+      <point x="533" y="606" type="line"/>
+      <point x="389" y="606" type="line"/>
+      <point x="342" y="525" type="line"/>
+      <point x="249.33333" y="525"/>
+      <point x="156.66667" y="525"/>
+      <point x="64" y="525" type="curve"/>
+      <point x="64" y="386" type="line"/>
+      <point x="265" y="386" type="line"/>
+      <point x="224" y="315" type="line"/>
+      <point x="64" y="315" type="line"/>
+      <point x="64" y="176" type="line"/>
+      <point x="147" y="176" type="line"/>
+      <point x="98" y="90" type="line"/>
+      <point x="242" y="90" type="line"/>
+      <point x="258.33333" y="118.66667"/>
+      <point x="274.66667" y="147.33333"/>
+      <point x="291" y="176" type="curve"/>
+      <point x="559" y="176" type="line"/>
+      <point x="559" y="315" type="line"/>
+      <point x="368" y="315" type="line"/>
+      <point x="409" y="386" type="line"/>
+      <point x="559" y="386" type="line"/>
+      <point x="559" y="525" type="line"/>
+    </contour>
+  </outline>
+</glyph>

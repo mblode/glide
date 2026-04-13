@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Ncaron" format="2">
+  <advance width="781"/>
+  <unicode hex="0147"/>
+  <outline>
+    <contour>
+      <point x="510" y="0" type="curve"/>
+      <point x="702" y="0" type="line"/>
+      <point x="702" y="709" type="line"/>
+      <point x="516" y="709" type="line"/>
+      <point x="516" y="324" type="line"/>
+      <point x="295" y="709" type="line"/>
+      <point x="79" y="709" type="line"/>
+      <point x="79" y="0" type="line"/>
+      <point x="264" y="0" type="line"/>
+      <point x="264" y="421" type="line"/>
+      <point x="346" y="280.667"/>
+      <point x="428" y="140.333"/>
+    </contour>
+    <contour>
+      <point x="354.333" y="880.667"/>
+      <point x="336" y="901" type="curve"/>
+      <point x="283.667" y="901"/>
+      <point x="231.333" y="901"/>
+      <point x="179" y="901" type="curve"/>
+      <point x="296" y="758" type="line"/>
+      <point x="480" y="758" type="line"/>
+      <point x="597" y="901" type="line"/>
+      <point x="546.333" y="901"/>
+      <point x="495.667" y="901"/>
+      <point x="445" y="901" type="curve"/>
+      <point x="391" y="840" type="line"/>
+      <point x="372.667" y="860.333"/>
+    </contour>
+  </outline>
+</glyph>

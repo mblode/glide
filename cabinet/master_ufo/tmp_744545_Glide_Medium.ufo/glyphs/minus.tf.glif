@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="minus.tf" format="2">
+  <advance width="570"/>
+  <note>
+minus.tf
+</note>
+  <outline>
+    <contour>
+      <point x="39" y="308"/>
+      <point x="39" y="340" type="curve"/>
+      <point x="490" y="340" type="line"/>
+      <point x="490" y="244" type="line"/>
+      <point x="39" y="244" type="line"/>
+      <point x="39" y="276"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="onequarter.ss08" format="2">
+  <advance width="819"/>
+  <outline>
+    <contour>
+      <point x="86.667" y="550"/>
+      <point x="116" y="550" type="curve"/>
+      <point x="116" y="477.667"/>
+      <point x="116" y="405.333"/>
+      <point x="116" y="333" type="curve"/>
+      <point x="242" y="333" type="line"/>
+      <point x="242" y="709" type="line"/>
+      <point x="133" y="709" type="line"/>
+      <point x="124" y="670"/>
+      <point x="95" y="633"/>
+      <point x="28" y="633" type="curve"/>
+      <point x="28" y="550" type="line"/>
+      <point x="57.333" y="550"/>
+    </contour>
+    <contour>
+      <point x="663" y="709" type="curve"/>
+      <point x="531" y="709" type="line"/>
+      <point x="390" y="472.667"/>
+      <point x="249" y="236.333"/>
+      <point x="108" y="0" type="curve"/>
+      <point x="240" y="0" type="line"/>
+      <point x="381" y="236.333"/>
+      <point x="522" y="472.667"/>
+    </contour>
+    <contour>
+      <point x="789" y="71" type="line"/>
+      <point x="789" y="167" type="line"/>
+      <point x="735" y="167" type="line"/>
+      <point x="735" y="377" type="line"/>
+      <point x="602" y="377" type="line"/>
+      <point x="548.667" y="313"/>
+      <point x="495.333" y="249"/>
+      <point x="442" y="185" type="curve"/>
+      <point x="442" y="71" type="line"/>
+      <point x="615" y="71" type="line"/>
+      <point x="615" y="0" type="line"/>
+      <point x="735" y="0" type="line"/>
+      <point x="735" y="71" type="line"/>
+    </contour>
+    <contour>
+      <point x="615" y="167" type="line"/>
+      <point x="538" y="167" type="line"/>
+      <point x="563.667" y="197.333"/>
+      <point x="589.333" y="227.667"/>
+      <point x="615" y="258" type="curve"/>
+    </contour>
+  </outline>
+</glyph>

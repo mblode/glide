@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="r.ordn" format="2">
+  <advance width="303"/>
+  <outline>
+    <contour>
+      <point x="171" y="649" type="curve"/>
+      <point x="47" y="649" type="line"/>
+      <point x="47" y="299" type="line"/>
+      <point x="175" y="299" type="line"/>
+      <point x="175" y="346.333"/>
+      <point x="175" y="393.667"/>
+      <point x="175" y="441" type="curve" smooth="yes"/>
+      <point x="175" y="510"/>
+      <point x="217" y="530"/>
+      <point x="253" y="530" type="curve" smooth="yes"/>
+      <point x="258.5" y="530"/>
+      <point x="263.5" y="529.75"/>
+      <point x="268.5" y="529.125" type="curve" smooth="yes"/>
+      <point x="273.5" y="528.5"/>
+      <point x="278.5" y="527.5"/>
+      <point x="284" y="526" type="curve"/>
+      <point x="284" y="567"/>
+      <point x="284" y="608"/>
+      <point x="284" y="649" type="curve"/>
+      <point x="273" y="652"/>
+      <point x="267" y="652"/>
+      <point x="251" y="652" type="curve" smooth="yes"/>
+      <point x="218" y="652"/>
+      <point x="184" y="634"/>
+      <point x="171" y="602" type="curve"/>
+      <point x="171" y="617.667"/>
+      <point x="171" y="633.333"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="underscore" format="2">
+  <advance width="503"/>
+  <unicode hex="005F"/>
+  <note>
+underscore
+</note>
+  <outline>
+    <contour>
+      <point x="-74" y="-41.333"/>
+      <point x="-74" y="0" type="curve"/>
+      <point x="437" y="0" type="line"/>
+      <point x="437" y="-124" type="line"/>
+      <point x="-74" y="-124" type="line"/>
+      <point x="-74" y="-82.667"/>
+    </contour>
+  </outline>
+</glyph>

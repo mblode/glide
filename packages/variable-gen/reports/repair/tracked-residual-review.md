@@ -1,0 +1,80 @@
+# Tracked Residual Review
+
+## Roman
+
+- `.notdef` strategy=rebuild_notdef class=rebuild_notdef group=None inherits=None brace=[] frozen=False interpolatable=0 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=None
+- `IJ` strategy=normalize class=normalized group=roman-april-2026-compat-cluster inherits=None brace=[] frozen=False interpolatable=2 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=None
+- `Scedilla` strategy=normalize class=normalized group=roman-april-2026-compat-cluster inherits=None brace=[] frozen=False interpolatable=5 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=None
+- `X` strategy=manual_review class=manual_review group=None inherits=None brace=[] frozen=False interpolatable=0 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=None
+- `a` strategy=manual_review class=manual_review group=None inherits=None brace=[] frozen=False interpolatable=0 sourceAudit=0/0/0/0 riskyWeights=[100, 250, 400, 675, 950] maxAreaDrift=None
+- `ae` strategy=normalize class=normalized group=roman-april-2026-compat-cluster inherits=None brace=[] frozen=False interpolatable=0 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=None
+- `ampersand` strategy=manual_review class=manual_review group=roman-april-2026-compat-cluster inherits=None brace=[] frozen=False interpolatable=2 sourceAudit=0/0/0/0 riskyWeights=[250, 400, 675, 950] maxAreaDrift=1.15
+- `b` strategy=manual_review class=manual_review group=None inherits=None brace=[] frozen=False interpolatable=0 sourceAudit=0/0/0/0 riskyWeights=[100] maxAreaDrift=None
+- `cent` strategy=structural_fallback class=structural_fallback group=roman-april-2026-compat-cluster inherits=None brace=[] frozen=False interpolatable=0 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=11.28
+- `cent.ss08` strategy=structural_fallback class=structural_fallback group=None inherits=None brace=[] frozen=False interpolatable=0 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=11.21
+- `cent.tf` strategy=structural_fallback class=structural_fallback group=None inherits=None brace=[] frozen=False interpolatable=0 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=11.0
+- `cent.tf.ss08` strategy=structural_fallback class=structural_fallback group=None inherits=None brace=[] frozen=False interpolatable=0 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=11.21
+- `d` strategy=weighted_fallback class=weighted_fallback group=roman-april-2026-compat-cluster inherits=None brace=[250, 675] frozen=False interpolatable=0 sourceAudit=0/0/0/0 riskyWeights=[100, 250, 400, 675, 950] maxAreaDrift=7.44
+- `dcaron` strategy=normalize->weighted_fallback class=normalized group=roman-april-2026-compat-cluster inherits=d brace=[] frozen=False interpolatable=3 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=None
+- `dollar` strategy=structural_fallback class=structural_fallback group=roman-april-2026-compat-cluster inherits=None brace=[] frozen=False interpolatable=0 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=5.97
+- `dollar.ss08` strategy=structural_fallback class=structural_fallback group=None inherits=None brace=[] frozen=False interpolatable=0 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=5.83
+- `dollar.tf` strategy=structural_fallback class=structural_fallback group=None inherits=None brace=[] frozen=False interpolatable=0 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=6.1
+- `dollar.tf.ss08` strategy=structural_fallback class=structural_fallback group=None inherits=None brace=[] frozen=False interpolatable=0 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=5.91
+- `dslash` strategy=normalize->weighted_fallback class=normalized group=roman-april-2026-compat-cluster inherits=d brace=[] frozen=False interpolatable=2 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=None
+- `e` strategy=normalize class=normalized group=roman-april-2026-compat-cluster inherits=None brace=[] frozen=False interpolatable=0 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=None
+- `eacute` strategy=normalize class=normalized group=roman-april-2026-compat-cluster inherits=None brace=[] frozen=False interpolatable=0 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=None
+- `ebreve` strategy=normalize class=normalized group=roman-april-2026-compat-cluster inherits=None brace=[] frozen=False interpolatable=0 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=None
+- `ecircumflex` strategy=normalize class=normalized group=roman-april-2026-compat-cluster inherits=None brace=[] frozen=False interpolatable=0 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=None
+- `edieresis` strategy=normalize class=normalized group=roman-april-2026-compat-cluster inherits=None brace=[] frozen=False interpolatable=0 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=None
+- `edotaccent` strategy=normalize class=normalized group=roman-april-2026-compat-cluster inherits=None brace=[] frozen=False interpolatable=0 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=None
+- `egrave` strategy=normalize class=normalized group=roman-april-2026-compat-cluster inherits=None brace=[] frozen=False interpolatable=0 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=None
+- `emacron` strategy=normalize class=normalized group=roman-april-2026-compat-cluster inherits=None brace=[] frozen=False interpolatable=0 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=None
+- `eogonek` strategy=normalize class=normalized group=roman-april-2026-compat-cluster inherits=None brace=[] frozen=False interpolatable=2 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=None
+- `g` strategy=manual_review class=manual_review group=None inherits=None brace=[] frozen=False interpolatable=0 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=None
+- `gdotaccent` strategy=normalize class=normalized group=roman-april-2026-compat-cluster inherits=None brace=[] frozen=False interpolatable=0 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=None
+- `guillemotleft` strategy=normalize class=normalized group=roman-april-2026-compat-cluster inherits=None brace=[] frozen=False interpolatable=3 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=None
+- `guillemotright` strategy=normalize class=clean group=roman-april-2026-compat-cluster inherits=None brace=[] frozen=False interpolatable=1 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=None
+- `ij` strategy=normalize class=normalized group=roman-april-2026-compat-cluster inherits=None brace=[] frozen=False interpolatable=0 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=None
+- `ldot` strategy=normalize class=normalized group=roman-april-2026-compat-cluster inherits=None brace=[] frozen=False interpolatable=0 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=None
+- `mu` strategy=normalize class=normalized group=roman-april-2026-compat-cluster inherits=None brace=[] frozen=False interpolatable=1 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=None
+- `napostrophe` strategy=weighted_fallback class=weighted_fallback group=roman-april-2026-compat-cluster inherits=None brace=[] frozen=False interpolatable=0 sourceAudit=0/0/0/0 riskyWeights=[100, 250, 400, 675, 950] maxAreaDrift=27.31
+- `ncommaaccent` strategy=weighted_fallback class=weighted_fallback group=roman-april-2026-compat-cluster inherits=None brace=[] frozen=False interpolatable=0 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=None
+- `nine` strategy=normalize class=normalized group=roman-april-2026-compat-cluster inherits=None brace=[] frozen=False interpolatable=1 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=None
+- `oe` strategy=normalize class=normalized group=roman-april-2026-compat-cluster inherits=None brace=[] frozen=False interpolatable=0 sourceAudit=0/0/0/0 riskyWeights=[100, 250, 400, 675, 950] maxAreaDrift=None
+- `onehalf` strategy=normalize class=normalized group=roman-april-2026-compat-cluster inherits=None brace=[] frozen=False interpolatable=0 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=None
+- `percent` strategy=manual_review class=manual_review group=None inherits=None brace=[] frozen=False interpolatable=0 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=None
+- `r` strategy=weighted_fallback class=weighted_fallback group=roman-april-2026-compat-cluster inherits=None brace=[] frozen=False interpolatable=0 sourceAudit=0/0/0/0 riskyWeights=[100, 250, 400, 675, 950] maxAreaDrift=21.16
+- `r.ss03` strategy=structural_fallback class=structural_fallback group=None inherits=None brace=[] frozen=False interpolatable=0 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=8.38
+- `racute` strategy=normalize->weighted_fallback class=normalized group=roman-april-2026-compat-cluster inherits=r brace=[] frozen=False interpolatable=1 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=None
+- `racute.ss03` strategy=structural_fallback class=structural_fallback group=None inherits=None brace=[] frozen=False interpolatable=0 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=33.0
+- `rcaron` strategy=normalize->weighted_fallback class=normalized group=roman-april-2026-compat-cluster inherits=r brace=[] frozen=False interpolatable=1 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=None
+- `rcaron.ss03` strategy=structural_fallback class=structural_fallback group=None inherits=None brace=[] frozen=False interpolatable=0 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=37.72
+- `rcommaaccent` strategy=normalize->weighted_fallback class=normalized group=roman-april-2026-compat-cluster inherits=r brace=[] frozen=False interpolatable=1 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=None
+- `rcommaaccent.ss03` strategy=structural_fallback class=structural_fallback group=None inherits=None brace=[] frozen=False interpolatable=0 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=None
+- `s` strategy=manual_review class=manual_review group=None inherits=None brace=[] frozen=False interpolatable=0 sourceAudit=0/0/0/0 riskyWeights=[100, 950] maxAreaDrift=None
+- `scedilla` strategy=normalize class=normalized group=roman-april-2026-compat-cluster inherits=None brace=[] frozen=False interpolatable=1 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=None
+- `six` strategy=normalize class=normalized group=roman-april-2026-compat-cluster inherits=None brace=[] frozen=False interpolatable=1 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=None
+- `slash` strategy=manual_review class=manual_review group=None inherits=None brace=[] frozen=False interpolatable=0 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=None
+- `t` strategy=manual_review class=manual_review group=None inherits=None brace=[] frozen=False interpolatable=0 sourceAudit=0/0/0/0 riskyWeights=[100, 250, 400, 675, 950] maxAreaDrift=None
+- `tbar` strategy=normalize class=normalized group=roman-april-2026-compat-cluster inherits=None brace=[] frozen=False interpolatable=0 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=None
+- `tcaron` strategy=normalize class=normalized group=roman-april-2026-compat-cluster inherits=None brace=[] frozen=False interpolatable=1 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=None
+- `tcommaaccent` strategy=structural_fallback class=structural_fallback group=roman-april-2026-compat-cluster inherits=None brace=[] frozen=False interpolatable=0 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=None
+- `three` strategy=normalize class=normalized group=roman-april-2026-compat-cluster inherits=None brace=[] frozen=False interpolatable=1 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=None
+- `threequarters` strategy=normalize class=normalized group=roman-april-2026-compat-cluster inherits=None brace=[] frozen=False interpolatable=1 sourceAudit=0/0/0/0 riskyWeights=[100, 400, 675, 950] maxAreaDrift=None
+- `two` strategy=manual_review class=manual_review group=roman-april-2026-compat-cluster inherits=None brace=[] frozen=False interpolatable=1 sourceAudit=0/0/0/0 riskyWeights=[100, 250, 400, 675, 950] maxAreaDrift=None
+- `u` strategy=weighted_fallback class=weighted_fallback group=roman-april-2026-compat-cluster inherits=None brace=[250] frozen=False interpolatable=0 sourceAudit=0/0/0/0 riskyWeights=[100, 250, 400, 675, 950] maxAreaDrift=29.05
+- `uacute` strategy=normalize->weighted_fallback class=normalized group=roman-april-2026-compat-cluster inherits=u brace=[] frozen=False interpolatable=3 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=None
+- `ubreve` strategy=normalize->weighted_fallback class=normalized group=roman-april-2026-compat-cluster inherits=u brace=[] frozen=False interpolatable=3 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=None
+- `ucircumflex` strategy=normalize->weighted_fallback class=normalized group=roman-april-2026-compat-cluster inherits=u brace=[] frozen=False interpolatable=3 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=None
+- `udieresis` strategy=normalize->weighted_fallback class=normalized group=roman-april-2026-compat-cluster inherits=u brace=[] frozen=False interpolatable=3 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=None
+- `ugrave` strategy=normalize->weighted_fallback class=normalized group=roman-april-2026-compat-cluster inherits=u brace=[] frozen=False interpolatable=3 sourceAudit=0/0/0/0 riskyWeights=[100, 250, 400, 675, 950] maxAreaDrift=None
+- `uhungarumlaut` strategy=normalize->weighted_fallback class=normalized group=roman-april-2026-compat-cluster inherits=u brace=[] frozen=False interpolatable=4 sourceAudit=0/0/0/0 riskyWeights=[100, 250, 400, 675, 950] maxAreaDrift=None
+- `umacron` strategy=normalize->weighted_fallback class=normalized group=roman-april-2026-compat-cluster inherits=u brace=[] frozen=False interpolatable=3 sourceAudit=0/0/0/0 riskyWeights=[100, 250, 400, 675, 950] maxAreaDrift=None
+- `uni018F` strategy=normalize class=normalized group=roman-april-2026-compat-cluster inherits=None brace=[] frozen=False interpolatable=1 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=None
+- `uni021B` strategy=structural_fallback class=structural_fallback group=None inherits=None brace=[250] frozen=False interpolatable=0 sourceAudit=0/0/0/0 riskyWeights=[100, 250, 400, 675, 950] maxAreaDrift=23.89
+- `uogonek` strategy=normalize->weighted_fallback class=normalized group=roman-april-2026-compat-cluster inherits=u brace=[] frozen=False interpolatable=5 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=None
+- `uring` strategy=normalize->weighted_fallback class=normalized group=roman-april-2026-compat-cluster inherits=u brace=[] frozen=False interpolatable=3 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=None
+- `v` strategy=normalize class=clean group=roman-april-2026-compat-cluster inherits=None brace=[] frozen=False interpolatable=0 sourceAudit=0/0/0/0 riskyWeights=[] maxAreaDrift=None
+
+- summary: tracked=73 frozen=0 interpolatable=29 sourceStructureFailures=0 areaDriftFailures=4 minSegmentFailures=0
+

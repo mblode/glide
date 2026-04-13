@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="grave.uc" format="2">
+  <advance width="283"/>
+  <note>
+grave.uc
+</note>
+  <outline>
+    <contour>
+      <point x="60.667" y="841.667"/>
+      <point x="13" y="883" type="curve"/>
+      <point x="161" y="883" type="line"/>
+      <point x="264" y="759" type="line"/>
+      <point x="156" y="759" type="line"/>
+      <point x="108.333" y="800.333"/>
+    </contour>
+  </outline>
+</glyph>

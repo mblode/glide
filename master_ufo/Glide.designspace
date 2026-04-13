@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<designspace format="5.0">
+  <axes>
+    <axis tag="wght" name="Weight" minimum="100" maximum="950" default="400"/>
+  </axes>
+  <sources>
+    <source filename="Glide_Glide_Thin.ufo" name="Glide Thin" familyname="Glide" stylename="Thin">
+      <location>
+        <dimension name="Weight" xvalue="100"/>
+      </location>
+    </source>
+    <source filename="Glide_Glide_Regular.ufo" name="Glide Regular" familyname="Glide" stylename="Regular">
+      <lib copy="1"/>
+      <groups copy="1"/>
+      <features copy="1"/>
+      <info copy="1"/>
+      <location>
+        <dimension name="Weight" xvalue="400"/>
+      </location>
+    </source>
+    <source filename="Glide_Glide_Regular_{250}.ufo" name="Glide Regular {250}" layer="{250}">
+      <location>
+        <dimension name="Weight" xvalue="250"/>
+      </location>
+    </source>
+    <source filename="Glide_Glide_Regular_{675}.ufo" name="Glide Regular {675}" layer="{675}">
+      <location>
+        <dimension name="Weight" xvalue="675"/>
+      </location>
+    </source>
+    <source filename="Glide_Glide_ExtraBlack.ufo" name="Glide ExtraBlack" familyname="Glide" stylename="ExtraBlack">
+      <location>
+        <dimension name="Weight" xvalue="950"/>
+      </location>
+    </source>
+  </sources>
+  <variable-fonts>
+    <variable-font name="Variable" filename="Glide-VariableVF">
+      <axis-subsets>
+        <axis-subset name="Weight"/>
+      </axis-subsets>
+    </variable-font>
+  </variable-fonts>
+  <instances>
+    <instance name="Glide Thin" familyname="Glide" stylename="Thin" filename="instance_ufos/Glide-Thin.ufo" postscriptfontname="Glide-Thin" stylemapfamilyname="Glide Thin" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="100"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.properties</key>
+          <array>
+            <array>
+              <string>postscriptFullNames</string>
+              <string>Glide Thin</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Glide ExtraLight" familyname="Glide" stylename="ExtraLight" filename="instance_ufos/Glide-ExtraLight.ufo" postscriptfontname="Glide-ExtraLight" stylemapfamilyname="Glide ExtraLight" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="200"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.properties</key>
+          <array>
+            <array>
+              <string>postscriptFullNames</string>
+              <string>Glide Extra Light</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Glide Light" familyname="Glide" stylename="Light" filename="instance_ufos/Glide-Light.ufo" postscriptfontname="Glide-Light" stylemapfamilyname="Glide Light" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="300"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.properties</key>
+          <array>
+            <array>
+              <string>postscriptFullNames</string>
+              <string>Glide Light</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Glide Regular" familyname="Glide" stylename="Regular" filename="instance_ufos/Glide-Regular.ufo" postscriptfontname="Glide-Regular" stylemapfamilyname="Glide" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="400"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.properties</key>
+          <array>
+            <array>
+              <string>postscriptFullNames</string>
+              <string>Glide Regular</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Glide Medium" familyname="Glide" stylename="Medium" filename="instance_ufos/Glide-Medium.ufo" postscriptfontname="Glide-Medium" stylemapfamilyname="Glide Medium" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="500"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.properties</key>
+          <array>
+            <array>
+              <string>postscriptFullNames</string>
+              <string>Glide Medium</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Glide SemiBold" familyname="Glide" stylename="SemiBold" filename="instance_ufos/Glide-SemiBold.ufo" postscriptfontname="Glide-SemiBold" stylemapfamilyname="Glide SemiBold" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="600"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.properties</key>
+          <array>
+            <array>
+              <string>postscriptFullNames</string>
+              <string>Glide Semi Bold</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Glide Bold" familyname="Glide" stylename="Bold" filename="instance_ufos/Glide-Bold.ufo" postscriptfontname="Glide-Bold" stylemapfamilyname="Glide Bold" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="700"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.properties</key>
+          <array>
+            <array>
+              <string>postscriptFullNames</string>
+              <string>Glide Bold</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Glide ExtraBold" familyname="Glide" stylename="ExtraBold" filename="instance_ufos/Glide-ExtraBold.ufo" postscriptfontname="Glide-ExtraBold" stylemapfamilyname="Glide ExtraBold" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="800"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.properties</key>
+          <array>
+            <array>
+              <string>postscriptFullNames</string>
+              <string>Glide Extra Bold</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Glide Black" familyname="Glide" stylename="Black" filename="instance_ufos/Glide-Black.ufo" postscriptfontname="Glide-Black" stylemapfamilyname="Glide Black" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="900"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.properties</key>
+          <array>
+            <array>
+              <string>postscriptFullNames</string>
+              <string>Glide Black</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Glide ExtraBlack" familyname="Glide" stylename="ExtraBlack" filename="instance_ufos/Glide-ExtraBlack.ufo" postscriptfontname="Glide-ExtraBlack" stylemapfamilyname="Glide ExtraBlack" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="950"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.properties</key>
+          <array>
+            <array>
+              <string>postscriptFullNames</string>
+              <string>Glide Extra Black</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+  </instances>
+</designspace>

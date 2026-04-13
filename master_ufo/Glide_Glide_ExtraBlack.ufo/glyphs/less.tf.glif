@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="less.tf" format="2">
+  <advance width="604"/>
+  <outline>
+    <contour>
+      <point x="508" y="173" type="curve"/>
+      <point x="224" y="300" type="line"/>
+      <point x="508" y="427" type="line"/>
+      <point x="508" y="585" type="line"/>
+      <point x="361.667" y="515"/>
+      <point x="215.333" y="445"/>
+      <point x="69" y="375" type="curve"/>
+      <point x="69" y="223" type="line"/>
+      <point x="508" y="14" type="line"/>
+      <point x="508" y="67"/>
+      <point x="508" y="120"/>
+    </contour>
+  </outline>
+</glyph>

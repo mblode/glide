@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="rcaron.ss03" format="2">
+  <advance width="226"/>
+  <outline>
+    <contour>
+      <point x="123.2088" y="428.93215" type="line"/>
+      <point x="47.08714" y="428.93215" type="line"/>
+      <point x="47.08714" y="98.59132" type="line"/>
+      <point x="123.2088" y="98.59132" type="line"/>
+    </contour>
+    <contour>
+      <point x="238.2011" y="356.82033"/>
+      <point x="238.2011" y="383.60472" type="curve" smooth="yes"/>
+      <point x="238.2011" y="411.07589"/>
+      <point x="213.09715" y="432.36605"/>
+      <point x="181.51476" y="432.36605" type="curve" smooth="yes"/>
+      <point x="149.12256" y="432.36605"/>
+      <point x="124.01861" y="411.07589"/>
+      <point x="124.01861" y="383.60472" type="curve" smooth="yes"/>
+      <point x="124.01861" y="356.82033"/>
+      <point x="149.12256" y="335.53017"/>
+      <point x="181.51476" y="335.53017" type="curve" smooth="yes"/>
+      <point x="213.09715" y="335.53017"/>
+    </contour>
+    <contour>
+      <point x="11.45573" y="570.40868" type="line"/>
+      <point x="94.05583" y="472.88602" type="line"/>
+      <point x="183.94417" y="472.88602" type="line"/>
+      <point x="266.54427" y="570.40868" type="line"/>
+      <point x="195.28144" y="570.40868" type="line"/>
+      <point x="138.5951" y="514.77956" type="line"/>
+      <point x="81.90875" y="570.40868" type="line"/>
+    </contour>
+  </outline>
+</glyph>

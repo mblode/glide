@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="radical" format="2">
+  <advance width="763"/>
+  <unicode hex="221A"/>
+  <outline>
+    <contour>
+      <point x="604" y="716" type="curve"/>
+      <point x="754" y="716" type="line"/>
+      <point x="754" y="885" type="line"/>
+      <point x="473" y="885" type="line"/>
+      <point x="281" y="245" type="line"/>
+      <point x="187" y="542" type="line"/>
+      <point x="3" y="542" type="line"/>
+      <point x="64.333" y="361.333"/>
+      <point x="125.667" y="180.667"/>
+      <point x="187" y="0" type="curve"/>
+      <point x="375" y="0" type="line"/>
+      <point x="451.333" y="238.667"/>
+      <point x="527.667" y="477.333"/>
+    </contour>
+  </outline>
+</glyph>

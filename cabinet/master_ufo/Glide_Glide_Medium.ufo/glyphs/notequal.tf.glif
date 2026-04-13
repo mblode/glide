@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="notequal.tf" format="2">
+  <advance width="570"/>
+  <note>
+notequal.tf
+</note>
+  <outline>
+    <contour>
+      <point x="522" y="343" type="line"/>
+      <point x="384" y="343" type="line"/>
+      <point x="313" y="241" type="line"/>
+      <point x="522" y="241" type="line"/>
+      <point x="522" y="146" type="line"/>
+      <point x="430.667" y="146"/>
+      <point x="339.333" y="146"/>
+      <point x="248" y="146" type="curve"/>
+      <point x="180" y="48" type="line"/>
+      <point x="71" y="48" type="line"/>
+      <point x="139" y="146" type="line"/>
+      <point x="47" y="146" type="line"/>
+      <point x="47" y="241" type="line"/>
+      <point x="204" y="241" type="line"/>
+      <point x="275" y="343" type="line"/>
+      <point x="47" y="343" type="line"/>
+      <point x="47" y="437" type="line"/>
+      <point x="339" y="437" type="line"/>
+      <point x="405" y="532" type="line"/>
+      <point x="514" y="532" type="line"/>
+      <point x="448" y="437" type="line"/>
+      <point x="522" y="437" type="line"/>
+    </contour>
+  </outline>
+</glyph>

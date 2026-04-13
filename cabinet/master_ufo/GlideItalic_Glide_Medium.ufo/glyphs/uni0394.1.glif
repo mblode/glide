@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni0394.1" format="2">
+  <advance width="663"/>
+  <unicode hex="2206"/>
+  <note>
+uni0394.1
+</note>
+  <outline>
+    <contour>
+      <point x="137" y="111" type="line"/>
+      <point x="480" y="111" type="line"/>
+      <point x="422.667" y="266"/>
+      <point x="365.333" y="421"/>
+      <point x="308" y="576" type="curve"/>
+    </contour>
+    <contour>
+      <point x="648" y="0" type="line"/>
+      <point x="-30" y="0" type="line"/>
+      <point x="61.333" y="236.333"/>
+      <point x="152.667" y="472.667"/>
+      <point x="244" y="709" type="curve"/>
+      <point x="374" y="709" type="line"/>
+    </contour>
+  </outline>
+</glyph>

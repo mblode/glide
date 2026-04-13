@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="n.ordn.ss08" format="2">
+  <advance width="410"/>
+  <outline>
+    <contour>
+      <point x="108" y="370"/>
+      <point x="133" y="370" type="curve"/>
+      <point x="133" y="566" type="line" smooth="yes"/>
+      <point x="133" y="589.5"/>
+      <point x="139.5" y="610.75"/>
+      <point x="151.875" y="626.125" type="curve" smooth="yes"/>
+      <point x="164.25" y="641.5"/>
+      <point x="182.5" y="651"/>
+      <point x="206" y="651" type="curve" smooth="yes"/>
+      <point x="262" y="651"/>
+      <point x="280" y="616"/>
+      <point x="280" y="572" type="curve" smooth="yes"/>
+      <point x="280" y="370" type="line"/>
+      <point x="355" y="370" type="line"/>
+      <point x="355" y="441.667"/>
+      <point x="355" y="513.333"/>
+      <point x="355" y="585" type="curve" smooth="yes"/>
+      <point x="355" y="660"/>
+      <point x="316" y="719"/>
+      <point x="233" y="719" type="curve" smooth="yes"/>
+      <point x="194" y="719"/>
+      <point x="154" y="702"/>
+      <point x="131" y="663" type="curve"/>
+      <point x="131" y="709" type="line"/>
+      <point x="106.667" y="709"/>
+      <point x="82.333" y="709"/>
+      <point x="58" y="709" type="curve"/>
+      <point x="58" y="370" type="line"/>
+      <point x="83" y="370"/>
+    </contour>
+  </outline>
+</glyph>

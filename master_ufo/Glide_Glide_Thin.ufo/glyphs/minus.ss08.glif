@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="minus.ss08" format="2">
+  <advance width="568"/>
+  <outline>
+    <contour>
+      <point x="494" y="366" type="line"/>
+      <point x="74" y="366" type="line"/>
+      <point x="74" y="354.667"/>
+      <point x="74" y="343.333"/>
+      <point x="74" y="332" type="curve"/>
+      <point x="494" y="332" type="line"/>
+    </contour>
+  </outline>
+</glyph>

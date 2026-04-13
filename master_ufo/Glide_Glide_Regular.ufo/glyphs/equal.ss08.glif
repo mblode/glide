@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="equal.ss08" format="2">
+  <advance width="601"/>
+  <outline>
+    <contour>
+      <point x="532" y="407" type="line"/>
+      <point x="532" y="484" type="line"/>
+      <point x="69" y="484" type="line"/>
+      <point x="69" y="458.333"/>
+      <point x="69" y="432.667"/>
+      <point x="69" y="407" type="curve"/>
+    </contour>
+    <contour>
+      <point x="532" y="212" type="line"/>
+      <point x="532" y="291" type="line"/>
+      <point x="69" y="291" type="line"/>
+      <point x="69" y="264.667"/>
+      <point x="69" y="238.333"/>
+      <point x="69" y="212" type="curve"/>
+    </contour>
+  </outline>
+</glyph>

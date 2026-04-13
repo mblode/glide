@@ -1,0 +1,62 @@
+{
+  "400": {
+    "master": "glide-root-regular.ttf",
+    "common_glyphs": 472,
+    "compared": 471,
+    "mismatched_point_count": 0,
+    "glyphs_with_deviation": 0,
+    "glyphs_with_area_diff_pct": 0,
+    "stem_width_instance": 94.0,
+    "stem_width_master": 94.0
+  },
+  "500": {
+    "master": "glide-root-medium.ttf",
+    "common_glyphs": 472,
+    "compared": 471,
+    "mismatched_point_count": 0,
+    "glyphs_with_deviation": 0,
+    "glyphs_with_area_diff_pct": 0,
+    "stem_width_instance": 106.0,
+    "stem_width_master": 106.0
+  },
+  "700": {
+    "master": "glide-root-bold.ttf",
+    "common_glyphs": 472,
+    "compared": 471,
+    "mismatched_point_count": 0,
+    "glyphs_with_deviation": 164,
+    "glyphs_with_area_diff_pct": 6,
+    "stem_width_instance": 129.0,
+    "stem_width_master": 129.0,
+    "worst_deviations": {
+      "less.tf": 1.06,
+      "guilsinglright": 1.04,
+      "guilsinglright.case": 1.04,
+      "guillemotleft": 1.02,
+      "guillemotleft.case": 1.02,
+      "emdash": 1.0,
+      "greater": 0.98,
+      "guillemotright": 0.97,
+      "guillemotright.case": 0.97,
+      "guilsinglleft": 0.97
+    },
+    "worst_area_diffs_pct": {
+      "two.numr": 1.47,
+      "dieresis.narrow": 1.19,
+      "twosuperior": 1.19,
+      "circumflex": 1.06,
+      "macron": 1.05,
+      "uni02C9": 1.05
+    }
+  },
+  "900": {
+    "master": "glide-root-black.ttf",
+    "common_glyphs": 472,
+    "compared": 471,
+    "mismatched_point_count": 0,
+    "glyphs_with_deviation": 0,
+    "glyphs_with_area_diff_pct": 0,
+    "stem_width_instance": 152.0,
+    "stem_width_master": 152.0
+  }
+}

@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="daggerdbl" format="2">
+  <advance width="440"/>
+  <unicode hex="2021"/>
+  <outline>
+    <contour>
+      <point x="328" y="709" type="line"/>
+      <point x="292" y="709" type="line"/>
+      <point x="256" y="541" type="line"/>
+      <point x="115" y="541" type="line"/>
+      <point x="108" y="507" type="line"/>
+      <point x="249" y="507" type="line"/>
+      <point x="184" y="202" type="line"/>
+      <point x="42" y="202" type="line"/>
+      <point x="35" y="168" type="line"/>
+      <point x="177" y="168" type="line"/>
+      <point x="165" y="112"/>
+      <point x="153" y="56"/>
+      <point x="141" y="0" type="curve"/>
+      <point x="177" y="0" type="line"/>
+      <point x="189" y="56"/>
+      <point x="201" y="112"/>
+      <point x="213" y="168" type="curve"/>
+      <point x="353" y="168" type="line"/>
+      <point x="360" y="202" type="line"/>
+      <point x="220" y="202" type="line"/>
+      <point x="241.66667" y="303.66667"/>
+      <point x="263.33333" y="405.33333"/>
+      <point x="285" y="507" type="curve"/>
+      <point x="426" y="507" type="line"/>
+      <point x="433" y="541" type="line"/>
+      <point x="292" y="541" type="line"/>
+    </contour>
+  </outline>
+</glyph>

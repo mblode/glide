@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="caron.uc" format="2">
+  <advance width="412"/>
+  <outline>
+    <contour>
+      <point x="174.333" y="880.667"/>
+      <point x="156" y="901" type="curve"/>
+      <point x="103.667" y="901"/>
+      <point x="51.333" y="901"/>
+      <point x="-1" y="901" type="curve"/>
+      <point x="116" y="758" type="line"/>
+      <point x="300" y="758" type="line"/>
+      <point x="417" y="901" type="line"/>
+      <point x="366.333" y="901"/>
+      <point x="315.667" y="901"/>
+      <point x="265" y="901" type="curve"/>
+      <point x="211" y="840" type="line"/>
+      <point x="192.667" y="860.333"/>
+    </contour>
+  </outline>
+</glyph>

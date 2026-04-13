@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="x.ordn.ss08" format="2">
+  <advance width="431"/>
+  <outline>
+    <contour>
+      <point x="283" y="357" type="line"/>
+      <point x="427" y="357" type="line"/>
+      <point x="338" y="530" type="line"/>
+      <point x="391" y="589.66667"/>
+      <point x="444" y="649.33333"/>
+      <point x="497" y="709" type="curve"/>
+      <point x="346" y="709" type="line"/>
+      <point x="283" y="631" type="line"/>
+      <point x="250" y="709" type="line"/>
+      <point x="105" y="709" type="line"/>
+      <point x="192" y="538" type="line"/>
+      <point x="33" y="357" type="line"/>
+      <point x="83" y="357"/>
+      <point x="133" y="357"/>
+      <point x="183" y="357" type="curve"/>
+      <point x="248" y="435" type="line"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,56 @@
+{
+  "roman": {
+    "family": "roman",
+    "mode": "interpolation-only",
+    "json_report": "/Users/mblode/Code/mblode/glide/packages/variable-gen/reports/audit/roman/roman-variable-audit-interpolation-only.json",
+    "markdown_report": "/Users/mblode/Code/mblode/glide/packages/variable-gen/reports/audit/roman/roman-variable-audit-interpolation-only.md",
+    "variable_font_path": "/Users/mblode/Code/mblode/glide/packages/variable-gen/build/audit/roman/glide-variable-audit-vf.ttf",
+    "interpolatable_summary": {
+      "problem_glyphs": 70,
+      "issue_types": {
+        "wrong_start_point": 5,
+        "underweight": 63,
+        "kink": 19
+      }
+    },
+    "summary": {
+      "sampled_risky_glyphs": 261,
+      "glyphs_with_short_segments": 259,
+      "glyphs_with_span_risk": 261,
+      "glyphs_risky_in_all_spans": 209,
+      "interpolatable_problem_glyphs": 66,
+      "glyphs_with_intersections": 21,
+      "problem_glyphs": 270,
+      "clean_glyphs": 484,
+      "total_glyphs": 754,
+      "span_problem_glyphs": {
+        "thin_to_regular": 244,
+        "regular_to_extrablack": 226
+      }
+    },
+    "comprehensive_summary": {
+      "sampled_risky_glyphs": 379,
+      "glyphs_with_short_segments": 378,
+      "interpolatable_problem_glyphs": 66,
+      "glyphs_with_intersections": 22,
+      "problem_glyphs": 381,
+      "clean_glyphs": 373,
+      "total_glyphs": 754
+    },
+    "interpolation_focus_summary": {
+      "sampled_risky_glyphs": 261,
+      "glyphs_with_short_segments": 259,
+      "glyphs_with_span_risk": 261,
+      "glyphs_risky_in_all_spans": 209,
+      "interpolatable_problem_glyphs": 66,
+      "glyphs_with_intersections": 21,
+      "problem_glyphs": 270,
+      "clean_glyphs": 484,
+      "total_glyphs": 754,
+      "span_problem_glyphs": {
+        "thin_to_regular": 244,
+        "regular_to_extrablack": 226
+      }
+    }
+  }
+}

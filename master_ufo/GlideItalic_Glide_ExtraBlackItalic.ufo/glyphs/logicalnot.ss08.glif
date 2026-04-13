@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="logicalnot.ss08" format="2">
+  <advance width="638"/>
+  <outline>
+    <contour>
+      <point x="563" y="180" type="line"/>
+      <point x="563" y="500" type="line"/>
+      <point x="60" y="500" type="line"/>
+      <point x="60" y="357" type="line"/>
+      <point x="416" y="357" type="line"/>
+      <point x="416" y="298"/>
+      <point x="416" y="239"/>
+      <point x="416" y="180" type="curve"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<designspace format="5.0">
+  <axes>
+    <axis tag="wght" name="Weight" minimum="400" maximum="900" default="400"/>
+  </axes>
+  <sources>
+    <source filename="roman-glide-root-regular.ttf" name="Regular" familyname="Glide" stylename="Regular">
+      <lib copy="1"/>
+      <groups copy="1"/>
+      <features copy="1"/>
+      <info copy="1"/>
+      <location>
+        <dimension name="Weight" xvalue="400"/>
+      </location>
+    </source>
+    <source filename="roman-glide-root-medium.ttf" name="Medium" familyname="Glide" stylename="Medium">
+      <location>
+        <dimension name="Weight" xvalue="500"/>
+      </location>
+    </source>
+    <source filename="roman-glide-root-bold.ttf" name="Bold" familyname="Glide" stylename="Bold">
+      <location>
+        <dimension name="Weight" xvalue="700"/>
+      </location>
+    </source>
+    <source filename="roman-glide-root-black.ttf" name="Black" familyname="Glide" stylename="Black">
+      <location>
+        <dimension name="Weight" xvalue="900"/>
+      </location>
+    </source>
+  </sources>
+  <instances>
+    <instance familyname="Glide" stylename="Regular" postscriptfontname="Glide-Regular" stylemapfamilyname="Glide" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="400"/>
+      </location>
+    </instance>
+    <instance familyname="Glide" stylename="Medium" postscriptfontname="Glide-Medium" stylemapfamilyname="Glide" stylemapstylename="bold">
+      <location>
+        <dimension name="Weight" xvalue="500"/>
+      </location>
+    </instance>
+    <instance familyname="Glide" stylename="Bold" postscriptfontname="Glide-Bold" stylemapfamilyname="Glide" stylemapstylename="bold">
+      <location>
+        <dimension name="Weight" xvalue="700"/>
+      </location>
+    </instance>
+    <instance familyname="Glide" stylename="Black" postscriptfontname="Glide-Black" stylemapfamilyname="Glide" stylemapstylename="bold">
+      <location>
+        <dimension name="Weight" xvalue="900"/>
+      </location>
+    </instance>
+  </instances>
+</designspace>

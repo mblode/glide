@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="hungarumlaut.uc" format="2">
+  <advance width="391"/>
+  <note>
+hungarumlaut.uc
+</note>
+  <outline>
+    <contour>
+      <point x="137" y="803"/>
+      <point x="106" y="759" type="curve"/>
+      <point x="12" y="759" type="line"/>
+      <point x="60" y="891" type="line"/>
+      <point x="199" y="891" type="line"/>
+      <point x="168" y="847"/>
+    </contour>
+    <contour>
+      <point x="306.667" y="803"/>
+      <point x="270" y="759" type="curve"/>
+      <point x="174" y="759" type="line"/>
+      <point x="239" y="891" type="line"/>
+      <point x="380" y="891" type="line"/>
+      <point x="343.333" y="847"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="carriagereturn" format="2">
+  <advance width="1106.50034"/>
+  <unicode hex="E001"/>
+  <note>
+carriagereturn
+</note>
+  <outline>
+    <contour>
+      <point x="682.5" y="581.5" type="qcurve"/>
+      <point x="732" y="681.5" type="line"/>
+      <point x="653" y="725"/>
+      <point x="558" y="725" type="qcurve" smooth="yes"/>
+      <point x="405" y="725"/>
+      <point x="188" y="508"/>
+      <point x="188" y="354" type="qcurve"/>
+      <point x="37.5" y="354" type="line"/>
+      <point x="249" y="108" type="line"/>
+      <point x="458.501" y="354" type="line"/>
+      <point x="300.5" y="354" type="line"/>
+      <point x="300.5" y="461"/>
+      <point x="451" y="612.5"/>
+      <point x="559" y="612.5" type="qcurve" smooth="yes"/>
+      <point x="624.5" y="612.5"/>
+    </contour>
+    <contour>
+      <point x="431.5" y="125.5" type="qcurve"/>
+      <point x="381" y="27.5" type="line"/>
+      <point x="462.5" y="-16"/>
+      <point x="554.5" y="-16" type="qcurve" smooth="yes"/>
+      <point x="708" y="-16"/>
+      <point x="924" y="200"/>
+      <point x="925" y="354" type="qcurve"/>
+      <point x="1076.5" y="354" type="line"/>
+      <point x="866" y="601" type="line"/>
+      <point x="655" y="354" type="line"/>
+      <point x="811" y="354" type="line"/>
+      <point x="811" y="247"/>
+      <point x="661.5" y="94.5"/>
+      <point x="555" y="94.5" type="qcurve" smooth="yes"/>
+      <point x="489.5" y="94.5"/>
+    </contour>
+  </outline>
+</glyph>

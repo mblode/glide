@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="fraction" format="2">
+  <advance width="536"/>
+  <unicode hex="2044"/>
+  <note>
+fraction
+</note>
+  <outline>
+    <contour>
+      <point x="229.667" y="216.333"/>
+      <point x="32" y="0" type="curve"/>
+      <point x="-89" y="0" type="line"/>
+      <point x="504" y="649" type="line"/>
+      <point x="625" y="649" type="line"/>
+      <point x="427.333" y="432.667"/>
+    </contour>
+  </outline>
+</glyph>

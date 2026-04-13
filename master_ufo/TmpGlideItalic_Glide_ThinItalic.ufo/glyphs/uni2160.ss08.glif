@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni2160.ss08" format="2">
+  <advance width="444"/>
+  <outline>
+    <contour>
+      <point x="149" y="38" type="line"/>
+      <point x="-22" y="38" type="line"/>
+      <point x="-29" y="0" type="line"/>
+      <point x="353" y="0" type="line"/>
+      <point x="361" y="38" type="line"/>
+      <point x="190" y="38" type="line"/>
+      <point x="324" y="672" type="line"/>
+      <point x="381" y="672"/>
+      <point x="438" y="672"/>
+      <point x="495" y="672" type="curve"/>
+      <point x="503" y="709" type="line"/>
+      <point x="120" y="709" type="line"/>
+      <point x="112" y="672" type="line"/>
+      <point x="283" y="672" type="line"/>
+    </contour>
+  </outline>
+</glyph>

@@ -52,7 +52,18 @@ def fix_designspace_axis(ds):
             continue
         axis.minimum = min(locs)
         axis.maximum = max(locs)
-        axis.default = min(locs)
+        default_candidates = []
+        for src in ds.sources:
+            if src.layerName is not None:
+                continue
+            val = src.location.get(axis.name) or src.location.get(axis.tag)
+            if val is not None:
+                default_candidates.append(val)
+        if default_candidates:
+            ordered_defaults = sorted(default_candidates)
+            axis.default = ordered_defaults[len(ordered_defaults) // 2]
+        else:
+            axis.default = min(locs)
         axis.map = []   # drop incorrect avar mapping
         print(f"  Fixed {axis.tag}: min={axis.minimum} default={axis.default} max={axis.maximum}")
 

@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="w.ordn" format="2">
+  <advance width="587"/>
+  <note>
+w.ordn
+</note>
+  <outline>
+    <contour>
+      <point x="187" y="305" type="line"/>
+      <point x="94" y="305" type="line"/>
+      <point x="60" y="649" type="line"/>
+      <point x="148" y="649" type="line"/>
+      <point x="165" y="425" type="line"/>
+      <point x="281" y="649" type="line"/>
+      <point x="313" y="649"/>
+      <point x="345" y="649"/>
+      <point x="377" y="649" type="curve"/>
+      <point x="404" y="424" type="line"/>
+      <point x="512" y="649" type="line"/>
+      <point x="605" y="649" type="line"/>
+      <point x="428" y="305" type="line"/>
+      <point x="339" y="305" type="line"/>
+      <point x="309" y="542" type="line"/>
+    </contour>
+  </outline>
+</glyph>

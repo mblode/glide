@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="florin.tf" format="2">
+  <advance width="573"/>
+  <outline>
+    <contour>
+      <point x="438" y="653"/>
+      <point x="473" y="653" type="curve" smooth="yes"/>
+      <point x="497" y="653"/>
+      <point x="511" y="650"/>
+      <point x="526" y="646" type="curve"/>
+      <point x="526" y="729" type="line"/>
+      <point x="507" y="736"/>
+      <point x="493" y="739"/>
+      <point x="452" y="739" type="curve" smooth="yes"/>
+      <point x="380" y="739"/>
+      <point x="306" y="695"/>
+      <point x="287" y="594" type="curve" smooth="yes"/>
+      <point x="264" y="481" type="line"/>
+      <point x="137" y="481" type="line"/>
+      <point x="137" y="398" type="line"/>
+      <point x="173.66667" y="398"/>
+      <point x="210.33333" y="398"/>
+      <point x="247" y="398" type="curve"/>
+      <point x="172" y="20" type="line" smooth="yes"/>
+      <point x="156" y="-62"/>
+      <point x="111" y="-72"/>
+      <point x="76" y="-72" type="curve" smooth="yes"/>
+      <point x="52" y="-72"/>
+      <point x="35" y="-69"/>
+      <point x="20" y="-65" type="curve"/>
+      <point x="20" y="-148" type="line"/>
+      <point x="39" y="-155"/>
+      <point x="56" y="-158"/>
+      <point x="97" y="-158" type="curve" smooth="yes"/>
+      <point x="171" y="-158"/>
+      <point x="241" y="-114"/>
+      <point x="262" y="-13" type="curve" smooth="yes"/>
+      <point x="344" y="398" type="line"/>
+      <point x="490" y="398" type="line"/>
+      <point x="490" y="481" type="line"/>
+      <point x="361" y="481" type="line"/>
+      <point x="377" y="561" type="line" smooth="yes"/>
+      <point x="393" y="640"/>
+    </contour>
+  </outline>
+</glyph>

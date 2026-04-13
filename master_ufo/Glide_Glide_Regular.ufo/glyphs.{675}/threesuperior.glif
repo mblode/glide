@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="threesuperior" format="2">
+  <advance width="369"/>
+  <unicode hex="00B3"/>
+  <outline>
+    <contour>
+      <point x="39.58761" y="651.74633" type="line"/>
+      <point x="221.40354" y="651.74633" type="line"/>
+      <point x="187.73392" y="623.02971"/>
+      <point x="154.06431" y="594.31307"/>
+      <point x="120.39469" y="565.59645" type="curve"/>
+      <point x="151.22897" y="504.52819" type="line"/>
+      <point x="154.95035" y="506.16394"/>
+      <point x="159.46917" y="507.25445"/>
+      <point x="164.51961" y="507.93601" type="curve" smooth="yes"/>
+      <point x="169.57005" y="508.61758"/>
+      <point x="175.15212" y="508.8902"/>
+      <point x="181" y="508.8902" type="curve" smooth="yes"/>
+      <point x="216.08728" y="508.8902"/>
+      <point x="253.30107" y="492.53263"/>
+      <point x="253.30107" y="447.82194" type="curve" smooth="yes"/>
+      <point x="253.30107" y="414.01629"/>
+      <point x="224.59329" y="387.84418"/>
+      <point x="181" y="387.84418" type="curve" smooth="yes"/>
+      <point x="137.40671" y="387.84418"/>
+      <point x="104.44593" y="415.1068"/>
+      <point x="97.00317" y="457.63648" type="curve"/>
+      <point x="73.25723" y="447.82194"/>
+      <point x="49.51128" y="438.0074"/>
+      <point x="25.76535" y="428.19285" type="curve"/>
+      <point x="37.46111" y="370.3961"/>
+      <point x="90.62366" y="315.87086"/>
+      <point x="182.06325" y="315.87086" type="curve" smooth="yes"/>
+      <point x="274.56609" y="315.87086"/>
+      <point x="336.23465" y="374.75812"/>
+      <point x="336.23465" y="447.82194" type="curve" smooth="yes"/>
+      <point x="336.23465" y="523.06677"/>
+      <point x="280.9456" y="561.23443"/>
+      <point x="221.40354" y="566.68696" type="curve"/>
+      <point x="327.72864" y="653.92734" type="line"/>
+      <point x="327.72864" y="722.62914" type="line"/>
+      <point x="39.58761" y="722.62914" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.mblode.variable_gen.generated_brace</key>
+      <integer>1</integer>
+    </dict>
+  </lib>
+</glyph>

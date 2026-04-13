@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="lessequal.ss08" format="2">
+  <advance width="575"/>
+  <outline>
+    <contour>
+      <point x="505" y="213" type="curve"/>
+      <point x="61" y="213" type="line"/>
+      <point x="61" y="167"/>
+      <point x="61" y="121"/>
+      <point x="61" y="75" type="curve"/>
+      <point x="505" y="75" type="line"/>
+      <point x="505" y="121"/>
+      <point x="505" y="167"/>
+    </contour>
+    <contour>
+      <point x="505" y="238" type="line"/>
+      <point x="505" y="377" type="line"/>
+      <point x="226" y="430" type="line"/>
+      <point x="505" y="483" type="line"/>
+      <point x="505" y="620" type="line"/>
+      <point x="357" y="583.333"/>
+      <point x="209" y="546.667"/>
+      <point x="61" y="510" type="curve"/>
+      <point x="61" y="454.333"/>
+      <point x="61" y="398.667"/>
+      <point x="61" y="343" type="curve"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="multiply.tf.ss08" format="2">
+  <advance width="604"/>
+  <outline>
+    <contour>
+      <point x="405" y="351" type="line"/>
+      <point x="563" y="509" type="line"/>
+      <point x="461" y="612" type="line"/>
+      <point x="408" y="559"/>
+      <point x="355" y="506"/>
+      <point x="302" y="453" type="curve"/>
+      <point x="144" y="612" type="line"/>
+      <point x="42" y="509" type="line"/>
+      <point x="199" y="351" type="line"/>
+      <point x="42" y="193" type="line"/>
+      <point x="144" y="89" type="line"/>
+      <point x="196.667" y="142"/>
+      <point x="249.333" y="195"/>
+      <point x="302" y="248" type="curve"/>
+      <point x="461" y="89" type="line"/>
+      <point x="563" y="193" type="line"/>
+    </contour>
+  </outline>
+</glyph>

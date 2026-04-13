@@ -4,11 +4,14 @@ import { join } from "path";
 const ROOT = new URL("..", import.meta.url).pathname;
 const INPUT_ROMAN = join(ROOT, "cabinet/input/roman");
 const INPUT_ITALIC = join(ROOT, "cabinet/input/italic");
+const INPUT_MONO = join(ROOT, "cabinet/input/mono");
 const FONTS = join(ROOT, "fonts");
 const WEB = join(ROOT, "fonts/web");
+const PUBLIC = join(ROOT, "apps/web/public");
 
 mkdirSync(FONTS, { recursive: true });
 mkdirSync(WEB, { recursive: true });
+mkdirSync(PUBLIC, { recursive: true });
 
 function copy(src: string, dest: string, required = true) {
   if (existsSync(src)) {
@@ -38,6 +41,22 @@ copy(join(INPUT_ITALIC, "Glide-Regular-Italic.woff2"), join(WEB, "glide-regular-
 copy(join(INPUT_ITALIC, "Glide-Medium-Italic.woff2"),  join(WEB, "glide-medium-italic.woff2"),  false);
 copy(join(INPUT_ITALIC, "Glide-Bold-Italic.woff2"),    join(WEB, "glide-bold-italic.woff2"),    false);
 copy(join(INPUT_ITALIC, "Glide-Black-Italic.woff2"),   join(WEB, "glide-black-italic.woff2"),   false);
+
+// Mono TTF → fonts/
+copy(join(INPUT_MONO, "GlideMonoVF.ttf"), join(FONTS, "glide-mono-variable.ttf"), false);
+
+// Mono WOFF2 → fonts/web/
+copy(join(INPUT_MONO, "GlideMonoVF.woff2"),        join(WEB, "glide-mono-variable.woff2"),        false);
+copy(join(INPUT_MONO, "GlideMono-Regular.woff2"),  join(WEB, "glide-mono-regular.woff2"),         false);
+copy(join(INPUT_MONO, "GlideMono-Medium.woff2"),   join(WEB, "glide-mono-medium.woff2"),          false);
+copy(join(INPUT_MONO, "GlideMono-Bold.woff2"),     join(WEB, "glide-mono-bold.woff2"),            false);
+
+// Variable WOFF2 → apps/web/public/
+copy(join(INPUT_ROMAN, "GlideVF.woff2"),      join(PUBLIC, "glide-variable.woff2"));
+copy(join(INPUT_ITALIC, "GlideVF.woff2"),     join(PUBLIC, "glide-variable-italic.woff2"));
+
+// Mono WOFF2 → apps/web/public/
+copy(join(INPUT_MONO, "GlideMonoVF.woff2"), join(PUBLIC, "glide-mono-variable.woff2"), false);
 
 // Generate glide.css
 const css = `/* Variable font usage:

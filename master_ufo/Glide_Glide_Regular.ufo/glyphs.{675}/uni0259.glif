@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni0259" format="2">
+  <advance width="566"/>
+  <unicode hex="0259"/>
+  <outline>
+    <contour>
+      <point x="172.59567" y="133.59241"/>
+      <point x="170.11711" y="190.38395" type="curve"/>
+      <point x="389.88289" y="190.38395" type="line"/>
+      <point x="385.75196" y="139.35387"/>
+      <point x="347.74735" y="91.61605"/>
+      <point x="281.65237" y="91.61605" type="curve" smooth="yes"/>
+      <point x="213.07884" y="91.61605"/>
+    </contour>
+    <contour>
+      <point x="152.23726" y="378.55969"/>
+      <point x="177.33535" y="397.24215" type="curve" smooth="yes"/>
+      <point x="202.43344" y="415.92461"/>
+      <point x="235.02154" y="427.84958"/>
+      <point x="274.96824" y="427.84958" type="curve" smooth="yes"/>
+      <point x="365.37393" y="427.84958"/>
+      <point x="421.08906" y="358.94974"/>
+      <point x="424.24275" y="269.90994" type="curve"/>
+      <point x="38.44173" y="269.90994" type="line"/>
+      <point x="35.28804" y="252.94998"/>
+      <point x="36.33927" y="243.41"/>
+      <point x="36.33927" y="238.11002" type="curve" smooth="yes"/>
+      <point x="36.33927" y="80.17038"/>
+      <point x="132.0011" y="-25.82938"/>
+      <point x="284.4293" y="-25.82938" type="curve" smooth="yes"/>
+      <point x="416.88415" y="-25.82938"/>
+      <point x="526.21196" y="83.35037"/>
+      <point x="526.21196" y="243.41" type="curve" smooth="yes"/>
+      <point x="526.21196" y="405.58963"/>
+      <point x="431.60135" y="515.82938"/>
+      <point x="274.96824" y="515.82938" type="curve" smooth="yes"/>
+      <point x="158.28183" y="515.82938"/>
+      <point x="69.9786" y="443.74955"/>
+      <point x="41.59541" y="355.76975" type="curve"/>
+      <point x="69.27777" y="345.87644"/>
+      <point x="96.96014" y="335.98312"/>
+      <point x="124.6425" y="326.08981" type="curve"/>
+      <point x="134.62918" y="353.11975"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.mblode.variable_gen.generated_brace</key>
+      <integer>1</integer>
+    </dict>
+  </lib>
+</glyph>

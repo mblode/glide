@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ibreve" format="2">
+  <advance width="245"/>
+  <unicode hex="012D"/>
+  <outline>
+    <contour>
+      <point x="107" y="0" type="line"/>
+      <point x="210" y="481" type="line"/>
+      <point x="116" y="481" type="line"/>
+      <point x="81.66667" y="320.66667"/>
+      <point x="47.33333" y="160.33333"/>
+      <point x="13" y="0" type="curve"/>
+    </contour>
+    <contour>
+      <point x="117" y="653"/>
+      <point x="117" y="680" type="curve" smooth="yes"/>
+      <point x="117" y="681"/>
+      <point x="117" y="681"/>
+      <point x="118" y="688" type="curve"/>
+      <point x="49" y="688" type="line"/>
+      <point x="47" y="679"/>
+      <point x="46" y="670"/>
+      <point x="46" y="661" type="curve" smooth="yes"/>
+      <point x="46" y="600"/>
+      <point x="88" y="544"/>
+      <point x="168" y="544" type="curve" smooth="yes"/>
+      <point x="269" y="544"/>
+      <point x="325" y="617"/>
+      <point x="341" y="688" type="curve"/>
+      <point x="264" y="688" type="line"/>
+      <point x="256" y="660"/>
+      <point x="228" y="624"/>
+      <point x="177" y="624" type="curve" smooth="yes"/>
+      <point x="132" y="624"/>
+    </contour>
+  </outline>
+</glyph>

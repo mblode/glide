@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="seven.tf.ss08" format="2">
+  <advance width="604"/>
+  <outline>
+    <contour>
+      <point x="493" y="468"/>
+      <point x="567" y="537" type="curve"/>
+      <point x="567" y="594.333"/>
+      <point x="567" y="651.667"/>
+      <point x="567" y="709" type="curve"/>
+      <point x="392" y="709"/>
+      <point x="217" y="709"/>
+      <point x="42" y="709" type="curve"/>
+      <point x="42" y="554" type="line"/>
+      <point x="154.333" y="554"/>
+      <point x="266.667" y="554"/>
+      <point x="379" y="554" type="curve"/>
+      <point x="361" y="536"/>
+      <point x="159" y="344"/>
+      <point x="132" y="0" type="curve"/>
+      <point x="195.667" y="0"/>
+      <point x="259.333" y="0"/>
+      <point x="323" y="0" type="curve"/>
+      <point x="347" y="295"/>
+    </contour>
+  </outline>
+</glyph>

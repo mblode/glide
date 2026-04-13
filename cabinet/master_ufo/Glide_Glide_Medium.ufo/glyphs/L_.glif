@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="L" format="2">
+  <advance width="555"/>
+  <unicode hex="004C"/>
+  <note>
+L
+</note>
+  <outline>
+    <contour>
+      <point x="233.333" y="0"/>
+      <point x="85" y="0" type="curve"/>
+      <point x="85" y="709" type="line"/>
+      <point x="205" y="709" type="line"/>
+      <point x="205" y="114" type="line"/>
+      <point x="530" y="114" type="line"/>
+      <point x="530" y="0" type="line"/>
+      <point x="381.667" y="0"/>
+    </contour>
+  </outline>
+</glyph>

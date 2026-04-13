@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>a</key>
+    <string>a.glif</string>
+    <key>ae</key>
+    <string>ae.glif</string>
+    <key>edieresis</key>
+    <string>edieresis.glif</string>
+    <key>edotaccent</key>
+    <string>edotaccent.glif</string>
+    <key>onehalf</key>
+    <string>onehalf.glif</string>
+    <key>onehalf.ss08</key>
+    <string>onehalf.ss08.glif</string>
+    <key>s</key>
+    <string>s.glif</string>
+    <key>s.ordn</key>
+    <string>s.ordn.glif</string>
+    <key>s.ordn.ss08</key>
+    <string>s.ordn.ss08.glif</string>
+    <key>two</key>
+    <string>two.glif</string>
+    <key>utilde</key>
+    <string>utilde.glif</string>
+  </dict>
+</plist>

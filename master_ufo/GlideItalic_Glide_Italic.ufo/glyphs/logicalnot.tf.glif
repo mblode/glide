@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="logicalnot.tf" format="2">
+  <advance width="573"/>
+  <outline>
+    <contour>
+      <point x="496" y="149" type="line"/>
+      <point x="496" y="426" type="line"/>
+      <point x="63" y="426" type="line"/>
+      <point x="63" y="344" type="line"/>
+      <point x="412" y="344" type="line"/>
+      <point x="412" y="279"/>
+      <point x="412" y="214"/>
+      <point x="412" y="149" type="curve"/>
+    </contour>
+  </outline>
+</glyph>

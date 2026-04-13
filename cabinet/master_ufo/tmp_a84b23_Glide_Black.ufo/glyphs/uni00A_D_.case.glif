@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni00AD.case" format="2">
+  <advance width="368"/>
+  <note>
+uni00AD.case
+</note>
+  <outline>
+    <contour>
+      <point x="347" y="422" type="line"/>
+      <point x="317" y="285" type="line"/>
+      <point x="217.333" y="285"/>
+      <point x="117.667" y="285"/>
+      <point x="18" y="285" type="curve"/>
+      <point x="47" y="422" type="line"/>
+    </contour>
+  </outline>
+</glyph>

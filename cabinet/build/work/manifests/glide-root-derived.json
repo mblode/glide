@@ -1,0 +1,30 @@
+{
+  "family_name": "Glide",
+  "families": {
+    "roman": {
+      "default_style": "Regular",
+      "masters": [
+        {
+          "filename": "glide-root-regular.ttf",
+          "style_name": "Regular",
+          "weight": 400
+        },
+        {
+          "filename": "glide-root-medium.ttf",
+          "style_name": "Medium",
+          "weight": 500
+        },
+        {
+          "filename": "glide-root-bold.ttf",
+          "style_name": "Bold",
+          "weight": 700
+        },
+        {
+          "filename": "glide-root-black.ttf",
+          "style_name": "Black",
+          "weight": 900
+        }
+      ]
+    }
+  }
+}

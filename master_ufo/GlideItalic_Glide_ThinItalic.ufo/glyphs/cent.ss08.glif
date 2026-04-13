@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="cent.ss08" format="2">
+  <advance width="537"/>
+  <outline>
+    <contour>
+      <point x="428.06194" y="395.80998" type="curve"/>
+      <point x="506.88026" y="420.82765" type="line"/>
+      <point x="493.74387" y="483.83511"/>
+      <point x="450.58146" y="543.13625"/>
+      <point x="367.07157" y="560.74128" type="curve"/>
+      <point x="385.83784" y="652.47273" type="line"/>
+      <point x="317.34097" y="652.47273" type="line"/>
+      <point x="299.51301" y="566.30076" type="line"/>
+      <point x="175.65565" y="556.10837"/>
+      <point x="62.11974" y="450.47822"/>
+      <point x="62.11974" y="297.59246" type="curve" smooth="yes"/>
+      <point x="62.11974" y="203.08127"/>
+      <point x="117.48023" y="124.32194"/>
+      <point x="200.99011" y="99.30427" type="curve"/>
+      <point x="179.40891" y="-4.47273" type="line"/>
+      <point x="247.90578" y="-4.47273" type="line"/>
+      <point x="267.61036" y="90.03847" type="line"/>
+      <point x="269.48699" y="89.11188"/>
+      <point x="273.24024" y="89.11188"/>
+      <point x="277.93181" y="89.11188" type="curve" smooth="yes"/>
+      <point x="374.57808" y="91.89163"/>
+      <point x="444.01327" y="153.04593"/>
+      <point x="479.66917" y="228.09894" type="curve"/>
+      <point x="409.29567" y="258.67609" type="line"/>
+      <point x="383.96121" y="209.56733"/>
+      <point x="341.73711" y="173.4307"/>
+      <point x="285.43831" y="170.65095" type="curve"/>
+      <point x="350.18193" y="480.12879" type="line"/>
+      <point x="395.22097" y="468.08324"/>
+      <point x="420.55543" y="432.87319"/>
+    </contour>
+    <contour>
+      <point x="211.31156" y="467.15666"/>
+      <point x="281.68506" y="481.98195" type="curve"/>
+      <point x="218.81807" y="181.76992" type="line"/>
+      <point x="174.71734" y="201.22811"/>
+      <point x="150.32119" y="243.8508"/>
+      <point x="150.32119" y="299.44562" type="curve" smooth="yes"/>
+      <point x="150.32119" y="400.44288"/>
+    </contour>
+  </outline>
+</glyph>

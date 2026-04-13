@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="dotaccent.uc" format="2">
+  <advance width="193"/>
+  <note>
+dotaccent.uc
+</note>
+  <outline>
+    <contour>
+      <point x="23.833" y="874.667"/>
+      <point x="39.5" y="890" type="curve" smooth="yes"/>
+      <point x="55.167" y="905.333"/>
+      <point x="74" y="913"/>
+      <point x="96" y="913" type="curve" smooth="yes"/>
+      <point x="118.667" y="913"/>
+      <point x="137.833" y="905.333"/>
+      <point x="153.5" y="890" type="curve" smooth="yes"/>
+      <point x="169.167" y="874.667"/>
+      <point x="177" y="855.667"/>
+      <point x="177" y="833" type="curve" smooth="yes"/>
+      <point x="177" y="811"/>
+      <point x="169.167" y="792.333"/>
+      <point x="153.5" y="777" type="curve" smooth="yes"/>
+      <point x="137.833" y="761.667"/>
+      <point x="118.667" y="754"/>
+      <point x="96" y="754" type="curve" smooth="yes"/>
+      <point x="74" y="754"/>
+      <point x="55.167" y="761.667"/>
+      <point x="39.5" y="777" type="curve" smooth="yes"/>
+      <point x="23.833" y="792.333"/>
+      <point x="16" y="811"/>
+      <point x="16" y="833" type="curve" smooth="yes"/>
+      <point x="16" y="855.667"/>
+    </contour>
+  </outline>
+</glyph>

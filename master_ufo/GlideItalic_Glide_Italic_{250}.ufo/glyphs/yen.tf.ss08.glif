@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="yen.tf.ss08" format="2">
+  <advance width="573"/>
+  <outline>
+    <contour>
+      <point x="230.33333" y="605.33333"/>
+      <point x="193" y="709" type="curve"/>
+      <point x="89" y="709" type="line"/>
+      <point x="213" y="383" type="line"/>
+      <point x="75" y="383" type="line"/>
+      <point x="61" y="311" type="line"/>
+      <point x="239" y="311" type="line"/>
+      <point x="223" y="237" type="line"/>
+      <point x="46" y="237" type="line"/>
+      <point x="31" y="165" type="line"/>
+      <point x="208" y="165" type="line"/>
+      <point x="172" y="0" type="line"/>
+      <point x="272" y="0" type="line"/>
+      <point x="277.83333" y="27.5"/>
+      <point x="283.66667" y="55"/>
+      <point x="289.5" y="82.5" type="curve" smooth="yes"/>
+      <point x="295.33333" y="110"/>
+      <point x="301.16667" y="137.5"/>
+      <point x="307" y="165" type="curve"/>
+      <point x="493" y="165" type="line"/>
+      <point x="509" y="237" type="line"/>
+      <point x="322" y="237" type="line"/>
+      <point x="338" y="311" type="line"/>
+      <point x="523" y="311" type="line"/>
+      <point x="538" y="383" type="line"/>
+      <point x="396" y="383" type="line"/>
+      <point x="653" y="709" type="line"/>
+      <point x="542" y="709" type="line"/>
+      <point x="463" y="605.33333"/>
+      <point x="384" y="501.66667"/>
+      <point x="305" y="398" type="curve"/>
+      <point x="267.66667" y="501.66667"/>
+    </contour>
+  </outline>
+</glyph>

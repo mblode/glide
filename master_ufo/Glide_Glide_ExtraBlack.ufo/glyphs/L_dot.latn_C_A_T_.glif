@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Ldot.latn_CAT" format="2">
+  <advance width="579"/>
+  <outline>
+    <contour>
+      <point x="372" y="324"/>
+      <point x="428" y="324" type="curve" smooth="yes"/>
+      <point x="484" y="324"/>
+      <point x="526" y="365"/>
+      <point x="526" y="421" type="curve" smooth="yes"/>
+      <point x="526" y="477"/>
+      <point x="484" y="520"/>
+      <point x="428" y="520" type="curve" smooth="yes"/>
+      <point x="372" y="520"/>
+      <point x="330" y="477"/>
+      <point x="330" y="421" type="curve" smooth="yes"/>
+      <point x="330" y="365"/>
+    </contour>
+    <contour>
+      <point x="535" y="0" type="line"/>
+      <point x="535" y="177" type="line"/>
+      <point x="265" y="177" type="line"/>
+      <point x="265" y="709" type="line"/>
+      <point x="79" y="709" type="line"/>
+      <point x="79" y="472.667"/>
+      <point x="79" y="236.333"/>
+      <point x="79" y="0" type="curve"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="zero.ss08" format="2">
+  <advance width="686"/>
+  <outline>
+    <contour>
+      <point x="133" y="-15"/>
+      <point x="343" y="-15" type="curve" smooth="yes"/>
+      <point x="553" y="-15"/>
+      <point x="643" y="155"/>
+      <point x="643" y="355" type="curve" smooth="yes"/>
+      <point x="643" y="555"/>
+      <point x="553" y="724"/>
+      <point x="343" y="724" type="curve" smooth="yes"/>
+      <point x="133" y="724"/>
+      <point x="43" y="555"/>
+      <point x="43" y="355" type="curve" smooth="yes"/>
+      <point x="43" y="155"/>
+    </contour>
+    <contour>
+      <point x="428" y="147"/>
+      <point x="343" y="147" type="curve" smooth="yes"/>
+      <point x="258" y="147"/>
+      <point x="228" y="236"/>
+      <point x="228" y="355" type="curve" smooth="yes"/>
+      <point x="228" y="474"/>
+      <point x="258" y="562"/>
+      <point x="343" y="562" type="curve" smooth="yes"/>
+      <point x="428" y="562"/>
+      <point x="458" y="474"/>
+      <point x="458" y="355" type="curve" smooth="yes"/>
+      <point x="458" y="236"/>
+    </contour>
+  </outline>
+</glyph>

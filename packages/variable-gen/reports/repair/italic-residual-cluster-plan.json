@@ -1,0 +1,1712 @@
+{
+  "family": "italic",
+  "glyph_count": 78,
+  "summary": {
+    "recommended_action_counts": {
+      "keep_normalized": 61,
+      "manual_redraw_required": 12,
+      "localized_substitution": 5
+    },
+    "glyphs": [
+      "ncommaaccent",
+      "napostrophe",
+      "dollar",
+      "cent",
+      "tcommaaccent",
+      "uni021B",
+      "dollar.tf",
+      "cent.tf",
+      "dollar.ss08",
+      "cent.ss08",
+      "dollar.tf.ss08",
+      "cent.tf.ss08",
+      "X",
+      "d",
+      "a",
+      "g",
+      "gdotaccent",
+      "r",
+      "s",
+      "t",
+      "u",
+      "percent",
+      "ampersand",
+      "ae",
+      "commaturn",
+      "s.ordn",
+      "s.ordn.ss08",
+      "onehalf",
+      "onehalf.ss08",
+      "scedilla",
+      "r.ss03",
+      "two",
+      "racute.ss03",
+      "rcommaaccent.ss03",
+      "rcaron.ss03",
+      "e",
+      "v",
+      "three",
+      "six",
+      "nine",
+      "guillemotleft",
+      "mu",
+      "guillemotright",
+      "threequarters",
+      "egrave",
+      "eacute",
+      "ecircumflex",
+      "edieresis",
+      "ugrave",
+      "uacute",
+      "ucircumflex",
+      "udieresis",
+      "dcaron",
+      "dslash",
+      "emacron",
+      "ebreve",
+      "edotaccent",
+      "eogonek",
+      "IJ",
+      "ij",
+      "ldot",
+      "oe",
+      "racute",
+      "rcommaaccent",
+      "rcaron",
+      "Scedilla",
+      "tcaron",
+      "tbar",
+      "umacron",
+      "ubreve",
+      "uring",
+      "uhungarumlaut",
+      "uogonek",
+      "uni018F",
+      "gbreve",
+      "gcircumflex",
+      "utilde",
+      "aeacute"
+    ]
+  },
+  "actions": [
+    {
+      "glyph_name": "ncommaaccent",
+      "repair_bucket": "export_safety",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "total segment delta=5",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [],
+        "max_intersections": 0,
+        "min_segment_length": null,
+        "max_area_diff_pct": null,
+        "total_segment_delta": 5,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "napostrophe",
+      "repair_bucket": "brace_candidate",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "sampled intersections=2",
+        "min segment=0.31",
+        "max area drift=30.45%",
+        "total segment delta=5",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [],
+        "max_intersections": 2,
+        "min_segment_length": 0.31,
+        "max_area_diff_pct": 30.45,
+        "total_segment_delta": 5,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "dollar",
+      "repair_bucket": "structural_fallback",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "min segment=1.44",
+        "max area drift=7.58%",
+        "total segment delta=7",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [],
+        "max_intersections": 0,
+        "min_segment_length": 1.44,
+        "max_area_diff_pct": 7.58,
+        "total_segment_delta": 7,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "cent",
+      "repair_bucket": "redraw_candidate",
+      "recommended_action": "manual_redraw_required",
+      "confidence": "high",
+      "rationale": [
+        "max area drift=12.02%",
+        "total segment delta=2",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [],
+        "max_intersections": 0,
+        "min_segment_length": null,
+        "max_area_diff_pct": 12.02,
+        "total_segment_delta": 2,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "tcommaaccent",
+      "repair_bucket": "structural_fallback",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "total segment delta=2",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [],
+        "max_intersections": 0,
+        "min_segment_length": null,
+        "max_area_diff_pct": null,
+        "total_segment_delta": 2,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "uni021B",
+      "repair_bucket": "redraw_candidate",
+      "recommended_action": "manual_redraw_required",
+      "confidence": "high",
+      "rationale": [
+        "min segment=0.22",
+        "max area drift=16.07%",
+        "total segment delta=2",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [],
+        "max_intersections": 0,
+        "min_segment_length": 0.22,
+        "max_area_diff_pct": 16.07,
+        "total_segment_delta": 2,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "dollar.tf",
+      "repair_bucket": "structural_fallback",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "min segment=0.7",
+        "max area drift=7.73%",
+        "total segment delta=7",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [],
+        "max_intersections": 0,
+        "min_segment_length": 0.7,
+        "max_area_diff_pct": 7.73,
+        "total_segment_delta": 7,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "cent.tf",
+      "repair_bucket": "structural_fallback",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "max area drift=12.09%",
+        "total segment delta=4",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [],
+        "max_intersections": 0,
+        "min_segment_length": null,
+        "max_area_diff_pct": 12.09,
+        "total_segment_delta": 4,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "dollar.ss08",
+      "repair_bucket": "redraw_candidate",
+      "recommended_action": "manual_redraw_required",
+      "confidence": "high",
+      "rationale": [
+        "min segment=0.0",
+        "max area drift=7.01%",
+        "total segment delta=6",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [],
+        "max_intersections": 0,
+        "min_segment_length": 0.0,
+        "max_area_diff_pct": 7.01,
+        "total_segment_delta": 6,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "cent.ss08",
+      "repair_bucket": "redraw_candidate",
+      "recommended_action": "manual_redraw_required",
+      "confidence": "high",
+      "rationale": [
+        "min segment=0.34",
+        "max area drift=8.76%",
+        "total segment delta=3",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [],
+        "max_intersections": 0,
+        "min_segment_length": 0.34,
+        "max_area_diff_pct": 8.76,
+        "total_segment_delta": 3,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "dollar.tf.ss08",
+      "repair_bucket": "structural_fallback",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "min segment=1.0",
+        "max area drift=7.01%",
+        "total segment delta=6",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [],
+        "max_intersections": 0,
+        "min_segment_length": 1.0,
+        "max_area_diff_pct": 7.01,
+        "total_segment_delta": 6,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "cent.tf.ss08",
+      "repair_bucket": "curve_balance",
+      "recommended_action": "localized_substitution",
+      "confidence": "high",
+      "rationale": [
+        "max area drift=8.86%",
+        "total segment delta=1",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [],
+        "max_intersections": 0,
+        "min_segment_length": null,
+        "max_area_diff_pct": 8.86,
+        "total_segment_delta": 1,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "X",
+      "repair_bucket": "freeze_candidate",
+      "recommended_action": "keep_normalized",
+      "confidence": "high",
+      "rationale": [
+        "total segment delta=2",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [],
+        "max_intersections": 0,
+        "min_segment_length": null,
+        "max_area_diff_pct": null,
+        "total_segment_delta": 2,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "d",
+      "repair_bucket": "curve_balance",
+      "recommended_action": "localized_substitution",
+      "confidence": "high",
+      "rationale": [
+        "min segment=0.23",
+        "total segment delta=0",
+        "donor raw compat=True"
+      ],
+      "evidence": {
+        "issue_types": [],
+        "max_intersections": 0,
+        "min_segment_length": 0.23,
+        "max_area_diff_pct": null,
+        "total_segment_delta": 0,
+        "donor_raw_compat": true
+      }
+    },
+    {
+      "glyph_name": "a",
+      "repair_bucket": "brace_candidate",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "min segment=0.05",
+        "max area drift=1.58%",
+        "total segment delta=16",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [],
+        "max_intersections": 0,
+        "min_segment_length": 0.05,
+        "max_area_diff_pct": 1.58,
+        "total_segment_delta": 16,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "g",
+      "repair_bucket": "redraw_candidate",
+      "recommended_action": "manual_redraw_required",
+      "confidence": "high",
+      "rationale": [
+        "min segment=0.2",
+        "max area drift=6.03%",
+        "total segment delta=5",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [],
+        "max_intersections": 0,
+        "min_segment_length": 0.2,
+        "max_area_diff_pct": 6.03,
+        "total_segment_delta": 5,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "gdotaccent",
+      "repair_bucket": "redraw_candidate",
+      "recommended_action": "manual_redraw_required",
+      "confidence": "high",
+      "rationale": [
+        "sampled intersections=4",
+        "min segment=0.2",
+        "total segment delta=23",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [],
+        "max_intersections": 4,
+        "min_segment_length": 0.2,
+        "max_area_diff_pct": null,
+        "total_segment_delta": 23,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "r",
+      "repair_bucket": "brace_candidate",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "min segment=0.44",
+        "total segment delta=3",
+        "donor raw compat=True"
+      ],
+      "evidence": {
+        "issue_types": [],
+        "max_intersections": 0,
+        "min_segment_length": 0.44,
+        "max_area_diff_pct": null,
+        "total_segment_delta": 3,
+        "donor_raw_compat": true
+      }
+    },
+    {
+      "glyph_name": "s",
+      "repair_bucket": "brace_candidate",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "max area drift=44.0%",
+        "total segment delta=2",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [],
+        "max_intersections": 0,
+        "min_segment_length": null,
+        "max_area_diff_pct": 44.0,
+        "total_segment_delta": 2,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "t",
+      "repair_bucket": "brace_candidate",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "min segment=0.26",
+        "max area drift=31.0%",
+        "total segment delta=2",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [],
+        "max_intersections": 0,
+        "min_segment_length": 0.26,
+        "max_area_diff_pct": 31.0,
+        "total_segment_delta": 2,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "u",
+      "repair_bucket": "brace_candidate",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "interpolatable issues=['kink', 'underweight']",
+        "sampled intersections=2",
+        "min segment=0.23",
+        "total segment delta=5",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [
+          "kink",
+          "underweight"
+        ],
+        "max_intersections": 2,
+        "min_segment_length": 0.23,
+        "max_area_diff_pct": null,
+        "total_segment_delta": 5,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "percent",
+      "repair_bucket": "brace_candidate",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "total segment delta=3",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [],
+        "max_intersections": 0,
+        "min_segment_length": null,
+        "max_area_diff_pct": null,
+        "total_segment_delta": 3,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "ampersand",
+      "repair_bucket": "redraw_candidate",
+      "recommended_action": "manual_redraw_required",
+      "confidence": "high",
+      "rationale": [
+        "min segment=0.45",
+        "max area drift=5.67%",
+        "total segment delta=8",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [],
+        "max_intersections": 0,
+        "min_segment_length": 0.45,
+        "max_area_diff_pct": 5.67,
+        "total_segment_delta": 8,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "ae",
+      "repair_bucket": "brace_candidate",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "min segment=0.41",
+        "max area drift=9.47%",
+        "total segment delta=16",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [],
+        "max_intersections": 0,
+        "min_segment_length": 0.41,
+        "max_area_diff_pct": 9.47,
+        "total_segment_delta": 16,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "commaturn",
+      "repair_bucket": "curve_balance",
+      "recommended_action": "localized_substitution",
+      "confidence": "high",
+      "rationale": [
+        "min segment=0.2",
+        "max area drift=23.86%",
+        "total segment delta=2",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [],
+        "max_intersections": 0,
+        "min_segment_length": 0.2,
+        "max_area_diff_pct": 23.86,
+        "total_segment_delta": 2,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "s.ordn",
+      "repair_bucket": "brace_candidate",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "min segment=1.4",
+        "max area drift=36.12%",
+        "total segment delta=3",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [],
+        "max_intersections": 0,
+        "min_segment_length": 1.4,
+        "max_area_diff_pct": 36.12,
+        "total_segment_delta": 3,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "s.ordn.ss08",
+      "repair_bucket": "brace_candidate",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "min segment=1.4",
+        "max area drift=36.12%",
+        "total segment delta=4",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [],
+        "max_intersections": 0,
+        "min_segment_length": 1.4,
+        "max_area_diff_pct": 36.12,
+        "total_segment_delta": 4,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "onehalf",
+      "repair_bucket": "brace_candidate",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "min segment=1.81",
+        "max area drift=31.87%",
+        "total segment delta=21",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [],
+        "max_intersections": 0,
+        "min_segment_length": 1.81,
+        "max_area_diff_pct": 31.87,
+        "total_segment_delta": 21,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "onehalf.ss08",
+      "repair_bucket": "brace_candidate",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "min segment=1.81",
+        "max area drift=30.83%",
+        "total segment delta=36",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [],
+        "max_intersections": 0,
+        "min_segment_length": 1.81,
+        "max_area_diff_pct": 30.83,
+        "total_segment_delta": 36,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "scedilla",
+      "repair_bucket": "curve_balance",
+      "recommended_action": "localized_substitution",
+      "confidence": "high",
+      "rationale": [
+        "min segment=0.69",
+        "max area drift=32.63%",
+        "total segment delta=5",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [],
+        "max_intersections": 0,
+        "min_segment_length": 0.69,
+        "max_area_diff_pct": 32.63,
+        "total_segment_delta": 5,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "r.ss03",
+      "repair_bucket": "brace_candidate",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "sampled intersections=2",
+        "min segment=0.01",
+        "max area drift=22.14%",
+        "total segment delta=8",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [],
+        "max_intersections": 2,
+        "min_segment_length": 0.01,
+        "max_area_diff_pct": 22.14,
+        "total_segment_delta": 8,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "two",
+      "repair_bucket": "brace_candidate",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "min segment=0.21",
+        "max area drift=42.08%",
+        "total segment delta=6",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [],
+        "max_intersections": 0,
+        "min_segment_length": 0.21,
+        "max_area_diff_pct": 42.08,
+        "total_segment_delta": 6,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "racute.ss03",
+      "repair_bucket": "redraw_candidate",
+      "recommended_action": "manual_redraw_required",
+      "confidence": "high",
+      "rationale": [
+        "interpolatable issues=['underweight']",
+        "sampled intersections=2",
+        "min segment=0.01",
+        "max area drift=16.79%",
+        "total segment delta=37",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [
+          "underweight"
+        ],
+        "max_intersections": 2,
+        "min_segment_length": 0.01,
+        "max_area_diff_pct": 16.79,
+        "total_segment_delta": 37,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "rcommaaccent.ss03",
+      "repair_bucket": "redraw_candidate",
+      "recommended_action": "manual_redraw_required",
+      "confidence": "high",
+      "rationale": [
+        "interpolatable issues=['kink', 'underweight']",
+        "total segment delta=11",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [
+          "kink",
+          "underweight"
+        ],
+        "max_intersections": 0,
+        "min_segment_length": null,
+        "max_area_diff_pct": null,
+        "total_segment_delta": 11,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "rcaron.ss03",
+      "repair_bucket": "redraw_candidate",
+      "recommended_action": "manual_redraw_required",
+      "confidence": "high",
+      "rationale": [
+        "interpolatable issues=['underweight']",
+        "sampled intersections=3",
+        "min segment=0.01",
+        "max area drift=14.58%",
+        "total segment delta=11",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [
+          "underweight"
+        ],
+        "max_intersections": 3,
+        "min_segment_length": 0.01,
+        "max_area_diff_pct": 14.58,
+        "total_segment_delta": 11,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "e",
+      "repair_bucket": "expanded_compat_cluster",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "interpolatable issues=['underweight']",
+        "min segment=0.2",
+        "total segment delta=23",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [
+          "underweight"
+        ],
+        "max_intersections": 0,
+        "min_segment_length": 0.2,
+        "max_area_diff_pct": null,
+        "total_segment_delta": 23,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "v",
+      "repair_bucket": "expanded_compat_cluster",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "total segment delta=3",
+        "donor raw compat=True"
+      ],
+      "evidence": {
+        "issue_types": [],
+        "max_intersections": 0,
+        "min_segment_length": null,
+        "max_area_diff_pct": null,
+        "total_segment_delta": 3,
+        "donor_raw_compat": true
+      }
+    },
+    {
+      "glyph_name": "three",
+      "repair_bucket": "expanded_compat_cluster",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "interpolatable issues=['underweight']",
+        "min segment=0.4",
+        "total segment delta=4",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [
+          "underweight"
+        ],
+        "max_intersections": 0,
+        "min_segment_length": 0.4,
+        "max_area_diff_pct": null,
+        "total_segment_delta": 4,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "six",
+      "repair_bucket": "expanded_compat_cluster",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "total segment delta=0",
+        "donor raw compat=True"
+      ],
+      "evidence": {
+        "issue_types": [],
+        "max_intersections": 0,
+        "min_segment_length": null,
+        "max_area_diff_pct": null,
+        "total_segment_delta": 0,
+        "donor_raw_compat": true
+      }
+    },
+    {
+      "glyph_name": "nine",
+      "repair_bucket": "expanded_compat_cluster",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "total segment delta=0",
+        "donor raw compat=True"
+      ],
+      "evidence": {
+        "issue_types": [],
+        "max_intersections": 0,
+        "min_segment_length": null,
+        "max_area_diff_pct": null,
+        "total_segment_delta": 0,
+        "donor_raw_compat": true
+      }
+    },
+    {
+      "glyph_name": "guillemotleft",
+      "repair_bucket": "expanded_compat_cluster",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "interpolatable issues=['underweight']",
+        "min segment=1.81",
+        "total segment delta=0",
+        "donor raw compat=True"
+      ],
+      "evidence": {
+        "issue_types": [
+          "underweight"
+        ],
+        "max_intersections": 0,
+        "min_segment_length": 1.81,
+        "max_area_diff_pct": null,
+        "total_segment_delta": 0,
+        "donor_raw_compat": true
+      }
+    },
+    {
+      "glyph_name": "mu",
+      "repair_bucket": "expanded_compat_cluster",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "total segment delta=2",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [],
+        "max_intersections": 0,
+        "min_segment_length": null,
+        "max_area_diff_pct": null,
+        "total_segment_delta": 2,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "guillemotright",
+      "repair_bucket": "expanded_compat_cluster",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "interpolatable issues=['underweight']",
+        "total segment delta=3",
+        "donor raw compat=True"
+      ],
+      "evidence": {
+        "issue_types": [
+          "underweight"
+        ],
+        "max_intersections": 0,
+        "min_segment_length": null,
+        "max_area_diff_pct": null,
+        "total_segment_delta": 3,
+        "donor_raw_compat": true
+      }
+    },
+    {
+      "glyph_name": "threequarters",
+      "repair_bucket": "expanded_compat_cluster",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "interpolatable issues=['underweight']",
+        "min segment=0.05",
+        "total segment delta=58",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [
+          "underweight"
+        ],
+        "max_intersections": 0,
+        "min_segment_length": 0.05,
+        "max_area_diff_pct": null,
+        "total_segment_delta": 58,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "egrave",
+      "repair_bucket": "expanded_compat_cluster",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "interpolatable issues=['underweight']",
+        "min segment=0.2",
+        "total segment delta=26",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [
+          "underweight"
+        ],
+        "max_intersections": 0,
+        "min_segment_length": 0.2,
+        "max_area_diff_pct": null,
+        "total_segment_delta": 26,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "eacute",
+      "repair_bucket": "expanded_compat_cluster",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "interpolatable issues=['underweight']",
+        "min segment=0.2",
+        "total segment delta=26",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [
+          "underweight"
+        ],
+        "max_intersections": 0,
+        "min_segment_length": 0.2,
+        "max_area_diff_pct": null,
+        "total_segment_delta": 26,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "ecircumflex",
+      "repair_bucket": "expanded_compat_cluster",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "interpolatable issues=['underweight']",
+        "min segment=0.2",
+        "total segment delta=23",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [
+          "underweight"
+        ],
+        "max_intersections": 0,
+        "min_segment_length": 0.2,
+        "max_area_diff_pct": null,
+        "total_segment_delta": 23,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "edieresis",
+      "repair_bucket": "expanded_compat_cluster",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "interpolatable issues=['contour_order', 'wrong_start_point']",
+        "sampled intersections=4",
+        "min segment=0.2",
+        "total segment delta=23",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [
+          "contour_order",
+          "wrong_start_point"
+        ],
+        "max_intersections": 4,
+        "min_segment_length": 0.2,
+        "max_area_diff_pct": null,
+        "total_segment_delta": 23,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "ugrave",
+      "repair_bucket": "brace_candidate",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "interpolatable issues=['kink', 'underweight']",
+        "sampled intersections=2",
+        "min segment=0.23",
+        "total segment delta=8",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [
+          "kink",
+          "underweight"
+        ],
+        "max_intersections": 2,
+        "min_segment_length": 0.23,
+        "max_area_diff_pct": null,
+        "total_segment_delta": 8,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "uacute",
+      "repair_bucket": "brace_candidate",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "interpolatable issues=['kink', 'underweight']",
+        "sampled intersections=2",
+        "min segment=0.23",
+        "total segment delta=50",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [
+          "kink",
+          "underweight"
+        ],
+        "max_intersections": 2,
+        "min_segment_length": 0.23,
+        "max_area_diff_pct": null,
+        "total_segment_delta": 50,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "ucircumflex",
+      "repair_bucket": "brace_candidate",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "interpolatable issues=['kink', 'underweight']",
+        "sampled intersections=2",
+        "min segment=0.23",
+        "total segment delta=39",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [
+          "kink",
+          "underweight"
+        ],
+        "max_intersections": 2,
+        "min_segment_length": 0.23,
+        "max_area_diff_pct": null,
+        "total_segment_delta": 39,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "udieresis",
+      "repair_bucket": "brace_candidate",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "interpolatable issues=['kink', 'underweight']",
+        "sampled intersections=2",
+        "min segment=0.23",
+        "total segment delta=47",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [
+          "kink",
+          "underweight"
+        ],
+        "max_intersections": 2,
+        "min_segment_length": 0.23,
+        "max_area_diff_pct": null,
+        "total_segment_delta": 47,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "dcaron",
+      "repair_bucket": "curve_balance",
+      "recommended_action": "localized_substitution",
+      "confidence": "high",
+      "rationale": [
+        "interpolatable issues=['underweight']",
+        "min segment=0.23",
+        "total segment delta=3",
+        "donor raw compat=True"
+      ],
+      "evidence": {
+        "issue_types": [
+          "underweight"
+        ],
+        "max_intersections": 0,
+        "min_segment_length": 0.23,
+        "max_area_diff_pct": null,
+        "total_segment_delta": 3,
+        "donor_raw_compat": true
+      }
+    },
+    {
+      "glyph_name": "dslash",
+      "repair_bucket": "expanded_compat_cluster",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "min segment=0.23",
+        "total segment delta=2",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [],
+        "max_intersections": 0,
+        "min_segment_length": 0.23,
+        "max_area_diff_pct": null,
+        "total_segment_delta": 2,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "emacron",
+      "repair_bucket": "expanded_compat_cluster",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "interpolatable issues=['underweight']",
+        "min segment=0.2",
+        "total segment delta=25",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [
+          "underweight"
+        ],
+        "max_intersections": 0,
+        "min_segment_length": 0.2,
+        "max_area_diff_pct": null,
+        "total_segment_delta": 25,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "ebreve",
+      "repair_bucket": "expanded_compat_cluster",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "interpolatable issues=['underweight']",
+        "min segment=0.2",
+        "total segment delta=7",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [
+          "underweight"
+        ],
+        "max_intersections": 0,
+        "min_segment_length": 0.2,
+        "max_area_diff_pct": null,
+        "total_segment_delta": 7,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "edotaccent",
+      "repair_bucket": "expanded_compat_cluster",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "interpolatable issues=['contour_order', 'wrong_start_point']",
+        "sampled intersections=4",
+        "min segment=0.2",
+        "total segment delta=23",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [
+          "contour_order",
+          "wrong_start_point"
+        ],
+        "max_intersections": 4,
+        "min_segment_length": 0.2,
+        "max_area_diff_pct": null,
+        "total_segment_delta": 23,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "eogonek",
+      "repair_bucket": "expanded_compat_cluster",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "interpolatable issues=['underweight']",
+        "min segment=0.2",
+        "total segment delta=2",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [
+          "underweight"
+        ],
+        "max_intersections": 0,
+        "min_segment_length": 0.2,
+        "max_area_diff_pct": null,
+        "total_segment_delta": 2,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "IJ",
+      "repair_bucket": "expanded_compat_cluster",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "min segment=0.91",
+        "max area drift=2.38%",
+        "total segment delta=3",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [],
+        "max_intersections": 0,
+        "min_segment_length": 0.91,
+        "max_area_diff_pct": 2.38,
+        "total_segment_delta": 3,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "ij",
+      "repair_bucket": "expanded_compat_cluster",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "min segment=0.53",
+        "total segment delta=7",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [],
+        "max_intersections": 0,
+        "min_segment_length": 0.53,
+        "max_area_diff_pct": null,
+        "total_segment_delta": 7,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "ldot",
+      "repair_bucket": "expanded_compat_cluster",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "total segment delta=0",
+        "donor raw compat=True"
+      ],
+      "evidence": {
+        "issue_types": [],
+        "max_intersections": 0,
+        "min_segment_length": null,
+        "max_area_diff_pct": null,
+        "total_segment_delta": 0,
+        "donor_raw_compat": true
+      }
+    },
+    {
+      "glyph_name": "oe",
+      "repair_bucket": "expanded_compat_cluster",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "min segment=0.21",
+        "total segment delta=1",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [],
+        "max_intersections": 0,
+        "min_segment_length": 0.21,
+        "max_area_diff_pct": null,
+        "total_segment_delta": 1,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "racute",
+      "repair_bucket": "brace_candidate",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "min segment=0.44",
+        "total segment delta=6",
+        "donor raw compat=True"
+      ],
+      "evidence": {
+        "issue_types": [],
+        "max_intersections": 0,
+        "min_segment_length": 0.44,
+        "max_area_diff_pct": null,
+        "total_segment_delta": 6,
+        "donor_raw_compat": true
+      }
+    },
+    {
+      "glyph_name": "rcommaaccent",
+      "repair_bucket": "brace_candidate",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "total segment delta=10",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [],
+        "max_intersections": 0,
+        "min_segment_length": null,
+        "max_area_diff_pct": null,
+        "total_segment_delta": 10,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "rcaron",
+      "repair_bucket": "brace_candidate",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "min segment=0.44",
+        "total segment delta=3",
+        "donor raw compat=True"
+      ],
+      "evidence": {
+        "issue_types": [],
+        "max_intersections": 0,
+        "min_segment_length": 0.44,
+        "max_area_diff_pct": null,
+        "total_segment_delta": 3,
+        "donor_raw_compat": true
+      }
+    },
+    {
+      "glyph_name": "Scedilla",
+      "repair_bucket": "expanded_compat_cluster",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "interpolatable issues=['kink']",
+        "min segment=0.46",
+        "max area drift=4.11%",
+        "total segment delta=3",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [
+          "kink"
+        ],
+        "max_intersections": 0,
+        "min_segment_length": 0.46,
+        "max_area_diff_pct": 4.11,
+        "total_segment_delta": 3,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "tcaron",
+      "repair_bucket": "brace_candidate",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "interpolatable issues=['underweight']",
+        "min segment=0.26",
+        "max area drift=25.79%",
+        "total segment delta=5",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [
+          "underweight"
+        ],
+        "max_intersections": 0,
+        "min_segment_length": 0.26,
+        "max_area_diff_pct": 25.79,
+        "total_segment_delta": 5,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "tbar",
+      "repair_bucket": "expanded_compat_cluster",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "min segment=0.14",
+        "total segment delta=3",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [],
+        "max_intersections": 0,
+        "min_segment_length": 0.14,
+        "max_area_diff_pct": null,
+        "total_segment_delta": 3,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "umacron",
+      "repair_bucket": "brace_candidate",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "interpolatable issues=['kink', 'underweight']",
+        "sampled intersections=2",
+        "min segment=0.23",
+        "total segment delta=5",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [
+          "kink",
+          "underweight"
+        ],
+        "max_intersections": 2,
+        "min_segment_length": 0.23,
+        "max_area_diff_pct": null,
+        "total_segment_delta": 5,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "ubreve",
+      "repair_bucket": "brace_candidate",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "interpolatable issues=['kink', 'underweight']",
+        "sampled intersections=2",
+        "min segment=0.23",
+        "total segment delta=5",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [
+          "kink",
+          "underweight"
+        ],
+        "max_intersections": 2,
+        "min_segment_length": 0.23,
+        "max_area_diff_pct": null,
+        "total_segment_delta": 5,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "uring",
+      "repair_bucket": "brace_candidate",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "interpolatable issues=['kink', 'underweight']",
+        "sampled intersections=2",
+        "min segment=0.23",
+        "total segment delta=47",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [
+          "kink",
+          "underweight"
+        ],
+        "max_intersections": 2,
+        "min_segment_length": 0.23,
+        "max_area_diff_pct": null,
+        "total_segment_delta": 47,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "uhungarumlaut",
+      "repair_bucket": "brace_candidate",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "interpolatable issues=['kink', 'underweight']",
+        "sampled intersections=2",
+        "min segment=0.23",
+        "total segment delta=8",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [
+          "kink",
+          "underweight"
+        ],
+        "max_intersections": 2,
+        "min_segment_length": 0.23,
+        "max_area_diff_pct": null,
+        "total_segment_delta": 8,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "uogonek",
+      "repair_bucket": "expanded_compat_cluster",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "interpolatable issues=['kink']",
+        "min segment=0.02",
+        "total segment delta=4",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [
+          "kink"
+        ],
+        "max_intersections": 0,
+        "min_segment_length": 0.02,
+        "max_area_diff_pct": null,
+        "total_segment_delta": 4,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "uni018F",
+      "repair_bucket": "expanded_compat_cluster",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "interpolatable issues=['kink']",
+        "min segment=0.01",
+        "max area drift=8.34%",
+        "total segment delta=4",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [
+          "kink"
+        ],
+        "max_intersections": 0,
+        "min_segment_length": 0.01,
+        "max_area_diff_pct": 8.34,
+        "total_segment_delta": 4,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "gbreve",
+      "repair_bucket": "redraw_candidate",
+      "recommended_action": "manual_redraw_required",
+      "confidence": "high",
+      "rationale": [
+        "min segment=0.2",
+        "total segment delta=41",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [],
+        "max_intersections": 0,
+        "min_segment_length": 0.2,
+        "max_area_diff_pct": null,
+        "total_segment_delta": 41,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "gcircumflex",
+      "repair_bucket": "redraw_candidate",
+      "recommended_action": "manual_redraw_required",
+      "confidence": "high",
+      "rationale": [
+        "min segment=0.2",
+        "total segment delta=5",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [],
+        "max_intersections": 0,
+        "min_segment_length": 0.2,
+        "max_area_diff_pct": null,
+        "total_segment_delta": 5,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "utilde",
+      "repair_bucket": "brace_candidate",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "interpolatable issues=['kink', 'underweight']",
+        "min segment=0.05",
+        "total segment delta=8",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [
+          "kink",
+          "underweight"
+        ],
+        "max_intersections": 0,
+        "min_segment_length": 0.05,
+        "max_area_diff_pct": null,
+        "total_segment_delta": 8,
+        "donor_raw_compat": false
+      }
+    },
+    {
+      "glyph_name": "aeacute",
+      "repair_bucket": "brace_candidate",
+      "recommended_action": "keep_normalized",
+      "confidence": "medium",
+      "rationale": [
+        "min segment=0.41",
+        "max area drift=9.21%",
+        "total segment delta=71",
+        "donor raw compat=False"
+      ],
+      "evidence": {
+        "issue_types": [],
+        "max_intersections": 0,
+        "min_segment_length": 0.41,
+        "max_area_diff_pct": 9.21,
+        "total_segment_delta": 71,
+        "donor_raw_compat": false
+      }
+    }
+  ]
+}

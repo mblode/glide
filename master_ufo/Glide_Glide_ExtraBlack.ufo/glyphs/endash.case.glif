@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="endash.case" format="2">
+  <advance width="631"/>
+  <outline>
+    <contour>
+      <point x="573" y="263" type="line"/>
+      <point x="573" y="419" type="line"/>
+      <point x="60" y="419" type="line"/>
+      <point x="60" y="367"/>
+      <point x="60" y="315"/>
+      <point x="60" y="263" type="curve"/>
+    </contour>
+  </outline>
+</glyph>

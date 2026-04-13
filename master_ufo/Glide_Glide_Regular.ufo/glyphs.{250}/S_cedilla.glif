@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Scedilla" format="2">
+  <advance width="585"/>
+  <unicode hex="015E"/>
+  <outline>
+    <contour>
+      <point x="206.09528" y="-102.22743"/>
+      <point x="194.54669" y="-115.2923" type="curve"/>
+      <point x="213.27463" y="-136.19609"/>
+      <point x="249.79412" y="-153.61592"/>
+      <point x="297.55037" y="-153.61592" type="curve" smooth="yes"/>
+      <point x="373.39853" y="-153.61592"/>
+      <point x="407.10882" y="-117.90527"/>
+      <point x="407.10882" y="-76.96868" type="curve" smooth="yes"/>
+      <point x="407.10882" y="-32.54813"/>
+      <point x="368.71654" y="-5.54739"/>
+      <point x="316.27831" y="-5.54739" type="curve"/>
+      <point x="336.87904" y="24.06631" type="line"/>
+      <point x="453.92867" y="38.00217"/>
+      <point x="526.03125" y="116.39139"/>
+      <point x="526.03125" y="204.36151" type="curve" smooth="yes"/>
+      <point x="526.03125" y="291.46064"/>
+      <point x="465.16544" y="354.17202"/>
+      <point x="353.73419" y="377.68878" type="curve" smooth="yes"/>
+      <point x="254.4761" y="397.72158" type="line" smooth="yes"/>
+      <point x="198.29228" y="409.04447"/>
+      <point x="169.26397" y="443.01313"/>
+      <point x="169.26397" y="487.43369" type="curve" smooth="yes"/>
+      <point x="169.26397" y="543.17713"/>
+      <point x="222.6386" y="590.21067"/>
+      <point x="297.55037" y="590.21067" type="curve" smooth="yes"/>
+      <point x="390.25368" y="590.21067"/>
+      <point x="430.51875" y="530.11226"/>
+      <point x="438.00992" y="484.82072" type="curve"/>
+      <point x="520.41286" y="511.82145" type="line"/>
+      <point x="512.92169" y="545.35461"/>
+      <point x="493.95965" y="583.67823"/>
+      <point x="458.25951" y="613.61856" type="curve" smooth="yes"/>
+      <point x="422.55937" y="643.55888"/>
+      <point x="370.12114" y="665.11592"/>
+      <point x="295.67757" y="665.11592" type="curve" smooth="yes"/>
+      <point x="172.07316" y="665.11592"/>
+      <point x="76.56066" y="578.01679"/>
+      <point x="76.56066" y="481.33675" type="curve" smooth="yes"/>
+      <point x="76.56066" y="388.14068"/>
+      <point x="143.98125" y="332.39724"/>
+      <point x="238.55735" y="312.36444" type="curve" smooth="yes"/>
+      <point x="270.08303" y="305.97746"/>
+      <point x="301.60778" y="299.58961"/>
+      <point x="333.13346" y="293.20263" type="curve" smooth="yes"/>
+      <point x="397.74485" y="280.13776"/>
+      <point x="432.39154" y="241.81414"/>
+      <point x="432.39154" y="197.39358" type="curve" smooth="yes"/>
+      <point x="432.39154" y="142.52113"/>
+      <point x="386.50809" y="98.97156"/>
+      <point x="295.67757" y="98.97156" type="curve" smooth="yes"/>
+      <point x="197.35588" y="98.97156"/>
+      <point x="143.98125" y="164.29591"/>
+      <point x="136.49008" y="233.10423" type="curve"/>
+      <point x="107.14995" y="224.39431"/>
+      <point x="77.80888" y="215.6844"/>
+      <point x="48.46875" y="206.97449" type="curve"/>
+      <point x="58.76912" y="121.61734"/>
+      <point x="129.9353" y="31.90523"/>
+      <point x="270.39485" y="22.32433" type="curve"/>
+      <point x="241.36654" y="-19.48326" type="line"/>
+      <point x="251.66691" y="-30.80614"/>
+      <point x="261.96728" y="-42.12903"/>
+      <point x="272.26765" y="-53.45192" type="curve"/>
+      <point x="280.69522" y="-50.83894"/>
+      <point x="289.12279" y="-49.09696"/>
+      <point x="299.42316" y="-49.09696" type="curve" smooth="yes"/>
+      <point x="325.64228" y="-49.09696"/>
+      <point x="340.62463" y="-60.41985"/>
+      <point x="340.62463" y="-76.96868" type="curve" smooth="yes"/>
+      <point x="340.62463" y="-97.00148"/>
+      <point x="319.0875" y="-105.7114"/>
+      <point x="296.61397" y="-105.7114" type="curve" smooth="yes"/>
+      <point x="263.84007" y="-105.7114"/>
+      <point x="240.43015" y="-87.42058"/>
+      <point x="229.19338" y="-76.09769" type="curve"/>
+      <point x="217.6448" y="-89.16256"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.mblode.variable_gen.generated_brace</key>
+      <integer>1</integer>
+    </dict>
+  </lib>
+</glyph>

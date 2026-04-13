@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="l.ordn" format="2">
+  <advance width="189"/>
+  <outline>
+    <contour>
+      <point x="136" y="309" type="line"/>
+      <point x="244" y="816" type="line"/>
+      <point x="169" y="816" type="line"/>
+      <point x="133" y="647"/>
+      <point x="97" y="478"/>
+      <point x="61" y="309" type="curve"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="hyphen" format="2">
+  <advance width="380"/>
+  <unicode hex="002D"/>
+  <note>
+hyphen
+</note>
+  <outline>
+    <contour>
+      <point x="141.667" y="238"/>
+      <point x="45" y="238" type="curve"/>
+      <point x="45" y="356" type="line"/>
+      <point x="335" y="356" type="line"/>
+      <point x="335" y="238" type="line"/>
+      <point x="238.333" y="238"/>
+    </contour>
+  </outline>
+</glyph>

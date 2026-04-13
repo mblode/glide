@@ -1,0 +1,172 @@
+feature calt {
+script DFLT;
+language dflt;
+lookup SUB_0 {
+	@SUB_0_0_BT_0 = [zero one two three four five six seven eight nine];
+	@SUB_0_0_LA_1 = [zero one two three four five six seven eight nine];
+	sub @SUB_0_0_BT_0 x' lookup SUB_5 @SUB_0_0_LA_1;
+	@SUB_0_1_BT_0 = [zero one two three four five six seven eight nine];
+	@SUB_0_1_BT_1 = [space uni00A0 uni2007 uni2008];
+	@SUB_0_1_LA_2 = [space uni00A0 uni2007 uni2008];
+	@SUB_0_1_LA_3 = [zero one two three four five six seven eight nine];
+	sub @SUB_0_1_BT_0 @SUB_0_1_BT_1 x' lookup SUB_5 @SUB_0_1_LA_2 @SUB_0_1_LA_3;
+} SUB_0;
+script latn;
+language dflt;
+lookup SUB_0;
+
+} calt;
+
+feature numr {
+script DFLT;
+language dflt;
+lookup SUB_1 {
+	sub slash by fraction;
+	sub zero by zero.numr;
+	sub one by one.numr;
+	sub two by two.numr;
+	sub three by three.numr;
+	sub four by four.numr;
+	sub five by five.numr;
+	sub six by six.numr;
+	sub seven by seven.numr;
+	sub eight by eight.numr;
+	sub nine by nine.numr;
+} SUB_1;
+script latn;
+language dflt;
+lookup SUB_1;
+
+} numr;
+
+feature dnom {
+script DFLT;
+language dflt;
+lookup SUB_2 {
+	sub zero by zero.dnom;
+	sub one by one.dnom;
+	sub two by two.dnom;
+	sub three by three.dnom;
+	sub four by four.dnom;
+	sub five by five.dnom;
+	sub six by six.dnom;
+	sub seven by seven.dnom;
+	sub eight by eight.dnom;
+	sub nine by nine.dnom;
+} SUB_2;
+script latn;
+language dflt;
+lookup SUB_2;
+
+} dnom;
+
+feature frac {
+script DFLT;
+language dflt;
+lookup SUB_3 {
+	@SUB_3_0_LA_0 = [zero one two three four five six seven eight nine];
+	@SUB_3_0_LA_1 = [zero one two three four five six seven eight nine];
+	ignore sub slash' @SUB_3_0_LA_0 @SUB_3_0_LA_1 slash;
+	@SUB_3_1_BT_0 = [zero one two three four five six seven eight nine];
+	@SUB_3_1_BT_1 = [zero one two three four five six seven eight nine];
+	ignore sub slash @SUB_3_1_BT_0 @SUB_3_1_BT_1 slash';
+	@SUB_3_2_LA_0 = [zero one two three four five six seven eight nine];
+	ignore sub slash' @SUB_3_2_LA_0 slash;
+	@SUB_3_3_BT_0 = [zero one two three four five six seven eight nine];
+	ignore sub slash @SUB_3_3_BT_0 slash';
+	@SUB_3_4_BT_0 = [zero one two three four five six seven eight nine];
+	@SUB_3_4_LA_1 = [zero one two three four five six seven eight nine];
+	sub @SUB_3_4_BT_0 [slash fraction uni2215]' lookup SUB_6 @SUB_3_4_LA_1;
+	@SUB_3_5_0 = [zero one two three four five six seven eight nine];
+	sub @SUB_3_5_0' lookup SUB_6 fraction;
+	@SUB_3_6_0 = [zero one two three four five six seven eight nine];
+	@SUB_3_6_LA_1 = [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+	sub @SUB_3_6_0' lookup SUB_6 @SUB_3_6_LA_1 fraction;
+	@SUB_3_7_0 = [zero one two three four five six seven eight nine];
+	@SUB_3_7_LA_1 = [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+	@SUB_3_7_LA_2 = [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+	sub @SUB_3_7_0' lookup SUB_6 @SUB_3_7_LA_1 @SUB_3_7_LA_2 fraction;
+	@SUB_3_8_0 = [zero one two three four five six seven eight nine];
+	@SUB_3_8_LA_1 = [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+	@SUB_3_8_LA_2 = [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+	@SUB_3_8_LA_3 = [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+	sub @SUB_3_8_0' lookup SUB_6 @SUB_3_8_LA_1 @SUB_3_8_LA_2 @SUB_3_8_LA_3 fraction;
+	@SUB_3_9_0 = [zero one two three four five six seven eight nine];
+	@SUB_3_9_LA_1 = [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+	@SUB_3_9_LA_2 = [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+	@SUB_3_9_LA_3 = [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+	@SUB_3_9_LA_4 = [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+	sub @SUB_3_9_0' lookup SUB_6 @SUB_3_9_LA_1 @SUB_3_9_LA_2 @SUB_3_9_LA_3 @SUB_3_9_LA_4 fraction;
+	@SUB_3_10_0 = [zero one two three four five six seven eight nine];
+	@SUB_3_10_LA_1 = [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+	@SUB_3_10_LA_2 = [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+	@SUB_3_10_LA_3 = [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+	@SUB_3_10_LA_4 = [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+	@SUB_3_10_LA_5 = [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+	sub @SUB_3_10_0' lookup SUB_6 @SUB_3_10_LA_1 @SUB_3_10_LA_2 @SUB_3_10_LA_3 @SUB_3_10_LA_4 @SUB_3_10_LA_5 fraction;
+	@SUB_3_11_0 = [zero one two three four five six seven eight nine];
+	@SUB_3_11_LA_1 = [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+	@SUB_3_11_LA_2 = [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+	@SUB_3_11_LA_3 = [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+	@SUB_3_11_LA_4 = [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+	@SUB_3_11_LA_5 = [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+	@SUB_3_11_LA_6 = [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+	sub @SUB_3_11_0' lookup SUB_6 @SUB_3_11_LA_1 @SUB_3_11_LA_2 @SUB_3_11_LA_3 @SUB_3_11_LA_4 @SUB_3_11_LA_5 @SUB_3_11_LA_6 fraction;
+	@SUB_3_12_0 = [zero one two three four five six seven eight nine];
+	@SUB_3_12_LA_1 = [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+	@SUB_3_12_LA_2 = [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+	@SUB_3_12_LA_3 = [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+	@SUB_3_12_LA_4 = [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+	@SUB_3_12_LA_5 = [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+	@SUB_3_12_LA_6 = [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+	@SUB_3_12_LA_7 = [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+	sub @SUB_3_12_0' lookup SUB_6 @SUB_3_12_LA_1 @SUB_3_12_LA_2 @SUB_3_12_LA_3 @SUB_3_12_LA_4 @SUB_3_12_LA_5 @SUB_3_12_LA_6 @SUB_3_12_LA_7 fraction;
+	@SUB_3_13_0 = [zero one two three four five six seven eight nine];
+	@SUB_3_13_LA_1 = [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+	@SUB_3_13_LA_2 = [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+	@SUB_3_13_LA_3 = [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+	@SUB_3_13_LA_4 = [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+	@SUB_3_13_LA_5 = [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+	@SUB_3_13_LA_6 = [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+	@SUB_3_13_LA_7 = [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+	@SUB_3_13_LA_8 = [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+	sub @SUB_3_13_0' lookup SUB_6 @SUB_3_13_LA_1 @SUB_3_13_LA_2 @SUB_3_13_LA_3 @SUB_3_13_LA_4 @SUB_3_13_LA_5 @SUB_3_13_LA_6 @SUB_3_13_LA_7 @SUB_3_13_LA_8 fraction;
+	@SUB_3_14_0 = [zero one two three four five six seven eight nine];
+	@SUB_3_14_LA_1 = [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+	@SUB_3_14_LA_2 = [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+	@SUB_3_14_LA_3 = [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+	@SUB_3_14_LA_4 = [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+	@SUB_3_14_LA_5 = [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+	@SUB_3_14_LA_6 = [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+	@SUB_3_14_LA_7 = [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+	@SUB_3_14_LA_8 = [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+	@SUB_3_14_LA_9 = [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+	sub @SUB_3_14_0' lookup SUB_6 @SUB_3_14_LA_1 @SUB_3_14_LA_2 @SUB_3_14_LA_3 @SUB_3_14_LA_4 @SUB_3_14_LA_5 @SUB_3_14_LA_6 @SUB_3_14_LA_7 @SUB_3_14_LA_8 @SUB_3_14_LA_9 fraction;
+	@SUB_3_15_BT_0 = [fraction zero.dnom one.dnom two.dnom three.dnom four.dnom five.dnom six.dnom seven.dnom eight.dnom nine.dnom];
+	@SUB_3_15_1 = [zero one two three four five six seven eight nine];
+	sub @SUB_3_15_BT_0 @SUB_3_15_1' lookup SUB_7;
+	@SUB_3_16_BT_0 = [zero one two three four five six seven eight nine];
+	@SUB_3_16_LA_1 = [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+	sub @SUB_3_16_BT_0 space' lookup SUB_7 @SUB_3_16_LA_1;
+} SUB_3;
+script latn;
+language dflt;
+lookup SUB_3;
+
+} frac;
+
+feature liga {
+script DFLT;
+language dflt;
+lookup SUB_4 {
+	sub f f i by f_f_i.1;
+	sub f f l by f_f_l.1;
+	sub f f by f_f.1;
+	sub f i by fi.1;
+	sub f l by fl.1;
+} SUB_4;
+script latn;
+language dflt;
+lookup SUB_4;
+
+} liga;

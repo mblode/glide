@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="overscore" format="2">
+  <advance width="343"/>
+  <unicode hex="00AF"/>
+  <outline>
+    <contour>
+      <point x="225" y="577" type="line"/>
+      <point x="242" y="658" type="line"/>
+      <point x="-31" y="658" type="line"/>
+      <point x="-36.66667" y="631"/>
+      <point x="-42.33333" y="604"/>
+      <point x="-48" y="577" type="curve"/>
+    </contour>
+  </outline>
+</glyph>

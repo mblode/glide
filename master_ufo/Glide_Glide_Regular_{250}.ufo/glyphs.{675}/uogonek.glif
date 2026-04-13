@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uogonek" format="2">
+  <advance width="580"/>
+  <unicode hex="0173"/>
+  <outline>
+    <contour>
+      <point x="502.12075" y="-184.02456"/>
+      <point x="484.40235" y="-184.02456" type="curve" smooth="yes"/>
+      <point x="454.50256" y="-184.02456"/>
+      <point x="425.71016" y="-170.22241"/>
+      <point x="425.71016" y="-129.96613" type="curve" smooth="yes"/>
+      <point x="425.71016" y="-73.60735"/>
+      <point x="478.86535" y="-40.25215"/>
+      <point x="519.83914" y="-18.39875" type="curve"/>
+      <point x="516.51694" y="1.1543"/>
+      <point x="514.30214" y="36.80986"/>
+      <point x="514.30214" y="83.9672" type="curve" smooth="yes"/>
+      <point x="514.30214" y="534.83746" type="line"/>
+      <point x="410.20657" y="534.83746" type="line"/>
+      <point x="410.20657" y="423.65308"/>
+      <point x="410.20657" y="312.46986"/>
+      <point x="410.20657" y="201.28548" type="curve" smooth="yes"/>
+      <point x="410.20657" y="117.3224"/>
+      <point x="368.12538" y="59.81344"/>
+      <point x="283.963" y="59.81344" type="curve" smooth="yes"/>
+      <point x="196.47842" y="59.81344"/>
+      <point x="163.25643" y="125.37366"/>
+      <point x="163.25643" y="202.43566" type="curve" smooth="yes"/>
+      <point x="163.25643" y="534.83746" type="line"/>
+      <point x="59.16086" y="534.83746" type="line"/>
+      <point x="59.16086" y="418.66936"/>
+      <point x="59.16086" y="302.50126"/>
+      <point x="59.16086" y="186.33315" type="curve" smooth="yes"/>
+      <point x="59.16086" y="62.1138"/>
+      <point x="134.46404" y="-35.65144"/>
+      <point x="258.49281" y="-35.65144" type="curve" smooth="yes"/>
+      <point x="320.50719" y="-35.65144"/>
+      <point x="385.84378" y="-10.34749"/>
+      <point x="415.74357" y="48.31165" type="curve"/>
+      <point x="415.74357" y="26.45824"/>
+      <point x="416.85097" y="-2.29624"/>
+      <point x="420.17317" y="-16.09839" type="curve"/>
+      <point x="376.98458" y="-42.55251"/>
+      <point x="337.11819" y="-82.80878"/>
+      <point x="337.11819" y="-150.66936" type="curve" smooth="yes"/>
+      <point x="337.11819" y="-187.47509"/>
+      <point x="351.79123" y="-216.51712"/>
+      <point x="375.04663" y="-236.35771" type="curve" smooth="yes"/>
+      <point x="398.30202" y="-256.1983"/>
+      <point x="430.13976" y="-266.83746"/>
+      <point x="464.46915" y="-266.83746" type="curve" smooth="yes"/>
+      <point x="492.15415" y="-266.83746"/>
+      <point x="505.44294" y="-263.38692"/>
+      <point x="519.83914" y="-257.63603" type="curve"/>
+      <point x="519.83914" y="-231.56491"/>
+      <point x="519.83914" y="-205.49495"/>
+      <point x="519.83914" y="-179.42384" type="curve"/>
+      <point x="510.97994" y="-182.87438"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.mblode.variable_gen.generated_brace</key>
+      <integer>1</integer>
+    </dict>
+  </lib>
+</glyph>

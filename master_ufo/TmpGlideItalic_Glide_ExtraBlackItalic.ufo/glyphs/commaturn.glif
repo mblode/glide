@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="commaturn" format="2">
+  <advance width="178"/>
+  <outline>
+    <contour>
+      <point x="-6" y="725"/>
+      <point x="-6" y="632" type="curve" smooth="yes"/>
+      <point x="-6" y="576"/>
+      <point x="31" y="541"/>
+      <point x="83" y="541" type="curve" smooth="yes"/>
+      <point x="135" y="541"/>
+      <point x="172" y="579"/>
+      <point x="172" y="622" type="curve" smooth="yes"/>
+      <point x="172" y="655"/>
+      <point x="152" y="685"/>
+      <point x="105" y="685" type="curve" smooth="yes"/>
+      <point x="96" y="685"/>
+      <point x="88" y="683"/>
+      <point x="79" y="680" type="curve"/>
+      <point x="90" y="695"/>
+      <point x="114" y="710"/>
+      <point x="147" y="710" type="curve" smooth="yes"/>
+      <point x="159" y="710"/>
+      <point x="169" y="708"/>
+      <point x="177" y="707" type="curve"/>
+      <point x="181.33333" y="727.33333"/>
+      <point x="185.66667" y="747.66667"/>
+      <point x="190" y="768" type="curve"/>
+      <point x="182" y="771"/>
+      <point x="165" y="773"/>
+      <point x="146" y="773" type="curve" smooth="yes"/>
+      <point x="73" y="773"/>
+    </contour>
+  </outline>
+</glyph>

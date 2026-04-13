@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Ntilde" format="2">
+  <advance width="780"/>
+  <unicode hex="00D1"/>
+  <outline>
+    <contour>
+      <point x="461" y="916"/>
+      <point x="428" y="916" type="curve" smooth="yes"/>
+      <point x="365" y="916"/>
+      <point x="297" y="882"/>
+      <point x="284" y="774" type="curve" smooth="yes"/>
+      <point x="281" y="754" type="line"/>
+      <point x="319.33333" y="754"/>
+      <point x="357.66667" y="754"/>
+      <point x="396" y="754" type="curve"/>
+      <point x="396" y="781"/>
+      <point x="415" y="793"/>
+      <point x="430" y="793" type="curve" smooth="yes"/>
+      <point x="447" y="793"/>
+      <point x="465" y="783"/>
+      <point x="485" y="771" type="curve" smooth="yes"/>
+      <point x="506" y="758"/>
+      <point x="531" y="747"/>
+      <point x="563" y="747" type="curve" smooth="yes"/>
+      <point x="629" y="747"/>
+      <point x="690" y="787"/>
+      <point x="706" y="912" type="curve"/>
+      <point x="591" y="912" type="line"/>
+      <point x="587.5" y="896.5"/>
+      <point x="582.5" y="886.5"/>
+      <point x="576.5" y="880.375" type="curve" smooth="yes"/>
+      <point x="570.5" y="874.25"/>
+      <point x="563.5" y="872"/>
+      <point x="556" y="872" type="curve" smooth="yes"/>
+      <point x="537" y="872"/>
+      <point x="523" y="883"/>
+      <point x="504" y="894" type="curve" smooth="yes"/>
+      <point x="484" y="905"/>
+    </contour>
+    <contour>
+      <point x="399.33333" y="141"/>
+      <point x="454" y="0" type="curve"/>
+      <point x="637" y="0" type="line"/>
+      <point x="788" y="709" type="line"/>
+      <point x="601" y="709" type="line"/>
+      <point x="518" y="319" type="line"/>
+      <point x="371" y="709" type="line"/>
+      <point x="167" y="709" type="line"/>
+      <point x="17" y="0" type="line"/>
+      <point x="201" y="0" type="line"/>
+      <point x="290" y="423" type="line"/>
+      <point x="344.66667" y="282"/>
+    </contour>
+  </outline>
+</glyph>

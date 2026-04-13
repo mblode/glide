@@ -1,0 +1,94 @@
+[
+  {
+    "family_key": "roman",
+    "masters": [
+      "glide-root-regular.ttf",
+      "glide-root-medium.ttf",
+      "glide-root-bold.ttf",
+      "glide-root-black.ttf"
+    ],
+    "common_glyphs": 472,
+    "decomposed": {
+      "glide-root-regular.ttf": 0,
+      "glide-root-medium.ttf": 0,
+      "glide-root-bold.ttf": 0,
+      "glide-root-black.ttf": 0
+    },
+    "before_repair": {
+      "glyphs_with_issues": 4,
+      "issue_types": {
+        "wrong_start_point": 12,
+        "underweight": 9,
+        "contour_order": 1
+      },
+      "severity": {
+        "moderate": 22
+      }
+    },
+    "after_repair": {
+      "glyphs_with_issues": 4,
+      "issue_types": {
+        "wrong_start_point": 12,
+        "underweight": 9,
+        "contour_order": 1
+      },
+      "severity": {
+        "moderate": 22
+      }
+    },
+    "already_compatible": 471,
+    "repaired_by_script": 0,
+    "repaired_glyphs": [],
+    "needs_fontlab_path_count": 0,
+    "needs_fontlab_error": 0,
+    "fontlab_path_count_glyphs": [],
+    "fontlab_error_glyphs": [],
+    "fontlab_total_manual": 0
+  },
+  {
+    "family_key": "italic",
+    "masters": [
+      "glide-root-regularItalic.ttf",
+      "glide-root-mediumItalic.ttf",
+      "glide-root-boldItalic.ttf",
+      "glide-root-blackItalic.ttf"
+    ],
+    "common_glyphs": 472,
+    "decomposed": {
+      "glide-root-regularItalic.ttf": 0,
+      "glide-root-mediumItalic.ttf": 0,
+      "glide-root-boldItalic.ttf": 0,
+      "glide-root-blackItalic.ttf": 0
+    },
+    "before_repair": {
+      "glyphs_with_issues": 9,
+      "issue_types": {
+        "contour_order": 3,
+        "wrong_start_point": 13,
+        "underweight": 12
+      },
+      "severity": {
+        "moderate": 28
+      }
+    },
+    "after_repair": {
+      "glyphs_with_issues": 9,
+      "issue_types": {
+        "contour_order": 3,
+        "wrong_start_point": 13,
+        "underweight": 12
+      },
+      "severity": {
+        "moderate": 28
+      }
+    },
+    "already_compatible": 471,
+    "repaired_by_script": 0,
+    "repaired_glyphs": [],
+    "needs_fontlab_path_count": 0,
+    "needs_fontlab_error": 0,
+    "fontlab_path_count_glyphs": [],
+    "fontlab_error_glyphs": [],
+    "fontlab_total_manual": 0
+  }
+]

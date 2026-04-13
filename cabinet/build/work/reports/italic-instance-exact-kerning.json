@@ -1,0 +1,55 @@
+{
+  "instances_dir": "/Users/mblode/Code/mblode/glide/build/work/output/instances-italic",
+  "output_dir": "/Users/mblode/Code/mblode/glide/build/work/output/instances-italic-exact",
+  "donor_dir": "/Users/mblode/Code/mblode/glide/src/donors/circular",
+  "weights": [
+    {
+      "weight": 400,
+      "instance": "/Users/mblode/Code/mblode/glide/build/work/output/instances-italic-exact/glide-cli-italic-variable-Regular.ttf",
+      "donor": "/Users/mblode/Code/mblode/glide/src/donors/circular/lineto-circular-bookItalic.ttf",
+      "pair_stats": {
+        "lookups": 1,
+        "subtables": 4,
+        "pairs": 11135,
+        "class_defs": 846
+      },
+      "To": -75
+    },
+    {
+      "weight": 500,
+      "instance": "/Users/mblode/Code/mblode/glide/build/work/output/instances-italic-exact/glide-cli-italic-variable-Medium.ttf",
+      "donor": "/Users/mblode/Code/mblode/glide/src/donors/circular/lineto-circular-mediumItalic.ttf",
+      "pair_stats": {
+        "lookups": 1,
+        "subtables": 4,
+        "pairs": 12727,
+        "class_defs": 888
+      },
+      "To": -73
+    },
+    {
+      "weight": 700,
+      "instance": "/Users/mblode/Code/mblode/glide/build/work/output/instances-italic-exact/glide-cli-italic-variable-Bold.ttf",
+      "donor": "/Users/mblode/Code/mblode/glide/src/donors/circular/lineto-circular-boldItalic.ttf",
+      "pair_stats": {
+        "lookups": 1,
+        "subtables": 4,
+        "pairs": 12741,
+        "class_defs": 888
+      },
+      "To": -72
+    },
+    {
+      "weight": 900,
+      "instance": "/Users/mblode/Code/mblode/glide/build/work/output/instances-italic-exact/glide-cli-italic-variable-Black.ttf",
+      "donor": "/Users/mblode/Code/mblode/glide/src/donors/circular/lineto-circular-blackItalic.ttf",
+      "pair_stats": {
+        "lookups": 1,
+        "subtables": 4,
+        "pairs": 12743,
+        "class_defs": 888
+      },
+      "To": -71
+    }
+  ]
+}

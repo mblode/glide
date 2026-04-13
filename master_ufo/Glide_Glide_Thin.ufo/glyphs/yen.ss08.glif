@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="yen.ss08" format="2">
+  <advance width="604"/>
+  <outline>
+    <contour>
+      <point x="281" y="224" type="line"/>
+      <point x="90" y="224" type="line"/>
+      <point x="90" y="187" type="line"/>
+      <point x="281" y="187" type="line"/>
+      <point x="281" y="124.667"/>
+      <point x="281" y="62.333"/>
+      <point x="281" y="0" type="curve"/>
+      <point x="323" y="0" type="line"/>
+      <point x="323" y="187" type="line"/>
+      <point x="516" y="187" type="line"/>
+      <point x="516" y="224" type="line"/>
+      <point x="323" y="224" type="line"/>
+      <point x="323" y="313" type="line"/>
+      <point x="516" y="313" type="line"/>
+      <point x="516" y="350" type="line"/>
+      <point x="346" y="350" type="line"/>
+      <point x="567" y="709" type="line"/>
+      <point x="519" y="709" type="line"/>
+      <point x="303" y="353" type="line"/>
+      <point x="86" y="709" type="line"/>
+      <point x="36" y="709" type="line"/>
+      <point x="110" y="589.333"/>
+      <point x="184" y="469.667"/>
+      <point x="258" y="350" type="curve"/>
+      <point x="90" y="350" type="line"/>
+      <point x="90" y="313" type="line"/>
+      <point x="281" y="313" type="line"/>
+    </contour>
+  </outline>
+</glyph>

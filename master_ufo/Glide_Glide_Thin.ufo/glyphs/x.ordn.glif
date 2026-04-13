@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="x.ordn" format="2">
+  <advance width="336"/>
+  <outline>
+    <contour>
+      <point x="132" y="411.667"/>
+      <point x="168" y="460" type="curve"/>
+      <point x="276" y="315" type="line"/>
+      <point x="319" y="315" type="line"/>
+      <point x="275.667" y="372"/>
+      <point x="232.333" y="429"/>
+      <point x="189" y="486" type="curve"/>
+      <point x="313" y="651" type="line"/>
+      <point x="270" y="651" type="line"/>
+      <point x="168" y="513" type="line"/>
+      <point x="66" y="651" type="line"/>
+      <point x="23" y="651" type="line"/>
+      <point x="64.333" y="596"/>
+      <point x="105.667" y="541"/>
+      <point x="147" y="486" type="curve"/>
+      <point x="17" y="315" type="line"/>
+      <point x="60" y="315" type="line"/>
+      <point x="96" y="363.333"/>
+    </contour>
+  </outline>
+</glyph>

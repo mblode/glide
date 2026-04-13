@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="a.ordn.ss08" format="2">
+  <advance width="440"/>
+  <outline>
+    <contour>
+      <point x="321" y="581"/>
+      <point x="321" y="546" type="curve" smooth="yes"/>
+      <point x="321" y="491"/>
+      <point x="289" y="467"/>
+      <point x="260" y="467" type="curve" smooth="yes"/>
+      <point x="233" y="467"/>
+      <point x="211" y="486"/>
+      <point x="211" y="521" type="curve" smooth="yes"/>
+      <point x="211" y="561"/>
+      <point x="236" y="599"/>
+      <point x="273" y="599" type="curve" smooth="yes"/>
+      <point x="301" y="599"/>
+    </contour>
+    <contour>
+      <point x="287" y="717"/>
+      <point x="259" y="717" type="curve" smooth="yes"/>
+      <point x="158" y="717"/>
+      <point x="81" y="630"/>
+      <point x="81" y="509" type="curve" smooth="yes"/>
+      <point x="81" y="417"/>
+      <point x="137" y="353"/>
+      <point x="217" y="353" type="curve" smooth="yes"/>
+      <point x="260" y="353"/>
+      <point x="286" y="372"/>
+      <point x="301" y="396" type="curve"/>
+      <point x="298" y="381"/>
+      <point x="299" y="369"/>
+      <point x="299" y="358" type="curve"/>
+      <point x="337.66667" y="358"/>
+      <point x="376.33333" y="358"/>
+      <point x="415" y="358" type="curve"/>
+      <point x="415" y="377"/>
+      <point x="417" y="405"/>
+      <point x="424" y="432" type="curve" smooth="yes"/>
+      <point x="443.66667" y="524.33333"/>
+      <point x="463.33333" y="616.66667"/>
+      <point x="483" y="709" type="curve"/>
+      <point x="359" y="709" type="line"/>
+      <point x="352" y="675" type="line"/>
+      <point x="349.75" y="679.75"/>
+      <point x="346.3125" y="684.75"/>
+      <point x="341.54688" y="689.57812" type="curve" smooth="yes"/>
+      <point x="336.78125" y="694.40625"/>
+      <point x="330.6875" y="699.0625"/>
+      <point x="323.125" y="703.125" type="curve" smooth="yes"/>
+      <point x="308" y="711.25"/>
+    </contour>
+  </outline>
+</glyph>

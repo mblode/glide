@@ -1,0 +1,109 @@
+{
+  "family": "roman",
+  "weights": {
+    "100": {
+      "common_glyphs": 106,
+      "mismatched_point_count": 99,
+      "glyphs_with_deviation": 6,
+      "glyphs_with_area_diff_pct": 46,
+      "worst_deviations": {
+        "dollar.tf": 369.01,
+        "t": 343.31,
+        "guillemotright": 156.71,
+        "rcaron.ss03": 136.33,
+        "racute.ss03": 134.5,
+        "r.ss03": 115.6
+      },
+      "worst_area_diffs_pct": {
+        "utilde": 64.08,
+        "Scedilla": 42.05,
+        "pi": 39.85,
+        "Uogonek": 38.39,
+        "three": 38.34,
+        "IJ": 37.9,
+        "rcaron.ss03": 37.72,
+        "uogonek": 35.87,
+        "two": 35.25,
+        "scedilla": 34.95,
+        "tcaron": 34.11,
+        "tbar": 33.69,
+        "kgreenlandic": 33.04,
+        "racute.ss03": 33.0,
+        "onehalf": 31.4,
+        "uhungarumlaut": 30.31,
+        "ampersand.ss04": 27.79,
+        "napostrophe": 24.65,
+        "uni021B": 23.89,
+        "threequarters": 20.22
+      }
+    },
+    "400": {
+      "common_glyphs": 106,
+      "mismatched_point_count": 98,
+      "glyphs_with_deviation": 7,
+      "glyphs_with_area_diff_pct": 19,
+      "worst_deviations": {
+        "t": 334.11,
+        "cent.tf.ss08": 311.41,
+        "cent.ss08": 270.12,
+        "guillemotright": 265.72,
+        "rcaron.ss03": 117.6,
+        "r.ss03": 96.5,
+        "racute.ss03": 93.71
+      },
+      "worst_area_diffs_pct": {
+        "utilde": 63.92,
+        "uni021B": 16.56,
+        "six": 9.58,
+        "nine": 9.48,
+        "IJ": 9.38,
+        "Scedilla": 5.86,
+        "oe": 4.14,
+        "scedilla": 3.72,
+        "e": 2.13,
+        "uogonek": 2.11,
+        "uni0259": 2.05,
+        "edotaccent": 2.0,
+        "edieresis": 1.91,
+        "eacute": 1.89,
+        "egrave": 1.89,
+        "ebreve": 1.87,
+        "Uogonek": 1.81,
+        "ecircumflex": 1.77,
+        "ecaron": 1.76
+      }
+    },
+    "950": {
+      "common_glyphs": 106,
+      "mismatched_point_count": 103,
+      "glyphs_with_deviation": 2,
+      "glyphs_with_area_diff_pct": 46,
+      "worst_deviations": {
+        "guillemotright": 378.63,
+        "t": 348.56
+      },
+      "worst_area_diffs_pct": {
+        "utilde": 66.17,
+        "zero": 44.63,
+        "two": 13.81,
+        "three": 12.31,
+        "rcaron.ss03": 12.19,
+        "pi": 11.89,
+        "kgreenlandic": 11.47,
+        "uhungarumlaut": 11.37,
+        "Uogonek": 11.24,
+        "ampersand.ss04": 10.87,
+        "napostrophe": 9.77,
+        "uogonek": 9.18,
+        "onehalf": 9.06,
+        "tcaron": 8.74,
+        "tbar": 8.54,
+        "r.ss03": 8.38,
+        "threequarters": 7.99,
+        "cent": 7.15,
+        "cent.tf": 7.15,
+        "racute.ss03": 7.05
+      }
+    }
+  }
+}

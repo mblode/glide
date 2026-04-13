@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="AEacute" format="2">
+  <advance width="1031"/>
+  <unicode hex="01FC"/>
+  <outline>
+    <contour>
+      <point x="977" y="0" type="line"/>
+      <point x="977" y="165" type="line"/>
+      <point x="707" y="165" type="line"/>
+      <point x="707" y="279" type="line"/>
+      <point x="951" y="279" type="line"/>
+      <point x="951" y="435" type="line"/>
+      <point x="707" y="435" type="line"/>
+      <point x="707" y="547" type="line"/>
+      <point x="975" y="547" type="line"/>
+      <point x="975" y="709" type="line"/>
+      <point x="415" y="709" type="line"/>
+      <point x="-5" y="0" type="line"/>
+      <point x="205" y="0" type="line"/>
+      <point x="291" y="153" type="line"/>
+      <point x="521" y="153" type="line"/>
+      <point x="521" y="102"/>
+      <point x="521" y="51"/>
+      <point x="521" y="0" type="curve"/>
+    </contour>
+    <contour>
+      <point x="372" y="298" type="line"/>
+      <point x="521" y="554" type="line"/>
+      <point x="521" y="468.667"/>
+      <point x="521" y="383.333"/>
+      <point x="521" y="298" type="curve"/>
+    </contour>
+    <contour>
+      <point x="760" y="901" type="line"/>
+      <point x="550" y="901" type="line"/>
+      <point x="460" y="758" type="line"/>
+      <point x="512.667" y="758"/>
+      <point x="565.333" y="758"/>
+      <point x="618" y="758" type="curve"/>
+    </contour>
+  </outline>
+</glyph>

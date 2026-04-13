@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Gbreve.ss01" format="2">
+  <advance width="773"/>
+  <outline>
+    <contour>
+      <point x="225" y="-15"/>
+      <point x="404" y="-15" type="curve" smooth="yes"/>
+      <point x="620" y="-15"/>
+      <point x="730" y="134"/>
+      <point x="730" y="314" type="curve" smooth="yes"/>
+      <point x="730" y="322"/>
+      <point x="730" y="331"/>
+      <point x="729" y="339" type="curve"/>
+      <point x="344" y="339" type="line"/>
+      <point x="344" y="251" type="line"/>
+      <point x="630" y="251" type="line"/>
+      <point x="617" y="154"/>
+      <point x="536" y="74"/>
+      <point x="404" y="74" type="curve" smooth="yes"/>
+      <point x="272" y="74"/>
+      <point x="148" y="167"/>
+      <point x="148" y="355" type="curve" smooth="yes"/>
+      <point x="148" y="543"/>
+      <point x="272" y="634"/>
+      <point x="404" y="634" type="curve" smooth="yes"/>
+      <point x="519" y="634"/>
+      <point x="597" y="577"/>
+      <point x="628" y="468" type="curve"/>
+      <point x="719" y="499" type="line"/>
+      <point x="681" y="636"/>
+      <point x="562" y="724"/>
+      <point x="404" y="724" type="curve" smooth="yes"/>
+      <point x="225" y="724"/>
+      <point x="48" y="591"/>
+      <point x="48" y="355" type="curve" smooth="yes"/>
+      <point x="48" y="118"/>
+    </contour>
+    <contour>
+      <point x="454" y="827"/>
+      <point x="400" y="827" type="curve" smooth="yes"/>
+      <point x="345" y="827"/>
+      <point x="327" y="860"/>
+      <point x="324" y="883" type="curve"/>
+      <point x="243" y="883" type="line"/>
+      <point x="246" y="819"/>
+      <point x="301" y="754"/>
+      <point x="400" y="754" type="curve" smooth="yes"/>
+      <point x="502" y="754"/>
+      <point x="551" y="819"/>
+      <point x="556" y="883" type="curve"/>
+      <point x="475" y="883" type="line"/>
+      <point x="472" y="860"/>
+    </contour>
+  </outline>
+</glyph>

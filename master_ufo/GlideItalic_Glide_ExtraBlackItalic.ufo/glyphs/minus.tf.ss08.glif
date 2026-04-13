@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="minus.tf.ss08" format="2">
+  <advance width="604"/>
+  <outline>
+    <contour>
+      <point x="60" y="325.66667"/>
+      <point x="60" y="278" type="curve"/>
+      <point x="561" y="278" type="line"/>
+      <point x="561" y="421" type="line"/>
+      <point x="394" y="421"/>
+      <point x="227" y="421"/>
+      <point x="60" y="421" type="curve"/>
+      <point x="60" y="373.33333"/>
+    </contour>
+  </outline>
+</glyph>

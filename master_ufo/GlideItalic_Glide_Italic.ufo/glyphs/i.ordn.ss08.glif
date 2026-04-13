@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="i.ordn.ss08" format="2">
+  <advance width="190"/>
+  <outline>
+    <contour>
+      <point x="178" y="784"/>
+      <point x="205" y="784" type="curve" smooth="yes"/>
+      <point x="232" y="784"/>
+      <point x="260" y="808"/>
+      <point x="260" y="839" type="curve" smooth="yes"/>
+      <point x="260" y="864"/>
+      <point x="242" y="884"/>
+      <point x="214" y="884" type="curve" smooth="yes"/>
+      <point x="186" y="884"/>
+      <point x="159" y="860"/>
+      <point x="159" y="828" type="curve" smooth="yes"/>
+      <point x="159" y="804"/>
+    </contour>
+    <contour>
+      <point x="221" y="709" type="line"/>
+      <point x="147" y="709" type="line"/>
+      <point x="122.66667" y="596"/>
+      <point x="98.33333" y="483"/>
+      <point x="74" y="370" type="curve"/>
+      <point x="149" y="370" type="line"/>
+    </contour>
+  </outline>
+</glyph>

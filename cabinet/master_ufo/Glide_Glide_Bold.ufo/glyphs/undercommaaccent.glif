@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="undercommaaccent" format="2">
+  <advance width="187"/>
+  <note>
+undercommaaccent
+</note>
+  <outline>
+    <contour>
+      <point x="30.042" y="-62.25"/>
+      <point x="36.5" y="-56.5" type="curve" smooth="yes"/>
+      <point x="49.417" y="-45"/>
+      <point x="67.667" y="-38"/>
+      <point x="89" y="-38" type="curve" smooth="yes"/>
+      <point x="111.667" y="-38"/>
+      <point x="130.833" y="-46"/>
+      <point x="146.5" y="-62" type="curve" smooth="yes"/>
+      <point x="162.167" y="-78"/>
+      <point x="170" y="-99"/>
+      <point x="170" y="-125" type="curve" smooth="yes"/>
+      <point x="170" y="-177"/>
+      <point x="150" y="-208.333"/>
+      <point x="122" y="-227" type="curve" smooth="yes"/>
+      <point x="94" y="-245.667"/>
+      <point x="58.333" y="-252"/>
+      <point x="29" y="-252" type="curve"/>
+      <point x="29" y="-236"/>
+      <point x="29" y="-220"/>
+      <point x="29" y="-204" type="curve"/>
+      <point x="77" y="-204"/>
+      <point x="106" y="-183.667"/>
+      <point x="110" y="-157" type="curve"/>
+      <point x="106" y="-159.667"/>
+      <point x="95.667" y="-164"/>
+      <point x="81" y="-164" type="curve" smooth="yes"/>
+      <point x="39.667" y="-164"/>
+      <point x="16" y="-138"/>
+      <point x="16" y="-102" type="curve" smooth="yes"/>
+      <point x="16" y="-93"/>
+      <point x="17.896" y="-84.5"/>
+      <point x="21.406" y="-76.812" type="curve" smooth="yes"/>
+      <point x="24.917" y="-69.125"/>
+    </contour>
+  </outline>
+</glyph>

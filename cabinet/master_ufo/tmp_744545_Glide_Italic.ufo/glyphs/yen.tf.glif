@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="yen.tf" format="2">
+  <advance width="560"/>
+  <note>
+yen.tf
+</note>
+  <outline>
+    <contour>
+      <point x="262" y="154" type="line"/>
+      <point x="230" y="0" type="line"/>
+      <point x="133" y="0" type="line"/>
+      <point x="165" y="154" type="line"/>
+      <point x="-4" y="154" type="line"/>
+      <point x="12" y="226" type="line"/>
+      <point x="180" y="226" type="line"/>
+      <point x="197" y="306" type="line"/>
+      <point x="29" y="306" type="line"/>
+      <point x="34" y="329.667"/>
+      <point x="39" y="353.333"/>
+      <point x="44" y="377" type="curve"/>
+      <point x="166" y="377" type="line"/>
+      <point x="60" y="648" type="line"/>
+      <point x="170" y="648" type="line"/>
+      <point x="262" y="386" type="line"/>
+      <point x="456" y="648" type="line"/>
+      <point x="569" y="648" type="line"/>
+      <point x="356" y="377" type="line"/>
+      <point x="478" y="377" type="line"/>
+      <point x="463" y="306" type="line"/>
+      <point x="294" y="306" type="line"/>
+      <point x="277" y="226" type="line"/>
+      <point x="446" y="226" type="line"/>
+      <point x="430" y="154" type="line"/>
+    </contour>
+  </outline>
+</glyph>

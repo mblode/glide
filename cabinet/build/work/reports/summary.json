@@ -1,0 +1,105 @@
+{
+  "manifest": "/Users/mblode/Code/mblode/glide/build/work/manifests/glide-root-plus-seeded-italic.json",
+  "family_name": "Glide",
+  "mode": "four-master",
+  "sample_dir": "/Users/mblode/Code/mblode/glide/build/work/fontlab-ready",
+  "output_dir": "/Users/mblode/Code/mblode/glide/build/work/output",
+  "families": [
+    {
+      "family_key": "roman",
+      "default_style": "Regular",
+      "sources": [
+        "glide-root-regular.ttf",
+        "glide-root-medium.ttf",
+        "glide-root-bold.ttf",
+        "glide-root-black.ttf"
+      ],
+      "common_glyphs": 472,
+      "dropped_by_source": {
+        "glide-root-regular.ttf": 0,
+        "glide-root-medium.ttf": 0,
+        "glide-root-bold.ttf": 0,
+        "glide-root-black.ttf": 0
+      },
+      "decomposed_by_source": {
+        "glide-root-regular.ttf": 0,
+        "glide-root-medium.ttf": 0,
+        "glide-root-bold.ttf": 0,
+        "glide-root-black.ttf": 0
+      },
+      "compatibility_glyphs": 4,
+      "compatibility_issue_types": {
+        "wrong_start_point": 12,
+        "underweight": 9,
+        "contour_order": 1
+      },
+      "compatibility_severity": {
+        "moderate": 22
+      },
+      "ttf_output": "/Users/mblode/Code/mblode/glide/build/work/output/glide-cli-roman-variable.ttf",
+      "woff2_output": "/Users/mblode/Code/mblode/glide/build/work/output/glide-cli-roman-variable.woff2",
+      "output_glyphs": 472,
+      "skipped_glyphs": 19,
+      "varying_glyphs": 453,
+      "frozen_glyphs": 19,
+      "fvar_axes": [
+        {
+          "tag": "wght",
+          "minimum": 400.0,
+          "default": 400.0,
+          "maximum": 900.0
+        }
+      ],
+      "build_log": "/Users/mblode/Code/mblode/glide/build/work/reports/roman-build.log",
+      "compatibility_report": "/Users/mblode/Code/mblode/glide/build/work/reports/roman-compat.json"
+    },
+    {
+      "family_key": "italic",
+      "default_style": "Italic",
+      "sources": [
+        "glide-root-regularItalic.ttf",
+        "glide-root-mediumItalic.ttf",
+        "glide-root-boldItalic.ttf",
+        "glide-root-blackItalic.ttf"
+      ],
+      "common_glyphs": 472,
+      "dropped_by_source": {
+        "glide-root-regularItalic.ttf": 0,
+        "glide-root-mediumItalic.ttf": 0,
+        "glide-root-boldItalic.ttf": 0,
+        "glide-root-blackItalic.ttf": 0
+      },
+      "decomposed_by_source": {
+        "glide-root-regularItalic.ttf": 0,
+        "glide-root-mediumItalic.ttf": 0,
+        "glide-root-boldItalic.ttf": 0,
+        "glide-root-blackItalic.ttf": 0
+      },
+      "compatibility_glyphs": 9,
+      "compatibility_issue_types": {
+        "contour_order": 3,
+        "wrong_start_point": 13,
+        "underweight": 12
+      },
+      "compatibility_severity": {
+        "moderate": 28
+      },
+      "ttf_output": "/Users/mblode/Code/mblode/glide/build/work/output/glide-cli-italic-variable.ttf",
+      "woff2_output": "/Users/mblode/Code/mblode/glide/build/work/output/glide-cli-italic-variable.woff2",
+      "output_glyphs": 472,
+      "skipped_glyphs": 3,
+      "varying_glyphs": 469,
+      "frozen_glyphs": 3,
+      "fvar_axes": [
+        {
+          "tag": "wght",
+          "minimum": 400.0,
+          "default": 400.0,
+          "maximum": 900.0
+        }
+      ],
+      "build_log": "/Users/mblode/Code/mblode/glide/build/work/reports/italic-build.log",
+      "compatibility_report": "/Users/mblode/Code/mblode/glide/build/work/reports/italic-compat.json"
+    }
+  ]
+}

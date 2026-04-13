@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="macron.uc" format="2">
+  <advance width="330"/>
+  <note>
+macron.uc
+</note>
+  <outline>
+    <contour>
+      <point x="56.667" y="776"/>
+      <point x="-43" y="776" type="curve"/>
+      <point x="-23" y="869" type="line"/>
+      <point x="276" y="869" type="line"/>
+      <point x="256" y="776" type="line"/>
+      <point x="156.333" y="776"/>
+    </contour>
+  </outline>
+</glyph>

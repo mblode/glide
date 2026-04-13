@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="greater.ss08" format="2">
+  <advance width="525"/>
+  <outline>
+    <contour>
+      <point x="487" y="305" type="curve"/>
+      <point x="487" y="390" type="line"/>
+      <point x="75" y="596" type="line"/>
+      <point x="75" y="501" type="line"/>
+      <point x="179" y="450"/>
+      <point x="283" y="399"/>
+      <point x="387" y="348" type="curve"/>
+      <point x="75" y="195" type="line"/>
+      <point x="75" y="100" type="line"/>
+      <point x="212.333" y="168.333"/>
+      <point x="349.667" y="236.667"/>
+    </contour>
+  </outline>
+</glyph>

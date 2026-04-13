@@ -1,0 +1,100 @@
+{
+  "family": "italic",
+  "weights": {
+    "100": {
+      "common_glyphs": 90,
+      "mismatched_point_count": 87,
+      "glyphs_with_deviation": 2,
+      "glyphs_with_area_diff_pct": 33,
+      "worst_deviations": {
+        "cent": 254.92,
+        "r": 129.94
+      },
+      "worst_area_diffs_pct": {
+        "s": 44.0,
+        "two": 42.08,
+        "s.ordn": 36.12,
+        "s.ordn.ss08": 36.12,
+        "scedilla": 32.63,
+        "onehalf": 31.87,
+        "t": 31.0,
+        "onehalf.ss08": 30.83,
+        "napostrophe": 30.45,
+        "tcaron": 25.79,
+        "commaturn": 23.86,
+        "r.ss03": 22.14,
+        "racute.ss03": 16.79,
+        "rcaron.ss03": 14.58,
+        "cent.tf": 12.09,
+        "cent": 12.02,
+        "ae": 9.47,
+        "aeacute": 9.21,
+        "cent.tf.ss08": 8.86,
+        "cent.ss08": 8.76
+      }
+    },
+    "400": {
+      "common_glyphs": 90,
+      "mismatched_point_count": 85,
+      "glyphs_with_deviation": 4,
+      "glyphs_with_area_diff_pct": 18,
+      "worst_deviations": {
+        "dollar.tf": 359.94,
+        "cent.tf": 306.63,
+        "cent.tf.ss08": 298.57,
+        "r": 225.84
+      },
+      "worst_area_diffs_pct": {
+        "uni021B": 16.07,
+        "s": 10.27,
+        "s.ordn": 9.75,
+        "s.ordn.ss08": 9.75,
+        "uni018F": 8.34,
+        "Scedilla": 4.11,
+        "scedilla": 4.06,
+        "ae": 2.82,
+        "aeacute": 2.67,
+        "onehalf": 2.42,
+        "IJ": 2.38,
+        "onehalf.ss08": 2.32,
+        "a": 1.58,
+        "agrave": 1.48,
+        "aacute": 1.47,
+        "amacron": 1.43,
+        "aring": 1.39,
+        "aringacute": 1.3
+      }
+    },
+    "950": {
+      "common_glyphs": 90,
+      "mismatched_point_count": 88,
+      "glyphs_with_deviation": 1,
+      "glyphs_with_area_diff_pct": 40,
+      "worst_deviations": {
+        "r": 230.26
+      },
+      "worst_area_diffs_pct": {
+        "commaturn": 14.11,
+        "two": 10.83,
+        "napostrophe": 10.63,
+        "r.ss03": 10.09,
+        "t": 9.45,
+        "cent.tf": 8.4,
+        "cent": 8.11,
+        "racute.ss03": 7.92,
+        "dollar.tf": 7.73,
+        "tcaron": 7.72,
+        "cent.ss08": 7.64,
+        "cent.tf.ss08": 7.63,
+        "dollar": 7.58,
+        "rcaron.ss03": 7.22,
+        "dollar.ss08": 7.01,
+        "dollar.tf.ss08": 7.01,
+        "onehalf.ss08": 6.49,
+        "onehalf": 6.34,
+        "g": 6.03,
+        "ampersand": 5.67
+      }
+    }
+  }
+}

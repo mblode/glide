@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="periodcentered" format="2">
+  <advance width="283"/>
+  <unicode hex="00B7"/>
+  <note>
+periodcentered
+</note>
+  <outline>
+    <contour>
+      <point x="56.833" y="348.833"/>
+      <point x="73.5" y="365.5" type="curve" smooth="yes"/>
+      <point x="90.167" y="382.167"/>
+      <point x="113.333" y="394"/>
+      <point x="140" y="394" type="curve" smooth="yes"/>
+      <point x="163.333" y="394"/>
+      <point x="182" y="386.667"/>
+      <point x="196" y="372" type="curve" smooth="yes"/>
+      <point x="210" y="357.333"/>
+      <point x="217" y="339.667"/>
+      <point x="217" y="319" type="curve" smooth="yes"/>
+      <point x="217" y="291.667"/>
+      <point x="207.833" y="269.167"/>
+      <point x="189.5" y="251.5" type="curve" smooth="yes"/>
+      <point x="171.167" y="233.833"/>
+      <point x="149.333" y="225"/>
+      <point x="124" y="225" type="curve" smooth="yes"/>
+      <point x="100.667" y="225"/>
+      <point x="81.833" y="232.333"/>
+      <point x="67.5" y="247" type="curve" smooth="yes"/>
+      <point x="53.167" y="261.667"/>
+      <point x="46" y="279.667"/>
+      <point x="46" y="301" type="curve" smooth="yes"/>
+      <point x="46" y="325"/>
+    </contour>
+  </outline>
+</glyph>

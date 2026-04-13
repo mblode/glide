@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="one.numr.ss08" format="2">
+  <advance width="277"/>
+  <outline>
+    <contour>
+      <point x="157" y="639"/>
+      <point x="93" y="636" type="curve"/>
+      <point x="76" y="558" type="line"/>
+      <point x="105.66667" y="558"/>
+      <point x="135.33333" y="558"/>
+      <point x="165" y="558" type="curve"/>
+      <point x="149" y="483"/>
+      <point x="133" y="408"/>
+      <point x="117" y="333" type="curve"/>
+      <point x="242" y="333" type="line"/>
+      <point x="322" y="709" type="line"/>
+      <point x="214" y="709" type="line"/>
+      <point x="198" y="670"/>
+    </contour>
+  </outline>
+</glyph>

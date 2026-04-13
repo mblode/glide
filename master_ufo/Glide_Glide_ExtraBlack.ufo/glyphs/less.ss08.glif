@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="less.ss08" format="2">
+  <advance width="532"/>
+  <outline>
+    <contour>
+      <point x="470" y="223" type="curve"/>
+      <point x="187" y="350" type="line"/>
+      <point x="470" y="477" type="line"/>
+      <point x="470" y="635" type="line"/>
+      <point x="323.667" y="565"/>
+      <point x="177.333" y="495"/>
+      <point x="31" y="425" type="curve"/>
+      <point x="31" y="273" type="line"/>
+      <point x="470" y="64" type="line"/>
+      <point x="470" y="117"/>
+      <point x="470" y="170"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="yen.tf" format="2">
+  <advance width="604"/>
+  <outline>
+    <contour>
+      <point x="392" y="82"/>
+      <point x="392" y="123" type="curve"/>
+      <point x="555" y="123" type="line"/>
+      <point x="555" y="231" type="line"/>
+      <point x="392" y="231" type="line"/>
+      <point x="392" y="286" type="line"/>
+      <point x="555" y="286" type="line"/>
+      <point x="555" y="395" type="line"/>
+      <point x="459" y="395" type="line"/>
+      <point x="592" y="649" type="line"/>
+      <point x="396" y="649" type="line"/>
+      <point x="305" y="441" type="line"/>
+      <point x="214" y="649" type="line"/>
+      <point x="11" y="649" type="line"/>
+      <point x="144" y="395" type="line"/>
+      <point x="54" y="395" type="line"/>
+      <point x="54" y="286" type="line"/>
+      <point x="212" y="286" type="line"/>
+      <point x="212" y="231" type="line"/>
+      <point x="54" y="231" type="line"/>
+      <point x="54" y="123" type="line"/>
+      <point x="212" y="123" type="line"/>
+      <point x="212" y="0" type="line"/>
+      <point x="392" y="0" type="line"/>
+      <point x="392" y="41"/>
+    </contour>
+  </outline>
+</glyph>

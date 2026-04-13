@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="seven.tf" format="2">
+  <advance width="587"/>
+  <note>
+seven.tf
+</note>
+  <outline>
+    <contour>
+      <point x="78" y="649" type="curve"/>
+      <point x="597" y="649" type="line"/>
+      <point x="571" y="523" type="line"/>
+      <point x="557.667" y="514.333"/>
+      <point x="535.667" y="497"/>
+      <point x="505" y="471" type="curve" smooth="yes"/>
+      <point x="443.667" y="419"/>
+      <point x="368" y="332.667"/>
+      <point x="296" y="210" type="curve" smooth="yes"/>
+      <point x="260" y="148.667"/>
+      <point x="230.333" y="78.667"/>
+      <point x="207" y="0" type="curve"/>
+      <point x="40" y="0" type="line"/>
+      <point x="58.667" y="69.333"/>
+      <point x="83.667" y="133.167"/>
+      <point x="115" y="191.5" type="curve" smooth="yes"/>
+      <point x="177.667" y="308.167"/>
+      <point x="246.167" y="397.333"/>
+      <point x="305.5" y="456" type="curve" smooth="yes"/>
+      <point x="335.167" y="485.333"/>
+      <point x="358" y="506"/>
+      <point x="374" y="518" type="curve"/>
+      <point x="51" y="518" type="line"/>
+      <point x="60" y="561.667"/>
+      <point x="69" y="605.333"/>
+    </contour>
+  </outline>
+</glyph>

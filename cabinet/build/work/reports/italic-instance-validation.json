@@ -1,0 +1,66 @@
+{
+  "400": {
+    "master": "glide-root-regularItalic.ttf",
+    "common_glyphs": 472,
+    "compared": 471,
+    "mismatched_point_count": 0,
+    "glyphs_with_deviation": 0,
+    "glyphs_with_area_diff_pct": 0,
+    "stem_width_instance": 248.0,
+    "stem_width_master": 248.0
+  },
+  "500": {
+    "master": "glide-root-mediumItalic.ttf",
+    "common_glyphs": 472,
+    "compared": 471,
+    "mismatched_point_count": 0,
+    "glyphs_with_deviation": 0,
+    "glyphs_with_area_diff_pct": 0,
+    "stem_width_instance": 259.0,
+    "stem_width_master": 259.0
+  },
+  "700": {
+    "master": "glide-root-boldItalic.ttf",
+    "common_glyphs": 472,
+    "compared": 471,
+    "mismatched_point_count": 0,
+    "glyphs_with_deviation": 161,
+    "glyphs_with_area_diff_pct": 14,
+    "stem_width_instance": 284.0,
+    "stem_width_master": 283.0,
+    "worst_deviations": {
+      "caron.alt": 1.21,
+      "caron.alt.uc": 1.0,
+      "macron": 1.0,
+      "uni02C9": 1.0,
+      "uni25CF": 1.0,
+      "uni2713": 0.9,
+      "onesuperior": 0.87,
+      "equal.tf": 0.85,
+      "uni00AD.case": 0.85,
+      "logicalnot.tf": 0.8
+    },
+    "worst_area_diffs_pct": {
+      "onesuperior": 1.54,
+      "two.numr": 1.37,
+      "r.ss03": 1.36,
+      "quotedblleft": 1.35,
+      "dotaccent": 1.34,
+      "logicalnot.tf": 1.22,
+      "uni00AD.case": 1.22,
+      "r": 1.09,
+      "logicalnot": 1.06,
+      "ocircumflex": 1.06
+    }
+  },
+  "900": {
+    "master": "glide-root-blackItalic.ttf",
+    "common_glyphs": 472,
+    "compared": 471,
+    "mismatched_point_count": 0,
+    "glyphs_with_deviation": 0,
+    "glyphs_with_area_diff_pct": 0,
+    "stem_width_instance": 306.0,
+    "stem_width_master": 306.0
+  }
+}

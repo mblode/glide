@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Eacute" format="2">
+  <advance width="581"/>
+  <unicode hex="00C9"/>
+  <note>
+Eacute
+</note>
+  <outline>
+    <contour>
+      <point x="188" y="400" type="line"/>
+      <point x="490" y="400" type="line"/>
+      <point x="490" y="308" type="line"/>
+      <point x="188" y="308" type="line"/>
+      <point x="188" y="91" type="line"/>
+      <point x="521" y="91" type="line"/>
+      <point x="521" y="0" type="line"/>
+      <point x="377.333" y="0"/>
+      <point x="233.667" y="0"/>
+      <point x="90" y="0" type="curve"/>
+      <point x="90" y="709" type="line"/>
+      <point x="521" y="709" type="line"/>
+      <point x="521" y="618" type="line"/>
+      <point x="188" y="618" type="line"/>
+    </contour>
+    <contour>
+      <point x="373.667" y="798.667"/>
+      <point x="328" y="759" type="curve"/>
+      <point x="234" y="759" type="line"/>
+      <point x="335" y="878" type="line"/>
+      <point x="465" y="878" type="line"/>
+      <point x="419.333" y="838.333"/>
+    </contour>
+  </outline>
+</glyph>

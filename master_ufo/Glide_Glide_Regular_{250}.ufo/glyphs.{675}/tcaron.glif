@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="tcaron" format="2">
+  <advance width="382"/>
+  <unicode hex="0165"/>
+  <outline>
+    <contour>
+      <point x="430.32936" y="688.9539"/>
+      <point x="456.58026" y="757.86286" type="curve"/>
+      <point x="327.37459" y="757.86286" type="line"/>
+      <point x="292.91974" y="551.13714" type="line"/>
+      <point x="321.22194" y="551.13714"/>
+      <point x="349.52413" y="551.13714"/>
+      <point x="377.82633" y="551.13714" type="curve"/>
+      <point x="404.07723" y="620.0461"/>
+    </contour>
+    <contour>
+      <point x="228.19042" y="505.26013" type="curve"/>
+      <point x="228.19042" y="678.20349" type="line"/>
+      <point x="131.30319" y="678.20349" type="line"/>
+      <point x="131.30319" y="589.45624" type="line" smooth="yes"/>
+      <point x="131.30319" y="540.53148"/>
+      <point x="106.51809" y="505.26013"/>
+      <point x="47.93511" y="505.26013" type="curve" smooth="yes"/>
+      <point x="18.64362" y="505.26013" type="line"/>
+      <point x="18.64362" y="408.54839" type="line"/>
+      <point x="122.29043" y="408.54839" type="line"/>
+      <point x="122.29043" y="108.17309" type="line" smooth="yes"/>
+      <point x="122.29043" y="8.04799"/>
+      <point x="179.74681" y="-47.70349"/>
+      <point x="273.25425" y="-47.70349" type="curve" smooth="yes"/>
+      <point x="309.30531" y="-47.70349"/>
+      <point x="336.34361" y="-40.87678"/>
+      <point x="345.35638" y="-37.46342" type="curve"/>
+      <point x="345.35638" y="53.5594" type="line"/>
+      <point x="336.34361" y="50.14604"/>
+      <point x="317.19148" y="49.00826"/>
+      <point x="303.67233" y="49.00826" type="curve" smooth="yes"/>
+      <point x="248.46915" y="49.00826"/>
+      <point x="228.19042" y="74.03953"/>
+      <point x="228.19042" y="124.10208" type="curve" smooth="yes"/>
+      <point x="228.19042" y="408.54839" type="line"/>
+      <point x="345.35638" y="408.54839" type="line"/>
+      <point x="345.35638" y="505.26013" type="line"/>
+      <point x="306.30068" y="505.26013"/>
+      <point x="267.24612" y="505.26013"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.mblode.variable_gen.generated_brace</key>
+      <integer>1</integer>
+    </dict>
+  </lib>
+</glyph>

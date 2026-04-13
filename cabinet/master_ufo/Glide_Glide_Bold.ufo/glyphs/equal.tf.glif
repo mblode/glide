@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="equal.tf" format="2">
+  <advance width="578"/>
+  <note>
+equal.tf
+</note>
+  <outline>
+    <contour>
+      <point x="208.667" y="341"/>
+      <point x="47" y="341" type="curve"/>
+      <point x="47" y="448" type="line"/>
+      <point x="532" y="448" type="line"/>
+      <point x="532" y="341" type="line"/>
+      <point x="370.333" y="341"/>
+    </contour>
+    <contour>
+      <point x="208.667" y="142"/>
+      <point x="47" y="142" type="curve"/>
+      <point x="47" y="250" type="line"/>
+      <point x="532" y="250" type="line"/>
+      <point x="532" y="142" type="line"/>
+      <point x="370.333" y="142"/>
+    </contour>
+  </outline>
+</glyph>

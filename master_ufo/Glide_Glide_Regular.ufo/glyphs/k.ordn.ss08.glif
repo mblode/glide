@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="k.ordn.ss08" format="2">
+  <advance width="381"/>
+  <outline>
+    <contour>
+      <point x="229" y="566" type="curve"/>
+      <point x="370" y="709" type="line"/>
+      <point x="269" y="709" type="line"/>
+      <point x="132" y="567" type="line"/>
+      <point x="132" y="877" type="line"/>
+      <point x="58" y="877" type="line"/>
+      <point x="58" y="370" type="line"/>
+      <point x="132" y="370" type="line"/>
+      <point x="132" y="468" type="line"/>
+      <point x="176" y="513" type="line"/>
+      <point x="280" y="370" type="line"/>
+      <point x="373" y="370" type="line"/>
+      <point x="325" y="435.333"/>
+      <point x="277" y="500.667"/>
+    </contour>
+  </outline>
+</glyph>

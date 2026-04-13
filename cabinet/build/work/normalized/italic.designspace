@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<designspace format="5.0">
+  <axes>
+    <axis tag="wght" name="Weight" minimum="400" maximum="900" default="400"/>
+  </axes>
+  <sources>
+    <source filename="italic-variable-kern/italic-variable-kern-italic-glide-root-regularItalic.ttf" name="Regular Italic" familyname="Glide" stylename="Regular Italic">
+      <lib copy="1"/>
+      <groups copy="1"/>
+      <features copy="1"/>
+      <info copy="1"/>
+      <location>
+        <dimension name="Weight" xvalue="400"/>
+      </location>
+    </source>
+    <source filename="italic-variable-kern/italic-variable-kern-italic-glide-root-mediumItalic.ttf" name="Medium Italic" familyname="Glide" stylename="Medium Italic">
+      <location>
+        <dimension name="Weight" xvalue="500"/>
+      </location>
+    </source>
+    <source filename="italic-variable-kern/italic-variable-kern-italic-glide-root-boldItalic.ttf" name="Bold Italic" familyname="Glide" stylename="Bold Italic">
+      <location>
+        <dimension name="Weight" xvalue="700"/>
+      </location>
+    </source>
+    <source filename="italic-variable-kern/italic-variable-kern-italic-glide-root-blackItalic.ttf" name="Black Italic" familyname="Glide" stylename="Black Italic">
+      <location>
+        <dimension name="Weight" xvalue="900"/>
+      </location>
+    </source>
+  </sources>
+  <instances>
+    <instance familyname="Glide" stylename="Regular Italic" postscriptfontname="Glide-RegularItalic" stylemapfamilyname="Glide" stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" xvalue="400"/>
+      </location>
+    </instance>
+    <instance familyname="Glide" stylename="Medium Italic" postscriptfontname="Glide-MediumItalic" stylemapfamilyname="Glide" stylemapstylename="bold italic">
+      <location>
+        <dimension name="Weight" xvalue="500"/>
+      </location>
+    </instance>
+    <instance familyname="Glide" stylename="Bold Italic" postscriptfontname="Glide-BoldItalic" stylemapfamilyname="Glide" stylemapstylename="bold italic">
+      <location>
+        <dimension name="Weight" xvalue="700"/>
+      </location>
+    </instance>
+    <instance familyname="Glide" stylename="Black Italic" postscriptfontname="Glide-BlackItalic" stylemapfamilyname="Glide" stylemapstylename="bold italic">
+      <location>
+        <dimension name="Weight" xvalue="900"/>
+      </location>
+    </instance>
+  </instances>
+</designspace>

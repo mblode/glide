@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="commaaccent" format="2">
+  <unicode hex="F6C3"/>
+  <outline>
+    <contour>
+      <point x="-49.33333" y="541.33333"/>
+      <point x="-52" y="528" type="curve"/>
+      <point x="-48.33333" y="528"/>
+      <point x="-44.66667" y="528"/>
+      <point x="-41" y="528" type="curve" smooth="yes"/>
+      <point x="-7" y="528"/>
+      <point x="24.5" y="540.5"/>
+      <point x="47.5" y="561.625" type="curve" smooth="yes"/>
+      <point x="70.5" y="582.75"/>
+      <point x="85" y="612.5"/>
+      <point x="85" y="647" type="curve" smooth="yes"/>
+      <point x="85" y="691"/>
+      <point x="54" y="707"/>
+      <point x="26" y="707" type="curve" smooth="yes"/>
+      <point x="-9" y="707"/>
+      <point x="-35" y="685"/>
+      <point x="-35" y="650" type="curve" smooth="yes"/>
+      <point x="-35" y="625"/>
+      <point x="-17" y="605"/>
+      <point x="12" y="605" type="curve" smooth="yes"/>
+      <point x="19" y="605"/>
+      <point x="26" y="606"/>
+      <point x="31" y="609" type="curve"/>
+      <point x="16" y="577"/>
+      <point x="-15" y="568"/>
+      <point x="-44" y="568" type="curve"/>
+      <point x="-46.66667" y="554.66667"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.originalWidth</key>
+      <integer>194</integer>
+    </dict>
+  </lib>
+</glyph>
