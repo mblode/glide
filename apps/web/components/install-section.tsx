@@ -7,6 +7,7 @@ import {
 import { useCallback, useState } from "react";
 
 import { CodeBlock } from "@/components/code-block";
+import { ENABLE_ITALIC } from "@/lib/flags";
 
 function SectionHeading({ children }: { children: React.ReactNode }) {
   return (
@@ -47,7 +48,7 @@ const INSTALL_MARKDOWN = `# Install Glide
 
 ## 1. Download the font files
 
-Download [glide-variable.woff2](https://glide.blode.co/glide-variable.woff2) and [glide-variable-italic.woff2](https://glide.blode.co/glide-variable-italic.woff2) and place them in your project's public/ directory.
+Download [glide-variable.woff2](https://glide.blode.co/glide-variable.woff2)${ENABLE_ITALIC ? " and [glide-variable-italic.woff2](https://glide.blode.co/glide-variable-italic.woff2)" : ""} and place them in your project's public/ directory.
 
 ## 2. Configure the font in your root layout
 
@@ -58,8 +59,7 @@ import localFont from "next/font/local";
 
 const glide = localFont({
   src: [
-    { path: "../public/glide-variable.woff2", style: "normal" },
-    { path: "../public/glide-variable-italic.woff2", style: "italic" },
+    { path: "../public/glide-variable.woff2", style: "normal" },${ENABLE_ITALIC ? '\n    { path: "../public/glide-variable-italic.woff2", style: "italic" },' : ""}
   ],
   variable: "--font-glide",
   weight: "400 900",
@@ -96,8 +96,7 @@ Glide is now your default sans-serif font. Use font-sans with any weight from 40
 \`\`\`tsx
 <p className="font-sans font-normal">Regular (400)</p>
 <p className="font-sans font-bold">Bold (700)</p>
-<p className="font-sans font-black">Black (900)</p>
-<p className="font-sans font-bold italic">Bold italic (700)</p>
+<p className="font-sans font-black">Black (900)</p>${ENABLE_ITALIC ? '\n<p className="font-sans font-bold italic">Bold italic (700)</p>' : ""}
 \`\`\`
 `;
 
@@ -144,15 +143,19 @@ export function InstallSection() {
             href="/glide-variable.woff2"
           >
             glide-variable.woff2
-          </a>{" "}
-          and{" "}
-          <a
-            className="font-medium text-foreground underline underline-offset-4 transition-colors hover:text-primary"
-            download="glide-variable-italic.woff2"
-            href="/glide-variable-italic.woff2"
-          >
-            glide-variable-italic.woff2
-          </a>{" "}
+          </a>
+          {ENABLE_ITALIC && (
+            <>
+              {" "}and{" "}
+              <a
+                className="font-medium text-foreground underline underline-offset-4 transition-colors hover:text-primary"
+                download="glide-variable-italic.woff2"
+                href="/glide-variable-italic.woff2"
+              >
+                glide-variable-italic.woff2
+              </a>
+            </>
+          )}{" "}
           and place them in your project&apos;s public/ directory.
         </p>
       </InstallStep>
@@ -166,8 +169,7 @@ export function InstallSection() {
 
 const glide = localFont({
   src: [
-    { path: "../public/glide-variable.woff2", style: "normal" },
-    { path: "../public/glide-variable-italic.woff2", style: "italic" },
+    { path: "../public/glide-variable.woff2", style: "normal" },${ENABLE_ITALIC ? '\n    { path: "../public/glide-variable-italic.woff2", style: "italic" },' : ""}
   ],
   variable: "--font-glide",
   weight: "400 900",
@@ -204,8 +206,7 @@ export default function RootLayout({
       >
         <CodeBlock>{`<p className="font-sans font-normal">Regular (400)</p>
 <p className="font-sans font-bold">Bold (700)</p>
-<p className="font-sans font-black">Black (900)</p>
-<p className="font-sans font-bold italic">Bold italic (700)</p>`}</CodeBlock>
+<p className="font-sans font-black">Black (900)</p>${ENABLE_ITALIC ? '\n<p className="font-sans font-bold italic">Bold italic (700)</p>' : ""}`}</CodeBlock>
       </InstallStep>
     </div>
   );

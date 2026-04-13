@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { CodeBlock } from "@/components/code-block";
 import { siteConfig } from "@/lib/config";
+import { ENABLE_ITALIC } from "@/lib/flags";
 
 type OS = "macos" | "windows" | "linux";
 
@@ -47,11 +48,15 @@ const INSTALL_STEPS: Record<OS, React.ReactNode> = {
         Select{" "}
         <code className="rounded bg-primary/10 px-1.5 py-0.5 font-mono text-xs text-primary">
           glide-variable.ttf
-        </code>{" "}
-        and{" "}
-        <code className="rounded bg-primary/10 px-1.5 py-0.5 font-mono text-xs text-primary">
-          glide-variable-italic.ttf
-        </code>{" "}
+        </code>
+        {ENABLE_ITALIC && (
+          <>
+            {" "}and{" "}
+            <code className="rounded bg-primary/10 px-1.5 py-0.5 font-mono text-xs text-primary">
+              glide-variable-italic.ttf
+            </code>
+          </>
+        )}{" "}
         and press{" "}
         <span className="font-medium text-foreground">Open</span>.
       </li>
@@ -87,16 +92,18 @@ const INSTALL_STEPS: Record<OS, React.ReactNode> = {
         </span>
         ).
       </li>
-      <li className="flex gap-3">
-        <span className="flex size-6 shrink-0 items-center justify-center rounded-md bg-primary/10 text-xs font-bold text-primary tabular-nums">
-          3
-        </span>
-        Repeat for{" "}
-        <code className="rounded bg-primary/10 px-1.5 py-0.5 font-mono text-xs text-primary">
-          glide-variable-italic.ttf
-        </code>
-        .
-      </li>
+      {ENABLE_ITALIC && (
+        <li className="flex gap-3">
+          <span className="flex size-6 shrink-0 items-center justify-center rounded-md bg-primary/10 text-xs font-bold text-primary tabular-nums">
+            3
+          </span>
+          Repeat for{" "}
+          <code className="rounded bg-primary/10 px-1.5 py-0.5 font-mono text-xs text-primary">
+            glide-variable-italic.ttf
+          </code>
+          .
+        </li>
+      )}
     </ol>
   ),
   linux: (
@@ -218,15 +225,20 @@ export function DownloadPage() {
             Variable font files
           </h2>
           <p className="text-sm leading-relaxed text-muted-foreground">
-            Glide ships as a variable font — two files:{" "}
+            Glide ships as a variable font —{" "}
             <code className="rounded bg-primary/10 px-1.5 py-0.5 font-mono text-xs text-primary">
               glide-variable.ttf
-            </code>{" "}
-            (roman) and{" "}
-            <code className="rounded bg-primary/10 px-1.5 py-0.5 font-mono text-xs text-primary">
-              glide-variable-italic.ttf
-            </code>{" "}
-            (italic). Variable fonts let you dial any weight from 400 (Regular)
+            </code>
+            {ENABLE_ITALIC && (
+              <>
+                {" "}(roman) and{" "}
+                <code className="rounded bg-primary/10 px-1.5 py-0.5 font-mono text-xs text-primary">
+                  glide-variable-italic.ttf
+                </code>
+                {" "}(italic)
+              </>
+            )}
+            . Variable fonts let you dial any weight from 400 (Regular)
             to 900 (Black) on a continuous axis, using a single file instead of
             separate files per weight.
           </p>
@@ -251,15 +263,19 @@ export function DownloadPage() {
               download="glide-variable.woff2"
             >
               glide-variable.woff2
-            </a>{" "}
-            and{" "}
-            <a
-              className="font-medium text-foreground underline underline-offset-4 transition-colors hover:text-primary"
-              href="/glide-variable-italic.woff2"
-              download="glide-variable-italic.woff2"
-            >
-              glide-variable-italic.woff2
-            </a>{" "}
+            </a>
+            {ENABLE_ITALIC && (
+              <>
+                {" "}and{" "}
+                <a
+                  className="font-medium text-foreground underline underline-offset-4 transition-colors hover:text-primary"
+                  href="/glide-variable-italic.woff2"
+                  download="glide-variable-italic.woff2"
+                >
+                  glide-variable-italic.woff2
+                </a>
+              </>
+            )}{" "}
             and place them in your project&apos;s{" "}
             <code className="rounded bg-primary/10 px-1.5 py-0.5 font-mono text-xs text-primary">
               public/
@@ -273,7 +289,7 @@ export function DownloadPage() {
   font-style: normal;
   font-display: swap;
 }
-
+${ENABLE_ITALIC ? `
 @font-face {
   font-family: 'GlideVariable';
   src: url('/glide-variable-italic.woff2') format('woff2');
@@ -281,7 +297,7 @@ export function DownloadPage() {
   font-style: italic;
   font-display: swap;
 }
-
+` : ""}
 :root {
   font-family: GlideVariable, sans-serif;
 }`}</CodeBlock>

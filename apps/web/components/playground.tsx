@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Slider } from "@/components/ui/slider";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
+import { ENABLE_ITALIC } from "@/lib/flags";
 
 const instances = [
   { weight: 400, label: "Regular" },
@@ -85,18 +86,22 @@ export function Playground() {
         >
           {body}
         </p>
-        <p
-          className="text-5xl italic leading-none tracking-[-0.06em] sm:text-7xl lg:text-8xl"
-          style={{ fontWeight: weight }}
-        >
-          {headline}
-        </p>
-        <p
-          className="max-w-2xl text-lg italic leading-snug tracking-tight text-muted-foreground sm:text-xl lg:text-2xl"
-          style={{ fontWeight: weight }}
-        >
-          {body}
-        </p>
+        {ENABLE_ITALIC && (
+          <>
+            <p
+              className="text-5xl italic leading-none tracking-[-0.06em] sm:text-7xl lg:text-8xl"
+              style={{ fontWeight: weight }}
+            >
+              {headline}
+            </p>
+            <p
+              className="max-w-2xl text-lg italic leading-snug tracking-tight text-muted-foreground sm:text-xl lg:text-2xl"
+              style={{ fontWeight: weight }}
+            >
+              {body}
+            </p>
+          </>
+        )}
       </div>
     </div>
   );

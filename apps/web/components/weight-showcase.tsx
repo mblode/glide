@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { ENABLE_ITALIC } from "@/lib/flags";
 
 const weights = [
   { weight: 400, name: "Regular" },
@@ -43,28 +44,30 @@ export function WeightShowcase({
   weights?: ReadonlyArray<{ readonly weight: number; readonly name: string }>;
 }) {
   const [style, setStyle] = useState<"roman" | "italic">("roman");
-  const italic = style === "italic";
+  const italic = ENABLE_ITALIC && style === "italic";
 
   return (
     <div className="space-y-4">
       <div className="flex items-center gap-2">
         <h2 className="text-lg font-bold tracking-tight">Weights</h2>
-        <div className="flex gap-1">
-          <Button
-            size="xs"
-            variant={style === "roman" ? "default" : "outline"}
-            onClick={() => setStyle("roman")}
-          >
-            Roman
-          </Button>
-          <Button
-            size="xs"
-            variant={style === "italic" ? "default" : "outline"}
-            onClick={() => setStyle("italic")}
-          >
-            Italic
-          </Button>
-        </div>
+        {ENABLE_ITALIC && (
+          <div className="flex gap-1">
+            <Button
+              size="xs"
+              variant={style === "roman" ? "default" : "outline"}
+              onClick={() => setStyle("roman")}
+            >
+              Roman
+            </Button>
+            <Button
+              size="xs"
+              variant={style === "italic" ? "default" : "outline"}
+              onClick={() => setStyle("italic")}
+            >
+              Italic
+            </Button>
+          </div>
+        )}
       </div>
       <div>
         {weightsProp.map((w) => (
