@@ -3,16 +3,10 @@ import localFont from "next/font/local";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { JsonLd } from "@/components/json-ld";
 import { siteConfig } from "@/lib/config";
-import { ENABLE_ITALIC } from "@/lib/flags";
 import "./globals.css";
 
 const glide = localFont({
-  src: ENABLE_ITALIC
-    ? [
-        { path: "../public/glide-variable.woff2", style: "normal" },
-        { path: "../public/glide-variable-italic.woff2", style: "italic" },
-      ]
-    : [{ path: "../public/glide-variable.woff2", style: "normal" }],
+  src: [{ path: "../public/glide-variable.woff2", style: "normal" }],
   variable: "--font-glide",
   weight: "400 900",
   display: "swap",
