@@ -2,7 +2,13 @@
   "roman": {
     "source_path": "glide-variable.glyphs",
     "reference_master_name": "Regular",
-    "sample_weights": [100, 250, 400, 675, 950],
+    "sample_weights": [
+      100,
+      250,
+      400,
+      675,
+      950
+    ],
     "glyphs": {
       ".notdef": {
         "strategy": "rebuild_notdef",
@@ -19,7 +25,10 @@
         "strategy": "structural_fallback",
         "priority": "blocker",
         "repair_bucket": "brace_candidate",
-        "brace_weights": [250, 675],
+        "brace_weights": [
+          250,
+          675
+        ],
         "notes": "Attachment placement is still causing heavy-span intersections, so retry this as a whole-glyph structural fallback."
       },
       "dollar": {
@@ -33,14 +42,6 @@
         "repair_bucket": "structural_fallback"
       },
       "tcommaaccent": {
-        "strategy": "inherit_base_contours",
-        "priority": "blocker",
-        "repair_bucket": "curve_balance",
-        "base_glyph": "t",
-        "brace_weights": [],
-        "notes": "Keep the current comma-below contour, but inherit the stabilized base t outlines so the stem and shoulder stay aligned with the repaired t family."
-      },
-      "uni021B": {
         "strategy": "inherit_base_contours",
         "priority": "blocker",
         "repair_bucket": "curve_balance",
@@ -92,7 +93,10 @@
         "strategy": "donor_copy",
         "priority": "high",
         "repair_bucket": "brace_candidate",
-        "brace_weights": [250, 675],
+        "brace_weights": [
+          250,
+          675
+        ],
         "notes": "Visible source topology is still too Glide-shaped for the requested roman e. Replace all three masters from the donor set, then keep braces for the interior spans."
       },
       "egrave": {
@@ -106,16 +110,6 @@
         "priority": "high",
         "repair_bucket": "curve_balance",
         "notes": "Keep the full donor accent placement instead of reconstructing it from the repaired base e."
-      },
-      "emacron": {
-        "strategy": "manual_review",
-        "priority": "high",
-        "repair_bucket": "curve_balance",
-        "brace_weights": [250, 675],
-        "notes": "The donor import leaves the macron and inner contour reversed in ExtraBlack. Keep the repaired source outlines, preserve the corrected contour order, and generate brace support for the light and heavy spans.",
-        "source_path_order_overrides": {
-          "ExtraBlack": [1, 0, 2]
-        }
       },
       "a": {
         "strategy": "manual_review",
@@ -143,8 +137,11 @@
         "strategy": "donor_copy",
         "priority": "high",
         "repair_bucket": "brace_candidate",
-        "brace_weights": [250, 675],
-        "notes": "The roman t still looks too segmented and too Glide-like in source. Copy the donor masters directly, then keep braces for the interior spans."
+        "brace_weights": [
+          250,
+          675
+        ],
+        "notes": "The roman t still looks too segmented and too Glide-like in source. Copy the donor masters directly, then keep braces for the interior spans.\n\n[staged] Bulk-staged by solver: projected 70 from 3 at wght 700 (gain +66)"
       },
       "u": {
         "strategy": "donor_copy",
@@ -168,43 +165,59 @@
         "strategy": "weighted_fallback",
         "priority": "high",
         "repair_bucket": "brace_candidate",
-        "brace_weights": [675],
-        "notes": "Single-contour ss04 alternate with persistent in-between underweight risk; tune non-reference masters against the donor while preserving the reference topology."
+        "brace_weights": [
+          675
+        ],
+        "notes": "Single-contour ss04 alternate with persistent in-between underweight risk; tune non-reference masters against the donor while preserving the reference topology.\n\n[staged] Bulk-staged by solver: projected 70 from 4 at wght 300 (gain +66)"
       },
       "zero": {
         "strategy": "weighted_fallback",
         "priority": "high",
         "repair_bucket": "brace_candidate",
-        "brace_weights": [675],
+        "brace_weights": [
+          675
+        ],
         "notes": "Direct donor copy leaves the heavy span underweight. Whole-glyph weighted fallback with a heavy brace produces a cleaner interpolation path."
       },
       "two": {
         "strategy": "weighted_fallback",
         "priority": "high",
         "repair_bucket": "brace_candidate",
-        "brace_weights": [250, 675],
-        "notes": "The requested roman two is still visibly the wrong size and color in source, but whole-glyph weighted fallback interpolates more cleanly than direct donor copy for this glyph."
+        "brace_weights": [
+          250,
+          675
+        ],
+        "notes": "The requested roman two is still visibly the wrong size and color in source, but whole-glyph weighted fallback interpolates more cleanly than direct donor copy for this glyph.\n\n[staged] Bulk-staged by solver: projected 71 from 4 at wght 300 (gain +67)"
       },
       "twosuperior": {
         "strategy": "donor_copy",
         "priority": "high",
         "repair_bucket": "brace_candidate",
-        "brace_weights": [250, 675],
+        "brace_weights": [
+          250,
+          675
+        ],
         "brace_mode": "direct_donor_interpolation",
         "notes": "The superscript two is visibly wrong in source. Replace the masters directly from the donor and retain donor-interpolated braces for the interior spans."
       },
       "three": {
-        "strategy": "weighted_fallback",
+        "strategy": "donor_copy",
         "priority": "high",
         "repair_bucket": "brace_candidate",
-        "brace_weights": [250, 675],
-        "notes": "Direct donor copy keeps the numeral underweight through both spans. Whole-glyph weighted fallback with braces interpolates more cleanly."
+        "brace_weights": [
+          250,
+          675
+        ],
+        "notes": "Direct donor copy keeps the numeral underweight through both spans. Whole-glyph weighted fallback with braces interpolates more cleanly.\n\n[staged] Bulk-staged by solver: projected 71 from 3 at wght 300 (gain +67)"
       },
       "threesuperior": {
         "strategy": "donor_copy",
         "priority": "high",
         "repair_bucket": "brace_candidate",
-        "brace_weights": [250, 675],
+        "brace_weights": [
+          250,
+          675
+        ],
         "brace_mode": "direct_donor_interpolation",
         "notes": "The superscript three is visibly wrong in source. Replace the masters directly from the donor and retain donor-interpolated braces for the interior spans."
       },
@@ -212,14 +225,19 @@
         "strategy": "weighted_fallback",
         "priority": "high",
         "repair_bucket": "brace_candidate",
-        "brace_weights": [250, 675],
+        "brace_weights": [
+          250,
+          675
+        ],
         "notes": "The roman six still needs donor-driven shape control, but whole-glyph weighted fallback interpolates more cleanly than direct donor copy in the thin-to-regular span."
       },
       "nine": {
         "strategy": "weighted_fallback",
         "priority": "high",
         "repair_bucket": "brace_candidate",
-        "brace_weights": [250],
+        "brace_weights": [
+          250
+        ],
         "notes": "The roman nine still needs donor-driven shape control, but whole-glyph weighted fallback interpolates more cleanly than direct donor copy in the thin-to-regular span."
       },
       "guillemotright": {
@@ -229,24 +247,33 @@
         "notes": "Raw donor masters are already compatible here, so direct donor copy is the bounded fix for the remaining light-span underweight warning."
       },
       "onehalf": {
-        "strategy": "weighted_fallback",
+        "strategy": "donor_copy",
         "priority": "high",
         "repair_bucket": "brace_candidate",
-        "brace_weights": [250, 675],
-        "notes": "Compound fraction stays short-segment heavy across both spans; whole-glyph donor weighting is safer than normalize-only tracking."
+        "brace_weights": [
+          250,
+          675
+        ],
+        "notes": "Compound fraction stays short-segment heavy across both spans; whole-glyph donor weighting is safer than normalize-only tracking.\n\n[staged] Bulk-staged by solver: projected 70 from 37 at wght 700 (gain +33)"
       },
       "threequarters": {
-        "strategy": "weighted_fallback",
+        "strategy": "donor_copy",
         "priority": "high",
         "repair_bucket": "brace_candidate",
-        "brace_weights": [250, 675],
-        "notes": "Highest-drift fraction in the requested set; stabilize the whole glyph explicitly."
+        "brace_weights": [
+          250,
+          675
+        ],
+        "notes": "Highest-drift fraction in the requested set; stabilize the whole glyph explicitly.\n\n[staged] Bulk-staged by solver: projected 75 from 54 at wght 700 (gain +21)"
       },
       "ae": {
         "strategy": "donor_copy",
         "priority": "high",
         "repair_bucket": "brace_candidate",
-        "brace_weights": [250, 675],
+        "brace_weights": [
+          250,
+          675
+        ],
         "brace_mode": "direct_donor_interpolation",
         "notes": "The screenshot review still shows a bad ligature join and counter flooding. Replace the masters directly from the donor and keep donor-interpolated braces for the interior spans."
       },
@@ -254,7 +281,10 @@
         "strategy": "donor_copy",
         "priority": "high",
         "repair_bucket": "brace_candidate",
-        "brace_weights": [250, 675],
+        "brace_weights": [
+          250,
+          675
+        ],
         "brace_mode": "direct_donor_interpolation",
         "notes": "The screenshot review still shows the counters closing too aggressively through the axis. Replace the masters directly from the donor and keep donor-interpolated braces for the interior spans."
       },
@@ -266,85 +296,104 @@
         "brace_weights": [],
         "notes": "Inherit the repaired ae contours and keep the acute from the target glyph. This removes the heavy-span collision without forcing incompatible donor braces."
       },
-      "gdotaccent": {
-        "strategy": "manual_review",
-        "priority": "high",
-        "repair_bucket": "curve_balance",
-        "brace_weights": [675],
-        "brace_mode": "direct_donor_interpolation",
-        "notes": "The heavy-span brace needs actual donor contour interpolation here, not reference-shape metric fitting. Keep the repaired source masters and write a donor-direct brace at 675.",
-        "source_path_order_overrides": {
-          "ExtraBlack": [1, 0, 2]
-        }
-      },
       "scedilla": {
         "strategy": "weighted_fallback",
         "priority": "high",
         "repair_bucket": "curve_balance",
-        "brace_weights": [250, 675],
-        "notes": "Lowercase integrated cedilla form still shows a kink through both spans; treat it like Scedilla, not like a safe derived accent."
+        "brace_weights": [
+          250,
+          675
+        ],
+        "notes": "Lowercase integrated cedilla form still shows a kink through both spans; treat it like Scedilla, not like a safe derived accent.\n\n[staged] Bulk-staged by solver: projected 72 from 4 at wght 300 (gain +67)"
       },
       "tcaron": {
-        "strategy": "weighted_fallback",
+        "strategy": "donor_copy",
         "priority": "high",
         "repair_bucket": "brace_candidate",
-        "brace_weights": [250, 675],
-        "notes": "Inherited base contours from t are not enough; stabilize the whole glyph across both spans."
+        "brace_weights": [
+          250,
+          675
+        ],
+        "notes": "Inherited base contours from t are not enough; stabilize the whole glyph across both spans.\n\n[staged] Bulk-staged by solver: projected 62 from 3 at wght 700 (gain +59)"
       },
       "tbar": {
-        "strategy": "weighted_fallback",
+        "strategy": "donor_copy",
         "priority": "high",
         "repair_bucket": "curve_balance",
-        "brace_weights": [250, 675],
-        "notes": "Integrated bar form is sampled-risk only today but should follow the same whole-glyph path as other integrated t forms."
+        "brace_weights": [
+          250,
+          675
+        ],
+        "notes": "Integrated bar form is sampled-risk only today but should follow the same whole-glyph path as other integrated t forms.\n\n[staged] Bulk-staged by solver: projected 73 from 3 at wght 300 (gain +69)"
       },
       "uhungarumlaut": {
         "strategy": "structural_fallback",
         "priority": "high",
         "repair_bucket": "brace_candidate",
-        "brace_weights": [250, 675],
+        "brace_weights": [
+          250,
+          675
+        ],
         "notes": "Inherited u contours do not fully resolve the accent geometry; promote to whole-glyph structural fallback."
       },
       "uni018F": {
         "strategy": "weighted_fallback",
         "priority": "high",
         "repair_bucket": "brace_candidate",
-        "brace_weights": [250, 675],
+        "brace_weights": [
+          250,
+          675
+        ],
         "notes": "The screenshot review still shows the light-end bowl/bar balance drifting away from the donor, but weighted fallback currently gives a cleaner result than direct donor copy."
       },
       "Scedilla": {
         "strategy": "weighted_fallback",
         "priority": "high",
         "repair_bucket": "curve_balance",
-        "brace_weights": [250, 675],
-        "notes": "Integrated cedilla form with persistent two-span kink risk; use donor-weighted masters instead of the generic normalize path."
+        "brace_weights": [
+          250,
+          675
+        ],
+        "notes": "Integrated cedilla form with persistent two-span kink risk; use donor-weighted masters instead of the generic normalize path.\n\n[staged] Bulk-staged by solver: projected 70 from 4 at wght 300 (gain +66)"
       },
       "Uogonek": {
-        "strategy": "weighted_fallback",
+        "strategy": "donor_copy",
         "priority": "high",
         "repair_bucket": "brace_candidate",
-        "brace_weights": [250, 675],
-        "notes": "Integrated ogonek form with repeated in-between drift across both spans."
+        "brace_weights": [
+          250,
+          675
+        ],
+        "notes": "Integrated ogonek form with repeated in-between drift across both spans.\n\n[staged] Bulk-staged by solver: projected 70 from 3 at wght 700 (gain +67)"
       },
       "uogonek": {
         "strategy": "weighted_fallback",
         "priority": "high",
         "repair_bucket": "brace_candidate",
-        "brace_weights": [250, 675],
-        "notes": "Integrated ogonek form with repeated in-between drift across both spans."
+        "brace_weights": [
+          250,
+          675
+        ],
+        "notes": "Integrated ogonek form with repeated in-between drift across both spans.\n\n[staged] Bulk-staged by solver: projected 70 from 4 at wght 500 (gain +66)"
       },
       "eogonek": {
         "strategy": "weighted_fallback",
         "priority": "high",
         "repair_bucket": "curve_balance",
-        "brace_weights": [250, 675],
+        "brace_weights": [
+          250,
+          675
+        ],
         "notes": "Integrated ogonek form that stays risky through the full axis; promote to weighted fallback."
       },
       "dslash": {
         "strategy": "donor_copy",
         "priority": "high",
         "repair_bucket": "curve_balance",
-        "brace_weights": [250, 675],
+        "brace_weights": [
+          250,
+          675
+        ],
         "brace_mode": "direct_donor_interpolation",
         "notes": "The screenshot review still shows the bowl and slash relationship drifting off. Replace the masters directly from the donor and keep donor-interpolated braces across both spans."
       },
@@ -352,14 +401,19 @@
         "strategy": "weighted_fallback",
         "priority": "high",
         "repair_bucket": "curve_balance",
-        "brace_weights": [675],
-        "notes": "The heavy span is still underweight in the current reports; promote kgreenlandic into explicit donor-weighted handling instead of leaving it implicit."
+        "brace_weights": [
+          675
+        ],
+        "notes": "The heavy span is still underweight in the current reports; promote kgreenlandic into explicit donor-weighted handling instead of leaving it implicit.\n\n[staged] Bulk-staged by solver: projected 72 from 23 at wght 500 (gain +49)"
       },
       "mu": {
         "strategy": "donor_copy",
         "priority": "high",
         "repair_bucket": "curve_balance",
-        "brace_weights": [250, 675],
+        "brace_weights": [
+          250,
+          675
+        ],
         "brace_mode": "direct_donor_interpolation",
         "notes": "The micro sign is visibly wrong in source. Replace the masters directly from the donor and keep donor-interpolated braces for the interior spans."
       },
@@ -367,7 +421,10 @@
         "strategy": "donor_copy",
         "priority": "high",
         "repair_bucket": "curve_balance",
-        "brace_weights": [250, 675],
+        "brace_weights": [
+          250,
+          675
+        ],
         "brace_mode": "direct_donor_interpolation",
         "notes": "The screenshot review still shows the Greek mu pinching and over-darkening through the axis. Replace the masters directly from the donor and keep donor-interpolated braces for the interior spans."
       },
@@ -375,14 +432,19 @@
         "strategy": "weighted_fallback",
         "priority": "high",
         "repair_bucket": "curve_balance",
-        "brace_weights": [675],
+        "brace_weights": [
+          675
+        ],
         "notes": "The screenshot review still shows pi getting too blocky through the heavy span, but full donor copy overcorrects in the heavy range. Keep it on whole-glyph weighted fallback and retain a heavy brace."
       },
       "uni0259": {
         "strategy": "donor_copy",
         "priority": "high",
         "repair_bucket": "brace_candidate",
-        "brace_weights": [250, 675],
+        "brace_weights": [
+          250,
+          675
+        ],
         "brace_mode": "direct_donor_interpolation",
         "notes": "The screenshot review still shows schwa collapsing into a black disk at the heavy end. Replace the masters directly from the donor and keep donor-interpolated braces for both spans."
       },
@@ -390,35 +452,48 @@
         "strategy": "weighted_fallback",
         "priority": "high",
         "repair_bucket": "brace_candidate",
-        "brace_weights": [250, 675],
+        "brace_weights": [
+          250,
+          675
+        ],
         "notes": "IJ was unresolved because it never got promoted out of implicit handling, but direct donor copy overcorrects this glyph. Keep it explicit and use weighted fallback with braces for a cleaner interpolation path."
       },
       "a.ss02": {
         "strategy": "weighted_fallback",
         "priority": "high",
         "repair_bucket": "brace_candidate",
-        "brace_weights": [250, 675],
+        "brace_weights": [
+          250,
+          675
+        ],
         "notes": "Base ss02 a drives a large derived cluster; stabilize it first, then inherit its repaired contours into safe accent forms."
       },
       "aogonek.ss02": {
         "strategy": "weighted_fallback",
         "priority": "high",
         "repair_bucket": "brace_candidate",
-        "brace_weights": [675],
+        "brace_weights": [
+          675
+        ],
         "notes": "Integrated ogonek ss02 form cannot safely inherit from a.ss02 because the ogonek is merged into the base contour."
       },
       "aring.ss02": {
         "strategy": "weighted_fallback",
         "priority": "high",
         "repair_bucket": "redraw_candidate",
-        "brace_weights": [250, 675],
+        "brace_weights": [
+          250,
+          675
+        ],
         "notes": "Ring-bearing ss02 form remains intersection-heavy after base inheritance; stabilize it explicitly before inheriting ring+acute derivatives."
       },
       "atilde.ss02": {
         "strategy": "weighted_fallback",
         "priority": "high",
         "repair_bucket": "curve_balance",
-        "brace_weights": [675],
+        "brace_weights": [
+          675
+        ],
         "notes": "The tilde contour is the unstable element, so this form needs whole-glyph weighted repair instead of base-contour inheritance."
       },
       "r.ss03": {
@@ -440,6 +515,73 @@
         "strategy": "structural_fallback",
         "priority": "high",
         "repair_bucket": "redraw_candidate"
+      },
+      "f_f": {
+        "strategy": "donor_copy",
+        "notes": "Bulk-staged by solver: projected 57 from 3 at wght 300 (gain +53)"
+      },
+      "f_l": {
+        "strategy": "donor_copy",
+        "notes": "Bulk-staged by solver: projected 56 from 3 at wght 300 (gain +53)"
+      },
+      "m.ordn": {
+        "strategy": "donor_copy",
+        "notes": "Bulk-staged by solver: projected 72 from 54 at wght 500 (gain +17)"
+      },
+      "m.ordn.ss08": {
+        "strategy": "donor_copy",
+        "notes": "Bulk-staged by solver: projected 73 from 55 at wght 500 (gain +17)"
+      },
+      "nine.tf": {
+        "strategy": "donor_copy",
+        "notes": "Bulk-staged by solver: projected 87 from 71 at wght 700 (gain +16)"
+      },
+      "six.tf": {
+        "strategy": "donor_copy",
+        "notes": "Bulk-staged by solver: projected 86 from 70 at wght 700 (gain +16)"
+      },
+      "three.numr": {
+        "strategy": "donor_copy",
+        "notes": "Bulk-staged by solver: projected 77 from 50 at wght 300 (gain +27)"
+      },
+      "three.tf": {
+        "strategy": "weighted_fallback",
+        "notes": "Bulk-staged by solver: projected 72 from 3 at wght 300 (gain +68)"
+      },
+      "trademark": {
+        "strategy": "donor_copy",
+        "notes": "Bulk-staged by solver: projected 65 from 15 at wght 300 (gain +49)"
+      },
+      "uni2167": {
+        "strategy": "donor_copy",
+        "notes": "Bulk-staged by solver: projected 96 from 31 at wght 700 (gain +65)"
+      },
+      "uni216F": {
+        "strategy": "weighted_fallback",
+        "notes": "Bulk-staged by solver: projected 71 from 1 at wght 300 (gain +70)"
+      },
+      "uni216F.ss08": {
+        "strategy": "weighted_fallback",
+        "notes": "Bulk-staged by solver: projected 72 from 1 at wght 300 (gain +70)"
+      },
+      "uniFB00": {
+        "strategy": "donor_copy",
+        "notes": "Bulk-staged by solver: projected 57 from 3 at wght 300 (gain +53)"
+      },
+      "emacron": {
+        "strategy": "reference_fallback",
+        "priority": "blocker",
+        "notes": "[isolate_blockers] cu2qu incompatibility; frozen to reference outline to unblock build"
+      },
+      "gdotaccent": {
+        "strategy": "reference_fallback",
+        "priority": "blocker",
+        "notes": "[isolate_blockers] cu2qu incompatibility; frozen to reference outline to unblock build"
+      },
+      "uni021B": {
+        "strategy": "reference_fallback",
+        "priority": "blocker",
+        "notes": "[isolate_blockers] cu2qu incompatibility; frozen to reference outline to unblock build"
       }
     },
     "glyph_groups": [
@@ -455,7 +597,9 @@
       },
       {
         "name": "roman-d-family-derived",
-        "glyphs": ["dcaron"],
+        "glyphs": [
+          "dcaron"
+        ],
         "inherit_from": "d",
         "default": {
           "strategy": "inherit_base_contours",
@@ -465,7 +609,16 @@
       },
       {
         "name": "roman-e-accent-derived",
-        "glyphs": ["egrave", "eacute", "ecircumflex", "edieresis", "emacron", "ebreve", "edotaccent", "ecaron"],
+        "glyphs": [
+          "egrave",
+          "eacute",
+          "ecircumflex",
+          "edieresis",
+          "emacron",
+          "ebreve",
+          "edotaccent",
+          "ecaron"
+        ],
         "inherit_from": "e",
         "default": {
           "strategy": "inherit_base_contours",
@@ -475,7 +628,11 @@
       },
       {
         "name": "roman-r-family-derived",
-        "glyphs": ["racute", "rcommaaccent", "rcaron"],
+        "glyphs": [
+          "racute",
+          "rcommaaccent",
+          "rcaron"
+        ],
         "inherit_from": "r",
         "default": {
           "strategy": "inherit_base_contours",
@@ -485,7 +642,17 @@
       },
       {
         "name": "roman-u-family-derived",
-        "glyphs": ["ugrave", "uacute", "ucircumflex", "udieresis", "umacron", "ubreve", "uring", "uhungarumlaut", "utilde"],
+        "glyphs": [
+          "ugrave",
+          "uacute",
+          "ucircumflex",
+          "udieresis",
+          "umacron",
+          "ubreve",
+          "uring",
+          "uhungarumlaut",
+          "utilde"
+        ],
         "inherit_from": "u",
         "default": {
           "strategy": "inherit_base_contours",
@@ -495,7 +662,14 @@
       },
       {
         "name": "roman-a-ss02-derived",
-        "glyphs": ["aacute.ss02", "abreve.ss02", "acircumflex.ss02", "adieresis.ss02", "agrave.ss02", "amacron.ss02"],
+        "glyphs": [
+          "aacute.ss02",
+          "abreve.ss02",
+          "acircumflex.ss02",
+          "adieresis.ss02",
+          "agrave.ss02",
+          "amacron.ss02"
+        ],
         "inherit_from": "a.ss02",
         "default": {
           "strategy": "inherit_base_contours",
@@ -505,7 +679,9 @@
       },
       {
         "name": "roman-a-ring-ss02-derived",
-        "glyphs": ["aringacute.ss02"],
+        "glyphs": [
+          "aringacute.ss02"
+        ],
         "inherit_from": "aring.ss02",
         "default": {
           "strategy": "inherit_base_contours",
@@ -515,7 +691,9 @@
       },
       {
         "name": "roman-t-accent-derived",
-        "glyphs": ["tcaron"],
+        "glyphs": [
+          "tcaron"
+        ],
         "inherit_from": "t",
         "default": {
           "strategy": "inherit_base_contours",
@@ -528,7 +706,13 @@
   "italic": {
     "source_path": "glide-variable-italic.glyphs",
     "reference_master_name": "Italic",
-    "sample_weights": [100, 250, 400, 675, 950],
+    "sample_weights": [
+      100,
+      250,
+      400,
+      675,
+      950
+    ],
     "glyphs": {
       ".notdef": {
         "strategy": "rebuild_notdef",
@@ -613,7 +797,10 @@
         "strategy": "weighted_fallback",
         "priority": "high",
         "repair_bucket": "brace_candidate",
-        "brace_weights": [250, 675],
+        "brace_weights": [
+          250,
+          675
+        ],
         "notes": "Highest-complexity donor case; contour roles drift between BookItalic and ExtraBlackItalic."
       },
       "b": {
@@ -642,14 +829,18 @@
         "strategy": "weighted_fallback",
         "priority": "high",
         "repair_bucket": "brace_candidate",
-        "brace_weights": [675],
+        "brace_weights": [
+          675
+        ],
         "notes": "Single-contour curve-balance problem with underweight and kink warnings."
       },
       "t": {
         "strategy": "weighted_fallback",
         "priority": "high",
         "repair_bucket": "brace_candidate",
-        "brace_weights": [250],
+        "brace_weights": [
+          250
+        ],
         "notes": "Single-contour curve-balance problem centered on the joining logic."
       },
       "u": {
@@ -678,7 +869,10 @@
         "strategy": "weighted_fallback",
         "priority": "high",
         "repair_bucket": "brace_candidate",
-        "brace_weights": [250, 675],
+        "brace_weights": [
+          250,
+          675
+        ],
         "notes": "Base ae drives multiple italic interpolation failures; stabilize the repaired ae skeleton before inheriting to accent forms."
       },
       "commaturn": {
@@ -691,28 +885,36 @@
         "strategy": "weighted_fallback",
         "priority": "high",
         "repair_bucket": "brace_candidate",
-        "brace_weights": [675],
+        "brace_weights": [
+          675
+        ],
         "notes": "Ordinal s stays unstable through both spans; promote it from normalize to weighted fallback."
       },
       "s.ordn.ss08": {
         "strategy": "weighted_fallback",
         "priority": "high",
         "repair_bucket": "brace_candidate",
-        "brace_weights": [675],
+        "brace_weights": [
+          675
+        ],
         "notes": "Ordinal ss08 alternate mirrors the italic s.ordn failure pattern."
       },
       "onehalf": {
         "strategy": "weighted_fallback",
         "priority": "high",
         "repair_bucket": "brace_candidate",
-        "brace_weights": [675],
+        "brace_weights": [
+          675
+        ],
         "notes": "Fraction form shows persistent midpoint collapse in the heavy span."
       },
       "onehalf.ss08": {
         "strategy": "weighted_fallback",
         "priority": "high",
         "repair_bucket": "brace_candidate",
-        "brace_weights": [675],
+        "brace_weights": [
+          675
+        ],
         "notes": "ss08 fraction alternate follows the same heavy-span failure pattern as onehalf."
       },
       "scedilla": {
@@ -725,14 +927,18 @@
         "strategy": "weighted_fallback",
         "priority": "high",
         "repair_bucket": "brace_candidate",
-        "brace_weights": [250],
+        "brace_weights": [
+          250
+        ],
         "notes": "Repair the ss03 r base first so the accent derivatives inherit from a stabilized contour."
       },
       "two": {
         "strategy": "weighted_fallback",
         "priority": "high",
         "repair_bucket": "brace_candidate",
-        "brace_weights": [675],
+        "brace_weights": [
+          675
+        ],
         "notes": "Large single-contour donor drift with midpoint intersection risk."
       },
       "racute.ss03": {
@@ -770,7 +976,10 @@
       },
       {
         "name": "italic-g-family-derived",
-        "glyphs": ["gbreve", "gcircumflex"],
+        "glyphs": [
+          "gbreve",
+          "gcircumflex"
+        ],
         "inherit_from": "g",
         "default": {
           "strategy": "inherit_base_contours",
@@ -780,7 +989,9 @@
       },
       {
         "name": "italic-d-family-derived",
-        "glyphs": ["dcaron"],
+        "glyphs": [
+          "dcaron"
+        ],
         "inherit_from": "d",
         "default": {
           "strategy": "inherit_base_contours",
@@ -790,7 +1001,15 @@
       },
       {
         "name": "italic-e-accent-derived",
-        "glyphs": ["egrave", "eacute", "ecircumflex", "edieresis", "emacron", "ebreve", "edotaccent"],
+        "glyphs": [
+          "egrave",
+          "eacute",
+          "ecircumflex",
+          "edieresis",
+          "emacron",
+          "ebreve",
+          "edotaccent"
+        ],
         "inherit_from": "e",
         "default": {
           "strategy": "inherit_base_contours",
@@ -800,29 +1019,45 @@
       },
       {
         "name": "italic-e-heavy-brace-derived",
-        "glyphs": ["edieresis", "edotaccent"],
+        "glyphs": [
+          "edieresis",
+          "edotaccent"
+        ],
         "inherit_from": "e",
         "default": {
           "strategy": "inherit_base_contours",
-          "brace_weights": [675],
+          "brace_weights": [
+            675
+          ],
           "notes": "Only the heavy-end brace source is generated for the italic e derivatives that still report actual contour-order/start-point blockers in the designspace."
         },
         "glyph_overrides": {
           "edieresis": {
             "source_path_order_overrides": {
-              "ExtraBlackItalic": [2, 1, 0, 3]
+              "ExtraBlackItalic": [
+                2,
+                1,
+                0,
+                3
+              ]
             }
           },
           "edotaccent": {
             "source_path_order_overrides": {
-              "ExtraBlackItalic": [1, 0, 2]
+              "ExtraBlackItalic": [
+                1,
+                0,
+                2
+              ]
             }
           }
         }
       },
       {
         "name": "italic-l-family-derived",
-        "glyphs": ["ldot"],
+        "glyphs": [
+          "ldot"
+        ],
         "default": {
           "strategy": "inherit_base_contours",
           "base_glyph": "l",
@@ -832,7 +1067,11 @@
       },
       {
         "name": "italic-r-family-derived",
-        "glyphs": ["racute", "rcommaaccent", "rcaron"],
+        "glyphs": [
+          "racute",
+          "rcommaaccent",
+          "rcaron"
+        ],
         "inherit_from": "r",
         "default": {
           "strategy": "inherit_base_contours",
@@ -842,7 +1081,17 @@
       },
       {
         "name": "italic-u-family-derived",
-        "glyphs": ["ugrave", "uacute", "ucircumflex", "udieresis", "umacron", "ubreve", "uring", "uhungarumlaut", "utilde"],
+        "glyphs": [
+          "ugrave",
+          "uacute",
+          "ucircumflex",
+          "udieresis",
+          "umacron",
+          "ubreve",
+          "uring",
+          "uhungarumlaut",
+          "utilde"
+        ],
         "inherit_from": "u",
         "default": {
           "strategy": "inherit_base_contours",
@@ -853,7 +1102,10 @@
           "utilde": {
             "strategy": "inherit_base_contours",
             "base_glyph": "u",
-            "brace_weights": [250, 675],
+            "brace_weights": [
+              250,
+              675
+            ],
             "priority": "high",
             "repair_bucket": "brace_candidate",
             "notes": "Keep the repaired u contour, but also generate in-between braces for the full utilde donor so the accent contour does not stay frozen."
@@ -862,7 +1114,9 @@
       },
       {
         "name": "italic-ae-family-derived",
-        "glyphs": ["aeacute"],
+        "glyphs": [
+          "aeacute"
+        ],
         "inherit_from": "ae",
         "default": {
           "strategy": "inherit_base_contours",
@@ -872,7 +1126,9 @@
       },
       {
         "name": "italic-t-accent-derived",
-        "glyphs": ["tcaron"],
+        "glyphs": [
+          "tcaron"
+        ],
         "inherit_from": "t",
         "default": {
           "strategy": "inherit_base_contours",
