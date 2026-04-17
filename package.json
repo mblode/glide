@@ -5,7 +5,10 @@
   "scripts": {
     "dev": "turbo dev",
     "build": "turbo build",
-    "build:fonts": "tsx scripts/build-fonts.ts"
+    "build:fonts": "tsx scripts/build-fonts.ts",
+    "forge:ingest": "npm --workspace @glide/glyph-forge-engine run ingest",
+    "forge:cache": "npm --workspace @glide/glyph-forge-engine run cache",
+    "forge:build": "npm --workspace @glide/glyph-forge-engine run build"
   },
   "devDependencies": {
     "tsx": "^4",

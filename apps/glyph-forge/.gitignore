@@ -1,0 +1,12 @@
+.next/
+node_modules/
+.turbo/
+tsconfig.tsbuildinfo
+
+# Synced from packages/glyph-forge at dev/build time
+public/svg/
+public/broken-glyphs.json
+public/cell-scores.json
+public/glyph-scores.json
+public/strategy-suggestions.json
+public/solver-results.json
