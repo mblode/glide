@@ -7,11 +7,12 @@ const INPUT_ITALIC = join(ROOT, "cabinet/input/italic");
 const INPUT_MONO = join(ROOT, "cabinet/input/mono");
 const FONTS = join(ROOT, "fonts");
 const WEB = join(ROOT, "fonts/web");
-const PUBLIC = join(ROOT, "apps/web/public");
+// apps/web/public is intentionally NOT synced here — apps/web carries its own
+// curated glide-variable.woff2 (different hinting / compression settings).
+// Replace by pasting into apps/web/public/glide-variable.woff2 directly.
 
 mkdirSync(FONTS, { recursive: true });
 mkdirSync(WEB, { recursive: true });
-mkdirSync(PUBLIC, { recursive: true });
 
 function copy(src: string, dest: string, required = true) {
   if (existsSync(src)) {
@@ -50,13 +51,6 @@ copy(join(INPUT_MONO, "GlideMonoVF.woff2"),        join(WEB, "glide-mono-variabl
 copy(join(INPUT_MONO, "GlideMono-Regular.woff2"),  join(WEB, "glide-mono-regular.woff2"),         false);
 copy(join(INPUT_MONO, "GlideMono-Medium.woff2"),   join(WEB, "glide-mono-medium.woff2"),          false);
 copy(join(INPUT_MONO, "GlideMono-Bold.woff2"),     join(WEB, "glide-mono-bold.woff2"),            false);
-
-// Variable WOFF2 → apps/web/public/
-copy(join(INPUT_ROMAN, "GlideVF.woff2"),      join(PUBLIC, "glide-variable.woff2"));
-copy(join(INPUT_ITALIC, "GlideVF.woff2"),     join(PUBLIC, "glide-variable-italic.woff2"));
-
-// Mono WOFF2 → apps/web/public/
-copy(join(INPUT_MONO, "GlideMonoVF.woff2"), join(PUBLIC, "glide-mono-variable.woff2"), false);
 
 // Generate glide.css
 const css = `/* Variable font usage:
