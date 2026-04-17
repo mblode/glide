@@ -9,4 +9,18 @@ cabinet/input/
 cabinet/*masters/
 cabinet/*.glyphs
 
+# Python bytecode — regenerated on every run
+__pycache__/
+*.pyc
+
+# Source backups — variable-gen + isolate_blockers auto-create these.
+# Real rollback path is git; these .bak files are session-local.
+*.glyphs.bak
+*.glyphs.pre-*.bak
+packages/variable-gen/manifests/*.json.bak
+packages/variable-gen/manifests/*.json.bak.*
+
+# Debugging screenshots from interactive sessions
+broken/
+
 *(Autosaved)*
