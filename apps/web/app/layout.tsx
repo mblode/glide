@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { JsonLd } from "@/components/json-ld";
+import { WebMcp } from "@/components/web-mcp";
 import { siteConfig } from "@/lib/config";
 import "./globals.css";
 
@@ -93,6 +94,7 @@ export default function RootLayout({
           Skip to content
         </a>
         {children}
+        <WebMcp />
       </body>
       <GoogleAnalytics gaId="G-32358W56XH" />
     </html>
