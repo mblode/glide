@@ -1,0 +1,14 @@
+{
+  "name": "glide",
+  "private": true,
+  "workspaces": ["apps/web"],
+  "scripts": {
+    "dev": "npm --workspace @glide/web run dev",
+    "build": "npm --workspace @glide/web run build",
+    "start": "npm --workspace @glide/web run start"
+  },
+  "devDependencies": {
+    "portless": "^0.12.0"
+  },
+  "packageManager": "npm@10.9.2"
+}

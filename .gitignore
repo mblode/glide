@@ -1,0 +1,20 @@
+.DS_Store
+.firecrawl/
+.venv/
+node_modules/
+.next/
+.turbo/
+
+# Python bytecode — regenerated on every run
+__pycache__/
+*.pyc
+
+# Source backups from local font-editor sessions.
+# Real rollback path is git; these .bak files are session-local.
+*.glyphs.bak
+*.glyphs.pre-*.bak
+
+# Debugging screenshots from interactive sessions
+broken/
+
+*(Autosaved)*

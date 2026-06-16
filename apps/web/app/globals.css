@@ -1,0 +1,89 @@
+@import "tailwindcss";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-glide), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: var(--font-glide-mono), ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", "Courier New", monospace;
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-input-hover: var(--input-hover);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-display: #e8391c;
+  --color-placeholder-foreground: var(--placeholder-foreground);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --shadow-input: var(--shadow-input);
+}
+
+:root {
+  --background: #fbb6cd;
+  --foreground: #8b1a0a;
+  --card: #fdc9d9;
+  --card-foreground: #8b1a0a;
+  --popover: #fdc9d9;
+  --popover-foreground: #8b1a0a;
+  --primary: #e8391c;
+  --primary-foreground: #fff0f4;
+  --secondary: #f9a4c0;
+  --secondary-foreground: #8b1a0a;
+  --muted: #f9a4c0;
+  --muted-foreground: #7a1608;
+  --accent: #f9a4c0;
+  --accent-foreground: #8b1a0a;
+  --destructive: #b82010;
+  --destructive-foreground: #fbb6cd;
+  --border: oklch(0.53 0.215 28 / 18%);
+  --input: oklch(0.53 0.215 28 / 12%);
+  --input-hover: oklch(0.53 0.215 28 / 22%);
+  --ring: #e8391c;
+  --placeholder-foreground: oklch(0.53 0.215 28 / 50%);
+  --shadow-input: 0 1px 2px 0 oklch(0 0 0 / 5%);
+  --radius: 0.625rem;
+
+  --field-height: 2.5rem;
+  --field-height-sm: 2.25rem;
+  --field-radius: var(--radius);
+  --field-padding-x: 0.75rem;
+  --field-padding-y: 0.5rem;
+  --textarea-min-height: 5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  button:not([disabled]),
+  [role="button"]:not([disabled]),
+  a {
+    @apply cursor-pointer;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+    text-rendering: optimizeLegibility;
+  }
+  html {
+    @apply scroll-smooth font-sans;
+  }
+}

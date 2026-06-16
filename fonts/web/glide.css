@@ -1,0 +1,29 @@
+/* Glide — variable font family. Version 2.000.
+   Usage:
+   :root { font-family: "Glide", sans-serif; }
+   @supports (font-variation-settings: normal) {
+     :root { font-family: "GlideVariable", sans-serif; }
+   }
+   Monospace: font-family: "Glide Mono", monospace; */
+
+@font-face {
+  font-family: GlideVariable;
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("glide-variable.woff2") format("woff2");
+}
+@font-face {
+  font-family: GlideVariable;
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("glide-variable-italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Glide Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("glide-mono.woff2") format("woff2");
+}
