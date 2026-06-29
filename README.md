@@ -91,7 +91,7 @@ Glide is shipped as two variable font files: roman and italic. Each interpolates
 
 ## Font weights
 
-The `wght` axis is continuous from 100 to 900, so every Tailwind weight utility works. The three named instances are **Thin (100)**, **Regular (400)**, and **Extra Black (900)**.
+The `wght` axis is continuous from 100 to 900 (interpolated from three masters — Thin, Regular, Extra Black). Every standard weight is also a named instance, so the full ladder appears in font menus like macOS Font Book.
 
 | Weight | Name       | Class            |
 | ------ | ---------- | ---------------- |
@@ -132,7 +132,7 @@ The `wght` axis is continuous from 100 to 900, so every Tailwind weight utility 
 - **Styles**: Roman + Italic (separate variable fonts)
 - **Weight range**: 100–900 (continuous `wght` axis, 3 masters)
 - **Formats**: Variable TTF + WOFF2
-- **Named instances**: Thin (100), Regular (400), Extra Black (900)
+- **Named instances**: Thin, ExtraLight, Light, Regular, Medium, SemiBold, Bold, ExtraBold, Extra Black (100–900)
 
 ### Glide Mono
 
