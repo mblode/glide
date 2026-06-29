@@ -163,3 +163,7 @@ npm run build
 ## License
 
 Copyright Matthew Blode. All rights reserved.
+
+---
+
+Crafted by [<img src="https://matthewblode.com/avatar-sm.png" width="20" align="top" />](https://matthewblode.com) [Matthew Blode](https://matthewblode.com)

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { InstallSection } from "@/components/install-section";
@@ -86,14 +85,14 @@ export default function Home() {
             <a
               className="flex items-center gap-2 rounded-full py-1.5 pr-2.5 pl-1.5 transition-colors hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring focus-visible:rounded-full"
               href={siteConfig.links.author}
-              rel="noopener noreferrer"
+              rel="author noopener noreferrer"
               target="_blank"
             >
-              <Image
+              <img
                 alt="Avatar of Matthew Blode"
                 className="rounded-full"
                 height={20}
-                src="/matthew-blode-profile.jpg"
+                src="https://matthewblode.com/avatar-sm.png"
                 width={20}
               />
               Matthew Blode
