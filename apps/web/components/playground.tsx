@@ -36,13 +36,7 @@ export function Playground() {
     : { fontWeight: weight, fontStyle: italic ? "italic" : ("normal" as const) };
 
   return (
-    <div
-      className={cn(
-        "space-y-6 transition-colors duration-300",
-        mono &&
-          "rounded-xl bg-black p-6 font-mono text-[#039B5E] [text-shadow:0_0_8px_rgba(3,155,94,0.5)] sm:p-8"
-      )}
-    >
+    <div className="space-y-6">
       <div className="grid gap-4 sm:grid-cols-2">
         <div className="space-y-4">
           {/* style: Sans / Italic / Mono */}
@@ -53,10 +47,6 @@ export function Playground() {
                 size="sm"
                 variant={mode === m.id ? "default" : "outline"}
                 onClick={() => setMode(m.id)}
-                className={cn(
-                  mono && "border-[#039B5E]/40 text-[#039B5E] hover:bg-[#039B5E]/10",
-                  mono && mode === m.id && "bg-[#039B5E] text-black hover:bg-[#039B5E]"
-                )}
               >
                 {m.label}
               </Button>
@@ -88,19 +78,14 @@ export function Playground() {
         </div>
 
         <div className="space-y-2">
-          <Label htmlFor="custom-text" className={cn(mono && "text-[#039B5E]")}>
-            Custom text
-          </Label>
+          <Label htmlFor="custom-text">Custom text</Label>
           <Textarea
             id="custom-text"
             value={text}
             onChange={(e) => setText(e.target.value)}
             spellCheck={false}
             rows={4}
-            className={cn(
-              mono &&
-                "border-[#039B5E]/40 bg-black/40 font-mono text-[#039B5E] placeholder:text-[#039B5E]/50"
-            )}
+            className={cn(mono && "font-mono")}
           />
         </div>
       </div>
@@ -119,10 +104,8 @@ export function Playground() {
         </p>
         <p
           className={cn(
-            "max-w-2xl leading-snug tracking-tight",
-            mono
-              ? "break-words text-base text-[#039B5E]/80 sm:text-lg"
-              : "text-lg text-muted-foreground sm:text-xl lg:text-2xl"
+            "max-w-2xl leading-snug tracking-tight text-muted-foreground",
+            mono ? "break-words text-base sm:text-lg" : "text-lg sm:text-xl lg:text-2xl"
           )}
           style={previewStyle}
         >
