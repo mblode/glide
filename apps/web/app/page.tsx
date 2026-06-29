@@ -54,6 +54,9 @@ export default function Home() {
           <Button variant="outline" asChild>
             <a href="#playground">Try it</a>
           </Button>
+          <Button variant="outline" asChild>
+            <Link href="/inspect">Inspect</Link>
+          </Button>
         </div>
       </section>
 

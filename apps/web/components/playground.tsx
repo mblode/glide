@@ -16,7 +16,7 @@ const instances = [
   { weight: 600, label: "SemiBold" },
   { weight: 700, label: "Bold" },
   { weight: 800, label: "ExtraBold" },
-  { weight: 900, label: "Black" },
+  { weight: 900, label: "Extra Black" },
 ] as const;
 
 type Mode = "sans" | "italic" | "mono";

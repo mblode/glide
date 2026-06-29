@@ -1,6 +1,6 @@
 # Glide
 
-Glide is a variable sans-serif typeface by Matthew Blode, supporting weights from 100 (thin) to 900 (black) in both roman and italic styles. The family also includes **Glide Mono**, a monospaced companion font for code and technical content.
+Glide is a variable sans-serif typeface by Matthew Blode, with a continuous weight axis from 100 (thin) to 900 (extra black) in both roman and italic styles. The family also includes **Glide Mono**, a monospaced companion font for code and technical content.
 
 ## Font family
 
@@ -87,21 +87,23 @@ Glide Mono is a static font at weight 400.
 
 ## Variable font
 
-Glide is shipped as two variable font files: regular and italic. Each contains all weights in a single file, allowing for precise typography with minimal file size impact.
+Glide is shipped as two variable font files: roman and italic. Each interpolates the whole weight axis from three masters (Thin, Regular, Extra Black), so any value from 100 to 900 is available from a single small file.
 
 ## Font weights
 
-| Weight | Name      | Class            |
-| ------ | --------- | ---------------- |
-| 100    | Thin      | `font-thin`      |
-| 200    | ExtraLight| `font-extralight`|
-| 300    | Light     | `font-light`     |
-| 400    | Regular   | `font-normal`    |
-| 500    | Medium    | `font-medium`    |
-| 600    | Semibold  | `font-semibold`  |
-| 700    | Bold      | `font-bold`      |
-| 800    | Extrabold | `font-extrabold` |
-| 900    | Black     | `font-black`     |
+The `wght` axis is continuous from 100 to 900, so every Tailwind weight utility works. The three named instances are **Thin (100)**, **Regular (400)**, and **Extra Black (900)**.
+
+| Weight | Name       | Class            |
+| ------ | ---------- | ---------------- |
+| 100    | Thin       | `font-thin`      |
+| 200    | ExtraLight | `font-extralight`|
+| 300    | Light      | `font-light`     |
+| 400    | Regular    | `font-normal`    |
+| 500    | Medium     | `font-medium`    |
+| 600    | Semibold   | `font-semibold`  |
+| 700    | Bold       | `font-bold`      |
+| 800    | Extrabold  | `font-extrabold` |
+| 900    | Extra Black| `font-black`     |
 
 ## Usage in Tailwind
 
@@ -110,11 +112,8 @@ Glide is shipped as two variable font files: regular and italic. Each contains a
 <p className="font-sans font-thin">Thin text (100)</p>
 <p className="font-sans font-light">Light text (300)</p>
 <p className="font-sans font-normal">Regular text (400)</p>
-<p className="font-sans font-medium">Medium text (500)</p>
-<p className="font-sans font-semibold">Semibold text (600)</p>
 <p className="font-sans font-bold">Bold text (700)</p>
-<p className="font-sans font-extrabold">Extra Bold text (800)</p>
-<p className="font-sans font-black">Black text (900)</p>
+<p className="font-sans font-black">Extra Black text (900)</p>
 
 // Italic variants
 <p className="font-sans italic">Regular italic (400)</p>
@@ -131,9 +130,9 @@ Glide is shipped as two variable font files: regular and italic. Each contains a
 - **Family**: Glide
 - **Designer**: Matthew Blode
 - **Styles**: Roman + Italic (separate variable fonts)
-- **Weight range**: 100–900 (variable `wght` axis)
+- **Weight range**: 100–900 (continuous `wght` axis, 3 masters)
 - **Formats**: Variable TTF + WOFF2
-- **Named instances**: Regular (400), Medium (500), Bold (700), Black (900)
+- **Named instances**: Thin (100), Regular (400), Extra Black (900)
 
 ### Glide Mono
 

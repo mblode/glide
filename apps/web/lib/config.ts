@@ -3,7 +3,7 @@ export const siteConfig = {
   url: "https://glide.blode.co",
   version: "1.1",
   description:
-    "Glide is a variable sans-serif font family by Matthew Blode. Weights from 400 to 900 in roman and italic.",
+    "Glide is a variable sans-serif font family by Matthew Blode. Weights from 100 to 900 in roman and italic.",
   author: {
     name: "Matthew Blode",
     url: "https://matthewblode.com",
