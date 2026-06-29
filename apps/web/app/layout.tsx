@@ -14,7 +14,7 @@ const glide = localFont({
     { path: "../public/glide-variable-italic.woff2", style: "italic" },
   ],
   variable: "--font-glide",
-  weight: "100 900",
+  weight: "100 950",
   display: "swap",
 });
 

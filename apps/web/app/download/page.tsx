@@ -4,7 +4,7 @@ import { DownloadPage } from "@/components/download-page";
 
 export const metadata: Metadata = {
   title: "Download Glide Variable Font",
-  description: `Download Glide ${siteConfig.version} — a variable sans-serif font family by Matthew Blode. Weights from 100 to 900 in roman and italic.`,
+  description: `Download Glide ${siteConfig.version} — a variable sans-serif font family by Matthew Blode. Weights from 100 to 950 in roman and italic.`,
   openGraph: {
     type: "website",
     url: `${siteConfig.url}/download`,

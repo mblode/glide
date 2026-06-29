@@ -16,7 +16,8 @@ const instances = [
   { weight: 600, label: "SemiBold" },
   { weight: 700, label: "Bold" },
   { weight: 800, label: "ExtraBold" },
-  { weight: 900, label: "Extra Black" },
+  { weight: 900, label: "Black" },
+  { weight: 950, label: "Extra Black" },
 ] as const;
 
 type Mode = "sans" | "italic" | "mono";
@@ -90,7 +91,7 @@ export function Playground() {
               <Slider
                 id="weight-slider"
                 min={100}
-                max={900}
+                max={950}
                 step={1}
                 value={[weight]}
                 onValueChange={([v]) => setWeight(v)}

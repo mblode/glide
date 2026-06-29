@@ -1,6 +1,6 @@
 # Glide
 
-Glide is a variable sans-serif typeface by Matthew Blode, with a continuous weight axis from 100 (thin) to 900 (extra black) in both roman and italic styles. The family also includes **Glide Mono**, a monospaced companion font for code and technical content.
+Glide is a variable sans-serif typeface by Matthew Blode, with a continuous weight axis from 100 (thin) to 950 (extra black) in both roman and italic styles. The family also includes **Glide Mono**, a monospaced companion font for code and technical content.
 
 ## Font family
 
@@ -31,7 +31,7 @@ const glide = localFont({
     { path: "../public/glide-variable-italic.woff2", style: "italic" },
   ],
   variable: "--font-glide",
-  weight: "100 900",
+  weight: "100 950",
   display: "swap",
 });
 
@@ -68,7 +68,7 @@ In your global CSS file, map `--font-glide` to Tailwind's `--font-sans` and `--f
 
 ### 4. Use it
 
-Glide is now your default sans-serif font, and Glide Mono is your monospace font. Use `font-sans` with any weight from 100 to 900, and `font-mono` for code:
+Glide is now your default sans-serif font, and Glide Mono is your monospace font. Use `font-sans` with any weight from 100 to 950, and `font-mono` for code:
 
 ```tsx
 <p className="font-sans font-medium">Medium text with Glide</p>
@@ -87,11 +87,11 @@ Glide Mono is a static font at weight 400.
 
 ## Variable font
 
-Glide is shipped as two variable font files: roman and italic. Each interpolates the whole weight axis from three masters (Thin, Regular, Extra Black), so any value from 100 to 900 is available from a single small file.
+Glide is shipped as two variable font files: roman and italic. Each interpolates the whole weight axis from three masters (Thin, Regular, Extra Black), so any value from 100 to 950 is available from a single small file.
 
 ## Font weights
 
-The `wght` axis is continuous from 100 to 900 (interpolated from three masters — Thin, Regular, Extra Black). Every standard weight is also a named instance, so the full ladder appears in font menus like macOS Font Book.
+The `wght` axis is continuous from 100 to 950 (interpolated from three masters — Thin, Regular, Extra Black). Every standard weight is also a named instance, so the full ladder appears in font menus like macOS Font Book.
 
 | Weight | Name       | Class            |
 | ------ | ---------- | ---------------- |
@@ -103,7 +103,8 @@ The `wght` axis is continuous from 100 to 900 (interpolated from three masters �
 | 600    | Semibold   | `font-semibold`  |
 | 700    | Bold       | `font-bold`      |
 | 800    | Extrabold  | `font-extrabold` |
-| 900    | Extra Black| `font-black`     |
+| 900    | Black      | `font-black`     |
+| 950    | Extra Black| `font-[950]`     |
 
 ## Usage in Tailwind
 
@@ -113,7 +114,8 @@ The `wght` axis is continuous from 100 to 900 (interpolated from three masters �
 <p className="font-sans font-light">Light text (300)</p>
 <p className="font-sans font-normal">Regular text (400)</p>
 <p className="font-sans font-bold">Bold text (700)</p>
-<p className="font-sans font-black">Extra Black text (900)</p>
+<p className="font-sans font-black">Black text (900)</p>
+<p className="font-sans font-[950]">Extra Black text (950)</p>
 
 // Italic variants
 <p className="font-sans italic">Regular italic (400)</p>
@@ -130,9 +132,9 @@ The `wght` axis is continuous from 100 to 900 (interpolated from three masters �
 - **Family**: Glide
 - **Designer**: Matthew Blode
 - **Styles**: Roman + Italic (separate variable fonts)
-- **Weight range**: 100–900 (continuous `wght` axis, 3 masters)
+- **Weight range**: 100–950 (continuous `wght` axis, 3 masters)
 - **Formats**: Variable TTF + WOFF2
-- **Named instances**: Thin, ExtraLight, Light, Regular, Medium, SemiBold, Bold, ExtraBold, Extra Black (100–900)
+- **Named instances**: Thin, ExtraLight, Light, Regular, Medium, SemiBold, Bold, ExtraBold, Black, Extra Black (100–950)
 
 ### Glide Mono
 

@@ -228,7 +228,7 @@ export function DownloadPage() {
             </code>
             {" "}(italic)
             . Variable fonts let you dial any weight from 100 (Thin)
-            to 900 (Extra Black) on a continuous axis, using a single file instead of
+            to 950 (Extra Black) on a continuous axis, using a single file instead of
             separate files per weight. A static{" "}
             <code className="rounded bg-primary/10 px-1.5 py-0.5 font-mono text-xs text-primary">
               glide-mono.ttf
@@ -272,14 +272,14 @@ export function DownloadPage() {
           <CodeBlock filename="app/globals.css">{`@font-face {
   font-family: 'GlideVariable';
   src: url('/glide-variable.woff2') format('woff2');
-  font-weight: 100 900;
+  font-weight: 100 950;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'GlideVariable';
   src: url('/glide-variable-italic.woff2') format('woff2');
-  font-weight: 100 900;
+  font-weight: 100 950;
   font-style: italic;
   font-display: swap;
 }

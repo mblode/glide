@@ -61,7 +61,7 @@ const glide = localFont({
     { path: "../public/glide-variable.woff2", style: "normal" },\n    { path: "../public/glide-variable-italic.woff2", style: "italic" },
   ],
   variable: "--font-glide",
-  weight: "100 900",
+  weight: "100 950",
   display: "swap",
 });
 
@@ -98,12 +98,12 @@ In your global CSS file, map --font-glide to Tailwind's --font-sans and --font-g
 
 ## 4. Use it
 
-Glide is now your default sans-serif font, and Glide Mono is your monospace font. Use font-sans with any weight from 100 to 900, and font-mono for code:
+Glide is now your default sans-serif font, and Glide Mono is your monospace font. Use font-sans with any weight from 100 to 950, and font-mono for code:
 
 \`\`\`tsx
 <p className="font-sans font-normal">Regular (400)</p>
 <p className="font-sans font-bold">Bold (700)</p>
-<p className="font-sans font-black">Extra Black (900)</p>\n<p className="font-sans font-bold italic">Bold italic (700)</p>\n<code className="font-mono">const glide = "mono";</code>
+<p className="font-sans font-black">Black (900)</p>\n<p className="font-sans font-bold italic">Bold italic (700)</p>\n<code className="font-mono">const glide = "mono";</code>
 \`\`\`
 `;
 
@@ -183,7 +183,7 @@ const glide = localFont({
     { path: "../public/glide-variable.woff2", style: "normal" },\n    { path: "../public/glide-variable-italic.woff2", style: "italic" },
   ],
   variable: "--font-glide",
-  weight: "100 900",
+  weight: "100 950",
   display: "swap",
 });
 
@@ -221,11 +221,11 @@ export default function RootLayout({
       <InstallStep
         step={4}
         title="Use it"
-        description="Glide is now your default sans-serif font, and Glide Mono is your monospace font. Use font-sans with any weight from 100 to 900, and font-mono for code:"
+        description="Glide is now your default sans-serif font, and Glide Mono is your monospace font. Use font-sans with any weight from 100 to 950, and font-mono for code:"
       >
         <CodeBlock>{`<p className="font-sans font-normal">Regular (400)</p>
 <p className="font-sans font-bold">Bold (700)</p>
-<p className="font-sans font-black">Extra Black (900)</p>\n<p className="font-sans font-bold italic">Bold italic (700)</p>\n<code className="font-mono">const glide = "mono";</code>`}</CodeBlock>
+<p className="font-sans font-black">Black (900)</p>\n<p className="font-sans font-bold italic">Bold italic (700)</p>\n<code className="font-mono">const glide = "mono";</code>`}</CodeBlock>
       </InstallStep>
     </div>
   );

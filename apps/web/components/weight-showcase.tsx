@@ -12,7 +12,8 @@ const weights = [
   { weight: 600, name: "Semibold" },
   { weight: 700, name: "Bold" },
   { weight: 800, name: "Extrabold" },
-  { weight: 900, name: "Extra Black" },
+  { weight: 900, name: "Black" },
+  { weight: 950, name: "Extra Black" },
 ] as const;
 
 function WeightRow({

@@ -20,7 +20,7 @@ ${siteConfig.description}
 
 ## Weights
 
-Glide ships in both roman and italic with weights from 100 to 900 as a variable font.
+Glide ships in both roman and italic with weights from 100 to 950 as a variable font.
 `;
 
 export const downloadMarkdown = `# Download Glide

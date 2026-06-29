@@ -8,17 +8,17 @@ import { cn } from "@/lib/utils";
 
 // The 3-master design: real outlines exist only at these weights. Everything
 // else on the axis is interpolated between them.
-const MASTERS = [100, 400, 900] as const;
+const MASTERS = [100, 400, 950] as const;
 const MASTER_LABELS: Record<number, string> = {
   100: "Thin",
   400: "Regular",
-  900: "Extra Black",
+  950: "Extra Black",
 };
 
 // The ramp shown in the glyph grid: master positions plus the two midpoints
-// (250, 650) that sit furthest from any master — where 3-master interpolation
+// (250, 675) that sit furthest from any master — where 3-master interpolation
 // drifts most.
-const RAMP = [100, 250, 400, 650, 900] as const;
+const RAMP = [100, 250, 400, 675, 950] as const;
 const isMaster = (w: number) => (MASTERS as readonly number[]).includes(w);
 
 // Glyphs the interpolation audit flagged as risky across the long 3-master
@@ -149,7 +149,7 @@ export function InterpolationInspector() {
           <Slider
             id="inspect-weight"
             min={100}
-            max={900}
+            max={950}
             step={1}
             value={[weight]}
             onValueChange={([v]) => setWeight(v)}
@@ -202,8 +202,8 @@ export function InterpolationInspector() {
       </div>
 
       <p className="text-muted-foreground text-sm leading-relaxed">
-        Glide interpolates its whole 100–900 axis from three masters — Thin (100),
-        Regular (400) and Extra Black (900). The amber columns (250, 650) are pure
+        Glide interpolates its whole 100–950 axis from three masters — Thin (100),
+        Regular (400) and Extra Black (950). The amber columns (250, 675) are pure
         interpolations sitting farthest from any master, so shape drift shows up
         there first. Compare a flagged glyph like <strong>$</strong> or{" "}
         <strong>S</strong> against a clean one like <strong>o</strong> across the
