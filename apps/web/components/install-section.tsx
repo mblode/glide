@@ -103,7 +103,7 @@ Glide is now your default sans-serif font, and Glide Mono is your monospace font
 \`\`\`tsx
 <p className="font-sans font-normal">Regular (400)</p>
 <p className="font-sans font-bold">Bold (700)</p>
-<p className="font-sans font-black">Black (900)</p>\n<p className="font-sans font-bold italic">Bold italic (700)</p>\n<code className="font-mono">const glide = "mono";</code>
+<p className="font-sans font-black">Extra Black (900)</p>\n<p className="font-sans font-bold italic">Bold italic (700)</p>\n<code className="font-mono">const glide = "mono";</code>
 \`\`\`
 `;
 
@@ -225,7 +225,7 @@ export default function RootLayout({
       >
         <CodeBlock>{`<p className="font-sans font-normal">Regular (400)</p>
 <p className="font-sans font-bold">Bold (700)</p>
-<p className="font-sans font-black">Black (900)</p>\n<p className="font-sans font-bold italic">Bold italic (700)</p>\n<code className="font-mono">const glide = "mono";</code>`}</CodeBlock>
+<p className="font-sans font-black">Extra Black (900)</p>\n<p className="font-sans font-bold italic">Bold italic (700)</p>\n<code className="font-mono">const glide = "mono";</code>`}</CodeBlock>
       </InstallStep>
     </div>
   );
