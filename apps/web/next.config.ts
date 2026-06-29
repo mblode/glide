@@ -9,7 +9,6 @@ const linkHeader = [
 ].join(", ");
 
 const nextConfig: NextConfig = {
-  agentRules: false,
   async headers() {
     return [
       {
