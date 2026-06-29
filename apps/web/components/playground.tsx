@@ -7,19 +7,6 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { cn } from "@/lib/utils";
 
-const instances = [
-  { weight: 100, label: "Thin" },
-  { weight: 200, label: "ExtraLight" },
-  { weight: 300, label: "Light" },
-  { weight: 400, label: "Regular" },
-  { weight: 500, label: "Medium" },
-  { weight: 600, label: "SemiBold" },
-  { weight: 700, label: "Bold" },
-  { weight: 800, label: "ExtraBold" },
-  { weight: 900, label: "Black" },
-  { weight: 950, label: "Extra Black" },
-] as const;
-
 type Mode = "sans" | "italic" | "mono";
 
 const modes: { id: Mode; label: string }[] = [
@@ -96,18 +83,6 @@ export function Playground() {
                 value={[weight]}
                 onValueChange={([v]) => setWeight(v)}
               />
-              <div className="grid grid-cols-3 gap-2">
-                {instances.map((inst) => (
-                  <Button
-                    key={inst.weight}
-                    size="sm"
-                    variant={weight === inst.weight ? "default" : "outline"}
-                    onClick={() => setWeight(inst.weight)}
-                  >
-                    {inst.label}
-                  </Button>
-                ))}
-              </div>
             </>
           )}
         </div>
