@@ -48,7 +48,7 @@ export default function Home() {
         </p>
         <div className="flex flex-wrap items-center justify-center gap-3">
           <Button asChild>
-            <Link href="/download">Download</Link>
+            <Link href="#install">Download</Link>
           </Button>
           <Button variant="outline" asChild>
             <a href="#playground">Try it</a>

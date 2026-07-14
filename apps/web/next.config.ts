@@ -18,10 +18,6 @@ const nextConfig: NextConfig = {
         source: "/",
         headers: [{ key: "Link", value: linkHeader }],
       },
-      {
-        source: "/download",
-        headers: [{ key: "Link", value: linkHeader }],
-      },
     ];
   },
 };

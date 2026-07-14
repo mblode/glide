@@ -8,10 +8,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       priority: 1,
     },
-    {
-      url: `${siteConfig.url}/download`,
-      lastModified: new Date(),
-      priority: 0.8,
-    },
   ];
 }

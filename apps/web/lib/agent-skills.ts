@@ -4,16 +4,16 @@ import { siteConfig } from "./config";
 export const downloadSkill = [
   "# Download Glide",
   "",
-  `Glide ${siteConfig.version} is available as a zip archive containing variable and static fonts in roman and italic.`,
+  `Glide ${siteConfig.version} is served as individual variable font files (roman and italic) plus a static monospace.`,
   "",
-  `- Archive: ${siteConfig.downloadUrl}`,
-  `- Releases: ${siteConfig.links.github}/releases`,
-  `- License: see ${siteConfig.links.github}/blob/main/README.md`,
+  `- Variable roman: ${siteConfig.url}/glide-variable.woff2`,
+  `- Variable italic: ${siteConfig.url}/glide-variable-italic.woff2`,
+  `- Monospace: ${siteConfig.url}/glide-mono.woff2`,
+  `- Source and license: ${siteConfig.links.github}`,
   "",
   "## Steps",
-  "1. GET the archive URL above.",
-  "2. Unzip the archive.",
-  "3. Install the .woff2, .woff, .ttf, or .otf files you need.",
+  "1. GET the font file URLs above (.ttf is also available at the same paths).",
+  "2. Install the .woff2 or .ttf files you need.",
   "",
 ].join("\n");
 

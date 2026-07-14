@@ -28,7 +28,7 @@ export function WebMcp() {
     const tools: ToolDefinition[] = [
       {
         name: "download_glide",
-        description: `Returns the download URL for the Glide ${siteConfig.version} font archive.`,
+        description: `Returns the download URLs for the Glide ${siteConfig.version} variable font files.`,
         inputSchema: {
           type: "object",
           properties: {},
@@ -36,8 +36,10 @@ export function WebMcp() {
         },
         execute: async () => ({
           version: siteConfig.version,
-          url: siteConfig.downloadUrl,
-          releases: `${siteConfig.links.github}/releases`,
+          roman: `${siteConfig.url}/glide-variable.woff2`,
+          italic: `${siteConfig.url}/glide-variable-italic.woff2`,
+          mono: `${siteConfig.url}/glide-mono.woff2`,
+          source: siteConfig.links.github,
         }),
       },
       {

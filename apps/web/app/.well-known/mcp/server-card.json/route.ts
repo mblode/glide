@@ -27,7 +27,7 @@ export function GET() {
     tools: [
       {
         name: "download_glide",
-        description: `Returns the URL for the Glide ${siteConfig.version} font archive.`,
+        description: `Returns the URLs for the Glide ${siteConfig.version} variable font files.`,
       },
       {
         name: "open_playground",

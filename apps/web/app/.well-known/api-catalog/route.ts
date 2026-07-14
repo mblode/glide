@@ -30,7 +30,7 @@ export function GET() {
         ],
       },
       {
-        anchor: `${siteConfig.url}/download`,
+        anchor: `${siteConfig.url}/#install`,
         describedby: [
           {
             href: `${siteConfig.links.github}/blob/main/README.md`,
@@ -39,9 +39,19 @@ export function GET() {
         ],
         item: [
           {
-            href: siteConfig.downloadUrl,
-            type: "application/zip",
-            title: `Glide ${siteConfig.version} font archive`,
+            href: `${siteConfig.url}/glide-variable.woff2`,
+            type: "font/woff2",
+            title: `Glide ${siteConfig.version} variable font (roman)`,
+          },
+          {
+            href: `${siteConfig.url}/glide-variable-italic.woff2`,
+            type: "font/woff2",
+            title: `Glide ${siteConfig.version} variable font (italic)`,
+          },
+          {
+            href: `${siteConfig.url}/glide-mono.woff2`,
+            type: "font/woff2",
+            title: `Glide ${siteConfig.version} monospace`,
           },
         ],
       },
