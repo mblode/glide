@@ -89,7 +89,7 @@ export default function Home() {
                 alt="Avatar of Matthew Blode"
                 className="rounded-full"
                 height={20}
-                src="https://matthewblode.com/avatar-sm.png"
+                src="/avatar-sm.png"
                 width={20}
               />
               Matthew Blode
