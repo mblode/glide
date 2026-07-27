@@ -66,7 +66,7 @@ export default function RootLayout({
         <JsonLd
           data={{
             "@context": "https://schema.org",
-            "@type": "Organization",
+            "@type": "Person",
             name: siteConfig.author.name,
             url: siteConfig.author.url,
           }}
@@ -79,20 +79,26 @@ export default function RootLayout({
             url: siteConfig.url,
           }}
         />
+        {/*
+          A typeface, not an app. SoftwareApplication would additionally require
+          `offers` plus one of `aggregateRating` or `review` for Google's Software
+          App rich result, and its review guidelines forbid ratings we author
+          about our own work, so that type could only ever fail validation.
+        */}
         <JsonLd
           data={{
             "@context": "https://schema.org",
-            "@type": "SoftwareApplication",
+            "@type": "CreativeWork",
             name: "Glide Variable Font",
-            applicationCategory: "DesignApplication",
-            operatingSystem: "All",
             description: siteConfig.description,
             url: siteConfig.url,
+            version: siteConfig.version,
             author: {
               "@type": "Person",
               name: siteConfig.author.name,
               url: siteConfig.author.url,
             },
+            isAccessibleForFree: true,
             offers: {
               "@type": "Offer",
               price: "0",
