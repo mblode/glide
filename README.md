@@ -4,7 +4,7 @@ Glide is a variable sans-serif typeface by Matthew Blode, with a continuous weig
 
 ## Font family
 
-The default font family in [Blode UI](https://ui.blode.co) is "Glide". This versatile variable font is applied using Tailwind's `font-sans` utility class, and Glide Mono is used via `font-mono`.
+The default font family in [Blode UI](https://blode.co/ui) is "Glide". This versatile variable font is applied using Tailwind's `font-sans` utility class, and Glide Mono is used via `font-mono`.
 
 ```tsx
 <p className="font-sans">This text uses the Glide font</p>
@@ -16,7 +16,7 @@ The default font family in [Blode UI](https://ui.blode.co) is "Glide". This vers
 
 ### 1. Download the fonts
 
-Download [glide-variable.woff2](https://glide.blode.co/glide-variable.woff2), [glide-variable-italic.woff2](https://glide.blode.co/glide-variable-italic.woff2), and [glide-mono.woff2](https://glide.blode.co/glide-mono.woff2) and place them in your project's `public/` directory.
+Download [glide-variable.woff2](https://blode.co/glide/glide-variable.woff2), [glide-variable-italic.woff2](https://blode.co/glide/glide-variable-italic.woff2), and [glide-mono.woff2](https://blode.co/glide/glide-mono.woff2) and place them in your project's `public/` directory.
 
 ### 2. Configure the fonts in your root layout
 
@@ -168,4 +168,4 @@ Copyright Matthew Blode. All rights reserved.
 
 ---
 
-Crafted by [<img src="https://matthewblode.com/avatar-circle.png" width="20" align="top" />](https://matthewblode.com) [Matthew Blode](https://matthewblode.com)
+Crafted by [<img src="https://blode.co/avatar-circle.png" width="20" align="top" />](https://blode.co) [Matthew Blode](https://blode.co)

@@ -7,6 +7,8 @@ node_modules/
 
 # Python bytecode — regenerated on every run
 __pycache__/
+.vercel
+.env*
 *.pyc
 
 # Source backups from local font-editor sessions.

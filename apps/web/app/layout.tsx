@@ -1,12 +1,9 @@
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
-import Script from "next/script";
 import { JsonLd } from "@/components/json-ld";
 import { WebMcp } from "@/components/web-mcp";
 import { siteConfig } from "@/lib/config";
 import "./globals.css";
-
-const googleAnalyticsId = "G-32358W56XH";
 
 const glide = localFont({
   src: [
@@ -61,6 +58,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${glide.variable} ${glideMono.variable} antialiased`}>
+      <head>
+        <link href="https://us.i.posthog.com" rel="preconnect" />
+        <link href="https://us-assets.i.posthog.com" rel="dns-prefetch" />
+      </head>
       <body className="min-h-dvh bg-background text-foreground">
         <JsonLd
           data={{
@@ -107,18 +108,6 @@ export default function RootLayout({
         </a>
         {children}
         <WebMcp />
-        <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`}
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${googleAnalyticsId}');
-          `}
-        </Script>
       </body>
     </html>
   );

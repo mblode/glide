@@ -1,10 +1,11 @@
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
+
 import { InstallSection } from "@/components/install-section";
 import { Playground } from "@/components/playground";
+import { Button } from "@/components/ui/button";
 import { WeightShowcase } from "@/components/weight-showcase";
+import { asset, siteConfig } from "@/lib/config";
 import { cn } from "@/lib/utils";
-import { siteConfig } from "@/lib/config";
 
 function Section({
   id,
@@ -30,9 +31,7 @@ function Section({
 }
 
 function SectionHeading({ children }: { children: React.ReactNode }) {
-  return (
-    <h2 className="text-lg font-bold tracking-tight">{children}</h2>
-  );
+  return <h2 className="text-lg font-bold tracking-tight">{children}</h2>;
 }
 
 export default function Home() {
@@ -89,16 +88,14 @@ export default function Home() {
                 alt="Avatar of Matthew Blode"
                 className="rounded-full"
                 height={20}
-                src="/avatar-sm.png"
+                src={asset("/avatar-sm.png")}
                 width={20}
               />
               Matthew Blode
             </a>
           </div>
           <div className="flex items-center gap-2 text-muted-foreground/30">
-            <span className="text-muted-foreground">
-              v{siteConfig.version}
-            </span>{" "}
+            <span className="text-muted-foreground">v{siteConfig.version}</span>{" "}
             &bull;
             <a
               className="text-muted-foreground transition-colors hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring focus-visible:rounded-lg"

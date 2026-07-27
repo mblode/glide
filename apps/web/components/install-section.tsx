@@ -7,11 +7,10 @@ import {
 import { useCallback, useState } from "react";
 
 import { CodeBlock } from "@/components/code-block";
+import { asset, siteConfig } from "@/lib/config";
 
 function SectionHeading({ children }: { children: React.ReactNode }) {
-  return (
-    <h2 className="text-lg font-bold tracking-tight">{children}</h2>
-  );
+  return <h2 className="text-lg font-bold tracking-tight">{children}</h2>;
 }
 
 function InstallStep({
@@ -47,7 +46,7 @@ const INSTALL_MARKDOWN = `# Install Glide
 
 ## 1. Download the font files
 
-Download [glide-variable.woff2](https://glide.blode.co/glide-variable.woff2), [glide-variable-italic.woff2](https://glide.blode.co/glide-variable-italic.woff2) and [glide-mono.woff2](https://glide.blode.co/glide-mono.woff2) and place them in your project's public/ directory.
+Download [glide-variable.woff2](${siteConfig.url}/glide-variable.woff2), [glide-variable-italic.woff2](${siteConfig.url}/glide-variable-italic.woff2) and [glide-mono.woff2](${siteConfig.url}/glide-mono.woff2) and place them in your project's public/ directory.
 
 ## 2. Configure the fonts in your root layout
 
@@ -111,7 +110,9 @@ export function InstallSection() {
   const [isCopied, setIsCopied] = useState(false);
 
   const handleCopy = useCallback(async () => {
-    if (isCopied) return;
+    if (isCopied) {
+      return;
+    }
     try {
       await navigator.clipboard.writeText(INSTALL_MARKDOWN);
       setIsCopied(true);
@@ -138,36 +139,33 @@ export function InstallSection() {
         </button>
       </div>
 
-      <InstallStep
-        step={1}
-        title="Download the font files"
-      >
+      <InstallStep step={1} title="Download the font files">
         <p className="text-sm leading-relaxed text-muted-foreground">
           Download{" "}
           <a
             className="font-medium text-foreground underline underline-offset-4 transition-colors hover:text-primary"
             download="glide-variable.woff2"
-            href="/glide-variable.woff2"
+            href={asset("/glide-variable.woff2")}
           >
             glide-variable.woff2
-          </a>
-          {" "}and{" "}
+          </a>{" "}
+          and{" "}
           <a
             className="font-medium text-foreground underline underline-offset-4 transition-colors hover:text-primary"
             download="glide-variable-italic.woff2"
-            href="/glide-variable-italic.woff2"
+            href={asset("/glide-variable-italic.woff2")}
           >
             glide-variable-italic.woff2
-          </a>
-          {" "}and{" "}
+          </a>{" "}
+          and{" "}
           <a
             className="font-medium text-foreground underline underline-offset-4 transition-colors hover:text-primary"
             download="glide-mono.woff2"
-            href="/glide-mono.woff2"
+            href={asset("/glide-mono.woff2")}
           >
             glide-mono.woff2
-          </a>
-          {" "}and place them in your project&apos;s public/ directory.
+          </a>{" "}
+          and place them in your project&apos;s public/ directory.
         </p>
       </InstallStep>
 
