@@ -9,6 +9,11 @@ import { useCallback, useState } from "react";
 import { CodeBlock } from "@/components/code-block";
 import { asset, siteConfig } from "@/lib/config";
 import { installPrompt } from "@/lib/install-prompt";
+import {
+  layoutSnippet,
+  themeSnippet,
+  usageSnippet,
+} from "@/lib/install-snippets";
 import { cn } from "@/lib/utils";
 
 function SectionHeading({ children }: { children: React.ReactNode }) {
@@ -152,35 +157,7 @@ export function InstallSection() {
         title="Configure the fonts in your root layout"
         description="In app/layout.tsx, import localFont and configure the Glide variable and Glide Mono fonts:"
       >
-        <CodeBlock filename="app/layout.tsx">{`import localFont from "next/font/local";
-
-const glide = localFont({
-  src: [
-    { path: "./fonts/glide-variable.woff2", style: "normal" },\n    { path: "./fonts/glide-variable-italic.woff2", style: "italic" },
-  ],
-  variable: "--font-glide",
-  weight: "100 950",
-  display: "swap",
-});
-
-const glideMono = localFont({
-  src: [{ path: "./fonts/glide-mono.woff2", style: "normal" }],
-  variable: "--font-glide-mono",
-  weight: "400",
-  display: "swap",
-});
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <html lang="en" className={\`\${glide.variable} \${glideMono.variable}\`}>
-      <body>{children}</body>
-    </html>
-  );
-}`}</CodeBlock>
+        <CodeBlock filename="app/layout.tsx">{layoutSnippet}</CodeBlock>
       </InstallStep>
 
       <InstallStep
@@ -188,10 +165,7 @@ export default function RootLayout({
         title="Map the CSS variables in Tailwind"
         description="In your global CSS file, map --font-glide to Tailwind's --font-sans and --font-glide-mono to --font-mono:"
       >
-        <CodeBlock filename="app/globals.css">{`@theme inline {
-  --font-sans: var(--font-glide);
-  --font-mono: var(--font-glide-mono);
-}`}</CodeBlock>
+        <CodeBlock filename="app/globals.css">{themeSnippet}</CodeBlock>
       </InstallStep>
 
       <InstallStep
@@ -199,9 +173,7 @@ export default function RootLayout({
         title="Use it"
         description="Glide is now your default sans-serif font, and Glide Mono is your monospace font. Use font-sans with any weight from 100 to 950, and font-mono for code:"
       >
-        <CodeBlock>{`<p className="font-sans font-normal">Regular (400)</p>
-<p className="font-sans font-bold">Bold (700)</p>
-<p className="font-sans font-black">Black (900)</p>\n<p className="font-sans font-bold italic">Bold italic (700)</p>\n<code className="font-mono">const glide = "mono";</code>`}</CodeBlock>
+        <CodeBlock>{usageSnippet}</CodeBlock>
       </InstallStep>
     </div>
   );

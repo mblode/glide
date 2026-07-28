@@ -1,11 +1,14 @@
 {
   "name": "glide",
   "private": true,
-  "workspaces": ["apps/web"],
+  "workspaces": [
+    "apps/web"
+  ],
   "scripts": {
     "dev": "npm --workspace @glide/web run dev",
     "build": "npm --workspace @glide/web run build",
-    "start": "npm --workspace @glide/web run start"
+    "start": "npm --workspace @glide/web run start",
+    "check": "python3 scripts/check-install-docs.py"
   },
   "devDependencies": {
     "portless": "^0.15.1"

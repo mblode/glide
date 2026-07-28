@@ -1,9 +1,11 @@
 import { siteConfig } from "./config";
+import { layoutSnippet, themeSnippet } from "./install-snippets";
 
 /**
  * A paste-into-your-agent install prompt, written in the imperative so a coding
- * agent can run it directly. Different job from INSTALL_MARKDOWN in
- * install-section.tsx, which is reference documentation.
+ * agent can run it directly. The numbered steps rendered on the page are the
+ * human path; this is the one you hand to a tool. Code comes from
+ * install-snippets so the two can't drift.
  *
  * Two deliberate choices:
  * 1. `curl -o`, not a web-fetch tool: fetch tools mangle or refuse binaries.
@@ -35,37 +37,7 @@ If I wanted these for desktop rather than the web, point me at ${siteConfig.url}
 Merge this into my existing layout. Keep my imports (especially \`./globals.css\`), metadata and body classes; just add the fonts and the \`<html>\` className.
 
 \`\`\`tsx
-import localFont from "next/font/local";
-import "./globals.css";
-
-const glide = localFont({
-  src: [
-    { path: "./fonts/glide-variable.woff2", style: "normal" },
-    { path: "./fonts/glide-variable-italic.woff2", style: "italic" },
-  ],
-  variable: "--font-glide",
-  weight: "100 950",
-  display: "swap",
-});
-
-const glideMono = localFont({
-  src: "./fonts/glide-mono.woff2",
-  variable: "--font-glide-mono",
-  weight: "400",
-  display: "swap",
-});
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <html lang="en" className={\`\${glide.variable} \${glideMono.variable}\`}>
-      <body>{children}</body>
-    </html>
-  );
-}
+${layoutSnippet}
 \`\`\`
 
 \`next/font/local\` resolves \`src\` relative to this file and needs static string literals, so leave the \`./fonts/\` paths alone. Don't move them to \`public\`: next/font already emits a hashed copy, so a second one there just republishes the font at a guessable URL.
@@ -75,10 +47,7 @@ export default function RootLayout({
 In my global CSS:
 
 \`\`\`css
-@theme inline {
-  --font-sans: var(--font-glide);
-  --font-mono: var(--font-glide-mono);
-}
+${themeSnippet}
 \`\`\`
 
 Not a Next.js or Tailwind project? Put the files wherever static assets are served from and use \`@font-face\` instead, with \`format("woff2-variations")\` and \`font-weight: 100 950\` on the roman and italic faces, then set \`font-family\` on \`body\` and on \`code, pre\`.

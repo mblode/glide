@@ -24,6 +24,7 @@ In `app/layout.tsx`, import `localFont` and configure both Glide and Glide Mono:
 
 ```tsx
 import localFont from "next/font/local";
+import "./globals.css";
 
 const glide = localFont({
   src: [
@@ -36,7 +37,7 @@ const glide = localFont({
 });
 
 const glideMono = localFont({
-  src: [{ path: "./fonts/glide-mono.woff2", style: "normal" }],
+  src: "./fonts/glide-mono.woff2",
   variable: "--font-glide-mono",
   weight: "400",
   display: "swap",
