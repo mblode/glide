@@ -2,11 +2,17 @@ import type { MetadataRoute } from "next";
 import { siteConfig } from "@/lib/config";
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const lastModified = new Date();
   return [
     {
       url: siteConfig.url,
-      lastModified: new Date(),
+      lastModified,
       priority: 1,
+    },
+    {
+      url: `${siteConfig.url}/inspect`,
+      lastModified,
+      priority: 0.5,
     },
   ];
 }

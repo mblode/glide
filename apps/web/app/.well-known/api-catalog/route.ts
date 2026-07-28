@@ -53,6 +53,11 @@ export function GET() {
             type: "font/woff2",
             title: `Glide ${siteConfig.version} monospace`,
           },
+          {
+            href: `${siteConfig.url}/glide.zip`,
+            type: "application/zip",
+            title: `Glide ${siteConfig.version} desktop bundle (TTF)`,
+          },
         ],
       },
     ],

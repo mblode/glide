@@ -9,11 +9,15 @@ export const downloadSkill = [
   `- Variable roman: ${siteConfig.url}/glide-variable.woff2`,
   `- Variable italic: ${siteConfig.url}/glide-variable-italic.woff2`,
   `- Monospace: ${siteConfig.url}/glide-mono.woff2`,
+  `- Desktop bundle: ${siteConfig.url}/glide.zip`,
   `- Source and license: ${siteConfig.links.github}`,
   "",
+  "Glide is licensed under the SIL Open Font License 1.1.",
+  "",
   "## Steps",
-  "1. GET the font file URLs above (.ttf is also available at the same paths).",
-  "2. Install the .woff2 or .ttf files you need.",
+  "1. For the web, GET the .woff2 URLs above (.ttf is at the same paths).",
+  "2. For desktop use, GET glide.zip: TTF, both variable fonts, Glide Mono and",
+  "   20 static weights, for Figma, Font Book and Adobe apps.",
   "",
 ].join("\n");
 

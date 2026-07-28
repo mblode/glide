@@ -22,7 +22,7 @@ npm run build    # production Next.js build for apps/web
 npm run start    # Next.js production server
 ```
 
-`npm@10.9.2` is pinned. The web app is a single npm workspace at `apps/web`.
+`npm@12.0.1` is pinned. The web app is a single npm workspace at `apps/web`.
 
 ## Boundaries
 
