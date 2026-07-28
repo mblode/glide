@@ -149,6 +149,8 @@ The `wght` axis is continuous from 100 to 950 (interpolated from three masters â
 - `glide-variable.glyphs` / `glide-variable-italic.glyphs`: Glyphs source files
 - `glide-mono.glyphs`: Mono source file
 - `fonts/`: built font files (variable + static) and `glide.css`
+- `fonts/static/`: static instances, derived; rebuild with `scripts/make-desktop-bundle.py`
+- `scripts/make-desktop-bundle.py`: builds `apps/web/public/glide.zip`, the desktop download
 - `apps/web/`: Next.js proof and documentation site
 
 The static-to-variable generation pipeline, CLI, reports, and intervention studio now live in [`static-to-variable`](https://github.com/mblode/static-to-variable).
@@ -164,7 +166,11 @@ npm run build
 
 ## License
 
-Copyright Matthew Blode. All rights reserved.
+[SIL Open Font License 1.1](OFL.txt). Use Glide in personal and commercial work,
+embed it, modify it. You can't sell the font files on their own, and modified
+versions can't use the Glide name.
+
+Copyright 2026 Matthew Blode.
 
 ---
 

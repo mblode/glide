@@ -105,6 +105,18 @@ export function InstallSection() {
         />
       </div>
 
+      <p className="text-sm leading-relaxed text-pretty text-muted-foreground">
+        For Figma and Font Book,{" "}
+        <a
+          className="font-medium text-foreground underline underline-offset-4 transition-colors hover:text-primary"
+          download="glide.zip"
+          href={asset("/glide.zip")}
+        >
+          download Glide for desktop
+        </a>{" "}
+        (TTF).
+      </p>
+
       <InstallStep step={1} title="Download the font files">
         <p className="text-sm leading-relaxed text-muted-foreground">
           Download{" "}

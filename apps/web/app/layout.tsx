@@ -98,6 +98,7 @@ export default function RootLayout({
               url: siteConfig.author.url,
             },
             isAccessibleForFree: true,
+            license: "https://openfontlicense.org",
             offers: {
               "@type": "Offer",
               price: "0",

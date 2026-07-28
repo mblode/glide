@@ -11,6 +11,8 @@ ${siteConfig.description}
 - Variable roman: ${siteConfig.url}/glide-variable.woff2
 - Variable italic: ${siteConfig.url}/glide-variable-italic.woff2
 - Monospace: ${siteConfig.url}/glide-mono.woff2
+- Desktop bundle (TTF + 20 static weights): ${siteConfig.url}/glide.zip
+- License: SIL Open Font License 1.1
 - Source: ${siteConfig.links.github}
 - Author: ${siteConfig.author.name} — ${siteConfig.author.url}
 

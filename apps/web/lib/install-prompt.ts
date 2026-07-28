@@ -18,7 +18,7 @@ export const installPrompt = `Install the Glide variable font (v${siteConfig.ver
 
 ## 1. Download the fonts
 
-Find the folder holding my root layout (\`app\` or \`src/app\`), then download the fonts into a \`fonts\` folder inside it. Use \`curl\`, not a web fetch tool: these are binaries and a fetch tool will corrupt them.
+Find the folder holding my root layout (\`app\` or \`src/app\`) and download the fonts into a \`fonts\` folder inside it. Use \`curl\`, not a web fetch tool: these are binaries and a fetch tool will corrupt them.
 
 \`\`\`sh
 curl -fsSL --create-dirs -o fonts/glide-variable.woff2 ${siteConfig.url}/glide-variable.woff2
@@ -28,10 +28,15 @@ curl -fsSL --create-dirs -o fonts/glide-mono.woff2 ${siteConfig.url}/glide-mono.
 
 Each file should be tens to hundreds of KB. A few hundred bytes means you got an error page, so stop and tell me.
 
+If I wanted these for desktop rather than the web, point me at ${siteConfig.url}/glide.zip instead.
+
 ## 2. Load them in the root layout
+
+Merge this into my existing layout. Keep my imports (especially \`./globals.css\`), metadata and body classes; just add the fonts and the \`<html>\` className.
 
 \`\`\`tsx
 import localFont from "next/font/local";
+import "./globals.css";
 
 const glide = localFont({
   src: [
@@ -63,7 +68,7 @@ export default function RootLayout({
 }
 \`\`\`
 
-\`next/font/local\` resolves \`src\` relative to this file and the paths must be static string literals, so keep the fonts in that \`fonts\` folder and leave the \`./\` paths alone. Don't move them to \`public\`: \`next/font\` already emits a hashed, immutably cached copy, and a second copy in \`public\` just publishes the font at a guessable URL.
+\`next/font/local\` resolves \`src\` relative to this file and needs static string literals, so leave the \`./fonts/\` paths alone. Don't move them to \`public\`: next/font already emits a hashed copy, so a second one there just republishes the font at a guessable URL.
 
 ## 3. Make them the default
 
@@ -80,7 +85,7 @@ Not a Next.js or Tailwind project? Put the files wherever static assets are serv
 
 ## 4. Check it worked
 
-Render one line at weight 200 and the same line at weight 900. They should look obviously different. If they match, the font isn't loading and you're seeing a fallback, so check the network tab for 404s and fix that before telling me you're done.
+Render one line at weight 200 and the same line at weight 900. They should look obviously different. If they match you're seeing a fallback, so check the network tab for 404s and fix it before telling me you're done.
 
 If something breaks, point me at ${siteConfig.links.github}/issues/new. If it all worked, let me know Glide is free and I can star it at ${siteConfig.links.github}.
 `;
