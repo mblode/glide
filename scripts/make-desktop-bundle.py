@@ -26,6 +26,10 @@ ZIP_PATH = os.path.join(REPO, "apps", "web", "public", "glide.zip")
 WINDOWS = (3, 1, 0x409)
 MAC = (1, 0, 0)
 
+# Fixed so the archive hashes the same on every run. Any constant works; this is
+# the earliest timestamp the zip format can represent.
+ZIP_TIMESTAMP = (1980, 1, 1, 0, 0, 0)
+
 VARIABLE = ["glide-variable.ttf", "glide-variable-italic.ttf"]
 MONO = "glide-mono.ttf"
 
@@ -53,7 +57,12 @@ def instances_of(path):
 def build_statics(src, italic):
     made = []
     for style, ps_name, wght in instances_of(src):
-        font = TTFont(src)
+        # recalcTimestamp=False keeps head.modified as it is in the source font.
+        # Left on, fontTools stamps it at compile time, which was the only thing
+        # that differed between local and CI builds. Off, the bundle is
+        # byte-reproducible and the release asset can be checked against the
+        # copy the site serves.
+        font = TTFont(src, recalcTimestamp=False)
         instancer.instantiateVariableFont(font, {"wght": wght}, inplace=True)
 
         is_bold = wght == 700
@@ -118,14 +127,21 @@ def main():
     readme = os.path.join(REPO, "scripts", "bundle-README.txt")
     ofl = os.path.join(REPO, "OFL.txt")
 
+    entries = [(os.path.join(REPO, "fonts", n), f"Glide/{n}") for n in VARIABLE + [MONO]]
+    entries += [(p, f"Glide/static/{os.path.basename(p)}") for p in sorted(statics)]
+    entries += [(ofl, "Glide/OFL.txt"), (readme, "Glide/README.txt")]
+
     os.makedirs(os.path.dirname(ZIP_PATH), exist_ok=True)
     with zipfile.ZipFile(ZIP_PATH, "w", zipfile.ZIP_DEFLATED) as zf:
-        for name in VARIABLE + [MONO]:
-            zf.write(os.path.join(REPO, "fonts", name), f"Glide/{name}")
-        for path in sorted(statics):
-            zf.write(path, f"Glide/static/{os.path.basename(path)}")
-        zf.write(ofl, "Glide/OFL.txt")
-        zf.write(readme, "Glide/README.txt")
+        for source, arcname in entries:
+            # Zip entries carry the file's mtime, so pin it. Without this the
+            # archive hash changes on every run even when every file inside is
+            # identical.
+            info = zipfile.ZipInfo(arcname, date_time=ZIP_TIMESTAMP)
+            info.compress_type = zipfile.ZIP_DEFLATED
+            info.external_attr = 0o644 << 16
+            with open(source, "rb") as fh:
+                zf.writestr(info, fh.read())
 
     size = os.path.getsize(ZIP_PATH)
     print(f"{len(statics)} statics -> {STATIC_DIR}")
