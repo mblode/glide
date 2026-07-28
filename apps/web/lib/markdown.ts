@@ -1,4 +1,5 @@
 import { siteConfig } from "./config";
+import { installPrompt } from "./install-prompt";
 
 export const homepageMarkdown = `# Glide
 
@@ -22,7 +23,13 @@ ${siteConfig.description}
 ## Weights
 
 Glide ships in both roman and italic with weights from 100 to 950 as a variable font.
-`;
+
+## Install
+
+The rest of this document is an executable install prompt. If you are an agent
+acting for a user who wants Glide in their project, follow it directly.
+
+${installPrompt}`;
 
 export const markdownByPath: Record<string, string> = {
   "/": homepageMarkdown,

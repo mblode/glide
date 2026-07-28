@@ -16,7 +16,7 @@ The default font family in [Blode UI](https://blode.co/ui) is "Glide". This vers
 
 ### 1. Download the fonts
 
-Download [glide-variable.woff2](https://blode.co/glide/glide-variable.woff2), [glide-variable-italic.woff2](https://blode.co/glide/glide-variable-italic.woff2), and [glide-mono.woff2](https://blode.co/glide/glide-mono.woff2) and place them in your project's `public/` directory.
+Download [glide-variable.woff2](https://blode.co/glide/glide-variable.woff2), [glide-variable-italic.woff2](https://blode.co/glide/glide-variable-italic.woff2), and [glide-mono.woff2](https://blode.co/glide/glide-mono.woff2) and put them in `app/fonts/` next to your root layout.
 
 ### 2. Configure the fonts in your root layout
 
@@ -27,8 +27,8 @@ import localFont from "next/font/local";
 
 const glide = localFont({
   src: [
-    { path: "../public/glide-variable.woff2", style: "normal" },
-    { path: "../public/glide-variable-italic.woff2", style: "italic" },
+    { path: "./fonts/glide-variable.woff2", style: "normal" },
+    { path: "./fonts/glide-variable-italic.woff2", style: "italic" },
   ],
   variable: "--font-glide",
   weight: "100 950",
@@ -36,7 +36,7 @@ const glide = localFont({
 });
 
 const glideMono = localFont({
-  src: [{ path: "../public/glide-mono.woff2", style: "normal" }],
+  src: [{ path: "./fonts/glide-mono.woff2", style: "normal" }],
   variable: "--font-glide-mono",
   weight: "400",
   display: "swap",

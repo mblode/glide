@@ -8,9 +8,60 @@ import { useCallback, useState } from "react";
 
 import { CodeBlock } from "@/components/code-block";
 import { asset, siteConfig } from "@/lib/config";
+import { installPrompt } from "@/lib/install-prompt";
+import { cn } from "@/lib/utils";
 
 function SectionHeading({ children }: { children: React.ReactNode }) {
   return <h2 className="text-lg font-bold tracking-tight">{children}</h2>;
+}
+
+/**
+ * A copy button with a visible label. The shared CopyButton in components/ui is
+ * icon-only by contract, so it can't carry one.
+ */
+function CopyTextButton({
+  content,
+  label,
+  className,
+  title,
+}: {
+  content: string;
+  label: string;
+  className?: string;
+  title?: string;
+}) {
+  const [isCopied, setIsCopied] = useState(false);
+
+  const handleCopy = useCallback(async () => {
+    if (isCopied) {
+      return;
+    }
+    try {
+      await navigator.clipboard.writeText(content);
+      setIsCopied(true);
+      setTimeout(() => setIsCopied(false), 3000);
+    } catch (error) {
+      console.error("Error copying content", error);
+    }
+  }, [content, isCopied]);
+
+  const Icon = isCopied ? CheckIcon : CopyIcon;
+
+  return (
+    <button
+      type="button"
+      className={cn(
+        "inline-flex shrink-0 items-center gap-2 rounded-xl border border-border px-3 py-1.5 text-sm font-medium transition-colors hover:bg-secondary/25",
+        className
+      )}
+      onClick={handleCopy}
+      aria-label={isCopied ? "Copied" : label}
+      title={title}
+    >
+      <Icon className="size-4" />
+      <span>{label}</span>
+    </button>
+  );
 }
 
 function InstallStep({
@@ -42,101 +93,16 @@ function InstallStep({
   );
 }
 
-const INSTALL_MARKDOWN = `# Install Glide
-
-## 1. Download the font files
-
-Download [glide-variable.woff2](${siteConfig.url}/glide-variable.woff2), [glide-variable-italic.woff2](${siteConfig.url}/glide-variable-italic.woff2) and [glide-mono.woff2](${siteConfig.url}/glide-mono.woff2) and place them in your project's public/ directory.
-
-## 2. Configure the fonts in your root layout
-
-In app/layout.tsx, import localFont and configure the Glide variable and Glide Mono fonts:
-
-\`\`\`tsx
-import localFont from "next/font/local";
-
-const glide = localFont({
-  src: [
-    { path: "../public/glide-variable.woff2", style: "normal" },\n    { path: "../public/glide-variable-italic.woff2", style: "italic" },
-  ],
-  variable: "--font-glide",
-  weight: "100 950",
-  display: "swap",
-});
-
-const glideMono = localFont({
-  src: [{ path: "../public/glide-mono.woff2", style: "normal" }],
-  variable: "--font-glide-mono",
-  weight: "400",
-  display: "swap",
-});
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <html lang="en" className={\`\${glide.variable} \${glideMono.variable}\`}>
-      <body>{children}</body>
-    </html>
-  );
-}
-\`\`\`
-
-## 3. Map the CSS variables in Tailwind
-
-In your global CSS file, map --font-glide to Tailwind's --font-sans and --font-glide-mono to --font-mono:
-
-\`\`\`css
-@theme inline {
-  --font-sans: var(--font-glide);
-  --font-mono: var(--font-glide-mono);
-}
-\`\`\`
-
-## 4. Use it
-
-Glide is now your default sans-serif font, and Glide Mono is your monospace font. Use font-sans with any weight from 100 to 950, and font-mono for code:
-
-\`\`\`tsx
-<p className="font-sans font-normal">Regular (400)</p>
-<p className="font-sans font-bold">Bold (700)</p>
-<p className="font-sans font-black">Black (900)</p>\n<p className="font-sans font-bold italic">Bold italic (700)</p>\n<code className="font-mono">const glide = "mono";</code>
-\`\`\`
-`;
-
 export function InstallSection() {
-  const [isCopied, setIsCopied] = useState(false);
-
-  const handleCopy = useCallback(async () => {
-    if (isCopied) {
-      return;
-    }
-    try {
-      await navigator.clipboard.writeText(INSTALL_MARKDOWN);
-      setIsCopied(true);
-      setTimeout(() => setIsCopied(false), 3000);
-    } catch (error) {
-      console.error("Error copying content", error);
-    }
-  }, [isCopied]);
-
-  const Icon = isCopied ? CheckIcon : CopyIcon;
-
   return (
     <div className="space-y-8">
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between gap-3">
         <SectionHeading>Install</SectionHeading>
-        <button
-          type="button"
-          className="inline-flex items-center gap-2 rounded-xl border border-border px-3 py-1.5 text-sm font-medium transition-colors hover:bg-secondary/25"
-          onClick={handleCopy}
-          aria-label={isCopied ? "Copied" : "Copy as markdown"}
-        >
-          <Icon className="size-[16px]" />
-          <span>{isCopied ? "Copied" : "Copy as markdown"}</span>
-        </button>
+        <CopyTextButton
+          content={installPrompt}
+          label="Copy prompt"
+          title="Copy install instructions for a coding agent"
+        />
       </div>
 
       <InstallStep step={1} title="Download the font files">
@@ -165,7 +131,7 @@ export function InstallSection() {
           >
             glide-mono.woff2
           </a>{" "}
-          and place them in your project&apos;s public/ directory.
+          and put them in app/fonts/ next to your root layout.
         </p>
       </InstallStep>
 
@@ -178,7 +144,7 @@ export function InstallSection() {
 
 const glide = localFont({
   src: [
-    { path: "../public/glide-variable.woff2", style: "normal" },\n    { path: "../public/glide-variable-italic.woff2", style: "italic" },
+    { path: "./fonts/glide-variable.woff2", style: "normal" },\n    { path: "./fonts/glide-variable-italic.woff2", style: "italic" },
   ],
   variable: "--font-glide",
   weight: "100 950",
@@ -186,7 +152,7 @@ const glide = localFont({
 });
 
 const glideMono = localFont({
-  src: [{ path: "../public/glide-mono.woff2", style: "normal" }],
+  src: [{ path: "./fonts/glide-mono.woff2", style: "normal" }],
   variable: "--font-glide-mono",
   weight: "400",
   display: "swap",
