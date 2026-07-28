@@ -15,10 +15,23 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Create release archive
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install fontTools
+        run: pip install fonttools brotli
+
+      # Same script the site uses, so the release asset and the download at
+      # blode.co/glide/glide.zip are the same bundle. fonts/static is derived
+      # and gitignored, so it has to be regenerated here.
+      - name: Build the desktop bundle
+        run: python3 scripts/make-desktop-bundle.py
+
+      - name: Name the archive after the tag
         run: |
           VERSION="${GITHUB_REF_NAME#v}"
-          zip -r "Glide-${VERSION}.zip" fonts/ README.md -x "**/.DS_Store"
+          cp apps/web/public/glide.zip "Glide-${VERSION}.zip"
 
       - name: Publish release
         uses: softprops/action-gh-release@v2
