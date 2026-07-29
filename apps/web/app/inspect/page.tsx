@@ -2,11 +2,17 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { InterpolationInspector } from "@/components/interpolation-inspector";
+import { siteConfig } from "@/lib/config";
 
 export const metadata: Metadata = {
   title: "Interpolation inspector",
   description:
     "Visualise how Glide interpolates its weight axis from three masters (Thin, Regular, Extra Black) and where in-between weights drift.",
+  // Without this the page inherits the layout's canonical, which points at the
+  // home page, so a URL that is in the sitemap canonicalises away from itself.
+  alternates: {
+    canonical: `${siteConfig.url}/inspect`,
+  },
 };
 
 export default function InspectPage() {

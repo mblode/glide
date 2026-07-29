@@ -67,6 +67,17 @@ export default function Home() {
         {/* Weights */}
         <Section bordered={false}>
           <WeightShowcase />
+          <p className="mt-6 text-muted-foreground text-sm">
+            Only three of these are drawn: Thin, Regular, and Extra Black. The
+            rest are interpolated.{" "}
+            <Link
+              className="underline underline-offset-4 hover:text-foreground"
+              href="/inspect"
+            >
+              Open the interpolation inspector
+            </Link>{" "}
+            to see where the shapes drift in between.
+          </p>
         </Section>
 
         {/* Install */}
