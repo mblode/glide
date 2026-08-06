@@ -1,30 +1,41 @@
-# Glide
+<div align="center">
 
-Glide is a variable sans-serif typeface by Matthew Blode, with a continuous weight axis from 100 (thin) to 950 (extra black) in both roman and italic styles. The family also includes **Glide Mono**, a monospaced companion font for code and technical content.
+# [Glide](https://blode.co/glide)
 
-## Font family
+**Variable sans-serif with a continuous 100 to 950 weight axis, in roman, italic, and monospace**
 
-The default font family in [Blode UI](https://blode.co/ui) is "Glide". This versatile variable font is applied using Tailwind's `font-sans` utility class, and Glide Mono is used via `font-mono`.
+Ship every weight from Thin to Extra Black out of one small font file, with a mono companion for code.
 
-```tsx
-<p className="font-sans">This text uses the Glide font</p>
-<p className="font-sans italic">This text uses Glide italic</p>
-<code className="font-mono">const glide = "mono";</code>
+</div>
+
+## Demo
+
+See the whole family set as running text and specimens.
+
+<p>
+<a href="https://blode.co/glide">
+<img alt="View demo" src=".github/assets/demo.svg" width="200" />
+</a>
+</p>
+
+## Install
+
+For the web, put the three WOFF2 files in `app/fonts/` next to your root layout:
+
+```bash
+curl -O https://blode.co/glide/glide-variable.woff2
+curl -O https://blode.co/glide/glide-variable-italic.woff2
+curl -O https://blode.co/glide/glide-mono.woff2
 ```
 
-## Install Glide
+For Font Book and design tools, download [glide.zip](https://blode.co/glide/glide.zip): the variable TTFs plus every static instance.
 
-### 1. Download the fonts
+## Quickstart
 
-Download [glide-variable.woff2](https://blode.co/glide/glide-variable.woff2), [glide-variable-italic.woff2](https://blode.co/glide/glide-variable-italic.woff2), and [glide-mono.woff2](https://blode.co/glide/glide-mono.woff2) and put them in `app/fonts/` next to your root layout.
-
-### 2. Configure the fonts in your root layout
-
-In `app/layout.tsx`, import `localFont` and configure both Glide and Glide Mono:
+Configure both fonts in `app/layout.tsx`:
 
 ```tsx
 import localFont from "next/font/local";
-import "./globals.css";
 
 const glide = localFont({
   src: [
@@ -43,11 +54,7 @@ const glideMono = localFont({
   display: "swap",
 });
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${glide.variable} ${glideMono.variable}`}>
       <body>{children}</body>
@@ -56,9 +63,7 @@ export default function RootLayout({
 }
 ```
 
-### 3. Map the CSS variables in Tailwind
-
-In your global CSS file, map `--font-glide` to Tailwind's `--font-sans` and `--font-glide-mono` to `--font-mono`:
+Map the variables onto Tailwind's own in your global CSS:
 
 ```css
 @theme inline {
@@ -67,111 +72,35 @@ In your global CSS file, map `--font-glide` to Tailwind's `--font-sans` and `--f
 }
 ```
 
-### 4. Use it
-
-Glide is now your default sans-serif font, and Glide Mono is your monospace font. Use `font-sans` with any weight from 100 to 950, and `font-mono` for code:
-
-```tsx
-<p className="font-sans font-medium">Medium text with Glide</p>
-<code className="font-mono">const glide = "mono";</code>
-```
-
-## Glide Mono
-
-Glide Mono is the monospaced companion to Glide, designed for code editors, terminals, and technical UI. It shares the same design language as Glide — clean geometry and high legibility — adapted for fixed-width contexts.
-
-```tsx
-<code className="font-mono">const glide = "mono";</code>
-```
-
-Glide Mono is a static font at weight 400.
-
-## Variable font
-
-Glide is shipped as two variable font files: roman and italic. Each interpolates the whole weight axis from three masters (Thin, Regular, Extra Black), so any value from 100 to 950 is available from a single small file.
+`font-sans` is now Glide, `font-mono` is Glide Mono, and `italic` picks up the real italic rather than a slanted roman.
 
 ## Font weights
 
-The `wght` axis is continuous from 100 to 950 (interpolated from three masters — Thin, Regular, Extra Black). Every standard weight is also a named instance, so the full ladder appears in font menus like macOS Font Book.
+Every standard weight is a named instance, so the full ladder shows up in font menus like Font Book. Values in between work too, because the axis is continuous.
 
-| Weight | Name       | Class            |
-| ------ | ---------- | ---------------- |
-| 100    | Thin       | `font-thin`      |
-| 200    | ExtraLight | `font-extralight`|
-| 300    | Light      | `font-light`     |
-| 400    | Regular    | `font-normal`    |
-| 500    | Medium     | `font-medium`    |
-| 600    | Semibold   | `font-semibold`  |
-| 700    | Bold       | `font-bold`      |
-| 800    | Extrabold  | `font-extrabold` |
-| 900    | Black      | `font-black`     |
-| 950    | Extra Black| `font-[950]`     |
+| Weight | Name | Class |
+| ------ | ---- | ----- |
+| 100 | Thin | `font-thin` |
+| 200 | ExtraLight | `font-extralight` |
+| 300 | Light | `font-light` |
+| 400 | Regular | `font-normal` |
+| 500 | Medium | `font-medium` |
+| 600 | Semibold | `font-semibold` |
+| 700 | Bold | `font-bold` |
+| 800 | Extrabold | `font-extrabold` |
+| 900 | Black | `font-black` |
+| 950 | Extra Black | `font-[950]` |
 
-## Usage in Tailwind
+## Notes
 
-```tsx
-// Roman
-<p className="font-sans font-thin">Thin text (100)</p>
-<p className="font-sans font-light">Light text (300)</p>
-<p className="font-sans font-normal">Regular text (400)</p>
-<p className="font-sans font-bold">Bold text (700)</p>
-<p className="font-sans font-black">Black text (900)</p>
-<p className="font-sans font-[950]">Extra Black text (950)</p>
-
-// Italic variants
-<p className="font-sans italic">Regular italic (400)</p>
-<p className="font-sans font-bold italic">Bold italic (700)</p>
-
-// Mono
-<code className="font-mono">const glide = "mono";</code>
-```
-
-## Technical details
-
-### Glide
-
-- **Family**: Glide
-- **Designer**: Matthew Blode
-- **Styles**: Roman + Italic (separate variable fonts)
-- **Weight range**: 100–950 (continuous `wght` axis, 3 masters)
-- **Formats**: Variable TTF + WOFF2
-- **Named instances**: Thin, ExtraLight, Light, Regular, Medium, SemiBold, Bold, ExtraBold, Black, Extra Black (100–950)
-
-### Glide Mono
-
-- **Family**: Glide Mono
-- **Designer**: Matthew Blode
-- **Styles**: Regular
-- **Weight**: 400 (static)
-- **Formats**: TTF + WOFF2
-
-## Repo layout
-
-- `glide-variable.glyphs` / `glide-variable-italic.glyphs`: Glyphs source files
-- `glide-mono.glyphs`: Mono source file
-- `fonts/`: built font files (variable + static) and `glide.css`
-- `fonts/static/`: static instances, derived; rebuild with `scripts/make-desktop-bundle.py`
-- `scripts/make-desktop-bundle.py`: builds `apps/web/public/glide.zip`, the desktop download
-- `apps/web/`: Next.js proof and documentation site
-
-The static-to-variable generation pipeline, CLI, reports, and intervention studio now live in [`static-to-variable`](https://github.com/mblode/static-to-variable).
-
-## Development
-
-```bash
-npm run dev
-npm run build
-```
-
-`npm run dev` starts the web app with portless at `https://glide.localhost`.
+- **Two variable files:** roman and italic ship separately, each interpolating the whole axis from three masters (Thin, Regular, Extra Black).
+- **Glide Mono:** a static font at weight 400, for code editors, terminals, and technical UI.
+- **Formats:** variable TTF and WOFF2, with static instances in the desktop bundle.
+- **Blode UI:** Glide is the default family there, applied through `font-sans` and `font-mono`.
 
 ## License
 
-[SIL Open Font License 1.1](OFL.txt). Use Glide in personal and commercial work,
-embed it, modify it. You can't sell the font files on their own, and modified
-versions can't use the Glide name.
-
-Copyright 2026 Matthew Blode.
+[SIL Open Font License 1.1](OFL.txt). Use Glide in personal and commercial work, embed it, modify it. You can't sell the font files on their own, and modified versions can't use the Glide name. Copyright 2026 Matthew Blode.
 
 ---
 
