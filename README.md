@@ -8,6 +8,10 @@ Ship every weight from Thin to Extra Black out of one small font file, with a mo
 
 </div>
 
+<p align="center">
+  <img alt="The Glide specimen page, showing the weight slider and a live sample at 700" src=".github/assets/screenshot.jpg" width="800" />
+</p>
+
 ## Demo
 
 See the whole family set as running text and specimens.
