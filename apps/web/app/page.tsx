@@ -21,8 +21,7 @@ function Section({
       id={id}
       className={cn(
         "scroll-mt-6",
-        bordered &&
-          "rounded-2xl border border-border bg-card/50 p-6 backdrop-blur-sm sm:p-8"
+        bordered && "rounded-2xl border border-border bg-card/50 p-6 backdrop-blur-sm sm:p-8",
       )}
     >
       {children}
@@ -68,12 +67,9 @@ export default function Home() {
         <Section bordered={false}>
           <WeightShowcase />
           <p className="mt-6 text-muted-foreground text-sm">
-            Only three of these are drawn: Thin, Regular, and Extra Black. The
-            rest are interpolated.{" "}
-            <Link
-              className="underline underline-offset-4 hover:text-foreground"
-              href="/inspect"
-            >
+            Only three of these are drawn: Thin, Regular, and Extra Black. The rest are
+            interpolated.{" "}
+            <Link className="underline underline-offset-4 hover:text-foreground" href="/inspect">
               Open the interpolation inspector
             </Link>{" "}
             to see where the shapes drift in between.
@@ -112,15 +108,15 @@ export default function Home() {
             </a>
           </div>
           <div className="flex items-center gap-2 text-muted-foreground/30">
-            <span className="text-muted-foreground">v{siteConfig.version}</span>{" "}
-            &bull;
+            <span className="text-muted-foreground">v{siteConfig.version}</span>
+            <span aria-hidden="true">·</span>
             <a
               className="text-muted-foreground transition-colors hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring focus-visible:rounded-lg"
               href="https://blode.co/projects"
             >
               All projects
-            </a>{" "}
-            &bull;
+            </a>
+            <span aria-hidden="true">·</span>
             <a
               className="text-muted-foreground transition-colors hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring focus-visible:rounded-lg"
               href={siteConfig.links.github}
