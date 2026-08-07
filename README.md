@@ -18,7 +18,7 @@ See the whole family set as running text and specimens.
 
 <p>
 <a href="https://blode.co/glide">
-<img alt="View demo" src=".github/assets/demo.svg" width="200" />
+<img alt="View the specimen" src=".github/assets/demo.svg" width="200" />
 </a>
 </p>
 
