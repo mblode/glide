@@ -4,6 +4,7 @@ import { InstallSection } from "@/components/install-section";
 import { Playground } from "@/components/playground";
 import { Button } from "@/components/ui/button";
 import { WeightShowcase } from "@/components/weight-showcase";
+import { ZoneBreadcrumb } from "@/components/zone-breadcrumb";
 import { asset, siteConfig } from "@/lib/config";
 import { cn } from "@/lib/utils";
 
@@ -36,6 +37,14 @@ function SectionHeading({ children }: { children: React.ReactNode }) {
 export default function Home() {
   return (
     <main id="main-content">
+      {/*
+        Root page only, and it must read identically to the BreadcrumbList in
+        lib/schema.ts. See blode-co/apps/web/.claude/knowledge/zone-conventions.md.
+      */}
+      <div className="mx-auto w-full max-w-5xl px-4 pt-6 sm:px-6">
+        <ZoneBreadcrumb product={siteConfig.name} />
+      </div>
+
       {/* Hero */}
       <section className="flex flex-col items-center gap-6 px-4 py-24 text-center sm:px-6 sm:py-40">
         <h1 className="text-8xl font-black leading-[0.85] tracking-[-0.06em] text-display sm:text-9xl lg:text-[11rem]">

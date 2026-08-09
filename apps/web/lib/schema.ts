@@ -63,7 +63,17 @@ export const siteGraph = {
       "@id": schemaId.breadcrumb,
       "@type": "BreadcrumbList",
       itemListElement: [
-        { "@type": "ListItem", item: `${host}/`, name: "Home", position: 1 },
+        /*
+         * "Matthew Blode", not "Home", and it must stay identical to the
+         * visible trail in <ZoneBreadcrumb>: Google treats a mismatch between
+         * the two as a markup error.
+         */
+        {
+          "@type": "ListItem",
+          item: `${host}/`,
+          name: siteConfig.author.name,
+          position: 1,
+        },
         {
           "@type": "ListItem",
           item: `${host}/projects`,
