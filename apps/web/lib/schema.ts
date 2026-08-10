@@ -50,9 +50,14 @@ export const siteGraph = {
       isPartOf: { "@id": schemaId.website },
       license: "https://openfontlicense.org",
       name: "Glide Variable Font",
+      // Numeric 0, not "0": schema.org/price takes a number, and a string is
+      // read as a currency-formatted literal. `availability` is required for
+      // the Offer to be usable at all. Matches diffhub, commandment, convene,
+      // moon and rubber-duck.
       offers: {
         "@type": "Offer",
-        price: "0",
+        availability: "https://schema.org/InStock",
+        price: 0,
         priceCurrency: "USD",
       },
       publisher: { "@id": schemaId.organization },
