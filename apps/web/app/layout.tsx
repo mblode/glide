@@ -49,7 +49,15 @@ export const metadata: Metadata = {
   creator: siteConfig.author.name,
   openGraph: {
     type: "website",
-    url: siteConfig.url,
+    /*
+     * No `url` here. It is not per-page, so /inspect inherited the zone root
+     * and every share of it collapsed onto the home page. It cannot be fixed
+     * per page either: a child declaring `openGraph: { url }` replaces this
+     * whole object and loses `siteName` and `images` with it. Absent beats
+     * wrong, since consumers fall back to the URL they fetched and
+     * `alternates.canonical` is already per-page. See zone-conventions.md
+     * Rule 9.
+     */
     title,
     description: siteConfig.description,
     // One site, 33 paths: the product name is already in og:title, so this is
