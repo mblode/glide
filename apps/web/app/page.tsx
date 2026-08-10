@@ -126,13 +126,6 @@ export default function Home() {
             <span aria-hidden="true">·</span>
             <a
               className="text-muted-foreground transition-colors hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring focus-visible:rounded-lg"
-              href="https://blode.co/projects"
-            >
-              All projects
-            </a>
-            <span aria-hidden="true">·</span>
-            <a
-              className="text-muted-foreground transition-colors hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring focus-visible:rounded-lg"
               href={siteConfig.links.github}
               rel="noopener noreferrer"
               target="_blank"
