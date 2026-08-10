@@ -106,8 +106,13 @@ export default function Home() {
               href={siteConfig.links.author}
               rel="author"
             >
+              {/*
+                Decorative: the link is already labelled "Matthew Blode" by its
+                own text, so any alt here makes the accessible name announce the
+                name twice.
+              */}
               <img
-                alt="Avatar of Matthew Blode"
+                alt=""
                 className="rounded-full"
                 height={20}
                 src={asset("/avatar-sm.png")}
