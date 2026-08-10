@@ -40,6 +40,7 @@ Configure both fonts in `app/layout.tsx`:
 
 ```tsx
 import localFont from "next/font/local";
+import "./globals.css";
 
 const glide = localFont({
   src: [
@@ -58,7 +59,11 @@ const glideMono = localFont({
   display: "swap",
 });
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en" className={`${glide.variable} ${glideMono.variable}`}>
       <body>{children}</body>
