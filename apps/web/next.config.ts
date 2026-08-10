@@ -14,11 +14,74 @@ const linkHeader = [
   '<https://github.com/mblode/glide/releases>; rel="service-desc"',
 ].join(", ");
 
+const isDev = process.env.NODE_ENV === "development";
+
+// The PostHog ingestion host, set per Vercel project to our reverse proxy
+// (https://r.blode.co). posthog-js lazy-loads chunks from it, so it belongs in
+// script-src as well as connect-src.
+const posthogOrigin = process.env.NEXT_PUBLIC_POSTHOG_HOST ?? "";
+
+// The Glide woff2 files are served from this app's own public/, so font-src
+// never needs a third-party origin.
+const contentSecurityPolicy = [
+  "default-src 'self'",
+  // 'unsafe-inline' covers Next's bootstrap and the JSON-LD block. Dev also
+  // needs 'unsafe-eval' for React Refresh; production must not have it.
+  `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ""} ${posthogOrigin}`,
+  `connect-src 'self' ${posthogOrigin}`,
+  "img-src 'self' data:",
+  "style-src 'self' 'unsafe-inline'",
+  "font-src 'self'",
+  "worker-src 'self' blob:",
+  "object-src 'none'",
+  "base-uri 'self'",
+  "form-action 'self'",
+  "frame-ancestors 'none'",
+  "upgrade-insecure-requests",
+].join("; ");
+
+const securityHeaders = [
+  { key: "Content-Security-Policy", value: contentSecurityPolicy },
+  { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+  { key: "X-Frame-Options", value: "DENY" },
+  { key: "X-Content-Type-Options", value: "nosniff" },
+  {
+    key: "Permissions-Policy",
+    value: "camera=(), microphone=(), geolocation=(), payment=()",
+  },
+  { key: "Cross-Origin-Opener-Policy", value: "same-origin" },
+  { key: "Cross-Origin-Resource-Policy", value: "same-origin" },
+];
+
 const nextConfig: NextConfig = {
   assetPrefix: basePath,
   basePath,
   async headers() {
+    // Every matching rule applies in array order and a later value wins per
+    // header key, so the catch-all comes first and per-route rules after it.
+    //
+    // `/:path*`, not `/(.*)`. Next prefixes basePath onto the source, and
+    // `/glide/(.*)` needs the separator, so it misses the zone root: the one
+    // URL blode.co actually links to. `/:path*` matches `/glide` as well.
     return [
+      {
+        headers: securityHeaders,
+        source: "/:path*",
+      },
+      // The share cards are fetched by other origins, so they opt out of the
+      // same-origin CORP the catch-all sets.
+      {
+        headers: [
+          { key: "Cross-Origin-Resource-Policy", value: "cross-origin" },
+        ],
+        source: "/opengraph-image.png",
+      },
+      {
+        headers: [
+          { key: "Cross-Origin-Resource-Policy", value: "cross-origin" },
+        ],
+        source: "/twitter-image.png",
+      },
       {
         headers: [{ key: "Link", value: linkHeader }],
         source: "/",
