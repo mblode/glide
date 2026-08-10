@@ -68,19 +68,13 @@ const nextConfig: NextConfig = {
         headers: securityHeaders,
         source: "/:path*",
       },
-      // The share cards are fetched by other origins, so they opt out of the
+      // The share card is fetched by other origins, so it opts out of the
       // same-origin CORP the catch-all sets.
       {
         headers: [
           { key: "Cross-Origin-Resource-Policy", value: "cross-origin" },
         ],
-        source: "/opengraph-image.png",
-      },
-      {
-        headers: [
-          { key: "Cross-Origin-Resource-Policy", value: "cross-origin" },
-        ],
-        source: "/twitter-image.png",
+        source: "/opengraph-image",
       },
       {
         headers: [{ key: "Link", value: linkHeader }],

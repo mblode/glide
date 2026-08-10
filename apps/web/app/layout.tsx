@@ -27,17 +27,12 @@ const title = "Glide Variable Font Family Crafted for UI";
 
 export const metadata: Metadata = {
   /*
-   * Includes the basePath (Rule 11), because Next joins metadataBase's
-   * pathname onto every relative metadata URL.
-   *
-   * That is why the cards below point at files in `public/` rather than using
-   * the `app/opengraph-image.png` convention. That convention prefixes the
-   * basePath onto the URL it generates, metadataBase then prefixes it a second
-   * time, and the card 404s at /glide/glide/opengraph-image.png: the shape this
-   * zone shipped for months. A file-convention image also outranks
-   * `openGraph.images`, so declaring the right URL here is not enough on its
-   * own; the file has to leave `app/`. Keep these root-relative and let
-   * metadataBase supply the /glide.
+   * Includes the basePath (Rule 11). Only correct because the card is a
+   * generated `opengraph-image.tsx` route: Next does not prefix those with
+   * `basePath`, so `metadataBase` supplies `/glide` exactly once. Against the
+   * static PNG this replaced (and against `app/opengraph-image.png`), the two
+   * stacked into `/glide/glide/opengraph-image.png` — the shape this zone
+   * shipped for months.
    */
   metadataBase: new URL(siteConfig.url),
   title: {
@@ -47,30 +42,29 @@ export const metadata: Metadata = {
   description: siteConfig.description,
   authors: [siteConfig.author],
   creator: siteConfig.author.name,
+  // No `images` here: `app/opengraph-image.tsx` is the card. Next reuses it for
+  // `twitter:image` too when there is no `twitter-image` file.
   openGraph: {
     type: "website",
     /*
      * No `url` here. It is not per-page, so /inspect inherited the zone root
      * and every share of it collapsed onto the home page. It cannot be fixed
      * per page either: a child declaring `openGraph: { url }` replaces this
-     * whole object and loses `siteName` and `images` with it. Absent beats
-     * wrong, since consumers fall back to the URL they fetched and
-     * `alternates.canonical` is already per-page. See zone-conventions.md
-     * Rule 9.
+     * whole object and loses `siteName` with it. Absent beats wrong, since
+     * consumers fall back to the URL they fetched and `alternates.canonical`
+     * is already per-page. See zone-conventions.md Rule 9.
      */
     title,
     description: siteConfig.description,
     // One site, 33 paths: the product name is already in og:title, so this is
     // the only slot left to say who made it. See zone-conventions.md Rule 9.
     siteName: siteConfig.author.name,
-    images: [{ url: "/opengraph-image.png", width: 1200, height: 630, alt: title }],
   },
   twitter: {
     card: "summary_large_image",
     title,
     description: siteConfig.description,
     creator: "@mattblode",
-    images: ["/twitter-image.png"],
   },
   alternates: {
     canonical: siteConfig.url,
