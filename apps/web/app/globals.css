@@ -80,8 +80,16 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+    font-kerning: normal;
+    font-variant-ligatures: common-ligatures;
     text-rendering: optimizeLegibility;
+  }
+  code,
+  kbd,
+  pre,
+  samp {
+    font-variant-ligatures: none;
+    letter-spacing: normal;
   }
   html {
     @apply scroll-smooth font-sans;

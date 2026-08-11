@@ -2,9 +2,13 @@
 
 # [Glide](https://blode.co/glide)
 
-**Variable sans-serif with a continuous 100 to 950 weight axis, in roman, italic, and monospace**
+**Glide 3 is a variable sans-serif with a continuous 100 to 950 weight axis in roman and italic, paired with Glide Mono**
 
 Ship every weight from Thin to Extra Black out of one small font file, with a mono companion for code.
+
+Version 3 raises the proportional family’s x-height to 525 units while retaining
+its 709-unit cap height, giving UI and body text more presence without changing
+the 1000-unit em or the established weight range.
 
 </div>
 
