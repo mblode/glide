@@ -6,9 +6,9 @@
 
 Ship every weight from Thin to Extra Black out of one small font file, with a mono companion for code.
 
-Version 3 raises the proportional family’s x-height to 525 units while retaining
-its 709-unit cap height, giving UI and body text more presence without changing
-the 1000-unit em or the established weight range.
+Version 3.001 raises the family’s x-height to 532 units (x/cap 0.750, Inter’s
+bar) while retaining its 709-unit cap height, giving UI and body text more
+presence without changing the 1000-unit em or the established weight range.
 
 </div>
 
