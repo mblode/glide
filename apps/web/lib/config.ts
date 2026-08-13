@@ -25,5 +25,5 @@ export const siteConfig = {
   },
   name: "Glide",
   url: `https://blode.co${basePath}`,
-  version: "3.0.1",
+  version: "3.0.2",
 };

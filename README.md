@@ -6,9 +6,9 @@
 
 Ship every weight from Thin to Extra Black out of one small font file, with a mono companion for code.
 
-Version 3.001 raises the family’s x-height to 532 units (x/cap 0.750, Inter’s
-bar) while retaining its 709-unit cap height, giving UI and body text more
-presence without changing the 1000-unit em or the established weight range.
+Version 3.002 keeps the family’s x-height at 532 units (x/cap 0.750, Inter’s
+bar) with full width restore after the raise — bowls and arms track Glide 3.000
+/ Circular more closely than the 3.001 half-X pin recipe.
 
 </div>
 
