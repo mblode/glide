@@ -476,3 +476,25 @@ export const CHARSET: readonly CharsetEntry[] = [
   { cp: 64259, hex: "FB03", name: "uniFB03", char: "\ufb03" },
   { cp: 64260, hex: "FB04", name: "uniFB04", char: "\ufb04" },
 ];
+
+export const DEFAULT_GLYPH =
+  CHARSET.find((entry) => entry.name === "A") ?? CHARSET[1];
+
+export function findGlyph(id: string | undefined | null): CharsetEntry {
+  if (!id) {
+    return DEFAULT_GLYPH;
+  }
+  const q = id.trim();
+  if (!q) {
+    return DEFAULT_GLYPH;
+  }
+  const lower = q.toLowerCase();
+  const hex = lower.replace(/^u\+/, "");
+  return (
+    CHARSET.find((entry) => entry.name === q) ??
+    CHARSET.find((entry) => entry.name.toLowerCase() === lower) ??
+    CHARSET.find((entry) => entry.hex.toLowerCase() === hex) ??
+    CHARSET.find((entry) => entry.char === q) ??
+    DEFAULT_GLYPH
+  );
+}

@@ -85,6 +85,11 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        destination: "/glyphs",
+        permanent: true,
+        source: "/inspect",
+      },
+      {
         basePath: false,
         destination: "https://blode.co/glide",
         has: [{ type: "host" as const, value: "glide.blode.co" }],

@@ -86,11 +86,7 @@ export default function Home() {
               <Link className="underline underline-offset-4 hover:text-foreground" href="/glyphs">
                 Browse every glyph
               </Link>
-              , or{" "}
-              <Link className="underline underline-offset-4 hover:text-foreground" href="/inspect">
-                open the interpolation inspector
-              </Link>{" "}
-              to see where the shapes drift in between.
+              .
             </p>
           </div>
         </Section>
@@ -157,13 +153,6 @@ export default function Home() {
               href="/glyphs"
             >
               Glyphs
-            </Link>
-            <span aria-hidden="true">·</span>
-            <Link
-              className="hover:text-foreground focus-visible:rounded-lg focus-visible:ring-2 focus-visible:ring-ring"
-              href="/inspect"
-            >
-              Inspect
             </Link>
           </div>
         </footer>

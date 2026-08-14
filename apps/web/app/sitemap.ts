@@ -10,11 +10,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: `${siteConfig.url}/inspect`,
-      lastModified,
-      priority: 0.5,
-    },
-    {
       url: `${siteConfig.url}/glyphs`,
       lastModified,
       priority: 0.5,
