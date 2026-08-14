@@ -17,9 +17,9 @@ const glide = localFont({
 });
 
 const glideMono = localFont({
-  src: [{ path: "../public/glide-mono.woff2", style: "normal" }],
+  src: [{ path: "../public/glide-mono-variable.woff2", style: "normal" }],
   variable: "--font-glide-mono",
-  weight: "400",
+  weight: "100 700",
   display: "swap",
 });
 
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     /*
-     * No `url` here. It is not per-page, so /inspect inherited the zone root
+     * No `url` here. It is not per-page, so /glyphs inherited the zone root
      * and every share of it collapsed onto the home page. It cannot be fixed
      * per page either: a child declaring `openGraph: { url }` replaces this
      * whole object and loses `siteName` with it. Absent beats wrong, since

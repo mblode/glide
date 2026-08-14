@@ -20,7 +20,63 @@
 @font-face {
   font-family: "Glide Mono";
   font-style: normal;
+  font-weight: 100 700;
+  font-display: swap;
+  src: url("glide-mono-variable.woff2") format("woff2-variations");
+}
+@font-face {
+  font-family: "Glide Mono";
+  font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: url("glide-mono.woff2") format("woff2");
+}
+
+/* Size-specific tracking. Inter Tight / SF trak equivalent for the web.
+   12–14px UI opens up; 28px+ display tightens. */
+:root {
+  --glide-track-ui: 0.01em;
+  --glide-track-text: 0;
+  --glide-track-display: -0.02em;
+  --glide-features-ui: "liga" 1, "kern" 1;
+  --glide-features-tabular: "liga" 1, "tnum" 1, "kern" 1;
+  --glide-features-code: "liga" 0, "calt" 0, "tnum" 1, "zero" 1;
+}
+
+.glide-ui {
+  letter-spacing: var(--glide-track-ui);
+  font-feature-settings: var(--glide-features-ui);
+}
+
+.glide-display {
+  letter-spacing: var(--glide-track-display);
+  font-feature-settings: "kern" 1, "liga" 1;
+}
+
+.glide-tnum {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: var(--glide-features-tabular);
+}
+
+.glide-zero {
+  font-variant-numeric: slashed-zero;
+  font-feature-settings: "zero" 1;
+}
+
+.glide-tight {
+  letter-spacing: -0.03em;
+}
+
+code,
+pre,
+.glide-mono {
+  font-family: "Glide Mono", ui-monospace, monospace;
+  font-feature-settings: var(--glide-features-code);
+}
+
+@media (min-width: 1px) {
+  html {
+    letter-spacing: var(--glide-track-text);
+    font-kerning: normal;
+  }
 }

@@ -38,7 +38,7 @@ export function WebMcp() {
           version: siteConfig.version,
           roman: `${siteConfig.url}/glide-variable.woff2`,
           italic: `${siteConfig.url}/glide-variable-italic.woff2`,
-          mono: `${siteConfig.url}/glide-mono.woff2`,
+          mono: `${siteConfig.url}/glide-mono-variable.woff2`,
           source: siteConfig.links.github,
         }),
       },

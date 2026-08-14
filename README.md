@@ -28,12 +28,12 @@ See the whole family set as running text and specimens.
 
 ## Install
 
-For the web, put the three WOFF2 files in `app/fonts/` next to your root layout:
+For the web, put the WOFF2 files in `app/fonts/` next to your root layout:
 
 ```bash
 curl -O https://blode.co/glide/glide-variable.woff2
 curl -O https://blode.co/glide/glide-variable-italic.woff2
-curl -O https://blode.co/glide/glide-mono.woff2
+curl -O https://blode.co/glide/glide-mono-variable.woff2
 ```
 
 For Font Book and design tools, download [glide.zip](https://blode.co/glide/glide.zip): the variable TTFs plus every static instance.
@@ -57,9 +57,9 @@ const glide = localFont({
 });
 
 const glideMono = localFont({
-  src: "./fonts/glide-mono.woff2",
+  src: "./fonts/glide-mono-variable.woff2",
   variable: "--font-glide-mono",
-  weight: "400",
+  weight: "100 700",
   display: "swap",
 });
 
@@ -106,8 +106,10 @@ Every standard weight is a named instance, so the full ladder shows up in font m
 
 ## Notes
 
-- **Two variable files:** roman and italic ship separately, each interpolating the whole axis from three masters (Thin, Regular, Extra Black).
-- **Glide Mono:** a static font at weight 400, for code editors, terminals, and technical UI.
+- **Two variable files:** roman and italic ship separately, each interpolating the whole axis from three masters (Thin, Regular, Extra Black). One `wght` axis only — no optical-size axis.
+- **Glide Mono:** a variable companion from 100 to 700. Ligatures stay off by default so `-->` and `==` keep their cell width. A static 400 cut is still in the desktop zip.
+- **Size:** use the tracking classes in `fonts/web/glide.css` (`.glide-ui`, `.glide-display`) instead of an `opsz` axis.
+- **Features:** ligatures on for Sans (`fi`/`fl` and `->`/`=>`). Tabular figures and slashed zero are opt-in (`.glide-tnum`, `.glide-zero`). Mono keeps `tnum` and `zero` on, ligatures off.
 - **Formats:** variable TTF and WOFF2, with static instances in the desktop bundle.
 - **Blode UI:** Glide is the default family there, applied through `font-sans` and `font-mono`.
 

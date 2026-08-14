@@ -49,9 +49,14 @@ export function GET() {
             title: `Glide ${siteConfig.version} variable font (italic)`,
           },
           {
+            href: `${siteConfig.url}/glide-mono-variable.woff2`,
+            type: "font/woff2",
+            title: `Glide ${siteConfig.version} variable monospace`,
+          },
+          {
             href: `${siteConfig.url}/glide-mono.woff2`,
             type: "font/woff2",
-            title: `Glide ${siteConfig.version} monospace`,
+            title: `Glide ${siteConfig.version} monospace (static 400)`,
           },
           {
             href: `${siteConfig.url}/glide.zip`,

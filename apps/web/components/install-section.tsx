@@ -153,10 +153,10 @@ export function InstallSection() {
           and{" "}
           <a
             className="font-medium text-foreground underline underline-offset-4 transition-colors hover:text-primary"
-            download="glide-mono.woff2"
-            href={asset("/glide-mono.woff2")}
+            download="glide-mono-variable.woff2"
+            href={asset("/glide-mono-variable.woff2")}
           >
-            glide-mono.woff2
+            glide-mono-variable.woff2
           </a>{" "}
           and put them in app/fonts/ next to your root layout.
         </p>
