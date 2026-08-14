@@ -22,6 +22,7 @@ export const siteConfig = {
   links: {
     author: "https://blode.co",
     github: "https://github.com/mblode/glide",
+    license: "https://openfontlicense.org",
   },
   name: "Glide",
   url: `https://blode.co${basePath}`,

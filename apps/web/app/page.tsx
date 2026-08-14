@@ -1,8 +1,10 @@
 import Link from "next/link";
 
+import { AlphabetSpecimen } from "@/components/alphabet-specimen";
 import { InstallSection } from "@/components/install-section";
 import { Playground } from "@/components/playground";
 import { Button } from "@/components/ui/button";
+import { UiSpecimen } from "@/components/ui-specimen";
 import { WeightShowcase } from "@/components/weight-showcase";
 import { ZoneBreadcrumb } from "@/components/zone-breadcrumb";
 import { asset, siteConfig } from "@/lib/config";
@@ -50,8 +52,12 @@ export default function Home() {
         <h1 className="text-8xl font-black leading-[0.85] tracking-[-0.06em] text-display sm:text-9xl lg:text-[11rem]">
           Glide
         </h1>
-        <p className="max-w-md text-xl leading-relaxed text-muted-foreground sm:text-2xl">
+        <p className="max-w-[40ch] text-xl text-pretty text-muted-foreground sm:text-2xl">
           Variable font family crafted for UI.
+        </p>
+        <p className="max-w-[48ch] text-pretty text-sm text-muted-foreground">
+          Free under the SIL Open Font License. Variable 100–950, roman, italic,
+          and mono.
         </p>
         <div className="flex flex-wrap items-center justify-center gap-3">
           <Button asChild>
@@ -64,6 +70,14 @@ export default function Home() {
       </section>
 
       <div className="mx-auto w-full max-w-5xl space-y-8 px-4 pb-8 sm:px-6">
+        <Section id="characters" bordered={false}>
+          <AlphabetSpecimen />
+        </Section>
+
+        <Section id="in-ui">
+          <UiSpecimen />
+        </Section>
+
         {/* Playground */}
         <Section id="playground">
           <div className="space-y-6">
@@ -73,20 +87,22 @@ export default function Home() {
         </Section>
 
         {/* Weights */}
-        <Section bordered={false}>
-          <WeightShowcase />
-          <p className="mt-6 text-muted-foreground text-sm">
-            Only three of these are drawn: Thin, Regular, and Extra Black. The rest are
-            interpolated.{" "}
-            <Link className="underline underline-offset-4 hover:text-foreground" href="/glyphs">
-              Browse every glyph
-            </Link>
-            , or{" "}
-            <Link className="underline underline-offset-4 hover:text-foreground" href="/inspect">
-              open the interpolation inspector
-            </Link>{" "}
-            to see where the shapes drift in between.
-          </p>
+        <Section id="weights" bordered={false}>
+          <div className="space-y-6">
+            <WeightShowcase />
+            <p className="text-pretty text-sm text-muted-foreground">
+              Only three of these are drawn: Thin, Regular, and Extra Black. The rest
+              are interpolated.{" "}
+              <Link className="underline underline-offset-4 hover:text-foreground" href="/glyphs">
+                Browse every glyph
+              </Link>
+              , or{" "}
+              <Link className="underline underline-offset-4 hover:text-foreground" href="/inspect">
+                open the interpolation inspector
+              </Link>{" "}
+              to see where the shapes drift in between.
+            </p>
+          </div>
         </Section>
 
         {/* Install */}
@@ -125,17 +141,40 @@ export default function Home() {
               Matthew Blode
             </a>
           </div>
-          <div className="flex items-center gap-2 text-muted-foreground/30">
-            <span className="text-muted-foreground">v{siteConfig.version}</span>
+          <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1">
+            <span>v{siteConfig.version}</span>
             <span aria-hidden="true">·</span>
             <a
-              className="text-muted-foreground transition-colors hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring focus-visible:rounded-lg"
+              className="hover:text-foreground focus-visible:rounded-lg focus-visible:ring-2 focus-visible:ring-ring"
               href={siteConfig.links.github}
               rel="noopener noreferrer"
               target="_blank"
             >
               GitHub
             </a>
+            <span aria-hidden="true">·</span>
+            <a
+              className="hover:text-foreground focus-visible:rounded-lg focus-visible:ring-2 focus-visible:ring-ring"
+              href={siteConfig.links.license}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              OFL 1.1
+            </a>
+            <span aria-hidden="true">·</span>
+            <Link
+              className="hover:text-foreground focus-visible:rounded-lg focus-visible:ring-2 focus-visible:ring-ring"
+              href="/glyphs"
+            >
+              Glyphs
+            </Link>
+            <span aria-hidden="true">·</span>
+            <Link
+              className="hover:text-foreground focus-visible:rounded-lg focus-visible:ring-2 focus-visible:ring-ring"
+              href="/inspect"
+            >
+              Inspect
+            </Link>
           </div>
         </footer>
       </div>

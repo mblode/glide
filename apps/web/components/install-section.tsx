@@ -110,16 +110,26 @@ export function InstallSection() {
         />
       </div>
 
-      <p className="text-sm leading-relaxed text-pretty text-muted-foreground">
-        For Figma and Font Book,{" "}
+      <p className="text-pretty text-sm text-muted-foreground">
+        Glide is free under the{" "}
         <a
-          className="font-medium text-foreground underline underline-offset-4 transition-colors hover:text-primary"
+          className="font-medium text-foreground underline underline-offset-4 hover:text-primary"
+          href={siteConfig.links.license}
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          SIL Open Font License 1.1
+        </a>
+        . For Figma and Font Book,{" "}
+        <a
+          className="font-medium text-foreground underline underline-offset-4 hover:text-primary"
           download="glide.zip"
           href={asset("/glide.zip")}
         >
           download Glide for desktop
         </a>{" "}
-        (TTF).
+        (TTF). On macOS open Font Book and choose File → Add Fonts. On Windows,
+        select the files, right-click, and install for all users.
       </p>
 
       <InstallStep step={1} title="Download the font files">

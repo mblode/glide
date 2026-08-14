@@ -48,7 +48,7 @@ export const siteGraph = {
       description: siteConfig.description,
       isAccessibleForFree: true,
       isPartOf: { "@id": schemaId.website },
-      license: "https://openfontlicense.org",
+      license: siteConfig.links.license,
       name: "Glide Variable Font",
       // Numeric 0, not "0": schema.org/price takes a number, and a string is
       // read as a currency-formatted literal. `availability` is required for
