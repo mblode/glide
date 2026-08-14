@@ -9,9 +9,9 @@ export {
 export const alt = "Glide";
 
 /**
- * This zone's card. Colours and mark come from Glide (`#fbb6cd` / `#8b1a0a`
- * and `app/icon0.svg`); type is Glide. A generated route is the form that
- * cannot double under `basePath`.
+ * This zone's card. Colours and mark match the Glide tile on blode.co/stack
+ * (`#fdc5d7` / `#e8391c` and `lib/og-assets/logo.png`). Type is Glide. A
+ * generated route is the form that cannot double under `basePath`.
  */
 export default function OpengraphImage() {
   return renderZoneOgImage({
