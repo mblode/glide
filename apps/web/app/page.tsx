@@ -78,8 +78,12 @@ export default function Home() {
           <p className="mt-6 text-muted-foreground text-sm">
             Only three of these are drawn: Thin, Regular, and Extra Black. The rest are
             interpolated.{" "}
+            <Link className="underline underline-offset-4 hover:text-foreground" href="/glyphs">
+              Browse every glyph
+            </Link>
+            , or{" "}
             <Link className="underline underline-offset-4 hover:text-foreground" href="/inspect">
-              Open the interpolation inspector
+              open the interpolation inspector
             </Link>{" "}
             to see where the shapes drift in between.
           </p>

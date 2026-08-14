@@ -14,5 +14,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified,
       priority: 0.5,
     },
+    {
+      url: `${siteConfig.url}/glyphs`,
+      lastModified,
+      priority: 0.5,
+    },
   ];
 }
