@@ -18,8 +18,6 @@ ${siteConfig.description}
 
 ## Sections
 
-- Characters — ${siteConfig.url}/#characters
-- In UI — ${siteConfig.url}/#in-ui
 - Playground — ${siteConfig.url}/#playground
 - Weights — ${siteConfig.url}/#weights
 - Install — ${siteConfig.url}/#install

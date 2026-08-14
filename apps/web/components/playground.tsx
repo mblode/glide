@@ -15,21 +15,10 @@ const modes: { id: Mode; label: string }[] = [
   { id: "mono", label: "Mono" },
 ];
 
-function featureSettings(liga: boolean, tnum: boolean, zero: boolean) {
-  return [
-    `"liga" ${liga ? 1 : 0}`,
-    `"tnum" ${tnum ? 1 : 0}`,
-    `"zero" ${zero ? 1 : 0}`,
-  ].join(", ");
-}
-
 export function Playground() {
   const [weight, setWeight] = useState(700);
-  const [size, setSize] = useState(24);
+  const [size, setSize] = useState(48);
   const [mode, setMode] = useState<Mode>("sans");
-  const [liga, setLiga] = useState(true);
-  const [tnum, setTnum] = useState(false);
-  const [zero, setZero] = useState(false);
   const [text, setText] = useState(
     "Glide variable font\nThe quick brown fox jumps over the lazy dog. 0123456789.",
   );
@@ -43,20 +32,9 @@ export function Playground() {
     lines.slice(1).join(" ").trim() ||
     "The quick brown fox jumps over the lazy dog. 0123456789.";
 
-  const features = featureSettings(mono ? false : liga, mono ? false : tnum, zero);
   const previewStyle = mono
-    ? {
-        fontFamily: "var(--font-glide-mono), monospace",
-        fontWeight: 400,
-        fontFeatureSettings: features,
-        fontVariantLigatures: "none" as const,
-      }
-    : {
-        fontWeight: weight,
-        fontStyle: italic ? "italic" : ("normal" as const),
-        fontFeatureSettings: features,
-        fontVariantLigatures: liga ? ("common-ligatures" as const) : ("none" as const),
-      };
+    ? { fontFamily: "var(--font-glide-mono), monospace", fontWeight: 400 }
+    : { fontWeight: weight, fontStyle: italic ? "italic" : ("normal" as const) };
 
   return (
     <div className="space-y-6">
@@ -112,40 +90,6 @@ export function Playground() {
             value={[size]}
             onValueChange={([v]) => setSize(v)}
           />
-
-          <div className="flex flex-wrap gap-1">
-            {!mono && (
-              <>
-                <Button
-                  type="button"
-                  size="xs"
-                  variant={liga ? "default" : "outline"}
-                  aria-pressed={liga}
-                  onClick={() => setLiga((v) => !v)}
-                >
-                  Ligatures
-                </Button>
-                <Button
-                  type="button"
-                  size="xs"
-                  variant={tnum ? "default" : "outline"}
-                  aria-pressed={tnum}
-                  onClick={() => setTnum((v) => !v)}
-                >
-                  Tabular numbers
-                </Button>
-              </>
-            )}
-            <Button
-              type="button"
-              size="xs"
-              variant={zero ? "default" : "outline"}
-              aria-pressed={zero}
-              onClick={() => setZero((v) => !v)}
-            >
-              Slashed zero
-            </Button>
-          </div>
         </div>
 
         <div className="space-y-2">
@@ -163,7 +107,7 @@ export function Playground() {
       </div>
 
       <div
-        className="space-y-3 [--preview-body:24px] [--preview-headline:54px]"
+        className="space-y-3 [--preview-body:48px] [--preview-headline:108px]"
         style={
           {
             "--preview-body": `${size}px`,
@@ -173,8 +117,8 @@ export function Playground() {
       >
         <p
           className={cn(
-            "text-[length:var(--preview-headline)] tracking-[-0.06em]",
-            mono && "break-words tracking-normal",
+            "break-words text-[length:var(--preview-headline)] tracking-[-0.06em]",
+            mono && "tracking-normal",
           )}
           style={previewStyle}
         >
@@ -182,8 +126,8 @@ export function Playground() {
         </p>
         <p
           className={cn(
-            "max-w-2xl text-[length:var(--preview-body)] text-muted-foreground tracking-tight",
-            mono && "break-words tracking-normal",
+            "max-w-2xl break-words text-[length:var(--preview-body)] text-muted-foreground tracking-tight",
+            mono && "tracking-normal",
           )}
           style={previewStyle}
         >

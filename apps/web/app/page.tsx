@@ -1,10 +1,8 @@
 import Link from "next/link";
 
-import { AlphabetSpecimen } from "@/components/alphabet-specimen";
 import { InstallSection } from "@/components/install-section";
 import { Playground } from "@/components/playground";
 import { Button } from "@/components/ui/button";
-import { UiSpecimen } from "@/components/ui-specimen";
 import { WeightShowcase } from "@/components/weight-showcase";
 import { ZoneBreadcrumb } from "@/components/zone-breadcrumb";
 import { asset, siteConfig } from "@/lib/config";
@@ -70,14 +68,6 @@ export default function Home() {
       </section>
 
       <div className="mx-auto w-full max-w-5xl space-y-8 px-4 pb-8 sm:px-6">
-        <Section id="characters" bordered={false}>
-          <AlphabetSpecimen />
-        </Section>
-
-        <Section id="in-ui">
-          <UiSpecimen />
-        </Section>
-
         {/* Playground */}
         <Section id="playground">
           <div className="space-y-6">
