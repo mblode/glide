@@ -19,8 +19,12 @@ export function Playground() {
   const [weight, setWeight] = useState(700);
   const [size, setSize] = useState(48);
   const [mode, setMode] = useState<Mode>("sans");
+  const [tabularNums, setTabularNums] = useState(true);
+  const [slashedZero, setSlashedZero] = useState(true);
+  const [automaticOpticalSize, setAutomaticOpticalSize] = useState(true);
+  const [opticalSize, setOpticalSize] = useState(16);
   const [text, setText] = useState(
-    "Glide variable font\nThe quick brown fox jumps over the lazy dog. 0123456789.",
+    "Glide variable font\n11:45 0123456789 100,000 · 0 O o Ø",
   );
 
   const mono = mode === "mono";
@@ -32,9 +36,22 @@ export function Playground() {
     lines.slice(1).join(" ").trim() ||
     "The quick brown fox jumps over the lazy dog. 0123456789.";
 
-  const previewStyle = mono
+  const previewStyle: CSSProperties = mono
     ? { fontFamily: "var(--font-glide-mono), monospace", fontWeight: 400 }
-    : { fontWeight: weight, fontStyle: italic ? "italic" : ("normal" as const) };
+    : {
+        fontWeight: weight,
+        fontStyle: italic ? "italic" : ("normal" as const),
+        fontOpticalSizing: automaticOpticalSize ? "auto" : "none",
+        fontVariationSettings: automaticOpticalSize
+          ? "normal"
+          : `'wght' ${weight}, 'opsz' ${opticalSize}`,
+        fontVariantNumeric: [
+          tabularNums ? "tabular-nums" : "proportional-nums",
+          slashedZero ? "slashed-zero" : "",
+        ]
+          .filter(Boolean)
+          .join(" "),
+      };
 
   return (
     <div className="space-y-6">
@@ -75,6 +92,31 @@ export function Playground() {
                 value={[weight]}
                 onValueChange={([v]) => setWeight(v)}
               />
+
+              <div
+                className="flex flex-wrap gap-2"
+                role="group"
+                aria-label="OpenType features"
+              >
+                <Button
+                  type="button"
+                  size="sm"
+                  variant={tabularNums ? "default" : "outline"}
+                  aria-pressed={tabularNums}
+                  onClick={() => setTabularNums((enabled) => !enabled)}
+                >
+                  Tabular nums
+                </Button>
+                <Button
+                  type="button"
+                  size="sm"
+                  variant={slashedZero ? "default" : "outline"}
+                  aria-pressed={slashedZero}
+                  onClick={() => setSlashedZero((enabled) => !enabled)}
+                >
+                  Slashed zero
+                </Button>
+              </div>
             </>
           )}
 
@@ -84,12 +126,40 @@ export function Playground() {
           </div>
           <Slider
             id="size-slider"
-            min={13}
+            min={12}
             max={72}
             step={1}
             value={[size]}
             onValueChange={([v]) => setSize(v)}
           />
+
+          {!mono && (
+            <>
+              <div className="flex items-baseline justify-between gap-4">
+                <Label htmlFor="optical-size-slider">
+                  Optical size · {automaticOpticalSize ? "auto" : opticalSize}
+                </Label>
+                <Button
+                  type="button"
+                  size="sm"
+                  variant={automaticOpticalSize ? "default" : "outline"}
+                  aria-pressed={automaticOpticalSize}
+                  onClick={() => setAutomaticOpticalSize((enabled) => !enabled)}
+                >
+                  Auto
+                </Button>
+              </div>
+              <Slider
+                id="optical-size-slider"
+                min={12}
+                max={28}
+                step={1}
+                value={[opticalSize]}
+                disabled={automaticOpticalSize}
+                onValueChange={([v]) => setOpticalSize(v)}
+              />
+            </>
+          )}
         </div>
 
         <div className="space-y-2">
