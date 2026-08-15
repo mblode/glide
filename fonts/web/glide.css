@@ -32,51 +32,43 @@
   src: url("glide-mono.woff2") format("woff2");
 }
 
-/* Size-specific tracking. Inter Tight / SF trak equivalent for the web.
-   12–14px UI opens up; 28px+ display tightens. */
+/* Optical sizing and kerning are the default UI contract. Display tracking is
+   an optional refinement, never a requirement for legibility at 12–14px. */
 :root {
-  --glide-track-ui: 0.01em;
-  --glide-track-text: 0;
   --glide-track-display: -0.02em;
-  --glide-features-ui: "liga" 1, "kern" 1;
-  --glide-features-tabular: "liga" 1, "tnum" 1, "kern" 1;
-  --glide-features-code: "liga" 0, "calt" 0, "tnum" 1, "zero" 1;
 }
 
 .glide-ui {
-  letter-spacing: var(--glide-track-ui);
-  font-feature-settings: var(--glide-features-ui);
+  font-optical-sizing: auto;
+  font-kerning: normal;
+  letter-spacing: normal;
 }
 
 .glide-display {
   letter-spacing: var(--glide-track-display);
-  font-feature-settings: "kern" 1, "liga" 1;
+  font-optical-sizing: auto;
+  font-kerning: normal;
 }
 
 .glide-tnum {
   font-variant-numeric: tabular-nums;
-  font-feature-settings: var(--glide-features-tabular);
 }
 
 .glide-zero {
   font-variant-numeric: slashed-zero;
-  font-feature-settings: "zero" 1;
-}
-
-.glide-tight {
-  letter-spacing: -0.03em;
 }
 
 code,
 pre,
 .glide-mono {
   font-family: "Glide Mono", ui-monospace, monospace;
-  font-feature-settings: var(--glide-features-code);
+  font-variant-ligatures: none;
+  font-variant-numeric: tabular-nums slashed-zero;
+  letter-spacing: normal;
 }
 
-@media (min-width: 1px) {
-  html {
-    letter-spacing: var(--glide-track-text);
-    font-kerning: normal;
-  }
+html {
+  font-optical-sizing: auto;
+  font-kerning: normal;
+  font-variant-ligatures: common-ligatures contextual;
 }

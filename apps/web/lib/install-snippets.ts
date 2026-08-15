@@ -48,6 +48,11 @@ export default function RootLayout({
 export const themeSnippet = `@theme inline {
   --font-sans: var(--font-glide);
   --font-mono: var(--font-glide-mono);
+}
+
+html {
+  font-optical-sizing: auto;
+  font-kerning: normal;
 }`;
 
 export const usageSnippet = `<p className="font-sans font-normal">Regular (400)</p>

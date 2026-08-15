@@ -83,6 +83,11 @@ Map the variables onto Tailwind's own in your global CSS:
   --font-sans: var(--font-glide);
   --font-mono: var(--font-glide-mono);
 }
+
+html {
+  font-optical-sizing: auto;
+  font-kerning: normal;
+}
 ```
 
 `font-sans` is now Glide, `font-mono` is Glide Mono, and `italic` picks up the real italic rather than a slanted roman.

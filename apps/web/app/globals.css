@@ -80,6 +80,7 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-optical-sizing: auto;
     font-kerning: normal;
     font-variant-ligatures: common-ligatures;
     text-rendering: optimizeLegibility;
