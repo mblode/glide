@@ -42,11 +42,13 @@ def set_name(font, name_id, value):
 def instances_of(path):
     vf = TTFont(path)
     try:
+        defaults = {axis.axisTag: axis.defaultValue for axis in vf["fvar"].axes}
         return [
             (
                 vf["name"].getDebugName(i.subfamilyNameID),
                 vf["name"].getDebugName(i.postscriptNameID),
                 int(i.coordinates["wght"]),
+                defaults | dict(i.coordinates),
             )
             for i in vf["fvar"].instances
         ]
@@ -56,14 +58,19 @@ def instances_of(path):
 
 def build_statics(src, italic):
     made = []
-    for style, ps_name, wght in instances_of(src):
+    for style, ps_name, wght, location in instances_of(src):
         # recalcTimestamp=False keeps head.modified as it is in the source font.
         # Left on, fontTools stamps it at compile time, which was the only thing
         # that differed between local and CI builds. Off, the bundle is
         # byte-reproducible and the release asset can be checked against the
         # copy the site serves.
         font = TTFont(src, recalcTimestamp=False)
-        instancer.instantiateVariableFont(font, {"wght": wght}, inplace=True)
+        # Pin every axis. Glide 3.1 adds opsz while keeping the desktop statics
+        # at the variable font's named/default optical location. Passing only
+        # wght would leave a partially-variable font as soon as another axis is
+        # introduced and would make the desktop bundle depend on fontTools'
+        # partial-instancing behaviour.
+        instancer.instantiateVariableFont(font, location, inplace=True)
 
         is_bold = wght == 700
         ribbi = is_bold or wght == 400

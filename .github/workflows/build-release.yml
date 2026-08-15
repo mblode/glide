@@ -28,6 +28,9 @@ jobs:
       - name: Build the desktop bundle
         run: python3 scripts/make-desktop-bundle.py
 
+      - name: Verify public font mirrors and bundle members
+        run: npm run check
+
       - name: Name the archive after the tag
         run: |
           VERSION="${GITHUB_REF_NAME#v}"

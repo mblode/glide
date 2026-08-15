@@ -8,7 +8,7 @@
     "dev": "npm --workspace @glide/web run dev",
     "build": "npm --workspace @glide/web run build",
     "start": "npm --workspace @glide/web run start",
-    "check": "python3 scripts/check-install-docs.py"
+    "check": "python3 scripts/check-install-docs.py && python3 scripts/check-release-artifacts.py"
   },
   "devDependencies": {
     "portless": "^0.15.4"
