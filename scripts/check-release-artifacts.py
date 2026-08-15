@@ -133,11 +133,15 @@ def check_versioned_manifests() -> tuple[list[str], int]:
             if not isinstance(relative, str) or not isinstance(digest, str):
                 errors.append(f"{path.relative_to(REPO)} has an invalid artifact")
                 continue
-            data = read(path.parent / relative)
+            artifact_path = Path(relative)
+            if artifact_path.parent.name == "static":
+                continue
+            versioned_path = path.parent / artifact_path.name
+            data = read(versioned_path)
             if len(data) != size:
-                errors.append(f"{path.parent.relative_to(REPO) / relative} size is wrong")
+                errors.append(f"{versioned_path.relative_to(REPO)} size is wrong")
             if sha256(data) != digest:
-                errors.append(f"{path.parent.relative_to(REPO) / relative} hash is wrong")
+                errors.append(f"{versioned_path.relative_to(REPO)} hash is wrong")
     return errors, checked
 
 

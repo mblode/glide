@@ -219,7 +219,7 @@ export function GlyphSet({ initialName }: { initialName?: string }) {
           className="flex min-h-0 flex-col lg:overflow-y-auto"
         >
           <p className="px-4 py-3 text-muted-foreground text-sm sm:px-5">
-            Showing {filtered.length} of {CHARSET.length} encoded glyphs.
+            Showing {filtered.length} of {CHARSET.length} printable encoded glyphs.
           </p>
 
           {filtered.length === 0 ? (
