@@ -119,6 +119,28 @@ def check_manifest(path: Path) -> list[str]:
     return errors
 
 
+def check_versioned_manifests() -> tuple[list[str], int]:
+    errors = []
+    checked = 0
+    for path in sorted(PUBLIC_DIR.glob("[0-9]*/*.json")):
+        manifest = json.loads(read(path).decode("utf-8"))
+        artifacts = manifest_artifacts(manifest)
+        checked += 1
+        for artifact in artifacts:
+            relative = artifact.get("path")
+            digest = artifact.get("sha256")
+            size = artifact.get("size")
+            if not isinstance(relative, str) or not isinstance(digest, str):
+                errors.append(f"{path.relative_to(REPO)} has an invalid artifact")
+                continue
+            data = read(path.parent / relative)
+            if len(data) != size:
+                errors.append(f"{path.parent.relative_to(REPO) / relative} size is wrong")
+            if sha256(data) != digest:
+                errors.append(f"{path.parent.relative_to(REPO) / relative} hash is wrong")
+    return errors, checked
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -130,6 +152,8 @@ def main() -> int:
 
     try:
         errors = check_mirrors() + check_zip()
+        versioned_errors, versioned_count = check_versioned_manifests()
+        errors += versioned_errors
         if args.manifest:
             errors += check_manifest(args.manifest.resolve())
     except (AssertionError, json.JSONDecodeError, zipfile.BadZipFile) as error:
@@ -142,6 +166,7 @@ def main() -> int:
 
     print(f"ok   {len(FONT_FILES)} canonical fonts match every public mirror")
     print(f"ok   {len(ZIP_CANONICAL)} canonical fonts match glide.zip")
+    print(f"ok   {versioned_count} versioned release manifests match their assets")
     if args.manifest:
         print(f"ok   public fonts match {args.manifest}")
     return 0
