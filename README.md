@@ -2,13 +2,13 @@
 
 # [Glide](https://blode.co/glide)
 
-**Glide 3 is a variable sans-serif with a continuous 100 to 950 weight axis in roman and italic, paired with Glide Mono**
+**Glide 3.1 is a variable UI sans-serif with continuous weight and optical-size axes in roman and italic, paired with Glide Mono**
 
 Ship every weight from Thin to Extra Black out of one small font file, with a mono companion for code.
 
-Version 3.002 keeps the family’s x-height at 532 units (x/cap 0.750, Inter’s
-bar) with full width restore after the raise — bowls and arms track Glide 3.000
-/ Circular more closely than the 3.001 half-X pin recipe.
+Version 3.1 adds an automated Text pole for 12–16px UI while preserving the
+3.002 design exactly at `opsz=16`. The current design stays flat from 16–28 so
+display settings retain the proportions and spacing that already worked.
 
 </div>
 
@@ -31,9 +31,9 @@ See the whole family set as running text and specimens.
 For the web, put the WOFF2 files in `app/fonts/` next to your root layout:
 
 ```bash
-curl -O https://blode.co/glide/glide-variable.woff2
-curl -O https://blode.co/glide/glide-variable-italic.woff2
-curl -O https://blode.co/glide/glide-mono-variable.woff2
+curl -O https://blode.co/glide/3.1.0/glide-variable.woff2
+curl -O https://blode.co/glide/3.1.0/glide-variable-italic.woff2
+curl -O https://blode.co/glide/3.1.0/glide-mono-variable.woff2
 ```
 
 For Font Book and design tools, download [glide.zip](https://blode.co/glide/glide.zip): the variable TTFs plus every static instance.
@@ -111,9 +111,9 @@ Every standard weight is a named instance, so the full ladder shows up in font m
 
 ## Notes
 
-- **Two variable files:** roman and italic ship separately, each interpolating the whole axis from three masters (Thin, Regular, Extra Black). One `wght` axis only — no optical-size axis.
+- **Two variable files:** roman and italic ship separately with `wght` 100–950 and `opsz` 12–28. Browsers select optical size automatically; `opsz=16` is the unchanged 3.002 design.
 - **Glide Mono:** a variable companion from 100 to 700. Ligatures stay off by default so `-->` and `==` keep their cell width. A static 400 cut is still in the desktop zip.
-- **Size:** use the tracking classes in `fonts/web/glide.css` (`.glide-ui`, `.glide-display`) instead of an `opsz` axis.
+- **Size:** leave `font-optical-sizing: auto` enabled for UI. `.glide-display` is an optional tracking refinement, not a legibility requirement.
 - **Features:** ligatures on for Sans (`fi`/`fl` and `->`/`=>`). Tabular figures and slashed zero are opt-in (`.glide-tnum`, `.glide-zero`). Mono keeps `tnum` and `zero` on, ligatures off.
 - **Formats:** variable TTF and WOFF2, with static instances in the desktop bundle.
 - **Blode UI:** Glide is the default family there, applied through `font-sans` and `font-mono`.

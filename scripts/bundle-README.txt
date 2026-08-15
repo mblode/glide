@@ -1,8 +1,8 @@
 Glide
 =====
 
-A variable sans-serif typeface by Matthew Blode. One continuous weight axis from
-100 (Thin) to 950 (Extra Black), in roman and italic, plus Glide Mono for code.
+A variable UI sans-serif typeface by Matthew Blode. Continuous weight 100–950
+and optical size 12–28 axes in roman and italic, plus Glide Mono for code.
 
 Install these two files and you have every weight:
 
@@ -12,6 +12,10 @@ Install these two files and you have every weight:
 Most apps handle variable fonts now, including Figma, Font Book, Illustrator and
 InDesign. If yours doesn't, use the fixed weights in static/ instead. Same
 design, one file per weight.
+
+The variable fonts default to optical size 16. Apps that support optical sizing
+can select the Text design automatically at 12–16 and retain the current design
+from 16–28.
 
   glide-mono.ttf     Glide Mono, one weight (400)
   static/            20 fixed weights, roman and italic
