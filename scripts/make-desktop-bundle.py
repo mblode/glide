@@ -14,6 +14,7 @@ static-to-variable repo already normalises. They are NOT taken from STAT, whose
 axis values lack the platform name records fontTools' updateFontNames needs.
 """
 
+import argparse
 import os
 import shutil
 import zipfile
@@ -21,8 +22,9 @@ from fontTools.ttLib import TTFont
 from fontTools.varLib import instancer
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-STATIC_DIR = os.path.join(REPO, "fonts", "static")
-ZIP_PATH = os.path.join(REPO, "apps", "web", "public", "glide.zip")
+DEFAULT_FONT_DIR = os.path.join(REPO, "fonts")
+DEFAULT_STATIC_DIR = os.path.join(DEFAULT_FONT_DIR, "static")
+DEFAULT_ZIP_PATH = os.path.join(REPO, "apps", "web", "public", "glide.zip")
 WINDOWS = (3, 1, 0x409)
 MAC = (1, 0, 0)
 
@@ -56,7 +58,7 @@ def instances_of(path):
         vf.close()
 
 
-def build_statics(src, italic):
+def build_statics(src, italic, static_dir):
     made = []
     for style, ps_name, wght, location in instances_of(src):
         # recalcTimestamp=False keeps head.modified as it is in the source font.
@@ -115,7 +117,7 @@ def build_statics(src, italic):
         if "fvar" in font:
             raise AssertionError(f"{ps_name} is still variable")
 
-        out = os.path.join(STATIC_DIR, f"{ps_name}.ttf")
+        out = os.path.join(static_dir, f"{ps_name}.ttf")
         font.save(out)
         font.close()
         made.append(out)
@@ -123,23 +125,32 @@ def build_statics(src, italic):
 
 
 def main():
-    shutil.rmtree(STATIC_DIR, ignore_errors=True)
-    os.makedirs(STATIC_DIR, exist_ok=True)
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--font-dir", default=DEFAULT_FONT_DIR)
+    parser.add_argument("--static-dir", default=DEFAULT_STATIC_DIR)
+    parser.add_argument("--zip-path", default=DEFAULT_ZIP_PATH)
+    args = parser.parse_args()
+    font_dir = os.path.abspath(args.font_dir)
+    static_dir = os.path.abspath(args.static_dir)
+    zip_path = os.path.abspath(args.zip_path)
+
+    shutil.rmtree(static_dir, ignore_errors=True)
+    os.makedirs(static_dir, exist_ok=True)
 
     statics = []
     for name in VARIABLE:
-        src = os.path.join(REPO, "fonts", name)
-        statics += build_statics(src, italic="italic" in name)
+        src = os.path.join(font_dir, name)
+        statics += build_statics(src, italic="italic" in name, static_dir=static_dir)
 
     readme = os.path.join(REPO, "scripts", "bundle-README.txt")
     ofl = os.path.join(REPO, "OFL.txt")
 
-    entries = [(os.path.join(REPO, "fonts", n), f"Glide/{n}") for n in VARIABLE + [MONO]]
+    entries = [(os.path.join(font_dir, n), f"Glide/{n}") for n in VARIABLE + [MONO]]
     entries += [(p, f"Glide/static/{os.path.basename(p)}") for p in sorted(statics)]
     entries += [(ofl, "Glide/OFL.txt"), (readme, "Glide/README.txt")]
 
-    os.makedirs(os.path.dirname(ZIP_PATH), exist_ok=True)
-    with zipfile.ZipFile(ZIP_PATH, "w", zipfile.ZIP_DEFLATED) as zf:
+    os.makedirs(os.path.dirname(zip_path), exist_ok=True)
+    with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zf:
         for source, arcname in entries:
             # Zip entries carry the file's mtime, so pin it. Without this the
             # archive hash changes on every run even when every file inside is
@@ -150,9 +161,9 @@ def main():
             with open(source, "rb") as fh:
                 zf.writestr(info, fh.read())
 
-    size = os.path.getsize(ZIP_PATH)
-    print(f"{len(statics)} statics -> {STATIC_DIR}")
-    print(f"{ZIP_PATH} ({size / 1_000_000:.1f} MB)")
+    size = os.path.getsize(zip_path)
+    print(f"{len(statics)} statics -> {static_dir}")
+    print(f"{zip_path} ({size / 1_000_000:.1f} MB)")
 
 
 if __name__ == "__main__":
