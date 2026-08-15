@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "family": "Glide",
+  "version": "3.0.2",
+  "fontRevision": "3.002",
+  "artifacts": [
+    {"path": "glide-variable.ttf", "sha256": "8a7960e80ba07074e1ecba3e98ace563dbb0b823cedaabd94c647733ad8c0c6c", "size": 315372},
+    {"path": "glide-variable-italic.ttf", "sha256": "059e2a4921dc5d39c3c96a88297f584b8de3f41e1ddb3964e75c7677af0d782a", "size": 322360},
+    {"path": "glide-variable.woff2", "sha256": "2f6d794506f6ac982538db9649757def41317eab1e31f99b6dedbdbddd9afd7d", "size": 132400},
+    {"path": "glide-variable-italic.woff2", "sha256": "bf8e6f5790e81555018ad4b052bf9ed281c2f3013833e9bfdd8fcb75409ffdd6", "size": 138912},
+    {"path": "glide-mono-variable.ttf", "sha256": "e3ee516fe950a60771226039a157ba6eb9ebd3ce7ce589221ba97abdbb841b09", "size": 252500},
+    {"path": "glide-mono-variable.woff2", "sha256": "a2cae8a9c817c5ff69a1b3f5ebba08c444012688af174da2b327cfce542631d2", "size": 67644},
+    {"path": "glide-mono.ttf", "sha256": "3e5374475c9ade8b45fae64fae1d0dec33c9014373cfe3a14382ea5319e58e5c", "size": 109312},
+    {"path": "glide-mono.woff2", "sha256": "52b19b6f28b8c0a2d0406a1a89fe35f72b54826c0bbf277b967aef4d0d2655a4", "size": 29192},
+    {"path": "glide.zip", "sha256": "b9e30f75c38c4923aaadb369245c16230ed41116032f0e0f07a9ba1786191e62", "size": 1919034}
+  ]
+}
