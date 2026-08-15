@@ -53,6 +53,11 @@ def instances_of(path):
                 defaults | dict(i.coordinates),
             )
             for i in vf["fvar"].instances
+            if all(
+                i.coordinates.get(tag, default) == default
+                for tag, default in defaults.items()
+                if tag != "wght"
+            )
         ]
     finally:
         vf.close()
