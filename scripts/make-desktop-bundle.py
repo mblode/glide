@@ -6,8 +6,11 @@ with the variable fonts, the license, and a README into a Google-Fonts-shaped
 zip. Reads fonts/*.ttf and never writes to them.
 
     python3 scripts/make-desktop-bundle.py
+    python3 scripts/make-desktop-bundle.py --check
 
-Outputs fonts/static/*.ttf (gitignored, derived) and apps/web/public/glide.zip.
+The default command outputs fonts/static/*.ttf (gitignored, derived) and
+apps/web/public/glide.zip. ``--check`` rebuilds in a temporary directory and
+requires the generated ZIP to match the public ZIP byte for byte.
 
 Instance names come from the fvar named instances, which release_glide.py in the
 static-to-variable repo already normalises. They are NOT taken from STAT, whose
@@ -17,6 +20,7 @@ axis values lack the platform name records fontTools' updateFontNames needs.
 import argparse
 import os
 import shutil
+import tempfile
 import zipfile
 from fontTools.ttLib import TTFont
 from fontTools.varLib import instancer
@@ -129,16 +133,7 @@ def build_statics(src, italic, static_dir):
     return made
 
 
-def main():
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--font-dir", default=DEFAULT_FONT_DIR)
-    parser.add_argument("--static-dir", default=DEFAULT_STATIC_DIR)
-    parser.add_argument("--zip-path", default=DEFAULT_ZIP_PATH)
-    args = parser.parse_args()
-    font_dir = os.path.abspath(args.font_dir)
-    static_dir = os.path.abspath(args.static_dir)
-    zip_path = os.path.abspath(args.zip_path)
-
+def build_bundle(font_dir, static_dir, zip_path):
     shutil.rmtree(static_dir, ignore_errors=True)
     os.makedirs(static_dir, exist_ok=True)
 
@@ -169,6 +164,40 @@ def main():
     size = os.path.getsize(zip_path)
     print(f"{len(statics)} statics -> {static_dir}")
     print(f"{zip_path} ({size / 1_000_000:.1f} MB)")
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--font-dir", default=DEFAULT_FONT_DIR)
+    parser.add_argument("--static-dir", default=DEFAULT_STATIC_DIR)
+    parser.add_argument("--zip-path", default=DEFAULT_ZIP_PATH)
+    parser.add_argument(
+        "--check",
+        action="store_true",
+        help="rebuild in temporary storage and compare with --zip-path",
+    )
+    args = parser.parse_args()
+    font_dir = os.path.abspath(args.font_dir)
+    static_dir = os.path.abspath(args.static_dir)
+    zip_path = os.path.abspath(args.zip_path)
+
+    if not args.check:
+        build_bundle(font_dir, static_dir, zip_path)
+        return
+
+    with tempfile.TemporaryDirectory(prefix="glide-bundle-check-") as temporary:
+        candidate_static = os.path.join(temporary, "static")
+        candidate_zip = os.path.join(temporary, "glide.zip")
+        build_bundle(font_dir, candidate_static, candidate_zip)
+        with open(candidate_zip, "rb") as candidate_file:
+            candidate = candidate_file.read()
+        with open(zip_path, "rb") as expected_file:
+            expected = expected_file.read()
+        if candidate != expected:
+            raise SystemExit(
+                f"desktop bundle mismatch: clean rebuild differs from {zip_path}"
+            )
+        print(f"ok   clean desktop bundle matches {zip_path}")
 
 
 if __name__ == "__main__":
