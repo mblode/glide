@@ -36,9 +36,7 @@ FONT_FILES = (
     "glide-variable.woff2",
     "glide-variable-italic.woff2",
     "glide-mono.ttf",
-    "glide-mono-variable.ttf",
     "glide-mono.woff2",
-    "glide-mono-variable.woff2",
 )
 ZIP_CANONICAL = (
     "glide-variable.ttf",

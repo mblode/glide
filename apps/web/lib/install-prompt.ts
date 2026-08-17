@@ -25,7 +25,7 @@ Find the folder holding my root layout (\`app\` or \`src/app\`) and download the
 \`\`\`sh
 curl -fsSL --create-dirs -o fonts/glide-variable.woff2 ${siteConfig.url}/glide-variable.woff2
 curl -fsSL --create-dirs -o fonts/glide-variable-italic.woff2 ${siteConfig.url}/glide-variable-italic.woff2
-curl -fsSL --create-dirs -o fonts/glide-mono-variable.woff2 ${siteConfig.url}/glide-mono-variable.woff2
+curl -fsSL --create-dirs -o fonts/glide-mono.woff2 ${siteConfig.url}/glide-mono.woff2
 \`\`\`
 
 Each file should be tens to hundreds of KB. A few hundred bytes means you got an error page, so stop and tell me.

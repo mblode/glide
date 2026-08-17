@@ -16,10 +16,6 @@ import {
 } from "@/lib/install-snippets";
 import { cn } from "@/lib/utils";
 
-function SectionHeading({ children }: { children: React.ReactNode }) {
-  return <h2 className="text-lg font-bold tracking-tight">{children}</h2>;
-}
-
 /**
  * A copy button with a visible label. The shared CopyButton in components/ui is
  * icon-only by contract, so it can't carry one.
@@ -57,7 +53,7 @@ function CopyTextButton({
       type="button"
       className={cn(
         "inline-flex shrink-0 items-center gap-2 rounded-xl border border-border px-3 py-1.5 text-sm font-medium transition-colors hover:bg-secondary/25",
-        className
+        className,
       )}
       onClick={handleCopy}
       aria-label={isCopied ? "Copied" : label}
@@ -100,91 +96,106 @@ function InstallStep({
 
 export function InstallSection() {
   return (
-    <div className="space-y-8">
-      <div className="flex items-center justify-between gap-3">
-        <SectionHeading>Install</SectionHeading>
-        <CopyTextButton
-          content={installPrompt}
-          label="Copy prompt"
-          title="Copy install instructions for a coding agent"
-        />
+    <section aria-labelledby="install-heading" id="install">
+      {/*
+        Inter's usage block is an 8-column grid with the label in 1-2 and the
+        content in 3-8. A proportional split beats the fixed label column the
+        other rows use here, because at full width a 10rem label next to a
+        2000px content area stops reading as a pair.
+      */}
+      <div className="grid gap-x-10 gap-y-6 border-border border-t px-[var(--row-padding)] py-[var(--row-padding-vertical)] lg:grid-cols-4">
+        <div className="flex flex-col items-start gap-3">
+          <h2
+            className="font-semibold text-lg tracking-tight"
+            id="install-heading"
+          >
+            Install
+          </h2>
+          <CopyTextButton
+            content={installPrompt}
+            label="Copy prompt"
+            title="Copy install instructions for a coding agent"
+          />
+        </div>
+
+        <div className="space-y-8 lg:col-span-3">
+          <p className="text-pretty text-sm text-muted-foreground">
+            Glide is free under the{" "}
+            <a
+              className="font-medium text-foreground underline underline-offset-4 hover:text-primary"
+              href={siteConfig.links.license}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              SIL Open Font License 1.1
+            </a>
+            . For Figma and Font Book,{" "}
+            <a
+              className="font-medium text-foreground underline underline-offset-4 hover:text-primary"
+              download="glide.zip"
+              href={asset("/glide.zip")}
+            >
+              download Glide for desktop
+            </a>{" "}
+            (TTF). On macOS open Font Book and choose File → Add Fonts. On
+            Windows, select the files, right-click, and install for all users.
+          </p>
+
+          <InstallStep step={1} title="Download the font files">
+            <p className="text-sm leading-relaxed text-muted-foreground">
+              Download{" "}
+              <a
+                className="font-medium text-foreground underline underline-offset-4 transition-colors hover:text-primary"
+                download="glide-variable.woff2"
+                href={asset("/glide-variable.woff2")}
+              >
+                glide-variable.woff2
+              </a>{" "}
+              and{" "}
+              <a
+                className="font-medium text-foreground underline underline-offset-4 transition-colors hover:text-primary"
+                download="glide-variable-italic.woff2"
+                href={asset("/glide-variable-italic.woff2")}
+              >
+                glide-variable-italic.woff2
+              </a>{" "}
+              and{" "}
+              <a
+                className="font-medium text-foreground underline underline-offset-4 transition-colors hover:text-primary"
+                download="glide-mono.woff2"
+                href={asset("/glide-mono.woff2")}
+              >
+                glide-mono.woff2
+              </a>{" "}
+              and put them in app/fonts/ next to your root layout.
+            </p>
+          </InstallStep>
+
+          <InstallStep
+            step={2}
+            title="Configure the fonts in your root layout"
+            description="In app/layout.tsx, import localFont and configure the Glide variable and Glide Mono fonts:"
+          >
+            <CodeBlock filename="app/layout.tsx">{layoutSnippet}</CodeBlock>
+          </InstallStep>
+
+          <InstallStep
+            step={3}
+            title="Map the CSS variables in Tailwind"
+            description="In your global CSS file, map --font-glide to Tailwind's --font-sans and --font-glide-mono to --font-mono:"
+          >
+            <CodeBlock filename="app/globals.css">{themeSnippet}</CodeBlock>
+          </InstallStep>
+
+          <InstallStep
+            step={4}
+            title="Use it"
+            description="Glide is now your default sans-serif font, and Glide Mono is your monospace font. Use font-sans with any weight from 100 to 950, and font-mono for code:"
+          >
+            <CodeBlock>{usageSnippet}</CodeBlock>
+          </InstallStep>
+        </div>
       </div>
-
-      <p className="text-pretty text-sm text-muted-foreground">
-        Glide is free under the{" "}
-        <a
-          className="font-medium text-foreground underline underline-offset-4 hover:text-primary"
-          href={siteConfig.links.license}
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          SIL Open Font License 1.1
-        </a>
-        . For Figma and Font Book,{" "}
-        <a
-          className="font-medium text-foreground underline underline-offset-4 hover:text-primary"
-          download="glide.zip"
-          href={asset("/glide.zip")}
-        >
-          download Glide for desktop
-        </a>{" "}
-        (TTF). On macOS open Font Book and choose File → Add Fonts. On Windows,
-        select the files, right-click, and install for all users.
-      </p>
-
-      <InstallStep step={1} title="Download the font files">
-        <p className="text-sm leading-relaxed text-muted-foreground">
-          Download{" "}
-          <a
-            className="font-medium text-foreground underline underline-offset-4 transition-colors hover:text-primary"
-            download="glide-variable.woff2"
-            href={asset("/glide-variable.woff2")}
-          >
-            glide-variable.woff2
-          </a>{" "}
-          and{" "}
-          <a
-            className="font-medium text-foreground underline underline-offset-4 transition-colors hover:text-primary"
-            download="glide-variable-italic.woff2"
-            href={asset("/glide-variable-italic.woff2")}
-          >
-            glide-variable-italic.woff2
-          </a>{" "}
-          and{" "}
-          <a
-            className="font-medium text-foreground underline underline-offset-4 transition-colors hover:text-primary"
-            download="glide-mono-variable.woff2"
-            href={asset("/glide-mono-variable.woff2")}
-          >
-            glide-mono-variable.woff2
-          </a>{" "}
-          and put them in app/fonts/ next to your root layout.
-        </p>
-      </InstallStep>
-
-      <InstallStep
-        step={2}
-        title="Configure the fonts in your root layout"
-        description="In app/layout.tsx, import localFont and configure the Glide variable and Glide Mono fonts:"
-      >
-        <CodeBlock filename="app/layout.tsx">{layoutSnippet}</CodeBlock>
-      </InstallStep>
-
-      <InstallStep
-        step={3}
-        title="Map the CSS variables in Tailwind"
-        description="In your global CSS file, map --font-glide to Tailwind's --font-sans and --font-glide-mono to --font-mono:"
-      >
-        <CodeBlock filename="app/globals.css">{themeSnippet}</CodeBlock>
-      </InstallStep>
-
-      <InstallStep
-        step={4}
-        title="Use it"
-        description="Glide is now your default sans-serif font, and Glide Mono is your monospace font. Use font-sans with any weight from 100 to 950, and font-mono for code:"
-      >
-        <CodeBlock>{usageSnippet}</CodeBlock>
-      </InstallStep>
-    </div>
+    </section>
   );
 }

@@ -33,7 +33,7 @@ For the web, put the WOFF2 files in `app/fonts/` next to your root layout:
 ```bash
 curl -O https://blode.co/glide/3.1.0/glide-variable.woff2
 curl -O https://blode.co/glide/3.1.0/glide-variable-italic.woff2
-curl -O https://blode.co/glide/3.1.0/glide-mono-variable.woff2
+curl -O https://blode.co/glide/3.1.0/glide-mono.woff2
 ```
 
 For Font Book and design tools, download [glide.zip](https://blode.co/glide/glide.zip): the variable TTFs plus every static instance.
@@ -57,9 +57,9 @@ const glide = localFont({
 });
 
 const glideMono = localFont({
-  src: "./fonts/glide-mono-variable.woff2",
+  src: "./fonts/glide-mono.woff2",
   variable: "--font-glide-mono",
-  weight: "100 700",
+  weight: "400",
   display: "swap",
 });
 
@@ -112,7 +112,7 @@ Every standard weight is a named instance, so the full ladder shows up in font m
 ## Notes
 
 - **Two variable files:** roman and italic ship separately with `wght` 100–950 and `opsz` 12–28. Browsers select optical size automatically; `opsz=16` is the unchanged 3.002 design.
-- **Glide Mono:** a variable companion from 100 to 700. Ligatures stay off by default so `-->` and `==` keep their cell width. A static 400 cut is still in the desktop zip.
+- **Glide Mono:** a single-weight 400 companion. Ligatures stay off by default so `-->` and `==` keep their cell width.
 - **Size:** leave `font-optical-sizing: auto` enabled for UI. `.glide-display` is an optional tracking refinement, not a legibility requirement.
 - **Features:** ligatures on for Sans (`fi`/`fl` and `->`/`=>`). Tabular figures and slashed zero are opt-in (`.glide-tnum`, `.glide-zero`). Mono keeps `tnum` and `zero` on, ligatures off.
 - **Formats:** variable TTF and WOFF2, with static instances in the desktop bundle.

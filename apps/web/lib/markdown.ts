@@ -10,8 +10,7 @@ ${siteConfig.description}
 - Site: ${siteConfig.url}
 - Variable roman: ${siteConfig.url}/glide-variable.woff2
 - Variable italic: ${siteConfig.url}/glide-variable-italic.woff2
-- Variable mono: ${siteConfig.url}/glide-mono-variable.woff2
-- Static mono 400: ${siteConfig.url}/glide-mono.woff2
+- Mono (single weight 400): ${siteConfig.url}/glide-mono.woff2
 - Desktop bundle (TTF + 20 static weights): ${siteConfig.url}/glide.zip
 - License: SIL Open Font License 1.1
 - Source: ${siteConfig.links.github}
@@ -19,7 +18,7 @@ ${siteConfig.description}
 
 ## Sections
 
-- Playground — ${siteConfig.url}/#playground
+- Specimen — ${siteConfig.url}/#playground
 - Weights — ${siteConfig.url}/#weights
 - Install — ${siteConfig.url}/#install
 

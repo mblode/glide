@@ -9,6 +9,7 @@ type GlyphCanvasProps = {
   cp: number;
   italic: boolean;
   label: string;
+  mono: boolean;
   weight: number;
 };
 
@@ -27,6 +28,7 @@ export function GlyphCanvas({
   cp,
   italic,
   label,
+  mono,
   weight,
 }: GlyphCanvasProps) {
   const wrapRef = useRef<HTMLDivElement>(null);
@@ -124,7 +126,7 @@ export function GlyphCanvas({
       cancelAnimationFrame(frame);
       observer.disconnect();
     };
-  }, [char, cp, italic, weight]);
+  }, [char, cp, italic, mono, weight]);
 
   return (
     <div
@@ -132,6 +134,10 @@ export function GlyphCanvas({
       className="relative min-h-0 min-w-0 flex-1"
       style={
         {
+          // Read back off this element by the canvas via getComputedStyle.
+          fontFamily: mono
+            ? "var(--font-glide-mono), monospace"
+            : "var(--font-glide), sans-serif",
           fontWeight: weight,
           fontStyle: italic ? "italic" : "normal",
         } as CSSProperties

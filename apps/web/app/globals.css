@@ -61,12 +61,56 @@
   --shadow-input: 0 1px 2px 0 oklch(0 0 0 / 5%);
   --radius: 0.625rem;
 
+  /*
+    The full-bleed rows (specimen, weights, characters, install) share one
+    gutter so their content edges line up down the page. Vertical is the one
+    that changes with the breakpoint; horizontal stays a thumb's width.
+  */
+  --row-padding: 2rem;
+  --row-padding-vertical: var(--row-padding);
+
   --field-height: 2.5rem;
   --field-height-sm: 2.25rem;
   --field-radius: var(--radius);
   --field-padding-x: 0.75rem;
   --field-padding-y: 0.5rem;
   --textarea-min-height: 5rem;
+}
+
+@media (min-width: 40rem) {
+  :root {
+    --row-padding: 4rem;
+  }
+}
+
+/*
+  Fluid root, the way rsms.me/inter does it: past the breakpoint 1rem tracks the
+  viewport instead of sitting at 16px, so every rem-based size, gutter, and
+  measure grows with the window rather than stranding the layout in a strip down
+  the middle. 1392/87 is exactly 16px, so nothing jumps at the crossover.
+*/
+@media only screen and (min-width: 1392px) {
+  :root {
+    font-size: calc(100vw / 87);
+  }
+}
+
+/*
+  macOS hides overlay scrollbars until you scroll, so a height-capped panel
+  reads as clipped content with no affordance that there is more. Declaring
+  `scrollbar-color` opts into a persistent bar: it rests thin and low-contrast,
+  then firms up on hover, and `scrollbar-gutter` keeps the reserve so nothing
+  reflows when it appears. See fluidfunctionalism.com/docs/scrollbars.
+*/
+@utility quiet-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-gutter: stable;
+  scrollbar-color: color-mix(in oklab, currentColor 22%, transparent) transparent;
+
+  &:hover {
+    scrollbar-color: color-mix(in oklab, currentColor 45%, transparent)
+      transparent;
+  }
 }
 
 @layer base {

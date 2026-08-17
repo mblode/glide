@@ -17,9 +17,9 @@ const glide = localFont({
 });
 
 const glideMono = localFont({
-  src: [{ path: "../public/glide-mono-variable.woff2", style: "normal" }],
+  src: [{ path: "../public/glide-mono.woff2", style: "normal" }],
   variable: "--font-glide-mono",
-  weight: "100 700",
+  weight: "400",
   display: "swap",
 });
 

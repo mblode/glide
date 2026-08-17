@@ -27,9 +27,9 @@ const glide = localFont({
 });
 
 const glideMono = localFont({
-  src: "./fonts/glide-mono-variable.woff2",
+  src: "./fonts/glide-mono.woff2",
   variable: "--font-glide-mono",
-  weight: "100 700",
+  weight: "400",
   display: "swap",
 });
 
@@ -59,6 +59,6 @@ export const usageSnippet = `<p className="font-sans font-normal">Regular (400)<
 <p className="font-sans font-bold">Bold (700)</p>
 <p className="font-sans font-black">Black (900)</p>
 <p className="font-sans font-bold italic">Bold italic (700)</p>
-<p className="glide-tnum">11:45 0123456789</p>
-<p className="glide-zero">0</p>
+<p className="tabular-nums">11:45 0123456789</p>
+<p className="slashed-zero">0</p>
 <code className="font-mono">const glide = "mono";</code>`;

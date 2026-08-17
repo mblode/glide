@@ -1,38 +1,12 @@
 import Link from "next/link";
 
+import { GlyphSet } from "@/components/glyph-set";
 import { InstallSection } from "@/components/install-section";
-import { Playground } from "@/components/playground";
+import { Specimen } from "@/components/specimen";
 import { Button } from "@/components/ui/button";
 import { WeightShowcase } from "@/components/weight-showcase";
 import { ZoneBreadcrumb } from "@/components/zone-breadcrumb";
 import { asset, siteConfig } from "@/lib/config";
-import { cn } from "@/lib/utils";
-
-function Section({
-  id,
-  children,
-  bordered = true,
-}: {
-  id?: string;
-  children: React.ReactNode;
-  bordered?: boolean;
-}) {
-  return (
-    <section
-      id={id}
-      className={cn(
-        "scroll-mt-6",
-        bordered && "rounded-2xl border border-border bg-card/50 p-6 backdrop-blur-sm sm:p-8",
-      )}
-    >
-      {children}
-    </section>
-  );
-}
-
-function SectionHeading({ children }: { children: React.ReactNode }) {
-  return <h2 className="text-lg font-bold tracking-tight">{children}</h2>;
-}
 
 export default function Home() {
   return (
@@ -41,61 +15,51 @@ export default function Home() {
         Root page only, and it must read identically to the BreadcrumbList in
         lib/schema.ts. See blode-co/apps/web/.claude/knowledge/zone-conventions.md.
       */}
-      <div className="mx-auto w-full max-w-5xl px-4 pt-6 sm:px-6">
+      <div className="px-[var(--row-padding)] pt-6">
         <ZoneBreadcrumb product={siteConfig.name} />
       </div>
 
       {/* Hero */}
-      <section className="flex flex-col items-center gap-6 px-4 py-24 text-center sm:px-6 sm:py-40">
-        <h1 className="text-8xl font-black leading-[0.85] tracking-[-0.06em] text-display sm:text-9xl lg:text-[11rem]">
+      <section className="flex flex-col items-start gap-8 px-[var(--row-padding)] py-[var(--row-padding-vertical)]">
+        {/*
+          Sized off the viewport the way Inter's title is (~14vw there), scaled
+          up because "Glide" is five characters against their twenty-six and
+          would otherwise sit marooned in the measure. The clamp floor keeps it
+          a headline rather than a hazard on a phone, and the negative margin is
+          side-bearing compensation so the G sits on the row's gutter.
+        */}
+        <h1 className="ml-[-0.015em] text-[clamp(5rem,24vw,26rem)] font-black leading-[0.85] tracking-[-0.04em] text-display">
           Glide
         </h1>
-        <p className="max-w-[40ch] text-xl text-pretty text-muted-foreground sm:text-2xl">
+        {/* Inter sets its lede at ~29px/1.5 against a ~28em measure. */}
+        <p className="max-w-[28em] text-[clamp(1.25rem,2.2vw,1.85rem)] text-pretty leading-[1.5]">
           Variable font family crafted for UI.
         </p>
-        <p className="max-w-[48ch] text-pretty text-sm text-muted-foreground">
+        <p className="max-w-[48ch] text-pretty text-muted-foreground">
           Free under the SIL Open Font License. Variable 100–950, roman, italic,
           and mono.
         </p>
-        <div className="flex flex-wrap items-center justify-center gap-3">
+        <div className="flex flex-wrap items-center gap-3">
           <Button asChild>
             <Link href="#install">Download</Link>
-          </Button>
-          <Button variant="outline" asChild>
-            <a href="#playground">Try it</a>
           </Button>
         </div>
       </section>
 
-      <div className="mx-auto w-full max-w-5xl space-y-8 px-4 pb-8 sm:px-6">
-        {/* Playground */}
-        <Section id="playground">
-          <div className="space-y-6">
-            <SectionHeading>Playground</SectionHeading>
-            <Playground />
-          </div>
-        </Section>
+      {/*
+        Full-bleed on purpose: the specimen is the argument for the typeface, so
+        it gets the whole measure rather than the 5xl reading column below.
+      */}
+      <Specimen />
 
-        {/* Weights */}
-        <Section id="weights" bordered={false}>
-          <div className="space-y-6">
-            <WeightShowcase />
-            <p className="text-pretty text-sm text-muted-foreground">
-              Only three of these are drawn: Thin, Regular, and Extra Black. The rest
-              are interpolated.{" "}
-              <Link className="underline underline-offset-4 hover:text-foreground" href="/glyphs">
-                Browse every glyph
-              </Link>
-              .
-            </p>
-          </div>
-        </Section>
+      {/* Full-bleed for the same reason as the specimen: the type is the argument. */}
+      <WeightShowcase />
 
-        {/* Install */}
-        <Section id="install">
-          <InstallSection />
-        </Section>
+      <GlyphSet />
 
+      <InstallSection />
+
+      <div className="border-border border-t px-[var(--row-padding)]">
         {/*
           Footer. blode.co and blode.co/projects are this same origin behind a
           rewrite, so both are internal links: same tab, and no
@@ -104,7 +68,7 @@ export default function Home() {
           dead end for crawlers and readers. See
           blode-co/apps/web/.claude/knowledge/zone-conventions.md.
         */}
-        <footer className="flex flex-col items-center justify-center gap-2 pt-16 pb-8 text-muted-foreground text-sm">
+        <footer className="flex flex-col items-start gap-2 py-[var(--row-padding-vertical)] text-muted-foreground text-sm">
           <div className="flex items-center gap-1">
             Crafted by
             <a
@@ -117,9 +81,14 @@ export default function Home() {
                 own text, so any alt here makes the accessible name announce the
                 name twice.
               */}
+              {/*
+                Sized in `em` so it tracks the footer's type instead of pinning
+                to 20px while the fluid root scales everything around it. The
+                width/height attributes stay to reserve layout before it loads.
+              */}
               <img
                 alt=""
-                className="rounded-full"
+                className="size-[1.6em] rounded-full"
                 height={20}
                 src={asset("/avatar-sm.png")}
                 width={20}
@@ -127,7 +96,7 @@ export default function Home() {
               Matthew Blode
             </a>
           </div>
-          <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1">
+          <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
             <span>v{siteConfig.version}</span>
             <span aria-hidden="true">·</span>
             <a
@@ -147,13 +116,6 @@ export default function Home() {
             >
               OFL 1.1
             </a>
-            <span aria-hidden="true">·</span>
-            <Link
-              className="hover:text-foreground focus-visible:rounded-lg focus-visible:ring-2 focus-visible:ring-ring"
-              href="/glyphs"
-            >
-              Glyphs
-            </Link>
           </div>
         </footer>
       </div>
