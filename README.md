@@ -2,13 +2,13 @@
 
 # [Glide](https://blode.co/glide)
 
-**Glide 3.1 is a variable UI sans-serif with continuous weight and optical-size axes in roman and italic, paired with Glide Mono**
+**Glide 4.0 is a variable UI sans-serif with continuous weight and optical-size axes in roman and italic, paired with Glide Mono**
 
 Ship every weight from Thin to Extra Black out of one small font file, with a mono companion for code.
 
-Version 3.1 adds an automated Text pole for 12–16px UI while preserving the
-3.002 design exactly at `opsz=16`. The current design stays flat from 16–28 so
-display settings retain the proportions and spacing that already worked.
+Version 4.0 adds reviewed Text drawings and spacing for compact 12–16px UI,
+while preserving the established UI and display designs at larger optical
+sizes.
 
 </div>
 
@@ -31,9 +31,9 @@ See the whole family set as running text and specimens.
 For the web, put the WOFF2 files in `app/fonts/` next to your root layout:
 
 ```bash
-curl -O https://blode.co/glide/3.1.0/glide-variable.woff2
-curl -O https://blode.co/glide/3.1.0/glide-variable-italic.woff2
-curl -O https://blode.co/glide/3.1.0/glide-mono-variable.woff2
+curl -O https://blode.co/glide/4.0.0/glide-variable.woff2
+curl -O https://blode.co/glide/4.0.0/glide-variable-italic.woff2
+curl -O https://blode.co/glide/glide-mono-variable.woff2
 ```
 
 For Font Book and design tools, download [glide.zip](https://blode.co/glide/glide.zip): the variable TTFs plus every static instance.
