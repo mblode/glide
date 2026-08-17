@@ -152,6 +152,7 @@ export function GlyphSet({ initialName }: { initialName?: string }) {
           </div>
           <Slider
             id="glyphs-weight"
+            aria-label="Glyph weight"
             min={100}
             max={950}
             step={1}
