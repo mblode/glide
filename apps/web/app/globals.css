@@ -63,10 +63,14 @@
 
   /*
     The full-bleed rows (specimen, weights, characters, install) share one
-    gutter so their content edges line up down the page. Vertical is the one
-    that changes with the breakpoint; horizontal stays a thumb's width.
+    gutter so their content edges line up down the page.
+
+    Deliberately px, not rem. The fluid root below redefines 1rem as 100vw/87
+    past 1392px, so `4rem` here would resolve to 117px on a 2545px screen
+    rather than the 64px it reads as. Type is meant to scale with the viewport;
+    the gutter is not.
   */
-  --row-padding: 2rem;
+  --row-padding: 32px;
   --row-padding-vertical: var(--row-padding);
 
   --field-height: 2.5rem;
@@ -77,9 +81,9 @@
   --textarea-min-height: 5rem;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 640px) {
   :root {
-    --row-padding: 4rem;
+    --row-padding: 64px;
   }
 }
 
