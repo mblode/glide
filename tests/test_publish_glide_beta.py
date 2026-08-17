@@ -44,14 +44,15 @@ class PublishGlideBetaTests(unittest.TestCase):
         versioned = self.stage / MODULE.VERSIONED_DIRECTORY
         (versioned / "static").mkdir(parents=True)
         artifacts = {
-            "glide-variable.ttf": b"roman",
-            "static/Glide4Beta-Regular.ttf": b"static",
+            relative: relative.encode()
+            for relative in MODULE.EXPECTED_ARTIFACTS
         }
         for relative, data in artifacts.items():
             path = versioned / relative
             path.parent.mkdir(parents=True, exist_ok=True)
             path.write_bytes(data)
         manifest = {
+            "schemaVersion": 1,
             "kind": "glide-beta-release",
             "channel": "beta",
             "family": "Glide 4 Beta",
@@ -59,7 +60,13 @@ class PublishGlideBetaTests(unittest.TestCase):
             "releaseLabel": MODULE.RELEASE,
             "fontRevision": "4.000",
             "publishTarget": {
-                "versionedDirectory": MODULE.VERSIONED_DIRECTORY.as_posix()
+                "repository": "../glide",
+                "versionedDirectory": MODULE.VERSIONED_DIRECTORY.as_posix(),
+                "urlPrefix": f"/glide/{MODULE.RELEASE}",
+            },
+            "config": {
+                "path": "configs/glide-4-beta-release.json",
+                "sha256": MODULE.CONFIG_SHA256,
             },
             "artifacts": [
                 {"path": relative, "size": len(data), "sha256": digest(data)}
@@ -144,6 +151,47 @@ class PublishGlideBetaTests(unittest.TestCase):
             MODULE.publish(
                 public_repo=self.public,
                 stage=linked_stage,
+                manifest_path=self.manifest,
+                confirm_release=MODULE.RELEASE,
+            )
+        self.assert_protected_unchanged()
+
+    def test_rejects_symlinked_public_destination_parent(self) -> None:
+        real_public = self.public / "real-public"
+        real_public.mkdir()
+        public_path = self.public / "apps" / "web" / "public"
+        for child in tuple(public_path.iterdir()):
+            if child.is_dir():
+                child.rename(real_public / child.name)
+            else:
+                child.rename(real_public / child.name)
+        public_path.rmdir()
+        public_path.symlink_to(real_public, target_is_directory=True)
+        with self.assertRaisesRegex(ValueError, "crosses a symlink"):
+            MODULE.publish(
+                public_repo=self.public,
+                stage=self.stage,
+                manifest_path=self.manifest,
+                confirm_release=MODULE.RELEASE,
+            )
+        self.assertFalse((real_public / MODULE.RELEASE).exists())
+
+    def test_rejects_self_hashed_partial_manifest(self) -> None:
+        manifest = json.loads(self.manifest.read_text())
+        manifest["artifacts"] = manifest["artifacts"][:1]
+        manifest["manifestSha256"] = digest(
+            MODULE._canonical(
+                {key: value for key, value in manifest.items() if key != "manifestSha256"}
+            )
+        )
+        payload = json.dumps(manifest, indent=2, sort_keys=True) + "\n"
+        self.manifest.write_text(payload)
+        staged = self.stage / MODULE.VERSIONED_DIRECTORY / self.manifest.name
+        staged.write_text(payload)
+        with self.assertRaisesRegex(ValueError, "artifact inventory"):
+            MODULE.publish(
+                public_repo=self.public,
+                stage=self.stage,
                 manifest_path=self.manifest,
                 confirm_release=MODULE.RELEASE,
             )

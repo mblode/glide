@@ -16,6 +16,31 @@ REPO = Path(__file__).resolve().parent.parent
 RELEASE = "4.0.0-beta.1"
 MANIFEST_NAME = f"glide-{RELEASE}-manifest.json"
 VERSIONED_DIRECTORY = Path("apps/web/public") / RELEASE
+CONFIG_SHA256 = "e3e9bbf8d0fa04e55b2a7f9b896f5b2fe415c25276003a75d5de0b8168e621f6"
+VARIABLE_ARTIFACTS = {
+    "glide-variable.ttf",
+    "glide-variable-italic.ttf",
+    "glide-variable.woff2",
+    "glide-variable-italic.woff2",
+    "glide.zip",
+}
+STATIC_WEIGHTS = (
+    "Thin",
+    "ExtraLight",
+    "Light",
+    "Regular",
+    "Medium",
+    "SemiBold",
+    "Bold",
+    "ExtraBold",
+    "Black",
+    "ExtraBlack",
+)
+EXPECTED_ARTIFACTS = VARIABLE_ARTIFACTS | {
+    f"static/Glide4Beta-{('Italic' if weight == 'Regular' and italic else weight + italic)}.ttf"
+    for weight in STATIC_WEIGHTS
+    for italic in ("", "Italic")
+}
 PROTECTED_DIRECTORIES = (
     Path("apps/web/public/3.1.0"),
     Path("apps/web/public/3.002"),
@@ -37,6 +62,14 @@ def _tree_hashes(directory: Path) -> dict[str, str]:
         if path.is_file():
             hashes[path.relative_to(directory).as_posix()] = sha256(path.read_bytes())
     return hashes
+
+
+def _reject_symlink_components(root: Path, relative: Path) -> None:
+    current = root
+    for part in relative.parts:
+        current /= part
+        if current.is_symlink():
+            raise ValueError(f"public destination crosses a symlink: {current}")
 
 
 def _protected_snapshot(public_repo: Path) -> dict[str, str]:
@@ -64,6 +97,7 @@ def _load_manifest(path: Path) -> tuple[bytes, dict[str, Any]]:
     data = path.read_bytes()
     manifest = json.loads(data)
     required = {
+        "schemaVersion": 1,
         "kind": "glide-beta-release",
         "channel": "beta",
         "version": "4.0.0",
@@ -75,8 +109,17 @@ def _load_manifest(path: Path) -> tuple[bytes, dict[str, Any]]:
         if manifest.get(key) != expected:
             raise ValueError(f"beta manifest has the wrong {key}")
     target = manifest.get("publishTarget", {})
-    if target.get("versionedDirectory") != VERSIONED_DIRECTORY.as_posix():
+    if target != {
+        "repository": "../glide",
+        "versionedDirectory": VERSIONED_DIRECTORY.as_posix(),
+        "urlPrefix": f"/glide/{RELEASE}",
+    }:
         raise ValueError("beta manifest has the wrong versioned publish directory")
+    if manifest.get("config") != {
+        "path": "configs/glide-4-beta-release.json",
+        "sha256": CONFIG_SHA256,
+    }:
+        raise ValueError("beta manifest has the wrong release contract")
     expected_digest = manifest.get("manifestSha256")
     unsigned = dict(manifest)
     unsigned.pop("manifestSha256", None)
@@ -117,6 +160,8 @@ def _verify_source(
         if len(data) != size or sha256(data) != digest:
             raise ValueError(f"staged beta artifact differs from manifest: {relative}")
         expected[path.as_posix()] = digest
+    if set(expected) != EXPECTED_ARTIFACTS:
+        raise ValueError("beta manifest artifact inventory differs from the contract")
     if actual != expected:
         raise ValueError("staged beta directory has missing or unmanifested files")
     return source, expected | {manifest_name: sha256(manifest_bytes)}
@@ -134,6 +179,7 @@ def publish(
     public_repo = public_repo.resolve()
     if not (public_repo / "AGENTS.md").is_file():
         raise ValueError(f"not a Glide public checkout: {public_repo}")
+    _reject_symlink_components(public_repo, VERSIONED_DIRECTORY)
     before = _protected_snapshot(public_repo)
     source, expected = _verify_source(stage.absolute(), manifest_path.absolute())
     target = public_repo / VERSIONED_DIRECTORY
@@ -164,7 +210,13 @@ def publish(
     except BaseException:
         shutil.rmtree(temporary, ignore_errors=True)
         if destination_claimed:
-            shutil.rmtree(target, ignore_errors=True)
+            # Remove only the payload this invocation installed. Never delete
+            # a path another writer may have swapped into place.
+            try:
+                if not target.is_symlink() and _tree_hashes(target) == expected:
+                    shutil.rmtree(target)
+            except (OSError, ValueError):
+                pass
         raise
     return target
 
