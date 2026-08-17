@@ -30,6 +30,29 @@ The tag workflow reruns the release tier and publishes the already verified
 desktop ZIP. A tag must point at the commit containing the matching immutable
 version directory.
 
+## Promote the Glide 4.0.1 hotfix
+
+The private pipeline publishes `apps/web/public/4.0.1` before it moves any
+aliases. The same pipeline then calls the public promoter with the committed,
+hash-pinned contract:
+
+```sh
+python3 scripts/promote-versioned-release.py \
+  --source apps/web/public/4.0.1 \
+  --contract release-contracts/glide-4.0.1.json \
+  --confirm-version 4.0.1
+```
+
+Do not run this command until the private pipeline has verified and published
+the immutable directory. The contract binds the authority manifest and
+protects the 3.1.0, 3.002, and 4.0.0 release trees. The promoter replaces the
+current `apps/web/public` and `fonts` aliases as one journaled transaction.
+
+After promotion, update the visible package and site version to 4.0.1. Run
+`npm run verify:full`, merge the complete change, and wait for main-branch CI.
+Create `v4.0.1` only from that merged commit; the tag workflow publishes the
+already verified `glide.zip`.
+
 ## Publish the Glide 4 beta
 
 You can publish the approved `4.0.0-beta.1` bytes without changing the current

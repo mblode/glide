@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Transactionally promote immutable Glide 4.0 assets to public aliases."""
+"""Transactionally promote a contracted immutable Glide 4 release to aliases."""
 
 from __future__ import annotations
 
@@ -42,7 +42,72 @@ AUTHORITY = {
     "path": "reports/glide-4-authority/glide-4-six-master-authority-80851dd48adef143.json",
     "sha256": "80851dd48adef14314a26663d3b4918b1d3e91dcc99a910437713f37af53aff2",
 }
+DEFAULT_CONTRACT = {
+    "schemaVersion": 1,
+    "kind": "glide-public-promotion",
+    "semanticVersion": VERSION,
+    "fontRevision": "4.000",
+    "authority": AUTHORITY,
+    "protectedTrees": {},
+}
+SUPPORTED_RELEASES = {"4.0.0": "4.000", "4.0.1": "4.001"}
+HEX = set("0123456789abcdef")
 JOURNAL = ".glide-promotion-journal"
+
+
+def _canonical(value: object) -> bytes:
+    return (json.dumps(value, sort_keys=True, separators=(",", ":")) + "\n").encode()
+
+
+def _confined(relative: str, label: str) -> Path:
+    path = Path(relative)
+    if path.is_absolute() or not path.parts or ".." in path.parts:
+        raise ValueError(f"{label} is not a confined relative path")
+    return path
+
+
+def _digest(value: object, label: str) -> str:
+    if not isinstance(value, str) or len(value) != 64 or set(value) - HEX:
+        raise ValueError(f"{label} has invalid SHA-256")
+    return value
+
+
+def _load_contract(path: Path | None) -> dict[str, object]:
+    if path is None:
+        return DEFAULT_CONTRACT
+    expected_root = ROOT / "release-contracts"
+    if path.is_symlink() or not path.is_file() or path.parent.resolve() != expected_root.resolve():
+        raise ValueError("promotion contract is missing, unsafe, or outside release-contracts")
+    contract = json.loads(path.read_text(encoding="utf-8"))
+    version = contract.get("semanticVersion")
+    revision = SUPPORTED_RELEASES.get(version)
+    if (
+        contract.get("schemaVersion") != 1
+        or contract.get("kind") != "glide-public-promotion"
+        or revision is None
+        or contract.get("fontRevision") != revision
+        or path.name != f"glide-{version}.json"
+    ):
+        raise ValueError("promotion contract has the wrong release identity")
+    authority = contract.get("authority", {})
+    if not isinstance(authority, dict):
+        raise ValueError("promotion contract has no authority binding")
+    _confined(str(authority.get("path", "")), "authority path")
+    _digest(authority.get("sha256"), "authority manifest")
+    protected = contract.get("protectedTrees")
+    required = {
+        "apps/web/public/3.1.0",
+        "apps/web/public/3.002",
+        "apps/web/public/4.0.0",
+    }
+    if version == "4.0.1" and set(protected or {}) != required:
+        raise ValueError("4.0.1 promotion must protect 3.1.0, 3.002, and 4.0.0")
+    if not isinstance(protected, dict):
+        raise ValueError("promotion contract protectedTrees must be an object")
+    for relative, digest in protected.items():
+        _confined(relative, "protected tree")
+        _digest(digest, f"protected tree {relative}")
+    return contract
 
 
 def _write_journal(path: Path, phase: str) -> None:
@@ -93,13 +158,51 @@ def _sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def _safe_source(path: Path) -> Path:
-    expected = (ROOT / "apps" / "web" / "public" / VERSION).resolve()
+def _tree_digest(relative: str) -> str:
+    directory = ROOT / _confined(relative, "protected tree")
+    if not directory.is_dir() or directory.is_symlink():
+        raise ValueError(f"protected tree is missing or unsafe: {relative}")
+    files = {
+        path.relative_to(ROOT).as_posix(): _sha256(path)
+        for path in sorted(directory.rglob("*"))
+        if path.is_file() and not path.is_symlink()
+    }
+    if not files or any(path.is_symlink() for path in directory.rglob("*")):
+        raise ValueError(f"protected tree is empty or unsafe: {relative}")
+    return hashlib.sha256(_canonical(files)).hexdigest()
+
+
+def _verify_protected(contract: dict[str, object]) -> None:
+    protected = contract.get("protectedTrees", {})
+    if not isinstance(protected, dict):
+        raise ValueError("promotion contract protectedTrees must be an object")
+    for relative, expected in protected.items():
+        if _tree_digest(relative) != expected:
+            raise ValueError(f"protected release tree changed: {relative}")
+
+
+def _root_files(version: str) -> tuple[str, ...]:
+    return (*ROOT_FILES[:-1], f"glide-{version}.zip")
+
+
+def _expected(version: str) -> set[str]:
+    root_files = _root_files(version)
+    return {
+        *root_files,
+        *(f"static/Glide-{weight}.ttf" for weight in WEIGHTS),
+        *(f"static/Glide-{weight}Italic.ttf" for weight in WEIGHTS),
+    }
+
+
+def _safe_source(path: Path, contract: dict[str, object] = DEFAULT_CONTRACT) -> Path:
+    version = str(contract["semanticVersion"])
+    authority = contract["authority"]
+    expected = (ROOT / "apps" / "web" / "public" / version).resolve()
     if path.resolve() != expected or path.is_symlink() or not path.is_dir():
-        raise ValueError(f"source must be immutable public {VERSION}: {expected}")
+        raise ValueError(f"source must be immutable public {version}: {expected}")
     if any(item.is_symlink() for item in path.rglob("*")):
         raise ValueError("versioned source contains a symlink")
-    for name in ROOT_FILES:
+    for name in _root_files(version):
         if not (path / name).is_file():
             raise ValueError(f"versioned source is missing {name}")
     statics = sorted((path / "static").glob("*.ttf"))
@@ -115,8 +218,9 @@ def _safe_source(path: Path) -> Path:
     ).hexdigest()
     if (
         manifest.get("kind") != "glide-4-production-candidate"
-        or manifest.get("version") != VERSION
-        or manifest.get("authority") != AUTHORITY
+        or manifest.get("version") != version
+        or manifest.get("fontRevision") != contract["fontRevision"]
+        or manifest.get("authority") != authority
         or manifest.get("manifestSha256") != calculated
     ):
         raise ValueError("versioned source manifest has the wrong identity")
@@ -136,7 +240,7 @@ def _safe_source(path: Path) -> Path:
     if (
         len(records) != 25
         or actual != expected
-        or {item.as_posix() for item in expected} != EXPECTED
+        or {item.as_posix() for item in expected} != _expected(version)
     ):
         raise ValueError("versioned source differs from its 25-artifact inventory")
     for record in records:
@@ -149,14 +253,20 @@ def _safe_source(path: Path) -> Path:
     return path
 
 
-def _prepare(source: Path, workspace: Path) -> tuple[Path, Path]:
+def _prepare(
+    source: Path,
+    workspace: Path,
+    contract: dict[str, object] = DEFAULT_CONTRACT,
+) -> tuple[Path, Path]:
+    version = str(contract["semanticVersion"])
+    root_files = _root_files(version)
     public_new = workspace / "public"
     fonts_new = workspace / "fonts"
     shutil.copytree(ROOT / "apps" / "web" / "public", public_new)
     shutil.copytree(ROOT / "fonts", fonts_new)
-    for name in ROOT_FILES[:-1]:
+    for name in root_files[:-1]:
         shutil.copy2(source / name, public_new / name)
-    shutil.copy2(source / "glide-4.0.0.zip", public_new / "glide.zip")
+    shutil.copy2(source / f"glide-{version}.zip", public_new / "glide.zip")
     for name in ("glide-variable.ttf", "glide-variable-italic.ttf"):
         shutil.copy2(source / name, fonts_new / name)
     for name in ("glide-variable.woff2", "glide-variable-italic.woff2"):
@@ -173,7 +283,7 @@ def _prepare(source: Path, workspace: Path) -> tuple[Path, Path]:
         public_new / "glide-variable-italic.ttf": "glide-variable-italic.ttf",
         public_new / "glide-variable.woff2": "glide-variable.woff2",
         public_new / "glide-variable-italic.woff2": "glide-variable-italic.woff2",
-        public_new / "glide.zip": "glide-4.0.0.zip",
+        public_new / "glide.zip": f"glide-{version}.zip",
         fonts_new / "glide-variable.ttf": "glide-variable.ttf",
         fonts_new / "glide-variable-italic.ttf": "glide-variable-italic.ttf",
         fonts_new / "glide-variable.woff2": "glide-variable.woff2",
@@ -189,24 +299,29 @@ def _prepare(source: Path, workspace: Path) -> tuple[Path, Path]:
     return public_new, fonts_new
 
 
-def promote(source: Path) -> None:
+def promote(
+    source: Path, contract: dict[str, object] = DEFAULT_CONTRACT
+) -> None:
     public = ROOT / "apps" / "web" / "public"
     fonts = ROOT / "fonts"
     public_backup = ROOT / ".glide-public-rollback"
     fonts_backup = ROOT / ".glide-fonts-rollback"
     journal = ROOT / JOURNAL
     _recover(public, fonts, public_backup, fonts_backup, journal)
-    source = _safe_source(source)
-    workspace = Path(tempfile.mkdtemp(prefix=".glide-4-promote-", dir=ROOT))
+    _verify_protected(contract)
+    source = _safe_source(source, contract)
+    version = str(contract["semanticVersion"])
+    workspace = Path(tempfile.mkdtemp(prefix=f".glide-{version}-promote-", dir=ROOT))
     if public_backup.exists() or fonts_backup.exists():
         shutil.rmtree(workspace)
         raise ValueError("a previous promotion transaction needs recovery")
     try:
-        public_new, fonts_new = _prepare(source, workspace)
+        public_new, fonts_new = _prepare(source, workspace, contract)
         _write_journal(journal, "prepared")
         _replace(public, public_backup)
         try:
             _replace(public_new, public)
+            _verify_protected(contract)
             _write_journal(journal, "public-swapped")
             _replace(fonts, fonts_backup)
             try:
@@ -236,15 +351,18 @@ def promote(source: Path) -> None:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--source", type=Path, required=True)
+    parser.add_argument("--contract", type=Path)
     parser.add_argument("--confirm-version", required=True)
     args = parser.parse_args()
-    if args.confirm_version != VERSION:
-        parser.error(f"promotion requires --confirm-version {VERSION}")
     try:
-        promote(args.source)
-    except (OSError, ValueError) as error:
-        parser.exit(2, f"Glide {VERSION} promotion: BLOCKED · {error}\n")
-    print(f"Glide {VERSION} promotion: PASS")
+        contract = _load_contract(args.contract)
+        version = str(contract["semanticVersion"])
+        if args.confirm_version != version:
+            raise ValueError(f"promotion requires --confirm-version {version}")
+        promote(args.source, contract)
+    except (json.JSONDecodeError, OSError, ValueError) as error:
+        parser.exit(2, f"Glide promotion: BLOCKED · {error}\n")
+    print(f"Glide {version} promotion: PASS")
     return 0
 
 

@@ -47,6 +47,7 @@ def _fixture(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> Path:
     manifest = {
         "kind": "glide-4-production-candidate",
         "version": "4.0.0",
+        "fontRevision": "4.000",
         "authority": MODULE.AUTHORITY,
         "qualityAssurance": {"ots": {"status": "pass"}, "fontbakery": {"FAIL": 0}},
         "artifacts": artifacts,
@@ -128,3 +129,72 @@ def test_committed_cleanup_keeps_journal_until_retry(
         journal,
     )
     assert not journal.exists()
+
+
+def test_hotfix_contract_promotes_401_and_protects_400(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    monkeypatch.setattr(MODULE, "ROOT", tmp_path)
+    public = tmp_path / "apps/web/public"
+    fonts = tmp_path / "fonts"
+    source = public / "4.0.1"
+    source.mkdir(parents=True)
+    (fonts / "web").mkdir(parents=True)
+    for version in ("3.1.0", "3.002", "4.0.0"):
+        directory = public / version
+        directory.mkdir()
+        (directory / "pinned.bin").write_bytes(version.encode())
+    for name in MODULE._root_files("4.0.1"):
+        (source / name).write_bytes(("hotfix-" + name).encode())
+    for relative in sorted(
+        MODULE._expected("4.0.1") - set(MODULE._root_files("4.0.1"))
+    ):
+        path = source / relative
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_bytes(relative.encode())
+    authority = {
+        "path": "reports/glide-4-authority-hotfix/frozen.json",
+        "sha256": "a" * 64,
+    }
+    artifacts = [
+        {
+            "path": path.relative_to(source).as_posix(),
+            "size": path.stat().st_size,
+            "sha256": MODULE._sha256(path),
+        }
+        for path in sorted(source.rglob("*"))
+        if path.is_file()
+    ]
+    manifest = {
+        "kind": "glide-4-production-candidate",
+        "version": "4.0.1",
+        "fontRevision": "4.001",
+        "authority": authority,
+        "qualityAssurance": {"ots": {"status": "pass"}, "fontbakery": {"FAIL": 0}},
+        "artifacts": artifacts,
+    }
+    manifest["manifestSha256"] = MODULE.hashlib.sha256(
+        (json.dumps(manifest, sort_keys=True, separators=(",", ":")) + "\n").encode()
+    ).hexdigest()
+    (source / MODULE.MANIFEST).write_text(json.dumps(manifest), encoding="utf-8")
+    contract = {
+        "schemaVersion": 1,
+        "kind": "glide-public-promotion",
+        "semanticVersion": "4.0.1",
+        "fontRevision": "4.001",
+        "authority": authority,
+        "protectedTrees": {
+            f"apps/web/public/{version}": MODULE._tree_digest(
+                f"apps/web/public/{version}"
+            )
+            for version in ("3.1.0", "3.002", "4.0.0")
+        },
+    }
+
+    MODULE.promote(source, contract)
+
+    assert (public / "glide-variable.ttf").read_bytes() == b"hotfix-glide-variable.ttf"
+    assert (public / "4.0.0/pinned.bin").read_bytes() == b"4.0.0"
+    (public / "4.0.0/pinned.bin").write_bytes(b"changed")
+    with pytest.raises(ValueError, match="protected release tree changed"):
+        MODULE.promote(source, contract)
