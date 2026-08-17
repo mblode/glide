@@ -30,6 +30,40 @@ The tag workflow reruns the release tier and publishes the already verified
 desktop ZIP. A tag must point at the commit containing the matching immutable
 version directory.
 
+## Publish the Glide 4 beta
+
+You can publish the approved `4.0.0-beta.1` bytes without changing the current
+Glide release. This operation creates only
+`apps/web/public/4.0.0-beta.1`; it can't update `fonts/`, download aliases, or
+the specimen fonts.
+
+Before you begin, generate and verify the immutable beta manifest and private
+stage in `static-to-variable-glide`. Keep the manifest outside the public
+checkout so the command can compare it with the staged copy.
+
+1. Run the immutable-only publisher from the public checkout:
+
+   ```bash
+   python3 scripts/publish-glide-beta.py \
+     --stage /path/to/static-to-variable-glide/release/staging/glide-4.0.0-beta.1 \
+     --manifest /path/to/static-to-variable-glide/release/glide-4.0.0-beta.1-manifest.json \
+     --confirm-release 4.0.0-beta.1
+   ```
+
+2. Review the new versioned directory and the exact staged manifest.
+3. Run `npm run verify`.
+4. Commit only `apps/web/public/4.0.0-beta.1`.
+
+The publisher verifies the manifest self-hash and every staged artifact before
+copying. It rejects symlinks, missing or extra files, an incorrect confirmation,
+and an existing version directory with different bytes. Repeating the command
+with an identical directory succeeds without rewriting it.
+
+The publisher hashes `apps/web/public/3.1.0`, `apps/web/public/3.002`, `fonts/`,
+and every root `glide-*` alias before and after creation. If any protected byte
+changes during the operation, publication fails and removes the new beta
+directory. The beta command has no alias-promotion option.
+
 ## Failure handling
 
 - Documentation failure: edit `install-snippets.ts`, then mirror the exact
