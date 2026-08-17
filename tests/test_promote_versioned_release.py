@@ -220,6 +220,31 @@ def test_hotfix_contract_promotes_401_and_protects_400(
         MODULE.promote(source, contract)
 
 
+def test_402_contract_requires_the_401_tree(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    monkeypatch.setattr(MODULE, "ROOT", tmp_path)
+    contract = {
+        "schemaVersion": 1,
+        "kind": "glide-public-promotion",
+        "semanticVersion": "4.0.2",
+        "fontRevision": "4.002",
+        "authority": {"path": "reports/authority.json", "sha256": "a" * 64},
+        "desktopBundleBuilderSha256": "b" * 64,
+        "protectedTrees": {
+            "apps/web/public/3.1.0": "c" * 64,
+            "apps/web/public/3.002": "d" * 64,
+            "apps/web/public/4.0.0": "e" * 64,
+        },
+    }
+    contract_root = MODULE.ROOT / "release-contracts"
+    contract_root.mkdir()
+    path = contract_root / "glide-4.0.2.json"
+    path.write_text(json.dumps(contract), encoding="utf-8")
+    with pytest.raises(ValueError, match="4.0.2 promotion must protect"):
+        MODULE._load_contract(path)
+
+
 def test_real_desktop_bundle_builder_is_hash_pinned_and_reproducible(
     tmp_path: Path,
 ) -> None:

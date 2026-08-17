@@ -53,7 +53,7 @@ DEFAULT_CONTRACT = {
     "desktopBundleBuilderSha256": "3eb0ad4782b5002c1d860c243bf4a1b2da7da09c6808a1bc4b881b45780d51d0",
     "protectedTrees": {},
 }
-SUPPORTED_RELEASES = {"4.0.0": "4.000", "4.0.1": "4.001"}
+SUPPORTED_RELEASES = {"4.0.0": "4.000", "4.0.1": "4.001", "4.0.2": "4.002"}
 HEX = set("0123456789abcdef")
 JOURNAL = ".glide-promotion-journal"
 
@@ -105,6 +105,12 @@ def _load_contract(path: Path | None) -> dict[str, object]:
     }
     if version == "4.0.1" and set(protected or {}) != required:
         raise ValueError("4.0.1 promotion must protect 3.1.0, 3.002, and 4.0.0")
+    if version == "4.0.2" and set(protected or {}) != required | {
+        "apps/web/public/4.0.1"
+    }:
+        raise ValueError(
+            "4.0.2 promotion must protect 3.1.0, 3.002, 4.0.0, and 4.0.1"
+        )
     if not isinstance(protected, dict):
         raise ValueError("promotion contract protectedTrees must be an object")
     for relative, digest in protected.items():
