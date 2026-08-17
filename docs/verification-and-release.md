@@ -46,7 +46,9 @@ python3 scripts/promote-versioned-release.py \
 Do not run this command until the private pipeline has verified and published
 the immutable directory. The contract binds the authority manifest and
 protects the 3.1.0, 3.002, and 4.0.0 release trees. The promoter replaces the
-current `apps/web/public` and `fonts` aliases as one journaled transaction.
+current `apps/web/public` and `fonts` aliases as one journaled transaction. It
+uses the hash-pinned `make-desktop-bundle.py` to rebuild the public statics and
+`glide.zip`; the immutable 4.0.1 production archive remains unchanged.
 
 After promotion, update the visible package and site version to 4.0.1. Run
 `npm run verify:full`, merge the complete change, and wait for main-branch CI.

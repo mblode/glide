@@ -8,6 +8,8 @@ import hashlib
 import json
 import os
 import shutil
+import subprocess
+import sys
 import tempfile
 from pathlib import Path
 
@@ -48,6 +50,7 @@ DEFAULT_CONTRACT = {
     "semanticVersion": VERSION,
     "fontRevision": "4.000",
     "authority": AUTHORITY,
+    "desktopBundleBuilderSha256": "3eb0ad4782b5002c1d860c243bf4a1b2da7da09c6808a1bc4b881b45780d51d0",
     "protectedTrees": {},
 }
 SUPPORTED_RELEASES = {"4.0.0": "4.000", "4.0.1": "4.001"}
@@ -107,6 +110,7 @@ def _load_contract(path: Path | None) -> dict[str, object]:
     for relative, digest in protected.items():
         _confined(relative, "protected tree")
         _digest(digest, f"protected tree {relative}")
+    _digest(contract.get("desktopBundleBuilderSha256"), "desktop bundle builder")
     return contract
 
 
@@ -194,6 +198,33 @@ def _expected(version: str) -> set[str]:
     }
 
 
+def _build_desktop_bundle(
+    public_new: Path, fonts_new: Path, contract: dict[str, object]
+) -> None:
+    builder = ROOT / "scripts/make-desktop-bundle.py"
+    if (
+        not builder.is_file()
+        or builder.is_symlink()
+        or _sha256(builder) != contract["desktopBundleBuilderSha256"]
+    ):
+        raise ValueError("desktop bundle builder is missing or changed")
+    base = [
+        sys.executable,
+        str(builder),
+        "--font-dir",
+        str(fonts_new),
+        "--static-dir",
+        str(fonts_new / "static"),
+        "--zip-path",
+        str(public_new / "glide.zip"),
+    ]
+    for command in (base, [*base, "--check"]):
+        result = subprocess.run(command, cwd=ROOT, capture_output=True, text=True)
+        if result.returncode:
+            detail = (result.stderr or result.stdout).strip()
+            raise ValueError(f"desktop bundle build failed: {detail}")
+
+
 def _safe_source(path: Path, contract: dict[str, object] = DEFAULT_CONTRACT) -> Path:
     version = str(contract["semanticVersion"])
     authority = contract["authority"]
@@ -266,16 +297,15 @@ def _prepare(
     shutil.copytree(ROOT / "fonts", fonts_new)
     for name in root_files[:-1]:
         shutil.copy2(source / name, public_new / name)
-    shutil.copy2(source / f"glide-{version}.zip", public_new / "glide.zip")
     for name in ("glide-variable.ttf", "glide-variable-italic.ttf"):
         shutil.copy2(source / name, fonts_new / name)
     for name in ("glide-variable.woff2", "glide-variable-italic.woff2"):
         shutil.copy2(source / name, fonts_new / name)
         shutil.copy2(source / name, fonts_new / "web" / name)
+    _build_desktop_bundle(public_new, fonts_new, contract)
     static_new = fonts_new / "static"
-    if static_new.exists():
-        shutil.rmtree(static_new)
-    shutil.copytree(source / "static", static_new)
+    if len(list(static_new.glob("*.ttf"))) != 20:
+        raise ValueError("desktop bundle builder did not create 20 static TTFs")
     manifest = json.loads((source / MANIFEST).read_text(encoding="utf-8"))
     records = {record["path"]: record for record in manifest["artifacts"]}
     aliases = {
@@ -283,7 +313,6 @@ def _prepare(
         public_new / "glide-variable-italic.ttf": "glide-variable-italic.ttf",
         public_new / "glide-variable.woff2": "glide-variable.woff2",
         public_new / "glide-variable-italic.woff2": "glide-variable-italic.woff2",
-        public_new / "glide.zip": f"glide-{version}.zip",
         fonts_new / "glide-variable.ttf": "glide-variable.ttf",
         fonts_new / "glide-variable-italic.ttf": "glide-variable-italic.ttf",
         fonts_new / "glide-variable.woff2": "glide-variable.woff2",
@@ -291,7 +320,6 @@ def _prepare(
         fonts_new / "web/glide-variable.woff2": "glide-variable.woff2",
         fonts_new / "web/glide-variable-italic.woff2": "glide-variable-italic.woff2",
     }
-    aliases.update({path: f"static/{path.name}" for path in static_new.glob("*.ttf")})
     for path, relative in aliases.items():
         record = records[relative]
         if path.stat().st_size != record["size"] or _sha256(path) != record["sha256"]:

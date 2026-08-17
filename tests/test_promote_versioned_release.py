@@ -15,6 +15,24 @@ assert SPEC and SPEC.loader
 MODULE = importlib.util.module_from_spec(SPEC)
 sys.modules[SPEC.name] = MODULE
 SPEC.loader.exec_module(MODULE)
+REAL_BUILD_DESKTOP_BUNDLE = MODULE._build_desktop_bundle
+
+
+@pytest.fixture(autouse=True)
+def _stub_desktop_bundle_builder(monkeypatch: pytest.MonkeyPatch) -> None:
+    def build(public_new: Path, fonts_new: Path, _contract: dict) -> None:
+        static = fonts_new / "static"
+        static.mkdir(exist_ok=True)
+        for weight in MODULE.WEIGHTS:
+            (static / f"Glide-{weight}.ttf").write_bytes(
+                f"desktop-{weight}".encode()
+            )
+            (static / f"Glide-{weight}Italic.ttf").write_bytes(
+                f"desktop-{weight}-italic".encode()
+            )
+        (public_new / "glide.zip").write_bytes(b"desktop-bundle")
+
+    monkeypatch.setattr(MODULE, "_build_desktop_bundle", build)
 
 
 def _fixture(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> Path:
@@ -71,6 +89,8 @@ def test_promote_replaces_aliases_and_preserves_unrelated_files(
         tmp_path / "fonts/web/glide-variable.woff2"
     ).read_bytes() == b"new-glide-variable.woff2"
     assert len(list((tmp_path / "fonts/static").glob("*.ttf"))) == 20
+    assert (tmp_path / "apps/web/public/glide.zip").read_bytes() == b"desktop-bundle"
+    assert (tmp_path / "fonts/static/Glide-Thin.ttf").read_bytes() == b"desktop-Thin"
     assert (tmp_path / "apps/web/public/3.1.0").is_dir()
     assert (tmp_path / "apps/web/public/3.002").is_dir()
     assert (tmp_path / "apps/web/public/keep.png").read_bytes() == b"keep"
@@ -198,3 +218,21 @@ def test_hotfix_contract_promotes_401_and_protects_400(
     (public / "4.0.0/pinned.bin").write_bytes(b"changed")
     with pytest.raises(ValueError, match="protected release tree changed"):
         MODULE.promote(source, contract)
+
+
+def test_real_desktop_bundle_builder_is_hash_pinned_and_reproducible(
+    tmp_path: Path,
+) -> None:
+    public_new = tmp_path / "public"
+    fonts_new = tmp_path / "fonts"
+    public_new.mkdir()
+    MODULE.shutil.copytree(SCRIPT.parent.parent / "fonts", fonts_new)
+
+    REAL_BUILD_DESKTOP_BUNDLE(public_new, fonts_new, MODULE.DEFAULT_CONTRACT)
+
+    assert (public_new / "glide.zip").is_file()
+    assert len(list((fonts_new / "static").glob("*.ttf"))) == 20
+    changed = dict(MODULE.DEFAULT_CONTRACT)
+    changed["desktopBundleBuilderSha256"] = "0" * 64
+    with pytest.raises(ValueError, match="builder is missing or changed"):
+        REAL_BUILD_DESKTOP_BUNDLE(public_new, fonts_new, changed)
