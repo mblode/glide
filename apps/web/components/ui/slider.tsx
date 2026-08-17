@@ -8,8 +8,9 @@ import { cn } from "@/lib/utils";
 
 type SliderProps = Omit<
   React.ComponentProps<typeof SliderPrimitive.Root>,
-  "defaultValue" | "onValueChange" | "value"
+  "aria-label" | "defaultValue" | "onValueChange" | "value"
 > & {
+  "aria-label": string;
   value?: number[];
   defaultValue?: number[];
   onValueChange?: (value: number[]) => void;
@@ -18,6 +19,7 @@ type SliderProps = Omit<
 };
 
 function Slider({
+  "aria-label": ariaLabel,
   className,
   defaultValue,
   onValueChange,
@@ -66,6 +68,9 @@ function Slider({
         </SliderPrimitive.Track>
         {Array.from({ length: values.length }, (_, index) => (
           <SliderPrimitive.Thumb
+            aria-label={
+              values.length === 1 ? ariaLabel : `${ariaLabel} ${index + 1}`
+            }
             className="block size-[28px] rounded-full border-[0.5px] border-border bg-white shadow-lg ring-offset-background transition-colors hover:border-input-hover focus:border-ring focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
             data-slot="slider-thumb"
             key={index}

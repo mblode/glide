@@ -104,6 +104,7 @@ export function Specimen() {
             </span>
           </div>
           <Slider
+            aria-label="Weight"
             disabled={mono}
             id="specimen-weight"
             max={950}
@@ -120,6 +121,7 @@ export function Specimen() {
             <span className="text-muted-foreground tabular-nums">{size}px</span>
           </div>
           <Slider
+            aria-label="Size"
             id="specimen-size"
             max={40}
             min={12}

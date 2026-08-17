@@ -8,7 +8,10 @@
     "dev": "npm --workspace @glide/web run dev",
     "build": "npm --workspace @glide/web run build",
     "start": "npm --workspace @glide/web run start",
-    "check": "python3 scripts/check-install-docs.py && python3 scripts/check-release-artifacts.py"
+    "check": "python3 scripts/check-install-docs.py",
+    "test:release": "python3 -m unittest discover -s tests -p 'test_*.py'",
+    "verify": "npm run check && npm run test:release && python3 scripts/update-font-metadata.py --check && python3 scripts/check-release-artifacts.py && npm run build",
+    "verify:full": "npm run verify && python3 scripts/make-desktop-bundle.py --check"
   },
   "devDependencies": {
     "portless": "^0.15.4"

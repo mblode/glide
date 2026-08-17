@@ -48,7 +48,7 @@ export default function Home() {
 
       {/*
         Full-bleed on purpose: the specimen is the argument for the typeface, so
-        it gets the whole measure rather than the 5xl reading column below.
+        it gets the whole measure rather than the reading column below.
       */}
       <Specimen />
 

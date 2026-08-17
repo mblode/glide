@@ -15,21 +15,22 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
+      - uses: actions/setup-node@v6
+        with:
+          cache: npm
+          node-version: "26"
+
       - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
 
-      - name: Install fontTools
-        run: pip install fonttools brotli
+      - name: Install dependencies
+        run: |
+          npm ci
+          python3 -m pip install -r requirements-release.txt
 
-      # Same script the site uses, so the release asset and the download at
-      # blode.co/glide/glide.zip are the same bundle. fonts/static is derived
-      # and gitignored, so it has to be regenerated here.
-      - name: Build the desktop bundle
-        run: python3 scripts/make-desktop-bundle.py
-
-      - name: Verify public font mirrors and bundle members
-        run: npm run check
+      - name: Verify release
+        run: npm run verify:full
 
       - name: Name the archive after the tag
         run: |
