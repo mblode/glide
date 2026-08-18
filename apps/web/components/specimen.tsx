@@ -141,9 +141,11 @@ export function Specimen() {
         {/*
           One block, one size dial. The headline is sized in `em`, so it is a
           multiple of the running text rather than a second control; the `vw`
-          cap keeps it filling the measure instead of overflowing it on a narrow
-          screen. Only the headline is editable — the copy below is the argument
-          for the typeface, not a sandbox.
+          cap keeps it filling the measure instead of overflowing it. Both
+          numbers are set so the default word sits on one line at the default
+          size — a headline that wraps reads as a bug, not as scale. Only the
+          headline is editable: the copy below is the argument for the typeface,
+          not a sandbox.
         */}
         <div
           className="break-words"
@@ -167,7 +169,7 @@ export function Specimen() {
         >
           <h3
             aria-label="Headline sample text"
-            className="mb-[0.35em] text-[min(18em,22vw)] leading-[1.02] tracking-[var(--display-tracking)] outline-none [column-span:all]"
+            className="mb-[0.35em] text-[min(9em,15vw)] leading-[1.02] tracking-[var(--display-tracking)] outline-none [column-span:all]"
             contentEditable
             dangerouslySetInnerHTML={{ __html: DEFAULT_DISPLAY }}
             role="textbox"
