@@ -98,8 +98,19 @@ def _metrics(font: TTFont, mono: TTFont) -> str:
         (round(w), _x_height(font, w))
         for w in (wght.minValue, wght.defaultValue, wght.maxValue)
     ]
+    # The public version is the font's own, not a hand-kept string. It feeds the
+    # footer, the MCP server card and the API catalog, and it had already drifted
+    # (config said 4.0.2 while the shipped font was 4.003). --check runs in
+    # `npm run verify`, so a promotion that forgets to update it now fails there.
+    name = font["name"].getDebugName(5) or ""
+    revision = name.removeprefix("Version ").strip()
+    major, _, rest = revision.partition(".")
+    semantic = f"{int(major)}.{int(rest or 0) // 100}.{int(rest or 0) % 100}"
     return "\n".join(
         [
+            "/** Public version, read from the shipped font's name table. */",
+            f'export const GLIDE_VERSION = "{semantic}";',
+            "",
             "/** OS/2 + hhea values from the shipped glide-variable.ttf. */",
             "export const GLIDE_METRICS = {",
             f"  unitsPerEm: {head.unitsPerEm},",

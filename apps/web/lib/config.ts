@@ -1,3 +1,5 @@
+import { GLIDE_VERSION } from "@/lib/font-metrics";
+
 /**
  * This app is served at blode.co/glide, proxied by the blode.co host app's
  * multi-zone rewrite. `basePath` is imported by next.config.ts so the prefix
@@ -26,5 +28,6 @@ export const siteConfig = {
   },
   name: "Glide",
   url: `https://blode.co${basePath}`,
-  version: "4.0.2",
+  // Generated from the shipped font; see scripts/update-font-metadata.py.
+  version: GLIDE_VERSION,
 };

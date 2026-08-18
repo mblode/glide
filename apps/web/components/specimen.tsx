@@ -139,13 +139,16 @@ export function Specimen() {
         </p>
 
         {/*
-          One block, one size dial. The headline is sized in `em`, so it is a
-          multiple of the running text rather than a second control; the `vw`
-          cap keeps it filling the measure instead of overflowing it. Both
-          numbers are set so the default word sits on one line at the default
-          size — a headline that wraps reads as a bug, not as scale. Only the
-          headline is editable: the copy below is the argument for the typeface,
-          not a sandbox.
+          The size dial drives the headline and nothing else. The headline is
+          the specimen — the thing you set, read, and judge — so it is sized in
+          `em` off the dial, with a `vw` cap so it fills the measure instead of
+          overflowing it. Both numbers keep the default word on one line at the
+          default size; a headline that wraps reads as a bug, not as scale.
+
+          The copy below is the argument for the typeface, not a sandbox, so it
+          holds a fixed reading size. Resizing it with the dial made the page
+          reflow around prose nobody was inspecting, and at the low end it drove
+          an explanation of the typeface down to 12px.
         */}
         <div
           className="break-words"
@@ -177,7 +180,10 @@ export function Specimen() {
             suppressContentEditableWarning
           />
           {paragraphs.map((paragraph) => (
-            <p className="mb-[0.8em] text-pretty last:mb-0" key={paragraph}>
+            <p
+              className="mb-[0.8em] text-pretty text-base leading-[1.55] last:mb-0"
+              key={paragraph}
+            >
               {paragraph}
             </p>
           ))}
