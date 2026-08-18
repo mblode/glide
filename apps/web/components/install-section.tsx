@@ -52,7 +52,9 @@ function CopyTextButton({
     <button
       type="button"
       className={cn(
-        "inline-flex shrink-0 items-center gap-2 rounded-xl border border-border px-3 py-1.5 text-sm font-medium transition-colors hover:bg-secondary/25",
+        // `max-sm:h-11` matches the specimen and weight toggles: 1.5 lines of
+        // padding is a 34px target, under the 44px a thumb needs.
+        "inline-flex shrink-0 items-center gap-2 rounded-xl border border-border px-3 py-1.5 text-sm font-medium transition-colors hover:bg-secondary/25 max-sm:h-11",
         className,
       )}
       onClick={handleCopy}
@@ -104,7 +106,15 @@ export function InstallSection() {
         2000px content area stops reading as a pair.
       */}
       <div className="grid gap-x-10 gap-y-6 border-border border-t px-[var(--row-padding)] py-[var(--row-padding-vertical)] lg:grid-cols-4">
-        <div className="flex flex-col items-start gap-3">
+        {/*
+          `min-w-0` on both columns, not decoration. A grid item defaults to
+          `min-width: auto`, which is its min-content width, and the code blocks
+          below are `pre` with `white-space: pre`, so their min-content width is
+          the longest line — around 610px. Without this the track was sized to
+          that line at every viewport, the row ran wider than a phone, and the
+          whole page scrolled sideways with the prose clipped at the right edge.
+        */}
+        <div className="flex min-w-0 flex-col items-start gap-3">
           <h2
             className="font-semibold text-lg tracking-tight"
             id="install-heading"
@@ -118,7 +128,7 @@ export function InstallSection() {
           />
         </div>
 
-        <div className="space-y-8 lg:col-span-3">
+        <div className="min-w-0 space-y-8 lg:col-span-3">
           <p className="text-pretty text-sm text-muted-foreground">
             Glide is free under the{" "}
             <a

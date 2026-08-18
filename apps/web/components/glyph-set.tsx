@@ -122,7 +122,9 @@ export function GlyphSet() {
               role="radio"
               aria-checked={style === s}
               onClick={() => setStyle(s)}
-              className="capitalize"
+              // `max-sm:h-11` to match the specimen and weight toggles: `sm`
+              // is a 36px control, under the 44px a thumb needs.
+              className="capitalize max-sm:h-11"
             >
               {s}
             </Button>
@@ -159,9 +161,16 @@ export function GlyphSet() {
       </div>
 
       <div className="grid lg:grid-cols-2">
+        {/*
+          Shorter on a phone. The two panels only have to end level once they
+          are side by side, and stacked at 60vh each they ran the section to
+          about a screen and a half of glyph before the install steps below.
+          The canvas sizes off the smaller of width and height, so at 45vh the
+          letter is still around 275px on a phone.
+        */}
         <section
           aria-label="Glyph inspector"
-          className="flex h-[min(60vh,40rem)] flex-col border-border border-b lg:border-r lg:border-b-0"
+          className="flex h-[min(45vh,22rem)] flex-col border-border border-b lg:h-[min(60vh,40rem)] lg:border-r lg:border-b-0"
         >
           <div className="relative flex items-center justify-center px-4 py-3">
             <div className="text-center">
@@ -208,7 +217,7 @@ export function GlyphSet() {
         */}
         <section
           aria-label="Glyph index"
-          className="flex h-[min(60vh,40rem)] min-h-0 flex-col"
+          className="flex h-[min(50vh,40rem)] min-h-0 flex-col lg:h-[min(60vh,40rem)]"
         >
           <div
             ref={gridRef}
