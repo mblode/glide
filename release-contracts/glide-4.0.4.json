@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "kind": "glide-public-promotion",
+  "semanticVersion": "4.0.4",
+  "fontRevision": "4.004",
+  "authority": {
+    "path": "reports/glide-4-authority-4.0.4/glide-4-six-master-authority-ae829982fb90a1fd.json",
+    "sha256": "ae829982fb90a1fd3f539af4a7094873e39cf7ddc78463de6fe087cd57002903"
+  },
+  "desktopBundleBuilderSha256": "20d916767e339e3557973f85720e998aa1de2f7604058547ea0f6d587a93b17b",
+  "protectedTrees": {
+    "apps/web/public/3.1.0": "8d5f870e4c282bc37d19f277e7ad47a6450e8a9d7b4683001a0ae55234403053",
+    "apps/web/public/3.002": "aa2e3892784205aa70818f76c0c83dd9716c9a31eb88b813d430b3532ea8177f",
+    "apps/web/public/4.0.0": "ac6d1c6b51fbad3afb8671fb3f4ff2b91d0786b62ff838274092474c1925d69d",
+    "apps/web/public/4.0.1": "efafd68a5f6867c42e672efea10795c7ab8c9b216eb4ea62f89dd8ccd6da9d40",
+    "apps/web/public/4.0.2": "ec8134c187f6c1f3a6274504f097882baa7252cb064419b125ab6441bd41c2ae",
+    "apps/web/public/4.0.3": "8d94f20cc4b9c95a63bb2163937be0f940e9976218064303dc7594b3382595c3"
+  }
+}
