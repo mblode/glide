@@ -1,4 +1,7 @@
-import { GLIDE_VERSION } from "@/lib/font-metrics";
+// Relative, not the "@/" alias: next.config.ts imports this module and Next
+// compiles that config without tsconfig path resolution, so an aliased
+// import resolves against lib/ and looks for lib/lib/font-metrics.
+import { GLIDE_VERSION } from "./font-metrics";
 
 /**
  * This app is served at blode.co/glide, proxied by the blode.co host app's
