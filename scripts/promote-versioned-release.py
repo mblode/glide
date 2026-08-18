@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import re
 import os
 import shutil
 import subprocess
@@ -53,7 +54,21 @@ DEFAULT_CONTRACT = {
     "desktopBundleBuilderSha256": "3eb0ad4782b5002c1d860c243bf4a1b2da7da09c6808a1bc4b881b45780d51d0",
     "protectedTrees": {},
 }
-SUPPORTED_RELEASES = {"4.0.0": "4.000", "4.0.1": "4.001", "4.0.2": "4.002"}
+# A 4.x patch version and its font revision are the same fact written twice, so
+# derive one from the other instead of maintaining a list that has to be edited
+# in lockstep with three more registries in the pipeline repo.
+_RELEASE_PATTERN = re.compile(r"^4\.(\d+)\.(\d+)$")
+
+
+def _font_revision(version: str) -> str | None:
+    """`4.0.3` -> `4.003`, or None when the version is not a supported 4.x release."""
+    match = _RELEASE_PATTERN.match(version or "")
+    if not match:
+        return None
+    minor, patch = int(match.group(1)), int(match.group(2))
+    if minor != 0 or patch > 999:
+        return None
+    return f"4.{patch:03d}"
 HEX = set("0123456789abcdef")
 JOURNAL = ".glide-promotion-journal"
 
@@ -83,7 +98,7 @@ def _load_contract(path: Path | None) -> dict[str, object]:
         raise ValueError("promotion contract is missing, unsafe, or outside release-contracts")
     contract = json.loads(path.read_text(encoding="utf-8"))
     version = contract.get("semanticVersion")
-    revision = SUPPORTED_RELEASES.get(version)
+    revision = _font_revision(version)
     if (
         contract.get("schemaVersion") != 1
         or contract.get("kind") != "glide-public-promotion"

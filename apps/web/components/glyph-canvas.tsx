@@ -2,7 +2,11 @@
 
 import { useLayoutEffect, useRef, type CSSProperties } from "react";
 
-import { GLIDE_METRICS } from "@/lib/font-metrics";
+import {
+  GLIDE_METRICS,
+  GLIDE_MONO_METRICS,
+  GLIDE_X_HEIGHT_STOPS,
+} from "@/lib/font-metrics";
 
 type GlyphCanvasProps = {
   char: string;
@@ -21,6 +25,26 @@ type MetricGuide = {
 
 function metricY(size: number, value: number, baselineY: number) {
   return baselineY - (value / GLIDE_METRICS.unitsPerEm) * size;
+}
+
+// Mono is single-weight, so its x-height is a constant; the proportional face
+// interpolates between the drawn masters, which is linear, so the generated
+// stops reproduce the axis exactly. See GLIDE_X_HEIGHT_STOPS for why it varies.
+function xHeightAt(weight: number, mono: boolean) {
+  if (mono) return GLIDE_MONO_METRICS.xHeight;
+  const stops = GLIDE_X_HEIGHT_STOPS;
+  const first = stops[0];
+  const last = stops[stops.length - 1];
+  if (weight <= first[0]) return first[1];
+  if (weight >= last[0]) return last[1];
+  for (let i = 1; i < stops.length; i += 1) {
+    const [x0, y0] = stops[i - 1];
+    const [x1, y1] = stops[i];
+    if (weight <= x1) {
+      return y0 + ((weight - x0) / (x1 - x0)) * (y1 - y0);
+    }
+  }
+  return last[1];
 }
 
 export function GlyphCanvas({
@@ -74,7 +98,7 @@ export function GlyphCanvas({
 
       const nextGuides: MetricGuide[] = [
         { id: "cap", label: "Cap height", y: metricY(size, GLIDE_METRICS.capHeight, baselineY) },
-        { id: "x", label: "x-height", y: metricY(size, GLIDE_METRICS.xHeight, baselineY) },
+        { id: "x", label: "x-height", y: metricY(size, xHeightAt(weight, mono), baselineY) },
         { id: "base", label: "Baseline", y: baselineY },
       ];
       for (const guide of nextGuides) {

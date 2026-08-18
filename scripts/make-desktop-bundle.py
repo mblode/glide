@@ -22,6 +22,7 @@ import os
 import shutil
 import tempfile
 import zipfile
+from fontTools.pens.boundsPen import BoundsPen
 from fontTools.ttLib import TTFont
 from fontTools.varLib import instancer
 
@@ -67,6 +68,19 @@ def instances_of(path):
         vf.close()
 
 
+def x_height(font):
+    """Top of the instanced 'x'.
+
+    Measured rather than inherited: the variable font's sxHeight describes its
+    default instance, so an unstamped static reports the Regular x-height at
+    every weight. Measuring stays right whether or not the source carries MVAR.
+    """
+    glyph_set = font.getGlyphSet()
+    pen = BoundsPen(glyph_set)
+    glyph_set[font.getBestCmap()[ord("x")]].draw(pen)
+    return round(pen.bounds[3])
+
+
 def build_statics(src, italic, static_dir):
     made = []
     for style, ps_name, wght, location in instances_of(src):
@@ -107,6 +121,7 @@ def build_statics(src, italic, static_dir):
 
         os2 = font["OS/2"]
         os2.usWeightClass = wght
+        os2.sxHeight = x_height(font)
         flags = os2.fsSelection & ~(1 | (1 << 5) | (1 << 6))
         if italic:
             flags |= 1
