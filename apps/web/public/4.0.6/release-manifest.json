@@ -2,128 +2,128 @@
   "artifacts": [
     {
       "path": "glide-4.0.6.zip",
-      "sha256": "4e06ba965c955d206803320922020f0c9a79b32312a1558a723ba65ebf78b6eb",
-      "size": 2118912
+      "sha256": "b1ba8b09ddb893c67a478cd90c9751b632cf264e7c99beb5a5a46f57a725b68c",
+      "size": 1725397
     },
     {
       "path": "glide-variable-italic.ttf",
-      "sha256": "9805b97c8ae01e8e5f75b3662fe5e047600d7197f28b4f22c326afdeaa7d5690",
-      "size": 296484
+      "sha256": "3dddca40f1dfee8a4cb4bb3f018f7022e5e98a4508b94be031d4b956b7bad686",
+      "size": 289508
     },
     {
       "path": "glide-variable-italic.woff2",
-      "sha256": "9984e8661ac988f9bd6043ed63faf6526e7ceec3da53e321df6883a1ba3b8972",
-      "size": 126100
+      "sha256": "32fb222617b1df6f215bc84792285fea07cf0809f59c971fb44ef9531157ac7c",
+      "size": 119956
     },
     {
       "path": "glide-variable.ttf",
-      "sha256": "9ce5f525e95679f4e15b2a3029c22d533caa498dedfa9d87d577a1d61f836188",
-      "size": 313688
+      "sha256": "1d62a7420a5e7eb714d4885b6b174a91b3e8c36b9ed2ebbbc2d65496437e258a",
+      "size": 308916
     },
     {
       "path": "glide-variable.woff2",
-      "sha256": "510d516b62493645e3b5776126ee6d93903070c50f09cd6d9ebe47e89192bebf",
-      "size": 126044
+      "sha256": "5646ee141c22d1bf8abee18b3e76e573665634634814d87b7febd1e5522581dd",
+      "size": 121660
     },
     {
       "path": "static/Glide-Black.ttf",
-      "sha256": "1738812c1f8ea5122d2a2739a87591d712ab6800a1c0c6829ff1e3773b45610a",
-      "size": 151840
+      "sha256": "1e356f2242a1a626a3bdea2180847193fcd88f1ce8e5aa3116368da4ff22ad44",
+      "size": 140428
     },
     {
       "path": "static/Glide-BlackItalic.ttf",
-      "sha256": "e0e301b6aae3842bfb47be1fe20f18b2435b508dbe341da2260430b92d9fc62f",
-      "size": 145716
+      "sha256": "58442e51cc9cad3281b1f0ca233385b15ec2f30ff9cff2c6f385f9501d57f74b",
+      "size": 133536
     },
     {
       "path": "static/Glide-Bold.ttf",
-      "sha256": "33ab4cb83af50456d1db5c2b0290220052cccfbf5ffb0f474a9fb7faa36da417",
-      "size": 152196
+      "sha256": "09ceb9d058412b84676b17725d871c0624d1f38340971f2ce62bfc9b16eeb66e",
+      "size": 140776
     },
     {
       "path": "static/Glide-BoldItalic.ttf",
-      "sha256": "13614fff37c0e9aa5ba9b98ee9f11f3e290b4a6ebbaad36217459993344cf4cc",
-      "size": 145732
+      "sha256": "d5e7f8cb75d4a12f5ccd2291f68a23fd552abb7889af3309097174b6023837be",
+      "size": 133520
     },
     {
       "path": "static/Glide-ExtraBlack.ttf",
-      "sha256": "272a37e77320d8ab9b1b3d49cdf356aa28d33b4b4aa435c17d6abbd953a74475",
-      "size": 151652
+      "sha256": "b8ca18f42d74fa39b16e104ad91e3f7298d7dff0ca89efcb2491620a65816933",
+      "size": 140132
     },
     {
       "path": "static/Glide-ExtraBlackItalic.ttf",
-      "sha256": "d8029eae6dbeb1c3442195e4c2d7ec7fd170a4ef8524048eccaccff460e1dd4d",
-      "size": 145612
+      "sha256": "87608508bc40c7e446442852cd8173fd695c2d51a7511d3309e7f2fa4345d9c0",
+      "size": 133436
     },
     {
       "path": "static/Glide-ExtraBold.ttf",
-      "sha256": "93ef1961f5eeecb4d8b7fc0d09f3f17080e694ae81030186e667fbe0a615e94a",
-      "size": 152084
+      "sha256": "e9bd032de02b7c0640be9ebc95cf9022880e94552c8fd05c256d1ff515ca1035",
+      "size": 140724
     },
     {
       "path": "static/Glide-ExtraBoldItalic.ttf",
-      "sha256": "f26be7f8f19f1ea1f1e5811beeffe6b18bed1feb58e370cbbced86408a739538",
-      "size": 145796
+      "sha256": "3b281968e167fa54eb8b1971a2358dff42eaa1e37f4a967c5544cd8f23bea0ae",
+      "size": 133656
     },
     {
       "path": "static/Glide-ExtraLight.ttf",
-      "sha256": "4af71d41bdd77978aecad42785b37ed3e853e34ade329a3f6cb25046303bc08a",
-      "size": 152300
+      "sha256": "8af5643e881d7b5a009c8bfdc0443060c065286348926f6871e272f4d6b3b631",
+      "size": 140884
     },
     {
       "path": "static/Glide-ExtraLightItalic.ttf",
-      "sha256": "7e2526fa4341f2c11fcc5133fbb0ef7ee4e5dbd13aa79595a3ca0c610843abec",
-      "size": 146116
+      "sha256": "9b83faf1700773e01c4e0d5bd90a01e46bfa09ee1087ac2242fc52f82a796ffa",
+      "size": 133956
     },
     {
       "path": "static/Glide-Light.ttf",
-      "sha256": "1f20540955afbb4c45f469a79cd66d4b98a6c7dafae5ee77b6951230d2c47d96",
-      "size": 152324
+      "sha256": "936c7d8ba82cd737c5e81f210d7fc020422b75d539a1a144a9d835a2b3c8d326",
+      "size": 140876
     },
     {
       "path": "static/Glide-LightItalic.ttf",
-      "sha256": "0b78286f0c204ea5b05dcb8e43111a7a296753ae03f9d0772d0051ec791f5d04",
-      "size": 146028
+      "sha256": "7d96e8423ecf9e077fa77cfc81635995c1e39386a16e74c8a16edd421665c2c3",
+      "size": 133796
     },
     {
       "path": "static/Glide-Medium.ttf",
-      "sha256": "590a7c3a2b87d87a54276b4a301bb4ce6821be6988193dfb30a4c1d15ec4a910",
-      "size": 152216
+      "sha256": "c0bc69e2b5ebd405a931ec7f9df1722013f1e2852df2a79cfefd9ac4969c88b4",
+      "size": 140824
     },
     {
       "path": "static/Glide-MediumItalic.ttf",
-      "sha256": "da5e375aeeea87e1d2a2b2fef01ae222f0e301fcd92bd53c2f57698cf467b519",
-      "size": 145752
+      "sha256": "748d4ee6ed1fcb409a853d23786f43b7d014b13320f633d8eb3fe03a2f7f1f33",
+      "size": 133544
     },
     {
       "path": "static/Glide-Regular.ttf",
-      "sha256": "24647a12405b9609db09040b6637c3772e276eaa5d434d2c3d00320eff8ca96f",
-      "size": 151896
+      "sha256": "8935ff8443686811b8fbadb88871ae0642310125b5ef2c8957e4b5a6d785a766",
+      "size": 140316
     },
     {
       "path": "static/Glide-RegularItalic.ttf",
-      "sha256": "fb793021aa9adbf4375fe7d13860c582285de433effb1f5c07455c244d718f8b",
-      "size": 145576
+      "sha256": "4cfd9fc7506caa9fc1f5992ae6c904fd37a1b6c4c489d23de02b0565b60361cc",
+      "size": 133284
     },
     {
       "path": "static/Glide-SemiBold.ttf",
-      "sha256": "167f82c5c33960cc53a4c629d8952e0336eb518672a7969b1581faebfa1d6fc9",
-      "size": 152172
+      "sha256": "3952a661ea40a871b70a2c1c57893c2556a65c2d86c9064e0f3c22894953d100",
+      "size": 140784
     },
     {
       "path": "static/Glide-SemiBoldItalic.ttf",
-      "sha256": "44e1b7730ca3d03d145886ac44aa7a0c911c7e6ee9221ea6f2651ffac246a7a1",
-      "size": 145756
+      "sha256": "462d600bdced734dc49524bdcef98a110be89df67eace81e8844be66228cde1c",
+      "size": 133580
     },
     {
       "path": "static/Glide-Thin.ttf",
-      "sha256": "a56b96cf724b281adebf5befcc7175c2a12a2bde209540d711cde0428d7a2f18",
-      "size": 152060
+      "sha256": "acd725214a7c6b97642c85ae603f4d231d84538a5caa01f57a10ae947e4981a8",
+      "size": 140528
     },
     {
       "path": "static/Glide-ThinItalic.ttf",
-      "sha256": "274004a6794d5c81123daa516545bba7ca621d0d888de24fde40522587d7adf0",
-      "size": 146012
+      "sha256": "cb6e7fbd7a818196ddbe3fa34ee604217735c8ecb73c8da7e806c26ddc95ccde",
+      "size": 133784
     }
   ],
   "authority": {
@@ -196,7 +196,8 @@
       "binarySha256": "caa51e5f62fdaac0e9a8230cd7b960614c3bd87df9cd02182b5aadc30393a84b",
       "fontCount": 24,
       "status": "pass"
-    }
+    },
+    "note": "Replaced faceted Regular-donor pair with handle-bearing rebuild. Prior OTS/FontBakery rows are not evidence for these bytes."
   },
   "schemaVersion": 1,
   "sourceSnapshots": {

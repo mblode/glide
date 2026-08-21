@@ -16,9 +16,9 @@ export const GLIDE_METRICS = {
  * value, which describes the default master only.
  */
 export const GLIDE_X_HEIGHT_STOPS = [
-  [100, 524],
+  [100, 526],
   [400, 532],
-  [950, 552],
+  [950, 554],
 ] as const satisfies readonly (readonly [number, number])[];
 
 /**
