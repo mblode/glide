@@ -23,7 +23,7 @@ const glideMono = localFont({
   display: "swap",
 });
 
-const title = "Glide Variable Font Family Crafted for UI";
+const title = "Glide: variable UI font (100-950) by Matthew Blode";
 
 export const metadata: Metadata = {
   /*
