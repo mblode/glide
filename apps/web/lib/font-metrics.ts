@@ -1,5 +1,5 @@
 /** Public version, read from the shipped font's name table. */
-export const GLIDE_VERSION = "4.0.6";
+export const GLIDE_VERSION = "4.0.5";
 
 /** OS/2 + hhea values from the shipped glide-variable.ttf. */
 export const GLIDE_METRICS = {
@@ -16,9 +16,9 @@ export const GLIDE_METRICS = {
  * value, which describes the default master only.
  */
 export const GLIDE_X_HEIGHT_STOPS = [
-  [100, 526],
+  [100, 524],
   [400, 532],
-  [950, 554],
+  [950, 552],
 ] as const satisfies readonly (readonly [number, number])[];
 
 /**
