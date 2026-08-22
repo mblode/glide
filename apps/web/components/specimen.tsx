@@ -115,7 +115,12 @@ export function Specimen() {
           />
         </div>
 
-        <div className="w-full space-y-2 sm:w-64">
+        {/*
+          The headline already caps with `vw` on a narrow measure, so a size
+          dial on phones only burns a row. Keep it from `sm` up, where there
+          is room to judge scale.
+        */}
+        <div className="hidden w-full space-y-2 sm:block sm:w-64">
           <div className="flex items-baseline justify-between gap-3 text-sm">
             <Label htmlFor="specimen-size">Size</Label>
             <span className="text-muted-foreground tabular-nums">{size}px</span>
