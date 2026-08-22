@@ -103,6 +103,10 @@ OG_NAMES = (
     "glide-italic-500.ttf",
     "glide-mono-400.ttf",
 )
+ALIASES = {
+    "Glide-Variable.woff2": "glide-variable.woff2",
+    "glide-500.ttf": "Glide-Medium.ttf",
+}
 
 # Repos that ship a subset of a Glide face and keep the full face as its
 # source. `out` is never written by this script; `src` is synced normally and
@@ -128,7 +132,7 @@ SUBSET_REPOS = {
         "out": "apps/web/app/fonts",
         "cmd": "apps/web/scripts/subset-fonts.sh",
     },
-    "donebear/donebear": {
+    "mblode/donebear": {
         "src": "apps/marketing-frontend/assets/fonts",
         "out": "apps/marketing-frontend/app/fonts",
         "cmd": "cd apps/marketing-frontend && node scripts/subset-fonts.mjs",
@@ -143,7 +147,7 @@ PYFTSUBSET_HINT = "~/Library/Python/3.9/bin"
 # `guard let url ... else { continue }` swallows a filename miss, so a renamed
 # static silently drops the app back to SF Pro with nothing logged.
 IOS_REGISTRARS = {
-    "donebear/donebear": {
+    "mblode/donebear": {
         "swift": "apps/ios/Done Bear/DesignSystem/Tokens/GlideFont.swift",
         "fonts": "apps/ios/Done Bear/Resources/Fonts",
     },
@@ -174,6 +178,8 @@ def canonical_sources() -> dict[str, Path]:
         sources[name] = REPO / "apps" / "web" / "lib" / "og-assets" / name
     for path in sorted((REPO / "fonts" / "static").glob("Glide*.ttf")):
         sources[path.name] = path
+    for consumer, canonical in ALIASES.items():
+        sources[consumer] = sources[canonical]
     missing = [name for name, path in sources.items() if not path.is_file()]
     if missing:
         raise AssertionError("canonical source missing: " + ", ".join(sorted(missing)))
@@ -203,7 +209,19 @@ def find_repos() -> list[Path]:
         relative = current.relative_to(CODE).as_posix()
         if any(relative == path or relative.startswith(f"{path}/") for path in PRUNE_PATHS):
             continue
-        if (current / ".git").exists():
+        git_dir = current / ".git"
+        if git_dir.exists():
+            # A linked worktree has a .git *file*. It is another checkout of a
+            # repo already represented by its primary working tree, not a
+            # separate consumer to rewrite.
+            if not git_dir.is_dir():
+                continue
+            probe = subprocess.run(
+                ["git", "-C", str(current), "rev-parse", "--is-inside-work-tree"],
+                capture_output=True,
+            )
+            if probe.returncode or probe.stdout.strip() != b"true":
+                continue
             if not any(
                 relative == repo or relative.startswith(f"{repo}/") for repo in SOURCE_REPOS
             ):
@@ -413,10 +431,11 @@ def check_labels(plan: RepoPlan) -> list[str]:
         found = set(re.findall(r"Glide (\d+\.\d+\.\d+)", path.read_text()))
         if version and found and version not in found:
             notes.append(f"{label} still says Glide {', '.join(sorted(found))}, not {version}")
-    notes.append(
-        f"tracked build output: edit the version label first, then run {post['cmd']!r} "
-        "(it copies src/index.html verbatim)"
-    )
+    if notes:
+        notes.append(
+            f"tracked build output: edit the version label first, then run {post['cmd']!r} "
+            "(it copies src/index.html verbatim)"
+        )
     return notes
 
 

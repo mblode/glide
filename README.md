@@ -31,8 +31,8 @@ See the whole family set as running text and specimens.
 For the web, put the WOFF2 files in `app/fonts/` next to your root layout:
 
 ```bash
-curl -O https://blode.co/glide/4.0.2/glide-variable.woff2
-curl -O https://blode.co/glide/4.0.2/glide-variable-italic.woff2
+curl -O https://blode.co/glide/4.0.7/glide-variable.woff2
+curl -O https://blode.co/glide/4.0.7/glide-variable-italic.woff2
 curl -O https://blode.co/glide/glide-mono.woff2
 ```
 
