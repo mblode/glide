@@ -245,6 +245,12 @@ def test_402_contract_requires_the_401_tree(
         MODULE._load_contract(path)
 
 
+def test_rejected_406_contract_is_revoked() -> None:
+    contract = SCRIPT.parent.parent / "release-contracts" / "glide-4.0.6.json"
+    with pytest.raises(ValueError, match="promotion contract is revoked: 4.0.6"):
+        MODULE._load_contract(contract)
+
+
 def test_real_desktop_bundle_builder_is_hash_pinned_and_reproducible(
     tmp_path: Path,
 ) -> None:

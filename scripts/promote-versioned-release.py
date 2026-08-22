@@ -58,6 +58,7 @@ DEFAULT_CONTRACT = {
 # derive one from the other instead of maintaining a list that has to be edited
 # in lockstep with three more registries in the pipeline repo.
 _RELEASE_PATTERN = re.compile(r"^4\.(\d+)\.(\d+)$")
+REVOKED_VERSIONS = {"4.0.6"}
 
 
 def _font_revision(version: str) -> str | None:
@@ -98,6 +99,8 @@ def _load_contract(path: Path | None) -> dict[str, object]:
         raise ValueError("promotion contract is missing, unsafe, or outside release-contracts")
     contract = json.loads(path.read_text(encoding="utf-8"))
     version = contract.get("semanticVersion")
+    if version in REVOKED_VERSIONS:
+        raise ValueError(f"promotion contract is revoked: {version}")
     revision = _font_revision(version)
     if (
         contract.get("schemaVersion") != 1
