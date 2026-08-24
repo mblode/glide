@@ -251,6 +251,28 @@ def test_rejected_406_contract_is_revoked() -> None:
         MODULE._load_contract(contract)
 
 
+def test_410_contract_protects_every_prior_release() -> None:
+    contract = SCRIPT.parent.parent / "release-contracts" / "glide-4.0.10.json"
+    loaded = MODULE._load_contract(contract)
+
+    assert loaded["authority"] == {
+        "path": (
+            "reports/glide-4-authority-4.0.10-curve-continuity/"
+            "glide-4-six-master-authority-8378e3b6a205d3e8.json"
+        ),
+        "sha256": (
+            "8378e3b6a205d3e8887149597c29121d4f011e320be5c276c2ac55ec4b26fbff"
+        ),
+    }
+    assert set(loaded["protectedTrees"]) == {
+        "apps/web/public/3.1.0",
+        "apps/web/public/3.002",
+        *(f"apps/web/public/4.0.{patch}" for patch in range(10)),
+    }
+    for relative, digest in loaded["protectedTrees"].items():
+        assert MODULE._tree_digest(relative) == digest
+
+
 def test_real_desktop_bundle_builder_is_hash_pinned_and_reproducible(
     tmp_path: Path,
 ) -> None:
@@ -259,11 +281,14 @@ def test_real_desktop_bundle_builder_is_hash_pinned_and_reproducible(
     public_new.mkdir()
     MODULE.shutil.copytree(SCRIPT.parent.parent / "fonts", fonts_new)
 
-    REAL_BUILD_DESKTOP_BUNDLE(public_new, fonts_new, MODULE.DEFAULT_CONTRACT)
+    contract = MODULE._load_contract(
+        SCRIPT.parent.parent / "release-contracts" / "glide-4.0.10.json"
+    )
+    REAL_BUILD_DESKTOP_BUNDLE(public_new, fonts_new, contract)
 
     assert (public_new / "glide.zip").is_file()
     assert len(list((fonts_new / "static").glob("*.ttf"))) == 20
-    changed = dict(MODULE.DEFAULT_CONTRACT)
+    changed = dict(contract)
     changed["desktopBundleBuilderSha256"] = "0" * 64
     with pytest.raises(ValueError, match="builder is missing or changed"):
         REAL_BUILD_DESKTOP_BUNDLE(public_new, fonts_new, changed)
