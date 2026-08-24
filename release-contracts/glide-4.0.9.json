@@ -4,8 +4,8 @@
   "semanticVersion": "4.0.9",
   "fontRevision": "4.009",
   "authority": {
-    "path": "reports/glide-4-authority-4.0.9/glide-4-six-master-authority-3f345713cd58c5e0.json",
-    "sha256": "3f345713cd58c5e08f2a4da80da1d5d2c213ae4d90c9f90bc4ff1abf22c6c3d3"
+    "path": "reports/glide-4-authority-4.0.9-reviewed-output/glide-4-six-master-authority-1d71cd7eecd53c9a.json",
+    "sha256": "1d71cd7eecd53c9aa43530ba68f987f7905cfe218685011a4b2678bbb8d7cc5f"
   },
   "desktopBundleBuilderSha256": "20d916767e339e3557973f85720e998aa1de2f7604058547ea0f6d587a93b17b",
   "protectedTrees": {
