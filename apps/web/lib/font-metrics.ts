@@ -1,5 +1,5 @@
 /** Public version, read from the shipped font's name table. */
-export const GLIDE_VERSION = "4.0.12";
+export const GLIDE_VERSION = "4.0.13";
 
 /** OS/2 + hhea values from the shipped glide-variable.ttf. */
 export const GLIDE_METRICS = {
