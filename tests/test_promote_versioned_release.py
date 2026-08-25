@@ -295,6 +295,28 @@ def test_411_contract_protects_every_prior_release() -> None:
         assert MODULE._tree_digest(relative) == digest
 
 
+def test_412_contract_protects_every_prior_release() -> None:
+    contract = SCRIPT.parent.parent / "release-contracts" / "glide-4.0.12.json"
+    loaded = MODULE._load_contract(contract)
+
+    assert loaded["authority"] == {
+        "path": (
+            "reports/glide-4-authority-4.0.12-u2787/"
+            "glide-4-six-master-authority-26f48ba1d86669b2.json"
+        ),
+        "sha256": (
+            "26f48ba1d86669b2128180a21ff3cca07012fcb52ac29bf63ad59dc2d50030c1"
+        ),
+    }
+    assert set(loaded["protectedTrees"]) == {
+        "apps/web/public/3.1.0",
+        "apps/web/public/3.002",
+        *(f"apps/web/public/4.0.{patch}" for patch in range(12)),
+    }
+    for relative, digest in loaded["protectedTrees"].items():
+        assert MODULE._tree_digest(relative) == digest
+
+
 def test_real_desktop_bundle_builder_is_hash_pinned_and_reproducible(
     tmp_path: Path,
 ) -> None:
@@ -304,7 +326,7 @@ def test_real_desktop_bundle_builder_is_hash_pinned_and_reproducible(
     MODULE.shutil.copytree(SCRIPT.parent.parent / "fonts", fonts_new)
 
     contract = MODULE._load_contract(
-        SCRIPT.parent.parent / "release-contracts" / "glide-4.0.11.json"
+        SCRIPT.parent.parent / "release-contracts" / "glide-4.0.12.json"
     )
     REAL_BUILD_DESKTOP_BUNDLE(public_new, fonts_new, contract)
 
