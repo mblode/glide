@@ -1,9 +1,16 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { markdownByPath } from "@/lib/markdown";
 
+// Parse Accept as media types, not a substring match: `text/markdown` inside a
+// quality parameter or a wildcard entry must not trigger negotiation.
+const wantsMarkdownFrom = (accept: string | null) =>
+  (accept ?? "")
+    .split(",")
+    .map((part) => part.split(";")[0].trim().toLowerCase())
+    .some((type) => type === "text/markdown" || type === "text/x-markdown");
+
 export function proxy(request: NextRequest) {
-  const accept = request.headers.get("accept") ?? "";
-  const wantsMarkdown = /\btext\/markdown\b/i.test(accept);
+  const wantsMarkdown = wantsMarkdownFrom(request.headers.get("accept"));
 
   if (!wantsMarkdown) {
     return NextResponse.next();

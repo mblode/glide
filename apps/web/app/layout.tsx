@@ -76,10 +76,11 @@ export const metadata: Metadata = {
     // the only slot left to say who made it. See zone-conventions.md Rule 9.
     siteName: siteConfig.author.name,
   },
+  // Only `card` and `creator`: Next fills twitter:title, description, and image
+  // from the Open Graph block per page, so restating them here only pins every
+  // route to the home card.
   twitter: {
     card: "summary_large_image",
-    title,
-    description: siteConfig.description,
     creator: "@mattblode",
   },
   alternates: {

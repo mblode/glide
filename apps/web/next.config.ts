@@ -56,6 +56,8 @@ const securityHeaders = [
 const nextConfig: NextConfig = {
   assetPrefix: basePath,
   basePath,
+  // Next adds `x-powered-by: Next.js` by default; it is fingerprinting for free.
+  poweredByHeader: false,
   async headers() {
     // Every matching rule applies in array order and a later value wins per
     // header key, so the catch-all comes first and per-route rules after it.
