@@ -1,12 +1,13 @@
-import Link from "next/link";
-
 import { GlyphSet } from "@/components/glyph-set";
+import { HeroTitle } from "@/components/hero-title";
 import { InstallSection } from "@/components/install-section";
 import { Specimen } from "@/components/specimen";
-import { Button } from "@/components/ui/button";
+import { TrackedLink } from "@/components/tracked-link";
+import { buttonVariants } from "@/components/ui/button";
 import { WeightShowcase } from "@/components/weight-showcase";
 import { ZoneBreadcrumb } from "@/components/zone-breadcrumb";
 import { asset, siteConfig } from "@/lib/config";
+import { cn } from "@/lib/utils";
 
 export default function Home() {
   return (
@@ -21,16 +22,8 @@ export default function Home() {
 
       {/* Hero */}
       <section className="flex flex-col items-start gap-8 px-[var(--row-padding)] py-[var(--row-padding-vertical)]">
-        {/*
-          Sized off the viewport the way Inter's title is (~14vw there), scaled
-          up because "Glide" is five characters against their twenty-six and
-          would otherwise sit marooned in the measure. The clamp floor keeps it
-          a headline rather than a hazard on a phone, and the negative margin is
-          side-bearing compensation so the G sits on the row's gutter.
-        */}
-        <h1 className="ml-[-0.015em] text-[clamp(5rem,24vw,26rem)] font-black leading-[0.85] tracking-[-0.04em] text-display">
-          Glide
-        </h1>
+        {/* Editable and self-fitting; components/hero-title.tsx has the why. */}
+        <HeroTitle />
         {/* Inter sets its lede at ~29px/1.5 against a ~28em measure. */}
         <p className="max-w-[28em] text-[clamp(1.25rem,2.2vw,1.85rem)] text-pretty leading-[1.5]">
           Variable font family crafted for UI.
@@ -39,10 +32,40 @@ export default function Home() {
           Free under the SIL Open Font License. Variable 100–950, roman, italic,
           and mono.
         </p>
-        <div className="flex flex-wrap items-center gap-3">
-          <Button asChild>
-            <Link href="#install">Download</Link>
-          </Button>
+        {/*
+          Two actions, because the page serves two arrivals. Of the 90 days of
+          sessions that took a font, 30 took the desktop zip and 10 took a
+          WOFF2, so the desktop bundle leads and the web install sits beside it.
+
+          The primary is the file itself, not the jump to the install steps the
+          old single button made. That jump converted well once clicked (27 of
+          33 sessions went on to take a file), but it charged every designer a
+          second click for a bundle they could have had on the first.
+        */}
+        <div className="flex flex-col items-start gap-3">
+          <div className="flex flex-wrap items-center gap-3">
+            <TrackedLink
+              className={cn(buttonVariants({ size: "lg" }))}
+              download="glide.zip"
+              href={asset("/glide.zip")}
+              label="download-desktop"
+              location="hero"
+            >
+              Download Glide
+            </TrackedLink>
+            <TrackedLink
+              className={cn(buttonVariants({ size: "lg", variant: "outline" }))}
+              href="#install"
+              label="install-web"
+              location="hero"
+            >
+              Install for web
+            </TrackedLink>
+          </div>
+          <p className="text-muted-foreground text-sm">
+            The bundle is TTF, for Figma and Font Book. The web install uses
+            WOFF2 and next/font.
+          </p>
         </div>
       </section>
 

@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import { JsonLd } from "@/components/json-ld";
+import { SiteNav } from "@/components/site-nav";
 import { WebMcp } from "@/components/web-mcp";
 import { siteConfig } from "@/lib/config";
 import { siteGraph } from "@/lib/schema";
@@ -117,6 +118,7 @@ export default function RootLayout({
         >
           Skip to content
         </a>
+        <SiteNav />
         {children}
         <WebMcp />
       </body>

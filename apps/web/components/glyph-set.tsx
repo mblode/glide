@@ -55,8 +55,34 @@ export function GlyphSet() {
     node?.scrollIntoView({ block: "nearest", inline: "nearest" });
   }, [selected.name]);
 
+  /*
+    Clicking a glyph copies it. The tiles collected rage clicks (U+2265,
+    U+0029, U+005F, U+2780, U+2782: exactly the characters you cannot type),
+    which is what repeated clicking on something that only updates a panel
+    looks like. Selecting was never what those readers were asking for.
+  */
+  const [copiedCp, setCopiedCp] = useState<number>();
+  const copyTimer = useRef<ReturnType<typeof setTimeout>>(undefined);
+
+  useEffect(() => () => clearTimeout(copyTimer.current), []);
+
+  const copy = async (entry: CharsetEntry) => {
+    try {
+      await navigator.clipboard.writeText(entry.char);
+    } catch {
+      // No clipboard permission, or an insecure context. The selection still
+      // happened, so the click was not wasted; there is just nothing to
+      // confirm.
+      return;
+    }
+    setCopiedCp(entry.cp);
+    clearTimeout(copyTimer.current);
+    copyTimer.current = setTimeout(() => setCopiedCp(undefined), 2000);
+  };
+
   const inspect = (entry: CharsetEntry) => {
     setSelectedName(entry.name);
+    void copy(entry);
   };
 
   const onGridKeyDown = (event: KeyboardEvent<HTMLDivElement>) => {
@@ -88,6 +114,13 @@ export function GlyphSet() {
       case "End":
         next = CHARSET.length - 1;
         break;
+      // The grid holds the focus, not the cells, so the copy that a click
+      // performs has to be reachable from here too.
+      case "Enter":
+      case " ":
+        event.preventDefault();
+        void copy(selected);
+        return;
       default:
         return;
     }
@@ -177,8 +210,17 @@ export function GlyphSet() {
               <div aria-live="polite" className="font-semibold tracking-tight">
                 {selected.name}
               </div>
+              {/*
+                The confirmation takes the code point's place for two seconds:
+                it is the line the eye is already on after a click, and the
+                code point is still on the tile's tooltip meanwhile.
+              */}
               <div className="font-mono text-sm tabular-nums text-muted-foreground">
-                U+{selected.hex}
+                {copiedCp === selected.cp ? (
+                  <span className="text-foreground">Copied</span>
+                ) : (
+                  `U+${selected.hex}`
+                )}
               </div>
             </div>
             <div
@@ -273,6 +315,14 @@ export function GlyphSet() {
               );
             })}
           </div>
+          {/*
+            Discoverability for the copy: without it the behaviour is only
+            findable by clicking, which is the thing the rage clicks show
+            people had already given up on.
+          */}
+          <p className="shrink-0 px-4 py-2 text-muted-foreground text-xs">
+            Click a glyph to copy it. Arrow keys move, Enter copies.
+          </p>
         </section>
       </div>
     </section>
