@@ -1,4 +1,5 @@
 import { GlyphSet } from "@/components/glyph-set";
+import { HeroTitle } from "@/components/hero-title";
 import { InstallSection } from "@/components/install-section";
 import { Specimen } from "@/components/specimen";
 import { TrackedLink } from "@/components/tracked-link";
@@ -21,48 +22,8 @@ export default function Home() {
 
       {/* Hero */}
       <section className="flex flex-col items-start gap-8 px-[var(--row-padding)] py-[var(--row-padding-vertical)]">
-        {/*
-          Sized off the viewport the way Inter's title is (~14vw there), scaled
-          up because "Glide" is five characters against their twenty-six and
-          would otherwise sit marooned in the measure. The clamp floor keeps it
-          a headline rather than a hazard on a phone, and the negative margin is
-          side-bearing compensation so the G sits on the row's gutter.
-        */}
-        {/*
-          Editable, because people already try. Four sessions in the last 90
-          days registered a dead click on this wordmark, which is what a click
-          on inert text looks like: they had read "interactive editable text"
-          and reached for the biggest word on the page rather than the specimen
-          headline further down.
-
-          It stays an `h1` and keeps its heading role: no `role="textbox"`
-          here, unlike the specimen's `h3`. `contentEditable` is exposed as an
-          editable state on top of the heading, so a screen reader still gets
-          the page's main heading, and the server-rendered text is still
-          "Glide" for anything that does not run scripts.
-
-          `dangerouslySetInnerHTML` for the same reason the specimen uses it:
-          React refuses to manage children under `contentEditable`, and the
-          string is a constant, so nothing you type can be overwritten by a
-          re-render.
-
-          `max-w-full` with `break-words` because the row is a column flex with
-          `items-start`, which sizes this to its own content: without the cap a
-          typed word longer than "Glide" runs past the gutter and takes the
-          whole page into a sideways scroll at 24vw a character.
-        */}
-        {/*
-          No `aria-label`: it would replace the heading's accessible name with
-          a description, and the name of this page's h1 should be "Glide".
-          `contentEditable` already reports itself as editable on its own.
-        */}
-        <h1
-          className="ml-[-0.015em] max-w-full break-words text-[clamp(5rem,24vw,26rem)] font-black leading-[0.85] tracking-[-0.04em] outline-none text-display"
-          contentEditable
-          dangerouslySetInnerHTML={{ __html: "Glide" }}
-          spellCheck={false}
-          suppressContentEditableWarning
-        />
+        {/* Editable and self-fitting; components/hero-title.tsx has the why. */}
+        <HeroTitle />
         {/* Inter sets its lede at ~29px/1.5 against a ~28em measure. */}
         <p className="max-w-[28em] text-[clamp(1.25rem,2.2vw,1.85rem)] text-pretty leading-[1.5]">
           Variable font family crafted for UI.

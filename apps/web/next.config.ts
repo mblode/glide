@@ -86,8 +86,20 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      /*
+        Both pages were retired into the homepage: /inspect became /glyphs, and
+        /glyphs became the glyph grid in the `#characters` row. The old
+        /inspect rule still pointed at /glyphs, so it 301'd onto a 404, and
+        both paths were still taking hits. They now land on the section that
+        replaced them.
+      */
       {
-        destination: "/glyphs",
+        destination: "/#characters",
+        permanent: true,
+        source: "/glyphs",
+      },
+      {
+        destination: "/#characters",
         permanent: true,
         source: "/inspect",
       },
