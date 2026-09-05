@@ -20,6 +20,7 @@ ${siteConfig.description}
 
 - Specimen — ${siteConfig.url}/#playground
 - Weights — ${siteConfig.url}/#weights
+- Characters — ${siteConfig.url}/#characters
 - Install — ${siteConfig.url}/#install
 
 ## Weights

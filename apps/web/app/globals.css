@@ -142,5 +142,8 @@
   }
   html {
     @apply scroll-smooth font-sans;
+    /* The section bar is sticky and 56px tall, so a fragment jump has to stop
+       short of it or the heading it targets lands underneath. */
+    scroll-padding-top: 3.5rem;
   }
 }

@@ -7,6 +7,7 @@ import {
 import { useCallback, useState } from "react";
 
 import { CodeBlock } from "@/components/code-block";
+import { TrackedLink } from "@/components/tracked-link";
 import { asset, siteConfig } from "@/lib/config";
 import { installPrompt } from "@/lib/install-prompt";
 import {
@@ -140,13 +141,15 @@ export function InstallSection() {
               SIL Open Font License 1.1
             </a>
             . For Figma and Font Book,{" "}
-            <a
+            <TrackedLink
               className="font-medium text-foreground underline underline-offset-4 hover:text-primary"
               download="glide.zip"
               href={asset("/glide.zip")}
+              label="download-desktop"
+              location="install"
             >
               download Glide for desktop
-            </a>{" "}
+            </TrackedLink>{" "}
             (TTF). On macOS open Font Book and choose File → Add Fonts. On
             Windows, select the files, right-click, and install for all users.
           </p>
@@ -154,29 +157,35 @@ export function InstallSection() {
           <InstallStep step={1} title="Download the font files">
             <p className="text-sm leading-relaxed text-muted-foreground">
               Download{" "}
-              <a
+              <TrackedLink
                 className="font-medium text-foreground underline underline-offset-4 transition-colors hover:text-primary"
                 download="glide-variable.woff2"
                 href={asset("/glide-variable.woff2")}
+                label="download-glide-variable"
+                location="install"
               >
                 glide-variable.woff2
-              </a>{" "}
+              </TrackedLink>{" "}
               and{" "}
-              <a
+              <TrackedLink
                 className="font-medium text-foreground underline underline-offset-4 transition-colors hover:text-primary"
                 download="glide-variable-italic.woff2"
                 href={asset("/glide-variable-italic.woff2")}
+                label="download-glide-variable-italic"
+                location="install"
               >
                 glide-variable-italic.woff2
-              </a>{" "}
+              </TrackedLink>{" "}
               and{" "}
-              <a
+              <TrackedLink
                 className="font-medium text-foreground underline underline-offset-4 transition-colors hover:text-primary"
                 download="glide-mono.woff2"
                 href={asset("/glide-mono.woff2")}
+                label="download-glide-mono"
+                location="install"
               >
                 glide-mono.woff2
-              </a>{" "}
+              </TrackedLink>{" "}
               and put them in app/fonts/ next to your root layout.
             </p>
           </InstallStep>
