@@ -28,10 +28,6 @@ export default function Home() {
         <p className="max-w-[28em] text-[clamp(1.25rem,2.2vw,1.85rem)] text-pretty leading-[1.5]">
           Variable font family crafted for UI.
         </p>
-        <p className="max-w-[48ch] text-pretty text-muted-foreground">
-          Free under the SIL Open Font License. Variable 100–950, roman, italic,
-          and mono.
-        </p>
         {/*
           Two actions, because the page serves two arrivals. Of the 90 days of
           sessions that took a font, 30 took the desktop zip and 10 took a
@@ -42,30 +38,24 @@ export default function Home() {
           33 sessions went on to take a file), but it charged every designer a
           second click for a bundle they could have had on the first.
         */}
-        <div className="flex flex-col items-start gap-3">
-          <div className="flex flex-wrap items-center gap-3">
-            <TrackedLink
-              className={cn(buttonVariants({ size: "lg" }))}
-              download="glide.zip"
-              href={asset("/glide.zip")}
-              label="download-desktop"
-              location="hero"
-            >
-              Download Glide
-            </TrackedLink>
-            <TrackedLink
-              className={cn(buttonVariants({ size: "lg", variant: "outline" }))}
-              href="#install"
-              label="install-web"
-              location="hero"
-            >
-              Install for web
-            </TrackedLink>
-          </div>
-          <p className="text-muted-foreground text-sm">
-            The bundle is TTF, for Figma and Font Book. The web install uses
-            WOFF2 and next/font.
-          </p>
+        <div className="flex flex-wrap items-center gap-3">
+          <TrackedLink
+            className={cn(buttonVariants({ size: "lg" }))}
+            download="glide.zip"
+            href={asset("/glide.zip")}
+            label="download-desktop"
+            location="hero"
+          >
+            Download Glide
+          </TrackedLink>
+          <TrackedLink
+            className={cn(buttonVariants({ size: "lg", variant: "outline" }))}
+            href="#install"
+            label="install-web"
+            location="hero"
+          >
+            Install for web
+          </TrackedLink>
         </div>
       </section>
 

@@ -139,10 +139,6 @@ export function Specimen() {
       </div>
 
       <div className="px-[var(--row-padding)] py-[var(--row-padding-vertical)]">
-        <p className="pb-6 text-muted-foreground text-sm">
-          Type your own headline.
-        </p>
-
         {/*
           The size dial drives the headline and nothing else. The headline is
           the specimen — the thing you set, read, and judge — so it is sized in
@@ -177,13 +173,28 @@ export function Specimen() {
         >
           <h3
             aria-label="Headline sample text"
-            className="mb-[0.35em] text-[min(9em,15vw)] leading-[1.02] tracking-[var(--display-tracking)] outline-none [column-span:all]"
+            className="mb-[0.1em] text-[min(9em,15vw)] leading-[1.02] tracking-[var(--display-tracking)] outline-none [column-span:all]"
             contentEditable
             dangerouslySetInnerHTML={{ __html: DEFAULT_DISPLAY }}
             role="textbox"
             spellCheck={false}
             suppressContentEditableWarning
           />
+          {/*
+            A caption for the headline above it, so it labels the thing it
+            describes instead of announcing it. Every font property is reset:
+            the wrapper sets family, weight, style, and the dial's size as
+            inline styles, and an unreset caption would swing from 12px mono to
+            40px Extra Black italic along with the specimen.
+
+            It recedes by size and weight, not alpha. The pink is light enough
+            that `text-foreground/60` composites to 2.77:1, under the 4.5:1 a
+            14px caption needs; muted-foreground is 6.5:1 and light weight at
+            that ratio still reads as a caption.
+          */}
+          <p className="mb-8 font-light font-sans text-muted-foreground text-sm not-italic [column-span:all]">
+            Type your own headline.
+          </p>
           {paragraphs.map((paragraph) => (
             <p
               className="mb-[0.8em] text-pretty text-base leading-[1.55] last:mb-0"

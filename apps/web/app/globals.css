@@ -141,9 +141,9 @@
     letter-spacing: normal;
   }
   html {
-    @apply scroll-smooth font-sans;
-    /* The section bar is sticky and 56px tall, so a fragment jump has to stop
-       short of it or the heading it targets lands underneath. */
-    scroll-padding-top: 3.5rem;
+    /* motion-safe: the only route to #install on a phone is a fragment jump
+       across the whole page, and that travel should not animate for anyone
+       who asked it not to. */
+    @apply motion-safe:scroll-smooth font-sans;
   }
 }
