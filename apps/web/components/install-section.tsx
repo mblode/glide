@@ -9,6 +9,7 @@ import { useCallback, useState } from "react";
 import { CodeBlock } from "@/components/code-block";
 import { TrackedLink } from "@/components/tracked-link";
 import { asset, siteConfig } from "@/lib/config";
+import { copyInstallContent } from "@/lib/conversion-events";
 import { installPrompt } from "@/lib/install-prompt";
 import {
   layoutSnippet,
@@ -39,7 +40,7 @@ function CopyTextButton({
       return;
     }
     try {
-      await navigator.clipboard.writeText(content);
+      await copyInstallContent(content, "copy-install-prompt");
       setIsCopied(true);
       setTimeout(() => setIsCopied(false), 3000);
     } catch (error) {

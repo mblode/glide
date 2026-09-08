@@ -52,6 +52,7 @@ export const captureConversion = ({
       href,
       label,
       location,
+      product: "glide",
       ...(typeof window === "undefined"
         ? {}
         : {
@@ -62,4 +63,13 @@ export const captureConversion = ({
   } catch {
     // Analytics must not be able to fail a click.
   }
+};
+
+/** Successful clipboard write, not an installation or an attempted click. */
+export const copyInstallContent = async (
+  content: string,
+  label: string
+): Promise<void> => {
+  await navigator.clipboard.writeText(content);
+  captureConversion({ href: "#install", label, location: "install" });
 };

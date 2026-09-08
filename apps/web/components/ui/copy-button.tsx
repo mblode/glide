@@ -11,6 +11,7 @@ import { useCallback, useState } from "react";
 import type { MouseEvent } from "react";
 
 import { cn } from "@/lib/utils";
+import { copyInstallContent } from "@/lib/conversion-events";
 
 const copyButtonVariants = cva(
   "flex shrink-0 items-center justify-center rounded-md outline-none transition-[box-shadow,_color,_background-color,_border-color,_outline-color,_text-decoration-color,_fill,_stroke] focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 [&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0",
@@ -63,7 +64,7 @@ const CopyButton = ({
       onClick?.(e);
       if (isCopied) return;
       try {
-        await navigator.clipboard.writeText(content);
+        await copyInstallContent(content, "copy-code");
         setIsCopied(true);
         setTimeout(() => setIsCopied(false), delay);
       } catch (error) {
