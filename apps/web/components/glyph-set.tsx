@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState, type KeyboardEvent } from "react";
 
-import { GlyphCanvas } from "@/components/glyph-canvas";
+import { GlyphPreview } from "@/components/glyph-preview";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Slider } from "@/components/ui/slider";
@@ -198,7 +198,7 @@ export function GlyphSet() {
           Shorter on a phone. The two panels only have to end level once they
           are side by side, and stacked at 60vh each they ran the section to
           about a screen and a half of glyph before the install steps below.
-          The canvas sizes off the smaller of width and height, so at 45vh the
+          The preview sizes off the smaller of width and height, so at 45vh the
           letter is still around 275px on a phone.
         */}
         <section
@@ -242,7 +242,7 @@ export function GlyphSet() {
             </div>
           </div>
 
-          <GlyphCanvas
+          <GlyphPreview
             char={selected.char}
             cp={selected.cp}
             italic={italic}

@@ -23,7 +23,7 @@ export const siteConfig = {
     url: "https://blode.co",
   },
   description:
-    "Glide is a variable UI sans-serif by Matthew Blode, with weight 100–950 and optical size 12–28 in roman and italic.",
+    "Glide is a variable UI sans-serif by Matthew Blode, with weight 100–950 and optical size 14–32 in roman and italic.",
   links: {
     author: "https://blode.co",
     github: "https://github.com/mblode/glide",

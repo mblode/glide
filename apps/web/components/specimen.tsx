@@ -57,6 +57,7 @@ export function Specimen() {
   const [family, setFamily] = useState<Family>("sans");
   const [weight, setWeight] = useState(DEFAULT_WEIGHT);
   const [size, setSize] = useState(DEFAULT_SIZE);
+  const [opticalSize, setOpticalSize] = useState(14);
 
   const mono = family === "mono";
   const italic = family === "italic";
@@ -115,6 +116,22 @@ export function Specimen() {
           />
         </div>
 
+        <div className="w-full space-y-2 sm:w-64">
+          <div className="flex items-baseline justify-between gap-3 text-sm">
+            <Label htmlFor="specimen-optical-size">Optical size</Label>
+            <span className="text-muted-foreground tabular-nums">{mono ? "Fixed" : opticalSize}</span>
+          </div>
+          <Slider aria-label="Optical size" id="specimen-optical-size" disabled={mono}
+            min={14} max={32} step={1} value={[opticalSize]}
+            onValueChange={([value]) => setOpticalSize(value)} />
+          <div className="flex justify-between">
+            <Button type="button" size="sm" variant="ghost" disabled={mono}
+              aria-pressed={!mono && opticalSize === 14} onClick={() => setOpticalSize(14)}>Text · 14</Button>
+            <Button type="button" size="sm" variant="ghost" disabled={mono}
+              aria-pressed={!mono && opticalSize === 32} onClick={() => setOpticalSize(32)}>Display · 32</Button>
+          </div>
+        </div>
+
         {/*
           The headline already caps with `vw` on a narrow measure, so a size
           dial on phones only burns a row. Keep it from `sm` up, where there
@@ -160,6 +177,8 @@ export function Specimen() {
                 : "var(--font-glide), sans-serif",
               fontWeight: effectiveWeight,
               fontStyle: italic ? "italic" : "normal",
+              fontOpticalSizing: "none",
+              fontVariationSettings: mono ? "normal" : `"opsz" ${opticalSize}`,
               fontSize: `${size}px`,
               lineHeight: 1.55,
               // Display type wants negative tracking; mono does not — pulling

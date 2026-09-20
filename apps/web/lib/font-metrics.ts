@@ -9,13 +9,16 @@ export const GLIDE_METRICS = {
   descender: -277,
 } as const;
 
-/**
- * x-height by weight. Glide's x-height rises across the weight axis
- * while cap height stays at a constant 709, so anything drawing an
- * x-height guide must interpolate rather than use the single OS/2
- * value, which describes the default master only.
- */
+/** The glyph inspector renders the Text optical size explicitly. */
+export const GLIDE_TEXT_OPSZ = 14;
+
+/** Measured Text x-height by weight; Roman and Italic are independent. */
 export const GLIDE_X_HEIGHT_STOPS = [
+  [100, 474],
+  [400, 479],
+  [950, 499],
+] as const satisfies readonly (readonly [number, number])[];
+export const GLIDE_ITALIC_X_HEIGHT_STOPS = [
   [100, 474],
   [400, 479],
   [950, 499],

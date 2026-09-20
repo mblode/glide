@@ -74,30 +74,36 @@ def _charset(font: TTFont) -> str:
     return "\n".join(rows)
 
 
-def _x_height(font: TTFont, weight: float | None = None) -> int:
-    """Top of `x`, optionally at one weight on a variable font.
+def _x_height(font: TTFont, weight: float | None = None, optical_size: float | None = None) -> int:
+    """Top of `x` at the same explicit coordinates used by the glyph inspector.
 
     `getGlyphSet(location=...)` interpolates the single glyph without instancing
     the whole font: measured at 0.004s against 0.79s for three stops.
     """
-    location = None if weight is None else {"wght": weight}
-    glyph_set = font.getGlyphSet(location=location)
+    location = {}
+    if weight is not None:
+        location["wght"] = weight
+    if optical_size is not None:
+        location["opsz"] = optical_size
+    glyph_set = font.getGlyphSet(location=location or None)
     pen = BoundsPen(glyph_set)
     glyph_set[font.getBestCmap()[ord("x")]].draw(pen)
     return round(pen.bounds[3])
 
 
-def _metrics(font: TTFont, mono: TTFont) -> str:
+def _metrics(font: TTFont, mono: TTFont, italic: TTFont) -> str:
     head = font["head"]
     os2 = font["OS/2"]
     hhea = font["hhea"]
     # Stops at the drawn masters. Interpolation between them is linear, so three
     # points describe the whole axis exactly.
     wght = next(a for a in font["fvar"].axes if a.axisTag == "wght")
+    text_opsz = next(a.minValue for a in font["fvar"].axes if a.axisTag == "opsz")
     stops = [
-        (round(w), _x_height(font, w))
+        (round(w), _x_height(font, w, text_opsz))
         for w in (wght.minValue, wght.defaultValue, wght.maxValue)
     ]
+    italic_stops = [(weight, _x_height(italic, weight, text_opsz)) for weight, _ in stops]
     # The public version is the font's own, not a hand-kept string. It feeds the
     # footer, the MCP server card and the API catalog, and it had already drifted
     # (config said 4.0.2 while the shipped font was 4.003). --check runs in
@@ -119,15 +125,15 @@ def _metrics(font: TTFont, mono: TTFont) -> str:
             f"  descender: {hhea.descent},",
             "} as const;",
             "",
-            "/**",
-            " * x-height by weight. Glide's x-height rises across the weight axis",
-            " * while cap height stays at a constant "
-            f"{os2.sCapHeight}, so anything drawing an",
-            " * x-height guide must interpolate rather than use the single OS/2",
-            " * value, which describes the default master only.",
-            " */",
+            "/** The glyph inspector renders the Text optical size explicitly. */",
+            f"export const GLIDE_TEXT_OPSZ = {text_opsz:g};",
+            "",
+            "/** Measured Text x-height by weight; Roman and Italic are independent. */",
             "export const GLIDE_X_HEIGHT_STOPS = [",
             *[f"  [{weight}, {value}]," for weight, value in stops],
+            "] as const satisfies readonly (readonly [number, number])[];",
+            "export const GLIDE_ITALIC_X_HEIGHT_STOPS = [",
+            *[f"  [{weight}, {value}]," for weight, value in italic_stops],
             "] as const satisfies readonly (readonly [number, number])[];",
             "",
             "/**",
@@ -158,6 +164,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--font", type=Path, default=REPO / "fonts/glide-variable.ttf")
     parser.add_argument("--mono", type=Path, default=REPO / "fonts/glide-mono.ttf")
+    parser.add_argument("--italic", type=Path, default=REPO / "fonts/glide-variable-italic.ttf")
     parser.add_argument(
         "--charset", type=Path, default=REPO / "apps/web/lib/charset.ts"
     )
@@ -169,13 +176,15 @@ def main() -> int:
 
     font = TTFont(args.font, lazy=True)
     mono = TTFont(args.mono, lazy=True)
+    italic = TTFont(args.italic, lazy=True)
     cmap_count = len(font.getBestCmap() or {})
     printable_count = sum(
         not unicodedata.category(chr(codepoint)).startswith("C")
         for codepoint in (font.getBestCmap() or {})
     )
     _write(args.charset, _charset(font), check=args.check)
-    _write(args.metrics, _metrics(font, mono), check=args.check)
+    _write(args.metrics, _metrics(font, mono, italic), check=args.check)
+    italic.close()
     mono.close()
     font.close()
     action = "verified" if args.check else "updated"
