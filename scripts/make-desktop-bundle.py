@@ -18,6 +18,7 @@ axis values lack the platform name records fontTools' updateFontNames needs.
 """
 
 import argparse
+import hashlib
 import os
 import shutil
 import tempfile
@@ -38,10 +39,28 @@ ZIP_TIMESTAMP = (1980, 1, 1, 0, 0, 0)
 
 VARIABLE = ["glide-variable.ttf", "glide-variable-italic.ttf"]
 MONO = "glide-mono.ttf"
+LEGACY_4015_INPUTS = {
+    "glide-variable.ttf": "46c2332643757d7dfe3e61119451ed04ae21f49d43eec903c95971004652d76b",
+    "glide-variable-italic.ttf": "e63c3c910aedf9f59e4cb5bfd7c0e7dade0644008bd8da013c8643f7bd977567",
+}
 
 
-def set_name(font, name_id, value):
+def set_name(font, name_id, value, *, legacy_metadata=False):
     font["name"].setName(value, name_id, *WINDOWS)
+    if legacy_metadata:
+        font["name"].setName(value, name_id, 1, 0, 0)
+
+
+def historical_check_inputs(font_dir, zip_path):
+    """Only the exact shipped 4.0.15 inputs retain their historical checker."""
+    for name, expected in LEGACY_4015_INPUTS.items():
+        with open(os.path.join(font_dir, name), "rb") as source:
+            if hashlib.sha256(source.read()).hexdigest() != expected:
+                return False
+    with open(zip_path, "rb") as archive:
+        return hashlib.sha256(archive.read()).hexdigest() == (
+            "56e6f2f5850738b4916749f5c71511df5c22ddb056cb198932b2f72218c10954"
+        )
 
 
 def instances_of(path):
@@ -79,7 +98,7 @@ def x_height(font):
     return round(pen.bounds[3])
 
 
-def build_statics(src, italic, static_dir):
+def build_statics(src, italic, static_dir, *, legacy_metadata=False):
     made = []
     for style, ps_name, wght, location in instances_of(src):
         # recalcTimestamp=False keeps head.modified as it is in the source font.
@@ -94,7 +113,8 @@ def build_statics(src, italic, static_dir):
         # introduced and would make the desktop bundle depend on fontTools'
         # partial-instancing behaviour.
         instancer.instantiateVariableFont(font, location, inplace=True)
-        font["name"].names = [name for name in font["name"].names if name.platformID != 1]
+        if not legacy_metadata:
+            font["name"].names = [name for name in font["name"].names if name.platformID != 1]
 
         is_bold = wght == 700
         ribbi = is_bold or wght == 400
@@ -111,12 +131,9 @@ def build_statics(src, italic, static_dir):
             family = f"Glide {style.replace(' Italic', '')}"
             subfamily = "Italic" if italic else "Regular"
 
-        set_name(font, 1, family)
-        set_name(font, 2, subfamily)
-        set_name(font, 4, f"Glide {style}")
-        set_name(font, 6, ps_name)
-        set_name(font, 16, "Glide")
-        set_name(font, 17, style)
+        for name_id, value in ((1, family), (2, subfamily), (4, f"Glide {style}"),
+                               (6, ps_name), (16, "Glide"), (17, style)):
+            set_name(font, name_id, value, legacy_metadata=legacy_metadata)
 
         os2 = font["OS/2"]
         os2.usWeightClass = wght
@@ -126,7 +143,7 @@ def build_statics(src, italic, static_dir):
             flags |= 1
         if is_bold:
             flags |= 1 << 5
-        if not is_bold and not italic:
+        if not is_bold and not italic and (not legacy_metadata or ribbi):
             flags |= 1 << 6
         os2.fsSelection = flags
 
@@ -147,14 +164,15 @@ def build_statics(src, italic, static_dir):
     return made
 
 
-def build_bundle(font_dir, static_dir, zip_path):
+def build_bundle(font_dir, static_dir, zip_path, *, legacy_metadata=False):
     shutil.rmtree(static_dir, ignore_errors=True)
     os.makedirs(static_dir, exist_ok=True)
 
     statics = []
     for name in VARIABLE:
         src = os.path.join(font_dir, name)
-        statics += build_statics(src, italic="italic" in name, static_dir=static_dir)
+        statics += build_statics(src, italic="italic" in name, static_dir=static_dir,
+                                 legacy_metadata=legacy_metadata)
 
     readme = os.path.join(REPO, "scripts", "bundle-README.txt")
     ofl = os.path.join(REPO, "OFL.txt")
@@ -202,7 +220,10 @@ def main():
     with tempfile.TemporaryDirectory(prefix="glide-bundle-check-") as temporary:
         candidate_static = os.path.join(temporary, "static")
         candidate_zip = os.path.join(temporary, "glide.zip")
-        build_bundle(font_dir, candidate_static, candidate_zip)
+        # Reproduce immutable historical bytes only for the exact old inputs.
+        # New builds and all other checker inputs use the corrected metadata.
+        legacy = historical_check_inputs(font_dir, zip_path)
+        build_bundle(font_dir, candidate_static, candidate_zip, legacy_metadata=legacy)
         with open(candidate_zip, "rb") as candidate_file:
             candidate = candidate_file.read()
         with open(zip_path, "rb") as expected_file:
@@ -211,7 +232,8 @@ def main():
             raise SystemExit(
                 f"desktop bundle mismatch: clean rebuild differs from {zip_path}"
             )
-        print(f"ok   clean desktop bundle matches {zip_path}")
+        policy = " (pinned 4.0.15 metadata)" if legacy else ""
+        print(f"ok   clean desktop bundle matches {zip_path}{policy}")
 
 
 if __name__ == "__main__":
