@@ -31,7 +31,6 @@ DEFAULT_FONT_DIR = os.path.join(REPO, "fonts")
 DEFAULT_STATIC_DIR = os.path.join(DEFAULT_FONT_DIR, "static")
 DEFAULT_ZIP_PATH = os.path.join(REPO, "apps", "web", "public", "glide.zip")
 WINDOWS = (3, 1, 0x409)
-MAC = (1, 0, 0)
 
 # Fixed so the archive hashes the same on every run. Any constant works; this is
 # the earliest timestamp the zip format can represent.
@@ -42,8 +41,7 @@ MONO = "glide-mono.ttf"
 
 
 def set_name(font, name_id, value):
-    for platform in (WINDOWS, MAC):
-        font["name"].setName(value, name_id, *platform)
+    font["name"].setName(value, name_id, *WINDOWS)
 
 
 def instances_of(path):
@@ -96,6 +94,7 @@ def build_statics(src, italic, static_dir):
         # introduced and would make the desktop bundle depend on fontTools'
         # partial-instancing behaviour.
         instancer.instantiateVariableFont(font, location, inplace=True)
+        font["name"].names = [name for name in font["name"].names if name.platformID != 1]
 
         is_bold = wght == 700
         ribbi = is_bold or wght == 400
@@ -127,7 +126,7 @@ def build_statics(src, italic, static_dir):
             flags |= 1
         if is_bold:
             flags |= 1 << 5
-        if ribbi and not is_bold and not italic:
+        if not is_bold and not italic:
             flags |= 1 << 6
         os2.fsSelection = flags
 

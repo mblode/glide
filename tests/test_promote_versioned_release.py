@@ -328,10 +328,22 @@ def test_real_desktop_bundle_builder_is_hash_pinned_and_reproducible(
     contract = MODULE._load_contract(
         SCRIPT.parent.parent / "release-contracts" / "glide-4.0.12.json"
     )
+    # Exercise the current builder without rewriting the historical release contract.
+    contract = dict(contract)
+    contract["desktopBundleBuilderSha256"] = MODULE._sha256(
+        SCRIPT.parent.parent / "scripts" / "make-desktop-bundle.py"
+    )
     REAL_BUILD_DESKTOP_BUNDLE(public_new, fonts_new, contract)
 
     assert (public_new / "glide.zip").is_file()
     assert len(list((fonts_new / "static").glob("*.ttf"))) == 20
+    from fontTools.ttLib import TTFont
+
+    for path in (fonts_new / "static").glob("*.ttf"):
+        with TTFont(path) as font:
+            subfamily = font["name"].getDebugName(2)
+            assert bool(font["OS/2"].fsSelection & (1 << 6)) == (subfamily == "Regular")
+            assert all(record.platformID != 1 for record in font["name"].names)
     changed = dict(contract)
     changed["desktopBundleBuilderSha256"] = "0" * 64
     with pytest.raises(ValueError, match="builder is missing or changed"):
